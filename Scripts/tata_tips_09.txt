@@ -1,0 +1,287 @@
+﻿void main()
+{
+
+//*Sub_Tips_053
+//gosub *tip_s
+
+//■タイトル：　事例３１
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+	PlayBGM( 1, "msys11", 128, 0 );
+
+//!s50
+//locate 11,0
+	SetSpeedOfMessage( TRUE, 100, );
+	SetStyleOfMessageSwinging( 2 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//昭和５６年１２月　１日
+	OutputLine(NULL, "昭和５６年１２月　１日",
+		   NULL, "December 1, 1981", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+////locate 11,1
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//ＸＸ県福祉部児童課資料
+	OutputLine(NULL, "ＸＸ県福祉部児童課資料",
+		   NULL, " _____ Prefecture Juvenile Welfare Division Report", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+//locate 11,2
+	PlayBGM( 2, "lsys24", 128, 0 );
+//（閲覧不可・複写不可）
+	OutputLine(NULL, "（閲覧不可・複写不可）",
+		   NULL, " (Do not view; do not duplicate)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//事例３１（１１月２０日）
+	OutputLine(NULL, "事例３１（１１月２０日）",
+		   NULL, "Case 31 (November 20)", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　北条沙都子（Ｘ歳）
+	OutputLine(NULL, "　北条沙都子（Ｘ歳）",
+		   NULL, "Satoko Houjou (_ years old)", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　鹿骨市雛見沢村ＸＸＸ番地在住/
+	OutputLine(NULL, "　鹿骨市雛見沢村ＸＸＸ番地在住",
+		   NULL, "Residence: ___ Hinamizawa Village, Shishibone", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（１）相談の経路
+	OutputLine(NULL, "（１）相談の経路",
+		   NULL, "(i) Consultation circumstances", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　匿名で子ども虐待ＳＯＳに電話相談有り。/
+	OutputLine(NULL, "　匿名で子ども虐待ＳＯＳに電話相談有り。",
+		   NULL, "Anonymous telephone SOS of child abuse.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（２）虐待の状況
+	OutputLine(NULL, "（２）虐待の状況",
+		   NULL, "(ii) Abuse situation", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　女児が保護者である養父母に身体的虐待を受けているという訴え。/
+	OutputLine(NULL, "　女児が保護者である養父母に身体的虐待を受けているという訴え。",
+		   NULL, "Anonymous claims that a female child is suffering physical abuse by adoptive parents, her guardians.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（３）家族構成（●虐待者）
+	OutputLine(NULL, "（３）家族構成（●虐待者）",
+		   NULL, "(iii) Family structure (● marks abusers)", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　●養父、●養母、兄、本児
+	OutputLine(NULL, "　●養父、●養母、兄、本児",
+		   NULL, "●Adoptive father, ●adoptive mother, older brother, child in question", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　※昭和５５年６月に本児の両親が事故により死亡し、父方の叔父（父の弟）宅に引き取られた。/
+	OutputLine(NULL, "　※昭和５５年６月に本児の両親が事故により死亡し、父方の叔父（父の弟）宅に引き取られた。",
+		   NULL, "Note: In June 1980, the child's parents died in an accident, and she was given to her uncle on her father's side (her father's younger brother).", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（４）児童相談所の対応
+	OutputLine(NULL, "（４）児童相談所の対応",
+		   NULL, "(iv) Child consultation center's response", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　匿名の電話相談が入り、同日、学校に電話で、本児の状況を聞き取り。
+	OutputLine(NULL, "　匿名の電話相談が入り、同日、学校に電話で、本児の状況を聞き取り。",
+		   NULL, "On the day of the anonymous telephone consultation, the center called the child's school and asked of her situation.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　翌日、担当児童福祉司が本児宅を訪問し、聞き取り。
+	OutputLine(NULL, "　翌日、担当児童福祉司が本児宅を訪問し、聞き取り。",
+		   NULL, "The next day, the welfare officer on duty visited the child's home and heard what they had to say.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　養父母は相談所の指導を受けることに同意。/
+	OutputLine(NULL, "　養父母は相談所の指導を受けることに同意。",
+		   NULL, "Both adoptive parents agreed to the center's coaching.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//市の虐待防止ネットワークに連絡した。
+	OutputLine(NULL, "市の虐待防止ネットワークに連絡した。",
+		   NULL, " Contacted anti-abuse network in the city.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　助言指導とし、以後定期的に地域の民生委員が訪問指導することとなった。/
+	OutputLine(NULL, "　助言指導とし、以後定期的に地域の民生委員が訪問指導することとなった。",
+		   NULL, " As part of this suggested coaching, a district welfare officer in the area began visiting for coaching at fixed intervals.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（以下の走り書きのメモがホチキスで止められている）
+	OutputLine(NULL, "（以下の走り書きのメモがホチキスで止められている）",
+		   NULL, "(The scrawled note below is stapled to the report)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+//　前任のＷ氏より関連情報あり。
+	OutputLine(NULL, "　前任のＷ氏より関連情報あり。",
+		   NULL, "Related information from former official Mr. W.", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　５２年度のエ２－３の４４号を参照すること。
+	OutputLine(NULL, "　５２年度のエ２−３の４４号を参照すること。",
+		   NULL, "Refer to 1977 document D2-3 number 44.", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　市教育相談所のＦ主査が詳しいので助言を求めること。/
+	OutputLine(NULL, "　市教育相談所のＦ主査が詳しいので助言を求めること。",
+		   NULL, "Ask Chief Investigator F from the city's education consultation offices; he is well-informed about it.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetSpeedOfMessage( FALSE, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

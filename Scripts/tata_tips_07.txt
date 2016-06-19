@@ -1,0 +1,162 @@
+﻿void main()
+{
+
+//■研究ノート
+//*Sub_Tips_051
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys11", 128, 0 );
+
+//locate 6,6
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+//＜北条家について￥
+	OutputLine(NULL, "＜北条家について＞",
+		   NULL, "<The Houjou Family>", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　オヤシロさまの祟りによって、毎年２人ずつの犠牲者が出ている＠
+	OutputLine(NULL, "　オヤシロさまの祟りによって、毎年２人ずつの犠牲者が出ている。",
+		   NULL, "Every year, Oyashiro-sama's curse claims two victims.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　すでに４年続き、犠牲者は８人になったわけだが、その半数の人間が北条姓を持つことは特筆に価する＠
+	OutputLine(NULL, "　すでに４年続き、犠牲者は８人になったわけだが、その半数の人間が北条姓を持つことは特筆に価する。",
+		   NULL, "This means that with four years in a row, there have been eight now, but it's worthwhile to note half of them have been members of this family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//※２年目の祟りである転落事故ではダム推進派であった北条氏本人が死に、その妻が失踪した＠（危難失踪扱いでその翌年に死亡宣告＠
+	OutputLine(NULL, "※２年目の祟りである転落事故ではダム推進派であった北条氏本人が死に、その妻が失踪した。",
+		   NULL, "Note: The curse on the second year, a certain falling accident, involved the death of Houjou, a dam proponent, and the disappearance of his wife.", Line_WaitForInput);
+	OutputLine(NULL, "（危難失踪扱いでその翌年に死亡宣告）",
+		   NULL, " (She was pronounced dead the following year after being considered to have vanished under perilous circumstances.)", Line_Normal);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　４年目の祟りでは北条兄妹の養母である叔母が死に、北条氏の長男が失踪した￥
+	OutputLine(NULL, "　４年目の祟りでは北条兄妹の養母である叔母が死に、北条氏の長男が失踪した。",
+		   NULL, "The curse on the fourth year involved the death of the Houjou sibling's aunt, who was then their foster mother, and the disappearance of the elder brother.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　北条家は貧しい家庭で、北条氏の仕事も満帆とは言い難かった＠
+	OutputLine(NULL, "　北条家は貧しい家庭で、北条氏の仕事も満帆とは言い難かった。",
+		   NULL, "The Houjou family is a poor one, and it's hard to say Mr. Houjou's job went very well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　親類の縁での再就職をあてに、母方の故郷へ引越す計画があったと言う＠
+	OutputLine(NULL, "　親類の縁での再就職をあてに、母方の故郷へ引越す計画があったと言う。",
+		   NULL, "Apparently, upon reemployment via family connections, there was a plan for them to return to the home of the mother's side of the family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　そんな北条氏にとって、雛見沢ダム計画による立ち退きと高額な補償金の給付は、まさに渡りに船だったと言えるだろう￥
+	OutputLine(NULL, "　そんな北条氏にとって、雛見沢ダム計画による立ち退きと高額な補償金の給付は、まさに渡りに船だったと言えるだろう。",
+		   NULL, "For Mr. Houjou, the eviction due to the Hinamizawa dam project and the payment of a large amount of compensation money was essentially a windfall.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　北条氏は建設省の交渉初期から積極的に応じ、ダム推進派の雛見沢のまとめ役として抜擢された＠
+	OutputLine(NULL, "　北条氏は建設省の交渉初期から積極的に応じ、ダム推進派の雛見沢のまとめ役として抜擢された。",
+		   NULL, "Mr. Houjou aggressively accepted the Ministry of Construction's negotiations from an early stage and selected others from Hinamizawa who were also dam proponents.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　その過程において、建設省から金銭による買収があったと囁かれるが、真偽はわからない￥
+	OutputLine(NULL, "　その過程において、建設省から金銭による買収があったと囁かれるが、真偽はわからない。",
+		   NULL, "It was rumored he had been bought out by the Ministry of Construction for doing so, but the truth is unknown.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　だが、ダム推進派は極めて少数だった＠
+	OutputLine(NULL, "　だが、ダム推進派は極めて少数だった。",
+		   NULL, "However, the dam's proponents were in the vastly outnumbered minority.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　しかも、園崎家が強力に地盤を固め、反ダムへの結束を強化し始めると、北条氏を除く全てのダム推進派は反ダムへ鞍替えすることになる＠
+	OutputLine(NULL, "　しかも、園崎家が強力に地盤を固め、反ダムへの結束を強化し始めると、北条氏を除く全てのダム推進派は反ダムへ鞍替えすることになる。",
+		   NULL, "In addition, as the Sonoazaki family strengthened its own foundation and promised support against the dam, all of the proponents save for Mr. Houjou switched over to the anti-dam side.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　この時点で雛見沢は完全に反ダムで結束し、北条家はダム計画推進の手先として槍玉に挙げられることになった＠
+	OutputLine(NULL, "　この時点で雛見沢は完全に反ダムで結束し、北条家はダム計画推進の手先として槍玉に挙げられることになった。",
+		   NULL, "At this point, Hinamizawa was completely united against the dam, and Mr. Houjou was held up to ridicule as a stooge of the dam project's proponents.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　反ダム結束の為のスケープゴートにされたと言ってもいいだろう￥
+	OutputLine(NULL, "　反ダム結束の為のスケープゴートにされたと言ってもいいだろう。",
+		   NULL, "He was, essentially, used as a scapegoat for the anti-dam coalition.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　結局、ダム計画は初めてのオヤシロさまの祟りである「バラバラ殺人事件」を最後に瓦解する＠
+	OutputLine(NULL, "　結局、ダム計画は初めてのオヤシロさまの祟りである「バラバラ殺人事件」を最後に瓦解する。",
+		   NULL, "In the end, the dam project collapsed with Oyashiro-sama's curse and the dismemberment incident.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　だが、ダム計画に加担した仇敵への報復は今日でも続けられているのだ...￥
+	OutputLine(NULL, "　だが、ダム計画に加担した仇敵への報復は今日でも続けられているのだ…。",
+		   NULL, "However, punishment towards the bitter enemies supporting the dam project continues to this day...", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　ダム計画に加担した、もしくは当時にネガティブな評価を持つ者は今日、ほとんど残っていない￥
+	OutputLine(NULL, "　ダム計画に加担した、もしくは当時にネガティブな評価を持つ者は今日、ほとんど残っていない。",
+		   NULL, "There are not many left today who supported the dam project, nor who had a negative reputation at the time.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　残る祟り候補がいるとすれば、昨年の主婦撲殺事件の被害者の夫である北条鉄平＠北条氏の娘の北条沙都子＠
+	OutputLine(NULL, "　残る祟り候補がいるとすれば、昨年の主婦撲殺事件の被害者の夫である北条鉄平。",
+		   NULL, "If there were any candidates left for the curse, it's the husband of the housewife who was beaten to death last year, Teppei Houjou.", Line_WaitForInput);
+	OutputLine(NULL, "北条氏の娘の北条沙都子。",
+		   NULL, " And Mr. Houjou's daughter, Satoko Houjou.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	PlaySE( 3, "wa_024", 128, 64 );
+
+//　奇しくも、残る候補者は２人だ＠
+	OutputLine(NULL, "　奇しくも、残る候補者は２人だ。",
+		   NULL, "Strangely, these two are the only candidates left.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　今年の祟りは、この２人に対して下されるのか...＠
+	OutputLine(NULL, "　今年の祟りは、この２人に対して下されるのか…？",
+		   NULL, "Will this year's curse come down on the two of them...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　この２人を観察する価値は、十二分にある......￥
+	OutputLine(NULL, "　この２人を観察する価値は、十二分にある……。",
+		   NULL, "There is more than enough value in observing them both...", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

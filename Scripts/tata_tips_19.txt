@@ -1,0 +1,158 @@
+﻿void main()
+{
+
+//*Sub_Tips_063
+//gosub *tip_s
+
+//■タイトル：　研究ノートⅡ
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+	PlayBGM( 1, "msys21", 128, 0 );
+
+//locate 5,7
+	SetDrawingPointOfMessage( 0, 7 );
+	SetStyleOfMessageSwinging( 1 );
+//＜オヤシロさまについて￥
+	OutputLine(NULL, "＜オヤシロさまについて＞",
+		   NULL, "<Oyashiro-sama>", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　オヤシロさまだが、どういう字で書くのかはあまり知られていない＠
+	OutputLine(NULL, "　オヤシロさまだが、どういう字で書くのかはあまり知られていない。",
+		   NULL, "Nobody really knows what characters to use to write 'Oyashiro-sama'.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　と言うのも、時代によって様々な修飾詞が付き、微妙に名称が変わったり、当て字が変わったりするため＠本来の正確な名称が何なのか、知る事が大変難しいからだ￥
+	OutputLine(NULL, "　と言うのも、時代によって様々な修飾詞が付き、微妙に名称が変わったり、当て字が変わったりするため、",
+		   NULL, "Knowing this is hard partly because depending on the time period,", Line_WaitForInput);
+	OutputLine(NULL, "本来の正確な名称が何なのか、知る事が大変難しいからだ。",
+		   NULL, " he has been called with various titles, with subtle changes to his name, and nobody knows the real one.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　全ての時代に共通するのは、名称の読みに必ず「オヤシロ」の４文字が入るということだけ＠
+	OutputLine(NULL, "　全ての時代に共通するのは、名称の読みに必ず「オヤシロ」の４文字が入るということだけ。",
+		   NULL, "The only thing all time periods agree on is that the four syllables \"o\" \"ya\" \"shi\" and \"ro\" are always used.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　オヤシロさまを祀る「社（やしろ）」が、そのまま礼拝対象になり＠「御社さま」と呼ばれるに至ったと言う説があるが、実にセンスの欠片もない￥
+	OutputLine(NULL, "　オヤシロさまを祀る「社（やしろ）」が、そのまま礼拝対象になり、",
+		   NULL, "There is a theory stating the shrine, or \"yashiro,\" dedicated to Oyashiro-sama itself became an object of worship,", Line_WaitForInput);
+	OutputLine(NULL, "「御社さま」と呼ばれるに至ったと言う説があるが、実にセンスの欠片もない。",
+		   NULL, " and that people began calling it \"o-yashiro-sama,\" or \"lord honorable shrine\"—but this doesn't make a bit of sense.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　これに関連するかわからないが、オヤシロさまを祀る高貴な血筋である古手家の人間には、オヤシロさまの血が流れているという＠
+	OutputLine(NULL, "　これに関連するかわからないが、オヤシロさまを祀る高貴な血筋である古手家の人間には、オヤシロさまの血が流れているという。",
+		   NULL, "I don't know whether this is related, but people say the Furude family, the most respected bloodline in terms of worshiping Oyashiro-sama, actually inherited his blood.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　そして古手家に伝えられる伝説では、八代続いて第一子が女子ならば、八代目のその娘はオヤシロさまの生まれ変わりである...というのだ＠
+	OutputLine(NULL, "　そして古手家に伝えられる伝説では、八代続いて第一子が女子ならば、八代目のその娘はオヤシロさまの生まれ変わりである…というのだ。",
+		   NULL, "And in the legend the Furude family passes down, if for eight generations in a row the firstborn child is a girl, the eighth daughter will be the reincarnation of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　この伝説に従うなら、オヤシロさまは「御八代さま」と書くのが正しいように思う＠（この当て字はあくまでも私の思いつきなので、真偽は確かめようもないが￥
+	OutputLine(NULL, "　この伝説に従うなら、オヤシロさまは「御八代さま」と書くのが正しいように思う。",
+		   NULL, "If we go by this legend, the characters used for Oyashiro-sama's name should be \"o\" for \"honorable,\" \"ya\" for \"eight,\" and \"shiro\" for \"generation.\"", Line_WaitForInput);
+	OutputLine(NULL, "（この当て字はあくまでも私の思いつきなので、真偽は確かめようもないが）",
+		   NULL, " (These character assignments are simply something I've thought up; there is no way to verify it.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　だとするなら、御八代さまは再び降臨することを前提にした名称ということになる＠
+	OutputLine(NULL, "　だとするなら、御八代さまは再び降臨することを前提にした名称ということになる。",
+		   NULL, "If this is true, then Oyashiro-sama would have been named as such under the assumption he would come again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　崇拝対象の再臨は、いくつかの宗教でも見受けられるので、そんなに珍しいものではない＠
+	OutputLine(NULL, "　崇拝対象の再臨は、いくつかの宗教でも見受けられるので、そんなに珍しいものではない。",
+		   NULL, "The second coming of an object of worship can be seen in several religions, so this isn't unusual.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　だが、さらにその中のいくつかでは、崇拝対象の再臨を、「審判の日」等と呼び、世界の終末を意味するものであることも忘れてはならないだろう￥
+	OutputLine(NULL, "　だが、さらにその中のいくつかでは、崇拝対象の再臨を、「審判の日」等と呼び、世界の終末を意味するものであることも忘れてはならないだろう。",
+		   NULL, "But a few of these religions call the second coming of their object of worship a \"day of judgment\" or something along those lines, and we must not forget they mean it to be the end of the world.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　村中の年寄り連中に、目に入れても痛くないくらいに甘やかされている少女、古手梨花＠
+	OutputLine(NULL, "　村中の年寄り連中に、目に入れても痛くないくらいに甘やかされている少女、古手梨花。",
+		   NULL, "Rika Furude, pampered and loved dearly by the elderly folk in the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......彼女が、その八代目、「御八代さま」であるという噂がある＠
+	OutputLine(NULL, "　……彼女が、その八代目、「御八代さま」であるという噂がある。",
+		   NULL, "...The rumors say she is the eighth generation, and Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　古手家の家系図はわからないが、少なくとも、過去２代の間、第一子が女子であることは私も確認している￥
+	OutputLine(NULL, "　古手家の家系図はわからないが、少なくとも、過去２代の間、第一子が女子であることは私も確認している。",
+		   NULL, "I do not know the family tree of the Furudes, but at the very least, I can confirm that for the past two generations, the first child has been a girl.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　雛見沢を見守る少女、古手梨花＠
+	OutputLine(NULL, "　雛見沢を見守る少女、古手梨花。",
+		   NULL, "Rika Furude watches over Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　彼女の加護を村が失ったなら、どうなるのか＠
+	OutputLine(NULL, "　彼女の加護を村が失ったなら、どうなるのか？",
+		   NULL, "If the village were to lose her protection, what would happen?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　人と鬼は和を失い、どうなるのか＠
+	OutputLine(NULL, "　人と鬼は和を失い、どうなるのか？",
+		   NULL, "Would peace between man and demon be lost?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　再び、人食い鬼たちが跋扈する地獄が再現されるのか￥
+	OutputLine(NULL, "　再び、人食い鬼たちが跋扈する地獄が再現されるのか？",
+		   NULL, "Would it once again create a hellish landscape where man-eating demons run rampant?", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　泣き、叫び、逃げ惑うしかできないひ弱な人間どもと、それらがいかに美味であったかを思い出した鬼たちの、凄惨な宴＠
+	OutputLine(NULL, "　泣き、叫び、逃げ惑うしかできないひ弱な人間どもと、それらがいかに美味であったかを思い出した鬼たちの、凄惨な宴。",
+		   NULL, "A gruesome feast of the demons, who suddenly remembered how delicious the weak humans were, who could only cry, scream, and run for their lives.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......それはどんな光景だろう＠
+	OutputLine(NULL, "　……それはどんな光景だろう。",
+		   NULL, "...What would that look like?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　想像するだけでも...胸が、躍る￥
+	OutputLine(NULL, "　想像するだけでも…胸が、躍る。",
+		   NULL, "Just imagining it... is enough to make my heart pound with excitement.", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

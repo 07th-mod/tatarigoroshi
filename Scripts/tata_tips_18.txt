@@ -1,0 +1,134 @@
+﻿void main()
+{
+
+//*Sub_Tips_062
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 2, "lsys25", 128, 0 );
+//■タイトル：　恨み帳？
+
+//　くさいと言われた＠
+	OutputLine(NULL, "　くさいと言われた。",
+		   NULL, "He said it smelled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　ご飯がくさいと言われた＠
+	OutputLine(NULL, "　ご飯がくさいと言われた。",
+		   NULL, "He said the food smelled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　くさいのは私がくさいからだと言われた＠
+	OutputLine(NULL, "　くさいのは私がくさいからだと言われた。",
+		   NULL, "He said it smelled because I smelled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　くさいのはお風呂に入ってないからだと言われた＠
+	OutputLine(NULL, "　くさいのはお風呂に入ってないからだと言われた。",
+		   NULL, "He said I smelled because I don't take baths.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　お前はくさい人間だから、毎日３回お風呂に入れと言われた＠
+	OutputLine(NULL, "　お前はくさい人間だから、毎日３回お風呂に入れと言われた。",
+		   NULL, "He said to take a bath three times a day because I was a smelly person.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　１回のお風呂も、いっぱいいっぱい入らなければならないと言われた￥
+	OutputLine(NULL, "　１回のお風呂も、いっぱいいっぱい入らなければならないと言われた。",
+		   NULL, "He said I had to stay in the bath for a long time every time.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　きっとこいつも何かに乗り移られている＠
+	OutputLine(NULL, "　きっとこいつも何かに乗り移られている。",
+		   NULL, "He must be possessed by something too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　だってこれは、死んだあの男が言っていたのと同じこと＠
+	OutputLine(NULL, "　だってこれは、死んだあの男が言っていたのと同じこと。",
+		   NULL, "This is the same thing the man who died said.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　あの男が言ったことを、どうしてこいつが知っているのか＠
+	OutputLine(NULL, "　あの男が言ったことを、どうしてこいつが知っているのか。",
+		   NULL, "Why does he know what that man said before?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　それは決まってる＠
+	OutputLine(NULL, "　それは決まってる。",
+		   NULL, "That much is obvious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　あの男に乗り移っていたものと同じものが、こいつにも乗り移っているからだ￥
+	OutputLine(NULL, "　あの男に乗り移っていたものと同じものが、こいつにも乗り移っているからだ。",
+		   NULL, "The same thing that possessed that man is now possessing him.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　私の家の前に、突然の地震で大きな裂け目でもできないだろうか＠
+	OutputLine(NULL, "　私の家の前に、突然の地震で大きな裂け目でもできないだろうか。",
+		   NULL, "Can't a sudden earthquake make a big hole in front of the house?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　できたならきっと、あいつはそれを覗き込むに違いない＠
+	OutputLine(NULL, "　できたならきっと、あいつはそれを覗き込むに違いない。",
+		   NULL, "If it did, he would definitely go and look into it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　そうしたら、あとはドンと突き落とすのみ＠
+	OutputLine(NULL, "　そうしたら、あとはドンと突き落とすのみ。",
+		   NULL, "And then I just have to push him in.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　そのチャンスが訪れるまで、私は負けたりなんかしない￥
+	OutputLine(NULL, "　そのチャンスが訪れるまで、私は負けたりなんかしない。",
+		   NULL, "I won't give in until I get that chance.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+	PlayBGM( 1, "msys12", 128, 0 );
+//　負けるもんか泣くもんか＠
+	OutputLine(NULL, "　負けるもんか泣くもんか。",
+		   NULL, "I won't give in, I won't cry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　負けるもんか泣くもんか＠
+	OutputLine(NULL, "　負けるもんか泣くもんか。",
+		   NULL, "I won't give in, I won't cry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　あぁ、また誰かが謝りだす...￥
+	OutputLine(NULL, "　あぁ、また誰かが謝りだす…。",
+		   NULL, "Ahh, someone is apologizing again...", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}
