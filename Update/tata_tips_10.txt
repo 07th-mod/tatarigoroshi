@@ -1,0 +1,173 @@
+﻿void main()
+{
+
+//*Sub_Tips_054
+//gosub *tip_s
+//!s50
+//■条文
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	SetSpeedOfMessage( TRUE, 100, );
+	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//第二条（児童虐待の定義）
+	OutputLine(NULL, "第二条（児童虐待の定義）",
+		   NULL, "Article 2 (Definition of Child Abuse)", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　「児童虐待」とは、保護者（親権を行う者、未成年後見人その他の者で、児童を現に監護するものをいう。以下同じ）が/
+	OutputLine(NULL, "　「児童虐待」とは、保護者（親権を行う者、未成年後見人その他の者で、児童を現に監護するものをいう。以下同じ）が",
+		   NULL, "The term \"child abuse\" means the following acts committed by a custodian (meaning a person who exercises parental authority, a guardian of a minor or other person who is currently engaged in the custody of a child; hereinafter the same shall apply)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//その監護する児童（十八歳に満たない者をいう。以下同じ）に対し、次に掲げる行為をすることをいう。/
+	OutputLine(NULL, "その監護する児童（十八歳に満たない者をいう。以下同じ）に対し、次に掲げる行為をすることをいう。",
+		   NULL, " against a child (meaning a person who is under 18 years of age; hereinafter the same shall apply):", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+
+//一　児童の身体に外傷を生じ、又は生じるおそれのある暴行を加えること。
+	OutputLine(NULL, "一　児童の身体に外傷を生じ、又は生じるおそれのある暴行を加えること。",
+		   NULL, "(i) Assault the child in a manner that will cause or is likely to cause external injury on the body of a child;", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//二　児童にわいせつな行為をすること又は児童をしてわいせつな行為をさせること。
+	OutputLine(NULL, "二　児童にわいせつな行為をすること又は児童をしてわいせつな行為をさせること。",
+		   NULL, "(ii) Engage in indecency against the child or cause the child to engage in indecency;", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//三　児童の心身の正常な発育を妨げるような著しい減食又は長時間の放置その他の保護者としての監護を著しく怠ること。
+	OutputLine(NULL, "三　児童の心身の正常な発育を妨げるような著しい減食又は長時間の放置その他の保護者としての監護を著しく怠ること。",
+		   NULL, "(iii) Substantially reduce the amount of food for the child or abandon and neglect the child for a long time period in a manner that may interfere with normal development of the child mentally or physically, or otherwise materially fail to perform the duty of a custodian; or", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//四　児童に著しい心理的外傷を与える言動を行うこと。/
+	OutputLine(NULL, "四　児童に著しい心理的外傷を与える言動を行うこと。",
+		   NULL, "(iv) Speak or behave in a manner that would be significantly traumatic to the child.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//第三条（児童に対する虐待の禁止）
+	OutputLine(NULL, "第三条（児童に対する虐待の禁止）",
+		   NULL, "Article 3 (Prohibition of Child Abuse)", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//　何人も、児童に対し、虐待をしてはならない。
+	OutputLine(NULL, "　何人も、児童に対し、虐待をしてはならない。",
+		   NULL, "No person shall abuse a child.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n\n", Line_ContinueAfterTyping);
+
+//　　平成十二年五月二十四日号外法律第八十二号
+	OutputLine(NULL, "　　平成十二年五月二十四日号外法律第八十二号",
+		   NULL, "Law number: Act No. 82 of 2000", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//!s0　　　　　　　　　　　!s50＜法務・厚生大臣署名＞
+	OutputLine(NULL, "　　　　　　　　　　　",
+		   NULL, "", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//!s0　　　　　　!s50『児童虐待の防止等に関する法律』
+	OutputLine(NULL, "＜法務・厚生大臣署名＞",
+		   NULL, "<Authored by the Minister of Health and Welfare>", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//!s0　　　　　　　　　　　　!s50第二条・第三条より/
+	OutputLine(NULL, "　　　　　　",
+		   NULL, "", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0, );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

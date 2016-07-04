@@ -1,0 +1,143 @@
+﻿void main()
+{
+
+//*Sub_Tips_059
+//gosub *tip_s
+//■タイトル：　地獄の業火
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 2, "lsys17", 128, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawSceneWithMask( "bg_011", "up", 0, 0, 300 );
+	FadeOutBGM( 2, 10, TRUE );
+
+//「はいもしもし＠救急ですか、消防ですか。＠
+	OutputLine(NULL, "「はいもしもし。",
+		   NULL, "\"Hello?", Line_WaitForInput);
+	OutputLine(NULL, "救急ですか、消防ですか。」",
+		   NULL, " Do you need the hospital or the fire department?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「え、っと...消防です！￥
+	OutputLine(NULL, "「え、っと…消防です！」",
+		   NULL, "\"Err... the fire department!\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "msys15", 128, 0 );
+
+//「火事ですか、事故ですか＠　落ち着いて話してください。＠
+	OutputLine(NULL, "「火事ですか、事故ですか？",
+		   NULL, "\"Is there a fire, or some other accident?", Line_WaitForInput);
+	OutputLine(NULL, "　落ち着いて話してください。」",
+		   NULL, " Please speak slowly and calmly.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「た、多分、火事だと思います...＠こちらはＸＸ高速のＸＸサービスエリアなんですけどね、...裏の山から何だかすっごい火と煙が上がってるのが見えるんですよ＠あんなところ、誰も立ち入らないから、何で火がついてるのかよくわかんないですけど...＠とにかく、連絡した方がいいと思って...＠　山火事にならないとも限らないし！￥
+	OutputLine(NULL, "「た、多分、火事だと思います…。",
+		   NULL, "\"I-I think it's a fire...", Line_WaitForInput);
+	OutputLine(NULL, "こちらはＸＸ高速のＸＸサービスエリアなんですけどね、…裏の山から何だかすっごい火と煙が上がってるのが見えるんですよ。",
+		   NULL, " This is the _____ rest area on the ____ Highway... I can see a ton of fire and smoke coming up from the mountains behind us.", Line_WaitForInput);
+	OutputLine(NULL, "あんなところ、誰も立ち入らないから、何で火がついてるのかよくわかんないですけど…。",
+		   NULL, " Nobody goes back there, so I don't know why anything got lit on fire...", Line_WaitForInput);
+	OutputLine(NULL, "とにかく、連絡した方がいいと思って…！",
+		   NULL, " Anyway, I figured I should let you know...!", Line_WaitForInput);
+	OutputLine(NULL, "　山火事にならないとも限らないし！」",
+		   NULL, " It could turn into a forest fire!\"", Line_Normal);
+	ClearMessage();
+
+//「わかりました＠すぐに現場を確認しますので、そちら様のお名前とすぐに連絡のつく電話番号、それから火災現場の詳細な場所をお願いします。￥
+	OutputLine(NULL, "「わかりました。",
+		   NULL, "\"I understand.", Line_WaitForInput);
+	OutputLine(NULL, "すぐに現場を確認しますので、そちら様のお名前とすぐに連絡のつく電話番号、それから火災現場の詳細な場所をお願いします。」",
+		   NULL, " I need to know exactly where you are, so please tell me your name, a phone number we can use to get in touch with you, and the exact location of the fire.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+
+//「消防司令部より通達＠ＸＸ山西側斜面にて不審火の通報あり＠街道から離れてることから、カップルの焚き火か、不法投棄のゴミに放火したかの可能性があります＠現場は深い森林地帯＠周辺に民家はないが、延焼の可能性あり＠直ちに現場を確認されたし。￥
+	OutputLine(NULL, "「消防司令部より通達。",
+		   NULL, "\"Notice from the fire department headquarters.", Line_WaitForInput);
+	OutputLine(NULL, "ＸＸ山西側斜面にて不審火の通報あり。",
+		   NULL, " We have a report of a suspicious fire on the western slopes of the _____ Mountain.", Line_WaitForInput);
+	OutputLine(NULL, "街道から離れてることから、カップルの焚き火か、不法投棄のゴミに放火したかの可能性があります。",
+		   NULL, " Given its distance from the road, it could be a couple's bonfire or someone unlawfully burning trash.", Line_WaitForInput);
+	OutputLine(NULL, "現場は深い森林地帯。",
+		   NULL, " The location is deep in the woods.", Line_WaitForInput);
+	OutputLine(NULL, "周辺に民家はないが、延焼の可能性あり。",
+		   NULL, " No homes in the area, but the fire could spread.", Line_WaitForInput);
+	OutputLine(NULL, "直ちに現場を確認されたし。」",
+		   NULL, " Immediately go to the site to verify.\"", Line_Normal);
+	ClearMessage();
+
+//「消防署ですか＠こちらはＸＸ地区消防分団です＠通報の現場にさっき到着＠ドラム缶がひとつ山中に放棄され、炎上しているのを確認しました＠火は鎮火しつつあり、延焼の可能性はなし＠/
+	OutputLine(NULL, "「消防署ですか。",
+		   NULL, "\"Is this the fire station?", Line_WaitForInput);
+	OutputLine(NULL, "こちらはＸＸ地区消防分団です。",
+		   NULL, " This is the ____ District fire department branch.", Line_WaitForInput);
+	OutputLine(NULL, "通報の現場にさっき到着。",
+		   NULL, " We arrived moments ago at the reported area.", Line_WaitForInput);
+	OutputLine(NULL, "ドラム缶がひとつ山中に放棄され、炎上しているのを確認しました。",
+		   NULL, " Fire confirmed to be a burning oil drum left in the mountains.", Line_WaitForInput);
+	OutputLine(NULL, "火は鎮火しつつあり、延焼の可能性はなし。",
+		   NULL, " The fire is calming, and there is no chance it will spread.", Line_WaitForInput);
+
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//......で、!w1000......その、!w800.........ドラム缶の中に、...多分、人じゃないかと思うんです＠人らしきものが灯油か何かで焼かれた...という感じで＠......その、......警察の人にも連絡した方がいいんじゃないかと思いまして...。＠
+	OutputLine(NULL, "………で、",
+		   NULL, " ......And...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……その、",
+		   NULL, " well......", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "………ドラム缶の中に、…多分、人じゃないかと思うんです。",
+		   NULL, " in the oil drum... I think it might be a person.", Line_WaitForInput);
+	OutputLine(NULL, "人らしきものが灯油か何かで焼かれた…という感じで。",
+		   NULL, " Like, a person burned with kerosene... or something.", Line_WaitForInput);
+	OutputLine(NULL, "……その、……警察の人にも連絡した方がいいんじゃないかと思いまして…。」",
+		   NULL, " ...Well... I think maybe we should get the police over here...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	PlayBGM( 1, "msys08", 128, 0 );
+
+//「わ、...わ！＠　まま、間違いねぇよ！＠　これ、人だよ！＠　ひぇえぇええ......！！￥
+	OutputLine(NULL, "「わ、…わ！！",
+		   NULL, "\"Ah... ah!!", Line_WaitForInput);
+	OutputLine(NULL, "　まま、間違いねぇよ！！",
+		   NULL, " T-T-There's no mistaking it!!", Line_WaitForInput);
+	OutputLine(NULL, "　これ、人だよ！！",
+		   NULL, " This is a person!!", Line_WaitForInput);
+	OutputLine(NULL, "　ひぇえぇええ……！！」",
+		   NULL, " Eeeeeeek...!!\"", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}
