@@ -35,23 +35,23 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] tata_013_02.txt
 - [ ] tata_014.txt    
 - [x] tata_ep01.txt   
-- [ ] tata_ep02.txt   
+- [ ] **tata_ep02.txt**   
 - [x] tata_tips_01.txt
 - [x] tata_tips_02.txt
 - [x] tata_tips_03.txt
 - [x] tata_tips_04.txt
-- [ ] **tata_tips_05.txt**
-- [ ] tata_tips_06.txt
-- [ ] tata_tips_07.txt
-- [ ] tata_tips_08.txt
-- [ ] tata_tips_09.txt
-- [ ] tata_tips_10.txt
-- [ ] tata_tips_11.txt
-- [ ] tata_tips_12.txt
-- [ ] tata_tips_13.txt
-- [ ] tata_tips_14.txt
-- [ ] tata_tips_15.txt
-- [ ] tata_tips_16.txt
-- [ ] tata_tips_17.txt
-- [ ] tata_tips_18.txt
-- [ ] tata_tips_19.txt
+- [x] tata_tips_05.txt
+- [x] tata_tips_06.txt
+- [x] tata_tips_07.txt
+- [x] tata_tips_08.txt
+- [x] tata_tips_09.txt
+- [x] tata_tips_10.txt
+- [x] tata_tips_11.txt
+- [x] tata_tips_12.txt
+- [x] tata_tips_13.txt
+- [x] tata_tips_14.txt
+- [x] tata_tips_15.txt
+- [x] tata_tips_16.txt
+- [x] tata_tips_17.txt
+- [x] tata_tips_18.txt
+- [x] tata_tips_19.txt
