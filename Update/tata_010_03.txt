@@ -265,6 +265,7 @@
 	DrawSceneWithMask( "bg_170", "right", 0, 0, 300 );
 
 //「これまでの推理小説の中で、母さんが一番よく出来たと思った完全犯罪？￥
+	PlaySE(4, "S03/00/142700005", 128, 64);
 	OutputLine(NULL, "「これまでの推理小説の中で、母さんが一番よく出来たと思った完全犯罪？」",
 		   NULL, "\"What do I think the most well-done perfect crime in all the mystery novels I've read is?\"", Line_Normal);
 	ClearMessage();
@@ -275,15 +276,19 @@
 //　......誤魔化そうとするお袋を何とかおだてて、答えを引き出す...￥
 	OutputLine(NULL, "「……うん。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100551", 128, 64);
 	OutputLine(NULL, "母さんって結構たくさん推理小説を読んでるでしょ。",
 		   NULL, " Well, you read quite a lot of them, right?", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100552", 128, 64);
 	OutputLine(NULL, "そういうの詳しいかなって思って。」",
 		   NULL, " I figured you might know a lot about them.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/00/142700006", 128, 64);
 	OutputLine(NULL, "「それを読むから楽しいのよ。",
 		   NULL, "\"It's more fun to read them to find out.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700007", 128, 64);
 	OutputLine(NULL, "初めからトリックを教えちゃったら楽しみがなくなっちゃうわ。」",
 		   NULL, " If I told you all the tricks right off the bat, they'd be no fun anymore.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -309,13 +314,16 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100553", 128, 64);
 	OutputLine(NULL, "「……母さんの好きな小説のタイトルが知りたいんじゃないよ。",
 		   NULL, "\"...I didn't want to know which novels you liked.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100554", 128, 64);
 	OutputLine(NULL, "母さんが一番舌を巻いた完全トリックが知りたいんだよ。」",
 		   NULL, " I wanted to know about the trick that made you the most surprised.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/00/142700010", 128, 64);
 	OutputLine(NULL, "「本当に完全なトリックだったら、名探偵に解く余地がないじゃない。」",
 		   NULL, "\"If it was really a perfect trick, the detectives wouldn't be able to solve the case, though.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -329,17 +337,22 @@
 
 //「推理小説は、解ける謎をいかに解くかの過程を楽しむものよ＠解けない謎だったら、それは推理小説の題材になりえないわね...。＠
 //「...そっか＠...そりゃそうだよな＠主人公に解けなかったら、...お話として成立しないもんな...。￥
+	PlaySE(4, "S03/00/142700011", 128, 64);
 	OutputLine(NULL, "「推理小説は、解ける謎をいかに解くかの過程を楽しむものよ。",
 		   NULL, "\"Mystery novels are enjoyable because of the process of the mysteries getting solved.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700012", 128, 64);
 	OutputLine(NULL, "解けない謎だったら、それは推理小説の題材になりえないわね…。」",
 		   NULL, " If it was unsolvable, it wouldn't make a very good topic for a novel...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100555", 128, 64);
 	OutputLine(NULL, "「…そっか。",
 		   NULL, "\"...I get it.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100556", 128, 64);
 	OutputLine(NULL, "…そりゃそうだよな。",
 		   NULL, " ...Yeah, you're right.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100557", 128, 64);
 	OutputLine(NULL, "主人公に解けなかったら、…お話として成立しないもんな…。」",
 		   NULL, " If the main character can't solve it... it wouldn't be much of a story, huh...\"", Line_Normal);
 	ClearMessage();
@@ -374,8 +387,10 @@
 
 //「ということは圭一＠...真の完全犯罪は物語にすらならない、というのがわかるかしら？＠
 //　お袋が知的な眼差しで、悪戯っぽく笑った＠
+	PlaySE(4, "S03/00/142700013", 128, 64);
 	OutputLine(NULL, "「ということは圭一。",
 		   NULL, "\"By the way, Keiichi.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700014", 128, 64);
 	OutputLine(NULL, "…真の完全犯罪は物語にすらならない、というのがわかるかしら？」",
 		   NULL, " ...Do you understand that truly perfect crimes don't even become stories?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -399,17 +414,20 @@
 
 //「圭一、物語の最低構成要素は？＠
 //「起承転結。￥
+	PlaySE(4, "S03/00/142700016", 128, 64);
 	OutputLine(NULL, "「圭一、物語の最低構成要素は？」",
 		   NULL, "\"Keiichi, what are the essential parts of a story?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100558", 128, 64);
 	OutputLine(NULL, "「起承転結。」",
 		   NULL, "\"A beginning, a middle, and an end?\"", Line_Normal);
 	ClearMessage();
 
 //「正解＠特に肝心なのは、当たり前だけど、「起」に当たる部分よ＠スタートの「起」がなかったら、そもそも物語は始まらない。＠
 //「そりゃそうだよ＠...何も起こらなかったら何も始まらない。￥
+	PlaySE(4, "S03/00/142700017", 128, 64);
 	OutputLine(NULL, "「正解。",
 		   NULL, "\"Correct.", Line_WaitForInput);
 	OutputLine(NULL, "特に肝心なのは、当たり前だけど、「起」に当たる部分よ。",
@@ -419,8 +437,10 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100559", 128, 64);
 	OutputLine(NULL, "「そりゃそうだよ。",
 		   NULL, "\"Well, yeah.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100560", 128, 64);
 	OutputLine(NULL, "…何も起こらなかったら何も始まらない。」",
 		   NULL, " ...If nothing happened, nothing would begin.\"", Line_Normal);
 	ClearMessage();
@@ -428,14 +448,19 @@
 //「そう＠何も起こらないから事件にもならない＠探偵も呼ばれないから推理もない＠推理がないなら解決もない＠...つまり、これが究極の完全犯罪。＠
 //「.........え、!w1000............ちょ、ちょっと待って＠...もう一度説明してくれるかな...！＠
 //　今お袋は...何かとてつもないことを教えてくれた＠
+	PlaySE(4, "S03/00/142700020", 128, 64);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"Right.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700021", 128, 64);
 	OutputLine(NULL, "何も起こらないから事件にもならない。",
 		   NULL, " Nothing happened, so there wouldn't even be an incident.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700022", 128, 64);
 	OutputLine(NULL, "探偵も呼ばれないから推理もない。",
 		   NULL, " Detectives wouldn't be called, so there wouldn't be any mystery.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700023", 128, 64);
 	OutputLine(NULL, "推理がないなら解決もない。",
 		   NULL, " There would be no mystery, so there would be no solution.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700024", 128, 64);
 	OutputLine(NULL, "…つまり、これが究極の完全犯罪。」",
 		   NULL, " ...In other words, it would be the ultimate perfect crime.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -448,8 +473,10 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S03/01/140100561", 128, 64);
 	OutputLine(NULL, "…………ちょ、ちょっと待って。",
 		   NULL, " ...Wait a second.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100562", 128, 64);
 	OutputLine(NULL, "…もう一度説明してくれるかな…！」",
 		   NULL, " ...Could you explain that again...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -468,8 +495,10 @@
 
 //「そんな難しい話じゃないわよ＠...そもそも、事件が発覚しなければいいだけの話。＠
 //「......そもそも、!w800......発覚しない事件。￥
+	PlaySE(4, "S03/00/142700025", 128, 64);
 	OutputLine(NULL, "「そんな難しい話じゃないわよ。",
 		   NULL, "\"It's not really that difficult to understand.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700026", 128, 64);
 	OutputLine(NULL, "…そもそも、事件が発覚しなければいいだけの話。」",
 		   NULL, " ...The incident just has to never come to light, that's all.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -493,21 +522,26 @@
 //「うん...。￥
 	OutputLine(NULL, "「つまり、……うーん、例えばよ。",
 		   NULL, "\"For example... Hmm, how about this?", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700028", 128, 64);
 	OutputLine(NULL, "誰も立ち入らない深い森の奥で、おじいさんが一人暮らしをしているとする。」",
 		   NULL, " Say there's an old man living deep in a forest nobody goes into.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100564", 128, 64);
 	OutputLine(NULL, "「うん…。」",
 		   NULL, "\"Uh-huh...\"", Line_Normal);
 	ClearMessage();
 
 //「そのおじいさんがある日、斧で殺されました＠...ちなみに犯人は、...うーん、じゃあおじいさんの息子ね＠おじいさんの家に来て一緒にお酒を飲んでいたんだけど、ちょっと喧嘩になって、殺してしまった。＠
 //　......内容としては極めてチープだ＠
+	PlaySE(4, "S03/00/142700029", 128, 64);
 	OutputLine(NULL, "「そのおじいさんがある日、斧で殺されました。",
 		   NULL, "\"And one day, the old man gets killed by an axe.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700030", 128, 64);
 	OutputLine(NULL, "…ちなみに犯人は、…うーん、じゃあおじいさんの息子ね。",
 		   NULL, " ...And, hmm... Let's say the criminal was the old man's son.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700031", 128, 64);
 	OutputLine(NULL, "おじいさんの家に来て一緒にお酒を飲んでいたんだけど、ちょっと喧嘩になって、殺してしまった。」",
 		   NULL, " He went to the old man's house and they were drinking together, but they got into a fight and he killed him.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -525,14 +559,19 @@
 	ClearMessage();
 
 //「でも圭一＠そこはとてもとても深い森の中の一軒家なの＠普段は絶対に誰も訪れない深い山奥の深い深ーい森の中＠......さて、殺した息子は町に帰ってきてこう言うの＠おじいさんは元気だった、って。￥
+	PlaySE(4, "S03/00/142700032", 128, 64);
 	OutputLine(NULL, "「でも圭一。",
 		   NULL, "\"But Keiichi.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700033", 128, 64);
 	OutputLine(NULL, "そこはとてもとても深い森の中の一軒家なの。",
 		   NULL, " The house was really, really deep in this forest.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700034", 128, 64);
 	OutputLine(NULL, "普段は絶対に誰も訪れない深い山奥の深い深ーい森の中。",
 		   NULL, " So deep in the mountains that nobody would ever go out that far.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700035", 128, 64);
 	OutputLine(NULL, "……さて、殺した息子は町に帰ってきてこう言うの。",
 		   NULL, " ...Then his son would go back to town and say...", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700036", 128, 64);
 	OutputLine(NULL, "おじいさんは元気だった、って。」",
 		   NULL, " that the old man was doing fine.\"", Line_Normal);
 	ClearMessage();
@@ -540,6 +579,7 @@
 //「......それのどこが完全犯罪なの？＠
 //「圭一＠...この事件はね、おじいさんが殺されているのが見つかって初めて「起」を迎えるのよ＠...もしもこの後、誰もおじいさんの家を訪れなかったら、永久に「起」は訪れない。＠
 //　.........「起」が訪れない...￥
+	PlaySE(4, "S03/01/140100565", 128, 64);
 	OutputLine(NULL, "「……それのどこが完全犯罪なの？」",
 		   NULL, "\"...What about that is a perfect crime?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -562,23 +602,31 @@
 
 //「だからつまり、物語は始まらない＠事件が発覚しないから探偵も呼ばれない＠そもそも誰も不審に思わないから謎も起こらない＠...おじいさんは今日もひとりでのんびり森の奥で暮らしているんだろうね...＠で、お空におじいさんの顔が浮かんでジ・エンド＠......どう、こんな感じで？＠
 //「......す、......すごいじゃないか...！＠　それ、ちゃんとしたトリックだよ？！￥
+	PlaySE(4, "S03/00/142700040", 128, 64);
 	OutputLine(NULL, "「だからつまり、物語は始まらない。",
 		   NULL, "\"So basically, the story wouldn't start.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700041", 128, 64);
 	OutputLine(NULL, "事件が発覚しないから探偵も呼ばれない。",
 		   NULL, " The incident wouldn't come to light, and they wouldn't call in detectives.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700042", 128, 64);
 	OutputLine(NULL, "そもそも誰も不審に思わないから謎も起こらない。",
 		   NULL, " And nobody would be suspicious in the first place, so there'd be no mystery.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700043", 128, 64);
 	OutputLine(NULL, "…おじいさんは今日もひとりでのんびり森の奥で暮らしているんだろうね…。",
 		   NULL, " ...They'd think the old man was still living by himself deep in the forest...", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700044", 128, 64);
 	OutputLine(NULL, "で、お空におじいさんの顔が浮かんでジ・エンド。",
 		   NULL, " And the old man's face would appear in the sky, and that would be it.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700045", 128, 64);
 	OutputLine(NULL, "……どう、こんな感じで？」",
 		   NULL, " ...Something like that, you know?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100566", 128, 64);
 	OutputLine(NULL, "「……す、……すごいじゃないか…！！",
 		   NULL, "\"...That... That's amazing...!!", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100567", 128, 64);
 	OutputLine(NULL, "　それ、ちゃんとしたトリックだよ？！」",
 		   NULL, " That's a pretty great trick!\"", Line_Normal);
 	ClearMessage();
@@ -588,10 +636,13 @@
 
 //「でも娯楽小説にはならないわね＠推理小説は所詮、娯楽書＠完全犯罪の指南書にはなり得ないんだから。＠
 //　...お袋を茶化すため、努めて明るく会話をしていたが...その胸中は興奮していた＠
+	PlaySE(4, "S03/00/142700046", 128, 64);
 	OutputLine(NULL, "「でも娯楽小説にはならないわね。",
 		   NULL, "\"But it wouldn't be a novel.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700047", 128, 64);
 	OutputLine(NULL, "推理小説は所詮、娯楽書。",
 		   NULL, " Mystery novels are for entertainment, after all.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700048", 128, 64);
 	OutputLine(NULL, "完全犯罪の指南書にはなり得ないんだから。」",
 		   NULL, " They can't be instruction manuals for perfect crimes.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -716,6 +767,7 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S14/28/VT4Bb_tomoe3256", 128, 64);
 	OutputLine(NULL, "時間、",
 		   NULL, " what time,", Line_ContinueAfterTyping);
 
@@ -1049,6 +1101,7 @@
 
 //「..................馬鹿馬鹿しい。＠
 //　つまらない妄想で貴重な思考時間を浪費したことを不快に思った￥
+	PlaySE(4, "S03/01/140100568", 128, 64);
 	OutputLine(NULL, "「………………馬鹿馬鹿しい。」",
 		   NULL, "\"......That's ridiculous.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1088,8 +1141,10 @@
 
 //「.........あった、......北条......＠......間違いない。＠
 //　...１人にロッカーは１つなのに、なんで沙都子にだけ２つロッカーがある＠　と騒いだことがあった＠
+	PlaySE(4, "S03/01/140100569", 128, 64);
 	OutputLine(NULL, "「………あった、……北条……。",
 		   NULL, "\"...Here it is... Houjou...", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100570", 128, 64);
 	OutputLine(NULL, "……間違いない。」",
 		   NULL, " ...This has to be it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1167,6 +1222,7 @@
 
 //　そう＠
 //　............悟史は、監督の少年野球チームの入っていた＠
+	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1196,6 +1252,7 @@
 	ClearMessage();
 
 //　そう＠...これが、このバットを選びたかった理由＠
+	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "…これが、このバットを選びたかった理由。",

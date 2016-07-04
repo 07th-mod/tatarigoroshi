@@ -46,6 +46,7 @@
 
 
 //「あー、車両ナンバー照会をお願いします＠ＸＸ、ＸのＸＸＸＸ。＠
+	PlaySE(4, "S12/11/280700253", 128, 64);
 	OutputLine(NULL, "「あー、車両ナンバー照会をお願いします。",
 		   NULL, "\"Hello, we'd like you to look up a license plate for us.", Line_WaitForInput);
 	OutputLine(NULL, "ＸＸ、ＸのＸＸＸＸ。」",
@@ -56,12 +57,14 @@
 //「復唱、ＸＸ、ＸのＸＸＸＸ＠少々お時間もらいますがよろしいですかー？＠
 	OutputLine(NULL, "「復唱、ＸＸ、ＸのＸＸＸＸ。",
 		   NULL, "\"XX, X-XXXX, all right.", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiA_2003", 128, 64);
 	OutputLine(NULL, "少々お時間もらいますがよろしいですかー？」",
 		   NULL, " Please give us just a moment to look it up.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「お願いします。￥
+	PlaySE(4, "S12/11/280700255", 128, 64);
 	OutputLine(NULL, "「お願いします。」",
 		   NULL, "\"Thank you.\"", Line_Normal);
 	ClearMessage();
@@ -158,61 +161,78 @@
 //「興宮ＳＰより大石車どうぞー＠先ほどのナンバーが判明しましたー＠........................大石車どうぞー＠　.................................大石車、応答願います＠..................あれ＠　............電波、悪いのかな.....................＠......大石車応答ねが..................。￥
 	OutputLine(NULL, "「興宮ＳＰより大石車どうぞー。",
 		   NULL, "\"Okinomiya Security Police to Ooishi.", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiA_2005", 128, 64);
 	OutputLine(NULL, "先ほどのナンバーが判明しましたー。",
 		   NULL, " We found the license plate from earlier.", Line_WaitForInput);
+	PlaySE(4, "S20/00/VTP_OkeijiA_3004", 128, 64);
 	OutputLine(NULL, "……………………大石車どうぞー？",
 		   NULL, " ............Ooishi, do you read?", Line_WaitForInput);
+	PlaySE(4, "S20/00/VTP_OkeijiA_3005", 128, 64);
 	OutputLine(NULL, "　……………………………大石車、応答願います。",
 		   NULL, " ...............Ooishi, please respond.", Line_WaitForInput);
+	PlaySE(4, "S20/06/440600160", 128, 64);
 	OutputLine(NULL, "………………あれ？",
 		   NULL, " .........Hmm?", Line_WaitForInput);
 	OutputLine(NULL, "　…………電波、悪いのかな…………………。",
 		   NULL, " ......Am I getting a bad signal.........?", Line_WaitForInput);
+	PlaySE(4, "S20/00/VTP_OkeijiA_3007", 128, 64);
 	OutputLine(NULL, "……大石車応答ねが………………。」",
 		   NULL, " ...Anyone in Ooishi's car, please re—\"", Line_Normal);
 	ClearMessage();
 
 //「出ませんね。＠
+	PlaySE(4, "S20/00/VTP_OkeijiA_3008", 128, 64);
 	OutputLine(NULL, "「出ませんね。」",
 		   NULL, "\"Nothing, eh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「大石さんが車両照会＠　誰の車だよ。￥
+	PlaySE(4, "S12/00/VTP_OkeijiB_2001", 128, 64);
 	OutputLine(NULL, "「大石さんが車両照会？",
 		   NULL, "\"Ooishi-san wanted a license plate check?", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiB_2002", 128, 64);
 	OutputLine(NULL, "　誰の車だよ。」",
 		   NULL, " Whose car was it?\"", Line_Normal);
 	ClearMessage();
 
 //「村人の車ですね＠......至って平凡な。＠
+	PlaySE(4, "S12/00/VTP_OkeijiA_2012", 128, 64);
 	OutputLine(NULL, "「村人の車ですね。",
 		   NULL, "\"Someone from the village.", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiA_2013", 128, 64);
 	OutputLine(NULL, "……至って平凡な。」",
 		   NULL, " ...A completely average car.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「...何者だよ＠大石さんが聞いてくるからには、只者じゃないんだろ？＠
+	PlaySE(4, "S12/00/VTP_OkeijiB_2003", 128, 64);
 	OutputLine(NULL, "「…何者だよ。",
 		   NULL, "\"...Who was it?", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiB_2004", 128, 64);
 	OutputLine(NULL, "大石さんが聞いてくるからには、只者じゃないんだろ？」",
 		   NULL, " If Ooishi-san was asking, then it can't be anyone good, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「特記事項欄は完全に空欄ですね＠Ｓ号指定もなし＠減点もなしだし。￥
+	PlaySE(4, "S12/00/VTP_OkeijiA_2014", 128, 64);
 	OutputLine(NULL, "「特記事項欄は完全に空欄ですね。",
 		   NULL, "\"The special mentions column is completely blank.", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiA_2015", 128, 64);
 	OutputLine(NULL, "Ｓ号指定もなし。",
 		   NULL, " No indication it's related to the S-group, either.", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiA_2016", 128, 64);
 	OutputLine(NULL, "減点もなしだし。」",
 		   NULL, " And no demerits on it.\"", Line_Normal);
 	ClearMessage();
 
 //「...ははは、パッシングでもされて腹が立ったんじゃないの＠　あの人、根に持つとなかなか忘れないタイプなんだよ。￥
+	PlaySE(4, "S12/00/VTP_OkeijiC_2001", 128, 64);
 	OutputLine(NULL, "「…ははは、パッシングでもされて腹が立ったんじゃないの？",
 		   NULL, "\"...Hahaha. Maybe it passed him on the road and he got mad.", Line_WaitForInput);
+	PlaySE(4, "S12/00/VTP_OkeijiC_2002", 128, 64);
 	OutputLine(NULL, "　あの人、根に持つとなかなか忘れないタイプなんだよ。」",
 		   NULL, " That guy isn't the type to forget a grudge.\"", Line_Normal);
 	ClearMessage();
