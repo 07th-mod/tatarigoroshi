@@ -38,9 +38,9 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] tata_ep02.txt   
 - [x] tata_tips_01.txt
 - [x] tata_tips_02.txt
-- [ ] **tata_tips_03.txt**
-- [ ] tata_tips_04.txt
-- [ ] tata_tips_05.txt
+- [x] tata_tips_03.txt
+- [x] tata_tips_04.txt
+- [ ] **tata_tips_05.txt**
 - [ ] tata_tips_06.txt
 - [ ] tata_tips_07.txt
 - [ ] tata_tips_08.txt
