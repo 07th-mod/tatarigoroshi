@@ -1,0 +1,415 @@
+﻿void main()
+{
+
+
+//■エピローグ
+
+	FadeOutBGM( 0, 1000, FALSE );
+//	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	PlayBGM( 1, "msys28", 128, 0 );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	DisableWindow();
+	DrawScene( "bg_047", 1000 );
+
+//!s100
+	SetSpeedOfMessage( TRUE, 100, );
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//locate 4,6
+//　昭和５８年６月２２日未明。
+	OutputLine(NULL, "　昭和５８年６月２２日未明。",
+		   NULL, "June 22, 1983, early morning.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　Ｘｘ県鹿骨市雛見沢村で、広域災害が発生。
+	OutputLine(NULL, "　ＸＸ県鹿骨市雛見沢村で、広域災害が発生。",
+		   NULL, "A widespread disaster occurred in Hinamizawa Village, Shishibone, ___ Prefecture.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawScene( "bg_159", 400 );
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。
+	OutputLine(NULL, "　雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。",
+		   NULL, "Volcanic gas (carbon dioxide and hydrogen sulfide) erupted from Onigafuchi Swamp, one of the Hinamizawa area's water sources, and spread through the entire village.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　犠牲者１２００余名。
+	OutputLine(NULL, "　犠牲者１２００余名。",
+		   NULL, "There were 1200 victims.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　行方不明者２０余名。
+	OutputLine(NULL, "　行方不明者２０余名。",
+		   NULL, "20 have gone missing.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　周辺自治体から約６０万人が避難する空前の大災害となった。
+	OutputLine(NULL, "　周辺自治体から約６０万人が避難する空前の大災害となった。",
+		   NULL, "The catastrophe was unprecedented, forcing local governments to evacuate approximately six hundred thousand people.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　その後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、/
+	OutputLine(NULL, "　その後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、",
+		   NULL, "According to later investigations, magma pools and hot springs were uncovered directly under Onigafuchi Swamp,", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//そこより湧き出したガスが、災害の原因であると断定した。
+	OutputLine(NULL, "そこより湧き出したガスが、災害の原因であると断定した。",
+		   NULL, " and the gas that gushed from it was determined to be the cause of the disaster.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawScene( "bg_203", 400 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。
+	OutputLine(NULL, "　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。",
+		   NULL, "In addition, directly after the incident broke out, many came forth claiming this disaster was a curse based in Hinamizawa Village legends, first sparking a wave of chaos.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、/
+	OutputLine(NULL, "　雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、",
+		   NULL, "There were apparently local legends of a curse spreading a miasma, destroying the village,", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。
+	OutputLine(NULL, "学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。",
+		   NULL, " and some scholars believe a similar gas disaster may have happened in the past and remained part of these legends.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawScene( "bg_182", 400 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。
+	OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
+		   NULL, "More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、/
+	OutputLine(NULL, "　また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、",
+		   NULL, "In addition, relatives of those in Hinamizawa Village who had escaped the disaster complained of sickness afterwards and were hospitalized.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。
+	OutputLine(NULL, "その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。",
+		   NULL, " Some of them even died of unknown causes, further encouraging such extreme opinions.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_180", 400 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、/
+	OutputLine(NULL, "　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、",
+		   NULL, "On top of that, several relatives professing to be possessed by Oyashiro-sama's curse committed suicide in strange ways...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//...もう全国に波及する衝撃には歯止めがなくなっていた。
+	OutputLine(NULL, "…もう全国に波及する衝撃には歯止めがなくなっていた。",
+		   NULL, " and the impact the disaster has had on the entire nation can no longer be ignored.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、/
+	OutputLine(NULL, "　真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、",
+		   NULL, "Wild visions of terrible toxic gas sneaking around in the middle of the night killing people spilled across the country,", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。
+	OutputLine(NULL, "不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。",
+		   NULL, " causing a steady stream of people complaining of insomnia, difficulty breathing, headache, dizziness, etc.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　中には取り憑かれたと自称し、奇行を行なう者もいた。
+	OutputLine(NULL, "　中には取り憑かれたと自称し、奇行を行なう者もいた。",
+		   NULL, "Some who identified themselves as being obsessed by it began doing odd things.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　それらのほとんどは過激な報道による思い込みによるものだったが、/
+	OutputLine(NULL, "　それらのほとんどは過激な報道による思い込みによるものだったが、",
+		   NULL, "Most of these were mistakenly attributed by the tabloid press...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//...後にこれらの雛見沢大災害に起因する精神疾患を雛見沢症候群と呼ぶまでに至る...。
+	OutputLine(NULL, "…後にこれらの雛見沢大災害に起因する精神疾患を雛見沢症候群と呼ぶまでに至る…。",
+		   NULL, " but afterward, some even began to call the mental issues arising from the Hinamizawa tragedy the \"Hinamizawa Syndrome\"...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_048", 400 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。
+	OutputLine(NULL, "　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。",
+		   NULL, "The Hinamizawa Village region, the object of all kinds of rumors and speculation, is currently closed off, and even flying overhead is prohibited.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　ガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。
+	OutputLine(NULL, "　ガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。",
+		   NULL, "The prohibition was, at one point, undone as a result of a decrease in the gas's density, but that autumn another gas burst was confirmed, leading to the area being cordoned off again.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である...。
+	OutputLine(NULL, "　現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である…。",
+		   NULL, "Word is that the area is sound asleep, all traces of its former life intact and left to rot...", Line_ContinueAfterTyping);
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 3000 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　最終的な生存者は、雛見沢村ＸＸＸ番地在住の男子、前原圭一（１Ｘ歳）のみ。
+	OutputLine(NULL, "　最終的な生存者は、雛見沢村ＸＸＸ番地在住の男子、前原圭一（１Ｘ歳）のみ。",
+		   NULL, "Only one survivor remains—Keiichi Maebara, age 1_, who lived at ___ Hinamizawa Village.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　救出時はガスによる呼吸困難で肺水腫を起こしかけていたが、必死の救命活動の結果、一命を取り留めた。
+	OutputLine(NULL, "　救出時はガスによる呼吸困難で肺水腫を起こしかけていたが、必死の救命活動の結果、一命を取り留めた。",
+		   NULL, "At the time of rescue, he had some trouble breathing due to fluid buildup in his lungs, but as a result of life-saving procedures he was kept alive.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　現在は県内の総合病院に入院している。
+	OutputLine(NULL, "　現在は県内の総合病院に入院している。",
+		   NULL, "He is currently in a general hospital somewhere in the prefecture.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　連日取材陣が押しかけているが、一切の面会は謝絶されている。
+	OutputLine(NULL, "　連日取材陣が押しかけているが、一切の面会は謝絶されている。",
+		   NULL, "The press have been asking for him for some time, but all interviews are being refused.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......彼が、雛見沢で何を見たのか。
+	OutputLine(NULL, "　……彼が、雛見沢で何を見たのか。",
+		   NULL, "...What did he see in Hinamizawa?", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　６月の２１日から２２日にかけて、雛見沢で何があったのか。
+	OutputLine(NULL, "　６月の２１日から２２日にかけて、雛見沢で何があったのか。",
+		   NULL, "What happened between June 21 and June 22 in Hinamizawa Village?", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　今日でも彼は、黙して語ろうとしない...。
+	OutputLine(NULL, "　今日でも彼は、黙して語ろうとしない…。",
+		   NULL, "Today he remains silent, unwilling to speak of it...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0, );
+
+	DisableWindow();
+	DrawScene( "black", 1000 );
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	FadeOutBGM( 1, 1000, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Tatari_List", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	DrawScene( "black", 400 );
+	PlayBGM( 1, "msys22", 128, 0 );
+
+
+
+	DrawSprite( 5, "t_ed", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
+	MoveSprite( 5, -320, -4500, 0, 0, 0, 0, 0, 101400, TRUE );
+
+	Wait(3000);
+
+	//ScrollBG( "T_ED01_1", 0, 0, 0, 0, 2520, 0, 0, FALSE, 50400, TRUE );
+	//ScrollBG( "T_ED02_1", 0, 0, 0, 0, 2550, 0, 0, FALSE, 51000, TRUE );
+	FadeSprite( 5, 7000, FALSE );
+	DrawScene( "black", 7000 );
+	SetValidityOfInput( TRUE );
+
+
+
+
+
+
+}
