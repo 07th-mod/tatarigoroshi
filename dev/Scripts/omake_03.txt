@@ -1,0 +1,1773 @@
+﻿void main()
+{
+
+//**************************************************
+//*祟殺し編お疲れさま会
+//**************************************************
+
+//*Utage_Tatarigorosi
+
+//rmode on
+//gosub *Omake_s
+//csp -1
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 3, 1000, TRUE );
+	SetFontOfMessage( 2, 24, 1) ;
+	SetValidityOfSaving( TRUE );
+	SetValidityOfLoading( TRUE );
+	SetValidityOfInput( TRUE );
+	SetValidityOfSkipping( TRUE );
+	ActivateScreenEffectForcedly( TRUE );
+
+
+	DisableWindow();
+	DrawScene( "black", 1000 );
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//!sd
+
+//gosub *data_tati
+
+
+//■お疲れさま会３（祟殺し編）
+	DisableWindow();
+	DrawScene( "bg_165", 1000 );
+	PlayBGM( 1, "msys02", 128, 0 );
+	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「この度も、ひぐらしのなく頃に～祟殺し編～を最後までお楽しみいただき、誠にありがとうございました＠これまでのシナリオとは少し違う雰囲気でお送りしましたが、いかがだったでしょうか＠お楽しみいただけたなら幸いです☆￥
+	OutputLine(NULL, "「この度も、ひぐらしのなく頃に〜祟殺し編〜を最後までお楽しみいただき、誠にありがとうございました。",
+		   NULL, "\"Thank you very much for enjoying Higurashi: When They Cry - Ch.3 Tatarigoroshi.", Line_WaitForInput);
+	OutputLine(NULL, "これまでのシナリオとは少し違う雰囲気でお送りしましたが、いかがだったでしょうか。",
+		   NULL, " How did you like it? It had a different sort of atmosphere than the previous chapters.", Line_WaitForInput);
+	OutputLine(NULL, "お楽しみいただけたなら幸いです☆」",
+		   NULL, " I would be happy if you enjoyed it☆.\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「くすくす＠　今回も胸の好くようなバッドエンドだったわねぇ＠
+	OutputLine(NULL, "「くすくす！",
+		   NULL, "\"Hee-hee!", Line_WaitForInput);
+	OutputLine(NULL, "　今回も胸の好くようなバッドエンドだったわねぇ☆",
+		   NULL, " A bad end again, the type which we're so fond of, huh?☆", Line_WaitForInput);
+//..\n<
+
+//　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」/
+	OutputLine(NULL, "　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」",
+		   NULL, " Personally, I wanted to get a scene of the gas coming in, the villagers spasming and foaming at the mouth one by one before dying—do you all think so too?\"", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_029", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_se_bi_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そんなわけありませんでしてよーッ！＠　またしても＠　またしても！！＠
+	OutputLine(NULL, "「そんなわけありませんでしてよーッ！！",
+		   NULL, "\"Of course I do not think so!!", Line_WaitForInput);
+	OutputLine(NULL, "　またしても！",
+		   NULL, " Again!", Line_WaitForInput);
+	OutputLine(NULL, "　またしても！！」",
+		   NULL, " It happened again!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshot( 2, "me_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「大々々バッドエーンド！＠　くっくっく＠/
+	OutputLine(NULL, "「大々々バッドエーンド！！",
+		   NULL, "\"A huuuuge bad end!!", Line_WaitForInput);
+	OutputLine(NULL, "　くっくっく！",
+		   NULL, " Ku-ku-ku!", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 2, "me_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//　あっはっは！！￥
+	OutputLine(NULL, "　あっはっは！！」",
+		   NULL, " Ah-ha-ha!!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "re_se_na_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あれれ...＠　バッドエンドって割には、魅ぃちゃんは楽しそうだね。＠
+	OutputLine(NULL, "「あれれ…？",
+		   NULL, "\"Huuuh?", Line_WaitForInput);
+	OutputLine(NULL, "　バッドエンドって割には、魅ぃちゃんは楽しそうだね。」",
+		   NULL, " Mii-chan, you sure seem happy about the bad end.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ってゆーか、もう笑うしかないってのが本音でしょうねー。＠
+	OutputLine(NULL, "「ってゆーか、もう笑うしかないってのが本音でしょうねー。」",
+		   NULL, "\"Well, it's more like all we can honestly do at this point is laugh.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "oi_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「なっはっは＠毎回、嫌ぁな終わり方がエスカレートすると思ったら、とうとうここまで行き着いちゃったわけですからねぇ。￥
+	OutputLine(NULL, "「なっはっは。",
+		   NULL, "\"Nah-ha-ha.", Line_WaitForInput);
+	OutputLine(NULL, "毎回、嫌ぁな終わり方がエスカレートすると思ったら、とうとうここまで行き着いちゃったわけですからねぇ。」",
+		   NULL, " The terrible endings have been escalating through each chapter, and it finally reached a culmination, I suppose.\"", Line_Normal);
+	ClearMessage();
+//＜大石
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......みんな仲良しで死んじゃったのですよ＠仲良しなのです、にぱ～☆＠
+	OutputLine(NULL, "「……みんな仲良しで死んじゃったのですよ。",
+		   NULL, "\"...Everyone died together as friends.", Line_WaitForInput);
+	OutputLine(NULL, "仲良しなのです、にぱ〜☆」",
+		   NULL, " As friends, nipah~☆.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜梨花
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "tm_si_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「う～ん、そういう見方もあるのかなぁ＠　毎回死んでる僕はもうごめんだなぁ＠　たまには死なずにエンドを迎えたいねぇ。￥
+	OutputLine(NULL, "「う〜ん、そういう見方もあるのかなぁ！",
+		   NULL, "\"Hmm, I guess you could say that!", Line_WaitForInput);
+	OutputLine(NULL, "　毎回死んでる僕はもうごめんだなぁ！",
+		   NULL, " I die every time though, and I'm a little tired of it!", Line_WaitForInput);
+	OutputLine(NULL, "　たまには死なずにエンドを迎えたいねぇ。」",
+		   NULL, " It would be nice to have an ending where I didn't die once in a while.\"", Line_Normal);
+	ClearMessage();
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_wi_b2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「富竹さんって、時報みたいな役割なんですよねー＠富竹さんが死んだら、あ！後半戦突入だー＠　みたいな～！＠
+	OutputLine(NULL, "「富竹さんって、時報みたいな役割なんですよねー。",
+		   NULL, "\"Tomitake-san, you're kind of like a news reporter!", Line_WaitForInput);
+	OutputLine(NULL, "富竹さんが死んだら、あ！後半戦突入だー！",
+		   NULL, " When you die, it's like, oh, we're in the second half now!", Line_WaitForInput);
+	OutputLine(NULL, "　みたいな〜！」",
+		   NULL, " Kind of~!\"", Line_WaitForInput);
+
+//＜魅音
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//「「「わっはっはっはっはっは！！」」￥
+	OutputLine(NULL, "「「「わっはっはっはっはっは！！」」」",
+		   NULL, "\"\"\"Wah-ha-ha-ha-ha-ha-ha!!\"\"\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	PlayBGM( 1, "msys01", 128, 0 );
+	DrawBustshotWithFiltering( 3, "re_se_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「さて＠　ではここで、今回のシナリオから立ち絵新登場の皆さんです＠拍手でお迎え下さい～！＠　まずは監督こと、入江京介さん～～！￥
+	OutputLine(NULL, "「さて！",
+		   NULL, "\"Okay!", Line_WaitForInput);
+	OutputLine(NULL, "　ではここで、今回のシナリオから立ち絵新登場の皆さんです。",
+		   NULL, " Now here are all the new character portraits that debuted in this chapter.", Line_WaitForInput);
+	OutputLine(NULL, "拍手でお迎え下さい〜！！",
+		   NULL, " Everyone give a big round of applause~!!", Line_WaitForInput);
+	OutputLine(NULL, "　まずは監督こと、入江京介さん〜〜！」",
+		   NULL, " First is Coach—Irie Kyousuke-san~~!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ir_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ご紹介に預かりまして光栄です＠どうもどうも＠脇役だったわけですが、トータルで見てみるとかなりおいしい役だったなぁなんて思ってます。＠
+	OutputLine(NULL, "「ご紹介に預かりまして光栄です。",
+		   NULL, "\"I'm honored to have your introduction.", Line_WaitForInput);
+	OutputLine(NULL, "どうもどうも。",
+		   NULL, " Hello there.", Line_WaitForInput);
+	OutputLine(NULL, "脇役だったわけですが、トータルで見てみるとかなりおいしい役だったなぁなんて思ってます。」",
+		   NULL, " I was a minor character, but having a full portrait like this makes me really feel important.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshot( 3, "sa_se_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「本当ですわねぇ＠今回限りの脇役にしては出番もセリフも多過ぎでしてよ。＠
+	OutputLine(NULL, "「本当ですわねぇ。",
+		   NULL, "\"It's true!", Line_WaitForInput);
+	OutputLine(NULL, "今回限りの脇役にしては出番もセリフも多過ぎでしてよ。」",
+		   NULL, " You had too many appearances and too much dialogue to be a minor character this time.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshot( 1, "ir_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「はははは＠　次回のシナリオでも出番があるかはわかりませんが、その節は応援よろしくお願いしますね～。￥
+	OutputLine(NULL, "「はははは☆",
+		   NULL, "\"Hahahaha☆.", Line_WaitForInput);
+	OutputLine(NULL, "　次回のシナリオでも出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
+		   NULL, " I don't know if I'll appear in the next scenario, so please root for me!\"", Line_Normal);
+	ClearMessage();
+//＜監督
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「ありがとうございました＠　では次に、第１回から登場していたにも関わらず、ずっと立ち絵がなかった、知恵先生～！！￥
+	OutputLine(NULL, "「ありがとうございました！",
+		   NULL, "\"Thank you very much!", Line_WaitForInput);
+	OutputLine(NULL, "　では次に、第１回から登場していたにも関わらず、ずっと立ち絵がなかった、知恵先生〜！！」",
+		   NULL, " Next up we have Chie-sensei, who has been around since Chapter 1 but never had a portrait until now~!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ti_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「皆さん、どうもこんにちは＠　第１回からずーっと学校シーンで登場させてもらってたんですけど、どういうわけか立ち絵がいただけなくて＠...どうしてなんでしょうねぇ。＠
+	OutputLine(NULL, "「皆さん、どうもこんにちは！",
+		   NULL, "\"Hello there, everyone!", Line_WaitForInput);
+	OutputLine(NULL, "　第１回からずーっと学校シーンで登場させてもらってたんですけど、どういうわけか立ち絵がいただけなくて。",
+		   NULL, " They've had me appear in school scenes ever since the first chapter, but for whatever reason, I didn't have my own portrait.", Line_WaitForInput);
+	OutputLine(NULL, "…どうしてなんでしょうねぇ。」",
+		   NULL, " ...I wonder why?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜知恵
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「......あ、はは、はははははは＠　ど、どうしてなんでしょうね＠　あ、知恵先生に席を空けてあげてください～！￥
+	OutputLine(NULL, "「……あ、はは、はははははは！",
+		   NULL, "\"...Ah, haha, hahahahaha!", Line_WaitForInput);
+	OutputLine(NULL, "　ど、どうしてなんでしょうね！",
+		   NULL, " Y-Yes, I wonder!", Line_WaitForInput);
+	OutputLine(NULL, "　あ、知恵先生に席を空けてあげてください〜！」",
+		   NULL, " Oh, someone give Chie-sensei a seat, please~!\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawBustshot( 3, "me_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawSceneWithMask( "bg_163", "up", 0, 0, 300 );
+
+//「さて＠　これでとりあえず全員揃ったね＠　　レナ＠　また乾杯をよろしくね！￥
+	OutputLine(NULL, "「さて！",
+		   NULL, "\"Okay!", Line_WaitForInput);
+	OutputLine(NULL, "　これでとりあえず全員揃ったね！",
+		   NULL, " Now everybody is here!", Line_WaitForInput);
+	OutputLine(NULL, "　　レナ！",
+		   NULL, " Rena!", Line_WaitForInput);
+	OutputLine(NULL, "　また乾杯をよろしくね！」",
+		   NULL, " You can do the honors again!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawBustshot( 1, "re_se_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+
+//「では皆さん～＠　各卓のコップをお持ちになって下さい～＠　お飲み物はいろいろありますよ～！￥
+	OutputLine(NULL, "「では皆さん〜！",
+		   NULL, "\"Okay, everyone~!", Line_WaitForInput);
+	OutputLine(NULL, "　各卓のコップをお持ちになって下さい〜！",
+		   NULL, " Please pick up the cup nearest to you on your table~!", Line_WaitForInput);
+	OutputLine(NULL, "　お飲み物はいろいろありますよ〜！」",
+		   NULL, " There are plenty of different drinks~!\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "oi_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「本当にお疲れさま会もにぎやかになりましたねぇ＠今、何人くらいいるんです？＠
+	OutputLine(NULL, "「本当にお疲れさま会もにぎやかになりましたねぇ。",
+		   NULL, "\"These afterparties have really gotten lively.", Line_WaitForInput);
+	OutputLine(NULL, "今、何人くらいいるんです？」",
+		   NULL, " How many do we have here now?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜大石
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ti_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「私たちを加えて、多分１０人くらいはいると思います。＠
+	OutputLine(NULL, "「私たちを加えて、多分１０人くらいはいると思います。」",
+		   NULL, "\"Including us, I think there are about ten people.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜知恵
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "tm_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「未成年陣と成年陣の人数比がこれでやっと互角かな＠　これで胸を張ってアルコールが飲めるね！＠
+	OutputLine(NULL, "「未成年陣と成年陣の人数比がこれでやっと互角かな！",
+		   NULL, "\"Now we finally have the same number of minors and adults!", Line_WaitForInput);
+	OutputLine(NULL, "　これで胸を張ってアルコールが飲めるね！」",
+		   NULL, " We can all drink without being ashamed!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜富竹
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「ビールって、何で冷えてるとあんなにおいしいのに、ぬるくなるとあんなに不味くなるのかしら＠七不思議のひとつよね。＠
+	OutputLine(NULL, "「ビールって、何で冷えてるとあんなにおいしいのに、ぬるくなるとあんなに不味くなるのかしら。",
+		   NULL, "\"Speaking of beer—how is it that something so delicious when cold turns so bad when warm?", Line_WaitForInput);
+	OutputLine(NULL, "七不思議のひとつよね。」",
+		   NULL, " One of the seven wonders of the world, I say.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜鷹野
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ti_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「くすくすくす＠　何ででしょうね！￥
+	OutputLine(NULL, "「くすくすくす！",
+		   NULL, "\"Hee-hee-hee!", Line_WaitForInput);
+	OutputLine(NULL, "　何ででしょうね！」",
+		   NULL, " I wonder why?\"", Line_Normal);
+	ClearMessage();
+//＜知恵
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ir_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「さぁ、ビールを注ぎますよ＠!s0１、!w500２、!w500３、!w500４、!w500５、!w500６。!sd@
+// ...あれ＠　大人は６人でしたっけ？＠
+	OutputLine(NULL, "「さぁ、ビールを注ぎますよ。",
+		   NULL, "\"Okay, I'll pour some beer.", Line_WaitForInput);
+//!s0
+	SetSpeedOfMessage( TRUE, 127, );
+
+	OutputLine(NULL, "１、",
+		   NULL, " One,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "２、",
+		   NULL, " two,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "３、",
+		   NULL, " three,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "４、",
+		   NULL, " four,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "５、",
+		   NULL, " five,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "６。",
+		   NULL, " six.", Line_ContinueAfterTyping);
+// !sd
+	SetSpeedOfMessage( FALSE, 0, );
+
+	OutputLine(NULL, "…あれ？",
+		   NULL, " ...Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　大人は６人でしたっけ？」",
+		   NULL, " There were six adults here?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜監督
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......み～＠　ボクも泡麦茶がいいのです。＠
+	OutputLine(NULL, "「……み〜♪",
+		   NULL, "\"...Meep♪", Line_WaitForInput);
+	OutputLine(NULL, "　ボクも泡麦茶がいいのです。」",
+		   NULL, " I would like the foamy barley tea as well.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜梨花
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_ik_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「梨花ちゃんは、お酒は、だぁめ！！￥
+	OutputLine(NULL, "「梨花ちゃんは、お酒は、だぁめ！！」",
+		   NULL, "\"Rika-chan, you can't drink!!\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「ではレナさん、そろそろお願いします。＠
+	OutputLine(NULL, "「ではレナさん、そろそろお願いします。」",
+		   NULL, "\"Anyway, Rena-san, let's get this moving.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_se_wa_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ハイハイ＠　皆さん、ご清聴ですわよ～～！！＠
+	OutputLine(NULL, "「ハイハイ！",
+		   NULL, "\"Well, okay!", Line_WaitForInput);
+	OutputLine(NULL, "　皆さん、ご清聴ですわよ〜〜！！」",
+		   NULL, " Can I have everyone's attention please~~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「では皆さん＠　『ひぐらしのなく頃に～祟殺し編～』、本当にお疲れさまでした！＠　乾杯～～！！！＠
+	OutputLine(NULL, "「では皆さん！",
+		   NULL, "\"All right, everyone!", Line_WaitForInput);
+	OutputLine(NULL, "　『ひぐらしのなく頃に〜祟殺し編〜』、本当にお疲れさまでした！！",
+		   NULL, " Excellent work on the Tatarigoroshi chapter!!", Line_WaitForInput);
+	OutputLine(NULL, "　乾杯〜〜！！！」",
+		   NULL, " Cheers~~!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「「「乾杯～～～！！！！」」＠
+	OutputLine(NULL, "「「「乾杯〜〜〜！！！！」」」",
+		   NULL, "\"\"\"Cheers~~~!!!!\"\"\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　わ～～～！！！　ぱちぱちぱちぱちぱち！￥
+	OutputLine(NULL, "　わ〜〜〜！！！　ぱちぱちぱちぱちぱち！！",
+		   NULL, "Yaaaay!!! Clap clap clap clap clap clap!!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DrawSceneWithMask( "bg_163", "right", 0, 0, 300 );
+	PlayBGM( 1, "msys02", 128, 0 );
+	DrawBustshotWithFiltering( 1,"oi_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「さぁて＠では毎回恒例の今回のシナリオ議論でもやってみますかね！＠
+	OutputLine(NULL, "「さぁて。",
+		   NULL, "\"Okay then.", Line_WaitForInput);
+	OutputLine(NULL, "では毎回恒例の今回のシナリオ議論でもやってみますかね！」",
+		   NULL, " Let's get down to our traditional plot discussion!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜大石
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「とは言ったものの...、今回のシナリオも煙に巻かれっぱなし＠...うーん、意見のある方は挙手をお願いしますね！＠
+	OutputLine(NULL, "「とは言ったものの…、今回のシナリオも煙に巻かれっぱなし。",
+		   NULL, "\"Still, though... This chapter just confused us yet again.", Line_WaitForInput);
+	OutputLine(NULL, "…うーん、意見のある方は挙手をお願いしますね！」",
+		   NULL, " ...Hmm, well, if anyone has an opinion, please raise your hand!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_th_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「........................お、みんな慎重＠挙手ないね。￥
+	OutputLine(NULL, "「……………………お、みんな慎重。",
+		   NULL, "\"............Wow, everyone's being so discreet.", Line_WaitForInput);
+	OutputLine(NULL, "挙手ないね。」",
+		   NULL, " No hands?\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......じゃあ私が先陣を切ろうかしら＠/
+	OutputLine(NULL, "「……じゃあ私が先陣を切ろうかしら？",
+		   NULL, "\"...Then why don't I break the ice?", Line_WaitForInput);
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//　あの、申し訳ないんだけど、音楽を変えてもらってもいいかしら＠/
+	OutputLine(NULL, "　あの、申し訳ないんだけど、音楽を変えてもらってもいいかしら？",
+		   NULL, " Oh, excuse me, could you change the music please?", Line_WaitForInput);
+
+	PlayBGM( 1, "msys21", 128, 0 );
+
+//　もう少しミステリアスな感じの＠/
+	OutputLine(NULL, "　もう少しミステリアスな感じの。",
+		   NULL, " To something a little more mysterious.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "ta_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//......あぁ、これがいいわね。＠
+	OutputLine(NULL, "………あぁ、これがいいわね。」",
+		   NULL, " ......Yeah, that's good.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......ムードが出まくりなのです。＠
+	OutputLine(NULL, "「……ムードが出まくりなのです。」",
+		   NULL, "\"...The mood has been set.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜梨花
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「では...鷹野さん、お願いします！￥
+	OutputLine(NULL, "「では…鷹野さん、お願いします！」",
+		   NULL, "\"All right... Takano-san, take it away!\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「多分ね、「祟殺し編」のシナリオだけを吟味しても、謎は解けないんじゃないかと思うの。＠
+	OutputLine(NULL, "「多分ね、「祟殺し編」のシナリオだけを吟味しても、謎は解けないんじゃないかと思うの。」",
+		   NULL, "\"I think that just by poring over the Tatarigoroshi story, the mystery won't be revealed.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜鷹野
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "tm_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......それは同感だね＠ここまで物語が重なれば、そういう仕掛けがあることは明白だし、ね。＠
+	OutputLine(NULL, "「……それは同感だね。",
+		   NULL, "\"...I know what you mean.", Line_WaitForInput);
+	OutputLine(NULL, "ここまで物語が重なれば、そういう仕掛けがあることは明白だし、ね。」",
+		   NULL, " Obviously that's how the stories have been set up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜富竹
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "sa_se_ak_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「.........そんな仕掛け、ありましたかしら？￥
+	OutputLine(NULL, "「………そんな仕掛け、ありましたかしら？」",
+		   NULL, "\"...Was there something like that in particular?\"", Line_Normal);
+	ClearMessage();
+//＜沙都子
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "ti_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「これが正しい例かはわからないけど...＠...鬼隠し編で、前原くんが大石さんとレストランで食事をして、それが園崎さんに知られていて不思議だった、って行がありますよね？＠
+	OutputLine(NULL, "「これが正しい例かはわからないけど…。",
+		   NULL, "\"I don't know if I'm right...", Line_WaitForInput);
+	OutputLine(NULL, "…鬼隠し編で、前原くんが大石さんとレストランで食事をして、それが園崎さんに知られていて不思議だった、って行がありますよね？」",
+		   NULL, " But in Onikakushi, when Maebara-kun was eating in the restaurant with Ooishi-san, Sonozaki-san found out, and it was a little mysterious, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜知恵
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "si_si_wi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「鬼隠し編だけだと、実に不思議な出来事ですけど、綿流し編を読めば別に不思議でも何でもないことがわかります。￥
+	OutputLine(NULL, "「鬼隠し編だけだと、実に不思議な出来事ですけど、綿流し編を読めば別に不思議でも何でもないことがわかります。」",
+		   NULL, "\"It was certainly mysterious just in Onikakushi, but after reading Watanagashi a few things made a lot of sense.\"", Line_Normal);
+	ClearMessage();
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "oi_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません＠で、エンジェルモートってのは園崎一族が持つお店ですから...。＠
+	OutputLine(NULL, "「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません。",
+		   NULL, "\"When I mentioned a restaurant with cute uniforms during the story, it must have meant Angel Mort.", Line_WaitForInput);
+	OutputLine(NULL, "で、エンジェルモートってのは園崎一族が持つお店ですから…。」",
+		   NULL, " And Angel Mort is owned by the Sonozaki family, so...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_wi_b2", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「圭ちゃんの顔を知る者があの店にいて、それを私に伝えた...と考えれば、比較的筋は通るでしょ＠そういうことよ。￥
+	OutputLine(NULL, "「圭ちゃんの顔を知る者があの店にいて、それを私に伝えた…と考えれば、比較的筋は通るでしょ。",
+		   NULL, "\"Someone who knew Kei-chan was there too, and told me... It actually makes a good amount of sense, right?", Line_WaitForInput);
+	OutputLine(NULL, "そういうことよ。」",
+		   NULL, " That's what we mean.\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ir_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「『ひぐらし』の物語は、微細に異なる場所もありますけど＠大筋の設定においては、多分、３つのシナリオは共通していると思います＠例えば、キャラクター設定。＠
+	OutputLine(NULL, "「『ひぐらし』の物語は、微細に異なる場所もありますけど、",
+		   NULL, "\"There are subtle differences in the Higurashi stories,", Line_WaitForInput);
+	OutputLine(NULL, "大筋の設定においては、多分、３つのシナリオは共通していると思います。",
+		   NULL, " but I think there's three facets that are the same for each.", Line_WaitForInput);
+	OutputLine(NULL, "例えば、キャラクター設定。」",
+		   NULL, " The character settings, for example.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜監督
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "re_se_de_a1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて＠...私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？￥
+	OutputLine(NULL, "「……鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて。",
+		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
+	OutputLine(NULL, "…私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？」",
+		   NULL, " it was because my character was the exact same in all three stories, is that it?\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "tm_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「まったく変わらない設定、というのは同感＠/
+	OutputLine(NULL, "「まったく変わらない設定、というのは同感。",
+		   NULL, "\"I agree with the characters being exactly the same.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//...僕がどのシナリオでも、常に同じ場所で同じ死に方をするのはその最たるものだね。＠
+	OutputLine(NULL, "…僕がどのシナリオでも、常に同じ場所で同じ死に方をするのはその最たるものだね。」",
+		   NULL, " ...The most extreme case being me dying in the same way in the same place every time.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......どんな物語になっても、必ず同じ日に死にますです。￥
+	OutputLine(NULL, "「……どんな物語になっても、必ず同じ日に死にますです。」",
+		   NULL, "\"...No matter which story it is, you always die on the same day.\"", Line_Normal);
+	ClearMessage();
+//＜梨花
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "ti_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「綿流し編で、お祭りの最中に鷹野さんと富竹さんが祭具殿に忍び込む、というシーンがありますけど＠...あのシーンも、他のシナリオでは描かれなかっただけで、起こったことになってるのかもしれませんね。＠
+	OutputLine(NULL, "「綿流し編で、お祭りの最中に鷹野さんと富竹さんが祭具殿に忍び込む、というシーンがありますけど。",
+		   NULL, "\"There's a scene where during Watanagashi, Takano-san and Tomitake-san sneak into the ritual implement storehouse.", Line_WaitForInput);
+	OutputLine(NULL, "…あのシーンも、他のシナリオでは描かれなかっただけで、起こったことになってるのかもしれませんね。」",
+		   NULL, " ...The same scene may have still happened in the other stories, even though it wasn't portrayed.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜知恵
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "re_se_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「なっているそうです＠......綿流し当日のお天気や、部活の内容、沙都子ちゃんの叔父さんの帰宅など、いくつかのイベントを除けば、ほとんどが共通するそうです。￥
+	OutputLine(NULL, "「なっているそうです。",
+		   NULL, "\"I think it still happened.", Line_WaitForInput);
+	OutputLine(NULL, "……綿流し当日のお天気や、部活の内容、沙都子ちゃんの叔父さんの帰宅など、いくつかのイベントを除けば、ほとんどが共通するそうです。」",
+		   NULL, " ...Save for a few events—the weather the day of the festival, what we did in the club, and Satoko's uncle coming home—it's almost all the same.\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+
+//「......だとすると、............新しい疑問がいくつか湧きますね＠まったく同じ環境で語られる物語なのに、なぜああも違う物語に派生するのか。￥
+	OutputLine(NULL, "「……だとすると、…………新しい疑問がいくつか湧きますね。",
+		   NULL, "\"...Which means...... we have a bunch more questions.", Line_WaitForInput);
+	OutputLine(NULL, "まったく同じ環境で語られる物語なのに、なぜああも違う物語に派生するのか。」",
+		   NULL, " If the stories are told in exactly the same environment each time, why do they end up being so different?\"", Line_Normal);
+	ClearMessage();
+//＜大石
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ir_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「一般的なサウンドノベル的に考えると...物語が派生する分岐点が存在したってことになりますね。＠
+	OutputLine(NULL, "「一般的なサウンドノベル的に考えると…物語が派生する分岐点が存在したってことになりますね。」",
+		   NULL, "\"If we think in a general sound novel type of way... sometimes the story branches depending on choices, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜監督
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshot( 3, "si_si_to_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「綿流し編で言うと、...お姉に人形を渡さなかった、という辺り？＠
+	OutputLine(NULL, "「綿流し編で言うと、…お姉に人形を渡さなかった、という辺り？」",
+		   NULL, "\"So like... if in Watanagashi, you had given the doll to my sister?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......あんな序盤の選択肢一個でバッド確定とは...恐ろしい選択肢だねぇ！￥
+	OutputLine(NULL, "「……あんな序盤の選択肢一個でバッド確定とは…恐ろしい選択肢だねぇ！」",
+		   NULL, "\"...An unavoidable bad end from a choice so early on... That's pretty scary!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "sa_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「では......うーん＠祟殺し編の場合ですと、...叔父を殺そうと決意する辺りですかしら。＠
+	OutputLine(NULL, "「では……うーん。",
+		   NULL, "\"Well... hmm.", Line_WaitForInput);
+	OutputLine(NULL, "祟殺し編の場合ですと、…叔父を殺そうと決意する辺りですかしら。」",
+		   NULL, " In Tatarigoroshi... maybe whether you decide to kill the uncle or not.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「私はずっとそれ以前＠...愛人がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。￥
+	OutputLine(NULL, "「私はずっとそれ以前。",
+		   NULL, "\"I think it was way before that.", Line_WaitForInput);
+	OutputLine(NULL, "…愛人がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。」",
+		   NULL, " ...I think it branched back when the uncle's lover disappeared because of some trouble and he returned to Hinamizawa.\"", Line_Normal);
+	ClearMessage();
+//＜鷹野
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......では一番最初の、鬼隠し編の分岐はどこなのですか。＠
+	OutputLine(NULL, "「……では一番最初の、鬼隠し編の分岐はどこなのですか。」",
+		   NULL, "\"...Then what was the first branch in Onikakushi?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「やはり、...劇中の私が登場して、オヤシロさまの祟りに関する連続怪死事件のことを話す辺りからだと思いますね。￥
+	OutputLine(NULL, "「やはり、…劇中の私が登場して、オヤシロさまの祟りに関する連続怪死事件のことを話す辺りからだと思いますね。」",
+		   NULL, "\"I think... it was when I appeared and started talking about the serial freak death incidents related to Oyashiro-sama's curse.\"", Line_Normal);
+	ClearMessage();
+//＜大石
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "right", 0, 0, 300 );
+	PlayBGM( 1, "msys12", 128, 0 );
+	DrawBustshot( 3, "sa_se_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「.........今、思ったんですけれど＠...ちゃんと圭一さんが魅音さんにお人形をあげて＠それで大石さんも私の叔父さんも現れなかったら、......何も起こらずに平和に過せるってことなんじゃありませんの？￥
+	OutputLine(NULL, "「………今、思ったんですけれど。",
+		   NULL, "\"...You know, I just thought of something.", Line_WaitForInput);
+	OutputLine(NULL, "…ちゃんと圭一さんが魅音さんにお人形をあげて。",
+		   NULL, " ...If Keiichi-san gave the doll to Mion-san...", Line_WaitForInput);
+	OutputLine(NULL, "それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」",
+		   NULL, " And if Ooishi-san and my uncle hadn't appeared... would we not have spent our time in peace, without anything happening?\"", Line_Normal);
+	ClearMessage();
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_se_wi_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「...へぇ......＠沙都子にしちゃ本質ズバリじゃないのよ＠確かに＠　言えてる！＠
+	OutputLine(NULL, "「…へぇ……。",
+		   NULL, "\"...I see...", Line_WaitForInput);
+	OutputLine(NULL, "沙都子にしちゃ本質ズバリじゃないのよ。",
+		   NULL, " Satoko's gotten right to the point.", Line_WaitForInput);
+	OutputLine(NULL, "確かに！",
+		   NULL, " You're right!", Line_WaitForInput);
+	OutputLine(NULL, "　言えてる！」",
+		   NULL, " You can say that again!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ta_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	PlayBGM( 1, "msysRi", 128, 0 );
+
+//「じゃあ、この暗ぁい物語は、大石さんと叔父さんが現れないことを祈りつつ＠園崎さんのご機嫌を損ねないようにすれば、みんな幸せになれるということなのかしら。￥
+	OutputLine(NULL, "「じゃあ、この暗ぁい物語は、大石さんと叔父さんが現れないことを祈りつつ、",
+		   NULL, "\"Then maybe we should pray Ooishi-san and her uncle don't show up in this dark story,", Line_WaitForInput);
+	OutputLine(NULL, "園崎さんのご機嫌を損ねないようにすれば、みんな幸せになれるということなのかしら。」",
+		   NULL, " and then if we can prevent Sonozaki-san from getting in a bad mood, everyone will be happy?\"", Line_Normal);
+	ClearMessage();
+//＜鷹野
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「や～～い、お姉、バッドエンド要員～！＠　みんな気をつけてね～＠　お姉の機嫌を損ねるとバッドエンド確定ですよ～！！＠
+	OutputLine(NULL, "「や〜〜い、お姉、バッドエンド要員〜！！",
+		   NULL, "\"Yaaay, Big Sis, you're needed for the bad ending~!!", Line_WaitForInput);
+	OutputLine(NULL, "　みんな気をつけてね〜！",
+		   NULL, " Be careful, everyone~!", Line_WaitForInput);
+	OutputLine(NULL, "　お姉の機嫌を損ねるとバッドエンド確定ですよ〜！！」",
+		   NULL, " If you make my sister mad, you're sure to get a bad end~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshot( 1, "me_se_th_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「な、何よそれぇえぇえ！＠　詩音んんん！＠　あんたにゃ次は容赦なく釘を打つからね！＠　もうガシガシにー！！＠　待てこらぁあああぁあ！！￥
+	OutputLine(NULL, "「な、何よそれぇえぇえ！！",
+		   NULL, "\"W-What are you saying?!", Line_WaitForInput);
+	OutputLine(NULL, "　詩音んんん！！",
+		   NULL, " Shioooonnn!!", Line_WaitForInput);
+	OutputLine(NULL, "　あんたにゃ次は容赦なく釘を打つからね！！",
+		   NULL, " Next time I'll pound nails into you without mercy!!", Line_WaitForInput);
+	OutputLine(NULL, "　もうガシガシにー！！！",
+		   NULL, " Bang, bang!!!", Line_WaitForInput);
+	OutputLine(NULL, "　待てこらぁあああぁあ！！」",
+		   NULL, " Just you waaaaait!!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "right", 0, 0, 300 );
+	DrawBustshot( 2, "re_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	PlayBGM( 1, "msys02", 128, 0 );
+
+//「あははははははは＠...これまでの物語の謎は全然解けないけど、どうやったらこの物語が大団円で終わるかの、グッドエンドの推理はできちゃいましたね。￥
+	OutputLine(NULL, "「あははははははは。",
+		   NULL, "\"Ahahahahahaha.", Line_WaitForInput);
+	OutputLine(NULL, "…これまでの物語の謎は全然解けないけど、どうやったらこの物語が大団円で終わるかの、グッドエンドの推理はできちゃいましたね。」",
+		   NULL, " ...We can't solve any of the mysteries thus far, but we seem to have put together a plan for how to get the story to end happily.\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 3, "ir_si_ma_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「.........本当に、...それで幸せになれるんでしょうか＠大石さんと北条鉄平さんの不登場＠魅音さんのお人形の件＠...本当にそれさえ気を付ければいいんですかね。＠
+	OutputLine(NULL, "「………本当に、…それで幸せになれるんでしょうか。",
+		   NULL, "\"......I wonder... if that would really make us happy.", Line_WaitForInput);
+	OutputLine(NULL, "大石さんと北条鉄平さんの不登場。",
+		   NULL, " Ooishi-san and Teppei Houjou-san don't show up.", Line_WaitForInput);
+	OutputLine(NULL, "魅音さんのお人形の件。",
+		   NULL, " Mion-san gets the doll.", Line_WaitForInput);
+	OutputLine(NULL, "…本当にそれさえ気を付ければいいんですかね。」",
+		   NULL, " ...Is that all we have to make sure of?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜監督
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そうそう＠...みんなはひとつ大きな最後を忘れてるよ＠雛見沢大災害という天災を忘れたかい？￥
+	OutputLine(NULL, "「そうそう。",
+		   NULL, "\"You're right.", Line_WaitForInput);
+	OutputLine(NULL, "…みんなはひとつ大きな最後を忘れてるよ。",
+		   NULL, " ...We're all forgetting the most important thing.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢大災害という天災を忘れたかい？」",
+		   NULL, " Remember the Great Hinamizawa Disaster?\"", Line_Normal);
+	ClearMessage();
+//＜富竹
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "sa_se_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「天災は...防ぎようがないですわよ？＠　村のみんなにガスマスクを配って引越しでもしますの？！＠
+	OutputLine(NULL, "「天災は…防ぎようがないですわよ？！",
+		   NULL, "\"You cannot prevent natural disasters!!", Line_WaitForInput);
+	OutputLine(NULL, "　村のみんなにガスマスクを配って引越しでもしますの？！」",
+		   NULL, " Should we have everyone in the village put on gas masks and move away?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......あれはきっとオヤシロさまの祟りなのです＠だからオヤシロさまを怒らせないようにしなければならないのですよ。￥
+	OutputLine(NULL, "「……あれはきっとオヤシロさまの祟りなのです。",
+		   NULL, "\"...It's probably Oyashiro-sama's curse.", Line_WaitForInput);
+	OutputLine(NULL, "だからオヤシロさまを怒らせないようにしなければならないのですよ。」",
+		   NULL, " So we need to make sure not to make Oyashiro-sama angry.\"", Line_Normal);
+	ClearMessage();
+//＜梨花
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "oi_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「なっはっは＠　ややこしい話になってきましたね＠つまり、オヤシロさまも怒らせてはダメ、と＠オヤシロさまを怒らせないにはどうすればいいでしたっけ。＠
+	OutputLine(NULL, "「なっはっは！",
+		   NULL, "\"Nah-ha-ha!", Line_WaitForInput);
+	OutputLine(NULL, "　ややこしい話になってきましたね。",
+		   NULL, " This is getting a little tricky.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、オヤシロさまも怒らせてはダメ、と。",
+		   NULL, " We mustn't anger Oyashiro-sama, eh?", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまを怒らせないにはどうすればいいでしたっけ。」",
+		   NULL, " And what should we do in order to prevent that?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜大石
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ti_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ダムの計画そのものがきっと駄目なんでしょうね...＠ダム計画がそもそもなければよかったんじゃないでしょうか。＠
+	OutputLine(NULL, "「ダムの計画そのものがきっと駄目なんでしょうね…。",
+		   NULL, "\"The dam project itself is probably out of the question...", Line_WaitForInput);
+	OutputLine(NULL, "ダム計画がそもそもなければよかったんじゃないでしょうか。」",
+		   NULL, " Maybe if there was never a dam project in the first place?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜知恵
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「それは...難しいわよね＠...だとしたら、お怒りになったオヤシロさまを鎮める儀式が必要ね。￥
+	OutputLine(NULL, "「それは…難しいわよね。",
+		   NULL, "\"That... would be hard.", Line_WaitForInput);
+	OutputLine(NULL, "…だとしたら、お怒りになったオヤシロさまを鎮める儀式が必要ね。」",
+		   NULL, " ...If it didn't happen, we would need a ritual to quell Oyashiro-sama's anger.\"", Line_Normal);
+	ClearMessage();
+//＜鷹野
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "si_si_wi_b1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「鬼ヶ淵の沼に生贄を沈める...生贄の儀式、ですね！＠
+	OutputLine(NULL, "「鬼ヶ淵の沼に生贄を沈める…生贄の儀式、ですね！」",
+		   NULL, "\"Sinking a sacrifice into the Onigafuchi Swamp... A ritual sacrifice!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "re_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「...い、生贄って、...誰を生贄にするんですか？＠
+	OutputLine(NULL, "「…い、生贄って、…誰を生贄にするんですか？」",
+		   NULL, "\"...A-A sacrifice... Who do we sacrifice?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_to_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そりゃー決まってるでしょ＠どんな分岐にも関係なく死亡が確定している人だよ＠/
+	OutputLine(NULL, "「そりゃー決まってるでしょ。",
+		   NULL, "\"Come on, use your head!", Line_WaitForInput);
+	OutputLine(NULL, "どんな分岐にも関係なく死亡が確定している人だよ！",
+		   NULL, " Someone who dies no matter what happens!", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 1, "me_se_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//　どうせ死ぬなら、雛見沢の為の人柱になってもらわなくちゃね！￥
+	OutputLine(NULL, "　どうせ死ぬなら、雛見沢の為の人柱になってもらわなくちゃね！」",
+		   NULL, " If he's gonna die anyway, then we may as well have it help out Hinamizawa!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "tm_si_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......あー...、!w1000...その死亡が確定している人って、!w1000...やっぱり僕のことかな。＠
+	OutputLine(NULL, "「……あー…、",
+		   NULL, "\"...Uhh...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…その死亡が確定している人って、",
+		   NULL, " ...When you say 'dies no matter what'...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…やっぱり僕のことかな。」",
+		   NULL, " you're talking about me, aren't you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ta_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「やっぱりジロウさんは...この物語に欠かせない重要な役割の人だと信じてたわ＠お役目を立派に果たしてちょうだいね☆￥
+	OutputLine(NULL, "「やっぱりジロウさんは…この物語に欠かせない重要な役割の人だと信じてたわ。",
+		   NULL, "\"I knew all along... I knew you had some very important role in this story, Jirou-san.", Line_WaitForInput);
+	OutputLine(NULL, "お役目を立派に果たしてちょうだいね☆」",
+		   NULL, " We'll get you to play your part☆.\"", Line_Normal);
+	ClearMessage();
+//＜鷹野
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ir_si_de_a2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「これで...今度こそ、グッドエンドの大団円シナリオの青写真ができましたね＠せっかくだからちょっとやってみましょうか＠役者は全員そろってることですしね！￥
+	OutputLine(NULL, "「これで…今度こそ、グッドエンドの大団円シナリオの青写真ができましたね。",
+		   NULL, "\"And with that... we have a blueprint for getting a nice, happy, good ending, don't we?", Line_WaitForInput);
+	OutputLine(NULL, "せっかくだからちょっとやってみましょうか。",
+		   NULL, " Let's give it a try since we have time.", Line_WaitForInput);
+	OutputLine(NULL, "役者は全員そろってることですしね！」",
+		   NULL, " Everyone involved, come over here!\"", Line_Normal);
+	ClearMessage();
+//＜監督
+	DisableWindow();
+	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	PlayBGM( 1, "msys04", 128, 0 );
+
+//locate 0,7
+	SetDrawingPointOfMessage( 0, 7 );
+
+//　まずは...愛人に逃げられた北条叔父が、雛見沢へ戻るのを阻止￥
+	OutputLine(NULL, "　まずは…愛人に逃げられた北条叔父が、雛見沢へ戻るのを阻止！",
+		   NULL, "First... we stop Uncle Houjou, whose lover ran out on him, from returning to Hinamizawa!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_123", "up", 0, 0, 300 );
+	DrawBustshot( 2, "ir_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「やぁ、私が北条叔父ですよ～。（立ち絵がないので代役です☆）＠愛人に逃げられてロンリーブル～＠　早く雛見沢に帰って、沙都子ちゃんを拉致監禁してハァハァに調教してご奉仕メイドですよ～～♪/
+	OutputLine(NULL, "「やぁ、私が北条叔父ですよ〜。（立ち絵がないので代役です☆）、",
+		   NULL, "\"Hiya, my name's Uncle Houjou~ (He has no portrait, so I'm standing in☆).", Line_WaitForInput);
+	OutputLine(NULL, "愛人に逃げられてロンリーブル〜♪",
+		   NULL, " I'm so lonely and blue because my lover ran away~♪.", Line_WaitForInput);
+	OutputLine(NULL, "　早く雛見沢に帰って、沙都子ちゃんを拉致監禁してハァハァに調教してご奉仕メイドですよ〜〜♪",
+		   NULL, " Time to go back to Hinamizawa, lock up Satoko-chan, and—hah, hah—raise her into a maid servant~~♪.", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_029", 128, 64 );
+
+//　では雛見沢にバイクで帰りますか＠キーを入れて、カチっと＠/
+	OutputLine(NULL, "　では雛見沢にバイクで帰りますか。",
+		   NULL, " Why don't I take my motorbike back?", Line_WaitForInput);
+	OutputLine(NULL, "キーを入れて、カチっと。",
+		   NULL, " I'll just put in the key, and click.", Line_WaitForInput);
+
+	PlaySE( 3, "wa_038", 128, 64 );
+
+//...カチ？￥
+	OutputLine(NULL, "……カチ？」",
+		   NULL, " ...Click?\"", Line_Normal);
+	ClearMessage();
+//＜監督
+
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+//locate 0,7
+	SetDrawingPointOfMessage( 0, 7 );
+	SetStyleOfMessageSwinging( 1 );
+	DisableWindow();
+	DrawScene( "white", 10 );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+
+
+//!s0　ドッガアアアアアアアーーンッ！！！！!sd/
+//!s0
+	SetSpeedOfMessage( TRUE, 127, );
+	OutputLine(NULL, "　ドッガアアアアアアアーーンッ！！！！",
+		   NULL, "Kabooooooooooooooooom!!!!", Line_ContinueAfterTyping);
+// !sd/
+	SetSpeedOfMessage( FALSE, 0, );
+
+	PlaySE( 3, "wa_006", 128, 64 );
+	ShakeScreen( 1, 50, 20, 4, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	SetStyleOfMessageSwinging( 0 );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	DrawSceneWithMask( "bg_123", "left", 0, 0, 200 );
+	DrawBustshot( 1, "sa_se_wa_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+//!sd
+
+//「成・敗ッ！！!/
+	OutputLine(NULL, "「成・敗ッ！！!",
+		   NULL, "\"Judgment!!!", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_007", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+//　灰塵に帰せでございますわよー！！！＠
+	OutputLine(NULL, "　灰塵に帰せでございますわよー！！！」",
+		   NULL, " To ashes and dust shall you return!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "re_se_ko_a1", "left", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「さ、沙都子ちゃん、火薬の量、多過ぎじゃないかな...。＠（監督、大丈夫かな...（汗）￥
+	OutputLine(NULL, "「さ、沙都子ちゃん、火薬の量、多過ぎじゃないかな…。」",
+		   NULL, "\"S-Satoko-chan, don't you think this was a little too much gunpowder...?\"", Line_WaitForInput);
+	OutputLine(NULL, "（監督、大丈夫かな…（汗））",
+		   NULL, " (I hope Coach is all right... (sweat)).", Line_Normal);
+	ClearMessage();
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "black", "down", 0, 0, 200 );
+
+//locate 4,7
+
+	SetDrawingPointOfMessage( 0, 7 );
+	SetStyleOfMessageSwinging( 1 );
+
+//　次に大石の登場を阻止！￥
+	OutputLine(NULL, "　次に大石の登場を阻止！！",
+		   NULL, "Next we stop Ooishi from showing up!!", Line_Normal);
+	SetStyleOfMessageSwinging( 0 );
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_102", "left", 0, 0, 200 );
+	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「今度は私ですか＠んっふっふ＠　私の名前はクラウド・大石☆/
+	OutputLine(NULL, "「今度は私ですか。",
+		   NULL, "\"Me this time?", Line_WaitForInput);
+	OutputLine(NULL, "んっふっふ！",
+		   NULL, " Nfu-fu!", Line_WaitForInput);
+	OutputLine(NULL, "　私の名前はクラウド・大石☆",
+		   NULL, " My name is Kuraudo Ooishi☆.", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_010", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+//　ジャジーでブルースな感じがだいぶイケてるナイスミドルですよ＠/
+	OutputLine(NULL, "　ジャジーでブルースな感じがだいぶイケてるナイスミドルですよ。",
+		   NULL, " A hot, good-looking middle-aged man who looks like a blues singer.", Line_WaitForInput);
+
+	PlaySE( 3, "wa_038", 128, 64 );
+
+//むっふっふ！￥
+	OutputLine(NULL, "むっふっふ！」",
+		   NULL, " Mfu-fu-fu!\"", Line_Normal);
+	ClearMessage();
+//＜大石
+
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+//locate 0,7
+	SetDrawingPointOfMessage( 0, 7 );
+	SetStyleOfMessageSwinging( 1 );
+	DisableWindow();
+	DrawScene( "white", 10 );
+	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+
+
+
+//!s0　ドッガアアアアアアアーーンッ！！！！!sd/
+//!s0
+	SetSpeedOfMessage( TRUE, 127, );
+
+	OutputLine(NULL, "　ドッガアアアアアアアーーンッ！！！！",
+		   NULL, "Kabooooooooooooooooom!!!!", Line_ContinueAfterTyping);
+// !sd/
+	SetSpeedOfMessage( FALSE, 0, );
+
+	PlaySE( 3, "wa_006", 128, 64 );
+	ShakeScreen( 0, 50, 20, 4, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	SetStyleOfMessageSwinging( 0 );
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//!sd
+	DrawSceneWithMask( "bg_102", "left", 0, 0, 200 );
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「......み～＠　成敗なのです。￥
+	OutputLine(NULL, "「……み〜！",
+		   NULL, "\"...Meep!", Line_WaitForInput);
+	OutputLine(NULL, "　成敗なのです。」",
+		   NULL, " Judgment for you.\"", Line_Normal);
+	ClearMessage();
+//＜梨花
+	DisableWindow();
+	DrawSceneWithMask( "bg_153", "left", 0, 0, 200 );
+	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「そして忘れちゃいけないのがお姉へのアフターフォロー＠/
+	OutputLine(NULL, "「そして忘れちゃいけないのがお姉へのアフターフォロー！",
+		   NULL, "\"And, lest we forget, a follow-up service for my sister!", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "si_si_aw_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//　ささ、お姉＠　かわいらしいお人形さんですよ～＠　よかったでちゅね～！＠
+	OutputLine(NULL, "　ささ、お姉！",
+		   NULL, " Come here, Big Sis!", Line_WaitForInput);
+	OutputLine(NULL, "　かわいらしいお人形さんですよ〜☆",
+		   NULL, " There's a cute little doll for you~☆.", Line_WaitForInput);
+	OutputLine(NULL, "　よかったでちゅね〜！」",
+		   NULL, " Aww, how nice~!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_se_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「ぅぅ、何だか納得いかないぃいぃ！！！￥
+	OutputLine(NULL, "「ぅぅ、何だか納得いかないぃいぃ！！！」",
+		   NULL, "\"Mgh, I'm not really understanding this!!!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_159", "right", 0, 0, 200 );
+	DrawBustshot( 2, "tm_si_ko_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「で、.........最後にオヤシロさまの怒りを鎮めなくちゃならないと。＠
+	OutputLine(NULL, "「で、………最後にオヤシロさまの怒りを鎮めなくちゃならないと。」",
+		   NULL, "\"And finally... we must quell Oyashiro-sama's anger.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜富竹
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「では、...最後のお役目、よろしくね。＠
+	OutputLine(NULL, "「では、…最後のお役目、よろしくね。」",
+		   NULL, "\"Then... will our last actor please come up?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「ふん縛って、簀巻きにして、吊るして＠　３日かけて沈めるんでしたっけ？＠
+	OutputLine(NULL, "「ふん縛って、簀巻きにして、吊るして！",
+		   NULL, "\"Tie him fast, wrap him up, and hang him!", Line_WaitForInput);
+	OutputLine(NULL, "　３日かけて沈めるんでしたっけ？」",
+		   NULL, " He'll sink for three days, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 7, FALSE, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 3, "ir_si_wa_a1", "right", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「面倒くさいですから、ここは一気にいっちゃいましょう～！＠
+	OutputLine(NULL, "「面倒くさいですから、ここは一気にいっちゃいましょう〜！」",
+		   NULL, "\"I'm not that patient—let's just get it over with~!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜監督
+	DisableWindow();
+	DrawSceneWithMask( "black", "c", 0, 0, 300 );
+
+//「がぼがぼがぼがぼーー！！！！￥
+	OutputLine(NULL, "「がぼがぼがぼがぼーー！！！！」",
+		   NULL, "\"Gbbrhgghnbhgrhbgh!!!!\"", Line_Normal);
+	ClearMessage();
+//＜富竹
+	DisableWindow();
+	DrawScene( "bg0", 100 );
+	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawBustshot( 1, "me_se_wi_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//!s0「これにて！！　一件落着ッ！！！」!sd/
+//!s0
+	SetSpeedOfMessage( TRUE, 127, );
+
+	OutputLine(NULL, "「これにて！！　一件落着ッ！！！」",
+		   NULL, "\"And with that!! The case has been closed!!!\"", Line_ContinueAfterTyping);
+// !sd/
+	SetSpeedOfMessage( FALSE, 0, );
+
+	PlaySE( 3, "wa_007", 128, 64 );
+	ShakeScreen( 1, 50, 20, 4, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+//＜魅音・詩音
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	DisableWindow();
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DrawScene( "black", 400 );
+	DrawScene( "End", 10 );
+	PlaySE( 3, "wa_036", 128, 64 );
+//setwindow 31,16,14,8,40,40,0,2,20,1,1,#999999,0,0,639,479
+
+//br
+//br
+//br
+//br
+//＜ひぐらしのなく頃に～完～＞
+//Higurashi When They Cry --End--
+	Wait( 4000 );
+//	DisableWindow();
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 100 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 50 );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+
+	PlaySE( 3, "wa_005", 128, 64 );
+//	ShakeScreen( 0, 50, 20, 2, 0, );
+	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 2, TRUE );
+
+	PlaySE( 3, "wa_005", 128, 64 );
+//	ShakeScreen( 1, 50, 20, 2, 0, );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 2, TRUE );
+
+	PlaySE( 3, "wa_005", 128, 64 );
+//	ShakeScreen( 0, 50, 20, 2, 0, );
+	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 2, TRUE );
+
+	PlaySE( 3, "wa_005", 128, 64 );
+//	ShakeScreen( 1, 50, 20, 2, 0, );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 2, TRUE );
+
+	PlaySE( 3, "wa_006", 128, 64 );
+	ShakeScreen( 0, 50, 20, 4, 0, );
+	DrawScene( "bg0", 100 );
+	PlaySE( 3, "wa_007", 128, 64 );
+	ShakeScreen( 1, 50, 20, 5, 0, );
+
+//＞＞スパパパパパパパパパパパン　ドガガガーン！！　とレナがフリッカーでその場の全員を成敗するというエフェクト
+
+
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+	DisableWindow();
+	DrawScene( "bg_163", 1000 );
+	DrawBustshotWithFiltering( 3, "re_se_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	PlayBGM( 1, "msys12", 128, 0 );
+//!sd
+
+//「あははははは...、何でかなぁ＠　突然、私の腕が光って唸って、大変なことに☆＠
+	OutputLine(NULL, "「あははははは…、何でかなぁ☆",
+		   NULL, "\"Ahahahahaha... Hmm☆.", Line_WaitForInput);
+	OutputLine(NULL, "　突然、私の腕が光って唸って、大変なことに☆」",
+		   NULL, " Oh no, all of a sudden, this arm of mine is glowing with an awesome power☆.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......屍累々で大変なことになってますのです。￥
+	OutputLine(NULL, "「……屍累々で大変なことになってますのです。」",
+		   NULL, "\"...This pile of corpses is a pretty big deal.\"", Line_Normal);
+	ClearMessage();
+//＜梨花
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 2, "lsys17", 128, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "bg_163", 400 );
+
+//「あれ＠　電話だ＠/
+	OutputLine(NULL, "「あれ？",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　電話だ。",
+		   NULL, " It's the phone.", Line_WaitForInput);
+
+	FadeOutBGM( 2, 10, TRUE );
+
+//......もしもし＠　あ、圭一くん？＠　お疲れさまですー！￥
+	OutputLine(NULL, "………もしもし？",
+		   NULL, " ......Hello?", Line_WaitForInput);
+	OutputLine(NULL, "　あ、圭一くん？！",
+		   NULL, " Oh, Keiichi-kun?!", Line_WaitForInput);
+	OutputLine(NULL, "　お疲れさまですー！」",
+		   NULL, " Thanks for all your work!\"", Line_Normal);
+	ClearMessage();
+//＜レナ
+
+//「おうおう、相変わらず大盛り上がりみたいじゃねーか＠こっちは次回の台本読みで相変わらず忙しいってのにー！＠　まぁいいや＠今日の俺は機嫌がいいから嫌味はなしにしてやるぜ＠......詩音はいるか＠　出してくれ。￥
+	OutputLine(NULL, "「おうおう、相変わらず大盛り上がりみたいじゃねーか。",
+		   NULL, "\"Yeah, yeah! Looks like you're all having a roaring old time.", Line_WaitForInput);
+	OutputLine(NULL, "こっちは次回の台本読みで相変わらず忙しいってのにー！！",
+		   NULL, " And yet here I am busy with reading the scenario for the next story!!", Line_WaitForInput);
+	OutputLine(NULL, "　まぁいいや。",
+		   NULL, " Whatever.", Line_WaitForInput);
+	OutputLine(NULL, "今日の俺は機嫌がいいから嫌味はなしにしてやるぜ。",
+		   NULL, " I'm in a good mood today, so I'll let you off without any teasing.", Line_WaitForInput);
+	OutputLine(NULL, "……詩音はいるか？",
+		   NULL, " ...Is Shion there?", Line_WaitForInput);
+	OutputLine(NULL, "　出してくれ。」",
+		   NULL, " Can you put her on?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あれ＠　今ここで発表しちゃうんですか＠　もう少し秘密にしたかったけど、まぁいいか。＠
+	OutputLine(NULL, "「あれ？",
+		   NULL, "\"What?", Line_WaitForInput);
+	OutputLine(NULL, "　今ここで発表しちゃうんですか？",
+		   NULL, " You're going to announce it here?", Line_WaitForInput);
+	OutputLine(NULL, "　もう少し秘密にしたかったけど、まぁいいか。」",
+		   NULL, " I wanted to keep it secret for a while longer, but okay.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_se_bi_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「詩音さんと圭一さんの二人っきりの秘密ですってぇ？！＠
+	OutputLine(NULL, "「詩音さんと圭一さんの二人っきりの秘密ですってぇ？！」",
+		   NULL, "\"A secret between Shion-san and Keiichi-san?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「なななな、何よそれぇえぇええぇえ？＠　聞いてない聞いてない聞いてなぁああぁいッ！！￥
+	OutputLine(NULL, "「なななな、何よそれぇえぇええぇえ？！",
+		   NULL, "\"Wha-Wha-Wha-What do you meeeeean?!", Line_WaitForInput);
+	OutputLine(NULL, "　聞いてない聞いてない聞いてなぁああぁいッ！！」",
+		   NULL, " Nobody told me about this! Nobody!!\"", Line_Normal);
+	ClearMessage();
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshot( 2, "si_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「じゃあ圭ちゃん、私と一緒に言いましょうね＠せーの！＠
+	OutputLine(NULL, "「じゃあ圭ちゃん、私と一緒に言いましょうね。",
+		   NULL, "\"Okay, Kei-chan, let's say it at the same time.", Line_WaitForInput);
+	OutputLine(NULL, "せーの！」",
+		   NULL, " One, two, three!\"", Line_WaitForInput);
+
+//＜詩音
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 300 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 300 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 300 );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 100, TRUE );
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//!s0「「次回のシナリオの主人公は園崎詩音になりました～～！！」」!sd/
+//!s0
+	SetSpeedOfMessage( TRUE, 127, );
+
+	OutputLine(NULL, "「「次回のシナリオの主人公は園崎詩音になりました〜〜！！」」",
+		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_ContinueAfterTyping);
+// !sd/
+	SetSpeedOfMessage( FALSE, 0, );
+
+	PlaySE( 3, "wa_007", 128, 64 );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_165", 400 );
+	PlayBGM( 1, "msys01", 128, 0 );
+
+//「「「え、えぇええ゛ぇえぇえー？！？！」」￥
+	OutputLine(NULL, "「「「え、えぇええ゛ぇえぇえー？！？！」」」",
+		   NULL, "\"\"\"W-Whaaaaaaat?!?!\"\"\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「...まぁつまりはそういうことです＠初登場以来、断トツの人気ナンバーワン＠/
+	OutputLine(NULL, "「…まぁつまりはそういうことです。",
+		   NULL, "\"...Yes, so that's that.", Line_WaitForInput);
+	OutputLine(NULL, "初登場以来、断トツの人気ナンバーワン。",
+		   NULL, " The one topping the popularity charts since her first appearance.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//双子姉妹の遅れ登場妹は絶対に人気が出るってのは、東鳩の時代から決められたお約束ですしー♪＠
+	OutputLine(NULL, "双子姉妹の遅れ登場妹は絶対に人気が出るってのは、東鳩の時代から決められたお約束ですしー♪」",
+		   NULL, " The late-appearing younger sister of twins has been the pattern of things ever since the days of TH♪.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//『ワケわかんねーことはどうでもいいよ＠とにかく俺は次回に限り、主人公のお役御免＠　風の噂じゃ、とうとう俺にも立ち絵が実装とか？＠　ひゃっほ～い！！＠
+	OutputLine(NULL, "『ワケわかんねーことはどうでもいいよ。",
+		   NULL, "\"I have no idea what that means, and it doesn't matter.", Line_WaitForInput);
+	OutputLine(NULL, "とにかく俺は次回に限り、主人公のお役御免！",
+		   NULL, " Anyway, I've been fired from my main character post for once!", Line_WaitForInput);
+	OutputLine(NULL, "　風の噂じゃ、とうとう俺にも立ち絵が実装とか？！",
+		   NULL, " If the rumors are right, I might even get a portrait finally?!", Line_WaitForInput);
+	OutputLine(NULL, "　ひゃっほ〜い！！』",
+		   NULL, " Yahoo!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "si_si_wi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「まー、圭ちゃんの立ち絵なんてディスク容量の無駄遣いもいいとこですからね＠ディスク１枚に納まらなくなったら、バッサリ没になる可能性激大ですけど。￥
+	OutputLine(NULL, "「まー、圭ちゃんの立ち絵なんてディスク容量の無駄遣いもいいとこですからね。",
+		   NULL, "\"Well, portraits of Kei-chan would be a big waste of disc space.", Line_WaitForInput);
+	OutputLine(NULL, "ディスク１枚に納まらなくなったら、バッサリ没になる可能性激大ですけど。」",
+		   NULL, " If it couldn't all fit on one disc, there's a pretty high chance he'd be the first one dropped.\"", Line_Normal);
+	ClearMessage();
+//＜詩音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_se_ak_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......でもいいんですの詩音さん＠　主人公は毎回、ろくでもない最期を迎えると決まってましてよ？＠
+	OutputLine(NULL, "「……でもいいんですの詩音さん？",
+		   NULL, "\"...Are you okay with this, Shion-san?", Line_WaitForInput);
+	OutputLine(NULL, "　主人公は毎回、ろくでもない最期を迎えると決まってましてよ？」",
+		   NULL, " The main character always meets some terrible fate in the end!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshot( 3, "si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「くっくっく＠　まぁ、これまではね＠でもね、次回からは必ずしもそうはならないんですよねー。￥
+	OutputLine(NULL, "「くっくっく！",
+		   NULL, "\"Ku-ku-ku!", Line_WaitForInput);
+	OutputLine(NULL, "　まぁ、これまではね。",
+		   NULL, " Well, until now.", Line_WaitForInput);
+	OutputLine(NULL, "でもね、次回からは必ずしもそうはならないんですよねー。」",
+		   NULL, " But that doesn't necessarily mean it'll happen next time!\"", Line_Normal);
+	ClearMessage();
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "re_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+//	PlayBGM( 1, "msysMi", 128, 0 );
+
+//「『ひぐらしのなく頃に』も、今回の祟殺し編で３作目＠ミステリアスな謎を次々と提示してきた前半部はここで折り返しになり＠/
+	OutputLine(NULL, "「『ひぐらしのなく頃に』も、今回の祟殺し編で３作目。",
+		   NULL, "\"With Tatarigoroshi, we're already at the third game in the Higurashi: When They Cry series.", Line_WaitForInput);
+	OutputLine(NULL, "ミステリアスな謎を次々と提示してきた前半部はここで折り返しになり、",
+		   NULL, " This first half presented a lot of strange and exciting mysteries, but starting next time...", Line_WaitForInput);
+
+	PlaySE( 3, "wa_007", 128, 64 );
+
+//次回からはこれまでの謎を解決していく後半部、究明編（仮称）のスタートとなります。＠
+	OutputLine(NULL, "次回からはこれまでの謎を解決していく後半部、究明編（仮称）のスタートとなります。」",
+		   NULL, " the mysteries will start to be solved in the second half, marking the start of the Investigation Arc (temporary name).\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshot( 3, "si_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「つまり、私が名探偵になって、理不尽な謎をバスバス解決していく痛快ストーリーなわけです＠今のうちから決め台詞を考えておかないとねー＠　あなたを、犯人です＠みたいな～☆」/
+	OutputLine(NULL, "「つまり、私が名探偵になって、理不尽な謎をバスバス解決していく痛快ストーリーなわけです。",
+		   NULL, "\"That means it'll be a thrilling story where I become a detective and solve all these crazy, unfair mysteries.", Line_WaitForInput);
+	OutputLine(NULL, "今のうちから決め台詞を考えておかないとねー！",
+		   NULL, " You'd all better think up good signature phrases!", Line_WaitForInput);
+	OutputLine(NULL, "　あなたを、犯人です。",
+		   NULL, " Like...", Line_WaitForInput);
+	OutputLine(NULL, "みたいな〜☆」",
+		   NULL, " 'You, sir, are the criminal'☆.\"", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_029", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "me_se_bi_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+	PlayBGM( 1, "msys03", 128, 0 );
+
+//「納得行かない納得行かない！＠　御三家の秘密に近付きすぎて、監禁されて拷問されて＠　非業の最期を遂げる役に決まってるー！！＠
+	OutputLine(NULL, "「納得行かない納得行かない！！",
+		   NULL, "\"It won't happen, never!!", Line_WaitForInput);
+	OutputLine(NULL, "　御三家の秘密に近付きすぎて、監禁されて拷問されて！",
+		   NULL, " You'll get too close to the Three Families' secrets, be imprisoned, and then get tortured!", Line_WaitForInput);
+	OutputLine(NULL, "　非業の最期を遂げる役に決まってるー！！」",
+		   NULL, " You're a shoe-in to meet a violent, unnatural death!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜魅音
+	DisableWindow();
+	DrawBustshot( 3, "si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「お姉こそ、私に全ての謎と秘密を看破されて、謝罪の言葉を口にしながら自害なされる心の準備はＯＫですー？￥
+	OutputLine(NULL, "「お姉こそ、私に全ての謎と秘密を看破されて、謝罪の言葉を口にしながら自害なされる心の準備はＯＫですー？」",
+		   NULL, "\"Sis, I should say the same to you—are you mentally prepared for me to see through all your mysteries and secrets, then have you apologize to me and commit suicide?\"", Line_Normal);
+	ClearMessage();
+//＜詩音
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ri_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......オヤシロさまの祟りの可能性はナシなのですか？＠
+	OutputLine(NULL, "「……オヤシロさまの祟りの可能性はナシなのですか？」",
+		   NULL, "\"...No chance of Oyashiro-sama's curse for me, is there?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜梨花
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_wi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「さて＠その後半部の新シナリオ、仮称「目明し編」は現在鋭意製作中です＠近い将来、皆さんに公開できると思いますので、どうか楽しみにしていただければ幸いです。￥
+	OutputLine(NULL, "「さて。",
+		   NULL, "\"Anyway.", Line_WaitForInput);
+	OutputLine(NULL, "その後半部の新シナリオ、仮称「目明し編」は現在鋭意製作中です。",
+		   NULL, " The new story to begin the second half, temporarily called Meakashi, or 'eye-opening,' is currently undergoing diligent development.", Line_WaitForInput);
+	OutputLine(NULL, "近い将来、皆さんに公開できると思いますので、どうか楽しみにしていただければ幸いです。」",
+		   NULL, " We should be able to unveil it to you all in the near future, so I hope you'll look forward to it.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「.........「鬼隠し編」!w1000「綿流し編」!w1000そして「祟殺し編」＠この３つのシナリオを重ね透かし、皆さんにはどんな真実が見えてくるでしょうか＠......推理はまとまるどころか、ますます煙に巻かれていくだけ＠　う～～ん、あははは＠レナも全然わからないです＠あははは...。￥
+	OutputLine(NULL, "「………「鬼隠し編」",
+		   NULL, "\"......Onikakushi,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "「綿流し編」",
+		   NULL, " Watanagashi,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そして「祟殺し編」。",
+		   NULL, " and Tatarigoroshi.", Line_WaitForInput);
+	OutputLine(NULL, "この３つのシナリオを重ね透かし、皆さんにはどんな真実が見えてくるでしょうか。",
+		   NULL, " What truths will you all come up with after reading these three stories?", Line_WaitForInput);
+	OutputLine(NULL, "……推理はまとまるどころか、ますます煙に巻かれていくだけ？",
+		   NULL, " ...Or will you just come up with more questions instead of theories?", Line_WaitForInput);
+	OutputLine(NULL, "　う〜〜ん、あははは。",
+		   NULL, " Hmmm, ahahaha.", Line_WaitForInput);
+	OutputLine(NULL, "レナも全然わからないです。",
+		   NULL, " Rena has no clue either.", Line_WaitForInput);
+	OutputLine(NULL, "あははは…。」",
+		   NULL, " Ahahaha...\"", Line_Normal);
+	ClearMessage();
+
+//「この３つの謎に挑み、どんなに辛くとも挫けることなく戦い続けてくれた全ての方に＠......その熱意に感謝するために、本来お送りする予定でなかった最後のシナリオをお送りします＠どうかお楽しみ下さい。￥
+	OutputLine(NULL, "「この３つの謎に挑み、どんなに辛くとも挫けることなく戦い続けてくれた全ての方に。",
+		   NULL, "\"For all of you warriors who never yielded to these three mysteries and kept on fighting...", Line_WaitForInput);
+	OutputLine(NULL, "……その熱意に感謝するために、本来お送りする予定でなかった最後のシナリオをお送りします。",
+		   NULL, " we present you with one final scenario as thanks for your enthusiasm, one which we never originally planned on giving to you.", Line_WaitForInput);
+	OutputLine(NULL, "どうかお楽しみ下さい。」",
+		   NULL, " Please enjoy it.\"", Line_Normal);
+	ClearMessage();
+
+//mov %CAMP_MUGIC,0
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+//	Wait( 3000 );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1500, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+	FadeOutBGM( 1, 1000, TRUE );
+
+//gosub *Omake_E
+//mov %Omake_Game,1
+//mov %DDD_In,1
+
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+//	DisableWindow();
+//	DrawScene( "black", 1000 );
+//	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
+////bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
+////	PlaySE( 3, "wa_041", 128, 64 );
+////bg ":c;BMP\Efe\Omake_DDD.bmp",18,1500,":c;BMP\Efe\5.bmp"
+////	Wait( 10000 );
+////bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
+//	PlaySE( 3, "wa_036", 128, 64 );
+//	DrawSceneWithMask( "Ex_hima", "5", 0, 0, 1000 );
+////bg ":c;BMP\Efe\Omake_Himatubusi.jpg",18,1500,":c;BMP\Efe\5.bmp"
+//	SetValidityOfInput( FALSE );
+//	Wait( 10000 );
+//	SetValidityOfInput( TRUE );
+//	DrawScene( "black", 1000 );
+
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//!sd
+//gosub *Omake_E
+
+
+//goto *Omake_mode
+
+	GetAchievement("HIGURASHI_STORY_EP03_OMAKE");
+
+}

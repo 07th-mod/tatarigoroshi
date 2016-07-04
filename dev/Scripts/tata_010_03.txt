@@ -1,0 +1,1412 @@
+﻿void main()
+{
+
+////////*TatarigorosiHen_Day10_3
+//■完璧な殺人とは
+
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlaySE( 3, "wa_001", 128, 64 );
+	Wait( 3000 );
+	DrawSceneWithMask( "bg_039", "up", 0, 0, 1300 );
+	PlayBGM( 1, "msys12", 128, 0 );
+
+//　魅音たちは綿流しの祭りの準備があるとかで、俺にも来ないかと誘ったが、断った￥
+	OutputLine(NULL, "　魅音たちは綿流しの祭りの準備があるとかで、俺にも来ないかと誘ったが、断った。",
+		   NULL, "Mion and the others, having to set up for the Watanagashi Festival or something, invited me along, but I refused.", Line_Normal);
+	ClearMessage();
+
+//　...当り前だ＠
+//　この状況下でよくものんびりと祭りの準備なんかしてられるものだ＠魅音の神経を疑う￥
+	OutputLine(NULL, "　…当り前だ。",
+		   NULL, "...Of course I did.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この状況下でよくものんびりと祭りの準備なんかしてられるものだ。",
+		   NULL, "How could they be taking it easy and setting up for a festival in this situation?", Line_WaitForInput);
+	OutputLine(NULL, "魅音の神経を疑う。",
+		   NULL, " Mion had a lot of nerve.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	DrawSceneWithMask( "bg_040", "left", 0, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "bg_038", "left", 0, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "bg_120", "left", 0, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "black", "up", 0, 0, 1300 );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+	DrawScene( "bg_170", 1000 );
+
+//!sd
+	FadeOutBGM( 1, 1000, TRUE );
+
+//　俺が家に帰って始めにしたのは、シャワーを浴びることだった＠
+	OutputLine(NULL, "　俺が家に帰って始めにしたのは、シャワーを浴びることだった。",
+		   NULL, "The first thing I did when I got back was take a shower.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　汗を流したかったからじゃない＠......さらなる冷静さがほしかったからだ￥
+	OutputLine(NULL, "　汗を流したかったからじゃない。",
+		   NULL, "Not because I wanted to wash off sweat.", Line_WaitForInput);
+	OutputLine(NULL, "……さらなる冷静さがほしかったからだ。",
+		   NULL, " ...It was because I wanted to be even calmer.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	PlayBGM( 2, "lsys23", 128, 0 );
+
+//　すでにわかっている通りだが、あの男を殺すだけならあまりにも容易い＠
+//　...本当に難しいのは、その結果、俺が逮捕されず、平穏な日常を取り戻せる...という方だ￥
+	OutputLine(NULL, "　すでにわかっている通りだが、あの男を殺すだけならあまりにも容易い。",
+		   NULL, "I already understood this, but killing that man would be so very easy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…本当に難しいのは、その結果、俺が逮捕されず、平穏な日常を取り戻せる…という方だ。",
+		   NULL, "...The really hard thing would be not getting arrested for it, so we could get our peaceful days back.", Line_Normal);
+	ClearMessage();
+
+//　考えれば、それは容易なことじゃない＠
+//　...世界一の検挙率を誇るのが日本の警察だ＠
+//　それを欺いて完全犯罪を遂行しようというのだから...これは生半可なことじゃない＠
+	OutputLine(NULL, "　考えれば、それは容易なことじゃない。",
+		   NULL, "As I thought about it, I realized it wasn't easy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…世界一の検挙率を誇るのが日本の警察だ。",
+		   NULL, "...Japan's police force have the highest arrest rate in the world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを欺いて完全犯罪を遂行しようというのだから…これは生半可なことじゃない。",
+		   NULL, "I would need to deceitfully pull off the perfect crime... and it couldn't be a half-hearted attempt.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......でも１００％じゃない＠
+//　そんな世界最高峰の警察でも、決して１００％検挙できてるわけじゃないのだ￥
+	OutputLine(NULL, "　……でも１００％じゃない。",
+		   NULL, "...Still, it wasn't 100%.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんな世界最高峰の警察でも、決して１００％検挙できてるわけじゃないのだ。",
+		   NULL, "Even the best police force in the world couldn't have a 100% arrest rate.", Line_Normal);
+	ClearMessage();
+
+//　...よく、冤罪事件の裁判の記事を見かける＠
+//　...冤罪かどうかを裁判で問うているわけだが、では真犯人は、というとまったくの論外だったりするものだ＠
+	OutputLine(NULL, "　…よく、冤罪事件の裁判の記事を見かける。",
+		   NULL, "...I've read a lot of articles on trials with people brought up on false charges.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…冤罪かどうかを裁判で問うているわけだが、では真犯人は、というとまったくの論外だったりするものだ。",
+		   NULL, "...They do a lot to determine whether they really were false accusations, but figuring out who the real criminal was is usually out of the question.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　つまり......完全犯罪は存在するのだ￥
+	OutputLine(NULL, "　つまり……完全犯罪は存在するのだ。",
+		   NULL, "And that meant...perfect crimes did exist.", Line_Normal);
+	ClearMessage();
+
+//　いや、それどころか完全犯罪とは一種の芸術品と言っていい＠
+//　崇められてすらいると言える＠
+	OutputLine(NULL, "　いや、それどころか完全犯罪とは一種の芸術品と言っていい。",
+		   NULL, "In fact, perfect crimes were sort of like works of art.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　崇められてすらいると言える。",
+		   NULL, "They could even be respected and revered.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　古今東西に氾濫する推理小説を見ればいい＠
+//　密室やらアリバイやらの様々な難解事件を取り扱っているが、見せたいものはひとつ＠...完全犯罪の美しさを見せたいのだ￥
+	OutputLine(NULL, "　古今東西に氾濫する推理小説を見ればいい。",
+		   NULL, "You just had to look at the inundation of mystery novels everywhere throughout history.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　密室やらアリバイやらの様々な難解事件を取り扱っているが、見せたいものはひとつ。",
+		   NULL, "They dealt with all sorts of difficult-to-solve incidents, involving secret rooms and alibis and stuff, but they all wanted to show one thing.", Line_WaitForInput);
+	OutputLine(NULL, "…完全犯罪の美しさを見せたいのだ。",
+		   NULL, " ...They wanted to show the beauty of a perfect crime.", Line_Normal);
+	ClearMessage();
+
+//　完全という無欠を表す言葉には...一種の神々しさが宿っている＠そう＠完全犯罪は、神の成しえる技なのだ＠
+	OutputLine(NULL, "　完全という無欠を表す言葉には…一種の神々しさが宿っている。",
+		   NULL, "There was something divine... in the flawlessness of the word \"perfect.\"", Line_WaitForInput);
+	OutputLine(NULL, "そう。",
+		   NULL, " Yes.", Line_WaitForInput);
+	OutputLine(NULL, "完全犯罪は、神の成しえる技なのだ。",
+		   NULL, " Perfect crimes were skills of the gods.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+
+//　...そう考えれば...、オヤシロさまの祟りと呼ばれる連続怪死事件は＠なるほど、神の仕業に違いない＠
+	OutputLine(NULL, "　…そう考えれば…、オヤシロさまの祟りと呼ばれる連続怪死事件は、",
+		   NULL, "...And in that sense... the serial freak deaths they were calling the curse of Oyashiro-sama...", Line_WaitForInput);
+	OutputLine(NULL, "なるほど、神の仕業に違いない。",
+		   NULL, " I understood—they must have been the works of gods.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　個別に何となく解決してるようには見えているが、毎年起こる事件は防げない＠
+//　......そう、神のみの技、完全な犯罪なのだ￥
+	OutputLine(NULL, "　個別に何となく解決してるようには見えているが、毎年起こる事件は防げない。",
+		   NULL, "Each one appeared to have been resolved, but they couldn't stop it from happening every year.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そう、神のみの技、完全な犯罪なのだ。",
+		   NULL, "...Yeah—skills belonging only to gods, those are perfect crimes.", Line_Normal);
+	ClearMessage();
+
+//　その神の、オヤシロさまの積み重ねてきた４年間の連続完全犯罪に、自分の犯行を列する＠
+//　......これは大胆な言葉で言えば、神への挑戦と言っていい＠
+	OutputLine(NULL, "　その神の、オヤシロさまの積み重ねてきた４年間の連続完全犯罪に、自分の犯行を列する。",
+		   NULL, "And I would be setting up my own crime before Oyashiro-sama's series of perfect crimes four years in the running.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……これは大胆な言葉で言えば、神への挑戦と言っていい。",
+		   NULL, "...If I were to put it boldly, I was challenging a god.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　決断するには蛮勇が必要だが、...その計画立案には、氷よりもクールな冷静さが不可欠なのだ￥
+	OutputLine(NULL, "　決断するには蛮勇が必要だが、…その計画立案には、氷よりもクールな冷静さが不可欠なのだ。",
+		   NULL, "Foolhardiness would be needed to make the decision... but I needed to be calm, cool, colder than ice to put that plan together.", Line_Normal);
+	ClearMessage();
+
+//　炎のように殺す＠
+//　そして、氷のように計画的に＠
+	OutputLine(NULL, "　炎のように殺す。",
+		   NULL, "Kill him like a flame.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、氷のように計画的に。",
+		   NULL, "But as systematic as ice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　この二律相反を、俺はこれから胸の内に宿らせなければならない.........￥
+	OutputLine(NULL, "　この二律相反を、俺はこれから胸の内に宿らせなければならない………。",
+		   NULL, "Starting now, I need to retain both of those ideas within me...", Line_Normal);
+	ClearMessage();
+
+//　推理小説を模範にする、というのは結構悪くない着目だ＠
+	OutputLine(NULL, "　推理小説を模範にする、というのは結構悪くない着目だ。",
+		   NULL, "Modeling my crime after a mystery novel wasn't actually a bad thing to focus on.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　時折、新聞を騒がせる斬新な手口の誘拐事件は、逮捕後にある小説の参考を手法にした...なんてことがわかり話題になったりする￥
+	OutputLine(NULL, "　時折、新聞を騒がせる斬新な手口の誘拐事件は、逮捕後にある小説の参考を手法にした…なんてことがわかり話題になったりする。",
+		   NULL, "Somtimes, kidnappings involving disturbing, original methods that made it into the newspaper were used as a basis for novels after the person was arrested... Stuff like that made it into the news.", Line_Normal);
+	ClearMessage();
+
+//　推理小説作家は、延々と時間をかけて、最高の芸術犯罪を日夜磨き続けているのだ＠
+//　......それを模倣することは、短時間で完全犯罪を立案する上での近道と言えよう￥
+	OutputLine(NULL, "　推理小説作家は、延々と時間をかけて、最高の芸術犯罪を日夜磨き続けているのだ。",
+		   NULL, "Day and night, for a very long time, mystery novel authors polished and refined their most fantastic artistic crimes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それを模倣することは、短時間で完全犯罪を立案する上での近道と言えよう。",
+		   NULL, "...Imitating that could be a shortcut to planning the perfect crime in a short period of time.", Line_Normal);
+	ClearMessage();
+//　もちろん、俺は推理小説なんか、そんなに威張るほど読んだことはない＠
+//　......推理小説が好きなのは、!w1000......お袋だ＠
+	OutputLine(NULL, "　もちろん、俺は推理小説なんか、そんなに威張るほど読んだことはない。",
+		   NULL, "Of course, I haven't read enough mystery novels to act all high and mighty about them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……推理小説が好きなのは、",
+		   NULL, "...The one who really liked mystery novels...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……お袋だ。",
+		   NULL, " was my mom.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　海外の古今の著名な推理作家の本はみんな読んでるし＠推理ドラマを見るたびに、チープだとかトリックが甘いとか厳しいチェックを入れている＠......そんなお袋にとって、...完全犯罪とは、どんなものだろう...￥
+	OutputLine(NULL, "　海外の古今の著名な推理作家の本はみんな読んでるし、",
+		   NULL, "She'd read every well-known mystery novel from overseas, from past and present.", Line_WaitForInput);
+	OutputLine(NULL, "推理ドラマを見るたびに、チープだとかトリックが甘いとか厳しいチェックを入れている。",
+		   NULL, " Every time she watched mystery shows, she would always criticize them as having cheap tricks or being poorly thought-out.", Line_WaitForInput);
+	OutputLine(NULL, "……そんなお袋にとって、…完全犯罪とは、どんなものだろう…。",
+		   NULL, " ...I wonder... what the perfect crime would mean to her...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeOutBGM( 2, 1000, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "bg_170", "right", 0, 0, 300 );
+
+//「これまでの推理小説の中で、母さんが一番よく出来たと思った完全犯罪？￥
+	OutputLine(NULL, "「これまでの推理小説の中で、母さんが一番よく出来たと思った完全犯罪？」",
+		   NULL, "\"What do I think the most well-done perfect crime in all the mystery novels I've read is?\"", Line_Normal);
+	ClearMessage();
+
+//「......うん＠母さんって結構たくさん推理小説を読んでるでしょ＠そういうの詳しいかなって思って。＠
+//「それを読むから楽しいのよ＠初めからトリックを教えちゃったら楽しみがなくなっちゃうわ。＠
+//　...別に娯楽性が欲しくて知りたいわけじゃない＠
+//　......誤魔化そうとするお袋を何とかおだてて、答えを引き出す...￥
+	OutputLine(NULL, "「……うん。",
+		   NULL, "\"...Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "母さんって結構たくさん推理小説を読んでるでしょ。",
+		   NULL, " Well, you read quite a lot of them, right?", Line_WaitForInput);
+	OutputLine(NULL, "そういうの詳しいかなって思って。」",
+		   NULL, " I figured you might know a lot about them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「それを読むから楽しいのよ。",
+		   NULL, "\"It's more fun to read them to find out.", Line_WaitForInput);
+	OutputLine(NULL, "初めからトリックを教えちゃったら楽しみがなくなっちゃうわ。」",
+		   NULL, " If I told you all the tricks right off the bat, they'd be no fun anymore.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…別に娯楽性が欲しくて知りたいわけじゃない。",
+		   NULL, "...It wasn't like I was asking for my own amusement.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……誤魔化そうとするお袋を何とかおだてて、答えを引き出す…。",
+		   NULL, "...She was deflecting the question, so I would somehow butter her up first and draw out an answer...", Line_Normal);
+	ClearMessage();
+
+//「もちろん、クリスティの『そして誰もいなくなった』は母さんの一番のお薦めね＠もちろん『オリエント急行』の大胆なトリックも良かったわ。あれは完全に想像の外だった。＠
+//「......母さんの好きな小説のタイトルが知りたいんじゃないよ＠母さんが一番舌を巻いた完全トリックが知りたいんだよ。＠
+//「本当に完全なトリックだったら、名探偵に解く余地がないじゃない。＠
+//　......それはそうだが＠...それでは意味がない￥
+	OutputLine(NULL, "「もちろん、クリスティの『そして誰もいなくなった』は母さんの一番のお薦めね。",
+		   NULL, "\"Of course, Agatha Christie's 'And Then There Were None' is my top recommendation.", Line_WaitForInput);
+	OutputLine(NULL, "もちろん『オリエント急行』の大胆なトリックも良かったわ。あれは完全に想像の外だった。」",
+		   NULL, " And 'Murder on the Orient Express' used some great, bold tricks too, of course. I didn't see it coming at all.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「……母さんの好きな小説のタイトルが知りたいんじゃないよ。",
+		   NULL, "\"...I didn't want to know which novels you liked.", Line_WaitForInput);
+	OutputLine(NULL, "母さんが一番舌を巻いた完全トリックが知りたいんだよ。」",
+		   NULL, " I wanted to know about the trick that made you the most surprised.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「本当に完全なトリックだったら、名探偵に解く余地がないじゃない。」",
+		   NULL, "\"If it was really a perfect trick, the detectives wouldn't be able to solve the case, though.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それはそうだが。",
+		   NULL, "...That was true.", Line_WaitForInput);
+	OutputLine(NULL, "…それでは意味がない。",
+		   NULL, " ...Then there'd be no point.", Line_Normal);
+	ClearMessage();
+
+//「推理小説は、解ける謎をいかに解くかの過程を楽しむものよ＠解けない謎だったら、それは推理小説の題材になりえないわね...。＠
+//「...そっか＠...そりゃそうだよな＠主人公に解けなかったら、...お話として成立しないもんな...。￥
+	OutputLine(NULL, "「推理小説は、解ける謎をいかに解くかの過程を楽しむものよ。",
+		   NULL, "\"Mystery novels are enjoyable because of the process of the mysteries getting solved.", Line_WaitForInput);
+	OutputLine(NULL, "解けない謎だったら、それは推理小説の題材になりえないわね…。」",
+		   NULL, " If it was unsolvable, it wouldn't make a very good topic for a novel...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「…そっか。",
+		   NULL, "\"...I get it.", Line_WaitForInput);
+	OutputLine(NULL, "…そりゃそうだよな。",
+		   NULL, " ...Yeah, you're right.", Line_WaitForInput);
+	OutputLine(NULL, "主人公に解けなかったら、…お話として成立しないもんな…。」",
+		   NULL, " If the main character can't solve it... it wouldn't be much of a story, huh...\"", Line_Normal);
+	ClearMessage();
+
+//　やはり短絡的だったか＠
+//　...推理小説は所詮、ゲーム小説だ＠
+//　解けるように、ゴールできるように書かれている＠
+	OutputLine(NULL, "　やはり短絡的だったか。",
+		   NULL, "Was I being too simplistic?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…推理小説は所詮、ゲーム小説だ。",
+		   NULL, "...A mystery novel was basically a game.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　解けるように、ゴールできるように書かれている。",
+		   NULL, "They were written so that you can get to the goal, so that you could solve them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　でも、そんな甘いのじゃ駄目なんだ＠
+//　...俺たちが元の生活に完全に戻れる、そういう絶対的なトリックであるべきなんだ￥
+	OutputLine(NULL, "　でも、そんな甘いのじゃ駄目なんだ。",
+		   NULL, "But I couldn't use something so optimistic.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…俺たちが元の生活に完全に戻れる、そういう絶対的なトリックであるべきなんだ。",
+		   NULL, "...It needed to be the be-all end-all of tricks so that we could, without a doubt, return to our old lives.", Line_Normal);
+	ClearMessage();
+
+//「ということは圭一＠...真の完全犯罪は物語にすらならない、というのがわかるかしら？＠
+//　お袋が知的な眼差しで、悪戯っぽく笑った＠
+	OutputLine(NULL, "「ということは圭一。",
+		   NULL, "\"By the way, Keiichi.", Line_WaitForInput);
+	OutputLine(NULL, "…真の完全犯罪は物語にすらならない、というのがわかるかしら？」",
+		   NULL, " ...Do you understand that truly perfect crimes don't even become stories?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　お袋が知的な眼差しで、悪戯っぽく笑った。",
+		   NULL, "Mom looked at me intellectually and grinned impishly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......読ませてもらったことはないが、昔、自分で推理小説を書いて、どこぞのミステリー大賞に投稿したことがあるらしい＠...その血が疼いたらしかった￥
+	OutputLine(NULL, "　……読ませてもらったことはないが、昔、自分で推理小説を書いて、どこぞのミステリー大賞に投稿したことがあるらしい。",
+		   NULL, "...I'd never gotten to read it, but apparently one time a long time ago, Mom had written her own mystery novel and submitted it for some mystery novel award.", Line_WaitForInput);
+	OutputLine(NULL, "…その血が疼いたらしかった。",
+		   NULL, " ...Apparently she was really into it.", Line_Normal);
+	ClearMessage();
+
+//「物語にならない、って、どういう意味...？￥
+	OutputLine(NULL, "「物語にならない、って、どういう意味…？」",
+		   NULL, "\"Don't even become stories? What does that mean...?\"", Line_Normal);
+	ClearMessage();
+
+//「圭一、物語の最低構成要素は？＠
+//「起承転結。￥
+	OutputLine(NULL, "「圭一、物語の最低構成要素は？」",
+		   NULL, "\"Keiichi, what are the essential parts of a story?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「起承転結。」",
+		   NULL, "\"A beginning, a middle, and an end?\"", Line_Normal);
+	ClearMessage();
+
+//「正解＠特に肝心なのは、当たり前だけど、「起」に当たる部分よ＠スタートの「起」がなかったら、そもそも物語は始まらない。＠
+//「そりゃそうだよ＠...何も起こらなかったら何も始まらない。￥
+	OutputLine(NULL, "「正解。",
+		   NULL, "\"Correct.", Line_WaitForInput);
+	OutputLine(NULL, "特に肝心なのは、当たり前だけど、「起」に当たる部分よ。",
+		   NULL, " The beginning, of course, is especially important.", Line_WaitForInput);
+	OutputLine(NULL, "スタートの「起」がなかったら、そもそも物語は始まらない。」",
+		   NULL, " If there is no beginning, then the story never starts.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「そりゃそうだよ。",
+		   NULL, "\"Well, yeah.", Line_WaitForInput);
+	OutputLine(NULL, "…何も起こらなかったら何も始まらない。」",
+		   NULL, " ...If nothing happened, nothing would begin.\"", Line_Normal);
+	ClearMessage();
+
+//「そう＠何も起こらないから事件にもならない＠探偵も呼ばれないから推理もない＠推理がないなら解決もない＠...つまり、これが究極の完全犯罪。＠
+//「.........え、!w1000............ちょ、ちょっと待って＠...もう一度説明してくれるかな...！＠
+//　今お袋は...何かとてつもないことを教えてくれた＠
+	OutputLine(NULL, "「そう。",
+		   NULL, "\"Right.", Line_WaitForInput);
+	OutputLine(NULL, "何も起こらないから事件にもならない。",
+		   NULL, " Nothing happened, so there wouldn't even be an incident.", Line_WaitForInput);
+	OutputLine(NULL, "探偵も呼ばれないから推理もない。",
+		   NULL, " Detectives wouldn't be called, so there wouldn't be any mystery.", Line_WaitForInput);
+	OutputLine(NULL, "推理がないなら解決もない。",
+		   NULL, " There would be no mystery, so there would be no solution.", Line_WaitForInput);
+	OutputLine(NULL, "…つまり、これが究極の完全犯罪。」",
+		   NULL, " ...In other words, it would be the ultimate perfect crime.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「………え、",
+		   NULL, "\"......Wait...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…………ちょ、ちょっと待って。",
+		   NULL, " ...Wait a second.", Line_WaitForInput);
+	OutputLine(NULL, "…もう一度説明してくれるかな…！」",
+		   NULL, " ...Could you explain that again...?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今お袋は…何かとてつもないことを教えてくれた。",
+		   NULL, "My mom... just told me something absurd.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...あまりにさらりと言われたので聞き流してしまったが...何か＠...とてつもなく重要なことを言った￥
+	OutputLine(NULL, "　…あまりにさらりと言われたので聞き流してしまったが…何か、",
+		   NULL, "...And she was saying it so smoothly, too, so I kind of tuned her out... but...", Line_WaitForInput);
+	OutputLine(NULL, "…とてつもなく重要なことを言った。",
+		   NULL, " She said something extremely important just now.", Line_Normal);
+	ClearMessage();
+
+//「そんな難しい話じゃないわよ＠...そもそも、事件が発覚しなければいいだけの話。＠
+//「......そもそも、!w800......発覚しない事件。￥
+	OutputLine(NULL, "「そんな難しい話じゃないわよ。",
+		   NULL, "\"It's not really that difficult to understand.", Line_WaitForInput);
+	OutputLine(NULL, "…そもそも、事件が発覚しなければいいだけの話。」",
+		   NULL, " ...The incident just has to never come to light, that's all.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「……そもそも、",
+		   NULL, "\"...Just has to...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……発覚しない事件。」",
+		   NULL, " never come to light.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_142", "down", 0, 0, 1300 );
+//	PlaySE( 3, "wa_026", 128, 64 );
+
+//「つまり、......うーん、例えばよ＠誰も立ち入らない深い森の奥で、おじいさんが一人暮らしをしているとする。＠
+//「うん...。￥
+	OutputLine(NULL, "「つまり、……うーん、例えばよ。",
+		   NULL, "\"For example... Hmm, how about this?", Line_WaitForInput);
+	OutputLine(NULL, "誰も立ち入らない深い森の奥で、おじいさんが一人暮らしをしているとする。」",
+		   NULL, " Say there's an old man living deep in a forest nobody goes into.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「うん…。」",
+		   NULL, "\"Uh-huh...\"", Line_Normal);
+	ClearMessage();
+
+//「そのおじいさんがある日、斧で殺されました＠...ちなみに犯人は、...うーん、じゃあおじいさんの息子ね＠おじいさんの家に来て一緒にお酒を飲んでいたんだけど、ちょっと喧嘩になって、殺してしまった。＠
+//　......内容としては極めてチープだ＠
+	OutputLine(NULL, "「そのおじいさんがある日、斧で殺されました。",
+		   NULL, "\"And one day, the old man gets killed by an axe.", Line_WaitForInput);
+	OutputLine(NULL, "…ちなみに犯人は、…うーん、じゃあおじいさんの息子ね。",
+		   NULL, " ...And, hmm... Let's say the criminal was the old man's son.", Line_WaitForInput);
+	OutputLine(NULL, "おじいさんの家に来て一緒にお酒を飲んでいたんだけど、ちょっと喧嘩になって、殺してしまった。」",
+		   NULL, " He went to the old man's house and they were drinking together, but they got into a fight and he killed him.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……内容としては極めてチープだ。",
+		   NULL, "...What an extremely cheap plot.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　衝動的な犯行で、計画性は皆無＠完全犯罪とはあまりにかけ離れている...￥
+	OutputLine(NULL, "　衝動的な犯行で、計画性は皆無。",
+		   NULL, "It was an impulsive crime, without a bit of planning.", Line_WaitForInput);
+	OutputLine(NULL, "完全犯罪とはあまりにかけ離れている…。",
+		   NULL, " It was pretty far from a perfect crime...", Line_Normal);
+	ClearMessage();
+
+//「でも圭一＠そこはとてもとても深い森の中の一軒家なの＠普段は絶対に誰も訪れない深い山奥の深い深ーい森の中＠......さて、殺した息子は町に帰ってきてこう言うの＠おじいさんは元気だった、って。￥
+	OutputLine(NULL, "「でも圭一。",
+		   NULL, "\"But Keiichi.", Line_WaitForInput);
+	OutputLine(NULL, "そこはとてもとても深い森の中の一軒家なの。",
+		   NULL, " The house was really, really deep in this forest.", Line_WaitForInput);
+	OutputLine(NULL, "普段は絶対に誰も訪れない深い山奥の深い深ーい森の中。",
+		   NULL, " So deep in the mountains that nobody would ever go out that far.", Line_WaitForInput);
+	OutputLine(NULL, "……さて、殺した息子は町に帰ってきてこう言うの。",
+		   NULL, " ...Then his son would go back to town and say...", Line_WaitForInput);
+	OutputLine(NULL, "おじいさんは元気だった、って。」",
+		   NULL, " that the old man was doing fine.\"", Line_Normal);
+	ClearMessage();
+
+//「......それのどこが完全犯罪なの？＠
+//「圭一＠...この事件はね、おじいさんが殺されているのが見つかって初めて「起」を迎えるのよ＠...もしもこの後、誰もおじいさんの家を訪れなかったら、永久に「起」は訪れない。＠
+//　.........「起」が訪れない...￥
+	OutputLine(NULL, "「……それのどこが完全犯罪なの？」",
+		   NULL, "\"...What about that is a perfect crime?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「圭一。",
+		   NULL, "\"Keiichi.", Line_WaitForInput);
+	OutputLine(NULL, "…この事件はね、おじいさんが殺されているのが見つかって初めて「起」を迎えるのよ。",
+		   NULL, " ...This incident would only begin when it was found out that the old man was killed.", Line_WaitForInput);
+	OutputLine(NULL, "…もしもこの後、誰もおじいさんの家を訪れなかったら、永久に「起」は訪れない。」",
+		   NULL, " ...If nobody ever visited the old man's house after that, that beginning would never occur.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………「起」が訪れない…。",
+		   NULL, "...The beginning would never occur...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+
+//「だからつまり、物語は始まらない＠事件が発覚しないから探偵も呼ばれない＠そもそも誰も不審に思わないから謎も起こらない＠...おじいさんは今日もひとりでのんびり森の奥で暮らしているんだろうね...＠で、お空におじいさんの顔が浮かんでジ・エンド＠......どう、こんな感じで？＠
+//「......す、......すごいじゃないか...！＠　それ、ちゃんとしたトリックだよ？！￥
+	OutputLine(NULL, "「だからつまり、物語は始まらない。",
+		   NULL, "\"So basically, the story wouldn't start.", Line_WaitForInput);
+	OutputLine(NULL, "事件が発覚しないから探偵も呼ばれない。",
+		   NULL, " The incident wouldn't come to light, and they wouldn't call in detectives.", Line_WaitForInput);
+	OutputLine(NULL, "そもそも誰も不審に思わないから謎も起こらない。",
+		   NULL, " And nobody would be suspicious in the first place, so there'd be no mystery.", Line_WaitForInput);
+	OutputLine(NULL, "…おじいさんは今日もひとりでのんびり森の奥で暮らしているんだろうね…。",
+		   NULL, " ...They'd think the old man was still living by himself deep in the forest...", Line_WaitForInput);
+	OutputLine(NULL, "で、お空におじいさんの顔が浮かんでジ・エンド。",
+		   NULL, " And the old man's face would appear in the sky, and that would be it.", Line_WaitForInput);
+	OutputLine(NULL, "……どう、こんな感じで？」",
+		   NULL, " ...Something like that, you know?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「……す、……すごいじゃないか…！！",
+		   NULL, "\"...That... That's amazing...!!", Line_WaitForInput);
+	OutputLine(NULL, "　それ、ちゃんとしたトリックだよ？！」",
+		   NULL, " That's a pretty great trick!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_170", "left", 0, 0, 300 );
+
+//「でも娯楽小説にはならないわね＠推理小説は所詮、娯楽書＠完全犯罪の指南書にはなり得ないんだから。＠
+//　...お袋を茶化すため、努めて明るく会話をしていたが...その胸中は興奮していた＠
+	OutputLine(NULL, "「でも娯楽小説にはならないわね。",
+		   NULL, "\"But it wouldn't be a novel.", Line_WaitForInput);
+	OutputLine(NULL, "推理小説は所詮、娯楽書。",
+		   NULL, " Mystery novels are for entertainment, after all.", Line_WaitForInput);
+	OutputLine(NULL, "完全犯罪の指南書にはなり得ないんだから。」",
+		   NULL, " They can't be instruction manuals for perfect crimes.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…お袋を茶化すため、努めて明るく会話をしていたが…その胸中は興奮していた。",
+		   NULL, "...I was trying hard to talk cheerfully to fool her... but inside I was excited.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　完全犯罪には...特殊な道具とか異常な地形、謎の新薬とか莫大な金をかけた大仕掛けなど何も不要だとわかったからだ￥
+	OutputLine(NULL, "　完全犯罪には…特殊な道具とか異常な地形、謎の新薬とか莫大な金をかけた大仕掛けなど何も不要だとわかったからだ。",
+		   NULL, "Special tools, strange geography, mysterious drugs, traps involving huge sums of cash... None of them were needed for perfect crimes.", Line_Normal);
+	ClearMessage();
+
+//　大切なのは...「起」がないこと＠.........事件が、...発覚さえしなければいいのだ￥
+	OutputLine(NULL, "　大切なのは…「起」がないこと。",
+		   NULL, "The important thing... was that there wasn't a beginning.", Line_WaitForInput);
+	OutputLine(NULL, "………事件が、…発覚さえしなければいいのだ。",
+		   NULL, " ......As long as the incident didn't come to light... it would be fine.", Line_Normal);
+	ClearMessage();
+
+//　平たく言えば＠
+//　......誰にも見つからずに殺し＠
+//　誰にも見つからずに死体を処理できれば＠......それでほぼ完全犯罪は成立するのだ￥
+	OutputLine(NULL, "　平たく言えば、",
+		   NULL, "Speaking broadly...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……誰にも見つからずに殺し、",
+		   NULL, "If I could kill him without anyone finding out...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誰にも見つからずに死体を処理できれば、",
+		   NULL, "And dispose of the corpse somewhere no one could find...", Line_WaitForInput);
+	OutputLine(NULL, "……それでほぼ完全犯罪は成立するのだ。",
+		   NULL, " It would basically already be a perfect crime.", Line_Normal);
+	ClearMessage();
+
+//　...もちろん、ある日突然、今までいた人間が失踪すれば怪しまれる＠
+	OutputLine(NULL, "　…もちろん、ある日突然、今までいた人間が失踪すれば怪しまれる。",
+		   NULL, "...Of course, if someone up and vanished one day all of a sudden, people would get suspicious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...だが、あの男にはそれは当てはまらない￥
+	OutputLine(NULL, "　…だが、あの男にはそれは当てはまらない。",
+		   NULL, "...But that didn't apply to this man.", Line_Normal);
+	ClearMessage();
+
+//　去年、叔母が死んだ時、オヤシロさまの祟りを恐れて村から一度は逃げ出した男だ＠
+	OutputLine(NULL, "　去年、叔母が死んだ時、オヤシロさまの祟りを恐れて村から一度は逃げ出した男だ。",
+		   NULL, "Last year, after their aunt died, he ran away from the village in fear of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　また綿流しの夜を迎え、恐れをなして逃げ出してしまった...とみんな思うに違いない￥
+	OutputLine(NULL, "　また綿流しの夜を迎え、恐れをなして逃げ出してしまった…とみんな思うに違いない。",
+		   NULL, "When the night of Watanagashi came around again, everyone would have to think... that he ran away in fear again.", Line_Normal);
+	ClearMessage();
+
+//　そもそも、愛人宅に転がり込んでるような住所不定だ＠
+	OutputLine(NULL, "　そもそも、愛人宅に転がり込んでるような住所不定だ。",
+		   NULL, "I mean, he had been living with a lover of his in town.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　その日の気分でぽっといなくなっても、誰も怪しむまい＠
+	OutputLine(NULL, "　その日の気分でぽっといなくなっても、誰も怪しむまい。",
+		   NULL, "No matter what it felt like when he vanished, no one would be suspicious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　どうせ嫌われ者だ＠...姿を消したところで、どこへ消えたかなんて誰も気にするものか...！￥
+	OutputLine(NULL, "　どうせ嫌われ者だ。",
+		   NULL, "People hated him, after all.", Line_WaitForInput);
+	OutputLine(NULL, "…姿を消したところで、どこへ消えたかなんて誰も気にするものか…！！",
+		   NULL, " ...No one would care where he went if he disappeared...!!", Line_Normal);
+	ClearMessage();
+
+//　こうして考えると、あの男は、ますます殺すのに容易であることがわかる＠
+//　これ以上は自宅で考えていても仕方がない￥
+	OutputLine(NULL, "　こうして考えると、あの男は、ますます殺すのに容易であることがわかる。",
+		   NULL, "When I thought about it like that, it got easier and easier to imagine killing him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これ以上は自宅で考えていても仕方がない。",
+		   NULL, "There was no point in thinking inside my house anymore.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	PlayBGM( 2, "lsys12", 128, 0 );
+	DrawSceneWithMask( "bg_117", "left", 0, 0, 300 );
+
+//　俺は家を抜け出し、ガレージから自転車を出した＠
+//　......行き先は......とりあえずどこでもいい＠
+//　とにかく風を切って走って、身を冷気にさらして高まる興奮を醒ましたい￥
+	OutputLine(NULL, "　俺は家を抜け出し、ガレージから自転車を出した。",
+		   NULL, "I left, getting my bike out of the garage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……行き先は……とりあえずどこでもいい。",
+		   NULL, "...For now... it didn't matter where I was going.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　とにかく風を切って走って、身を冷気にさらして高まる興奮を醒ましたい。",
+		   NULL, "I just rode through the wind, trying to calm my excitement by feeling the cool air on my body.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_203", 1000 );
+
+//　.........殺す場所とその方法、!w1000時間、!w1000死体の処理＠
+//　......この四点を詰めるだけで......計画は充分になる￥
+	OutputLine(NULL, "　………殺す場所とその方法、",
+		   NULL, "...Where I'd kill him, how I'd do it,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "時間、",
+		   NULL, " what time,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "死体の処理。",
+		   NULL, " and how to dispose of the corpse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……この四点を詰めるだけで……計画は充分になる。",
+		   NULL, "...If I just had those four things... I could get a good plan going.", Line_Normal);
+	ClearMessage();
+
+//　あまりに決める事項の少なさに驚き、身震いした￥
+	OutputLine(NULL, "　あまりに決める事項の少なさに驚き、身震いした。",
+		   NULL, "I was so surprised at how little there was to decide that I shivered.", Line_Normal);
+	ClearMessage();
+
+//　......膨大な時間をかけて巨大な計画を練り上げなくてはならないと覚悟していたのに...＠...あとわずかこれだけを整理すれば...もうそれは実行に移せるのだから￥
+	OutputLine(NULL, "　……膨大な時間をかけて巨大な計画を練り上げなくてはならないと覚悟していたのに…、",
+		   NULL, "...I'd been completely prepared to build this humongous plan over a really long period of time...", Line_WaitForInput);
+	OutputLine(NULL, "…あとわずかこれだけを整理すれば…もうそれは実行に移せるのだから。",
+		   NULL, " ...But if I could just get these little things in order... I could put it into motion.", Line_Normal);
+	ClearMessage();
+
+//　今は土曜日＠
+//　......綿流しの夜に殺し、...オヤシロさまの祟りを俺が代行する以上、リミットはあと２４時間しかないのだ＠
+	OutputLine(NULL, "　今は土曜日。",
+		   NULL, "Today was Saturday.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……綿流しの夜に殺し、…オヤシロさまの祟りを俺が代行する以上、リミットはあと２４時間しかないのだ。",
+		   NULL, "...I would have to kill him on the night of Watanagashi... so as long as I was standing in for Oyashiro-sama, I only had twenty-four hours remaining.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......沙都子＠......あと２４時間、......我慢しててくれ￥
+	OutputLine(NULL, "　……沙都子。",
+		   NULL, "...Satoko.", Line_WaitForInput);
+	OutputLine(NULL, "……あと２４時間、……我慢しててくれ。",
+		   NULL, " ...Just hang on... for twenty-four more hours.", Line_Normal);
+	ClearMessage();
+
+//　今以上のどんな辛苦があるかなんて...想像もつかないけれど...、あと少し、耐えていてくれ＠
+	OutputLine(NULL, "　今以上のどんな辛苦があるかなんて…想像もつかないけれど…、あと少し、耐えていてくれ。",
+		   NULL, "I can't even imagine... having to suffer through even more... but please, hold out for a little longer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　もう１秒だって耐えられないってことは...わかりつつ...￥
+//　でも...耐えててくれ...＠...にーにーが、......必ず助けてやるから...￥
+	OutputLine(NULL, "　もう１秒だって耐えられないってことは…わかりつつ…。",
+		   NULL, "I know you can't even last another second... I know that...", Line_Normal);
+	ClearMessage();
+	OutputLine(NULL, "　でも…耐えててくれ…。",
+		   NULL, "But please... just hold out...", Line_WaitForInput);
+	OutputLine(NULL, "…にーにーが、……必ず助けてやるから…。",
+		   NULL, " ...Your Nii-nii... will save you for sure...", Line_Normal);
+	ClearMessage();
+
+
+
+//■殺人準備
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "white", 400 );
+
+	DrawSceneWithMask( "bg_040", "m1", 0, 0, 300 );
+
+//　表はまだセミの鳴く時間だ＠
+//　......昼下がり＠...夕方にはまだ遠かった￥
+	OutputLine(NULL, "　表はまだセミの鳴く時間だ。",
+		   NULL, "Outside, it was still early enough for the cicadas to be crying.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……昼下がり。",
+		   NULL, "...Early afternoon.", Line_WaitForInput);
+	OutputLine(NULL, "…夕方にはまだ遠かった。",
+		   NULL, " ...Evening was still a long way off.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "msys25", 128, 0 );
+
+//　......空を見れば、いつの間にか曇天だ＠
+//　そう言えば、家を出るときちょっと聞こえたテレビの天気予報では、日曜日は雨かもしれない、なんて言ってた...￥
+	OutputLine(NULL, "　……空を見れば、いつの間にか曇天だ。",
+		   NULL, "...I looked at the sky—at some point it had gotten cloudy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そう言えば、家を出るときちょっと聞こえたテレビの天気予報では、日曜日は雨かもしれない、なんて言ってた…。",
+		   NULL, "Come to think of it, as I left the house, I heard on the TV that the weather forecast was calling for a chance of rain on Sunday...", Line_Normal);
+	ClearMessage();
+
+//　空の色は鉛色＠
+//　...ちょっと雷鳴が轟けば、いつ夕立になってもおかしくない￥
+	OutputLine(NULL, "　空の色は鉛色。",
+		   NULL, "The sky was the color of lead.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…ちょっと雷鳴が轟けば、いつ夕立になってもおかしくない。",
+		   NULL, "...If I heard a little bit of thunder, I'd definitely have expected a sudden evening shower.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_093", "right", 0, 0, 300 );
+
+//　......まず目指したのは、学校だった￥
+	OutputLine(NULL, "　……まず目指したのは、学校だった。",
+		   NULL, "...My first destination was school.", Line_Normal);
+	ClearMessage();
+
+//　なぜ学校を目指したのかを説明する前に、俺はどんな方法であの男を殺害することにしたのかを説明する必要がある＠
+	OutputLine(NULL, "　なぜ学校を目指したのかを説明する前に、俺はどんな方法であの男を殺害することにしたのかを説明する必要がある。",
+		   NULL, "Before explaining why I was going there, I needed to explain what method for killing that man I had decided upon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...俺があの男に与えるべきもっとも相応しい死だと決めたのは＠...そう、去年の祟りと同じ＠......叔母が受けた報いと同じ、...撲殺だった￥
+	OutputLine(NULL, "　…俺があの男に与えるべきもっとも相応しい死だと決めたのは、",
+		   NULL, "...I decided that the most suitable death, the one I needed to give him...", Line_WaitForInput);
+	OutputLine(NULL, "…そう、去年の祟りと同じ。",
+		   NULL, " ...was the same as last year's curse.", Line_WaitForInput);
+	OutputLine(NULL, "……叔母が受けた報いと同じ、…撲殺だった。",
+		   NULL, " ...The same as the punishment their aunt had received... being beaten to death.", Line_Normal);
+	ClearMessage();
+
+//　撲殺なんて方法はやや不確実では...＠
+//　刃物での刺殺の方が確実なのでは...と思うかもしれない＠
+//　でもそれはもちろん、よく考えた上での選択だ￥
+	OutputLine(NULL, "　撲殺なんて方法はやや不確実では…？",
+		   NULL, "Wouldn't beating him to death be somewhat unreliable...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　刃物での刺殺の方が確実なのでは…と思うかもしれない。",
+		   NULL, "You may think that stabbing him with a blade... would be more reliable.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でもそれはもちろん、よく考えた上での選択だ。",
+		   NULL, "But this was something I had chosen after a lot of thought.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+
+//　...現実に考えてみればいい。
+//＠銃刀法で刃渡り１０...何センチだったか以上の刃物は禁じられている＠
+//　...つまり、俺の入手可能な範囲内の刃物は、長くても、ものさしよりも短いものに限られるのだ＠
+	OutputLine(NULL, "　…現実に考えてみればいい。",
+		   NULL, "...You just needed to think realistically.", Line_WaitForInput);
+	OutputLine(NULL, "銃刀法で刃渡り１０…何センチだったか以上の刃物は禁じられている。",
+		   NULL, " The law... It prohibited carrying any blades longer than 10 centimeters, I think.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…つまり、俺の入手可能な範囲内の刃物は、長くても、ものさしよりも短いものに限られるのだ。",
+		   NULL, "...So the blades available to me, though long enough, were limited to things shorter than a ruler.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...抵抗の可能性がある相手に対して、それっぽちのリーチがいかに頼りないものか、理解できると思う￥
+	OutputLine(NULL, "　…抵抗の可能性がある相手に対して、それっぽちのリーチがいかに頼りないものか、理解できると思う。",
+		   NULL, "...You can probably understand how tricky it would be with such a short reach to go up against an opponent that might fight back.", Line_Normal);
+	ClearMessage();
+
+//　ならば、リーチのある棒状の武器の方がはるかに有利だ＠
+//　必殺性には欠けるだろうが、殺すまで殴り続ければいいのだから、結果的に殺せるのは同じだ＠
+	OutputLine(NULL, "　ならば、リーチのある棒状の武器の方がはるかに有利だ。",
+		   NULL, "In that case, using a weapon with reach would be far more effective.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　必殺性には欠けるだろうが、殺すまで殴り続ければいいのだから、結果的に殺せるのは同じだ。",
+		   NULL, "It might not have the same precision, but you just had to hit the guy until you killed him—both options resulted in death.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　では棒状の凶器で、恐ろしい威力があり、かつ携帯性に富んだものは何か＠
+//　......ここまで来れば、金属バットにすぐに行き着くはずだ￥
+	OutputLine(NULL, "　では棒状の凶器で、恐ろしい威力があり、かつ携帯性に富んだものは何か。",
+		   NULL, "With that settled, what is the weapon with the most terrifying force behind it that is also easy to carry around?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ここまで来れば、金属バットにすぐに行き着くはずだ。",
+		   NULL, "...By this point, you should immediately think of a metal baseball bat.", Line_Normal);
+	ClearMessage();
+
+//　金属バットがいかに恐ろしい凶器になりえるかは、...俺がここでいちいち説明する必要もない＠
+//　それでいて、日常生活に溶け込んでいて携帯していても不審に思われない点は特筆すべきだ＠
+	OutputLine(NULL, "　金属バットがいかに恐ろしい凶器になりえるかは、…俺がここでいちいち説明する必要もない。",
+		   NULL, "I don't need to explain... how terrifying a metal baseball bat can be as a weapon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それでいて、日常生活に溶け込んでいて携帯していても不審に思われない点は特筆すべきだ。",
+		   NULL, "Of special note is the fact that you can carry one around in broad daylight and not be thought of as suspicious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　.........この２点だけでも、金属バットを凶器に選ぶには充分なのだが＠......実はもう１点、!w800...特定の金属バットを選びたい理由がある＠それは後述する￥
+	OutputLine(NULL, "　………この２点だけでも、金属バットを凶器に選ぶには充分なのだが、",
+		   NULL, "......Just those two points would have been enough to choose a metal bat for my weapon...", Line_WaitForInput);
+	OutputLine(NULL, "……実はもう１点、",
+		   NULL, " but there was one more reason...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…特定の金属バットを選びたい理由がある。",
+		   NULL, " for choosing a metal bat in particular.", Line_WaitForInput);
+	OutputLine(NULL, "それは後述する。",
+		   NULL, " I will speak about it later.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_027", "right", 0, 0, 300 );
+
+//　土曜日の放課後はクラスメートがまだまだ校庭ではしゃぎまわっていた＠
+//　その中に俺が現れても、それはいつもの風景なので誰も不審には思わない￥
+	OutputLine(NULL, "　土曜日の放課後はクラスメートがまだまだ校庭ではしゃぎまわっていた。",
+		   NULL, "After school that Saturday, my classmates were still having fun, playing in the schoolyard.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その中に俺が現れても、それはいつもの風景なので誰も不審には思わない。",
+		   NULL, "I could show up there and it would be the same as always, so nobody will think I'm suspicious.", Line_Normal);
+	ClearMessage();
+
+//　...この、不審に思われずに凶器を入手するというのも、実は無視できない要素だった＠
+	OutputLine(NULL, "　…この、不審に思われずに凶器を入手するというのも、実は無視できない要素だった。",
+		   NULL, "...Getting my hands on the weapon without looking suspicious was actually a factor I couldn't ignore.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......普段、野球などしない俺が、例えばスポーツ用品店で金属バットを求めたら、...やはりそれは不審がられるに違いない＠
+//　......「起」を起こさないため、...それすらにも細心の注意を払う必要があるのだ￥
+	OutputLine(NULL, "　……普段、野球などしない俺が、例えばスポーツ用品店で金属バットを求めたら、…やはりそれは不審がられるに違いない。",
+		   NULL, "...I didn't normally play baseball, so if I went to a sports store looking for a metal bat... it would definitely be suspicious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……「起」を起こさないため、…それすらにも細心の注意を払う必要があるのだ。",
+		   NULL, "...I can't let there be a beginning to the story... so I needed to be really careful even about that.", Line_Normal);
+	ClearMessage();
+
+//　だから学校なのだ＠
+//　......俺が現れることが不審でないロケーションで、...凶器を入手する￥
+	OutputLine(NULL, "　だから学校なのだ。",
+		   NULL, "That left school.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……俺が現れることが不審でないロケーションで、…凶器を入手する。",
+		   NULL, "...At a location at which my appearance wouldn't be suspicious... I would acquire the weapon.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_028", 400 );
+
+//　窓から教室を確認すると...、当然だが誰もいなかった＠
+//　教室に残るなんて、部活メンバーが部活をする時くらいだ＠
+//　...俺たちがいなかったら、放課後の教室なんて、無人の空き部屋に過ぎない￥
+	OutputLine(NULL, "　窓から教室を確認すると…、当然だが誰もいなかった。",
+		   NULL, "I checked inside the classroom through the window... but of course, there was nobody there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　教室に残るなんて、部活メンバーが部活をする時くらいだ。",
+		   NULL, "The only students who would stay in there were me and the others, when doing club activities.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…俺たちがいなかったら、放課後の教室なんて、無人の空き部屋に過ぎない。",
+		   NULL, "...Without us, the classroom after school was just an empty, unused room.", Line_Normal);
+	ClearMessage();
+
+//　...きょろきょろとなどせず、...まるで忘れ物を取りに来たかのように、さりげなく昇降口に入る￥
+	OutputLine(NULL, "　…きょろきょろとなどせず、…まるで忘れ物を取りに来たかのように、さりげなく昇降口に入る。",
+		   NULL, "...Without glancing around nervously... as if I'd just gone to get something I'd forgotten, I casually went in the entrance.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	FadeOutBGM( 2, 1000, TRUE );
+	DrawSceneWithMask( "bg_019", "left", 0, 0, 300 );
+
+//　.........先生は職員室で事務に集中しているようだ＠
+//　廊下に姿はない＠
+	OutputLine(NULL, "　………先生は職員室で事務に集中しているようだ。",
+		   NULL, "......It looked like the teacher was busy with paperwork in the teacher's lounge.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　廊下に姿はない。",
+		   NULL, "I didn't see her in the hallway.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...自然に、だけれども影のように素早く...、教室に入った￥
+	OutputLine(NULL, "　…自然に、だけれども影のように素早く…、教室に入った。",
+		   NULL, "...Naturally, yet quickly as a shadow... I entered the classroom.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_108", "left", 0, 0, 300 );
+	PlayBGM( 2, "lsys25", 128, 0 );
+
+//　無人の教室には、普段では感じることのできない、不思議な空気が淀んでいる￥
+	OutputLine(NULL, "　無人の教室には、普段では感じることのできない、不思議な空気が淀んでいる。",
+		   NULL, "The empty room was full of a strange, stagnant air that you couldn't feel normally.", Line_Normal);
+	ClearMessage();
+
+//　......誰もいない、無人の教室＠
+//　...誰も見ていないからこそ、...机たちが勝手に這い回り、床の染みをべろりべろりと嘗め回っているかもしれない＠......そんなところに俺が急に踏み込んで来たら＠......慌てた机たちは、俺に飛び掛ってボリボリと骨まで砕いて飲み込んでしまうのだろうか...￥
+	OutputLine(NULL, "　……誰もいない、無人の教室。",
+		   NULL, "...An empty classroom... with nobody here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…誰も見ていないからこそ、…机たちが勝手に這い回り、床の染みをべろりべろりと嘗め回っているかもしれない。",
+		   NULL, "...Maybe while no one was around... the desks creep about of their own accord, licking the floors clean of dirt.", Line_WaitForInput);
+	OutputLine(NULL, "……そんなところに俺が急に踏み込んで来たら。",
+		   NULL, " ...If I suddenly stepped into a place like that...", Line_WaitForInput);
+	OutputLine(NULL, "……慌てた机たちは、俺に飛び掛ってボリボリと骨まで砕いて飲み込んでしまうのだろうか…？",
+		   NULL, " Would the desks, in their surprise, fly at me, crush my bones, and eat me alive...?", Line_Normal);
+	ClearMessage();
+
+
+	FadeOutBGM( 2, 1000, TRUE );
+
+//「..................馬鹿馬鹿しい。＠
+//　つまらない妄想で貴重な思考時間を浪費したことを不快に思った￥
+	OutputLine(NULL, "「………………馬鹿馬鹿しい。」",
+		   NULL, "\"......That's ridiculous.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまらない妄想で貴重な思考時間を浪費したことを不快に思った。",
+		   NULL, "I felt regret at wasting valuable thinking time on stupid delusions.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_110", "right", 0, 0, 300 );
+
+//　......教室の後ろには各生徒用のロッカーが並ぶ￥
+	OutputLine(NULL, "　……教室の後ろには各生徒用のロッカーが並ぶ。",
+		   NULL, "...The students' lockers were lined up in the back of the classroom.", Line_Normal);
+	ClearMessage();
+
+//　目指すロッカーは...俺のロッカーではない＠......それは、!w800...ある日偶然、見つけてしまった、!w800.........禁断のロッカー￥
+	OutputLine(NULL, "　目指すロッカーは…俺のロッカーではない。",
+		   NULL, "The one I was looking for... wasn't my own.", Line_WaitForInput);
+	OutputLine(NULL, "……それは、",
+		   NULL, " ...It was...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…ある日偶然、見つけてしまった、",
+		   NULL, " a forbidden locker......", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "………禁断のロッカー。",
+		   NULL, " one I had accidentally discovered one day.", Line_Normal);
+	ClearMessage();
+
+//「.........あった、......北条......＠......間違いない。＠
+//　...１人にロッカーは１つなのに、なんで沙都子にだけ２つロッカーがある＠　と騒いだことがあった＠
+	OutputLine(NULL, "「………あった、……北条……。",
+		   NULL, "\"...Here it is... Houjou...", Line_WaitForInput);
+	OutputLine(NULL, "……間違いない。」",
+		   NULL, " ...This has to be it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…１人にロッカーは１つなのに、なんで沙都子にだけ２つロッカーがある？",
+		   NULL, "...If one person has one locker, then why would only Satoko have two?", Line_WaitForInput);
+	OutputLine(NULL, "　と騒いだことがあった。",
+		   NULL, " I'd made a fuss about it once.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...それは後に...同じ北条の姓を持つ、悟史のロッカーだとわかるのだが￥
+	OutputLine(NULL, "　…それは後に…同じ北条の姓を持つ、悟史のロッカーだとわかるのだが。",
+		   NULL, "...After that... I learned it was Satoshi's locker, and he had the same last name as her.", Line_Normal);
+	ClearMessage();
+
+//　.........もちろん、今はいない生徒のロッカーとは言え...、中身を見るのは恥知らずな行為だ＠
+//　.........でも俺は、.........好奇心に負けて、その中身を覗いてしまったことがある...＠
+	OutputLine(NULL, "　………もちろん、今はいない生徒のロッカーとは言え…、中身を見るのは恥知らずな行為だ。",
+		   NULL, "...But of course, even though it was a locker for a student no longer here... looking inside it was still a shameless act.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………でも俺は、………好奇心に負けて、その中身を覗いてしまったことがある…。",
+		   NULL, "...But one time... I let my curiosity get the better of me and took a peek inside...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　その中身は平凡な下らないもので...当時は何の興味もわかず、今の今まで中身のことを忘れ去っていた￥
+	OutputLine(NULL, "　その中身は平凡な下らないもので…当時は何の興味もわかず、今の今まで中身のことを忘れ去っていた。",
+		   NULL, "Inside, it was average and worthless... At the time, I hadn't been interested, so until now I'd forgotten what had been in it.", Line_Normal);
+	ClearMessage();
+
+//　......だが、覚醒という表現が似合うくらいに研ぎ澄まされた俺は＠...その当時の記憶の中に、!w800...ソレがあるのを、!w800...思い出していた￥
+	OutputLine(NULL, "　……だが、覚醒という表現が似合うくらいに研ぎ澄まされた俺は、",
+		   NULL, "...But now that I had—dare I say it—awakened...", Line_WaitForInput);
+	OutputLine(NULL, "…その当時の記憶の中に、",
+		   NULL, " I remembered...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…ソレがあるのを、",
+		   NULL, " the thing...", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…思い出していた。",
+		   NULL, " that had been there.", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	FadeOutBGM( 1, 1000, TRUE );
+
+//　きぃ...ぃぃぃ......￥
+	OutputLine(NULL, "　きぃ…ぃぃぃ……。",
+		   NULL, "Scrr...ape...", Line_Normal);
+	ClearMessage();
+
+//　ロッカーを開けると...、カビと汗のにおいの混じった、不潔な体育倉庫のような臭いが溢れてくる＠
+//　......臭いに顔をしかめながらも...、...ソレを探す￥
+	OutputLine(NULL, "　ロッカーを開けると…、カビと汗のにおいの混じった、不潔な体育倉庫のような臭いが溢れてくる。",
+		   NULL, "I opened the locker... and a stench of mold and sweat wafted out, like a gym storehouse that hadn't been cleaned in weeks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……臭いに顔をしかめながらも…、…ソレを探す。",
+		   NULL, "...My face puckered up at the stench... but I looked for it.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 2, "lsys18", 128, 0 );
+
+//　そう＠
+//　............悟史は、監督の少年野球チームの入っていた＠
+	OutputLine(NULL, "　そう。",
+		   NULL, "Yes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………悟史は、監督の少年野球チームの入っていた。",
+		   NULL, "......Satoshi was on Coach's baseball team.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...ロッカーには雛見沢ファイターズのユニホームと.........、!w1000...ソレが￥
+	OutputLine(NULL, "　…ロッカーには雛見沢ファイターズのユニホームと………、",
+		   NULL, "...Inside the locker was a Hinamizawa Fighters uniform......", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…ソレが。",
+		   NULL, " and it.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_026", 128, 64 );
+
+//　......悟史の使っていた、.........金属バット...￥
+	OutputLine(NULL, "　……悟史の使っていた、………金属バット…。",
+		   NULL, "...The one Satoshi used... the metal bat...", Line_Normal);
+	ClearMessage();
+
+//　そう＠...これが、このバットを選びたかった理由＠
+	OutputLine(NULL, "　そう。",
+		   NULL, "Yes.", Line_WaitForInput);
+	OutputLine(NULL, "…これが、このバットを選びたかった理由。",
+		   NULL, " ...This was the reason I wanted to choose this bat.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...この殺人劇は、俺の手で執行されるわけだが、......それは本来は俺でなく、...悟史の役割なのだ＠
+//　...だがそれを、にーにーを自称する俺が代行する＠
+//　......代行するための、...ひとつのルール￥
+	OutputLine(NULL, "　…この殺人劇は、俺の手で執行されるわけだが、……それは本来は俺でなく、…悟史の役割なのだ。",
+		   NULL, "...This murder would be carried out by me... but this wasn't originally my role... it was Satoshi's.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だがそれを、にーにーを自称する俺が代行する。",
+		   NULL, "...But I would stand in for him and call myself Satoko's nii-nii.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……代行するための、…ひとつのルール。",
+		   NULL, "...It was one of the rules... for standing in for him.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_109", "left", 0, 0, 300 );
+
+//　金属バットを...ぐっと握る￥
+	OutputLine(NULL, "　金属バットを…ぐっと握る。",
+		   NULL, "I reached for the metal bat... and grasped it firmly.", Line_Normal);
+	ClearMessage();
+
+//　......軽い＠
+//　...それでいて、...先端には充分な重さがあって、...これを思い切り振り下ろしたなら、恐ろしいことになると想像させるに充分だった￥
+	OutputLine(NULL, "　……軽い。",
+		   NULL, "...It was light.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それでいて、…先端には充分な重さがあって、…これを思い切り振り下ろしたなら、恐ろしいことになると想像させるに充分だった。",
+		   NULL, "...And yet... its tip had enough heft in it... enough to easily imagine the horror if I brought it down with all my might.", Line_Normal);
+	ClearMessage();
+
+//　...悟史＠.........お前に、妹を救う最後のチャンスをやる＠
+	OutputLine(NULL, "　…悟史。",
+		   NULL, "...Satoshi.", Line_WaitForInput);
+	OutputLine(NULL, "………お前に、妹を救う最後のチャンスをやる。",
+		   NULL, " ...I'll give you one last chance to save your sister.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......俺に、力を貸せ＠
+//　......卑怯者のお前に代わって、俺が代行する＠
+//　...だから、お前に妹を思うわずかの心が残っているなら...、俺に...力を貸せ＠
+	OutputLine(NULL, "　……俺に、力を貸せ。",
+		   NULL, "...Lend me your strength.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……卑怯者のお前に代わって、俺が代行する。",
+		   NULL, "...You're a coward, but I will stand in for you.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だから、お前に妹を思うわずかの心が残っているなら…、俺に…力を貸せ。",
+		   NULL, "...So if you still care even a little bit about her... you will... lend me your strength.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　お前のバット以外にあの男を誅する、これほど相応しい凶器は存在しないのだから￥
+	OutputLine(NULL, "　お前のバット以外にあの男を誅する、これほど相応しい凶器は存在しないのだから。",
+		   NULL, "There is no more suitable weapon in the world for putting that man to death than your bat.", Line_Normal);
+	ClearMessage();
+
+	StopSE( 3 );
+
+//　これを...あとは校庭のどこかに隠しておけばいい＠
+//　...明日、実行直前に学校に寄って回収すればいい＠
+//　...自宅へ持ち帰る途中で、誰かに見られて不審に思われる可能性だってやはり無視できないからだ￥
+	OutputLine(NULL, "　これを…あとは校庭のどこかに隠しておけばいい。",
+		   NULL, "Now... I just needed to figure out where to hide it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…明日、実行直前に学校に寄って回収すればいい。",
+		   NULL, "...Tomorrow, before the act, I would just stop by the school and grab it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…自宅へ持ち帰る途中で、誰かに見られて不審に思われる可能性だってやはり無視できないからだ。",
+		   NULL, "...Because I couldn't ignore the possibility someone would see me bringing it home and think it was strange.", Line_Normal);
+	ClearMessage();
+
+//　その点、学校なら問題はない＠
+//　それに明日は日曜日＠それどころか...村で一番大きな祭りの日＠
+//　...誰も学校になんか来たりしない￥
+	OutputLine(NULL, "　その点、学校なら問題はない。",
+		   NULL, "But if I left it here, there wouldn't be a problem.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それに明日は日曜日。",
+		   NULL, "Plus, tomorrow was Sunday.", Line_WaitForInput);
+	OutputLine(NULL, "それどころか…村で一番大きな祭りの日。",
+		   NULL, " Not only that... it was the day of the biggest festival in the whole village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…誰も学校になんか来たりしない。",
+		   NULL, "...Nobody would be coming to school.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeOutBGM( 2, 1000, TRUE );
+	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	PlayBGM( 1, "msys12", 128, 0 );
+	DrawSceneWithMask( "bg_028", "right", 0, 0, 300 );
+
+//　俺は昇降口を出、...すぐ近くに止めてある建設重機に近付く￥
+	OutputLine(NULL, "　俺は昇降口を出、…すぐ近くに止めてある建設重機に近付く。",
+		   NULL, "I left out the entrance... and went over to a construction vehicle parked nearby.", Line_Normal);
+	ClearMessage();
+
+//　...絶対にいたずらで触れないようにと先生にきつく言われてるので、子供たちは誰もこの建設重機には近寄らない＠
+//　...触れたことがわかるだけではやし立てるくらいに、近寄らない＠
+//　その重機の...影に、!w800...そっと隠す￥
+	OutputLine(NULL, "　…絶対にいたずらで触れないようにと先生にきつく言われてるので、子供たちは誰もこの建設重機には近寄らない。",
+		   NULL, "We'd been warned by our teacher not to touch it just for laughs, so none of the kids would come near the vehicle either.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…触れたことがわかるだけではやし立てるくらいに、近寄らない。",
+		   NULL, "...They wouldn't, because if she found out they touched it, they'd be in huge trouble.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その重機の…影に、",
+		   NULL, "I quietly hid it...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…そっと隠す。",
+		   NULL, " in the shadow... of the vehicle.", Line_Normal);
+	ClearMessage();
+
+//　......この重機が明日動かされる可能性は限りなくゼロだ＠
+//　...なぜなら明日は日曜日＠
+//　お役人はお休みの日だ＠
+//　......それに、...クラスメートの話じゃ、この重機はもう何年もここに放置されたままらしい＠...そんなに何年も動かさなかったら、...機械は急に動かせるものじゃない＠...だから、ほぼ間違いなく大丈夫￥
+	OutputLine(NULL, "　……この重機が明日動かされる可能性は限りなくゼロだ。",
+		   NULL, "...The chances of someone operating the vehicle tomorrow were slim to none.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…なぜなら明日は日曜日。",
+		   NULL, "...Because tomorrow was Sunday.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　お役人はお休みの日だ。",
+		   NULL, "Government workers had the day off.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それに、…クラスメートの話じゃ、この重機はもう何年もここに放置されたままらしい。",
+		   NULL, "...And... from what my classmates had said, the thing had been left here for years now.", Line_WaitForInput);
+	OutputLine(NULL, "…そんなに何年も動かさなかったら、…機械は急に動かせるものじゃない。",
+		   NULL, " ...Machines that haven't been moved in years... You can't just suddenly start them up again.", Line_WaitForInput);
+	OutputLine(NULL, "…だから、ほぼ間違いなく大丈夫。",
+		   NULL, " ...So I was almost definitively fine in this case.", Line_Normal);
+	ClearMessage();
+
+//　...日差しが、刺すように暑い。頭が一瞬朦朧としかける￥
+	OutputLine(NULL, "　…日差しが、刺すように暑い。頭が一瞬朦朧としかける。",
+		   NULL, "...The sunlight was piercingly hot. My head grew faint for a moment.", Line_Normal);
+	ClearMessage();
+
+//　今日の日差しって...さっきまでこんなにもきつかったっけ...＠
+//　こんな、脳の働きが一瞬鈍った時には...何か油断があるものだ＠......頭に二度ほど叩いてから、用心深く回りを見渡す...￥
+	OutputLine(NULL, "　今日の日差しって…さっきまでこんなにもきつかったっけ…？",
+		   NULL, "Had the heat... been this harsh for the entire day...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　こんな、脳の働きが一瞬鈍った時には…何か油断があるものだ。",
+		   NULL, "A moment of dulled thoughts like this... was a moment of carelessness.", Line_WaitForInput);
+	OutputLine(NULL, "……頭に二度ほど叩いてから、用心深く回りを見渡す…。",
+		   NULL, " ...I gave myself a couple hits in the head, then looked around warily...", Line_Normal);
+	ClearMessage();
+
+//　..................................................................￥
+	OutputLine(NULL, "　…………………………………………………………。",
+		   NULL, ".....................", Line_Normal);
+	ClearMessage();
+//　...よし＠............次は、...死体の処理についてだ￥
+	OutputLine(NULL, "　…よし。",
+		   NULL, "...Okay.", Line_WaitForInput);
+	OutputLine(NULL, "…………次は、…死体の処理についてだ。",
+		   NULL, " ......Next... how to dispose of the corpse.", Line_Normal);
+	ClearMessage();
+
+//■アイキャッチ
+
+//mov %CAMP_MUGIC,0
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+//	Wait( 1000 );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 1000 );
+	SetValidityOfInput( TRUE );
+
+}

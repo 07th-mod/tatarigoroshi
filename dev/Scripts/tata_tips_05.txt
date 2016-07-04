@@ -1,0 +1,259 @@
+﻿void main()
+{
+
+//■タイトル：　検死初見コピー
+//*Sub_Tips_049
+//gosub *tip_s
+//!s100
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	SetSpeedOfMessage( TRUE, 100, );
+
+	PlayBGM( 1, "msys12", 128, 0 );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//　検死の結果、被害者は以下に従い殺害されたと思われる。/
+	OutputLine(NULL, "　検死の結果、被害者は以下に従い殺害されたと思われる。",
+		   NULL, "The autopsy suggests the victim was killed in the following manner.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（１）拘束具で全身を拘束
+	OutputLine(NULL, "（１）拘束具で全身を拘束",
+		   NULL, "1. Entire body bound in restraints", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　抵抗時に出来たと思われる傷痕から、ロープ等でなく、拘束を目的とした専用の拘束台に拘束したものと推定。
+	OutputLine(NULL, "　抵抗時に出来たと思われる傷痕から、ロープ等でなく、拘束を目的とした専用の拘束台に拘束したものと推定。",
+		   NULL, "Traces left behind from when the body seemed to have been bound indicated usage of a specific restraining table rather than rope or another common method.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　両手各指の関節への拘束が特に厳重であるのが特徴。
+	OutputLine(NULL, "　両手各指の関節への拘束が特に厳重であるのが特徴。",
+		   NULL, " Finger joints on either hand appear to have been bound especially tightly.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　形状その他から推定して、特注品もしくは自家製である可能性が高い。/
+	OutputLine(NULL, "　形状その他から推定して、特注品もしくは自家製である可能性が高い。",
+		   NULL, "Highly likely that the table was either specially-made or homemade given this information.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（２）両耳・鼻を鋭利な刃物で切断
+	OutputLine(NULL, "（２）両耳・鼻を鋭利な刃物で切断",
+		   NULL, "2. Both ears and nose severed with a sharp blade", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　拘束跡その他から推測して、切断する人間の他に少なくとも１人以上の、被害者の首を押さえつける人間がいたものと推定。
+	OutputLine(NULL, "　拘束跡その他から推測して、切断する人間の他に少なくとも１人以上の、被害者の首を押さえつける人間がいたものと推定。",
+		   NULL, "Traces of the restraint and other things seem to suggest there was at least one more other than the one who severed these body parts holding down the victim's head.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　使用した刃物は複数の可能性があり、その内のひとつは鋏である可能性が高い。/
+	OutputLine(NULL, "　使用した刃物は複数の可能性があり、その内のひとつは鋏である可能性が高い。",
+		   NULL, "Possible that multiple blades were used, with one of them most likely being scissors or shears.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（３）両手の指を五寸釘で貫通
+	OutputLine(NULL, "（３）両手の指を五寸釘で貫通",
+		   NULL, "3. Five nails penetrated fingers on each hand", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　両手の各指に対して、各関節毎に１本、計３０本の五寸釘で打ち抜いている。
+	OutputLine(NULL, "　両手の各指に対して、各関節毎に１本、計３０本の五寸釘で打ち抜いている。",
+		   NULL, "One long nail stuck in each joint of each finger on each hand, for a total of thirty.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　遺体の指は２０センチ四方の板に打ち付けられており、この板は拘束台の一部である可能性が極めて高い。
+	OutputLine(NULL, "　遺体の指は２０センチ四方の板に打ち付けられており、この板は拘束台の一部である可能性が極めて高い。",
+		   NULL, " The deceased's fingers were nailed to wooden planks twenty square centimeters large; extremely likely these planks were part of the restraining table.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　またこの拘束台が、そもそもこの行為を行なうために用意されたものである可能性がある。/
+	OutputLine(NULL, "　またこの拘束台が、そもそもこの行為を行なうために用意されたものである可能性がある。",
+		   NULL, "In addition, it is likely that the table was originally designed for just such a purpose.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（４）腹部切開、及び内臓の切除
+	OutputLine(NULL, "（４）腹部切開、及び内臓の切除",
+		   NULL, "4. Abdomen incised, intestines removed", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　腹部の切開に当たっては、鋭利な刃物で医学的手法に基づき開腹した可能性がある。
+	OutputLine(NULL, "　腹部の切開に当たっては、鋭利な刃物で医学的手法に基づき開腹した可能性がある。",
+		   NULL, "The incision in the abdomen is likely to have been a technique grounded in medical methodology using a sharp blade.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　この段階では被害者の生命にはまだ支障はなかったと推定。
+	OutputLine(NULL, "　この段階では被害者の生命にはまだ支障はなかったと推定。",
+		   NULL, "Estimated that there was still no threat to the victim's life at this stage.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　その後、切開部より内臓各部位を分解、切除。その過程で被害者は死亡したものと推定される。/
+	OutputLine(NULL, "　その後、切開部より内臓各部位を分解、切除。その過程で被害者は死亡したものと推定される。",
+		   NULL, "After this, the organs inside the incision were dismantled and removed. The victim likely died as a result of this process.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//（５）遺体の投棄
+	OutputLine(NULL, "（５）遺体の投棄",
+		   NULL, "5. Body disposed", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　被害者の首を市販のペット用首輪でダンベルに括り付けた後、王子川３号暗渠に投棄したものと推定。
+	OutputLine(NULL, "　被害者の首を市販のペット用首輪でダンベルに括り付けた後、王子川３号暗渠に投棄したものと推定。",
+		   NULL, "After fastening a dumbell to the victim's neck using a commercial pet collar, the victim was likely abandoned in the the Ouji River's third drain.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　ダンベルの総重量から、遺体の投棄に少なくとも成人男性が３人以上関与している可能性が高い。/
+	OutputLine(NULL, "　ダンベルの総重量から、遺体の投棄に少なくとも成人男性が３人以上関与している可能性が高い。",
+		   NULL, "Judging by the dumbell's weight, it's highly possible they would have needed at least three grown men to have disposed of the body.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlaySE( 3, "wa_021", 128, 64 );
+	SetSpeedOfMessage( FALSE, 0, );
+//!sd
+
+//　大石さんへ＠
+	OutputLine(NULL, "　大石さんへ。",
+		   NULL, "To Ooishi-san.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　頼まれてた、例の王子川惨殺死体の検死初見コピーです＠
+	OutputLine(NULL, "　頼まれてた、例の王子川惨殺死体の検死初見コピーです。",
+		   NULL, "Here's a copy of the preliminary autopsy of the slaughtered corpse in the Ouji River.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　重春課長はＳ号じゃないかと見てるみたいです＠大石さんはどう思います￥
+	OutputLine(NULL, "　重春課長はＳ号じゃないかと見てるみたいです。",
+		   NULL, "Chief Shigeharu sees this as having a possible relation to the S-group.", Line_WaitForInput);
+	OutputLine(NULL, "大石さんはどう思います？",
+		   NULL, " What are your thoughts, Ooishi-san?", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

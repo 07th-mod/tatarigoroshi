@@ -1,0 +1,231 @@
+﻿void main()
+{
+
+//*Sub_Tips_061
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+	PlayBGM( 1, "msys13", 128, 0 );
+//■タイトル：　照会要請
+//!s50
+	SetSpeedOfMessage( TRUE, 100, );
+	PlayBGM( 2, "lsys24", 128, 0 );
+//興宮警察署　指令センター通信記録
+	OutputLine(NULL, "興宮警察署　指令センター通信記録",
+		   NULL, "Okinomiya Police Station Command Center Transmission Recording", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//６月２０日２０時８分
+	OutputLine(NULL, "６月２０日２０時８分",
+		   NULL, "June 20, 8:08 PM", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	ClearMessage();
+//!sd
+	SetSpeedOfMessage( FALSE, 0, );
+	DisableWindow();
+	DrawScene( "bg_104", 400 );
+
+//「こちら興宮ＳＰ、感度良好でーす。＠
+	OutputLine(NULL, "「こちら興宮ＳＰ、感度良好でーす。」",
+		   NULL, "\"This is the Okinomiya Security Police, we read you loud and clear.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「あー、車両ナンバー照会をお願いします＠ＸＸ、ＸのＸＸＸＸ。＠
+	OutputLine(NULL, "「あー、車両ナンバー照会をお願いします。",
+		   NULL, "\"Hello, we'd like you to look up a license plate for us.", Line_WaitForInput);
+	OutputLine(NULL, "ＸＸ、ＸのＸＸＸＸ。」",
+		   NULL, " XX, X-XXXX.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「復唱、ＸＸ、ＸのＸＸＸＸ＠少々お時間もらいますがよろしいですかー？＠
+	OutputLine(NULL, "「復唱、ＸＸ、ＸのＸＸＸＸ。",
+		   NULL, "\"XX, X-XXXX, all right.", Line_WaitForInput);
+	OutputLine(NULL, "少々お時間もらいますがよろしいですかー？」",
+		   NULL, " Please give us just a moment to look it up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「お願いします。￥
+	OutputLine(NULL, "「お願いします。」",
+		   NULL, "\"Thank you.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+//!s50
+	SetSpeedOfMessage( TRUE, 100, );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+//ナンバー照会
+	OutputLine(NULL, "ナンバー照会",
+		   NULL, "Number Match", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//ＸＸ　ＸーＸＸＸＸ
+	OutputLine(NULL, "ＸＸ　ＸーＸＸＸＸ",
+		   NULL, "XX X-XXXX", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//所有者　ＸＸＸＸ
+	OutputLine(NULL, "所有者　ＸＸＸＸ",
+		   NULL, "Owner: _____ _____", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//（鹿骨市雛見沢村Ｘ丁目ＸＸＸ番地在住）
+	OutputLine(NULL, "（鹿骨市雛見沢村Ｘ丁目ＸＸＸ番地在住）",
+		   NULL, "(Address: _-____ Hinamizawa Village, Shishibone)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//車種：　ＸＸＸＸＸＸＸ
+	OutputLine(NULL, "車種：　ＸＸＸＸＸＸＸ",
+		   NULL, "Vehicle make and model: _____ ______", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//盗難届け：無
+	OutputLine(NULL, "盗難届け：無",
+		   NULL, "Theft reports: None", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//特記事項：特に無し/
+	OutputLine(NULL, "特記事項：特に無し",
+		   NULL, "Special mentions: Nothing of note", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0, );
+//!sd
+	DrawScene( "bg_192", 400 );
+
+//「興宮ＳＰより大石車どうぞー＠先ほどのナンバーが判明しましたー＠........................大石車どうぞー＠　.................................大石車、応答願います＠..................あれ＠　............電波、悪いのかな.....................＠......大石車応答ねが..................。￥
+	OutputLine(NULL, "「興宮ＳＰより大石車どうぞー。",
+		   NULL, "\"Okinomiya Security Police to Ooishi.", Line_WaitForInput);
+	OutputLine(NULL, "先ほどのナンバーが判明しましたー。",
+		   NULL, " We found the license plate from earlier.", Line_WaitForInput);
+	OutputLine(NULL, "……………………大石車どうぞー？",
+		   NULL, " ............Ooishi, do you read?", Line_WaitForInput);
+	OutputLine(NULL, "　……………………………大石車、応答願います。",
+		   NULL, " ...............Ooishi, please respond.", Line_WaitForInput);
+	OutputLine(NULL, "………………あれ？",
+		   NULL, " .........Hmm?", Line_WaitForInput);
+	OutputLine(NULL, "　…………電波、悪いのかな…………………。",
+		   NULL, " ......Am I getting a bad signal.........?", Line_WaitForInput);
+	OutputLine(NULL, "……大石車応答ねが………………。」",
+		   NULL, " ...Anyone in Ooishi's car, please re—\"", Line_Normal);
+	ClearMessage();
+
+//「出ませんね。＠
+	OutputLine(NULL, "「出ませんね。」",
+		   NULL, "\"Nothing, eh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「大石さんが車両照会＠　誰の車だよ。￥
+	OutputLine(NULL, "「大石さんが車両照会？",
+		   NULL, "\"Ooishi-san wanted a license plate check?", Line_WaitForInput);
+	OutputLine(NULL, "　誰の車だよ。」",
+		   NULL, " Whose car was it?\"", Line_Normal);
+	ClearMessage();
+
+//「村人の車ですね＠......至って平凡な。＠
+	OutputLine(NULL, "「村人の車ですね。",
+		   NULL, "\"Someone from the village.", Line_WaitForInput);
+	OutputLine(NULL, "……至って平凡な。」",
+		   NULL, " ...A completely average car.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...何者だよ＠大石さんが聞いてくるからには、只者じゃないんだろ？＠
+	OutputLine(NULL, "「…何者だよ。",
+		   NULL, "\"...Who was it?", Line_WaitForInput);
+	OutputLine(NULL, "大石さんが聞いてくるからには、只者じゃないんだろ？」",
+		   NULL, " If Ooishi-san was asking, then it can't be anyone good, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「特記事項欄は完全に空欄ですね＠Ｓ号指定もなし＠減点もなしだし。￥
+	OutputLine(NULL, "「特記事項欄は完全に空欄ですね。",
+		   NULL, "\"The special mentions column is completely blank.", Line_WaitForInput);
+	OutputLine(NULL, "Ｓ号指定もなし。",
+		   NULL, " No indication it's related to the S-group, either.", Line_WaitForInput);
+	OutputLine(NULL, "減点もなしだし。」",
+		   NULL, " And no demerits on it.\"", Line_Normal);
+	ClearMessage();
+
+//「...ははは、パッシングでもされて腹が立ったんじゃないの＠　あの人、根に持つとなかなか忘れないタイプなんだよ。￥
+	OutputLine(NULL, "「…ははは、パッシングでもされて腹が立ったんじゃないの？",
+		   NULL, "\"...Hahaha. Maybe it passed him on the road and he got mad.", Line_WaitForInput);
+	OutputLine(NULL, "　あの人、根に持つとなかなか忘れないタイプなんだよ。」",
+		   NULL, " That guy isn't the type to forget a grudge.\"", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}
