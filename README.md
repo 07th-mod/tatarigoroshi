@@ -13,7 +13,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 >Bold lines mean "in progress"
 
-- [ ] omake_03.txt
+- [ ] **omake_03.txt**
 - [ ] tata_001.txt
 - [ ] tata_002.txt
 - [ ] tata_003.txt
@@ -36,9 +36,9 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] tata_014.txt    
 - [ ] tata_ep01.txt   
 - [ ] tata_ep02.txt   
-- [ ] tata_tips_01.txt
-- [ ] tata_tips_02.txt
-- [ ] tata_tips_03.txt
+- [x] tata_tips_01.txt
+- [x] tata_tips_02.txt
+- [ ] **tata_tips_03.txt**
 - [ ] tata_tips_04.txt
 - [ ] tata_tips_05.txt
 - [ ] tata_tips_06.txt
