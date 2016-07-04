@@ -14,10 +14,12 @@
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「んっふっふっふ＠　出ましたねぇ、ロン＠中ドラ３、満千五です。￥
+	PlaySE(4, "S20/11/440700207", 128, 64);
 	OutputLine(NULL, "「んっふっふっふ！",
 		   NULL, "\"Nfu-fu-fu-fu!", Line_WaitForInput);
 	OutputLine(NULL, "　出ましたねぇ、ロン。",
 		   NULL, " There it is—ron.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700208_01", 128, 64);
 	OutputLine(NULL, "中ドラ３、満千五です。」",
 		   NULL, " Three chun, three dora—mangan with 1500 extra.\"", Line_Normal);
 	ClearMessage();
@@ -54,6 +56,7 @@
 		   NULL, "\"Getting more dora was the only thing I could do after revealing the chun!", Line_WaitForInput);
 	OutputLine(NULL, "役牌さらしたらドラ側は切っちゃだめですよ。",
 		   NULL, " You can't discard a dora tile after a yakuhai is out.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700210", 128, 64);
 	OutputLine(NULL, "んっふっふっふ！」",
 		   NULL, " Nfu-fu-fu!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -76,7 +79,6 @@
 	PlaySE(4, "S20/00/443200047", 128, 64);
 	OutputLine(NULL, "「なんじゃい。",
 		   NULL, "\"What?", Line_WaitForInput);
-	PlaySE(4, "S20/00/443200047", 128, 64);
 	OutputLine(NULL, "…あぁ、例のドブ川惨殺死体の話かの。",
 		   NULL, " ...Oh, the murdered body in the drainage channel.", Line_WaitForInput);
 	PlaySE(4, "S20/00/443200048", 128, 64);
@@ -86,7 +88,7 @@
 
 
 //「えぇ、まぁ＠裏はそっちで取って下さいよ。￥
-	PlaySE(4, "S05/11/100700695", 128, 64);
+	PlaySE(4, "S20/11/440700211", 128, 64);
 	OutputLine(NULL, "「えぇ、まぁ。",
 		   NULL, "\"Yes, well.", Line_WaitForInput);
 	OutputLine(NULL, "裏はそっちで取って下さいよ。」",
@@ -139,6 +141,7 @@
 
 
 //「噂じゃホトケさん、上納金とヤクに手を付けちゃったらしいっす＠話じゃ、かなりシャレにならない規模らしいっす。￥
+	PlaySE(4, "S20/19/443100044", 128, 64);
 	OutputLine(NULL, "「噂じゃホトケさん、上納金とヤクに手を付けちゃったらしいっす。",
 		   NULL, "\"Rumors say the deceased had her hands in both drug dealing and money to be paid to the government.", Line_WaitForInput);
 	OutputLine(NULL, "話じゃ、かなりシャレにならない規模らしいっす。」",
@@ -182,13 +185,13 @@
 	PlaySE(4, "S20/11/440700215", 128, 64);
 	OutputLine(NULL, "「生きてる？",
 		   NULL, "\"Alive?", Line_WaitForInput);
-	PlaySE(4, "S20/11/440700215", 128, 64);
 	OutputLine(NULL, "　じゃあこれから死ぬんでしょうねぇ。",
 		   NULL, " Then maybe he'll die soon.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700216", 128, 64);
 	OutputLine(NULL, "害虫が害虫を駆除してくれるんだから、ホントに素敵な自浄機能だと思いますよ。」",
 		   NULL, " Vermin usually exterminate other vermin—I think we have a very nice self-cleansing system going on.\"", Line_Normal);
 	ClearMessage();
+
 //「そのヒモなんですがね＠/
 	PlaySE(4, "S20/19/443100046", 128, 64);
 	OutputLine(NULL, "「そのヒモなんですがね、",
@@ -216,12 +219,12 @@
 	PlaySE(4, "S20/11/440700217", 128, 64);
 	OutputLine(NULL, "「…北条鉄平。",
 		   NULL, "\"...Teppei Houjou.", Line_WaitForInput);
-	PlaySE(4, "S20/11/440700217", 128, 64);
 	OutputLine(NULL, "去年、雛見沢で起こった主婦撲殺事件のホトケのご主人ですよ。",
 		   NULL, " The husband of the housewife who was beaten to death last year in Hinamizawa.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700218", 128, 64);
 	OutputLine(NULL, "……事件のあと姿を消したって聞いてましたけど。",
 		   NULL, " ...I heard he disappeared after the incident, though.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700219", 128, 64);
 	OutputLine(NULL, "…そうかぁ、愛人の所に転がり込んでたかぁ。」",
 		   NULL, " ...I get it—he was staying at his lover's place, huh?\"", Line_Normal);
 	ClearMessage();
