@@ -125,6 +125,7 @@
 	DrawScene( "bg_086", 1000 );
 
 //「.........い、............いてて..................。＠
+	PlaySE(4, "S03/01/140101093", 128, 64);
 	OutputLine(NULL, "「………い、…………いてて………………。」",
 		   NULL, "\"......Ow...... agh.........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -461,6 +462,7 @@
 	ClearMessage();
 
 //　......そうだ、思い出した＠
+	PlaySE(4, "S11/00/VT3B_keijiA2007", 128, 64);
 	OutputLine(NULL, "　……そうだ、思い出した。",
 		   NULL, "...And then I remembered.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -605,8 +607,10 @@
 	DrawScene( "bg_093", 400 );
 
 //「おい君＠　どこから入ってきた？！＠
+	PlaySE(4, "S03/00/taiA04001", 128, 64);
 	OutputLine(NULL, "「おい君！",
 		   NULL, "\"Hey, you!", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04002", 128, 64);
 	OutputLine(NULL, "　どこから入ってきた？！」",
 		   NULL, " Where did you come from?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -635,6 +639,7 @@
 	ClearMessage();
 
 //「............どこから入ってきたって、......いてててて......。＠
+	PlaySE(4, "S03/01/140101095", 128, 64);
 	OutputLine(NULL, "「…………どこから入ってきたって、……いてててて……。」",
 		   NULL, "\"......Where did I... Oww, ow...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -657,16 +662,20 @@
 	ClearMessage();
 
 //「君は雛見沢の住民か＠　住所と名前は言えるか？＠
+	PlaySE(4, "S03/00/taiA04003", 128, 64);
 	OutputLine(NULL, "「君は雛見沢の住民か？",
 		   NULL, "\"Do you live in Hinamizawa?", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04004", 128, 64);
 	OutputLine(NULL, "　住所と名前は言えるか？」",
 		   NULL, " Can you tell us your name and address?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「............一応、ここに住んでますけど＠...名前は...前原、圭一です＠...あ、住所は、鹿骨市雛見沢村ＸＸＸ番地...。＠
+	PlaySE(4, "S03/01/140101096", 128, 64);
 	OutputLine(NULL, "「…………一応、ここに住んでますけど。",
 		   NULL, "\"......Well, yeah, I sort of live here.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101097", 128, 64);
 	OutputLine(NULL, "…名前は…前原、圭一です。",
 		   NULL, " ...My name... is Keiichi... Maebara.", Line_WaitForInput);
 	OutputLine(NULL, "…あ、住所は、鹿骨市雛見沢村ＸＸＸ番地…。」",
@@ -680,14 +689,19 @@
 	ClearMessage();
 
 //「...本部、応答願います＠本部、応答願います＠４０２、生存者発見＠繰り返す、４０２、生存者発見＠場所は営林署入口前。＠
+	PlaySE(4, "S03/00/taiA04005", 128, 64);
 	OutputLine(NULL, "「…本部、応答願います。",
 		   NULL, "\"...Base, do you read?", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04006", 128, 64);
 	OutputLine(NULL, "本部、応答願います。",
 		   NULL, " Base, do you read?", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04007", 128, 64);
 	OutputLine(NULL, "４０２、生存者発見。",
 		   NULL, " We have a 402—survivor discovered.", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04008", 128, 64);
 	OutputLine(NULL, "繰り返す、４０２、生存者発見。",
 		   NULL, " I repeat, we have a 402, we've found a survivor.", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04009", 128, 64);
 	OutputLine(NULL, "場所は営林署入口前。」",
 		   NULL, " He's in front of the forest service office.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -704,12 +718,16 @@
 
 
 //「生存者は健在＠全身に外傷認められるも、生命に支障なし＠自立歩行可能＠これより保護し本部へ送致します。￥
+	PlaySE(4, "S03/00/taiA04010", 128, 64);
 	OutputLine(NULL, "「生存者は健在。",
 		   NULL, "\"Healthy.", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04011", 128, 64);
 	OutputLine(NULL, "全身に外傷認められるも、生命に支障なし。",
 		   NULL, " Wounded all over, but not fatally.", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04012", 128, 64);
 	OutputLine(NULL, "自立歩行可能。",
 		   NULL, " He can walk on his own.", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiA04013", 128, 64);
 	OutputLine(NULL, "これより保護し本部へ送致します。」",
 		   NULL, " We'll send him to HQ for safety.\"", Line_Normal);
 	ClearMessage();
@@ -771,16 +789,20 @@
 	ClearMessage();
 
 //「......あの、......すみません＠.........何かあったんですか......？＠
+	PlaySE(4, "S03/01/140101099", 128, 64);
 	OutputLine(NULL, "「……あの、……すみません。",
 		   NULL, "\"...Umm... Excuse me.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101100", 128, 64);
 	OutputLine(NULL, "………何かあったんですか……？」",
 		   NULL, " ...Has something happened...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「君はどこにいたんだ＠　何をしていたんだ？＠
+	PlaySE(4, "S03/00/taiB04001", 128, 64);
 	OutputLine(NULL, "「君はどこにいたんだ？",
 		   NULL, "\"Where were you?", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiB04002", 128, 64);
 	OutputLine(NULL, "　何をしていたんだ？」",
 		   NULL, " What were you doing?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -792,18 +814,23 @@
 		   NULL, " I was the one asking you..", Line_Normal);
 	ClearMessage();
 //「.........ずーっと山に入ったところにある吊り橋から...落っこちて＠......河原で、多分気絶してました＠......今日が何曜日かもよくわからないです。＠
+	PlaySE(4, "S03/01/140101101", 128, 64);
 	OutputLine(NULL, "「………ずーっと山に入ったところにある吊り橋から…落っこちて。",
 		   NULL, "\"...I, umm... fell from a rope bridge way back in the mountains.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101102", 128, 64);
 	OutputLine(NULL, "……河原で、多分気絶してました。",
 		   NULL, " ...I think I passed out on the river bed.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101103", 128, 64);
 	OutputLine(NULL, "……今日が何曜日かもよくわからないです。」",
 		   NULL, " ...I don't actually know what day it is.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「今日は昭和５８年の６月２２日＠水曜日だ。￥
+	PlaySE(4, "S03/00/taiB04003", 128, 64);
 	OutputLine(NULL, "「今日は昭和５８年の６月２２日。",
 		   NULL, "\"Today is June 22nd, 1983.", Line_WaitForInput);
+	PlaySE(4, "S03/00/taiB04004", 128, 64);
 	OutputLine(NULL, "水曜日だ。」",
 		   NULL, " Wednesday.\"", Line_Normal);
 	ClearMessage();
@@ -821,10 +848,13 @@
 	ClearMessage();
 
 //「......改めて聞きますけど、...何があったんですか＠　何で自衛隊が来てるんです＠　何かの訓練ですか？＠
+	PlaySE(4, "S03/01/140101104", 128, 64);
 	OutputLine(NULL, "「……改めて聞きますけど、…何があったんですか？",
 		   NULL, "\"...Forgive me for asking again, but... did something happen?", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101105", 128, 64);
 	OutputLine(NULL, "　何で自衛隊が来てるんです？",
 		   NULL, " Why is the SDF here?", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101106", 128, 64);
 	OutputLine(NULL, "　何かの訓練ですか？」",
 		   NULL, " Is this a drill?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -867,6 +897,7 @@
 	ClearMessage();
 
 //『...より首相官邸で行なわれました＠記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが＠前例のない未曾有の大災害に直結したのではないかとの質問に対し奥野官房長官は、次のようにコメントしました。￥
+	PlaySE(4, "S03/00/ana0400001", 128, 64);
 	OutputLine(NULL, "『…より首相官邸で行なわれました。",
 		   NULL, "\"...was conducted at the prime minister's office.", Line_WaitForInput);
 	OutputLine(NULL, "記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが、",
@@ -876,11 +907,13 @@
 	ClearMessage();
 
 //『～でありまして...、県知事からの派遣要請を受けて、迅速に対応したものと思っております。￥
+	PlaySE(4, "S03/00/oku0400001", 128, 64);
 	OutputLine(NULL, "『〜でありまして…、県知事からの派遣要請を受けて、迅速に対応したものと思っております。』",
 		   NULL, "\"~and so... I believe that once the SDF received the dispatch order from the prefectural governor, they responded promptly.\"", Line_Normal);
 	ClearMessage();
 
 //『と、このように述べ、要請を受けてからの自衛隊の出動は迅速であった＠むしろ県側の事態把握に遅れがあった可能性を示唆しました＠
+	PlaySE(4, "S03/00/ana0400002", 128, 64);
 	OutputLine(NULL, "『と、このように述べ、要請を受けてからの自衛隊の出動は迅速であった。",
 		   NULL, "\"According to him, the SDF was prompt to respond to the crisis after receiving their orders.", Line_WaitForInput);
 	OutputLine(NULL, "むしろ県側の事態把握に遅れがあった可能性を示唆しました。",
@@ -898,6 +931,7 @@
 	ClearMessage();
 
 //『首相官邸より報道部の緒方記者がお送りしました＠さて、ここでもう一度、災害発生からの行政の対応を振り返ります。￥
+	PlaySE(4, "S03/00/ana0400003", 128, 64);
 	OutputLine(NULL, "『首相官邸より報道部の緒方記者がお送りしました。",
 		   NULL, "\"That was Mr. Okada, reporting from the prime minister's official residence.", Line_WaitForInput);
 	OutputLine(NULL, "さて、ここでもう一度、災害発生からの行政の対応を振り返ります。』",
@@ -1044,6 +1078,7 @@
 	ClearMessage();
 
 //『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています＠
+	PlaySE(4, "S03/00/ana0400005", 128, 64);
 	OutputLine(NULL, "『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています。",
 		   NULL, "\"As has recently been pointed out by citizens' groups, his trip with honorary Diet members to inspect other prefectures was based solely on good relations, and it's rumored they preoccupied themselves with a drinking party.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1062,6 +1097,7 @@
 	ClearMessage();
 
 //『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう＠また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。￥
+	PlaySE(4, "S03/00/ana0400006", 128, 64);
 	OutputLine(NULL, "『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう。",
 		   NULL, "\"Though not as extreme as the governor's case, the environmental chief who became director-general in the governor's absence will likely also be questioned about his negligence.", Line_WaitForInput);
 	OutputLine(NULL, "また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。』",
@@ -1084,6 +1120,7 @@
 	ClearMessage();
 
 //『とにかく、深夜の就寝中というのが不運でした＠同じ災害でも日中に起こっていれば、まったく違ったでしょう。￥
+	PlaySE(4, "S03/00/ana0400007", 128, 64);
 	OutputLine(NULL, "『とにかく、深夜の就寝中というのが不運でした。",
 		   NULL, "\"Whatever the case may be, it was unfortunate this happened while everyone was sleeping in the middle of the night.", Line_WaitForInput);
 	OutputLine(NULL, "同じ災害でも日中に起こっていれば、まったく違ったでしょう。』",
@@ -1113,6 +1150,7 @@
 	ClearMessage();
 
 //『火口部に限定して申し上げれば、決して珍しいことではありません＠
+	PlaySE(4, "S03/00/fuji0400001", 128, 64);
 	OutputLine(NULL, "『火口部に限定して申し上げれば、決して珍しいことではありません。",
 		   NULL, "\"It isn't at all unusual for this to happen right around craters, at least.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1121,17 +1159,20 @@
 //　火山大国日本にはたくさんの活火山がありますが＠それらの火口部はいずれも危険なガスの噴出する危険性があり、一般登山者も火口部周辺には立ち入らないのが一般的です。￥
 	OutputLine(NULL, "　火山大国日本にはたくさんの活火山がありますが、",
 		   NULL, "Japan is a volcanic nation, and so has many active volcanoes.", Line_WaitForInput);
+	PlaySE(4, "S03/00/fuji0400002", 128, 64);
 	OutputLine(NULL, "それらの火口部はいずれも危険なガスの噴出する危険性があり、一般登山者も火口部周辺には立ち入らないのが一般的です。』",
 		   NULL, " There is always a danger of hazardous gas around any of these craters, and it's generally a rule among mountain climbers not to go near them.\"", Line_Normal);
 	ClearMessage();
 
 //『では今回、雛見沢村を襲った卵の腐乱臭のするガスというのも、火口部では一般的なガスということですか？＠
+	PlaySE(4, "S03/00/ana0400009", 128, 64);
 	OutputLine(NULL, "『では今回、雛見沢村を襲った卵の腐乱臭のするガスというのも、火口部では一般的なガスということですか？』",
 		   NULL, "\"Does this mean the rotten egg smell that visited Hinamizawa Village was the normal sort of gas from volcanic craters?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //『卵の腐乱臭という特徴から、恐らく火山ガスの中でも事故例の多い硫化水素によるものだと考えられます＠高い濃度であれば、非常に危険なものです。￥
+	PlaySE(4, "S03/00/fuji0400003", 128, 64);
 	OutputLine(NULL, "『卵の腐乱臭という特徴から、恐らく火山ガスの中でも事故例の多い硫化水素によるものだと考えられます。",
 		   NULL, "\"Judging by how it smelled like rotten eggs, we think it was hydrogen sulfide, a gas seen particularly frequently in accidents compared to other volcanic gases.", Line_WaitForInput);
 	OutputLine(NULL, "高い濃度であれば、非常に危険なものです。』",
@@ -1139,6 +1180,7 @@
 	ClearMessage();
 
 //『雛見沢村は火山の火口部とはまったく縁遠い場所にあるわけですが＠そういった火口部でない場所にもその硫化水素が発生することがあるのでしょうか？＠
+	PlaySE(4, "S03/00/ana0400010", 128, 64);
 	OutputLine(NULL, "『雛見沢村は火山の火口部とはまったく縁遠い場所にあるわけですが、",
 		   NULL, "\"Hinamizawa Village is very far away from the craters of any volcanoes.", Line_WaitForInput);
 	OutputLine(NULL, "そういった火口部でない場所にもその硫化水素が発生することがあるのでしょうか？』",
@@ -1147,6 +1189,7 @@
 
 
 //『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが......＠外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります＠極めて希少な例ですが、必ずしも火口部でなくても発生の可能性はあるということです。￥
+	PlaySE(4, "S03/00/fuji0400004", 128, 64);
 	OutputLine(NULL, "『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが……。",
 		   NULL, "\"I don't know all the details, so I can't say anything concrete...", Line_WaitForInput);
 	OutputLine(NULL, "外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります。",
@@ -1156,6 +1199,7 @@
 	ClearMessage();
 
 //『先生、ありがとうございました＠...今、防衛庁から発表があった模様です＠防衛庁の森川さん？￥
+	PlaySE(4, "S03/00/ana0400011", 128, 64);
 	OutputLine(NULL, "『先生、ありがとうございました。",
 		   NULL, "\"Thank you very much, Doctor.", Line_WaitForInput);
 	OutputLine(NULL, "…今、防衛庁から発表があった模様です。",
@@ -1165,6 +1209,7 @@
 	ClearMessage();
 
 //『ハイ、防衛庁です＠先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて＠陸上自衛隊化学学校での分析の結果、二酸化炭素と硫化水素の混合ガスによるものだったと発表しました。￥
+	PlaySE(4, "S03/00/mori0400001", 128, 64);
 	OutputLine(NULL, "『ハイ、防衛庁です。",
 		   NULL, "\"Yes. I'm at the Japan Defense Agency.", Line_WaitForInput);
 	OutputLine(NULL, "先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて、",
@@ -1174,12 +1219,14 @@
 	ClearMessage();
 
 //『森川さん、そのガスは依然として噴出を続け、周囲に拡大しているのでしょうか？＠
+	PlaySE(4, "S03/00/ana0400012", 128, 64);
 	OutputLine(NULL, "『森川さん、そのガスは依然として噴出を続け、周囲に拡大しているのでしょうか？』",
 		   NULL, "\"Miss Morikawa, do you know whether the gas is still erupting or spreading to nearby areas?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //『現在、雛見沢村で救助活動に入っている自衛隊第９師団の報告として、ガスの濃度は徐々に薄まりつつある＠これ以上の被害の拡大はないと発表しました＠
+	PlaySE(4, "S03/00/mori0400002", 128, 64);
 	OutputLine(NULL, "『現在、雛見沢村で救助活動に入っている自衛隊第９師団の報告として、ガスの濃度は徐々に薄まりつつある。",
 		   NULL, "\"According to the SDF's 9th division, who are currently engaged in a rescue operation at Hinamizawa Village, the gas density is steadily decreasing.", Line_WaitForInput);
 	OutputLine(NULL, "これ以上の被害の拡大はないと発表しました。",
@@ -1188,11 +1235,13 @@
 
 
 //　ですが、依然、雛見沢村地区は危険な状態にあることには変わりなく、今後も注意深く監視を続ける必要があるようです。￥
+	PlaySE(4, "S03/00/mori0400003", 128, 64);
 	OutputLine(NULL, "　ですが、依然、雛見沢村地区は危険な状態にあることには変わりなく、今後も注意深く監視を続ける必要があるようです。』",
 		   NULL, "However, it does not change the fact that surrounding areas are still in danger, and that very strict observation must be maintained.\"", Line_Normal);
 	ClearMessage();
 
 //『防衛庁から報道部の森川記者がお伝えしました＠続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします＠現在、避難所のひとつとなっている下篠崎小学校に報道部の......、ザザ、......者が...ってい、...ザザ...ザ、￥
+	PlaySE(4, "S03/00/ana0400013", 128, 64);
 	OutputLine(NULL, "『防衛庁から報道部の森川記者がお伝えしました。",
 		   NULL, "\"That was Morikawa from the Japan Defense Agency.", Line_WaitForInput);
 	OutputLine(NULL, "続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします。",
@@ -1204,6 +1253,7 @@
 	DrawSceneWithMask( "bg_101", "up", 0, 0, 1300 );
 
 //「..................なんですか、!w800...............それ。＠
+	PlaySE(4, "S03/01/140101107", 128, 64);
 	OutputLine(NULL, "「………………なんですか、",
 		   NULL, "\".........Wait.........", Line_ContinueAfterTyping);
 
@@ -1314,18 +1364,23 @@
 	ClearMessage();
 
 //「もう大丈夫だよ＠具合は＠　歩けるかい？＠
+	PlaySE(4, "S03/00/ishaA04001", 128, 64);
 	OutputLine(NULL, "「もう大丈夫だよ。",
 		   NULL, "\"You're going to be all right.", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaA04002", 128, 64);
 	OutputLine(NULL, "具合は？",
 		   NULL, " How do you feel?", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaA04003", 128, 64);
 	OutputLine(NULL, "　歩けるかい？」",
 		   NULL, " Can you walk?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「............歩けます＠...いてて......。＠
+	PlaySE(4, "S03/01/140101108", 128, 64);
 	OutputLine(NULL, "「…………歩けます。",
 		   NULL, "\"......Yes.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101109", 128, 64);
 	OutputLine(NULL, "…いてて……。」",
 		   NULL, " ...Ow, oww...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1345,12 +1400,16 @@
 	DrawSceneWithMask( "bg_187", "right", 0, 0, 300 );
 
 //「外傷多数＠骨折もしくは内臓損傷の可能性大＠頭部に大きな裂傷＠瞳孔正常、眼底に出血なくも脳内損傷の可能性は否定できず...。＠
+	PlaySE(4, "S03/00/ishaA04004", 128, 64);
 	OutputLine(NULL, "「外傷多数。",
 		   NULL, "\"Multiple wounds.", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaA04005", 128, 64);
 	OutputLine(NULL, "骨折もしくは内臓損傷の可能性大。",
 		   NULL, " High possibility of fractures and internal damage.", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaA04006", 128, 64);
 	OutputLine(NULL, "頭部に大きな裂傷。",
 		   NULL, " Large laceration in the head.", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaA04007", 128, 64);
 	OutputLine(NULL, "瞳孔正常、眼底に出血なくも脳内損傷の可能性は否定できず…。」",
 		   NULL, " Pupils normal, but even without bleeding from the fundus, brain damage is still possible...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1387,6 +1446,7 @@
 	DrawScene( "black", 400 );
 
 //「.........わ、............ああぁ......、......あぁああぁああぁぁぁあぁ.........。￥
+	PlaySE(4, "S03/01/140101110", 128, 64);
 	OutputLine(NULL, "「………わ、…………ああぁ……、……あぁああぁああぁぁぁあぁ………。」",
 		   NULL, "\"......Wha...... ahh...... aaaaaahhhhhhhh......\"", Line_Normal);
 	ClearMessage();
@@ -1509,10 +1569,13 @@
 	DrawSceneWithMask( "bg_187", "right", 0, 0, 300 );
 
 //「馬鹿ッ！＠　犠牲者を粗末に扱うな＠　彼は村の住民だぞ！＠
+	PlaySE(4, "S03/00/ishaC04001", 128, 64);
 	OutputLine(NULL, "「馬鹿ッ！！",
 		   NULL, "\"You jackasses!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04002", 128, 64);
 	OutputLine(NULL, "　犠牲者を粗末に扱うな！",
 		   NULL, " Don't just throw the victims in like that!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04003", 128, 64);
 	OutputLine(NULL, "　彼は村の住民だぞ！」",
 		   NULL, " They lived here!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1604,12 +1667,16 @@
 	FadeFilm( 1000, TRUE );
 
 //「.........？＠　おい、意識が喪失したぞ！＠　患者の名前を呼びかけろ＠　早くッ！＠
+	PlaySE(4, "S03/00/ishaB04001", 128, 64);
 	OutputLine(NULL, "「………？！",
 		   NULL, "\"......?!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04002", 128, 64);
 	OutputLine(NULL, "　おい、意識が喪失したぞ！！",
 		   NULL, " Hey, he's lost consciousness!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04003", 128, 64);
 	OutputLine(NULL, "　患者の名前を呼びかけろ！",
 		   NULL, " Shout his name!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04004", 128, 64);
 	OutputLine(NULL, "　早くッ！」",
 		   NULL, " Quickly!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1618,14 +1685,17 @@
 //「前原くん＠　聞こえるかい？＠　聞こえるなら瞬きでいいからしてくれ！＠　前原くん＠　前原くん＠　前原くん！！￥
 	OutputLine(NULL, "「前原くん！",
 		   NULL, "\"Maebara-kun!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04005", 128, 64);
 	OutputLine(NULL, "　聞こえるかい？！",
 		   NULL, " Can you hear me?!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04006", 128, 64);
 	OutputLine(NULL, "　聞こえるなら瞬きでいいからしてくれ！！",
 		   NULL, " If you can hear me, just blink!!", Line_WaitForInput);
 	OutputLine(NULL, "　前原くん！",
 		   NULL, " Maebara-kun!", Line_WaitForInput);
 	OutputLine(NULL, "　前原くん！",
 		   NULL, " Maebara-kun!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04009", 128, 64);
 	OutputLine(NULL, "　前原くん！！」",
 		   NULL, " Maebara-kun!!\"", Line_Normal);
 	ClearMessage();
@@ -1638,22 +1708,31 @@
 	ClearMessage();
 
 //「呼吸が停止したぞ＠　気道確保＠　人工呼吸！＠　絶対に生かせ！＠　畜生畜生...！＠　もうこれ以上、死者は御免だぞ！＠　死んでもいい命なんかないんだ！＠　殺すな＠　殺すなぁあぁああッ！！＠
+	PlaySE(4, "S03/00/ishaB04005", 128, 64);
 	OutputLine(NULL, "「呼吸が停止したぞ！",
 		   NULL, "\"His breathing stopped!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04006", 128, 64);
 	OutputLine(NULL, "　気道確保！",
 		   NULL, " Get his respiratory tract open!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04007", 128, 64);
 	OutputLine(NULL, "　人工呼吸！！",
 		   NULL, " Use CPR!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04008", 128, 64);
 	OutputLine(NULL, "　絶対に生かせ！！",
 		   NULL, " Make him live!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04009", 128, 64);
 	OutputLine(NULL, "　畜生畜生…！！",
 		   NULL, " Damn it, damn it...!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04010", 128, 64);
 	OutputLine(NULL, "　もうこれ以上、死者は御免だぞ！！",
 		   NULL, " No more, no more dead people!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04011", 128, 64);
 	OutputLine(NULL, "　死んでもいい命なんかないんだ！！",
 		   NULL, " Nobody deserves to die!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04012", 128, 64);
 	OutputLine(NULL, "　殺すな！",
 		   NULL, " Don't kill him!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaB04013", 128, 64);
 	OutputLine(NULL, "　殺すなぁあぁああッ！！」",
 		   NULL, " Don't kill hiiiiiiiiiiim!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1842,6 +1921,7 @@
 	Wait( 100 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S03/02/140200006", 128, 64);
 	OutputLine(NULL, "う",
 		   NULL, "y", Line_ContinueAfterTyping);
 
@@ -1890,6 +1970,7 @@
 	SetValidityOfInput( TRUE );
 
 
+	PlaySE(4, "S03/03/140300044", 128, 64);
 	OutputLine(NULL, "つ",
 		   NULL, " not", Line_ContinueAfterTyping);
 
@@ -1938,6 +2019,7 @@
 	SetValidityOfInput( TRUE );
 
 
+	PlaySE(4, "S13/15/DS41140003", 128, 64);
 	OutputLine(NULL, "音",
 		   NULL, "...", Line_ContinueAfterTyping);
 
@@ -1986,6 +2068,7 @@
 	SetValidityOfInput( TRUE );
 
 
+	PlaySE(4, "S20/13/VTT_akasaka3005", 128, 64);
 	OutputLine(NULL, "度",
 		   NULL, " me", Line_ContinueAfterTyping);
 

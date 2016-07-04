@@ -204,6 +204,7 @@
 	PlayBGM( 1, "msys27", 128, 0 );
 
 //「.....................お前、......ひょっとして、......悟史なのか......？￥
+	PlaySE(4, "S03/01/140100914", 128, 64);
 	OutputLine(NULL, "「…………………お前、……ひょっとして、……悟史なのか……？」",
 		   NULL, "\".........Are... could you... be Satoshi...?\"", Line_Normal);
 	ClearMessage();
@@ -354,8 +355,10 @@
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「......これは...コワイな＠...こいつにするか。＠
+	PlaySE(4, "S03/01/140100915", 128, 64);
 	OutputLine(NULL, "「……これは…コワイな。",
 		   NULL, "\"...Oh, this one's... scary.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100916", 128, 64);
 	OutputLine(NULL, "…こいつにするか。」",
 		   NULL, " ...Let's go with this.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -382,8 +385,10 @@
 	PlayBGM( 1, "msys26", 128, 0 );
 
 //「...連日、悪い用事に使ってばかりで悪いな＠...今日も頼むぜ、俺の足。＠
+	PlaySE(4, "S03/01/140100917", 128, 64);
 	OutputLine(NULL, "「…連日、悪い用事に使ってばかりで悪いな。",
 		   NULL, "\"...Sorry for using you for evil all the time.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100918", 128, 64);
 	OutputLine(NULL, "…今日も頼むぜ、俺の足。」",
 		   NULL, " ...I'll need you again today, my legs.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -511,6 +516,7 @@
 	ClearMessage();
 
 //　そう＠それは俺自身が決めた価値観＠
+	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "それは俺自身が決めた価値観。",
@@ -684,8 +690,10 @@
 	ClearMessage();
 
 //「......ナイトなら武器は剣だろ＠ツーハンデッドのカッコイイやつ＠　...錆びた肉厚の鉈で挑むナイトは...、多分、古今東西、俺ひとりだな。￥
+	PlaySE(4, "S03/01/140100919", 128, 64);
 	OutputLine(NULL, "「……ナイトなら武器は剣だろ。",
 		   NULL, "\"...Knights, of course, use swords.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100920", 128, 64);
 	OutputLine(NULL, "ツーハンデッドのカッコイイやつ！",
 		   NULL, " The awesome two-handed kind!", Line_WaitForInput);
 	OutputLine(NULL, "　…錆びた肉厚の鉈で挑むナイトは…、多分、古今東西、俺ひとりだな。」",
@@ -698,16 +706,20 @@
 	ClearMessage();
 
 //「...おんやぁ＠　圭一くんかい＠　朝のサイクリングかぃね！＠
+	PlaySE(4, "S03/00/old04001", 128, 64);
 	OutputLine(NULL, "「…おんやぁ！",
 		   NULL, "\"...Oh, my!", Line_WaitForInput);
+	PlaySE(4, "S03/00/old04002", 128, 64);
 	OutputLine(NULL, "　圭一くんかい！",
 		   NULL, " Keiichi-kun!", Line_WaitForInput);
+	PlaySE(4, "S03/00/old04003", 128, 64);
 	OutputLine(NULL, "　朝のサイクリングかぃね！」",
 		   NULL, " Out for a morning ride, I see!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「おはよぅございまーす！！＠
+	PlaySE(4, "S03/01/140100922", 128, 64);
 	OutputLine(NULL, "「おはよぅございまーす！！」",
 		   NULL, "\"Good mooorning!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -781,6 +793,7 @@
 //　間違いなく、殺したのだ＠......間違いなく＠
 	OutputLine(NULL, "　間違いなく、殺したのだ。",
 		   NULL, "I killed him without a doubt.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100570", 128, 64);
 	OutputLine(NULL, "……間違いなく。",
 		   NULL, " ...Without a doubt.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1525,6 +1538,7 @@
 	PlaySE( 3, "wa_027", 128, 64 );
 
 //「......さ、......沙都子おおっぉぉッ！！＠
+	PlaySE(4, "S03/01/140100923", 128, 64);
 	OutputLine(NULL, "「……さ、……沙都子おおっぉぉッ！！」",
 		   NULL, "\"...Sa...Satokoooooo!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1630,10 +1644,13 @@
 	DrawSceneWithMask( "bg_057", "left", 0, 0, 300 );
 
 //「大丈夫か沙都子！＠　俺だ、圭一だ＠　わかるか？＠　聞こえるか？！＠
+	PlaySE(4, "S03/01/140100925", 128, 64);
 	OutputLine(NULL, "「大丈夫か沙都子！！",
 		   NULL, "\"It'll be all right, Satoko!!", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100926", 128, 64);
 	OutputLine(NULL, "　俺だ、圭一だ！",
 		   NULL, " It's me, Keiichi!", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100927", 128, 64);
 	OutputLine(NULL, "　わかるか？！",
 		   NULL, " Keiichi!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1641,12 +1658,14 @@
 
 
 //「...............け.........いちさ、...............ひ............へ......、＠
+	PlaySE(4, "S03/01/140100928", 128, 64);
 	OutputLine(NULL, "　聞こえるか？！」",
 		   NULL, "Can you hear me?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　沙都子は俺の姿を認め、弱々しく応えたが...＠何を言っているのかよくわからない￥
+	PlaySE(4, "S03/04/140400192", 128, 64);
 	OutputLine(NULL, "「……………け………いちさ、……………ひ…………へ……、」",
 		   NULL, "\"......Ke...ichi......sa...... hee...... heh...\"", Line_WaitForInput);
 	OutputLine(NULL, "　沙都子は俺の姿を認め、弱々しく応えたが…。",
@@ -1730,14 +1749,17 @@
 //「...............大丈夫か、沙都子...＠もう、大丈夫だからな＠...必ず俺が、...にーにーが助けてやるからな...。＠
 	OutputLine(NULL, "　…これ以上は…素人の俺には…無理…！！",
 		   NULL, "...Anything more than this... would be too much... for the likes of an amateur...!!", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100929", 128, 64);
 	OutputLine(NULL, "「……………大丈夫か、沙都子…。",
 		   NULL, " \"......What happened, Satoko...?", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100930", 128, 64);
 	OutputLine(NULL, "もう、大丈夫だからな。",
 		   NULL, " You're all right now.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「.....................ごせんさんじゅうきゅー...＠......ごせん、ごほ！......よんじゅー......はぁ............はあ............！￥
+	PlaySE(4, "S03/01/140100931", 128, 64);
 	OutputLine(NULL, "…必ず俺が、…にーにーが助けてやるからな…。」",
 		   NULL, "...I will... your Nii-nii will save you for sure...\"", Line_WaitForInput);
 	OutputLine(NULL, "「…………………ごせんさんじゅうきゅー…。",
@@ -1865,6 +1887,7 @@
 	PlayBGM( 1, "msys16", 128, 0 );
 
 //「うごおおおおおぉおおぉおお！！！!w900　殺してやらああぁああああぁあぁぁぁぁあぁッ！！！!w900　ぐおおおおぉおおぉおおおおぉおぉおおおおおぉおおおおおおぉおぉおおおおおぉおっぉおぉぉおッ！！￥
+	PlaySE(4, "S03/01/140100941", 128, 64);
 	OutputLine(NULL, "「うごおおおおおぉおおぉおお！！！",
 		   NULL, "\"Ughoooohhhhhhhhhh!!!", Line_ContinueAfterTyping);
 
@@ -1976,6 +1999,7 @@
 //「うおおぉおおおおおおぉおぉおおおぉおおッ！！！.........はぁ、......はぁ、......はぁ...＠　..............................はぁ......。＠
 	OutputLine(NULL, "「うおおぉおおおおおおぉおぉおおおぉおおッ！！！………はぁ、……はぁ、……はぁ…！",
 		   NULL, "\"Woooooooooohhhhhhhhhhhhhhhh!!! ...Hah... hah... hah...!", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100943", 128, 64);
 	OutputLine(NULL, "　…………………………はぁ……。」",
 		   NULL, " ............Hah...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -2076,14 +2100,17 @@
 	ClearMessage();
 
 //「......立てるか...＠俺が診療所まで負ぶって行ってやるから。＠
+	PlaySE(4, "S03/01/140100944", 128, 64);
 	OutputLine(NULL, "「……立てるか…。",
 		   NULL, "\"...Can you stand...?", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100945", 128, 64);
 	OutputLine(NULL, "俺が診療所まで負ぶって行ってやるから。」",
 		   NULL, " I'll carry you over to the clinic.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「....................................ありがとう...ですわ......。＠
+	PlaySE(4, "S03/04/140400197", 128, 64);
 	OutputLine(NULL, "「………………………………ありがとう…ですわ……。」",
 		   NULL, "\"..................Thank... thank you...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2126,6 +2153,7 @@
 
 
 //「すぐ着くから、...しばらくの間だけ我慢してろ...！＠
+	PlaySE(4, "S03/01/140100946", 128, 64);
 	OutputLine(NULL, "「すぐ着くから、…しばらくの間だけ我慢してろ…！」",
 		   NULL, "\"We'll be there soon... it won't be long, so stay strong...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
