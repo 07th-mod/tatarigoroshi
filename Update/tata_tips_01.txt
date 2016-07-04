@@ -16,7 +16,6 @@
 	PlaySE(4, "S20/01/440100092", 128, 64);
 	OutputLine(NULL, "「俺が保証する。",
 		   NULL, "\"I know one thing for sure.", Line_WaitForInput);
-	PlaySE(4, "S20/01/440100092", 128, 64);
 	OutputLine(NULL, "沙都子ならこの山で篭城して、一個師団相手くらいなら充分にあしらえるに違いない。」",
 		   NULL, " Satoko could fend off an entire army division by holing up in this mountain.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -122,7 +121,6 @@
 	PlaySE(4, "S20/02/440200059", 128, 64);
 	OutputLine(NULL, "　レナじゃ迷子になっちゃう。",
 		   NULL, " Rena might get lost.", Line_WaitForInput);
-	PlaySE(4, "S09/02/170200127", 128, 64);
 	OutputLine(NULL, "はぅ。」",
 		   NULL, " Hau.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -135,7 +133,6 @@
 	PlaySE(4, "S20/03/440300091", 128, 64);
 	OutputLine(NULL, "「裏山ねぇ。",
 		   NULL, "\"The mountain out back, huh?", Line_WaitForInput);
-	PlaySE(4, "S20/03/440300091", 128, 64);
 	OutputLine(NULL, "…小さい頃はよく遊んだけど、…ここ何年かはさっぱりだなぁ。",
 		   NULL, " ...I played there a lot when I was little... but I haven't gone there for years.", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300092", 128, 64);
@@ -187,7 +184,6 @@
 	PlaySE(4, "S20/02/440200060", 128, 64);
 	OutputLine(NULL, "「でも圭一くん…。",
 		   NULL, "\"Wait, Keiichi-kun...", Line_WaitForInput);
-	PlaySE(4, "S20/02/440200060", 128, 64);
 	OutputLine(NULL, "裏山は迷うから遊びに行っちゃいけないって夏休みのしおりにも書いてあるよ。」",
 		   NULL, " The summer vacation guidebook says not to play on the mountain because you'll get lost.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -247,6 +243,7 @@
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「そうそう＠皆さん＠ここからは私が歩いた足跡の通りに歩くんですわよ。＠
+	PlaySE(4, "S20/04/440400047", 128, 64);
 	OutputLine(NULL, "「そうそう。",
 		   NULL, "\"Oh, yes.", Line_WaitForInput);
 	OutputLine(NULL, "皆さん。",
@@ -258,9 +255,9 @@
 
 
 //「はぁ...＠　突然、何を言い出すんだ？＠
+	PlaySE(4, "S20/01/440100096", 128, 64);
 	OutputLine(NULL, "「はぁ…？",
 		   NULL, "\"Huh...?", Line_WaitForInput);
-	PlaySE(4, "S20/01/440100096", 128, 64);
 	OutputLine(NULL, "　突然、何を言い出すんだ？」",
 		   NULL, " What are you talking about all of a sudden?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -282,9 +279,9 @@
 	PlaySE(4, "S20/02/440200061", 128, 64);
 	OutputLine(NULL, "「あれれ。",
 		   NULL, "\"Oh, my.", Line_WaitForInput);
-	PlaySE(4, "S20/02/440200061", 128, 64);
 	OutputLine(NULL, "ねー、魅ぃちゃん、ほらこれ。",
 		   NULL, " Hey, Mii-chan, look at this.", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200062", 128, 64);
 	OutputLine(NULL, "なんだろね。",
 		   NULL, " What is it?", Line_WaitForInput);
 
@@ -292,9 +289,9 @@
 	DrawBustshot( 2, "re_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //引っ張るのかな＠　かな？￥
+	PlaySE(4, "S20/02/440200063", 128, 64);
 	OutputLine(NULL, "引っ張るのかな？",
 		   NULL, " Should I pull it?", Line_WaitForInput);
-	PlaySE(4, "S20/02/440200035", 128, 64);
 	OutputLine(NULL, "　かな？」",
 		   NULL, " Should I?\"", Line_Normal);
 	ClearMessage();
@@ -361,6 +358,7 @@
 	PlaySE( 3, "wa_015", 128, 64 );
 
 //　何？！!w400/
+	PlaySE(4, "S20/03/440300095", 128, 64);
 	OutputLine(NULL, "　何？！",
 		   NULL, " What?!", Line_ContinueAfterTyping);
 
@@ -371,6 +369,7 @@
 	PlaySE( 3, "wa_015", 128, 64 );
 
 //　何？！!w400/
+	PlaySE(4, "S20/03/440300096", 128, 64);
 	OutputLine(NULL, "　何？！",
 		   NULL, " What?!", Line_ContinueAfterTyping);
 
@@ -381,6 +380,7 @@
 	PlaySE( 3, "wa_015", 128, 64 );
 
 //　ぎゃーー！！」/
+	PlaySE(4, "S20/03/440300097", 128, 64);
 	OutputLine(NULL, "　ぎゃーー！！」",
 		   NULL, " Gyaaa!!\"", Line_ContinueAfterTyping);
 
@@ -403,7 +403,6 @@
 	PlaySE(4, "S20/05/440500028", 128, 64);
 	OutputLine(NULL, "「……懐かしいのですよ。",
 		   NULL, "\"...That brings back memories.", Line_WaitForInput);
-	PlaySE(4, "S20/05/440500028", 128, 64);
 	OutputLine(NULL, "これは確か、２年生の２学期に沙都子が作ったトラップなのです。」",
 		   NULL, " Satoko made this trap in the second semester of second grade.\"", Line_Normal);
 	ClearMessage();
@@ -415,13 +414,13 @@
 	PlaySE(4, "S20/04/440400049", 128, 64);
 	OutputLine(NULL, "「危なかったですわねぇ。",
 		   NULL, "\"That was a close one.", Line_WaitForInput);
-	PlaySE(4, "S20/04/440400049", 128, 64);
 	OutputLine(NULL, "竹槍の先端には犬のフンが塗ってありますから、傷になるとあとで腐り出しますわよ。」",
 		   NULL, " The tips of the spears are covered in dog poop, so if one of them hurts you, the wound will start to fester.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！￥
+	PlaySE(4, "S20/01/440100097", 128, 64);
 	OutputLine(NULL, "「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！」",
 		   NULL, "\"W-When did this turn into freaking Vietnam?!\"", Line_Normal);
 	ClearMessage();
@@ -456,10 +455,9 @@
 	DrawBustshotWithFiltering( 1, "sa_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「さ＠　先を急ぎますわよ＠早く戻らないと暗くなってしまいますわ＠暗くなったら、私だって危ないでございますからね。＠
-	PlaySE(4, "S13/12/DS41070324", 128, 64);
+	PlaySE(4, "S20/04/440400050", 128, 64);
 	OutputLine(NULL, "「さ！",
 		   NULL, "\"Come, now!", Line_WaitForInput);
-	PlaySE(4, "S20/04/440400050", 128, 64);
 	OutputLine(NULL, "　先を急ぎますわよ。",
 		   NULL, " We are hurrying on ahead.", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400051", 128, 64);
@@ -529,7 +527,6 @@
 	PlaySE(4, "S20/02/440200068", 128, 64);
 	OutputLine(NULL, "「は、はぅーーー！！！",
 		   NULL, "\"H-Hauuuu!!!", Line_WaitForInput);
-	PlaySE(4, "S20/02/440200069", 128, 64);
 	OutputLine(NULL, "　見た？！",
 		   NULL, " You saw?!", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200069", 128, 64);
@@ -574,6 +571,7 @@
 	PlaySE( 3, "wa_005", 128, 64 );
 
 //げは、!w200/
+	PlaySE(4, "S20/01/440100100", 128, 64);
 	OutputLine(NULL, "げは、",
 		   NULL, " gehah,", Line_ContinueAfterTyping);
 
@@ -584,6 +582,7 @@
 	PlaySE( 3, "wa_005", 128, 64 );
 
 //ごほ！！!w400/
+	PlaySE(4, "S20/01/440100101", 128, 64);
 	OutputLine(NULL, "ごほ！！",
 		   NULL, " gohoh!!", Line_ContinueAfterTyping);
 
