@@ -1,6 +1,8 @@
 # PS3 Voice and Graphics Patch (in progress)
 
 Currently hosting only the automated placed lines. All files need manual fixing, avoid placing them on your game.
+Switch to the developer's branch for script progress.
+
 
 README's going to be updated as the patch is developed. Refer to [Onikakushi](https://github.com/higurashi-mod/onikakushi) for more details about the patch.
 
