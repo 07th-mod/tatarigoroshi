@@ -85,6 +85,7 @@
 
 	OutputLine(NULL, "　不安な気持ちだけが募っていく。",
 		   NULL, "Anxiety was the only emotion growing within me.", Line_WaitForInput);
+	PlaySE(4, "S17/01/110100211", 128, 64);
 	OutputLine(NULL, "……どうして？",
 		   NULL, " ...Why was that?", Line_Normal);
 	ClearMessage();
@@ -1616,6 +1617,7 @@
 
 	OutputLine(NULL, "　全員が息を潜め、肩を抱くように顔を寄せ合う。",
 		   NULL, "Everyone took a deep breath, then brought their faces together, locking shoulders.", Line_WaitForInput);
+	PlaySE(4, "S20/00/443200032", 128, 64);
 	OutputLine(NULL, "……それから、",
 		   NULL, " ...And then,", Line_Normal);
 	ClearMessage();
@@ -1889,7 +1891,6 @@
 	PlaySE(4, "S19/01/HR_KEI32870", 128, 64);
 	OutputLine(NULL, "「見ろ魅音。",
 		   NULL, "\"Look, Mion.", Line_WaitForInput);
-	PlaySE(4, "S19/01/HR_KEI32870", 128, 64);
 	OutputLine(NULL, "俺はちゃんと権利をもらったぞ。",
 		   NULL, " I now have the privilege.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI32880", 128, 64);
@@ -3257,7 +3258,7 @@
 
 //...なっはっはっはっは...！＠
 //　大石は突然笑い出すと俺の肩を離す＠
-	PlaySE(4, "S02/11/130700375", 128, 64);
+	PlaySE(4, "S19/11/500700101", 128, 64);
 	OutputLine(NULL, "……なっはっはっはっは…！」",
 		   NULL, " ...Na-ha-ha-ha-ha...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4567,6 +4568,7 @@
 //!s0/
 	SetSpeedOfMessage( TRUE, 127, );
 
+	PlaySE(4, "S08/11/321100614", 128, 64);
 	OutputLine(NULL, "『オヤシロさまの使い』",
 		   NULL, " Oyashiro-sama's servant", Line_ContinueAfterTyping);
 //!sd

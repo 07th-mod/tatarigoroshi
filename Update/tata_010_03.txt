@@ -767,7 +767,6 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S14/28/VT4Bb_tomoe3256", 128, 64);
 	OutputLine(NULL, "時間、",
 		   NULL, " what time,", Line_ContinueAfterTyping);
 
@@ -1121,6 +1120,7 @@
 //　目指すロッカーは...俺のロッカーではない＠......それは、!w800...ある日偶然、見つけてしまった、!w800.........禁断のロッカー￥
 	OutputLine(NULL, "　目指すロッカーは…俺のロッカーではない。",
 		   NULL, "The one I was looking for... wasn't my own.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100282", 128, 64);
 	OutputLine(NULL, "……それは、",
 		   NULL, " ...It was...", Line_ContinueAfterTyping);
 
@@ -1252,7 +1252,6 @@
 	ClearMessage();
 
 //　そう＠...これが、このバットを選びたかった理由＠
-	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "…これが、このバットを選びたかった理由。",

@@ -1021,7 +1021,6 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S03/01/140100586", 128, 64);
 	OutputLine(NULL, "………一夜くらい、遊ばせてやろうじゃないか。」",
 		   NULL, " Couldn't we at least let her have fun for one night?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1278,6 +1277,7 @@
 	PlaySE(4, "S03/03/140300317", 128, 64);
 	OutputLine(NULL, "……本当に……ずるい人…。",
 		   NULL, " ...You're so... unfair...", Line_WaitForInput);
+	PlaySE(4, "S03/03/140300318", 128, 64);
 	OutputLine(NULL, "……ぅっく……。",
 		   NULL, " ...hic...", Line_WaitForInput);
 	PlaySE(4, "S03/03/140300319", 128, 64);

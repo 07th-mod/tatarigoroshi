@@ -1000,6 +1000,7 @@
 	DrawBustshot( 2, "sa_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...をっほっほ＠人気者は辛いでございますわ。￥
+	PlaySE(4, "S03/04/140400016", 128, 64);
 	OutputLine(NULL, "…をっほっほ。",
 		   NULL, " ...Oh-ho-ho.", Line_WaitForInput);
 	PlaySE(4, "S03/04/140400017", 128, 64);
@@ -2531,7 +2532,6 @@
 	DrawBustshot( 1, "me_se_ma_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //......あれは!w1000......失敗だった...。＠
-	PlaySE(4, "S03/04/140400325", 128, 64);
 	OutputLine(NULL, "………あれは",
 		   NULL, " ......We...", Line_ContinueAfterTyping);
 
@@ -5543,6 +5543,7 @@
 	PlaySE(4, "S03/04/140400082", 128, 64);
 	OutputLine(NULL, "……明日まで、……頑張れますから……。",
 		   NULL, " I'll do my best... until tomorrow...", Line_WaitForInput);
+	PlaySE(4, "S03/04/140400083", 128, 64);
 	OutputLine(NULL, "大丈夫……。",
 		   NULL, " I'll be okay...", Line_WaitForInput);
 	PlaySE(4, "S03/04/140400084", 128, 64);
@@ -6115,6 +6116,7 @@
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S03/01/140100404", 128, 64);
 	OutputLine(NULL, "………それは",
 		   NULL, " I realized...", Line_ContinueAfterTyping);
 
@@ -7077,7 +7079,6 @@
 	ClearMessage();
 
 //　...沙都子を、絶対に泣かせないって￥
-	PlaySE(4, "S03/01/140100234", 128, 64);
 	OutputLine(NULL, "　…沙都子を、絶対に泣かせないって。",
 		   NULL, "...That we wouldn't ever let Satoko cry.", Line_Normal);
 	ClearMessage();

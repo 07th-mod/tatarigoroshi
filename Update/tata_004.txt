@@ -1492,6 +1492,7 @@
 //　沙都子を置いて、...家出してしまった、沙都子のにーにー＠北条悟史￥
 	OutputLine(NULL, "　沙都子を置いて、…家出してしまった、沙都子のにーにー。",
 		   NULL, "The one who left Satoko... and ran away from home—Satoko's Nii-nii.", Line_WaitForInput);
+	PlaySE(4, "S01/01/120100638", 128, 64);
 	OutputLine(NULL, "北条悟史。",
 		   NULL, " Satoshi Houjou.", Line_Normal);
 	ClearMessage();
@@ -3362,6 +3363,7 @@
 
 //ねーー☆＠
 //「ぅ、ぅおーーー！＠!s0　ぬわにが貴重な経験どわぁああぁああ...ッ！！！」!sd/
+	PlaySE(4, "S19/06/500600402", 128, 64);
 	OutputLine(NULL, "ねーー☆」",
 		   NULL, " Right?☆\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3755,6 +3757,7 @@
 	DrawBustshot( 1, "si_si_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //...あ、そっか＠圭ちゃんって今年、引越してきたんでしたっけ＠　...なら会ったことありませんね。＠
+	PlaySE(4, "S19/06/500600418", 128, 64);
 	OutputLine(NULL, "…あ、そっか。",
 		   NULL, " ...Oh, right.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600419", 128, 64);
@@ -4837,7 +4840,6 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S04/36/310100874", 128, 64);
 	OutputLine(NULL, "…その、",
 		   NULL, " well...", Line_ContinueAfterTyping);
 
@@ -6107,6 +6109,7 @@
 	PlaySE(4, "S19/03/500300580", 128, 64);
 	OutputLine(NULL, "…茶化すと、かなり怒る。",
 		   NULL, " ...If I poke fun at it, she gets pretty upset.", Line_WaitForInput);
+	PlaySE(4, "S19/03/500300581", 128, 64);
 	OutputLine(NULL, "……レナは普段はちゃらけてるけど、",
 		   NULL, " ...Rena jokes around all the time...", Line_ContinueAfterTyping);
 

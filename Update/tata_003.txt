@@ -1906,7 +1906,6 @@
 		   NULL, " \"Hey!", Line_WaitForInput);
 	OutputLine(NULL, "　阪神の××さんが腰を上げたぞ…！！",
 		   NULL, " ___-san from Hanshin stood up...!!\"", Line_WaitForInput);
-	PlaySE(4, "S09/11/170700235", 128, 64);
 	OutputLine(NULL, "　おい！",
 		   NULL, " \"Hey!", Line_WaitForInput);
 	OutputLine(NULL, "　写真を撮れ！！",
@@ -2933,6 +2932,7 @@
 
 	OutputLine(NULL, "　なんだ、みんなクラスメートじゃないか。",
 		   NULL, "Isn't everyone here a classmate?", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600418", 128, 64);
 	OutputLine(NULL, "…あ、そっか。",
 		   NULL, " ...Oh, I see.", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢の学校ってうちだけだもんな。",
@@ -3639,6 +3639,7 @@
 	DrawBustshot( 1, "me_se_wi_b2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //...わかるね？＠　これが逆転の最後のチャンス＠絶対に失敗できない！＠
+	PlaySE(4, "S19/03/500300424", 128, 64);
 	OutputLine(NULL, "…わかるね？！",
 		   NULL, " ...Understand?!", Line_WaitForInput);
 	PlaySE(4, "S19/03/500300425", 128, 64);
@@ -4261,6 +4262,7 @@
 
 //勝利こそ絶対＠何にも変えられないってわけだ＠...くっくっく！＠
 //「そんなのは当り前だろう＠　どんな脅しにも買収にも、勝利を放棄させるような対価は存在しない！￥
+	PlaySE(4, "S19/01/HR_KEI29160", 128, 64);
 	OutputLine(NULL, "勝利こそ絶対。",
 		   NULL, " Victory decides all.", Line_WaitForInput);
 	OutputLine(NULL, "何にも変えられないってわけだ。",
@@ -4408,6 +4410,7 @@
 		   NULL, " A pile of beef tongue?", Line_WaitForInput);
 	OutputLine(NULL, "　…くっくっく。",
 		   NULL, " ...Ku-ku-ku.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI29230", 128, 64);
 	OutputLine(NULL, "違うよなぁ。",
 		   NULL, " That wouldn't be it.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI29240", 128, 64);
@@ -4489,6 +4492,7 @@
 	PlaySE(4, "S19/01/HR_KEI29300", 128, 64);
 	OutputLine(NULL, "　まるで…フリルやリボンで飾り付けられた…無垢な穢れを知らぬ少女を連想させる…そんな透き通った少女のような可愛いデザートを…。",
 		   NULL, "It almost... makes you think of a girl... adorned in frills and ribbons, pure, ignorant of shame... Cute desserts, like those girls, so clear and clean...", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI29300_01", 128, 64);
 	OutputLine(NULL, "ニキビだらけの欲望丸出しのスポーツ刈りが、汚すように！！",
 		   NULL, " And with your acne-laden face, your sports cut, and your lust in full display, you sully them!!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4781,6 +4785,7 @@
 //「い、苺を取った後の......く、くぼみ...ッ！！！￥
 	OutputLine(NULL, "「苺しかないからこそ、やわらかく主張したクリームのデコレーションはさしずめ…、フルリやレース、刺繍飾りのようなものだよな…。",
 		   NULL, "\"Because there are only strawberries, the soft, accented cream decoration ends up... looking like frills, laces, and embroidery...", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI29570", 128, 64);
 	OutputLine(NULL, "それを、上品な貴族の、ご主人さまのようにフォークで切り分け…、いやいやッ！！",
 		   NULL, " And she takes it, and splits it with her fork for her master, an elegant aristocrat... No, no!!", Line_WaitForInput);
 	OutputLine(NULL, "　それを下劣に、脂汗を浮かせた悪のご主人さまのようにしゃぶりつくところがワイルドなのかッ？！",
@@ -4883,7 +4888,6 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S19/23/202800038", 128, 64);
 	OutputLine(NULL, "「…ぅ、",
 		   NULL, "\"...Um...", Line_ContinueAfterTyping);
 
@@ -5587,7 +5591,6 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S19/00/camC50004", 128, 64);
 	OutputLine(NULL, "……あの謎の男の真価を見抜けるのだ…。」",
 		   NULL, " he can see through to that mysterious man's true value...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -6180,14 +6183,15 @@
 
 //（でもＫさん＠...いくら手を抜いて投げても...この子、本当に打てるんですかね？＠
 //（...いいからお前は決められた通りに投げろ＠俺には何となくわかってる。＠
+	PlaySE(4, "S19/23/202800065", 128, 64);
 	OutputLine(NULL, "（でもＫさん。",
 		   NULL, "(But K-san...", Line_WaitForInput);
-	PlaySE(4, "S19/23/202800065", 128, 64);
 	OutputLine(NULL, "…いくら手を抜いて投げても…この子、本当に打てるんですかね？）",
 		   NULL, " However slowly I pitch... can this girl really hit it?)", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S19/01/HR_KEI30110_03", 128, 64);
 	OutputLine(NULL, "（…いいからお前は決められた通りに投げろ。",
 		   NULL, "(...Don't worry, and throw the ball like we planned.", Line_WaitForInput);
 	OutputLine(NULL, "俺には何となくわかってる。）",

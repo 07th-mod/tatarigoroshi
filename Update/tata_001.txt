@@ -1026,7 +1026,6 @@
 
 	Wait( 1000 );
 
-	PlaySE(4, "S19/03/500300176", 128, 64);
 	OutputLine(NULL, "…あ。",
 		   NULL, " ...Uh.", Line_Normal);
 	ClearMessage();
@@ -2413,6 +2412,7 @@
 
 //をっほっほっほ！＠
 //「はん＠　俺が今夜、どんな素晴らしいディナーになるか、見ることができなくて残念だな！＠　明日の弁当でその片鱗をほんの少しだけ見せてやるから楽しみにしていろよ！！￥
+	PlaySE(4, "S19/04/500400170", 128, 64);
 	OutputLine(NULL, "をっほっほっほ！」",
 		   NULL, " Ohh-ho-ho-ho!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -5905,6 +5905,7 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S03/03/140300373", 128, 64);
 	OutputLine(NULL, "……………………うん。",
 		   NULL, " ...............Yeah.", Line_Normal);
 	ClearMessage();

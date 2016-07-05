@@ -1410,6 +1410,7 @@
 	DrawBustshot( 2, "re_se_ka_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...はぅ～☆￥
+	PlaySE(4, "S03/02/140200185", 128, 64);
 	OutputLine(NULL, "…はぅ〜☆」",
 		   NULL, " ...Hau~☆.\"", Line_Normal);
 	ClearMessage();
@@ -5301,7 +5302,6 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S03/10/141000141", 128, 64);
 	OutputLine(NULL, "本部テントでずーっと会長さんたちとお酒を飲んでたんで…全然、お祭りは見て回ってないんですよ。",
 		   NULL, " I was drinking in the main tent with the chairman and the others the whole time... I didn't go out to see the festival at all.", Line_WaitForInput);
 	PlaySE(4, "S03/10/141000142", 128, 64);
