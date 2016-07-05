@@ -6,4 +6,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Current status
 
-> new automated script on development, patch entering production status soon
+> automated scripts uploaded, working on editing
+
+# Known issues
+
+> **MINOR**: on omake_03.txt, several lines are missing voice files and some new dialog is added on the PS3 version

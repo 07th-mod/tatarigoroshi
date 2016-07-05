@@ -62,6 +62,7 @@
 //..\n<
 
 //　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」/
+	PlaySE(4, "S20/09/440900124", 128, 64);
 	OutputLine(NULL, "　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」",
 		   NULL, " Personally, I wanted to get a scene of the gas coming in, the villagers spasming and foaming at the mouth one by one before dying—do you all think so too?\"", Line_ContinueAfterTyping);
 
@@ -187,6 +188,7 @@
 	PlaySE(4, "S20/03/440300360", 128, 64);
 	OutputLine(NULL, "「富竹さんって、時報みたいな役割なんですよねー。",
 		   NULL, "\"Tomitake-san, you're kind of like a news reporter!", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300361", 128, 64);
 	OutputLine(NULL, "富竹さんが死んだら、あ！後半戦突入だー！",
 		   NULL, " When you die, it's like, oh, we're in the second half now!", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300362", 128, 64);
@@ -197,6 +199,14 @@
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //「「「わっはっはっはっはっは！！」」￥
+	PlaySE(4, "S20/02/440200237", 128, 64);
+	PlaySE(5, "S20/03/440300363", 128, 64);
+	PlaySE(6, "S20/04/440400213", 128, 64);
+	PlaySE(7, "S20/05/440500130", 128, 64);
+	PlaySE(8, "S20/08/440800128", 128, 64);
+	PlaySE(9, "S20/09/440900125", 128, 64);
+	PlaySE(10, "S20/06/440600132_01", 128, 64);
+	PlaySE(1, "S20/11/440700400_01", 128, 64);
 	OutputLine(NULL, "「「「わっはっはっはっはっは！！」」」",
 		   NULL, "\"\"\"Wah-ha-ha-ha-ha-ha-ha!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -206,8 +216,10 @@
 	DrawBustshotWithFiltering( 3, "re_se_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「さて＠　ではここで、今回のシナリオから立ち絵新登場の皆さんです＠拍手でお迎え下さい～！＠　まずは監督こと、入江京介さん～～！￥
+	PlaySE(4, "S20/02/440200238", 128, 64);
 	OutputLine(NULL, "「さて！",
 		   NULL, "\"Okay!", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200239", 128, 64);
 	OutputLine(NULL, "　ではここで、今回のシナリオから立ち絵新登場の皆さんです。",
 		   NULL, " Now here are all the new character portraits that debuted in this chapter.", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200240", 128, 64);
@@ -221,6 +233,7 @@
 	DrawBustshotWithFiltering( 1, "ir_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ご紹介に預かりまして光栄です＠どうもどうも＠脇役だったわけですが、トータルで見てみるとかなりおいしい役だったなぁなんて思ってます。＠
+	PlaySE(4, "S20/10/441000071", 128, 64);
 	OutputLine(NULL, "「ご紹介に預かりまして光栄です。",
 		   NULL, "\"I'm honored to have your introduction.", Line_WaitForInput);
 	PlaySE(4, "S20/10/441000072", 128, 64);
@@ -240,6 +253,7 @@
 	PlaySE(4, "S20/04/440400214", 128, 64);
 	OutputLine(NULL, "「本当ですわねぇ。",
 		   NULL, "\"It's true!", Line_WaitForInput);
+	PlaySE(4, "S20/04/440400215", 128, 64);
 	OutputLine(NULL, "今回限りの脇役にしては出番もセリフも多過ぎでしてよ。」",
 		   NULL, " You had too many appearances and too much dialogue to be a minor character this time.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -253,6 +267,7 @@
 	PlaySE(4, "S20/10/441000074", 128, 64);
 	OutputLine(NULL, "「はははは☆",
 		   NULL, "\"Hahahaha☆.", Line_WaitForInput);
+	PlaySE(4, "S20/10/441000075", 128, 64);
 	OutputLine(NULL, "　次回のシナリオでも出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
 		   NULL, " I don't know if I'll appear in the next scenario, so please root for me!\"", Line_Normal);
 	ClearMessage();
@@ -265,6 +280,7 @@
 	PlaySE(4, "S20/02/440200242", 128, 64);
 	OutputLine(NULL, "「ありがとうございました！",
 		   NULL, "\"Thank you very much!", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200243", 128, 64);
 	OutputLine(NULL, "　では次に、第１回から登場していたにも関わらず、ずっと立ち絵がなかった、知恵先生〜！！」",
 		   NULL, " Next up we have Chie-sensei, who has been around since Chapter 1 but never had a portrait until now~!!\"", Line_Normal);
 	ClearMessage();
@@ -275,8 +291,10 @@
 	PlaySE(4, "S20/22/441400025", 128, 64);
 	OutputLine(NULL, "「皆さん、どうもこんにちは！",
 		   NULL, "\"Hello there, everyone!", Line_WaitForInput);
+	PlaySE(4, "S20/22/441400026", 128, 64);
 	OutputLine(NULL, "　第１回からずーっと学校シーンで登場させてもらってたんですけど、どういうわけか立ち絵がいただけなくて。",
 		   NULL, " They've had me appear in school scenes ever since the first chapter, but for whatever reason, I didn't have my own portrait.", Line_WaitForInput);
+	PlaySE(4, "S20/22/441400027", 128, 64);
 	OutputLine(NULL, "…どうしてなんでしょうねぇ。」",
 		   NULL, " ...I wonder why?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -290,6 +308,7 @@
 	PlaySE(4, "S20/02/440200244", 128, 64);
 	OutputLine(NULL, "「……あ、はは、はははははは！",
 		   NULL, "\"...Ah, haha, hahahahaha!", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200245", 128, 64);
 	OutputLine(NULL, "　ど、どうしてなんでしょうね！",
 		   NULL, " Y-Yes, I wonder!", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200246", 128, 64);
@@ -303,11 +322,13 @@
 	DrawSceneWithMask( "bg_163", "up", 0, 0, 300 );
 
 //「さて＠　これでとりあえず全員揃ったね＠　　レナ＠　また乾杯をよろしくね！￥
+	PlaySE(4, "S20/03/440300364", 128, 64);
 	OutputLine(NULL, "「さて！",
 		   NULL, "\"Okay!", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300365", 128, 64);
 	OutputLine(NULL, "　これでとりあえず全員揃ったね！",
 		   NULL, " Now everybody is here!", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300366", 128, 64);
 	OutputLine(NULL, "　　レナ！",
 		   NULL, " Rena!", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300367", 128, 64);
@@ -338,6 +359,7 @@
 	PlaySE(4, "S20/11/440700401", 128, 64);
 	OutputLine(NULL, "「本当にお疲れさま会もにぎやかになりましたねぇ。",
 		   NULL, "\"These afterparties have really gotten lively.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700402", 128, 64);
 	OutputLine(NULL, "今、何人くらいいるんです？」",
 		   NULL, " How many do we have here now?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -451,6 +473,7 @@
 // !sd
 	SetSpeedOfMessage( FALSE, 0, );
 
+	PlaySE(4, "S20/10/441000078", 128, 64);
 	OutputLine(NULL, "…あれ？",
 		   NULL, " ...Huh?", Line_WaitForInput);
 	PlaySE(4, "S20/10/441000079", 128, 64);
@@ -479,6 +502,7 @@
 	DrawBustshotWithFiltering( 3, "re_se_ik_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「梨花ちゃんは、お酒は、だぁめ！！￥
+	PlaySE(4, "S20/02/440200250", 128, 64);
 	OutputLine(NULL, "「梨花ちゃんは、お酒は、だぁめ！！」",
 		   NULL, "\"Rika-chan, you can't drink!!\"", Line_Normal);
 	ClearMessage();
@@ -502,6 +526,7 @@
 	PlaySE(4, "S20/04/440400216", 128, 64);
 	OutputLine(NULL, "「ハイハイ！",
 		   NULL, "\"Well, okay!", Line_WaitForInput);
+	PlaySE(4, "S20/04/440400217", 128, 64);
 	OutputLine(NULL, "　皆さん、ご清聴ですわよ〜〜！！」",
 		   NULL, " Can I have everyone's attention please~~!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -516,6 +541,7 @@
 	PlaySE(4, "S20/02/440200251", 128, 64);
 	OutputLine(NULL, "「では皆さん！",
 		   NULL, "\"All right, everyone!", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200252", 128, 64);
 	OutputLine(NULL, "　『ひぐらしのなく頃に〜祟殺し編〜』、本当にお疲れさまでした！！",
 		   NULL, " Excellent work on the Tatarigoroshi chapter!!", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200253", 128, 64);
@@ -525,7 +551,15 @@
 
 
 //「「「乾杯～～～！！！！」」＠
-	PlaySE(4, "S20/03/440300368|S20/04/440400218|S20/05/440500133|S20/09/440900128|S20/08/440800131|S20/06/440600104|S20/10/441000080|S20/22/441400031|S20/11/440700402_01", 128, 64);
+	PlaySE(4, "S20/03/440300368", 128, 64);
+	PlaySE(5, "S20/04/440400218", 128, 64);
+	PlaySE(6, "S20/05/440500133", 128, 64);
+	PlaySE(7, "S20/09/440900128", 128, 64);
+	PlaySE(8, "S20/08/440800131", 128, 64);
+	PlaySE(9, "S20/06/440600104", 128, 64);
+	PlaySE(10, "S20/10/441000080", 128, 64);
+	PlaySE(11, "S20/22/441400031", 128, 64);
+	PlaySE(12, "S20/11/440700402_01", 128, 64);
 	OutputLine(NULL, "「「「乾杯〜〜〜！！！！」」」",
 		   NULL, "\"\"\"Cheers~~~!!!!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -640,6 +674,7 @@
 	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「多分ね、「祟殺し編」のシナリオだけを吟味しても、謎は解けないんじゃないかと思うの。＠
+	PlaySE(4, "S20/09/440900133", 128, 64);
 	OutputLine(NULL, "「多分ね、「祟殺し編」のシナリオだけを吟味しても、謎は解けないんじゃないかと思うの。」",
 		   NULL, "\"I think that just by poring over the Tatarigoroshi story, the mystery won't be revealed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -689,6 +724,7 @@
 	DrawBustshotWithFiltering( 3, "si_si_wi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「鬼隠し編だけだと、実に不思議な出来事ですけど、綿流し編を読めば別に不思議でも何でもないことがわかります。￥
+	PlaySE(4, "S20/06/440600105", 128, 64);
 	OutputLine(NULL, "「鬼隠し編だけだと、実に不思議な出来事ですけど、綿流し編を読めば別に不思議でも何でもないことがわかります。」",
 		   NULL, "\"It was certainly mysterious just in Onikakushi, but after reading Watanagashi a few things made a lot of sense.\"", Line_Normal);
 	ClearMessage();
@@ -698,8 +734,10 @@
 	DrawBustshotWithFiltering( 3, "oi_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません＠で、エンジェルモートってのは園崎一族が持つお店ですから...。＠
+	PlaySE(4, "S20/11/440700405", 128, 64);
 	OutputLine(NULL, "「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません。",
 		   NULL, "\"When I mentioned a restaurant with cute uniforms during the story, it must have meant Angel Mort.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700406", 128, 64);
 	OutputLine(NULL, "で、エンジェルモートってのは園崎一族が持つお店ですから…。」",
 		   NULL, " And Angel Mort is owned by the Sonozaki family, so...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -714,7 +752,7 @@
 	PlaySE(4, "S20/03/440300371", 128, 64);
 	OutputLine(NULL, "「圭ちゃんの顔を知る者があの店にいて、それを私に伝えた…と考えれば、比較的筋は通るでしょ。",
 		   NULL, "\"Someone who knew Kei-chan was there too, and told me... It actually makes a good amount of sense, right?", Line_WaitForInput);
-	PlaySE(4, "S13/03/DS41030109", 128, 64);
+	PlaySE(4, "S20/03/440300372", 128, 64);
 	OutputLine(NULL, "そういうことよ。」",
 		   NULL, " That's what we mean.\"", Line_Normal);
 	ClearMessage();
@@ -727,6 +765,7 @@
 	PlaySE(4, "S20/10/441000083", 128, 64);
 	OutputLine(NULL, "「『ひぐらし』の物語は、微細に異なる場所もありますけど、",
 		   NULL, "\"There are subtle differences in the Higurashi stories,", Line_WaitForInput);
+	PlaySE(4, "S20/10/441000084", 128, 64);
 	OutputLine(NULL, "大筋の設定においては、多分、３つのシナリオは共通していると思います。",
 		   NULL, " but I think there's three facets that are the same for each.", Line_WaitForInput);
 	PlaySE(4, "S20/10/441000085", 128, 64);
@@ -740,6 +779,7 @@
 	DrawBustshotWithFiltering( 1, "re_se_de_a1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて＠...私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？￥
+	PlaySE(4, "S20/02/440200258", 128, 64);
 	OutputLine(NULL, "「……鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて。",
 		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200259", 128, 64);
@@ -799,6 +839,7 @@
 	PlaySE(4, "S20/05/440500136", 128, 64);
 	OutputLine(NULL, "「なっているそうです。",
 		   NULL, "\"I think it still happened.", Line_WaitForInput);
+	PlaySE(4, "S20/05/440500137", 128, 64);
 	OutputLine(NULL, "……綿流し当日のお天気や、部活の内容、沙都子ちゃんの叔父さんの帰宅など、いくつかのイベントを除けば、ほとんどが共通するそうです。」",
 		   NULL, " ...Save for a few events—the weather the day of the festival, what we did in the club, and Satoko's uncle coming home—it's almost all the same.\"", Line_Normal);
 	ClearMessage();
@@ -820,6 +861,7 @@
 	DrawBustshotWithFiltering( 1, "ir_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「一般的なサウンドノベル的に考えると...物語が派生する分岐点が存在したってことになりますね。＠
+	PlaySE(4, "S20/10/441000086", 128, 64);
 	OutputLine(NULL, "「一般的なサウンドノベル的に考えると…物語が派生する分岐点が存在したってことになりますね。」",
 		   NULL, "\"If we think in a general sound novel type of way... sometimes the story branches depending on choices, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -831,6 +873,7 @@
 	DrawBustshot( 3, "si_si_to_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「綿流し編で言うと、...お姉に人形を渡さなかった、という辺り？＠
+	PlaySE(4, "S20/06/440600106", 128, 64);
 	OutputLine(NULL, "「綿流し編で言うと、…お姉に人形を渡さなかった、という辺り？」",
 		   NULL, "\"So like... if in Watanagashi, you had given the doll to my sister?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -852,6 +895,7 @@
 	DrawBustshotWithFiltering( 3, "sa_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「では......うーん＠祟殺し編の場合ですと、...叔父を殺そうと決意する辺りですかしら。＠
+	PlaySE(4, "S20/04/440400220", 128, 64);
 	OutputLine(NULL, "「では……うーん。",
 		   NULL, "\"Well... hmm.", Line_WaitForInput);
 	OutputLine(NULL, "祟殺し編の場合ですと、…叔父を殺そうと決意する辺りですかしら。」",
@@ -876,6 +920,7 @@
 	DrawBustshotWithFiltering( 3, "re_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......では一番最初の、鬼隠し編の分岐はどこなのですか。＠
+	PlaySE(4, "S20/05/440500138", 128, 64);
 	OutputLine(NULL, "「……では一番最初の、鬼隠し編の分岐はどこなのですか。」",
 		   NULL, "\"...Then what was the first branch in Onikakushi?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -886,6 +931,7 @@
 	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「やはり、...劇中の私が登場して、オヤシロさまの祟りに関する連続怪死事件のことを話す辺りからだと思いますね。￥
+	PlaySE(4, "S20/11/440700409", 128, 64);
 	OutputLine(NULL, "「やはり、…劇中の私が登場して、オヤシロさまの祟りに関する連続怪死事件のことを話す辺りからだと思いますね。」",
 		   NULL, "\"I think... it was when I appeared and started talking about the serial freak death incidents related to Oyashiro-sama's curse.\"", Line_Normal);
 	ClearMessage();
@@ -899,6 +945,7 @@
 	PlaySE(4, "S20/04/440400221", 128, 64);
 	OutputLine(NULL, "「………今、思ったんですけれど。",
 		   NULL, "\"...You know, I just thought of something.", Line_WaitForInput);
+	PlaySE(4, "S20/04/440400222", 128, 64);
 	OutputLine(NULL, "…ちゃんと圭一さんが魅音さんにお人形をあげて。",
 		   NULL, " ...If Keiichi-san gave the doll to Mion-san...", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400223", 128, 64);
@@ -968,8 +1015,10 @@
 	PlaySE(4, "S20/03/440300382", 128, 64);
 	OutputLine(NULL, "　詩音んんん！！",
 		   NULL, " Shioooonnn!!", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300383", 128, 64);
 	OutputLine(NULL, "　あんたにゃ次は容赦なく釘を打つからね！！",
 		   NULL, " Next time I'll pound nails into you without mercy!!", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300384", 128, 64);
 	OutputLine(NULL, "　もうガシガシにー！！！",
 		   NULL, " Bang, bang!!!", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300385", 128, 64);
@@ -1016,6 +1065,7 @@
 	DrawBustshotWithFiltering( 1, "tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そうそう＠...みんなはひとつ大きな最後を忘れてるよ＠雛見沢大災害という天災を忘れたかい？￥
+	PlaySE(4, "S20/08/440800136", 128, 64);
 	OutputLine(NULL, "「そうそう。",
 		   NULL, "\"You're right.", Line_WaitForInput);
 	PlaySE(4, "S20/08/440800137", 128, 64);
@@ -1067,6 +1117,7 @@
 	PlaySE(4, "S20/11/440700412", 128, 64);
 	OutputLine(NULL, "つまり、オヤシロさまも怒らせてはダメ、と。",
 		   NULL, " We mustn't anger Oyashiro-sama, eh?", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700413", 128, 64);
 	OutputLine(NULL, "オヤシロさまを怒らせないにはどうすればいいでしたっけ。」",
 		   NULL, " And what should we do in order to prevent that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1105,6 +1156,7 @@
 	DrawBustshotWithFiltering( 1, "si_si_wi_b1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「鬼ヶ淵の沼に生贄を沈める...生贄の儀式、ですね！＠
+	PlaySE(4, "S20/06/440600110", 128, 64);
 	OutputLine(NULL, "「鬼ヶ淵の沼に生贄を沈める…生贄の儀式、ですね！」",
 		   NULL, "\"Sinking a sacrifice into the Onigafuchi Swamp... A ritual sacrifice!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1115,6 +1167,7 @@
 	DrawBustshotWithFiltering( 3, "re_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...い、生贄って、...誰を生贄にするんですか？＠
+	PlaySE(4, "S20/02/440200266", 128, 64);
 	OutputLine(NULL, "「…い、生贄って、…誰を生贄にするんですか？」",
 		   NULL, "\"...A-A sacrifice... Who do we sacrifice?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1129,6 +1182,7 @@
 	PlaySE(4, "S20/03/440300386", 128, 64);
 	OutputLine(NULL, "「そりゃー決まってるでしょ。",
 		   NULL, "\"Come on, use your head!", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300387", 128, 64);
 	OutputLine(NULL, "どんな分岐にも関係なく死亡が確定している人だよ！",
 		   NULL, " Someone who dies no matter what happens!", Line_WaitForInput);
 
@@ -1212,10 +1266,13 @@
 	DrawBustshot( 2, "ir_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「やぁ、私が北条叔父ですよ～。（立ち絵がないので代役です☆）＠愛人に逃げられてロンリーブル～＠　早く雛見沢に帰って、沙都子ちゃんを拉致監禁してハァハァに調教してご奉仕メイドですよ～～♪/
+	PlaySE(4, "S20/10/441000094", 128, 64);
 	OutputLine(NULL, "「やぁ、私が北条叔父ですよ〜。（立ち絵がないので代役です☆）、",
 		   NULL, "\"Hiya, my name's Uncle Houjou~ (He has no portrait, so I'm standing in☆).", Line_WaitForInput);
+	PlaySE(4, "S20/10/441000095", 128, 64);
 	OutputLine(NULL, "愛人に逃げられてロンリーブル〜♪",
 		   NULL, " I'm so lonely and blue because my lover ran away~♪.", Line_WaitForInput);
+	PlaySE(4, "S20/10/441000096", 128, 64);
 	OutputLine(NULL, "　早く雛見沢に帰って、沙都子ちゃんを拉致監禁してハァハァに調教してご奉仕メイドですよ〜〜♪",
 		   NULL, " Time to go back to Hinamizawa, lock up Satoko-chan, and—hah, hah—raise her into a maid servant~~♪.", Line_ContinueAfterTyping);
 
@@ -1443,6 +1500,7 @@
 	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ふん縛って、簀巻きにして、吊るして＠　３日かけて沈めるんでしたっけ？＠
+	PlaySE(4, "S20/11/440700419", 128, 64);
 	OutputLine(NULL, "「ふん縛って、簀巻きにして、吊るして！",
 		   NULL, "\"Tie him fast, wrap him up, and hang him!", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700420", 128, 64);
@@ -1564,6 +1622,7 @@
 	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......屍累々で大変なことになってますのです。￥
+	PlaySE(4, "S20/05/440500143", 128, 64);
 	OutputLine(NULL, "「……屍累々で大変なことになってますのです。」",
 		   NULL, "\"...This pile of corpses is a pretty big deal.\"", Line_Normal);
 	ClearMessage();
@@ -1579,6 +1638,7 @@
 	DrawScene( "bg_163", 400 );
 
 //「あれ＠　電話だ＠/
+	PlaySE(4, "S20/02/440200270", 128, 64);
 	OutputLine(NULL, "「あれ？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200271", 128, 64);
@@ -1607,7 +1667,7 @@
 	PlaySE(4, "S20/01/440100211", 128, 64);
 	OutputLine(NULL, "こっちは次回の台本読みで相変わらず忙しいってのにー！！",
 		   NULL, " And yet here I am busy with reading the scenario for the next story!!", Line_WaitForInput);
-	PlaySE(4, "S19/01/HR_KEI08580", 128, 64);
+	PlaySE(4, "S20/01/440100212", 128, 64);
 	OutputLine(NULL, "　まぁいいや。",
 		   NULL, " Whatever.", Line_WaitForInput);
 	PlaySE(4, "S20/01/440100213", 128, 64);
@@ -1624,11 +1684,13 @@
 	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれ＠　今ここで発表しちゃうんですか＠　もう少し秘密にしたかったけど、まぁいいか。＠
+	PlaySE(4, "S20/06/440600115", 128, 64);
 	OutputLine(NULL, "「あれ？",
 		   NULL, "\"What?", Line_WaitForInput);
 	PlaySE(4, "S20/06/440600116", 128, 64);
 	OutputLine(NULL, "　今ここで発表しちゃうんですか？",
 		   NULL, " You're going to announce it here?", Line_WaitForInput);
+	PlaySE(4, "S20/06/440600117", 128, 64);
 	OutputLine(NULL, "　もう少し秘密にしたかったけど、まぁいいか。」",
 		   NULL, " I wanted to keep it secret for a while longer, but okay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1702,7 +1764,8 @@
 	PlayBGM( 1, "msys01", 128, 0 );
 
 //「「「え、えぇええ゛ぇえぇえー？！？！」」￥
-	PlaySE(4, "S20/03/440300394|S20/02/440200275", 128, 64);
+	PlaySE(4, "S20/03/440300394", 128, 64);
+	PlaySE(5, "S20/02/440200275", 128, 64);
 	OutputLine(NULL, "「「「え、えぇええ゛ぇえぇえー？！？！」」」",
 		   NULL, "\"\"\"W-Whaaaaaaat?!?!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -1721,6 +1784,7 @@
 	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //双子姉妹の遅れ登場妹は絶対に人気が出るってのは、東鳩の時代から決められたお約束ですしー♪＠
+	PlaySE(4, "S20/06/440600123", 128, 64);
 	OutputLine(NULL, "双子姉妹の遅れ登場妹は絶対に人気が出るってのは、東鳩の時代から決められたお約束ですしー♪」",
 		   NULL, " The late-appearing younger sister of twins has been the pattern of things ever since the days of TH♪.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1730,8 +1794,10 @@
 	PlaySE(4, "S20/01/440100216", 128, 64);
 	OutputLine(NULL, "『ワケわかんねーことはどうでもいいよ。",
 		   NULL, "\"I have no idea what that means, and it doesn't matter.", Line_WaitForInput);
+	PlaySE(4, "S20/01/440100217", 128, 64);
 	OutputLine(NULL, "とにかく俺は次回に限り、主人公のお役御免！",
 		   NULL, " Anyway, I've been fired from my main character post for once!", Line_WaitForInput);
+	PlaySE(4, "S20/01/440100218", 128, 64);
 	OutputLine(NULL, "　風の噂じゃ、とうとう俺にも立ち絵が実装とか？！",
 		   NULL, " If the rumors are right, I might even get a portrait finally?!", Line_WaitForInput);
 	OutputLine(NULL, "　ひゃっほ〜い！！』",
@@ -1743,6 +1809,7 @@
 	DrawBustshot( 3, "si_si_wi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「まー、圭ちゃんの立ち絵なんてディスク容量の無駄遣いもいいとこですからね＠ディスク１枚に納まらなくなったら、バッサリ没になる可能性激大ですけど。￥
+	PlaySE(4, "S20/06/440600124", 128, 64);
 	OutputLine(NULL, "「まー、圭ちゃんの立ち絵なんてディスク容量の無駄遣いもいいとこですからね。",
 		   NULL, "\"Well, portraits of Kei-chan would be a big waste of disc space.", Line_WaitForInput);
 	OutputLine(NULL, "ディスク１枚に納まらなくなったら、バッサリ没になる可能性激大ですけど。」",
@@ -1767,6 +1834,7 @@
 	DrawBustshot( 3, "si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「くっくっく＠　まぁ、これまではね＠でもね、次回からは必ずしもそうはならないんですよねー。￥
+	PlaySE(4, "S20/06/440600126", 128, 64);
 	OutputLine(NULL, "「くっくっく！",
 		   NULL, "\"Ku-ku-ku!", Line_WaitForInput);
 	PlaySE(4, "S20/06/440600127", 128, 64);
@@ -1783,14 +1851,17 @@
 //	PlayBGM( 1, "msysMi", 128, 0 );
 
 //「『ひぐらしのなく頃に』も、今回の祟殺し編で３作目＠ミステリアスな謎を次々と提示してきた前半部はここで折り返しになり＠/
+	PlaySE(4, "S20/02/440200276", 128, 64);
 	OutputLine(NULL, "「『ひぐらしのなく頃に』も、今回の祟殺し編で３作目。",
 		   NULL, "\"With Tatarigoroshi, we're already at the third game in the Higurashi: When They Cry series.", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200277", 128, 64);
 	OutputLine(NULL, "ミステリアスな謎を次々と提示してきた前半部はここで折り返しになり、",
 		   NULL, " This first half presented a lot of strange and exciting mysteries, but starting next time...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 
 //次回からはこれまでの謎を解決していく後半部、究明編（仮称）のスタートとなります。＠
+	PlaySE(4, "S20/02/440200278b", 128, 64);
 	OutputLine(NULL, "次回からはこれまでの謎を解決していく後半部、究明編（仮称）のスタートとなります。」",
 		   NULL, " the mysteries will start to be solved in the second half, marking the start of the Investigation Arc (temporary name).\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1828,6 +1899,7 @@
 	PlaySE(4, "S20/03/440300395", 128, 64);
 	OutputLine(NULL, "「納得行かない納得行かない！！",
 		   NULL, "\"It won't happen, never!!", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300396", 128, 64);
 	OutputLine(NULL, "　御三家の秘密に近付きすぎて、監禁されて拷問されて！",
 		   NULL, " You'll get too close to the Three Families' secrets, be imprisoned, and then get tortured!", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300397", 128, 64);
@@ -1865,6 +1937,7 @@
 	PlaySE(4, "S20/02/440200279", 128, 64);
 	OutputLine(NULL, "「さて。",
 		   NULL, "\"Anyway.", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200280", 128, 64);
 	OutputLine(NULL, "その後半部の新シナリオ、仮称「目明し編」は現在鋭意製作中です。",
 		   NULL, " The new story to begin the second half, temporarily called Meakashi, or 'eye-opening,' is currently undergoing diligent development.", Line_WaitForInput);
 	OutputLine(NULL, "近い将来、皆さんに公開できると思いますので、どうか楽しみにしていただければ幸いです。」",
@@ -1875,6 +1948,7 @@
 	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「.........「鬼隠し編」!w1000「綿流し編」!w1000そして「祟殺し編」＠この３つのシナリオを重ね透かし、皆さんにはどんな真実が見えてくるでしょうか＠......推理はまとまるどころか、ますます煙に巻かれていくだけ＠　う～～ん、あははは＠レナも全然わからないです＠あははは...。￥
+	PlaySE(4, "S20/02/440200282", 128, 64);
 	OutputLine(NULL, "「………「鬼隠し編」",
 		   NULL, "\"......Onikakushi,", Line_ContinueAfterTyping);
 
@@ -1891,6 +1965,7 @@
 
 	OutputLine(NULL, "そして「祟殺し編」。",
 		   NULL, " and Tatarigoroshi.", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200283", 128, 64);
 	OutputLine(NULL, "この３つのシナリオを重ね透かし、皆さんにはどんな真実が見えてくるでしょうか。",
 		   NULL, " What truths will you all come up with after reading these three stories?", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200284", 128, 64);
