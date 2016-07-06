@@ -254,6 +254,7 @@
 	ClearMessage();
 
 //「....................................。＠
+	PlaySE(4, "S03/01/140100646", 128, 64);
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -423,7 +424,6 @@
 //　......意を決する。...イニシアチブは全てこちらにあるんだ＠.........行くぞ...￥
 	OutputLine(NULL, "　……意を決する。…イニシアチブは全てこちらにあるんだ。",
 		   NULL, "...I made up my mind... I had all the initiative on my side.", Line_WaitForInput);
-	PlaySE(4, "S03/01/140100640", 128, 64);
 	OutputLine(NULL, "………行くぞ…。",
 		   NULL, " ......Here we go...", Line_Normal);
 	ClearMessage();
@@ -541,8 +541,10 @@
 
 
 //「あ＠　あ＠　ちょっとちょっと＠　俺、警察署がどこかわかんないんだけど＠どこよ、場所。￥
+	PlaySE(4, "S03/21/142000033", 128, 64);
 	OutputLine(NULL, "「あ！",
 		   NULL, "\"Ah!", Line_WaitForInput);
+	PlaySE(4, "S03/21/142000034", 128, 64);
 	OutputLine(NULL, "　あ！",
 		   NULL, " Ack!", Line_WaitForInput);
 	PlaySE(4, "S03/21/142000035", 128, 64);
@@ -621,10 +623,13 @@
 
 
 //「あ＠　あ＠　俺、警察行ったら誰んとこ尋ねればいいんよ？＠　あんた名前は？！＠
+	PlaySE(4, "S03/21/142000040", 128, 64);
 	OutputLine(NULL, "「あ！",
 		   NULL, "\"Oh!", Line_WaitForInput);
+	PlaySE(4, "S03/21/142000041", 128, 64);
 	OutputLine(NULL, "　あ！",
 		   NULL, " Wait!", Line_WaitForInput);
+	PlaySE(4, "S03/21/142000042", 128, 64);
 	OutputLine(NULL, "　俺、警察行ったら誰んとこ尋ねればいいんよ？！",
 		   NULL, " Who am I asking for once I get there?!", Line_WaitForInput);
 	PlaySE(4, "S03/21/142000043", 128, 64);
@@ -1174,7 +1179,6 @@
 	PlayBGM( 1, "msys16", 128, 0 );
 
 //　...............そう＠
-	PlaySE(4, "S03/03/140300336", 128, 64);
 	OutputLine(NULL, "　……………そう。",
 		   NULL, "......Yes.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2584,7 +2588,6 @@
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　...何てことだ＠ここは、雛見沢と町を結ぶ唯一の道の途中だ＠
-	PlaySE(4, "S12/05/180500007", 128, 64);
 	OutputLine(NULL, "　…何てことだ。",
 		   NULL, "...Oh, no.", Line_WaitForInput);
 	OutputLine(NULL, "ここは、雛見沢と町を結ぶ唯一の道の途中だ。",
