@@ -276,7 +276,6 @@
 //　...これは緊張してるからじゃない＠
 //　...俺の奥底の惰弱な自分が臆しているのだ＠
 //　......このシャベルを分解するという行為が、...殺人の第一歩であることを知っているのだ￥
-	PlaySE(4, "S19/01/HR_KEI32280", 128, 64);
 	OutputLine(NULL, "　………わかってる。",
 		   NULL, "......I knew why.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -716,6 +715,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 
 //「圭一＠あなた塾に入る気はない＠　学校の勉強がわかるようになって、楽しくなるわよ。￥
+	PlaySE(4, "S03/00/142700049", 128, 64);
 	OutputLine(NULL, "「圭一。",
 		   NULL, "\"Keiichi.", Line_WaitForInput);
 	PlaySE(4, "S03/00/142700050", 128, 64);
@@ -803,6 +803,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/00/jukuA04005", 128, 64);
 	OutputLine(NULL, "「クレペリン検査とも重ねましたが、その結果、興味深いことがわかりました。",
 		   NULL, "\"We gave him the Kraepelin test as well, and we learned some very interesting things as a result.", Line_WaitForInput);
 	PlaySE(4, "S03/00/jukuA04006", 128, 64);
@@ -863,8 +864,10 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/00/142700058", 128, 64);
 	OutputLine(NULL, "「圭一。",
 		   NULL, "\"Keiichi...", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700059", 128, 64);
 	OutputLine(NULL, "あなた、どこかの本の雑誌のフロクか何かで２０面体サイコロを作ったことがあったの？」",
 		   NULL, " Have you ever made a die with twenty sides from a magazine extra or anything?\"", Line_Normal);
 	ClearMessage();
