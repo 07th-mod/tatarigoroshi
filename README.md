@@ -19,12 +19,12 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] tata_003.txt
 - [x] tata_004.txt
 - [x] tata_005.txt
-- [ ] **tata_008.txt**
-- [ ] tata_008_02.txt
-- [ ] tata_009.txt
-- [ ] tata_009_02.txt
-- [ ] tata_010.txt   
-- [ ] tata_010_02.txt
+- [x] tata_008.txt
+- [x] tata_008_02.txt
+- [x] tata_009.txt
+- [x] tata_009_02.txt
+- [x] tata_010.txt   
+- [ ] **tata_010_02.txt**
 - [ ] tata_010_03.txt
 - [ ] tata_010_04.txt
 - [ ] tata_011.txt   
