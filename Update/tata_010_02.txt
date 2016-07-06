@@ -151,6 +151,7 @@
 	PlaySE(4, "S03/02/140200142", 128, 64);
 	OutputLine(NULL, "　今日はほら、オムライスなんだよ〜。",
 		   NULL, " I've got omelette rice today~", Line_WaitForInput);
+	PlaySE(4, "S03/02/140200143", 128, 64);
 	OutputLine(NULL, "マッシュルームとか美味しそうだよね！だよね！　はぅ！」",
 		   NULL, " Mushrooms and stuff are delicious! Delicious! Hau!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -160,6 +161,7 @@
 	DrawBustshotWithFiltering( 1, "sa_se_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「いつもながら見事なお手前でございましてよ＠いつお嫁に行ってもおかしくない腕前ですわね！￥
+	PlaySE(4, "S03/04/140400106", 128, 64);
 	OutputLine(NULL, "「いつもながら見事なお手前でございましてよ。",
 		   NULL, "\"I say it every time, but your craftsmanship is splendid.", Line_WaitForInput);
 	PlaySE(4, "S03/04/140400107", 128, 64);
@@ -191,6 +193,7 @@
 	DrawBustshot( 2, "me_se_to_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「レナにお嫁はマル禁ワードだね＠以後控えるようにー。＠
+	PlaySE(4, "S03/03/140300268", 128, 64);
 	OutputLine(NULL, "「レナにお嫁はマル禁ワードだね。",
 		   NULL, "\"Using the word 'wife' is totally forbidden around Rena.", Line_WaitForInput);
 	PlaySE(4, "S03/03/140300269", 128, 64);
@@ -254,6 +257,7 @@
 	PlaySE(4, "S03/01/140100512", 128, 64);
 	OutputLine(NULL, "「煮物は一晩寝かせてからが真骨頂だな！",
 		   NULL, "\"Stew tastes best when it's left overnight!", Line_WaitForInput);
+	PlaySE(4, "S03/01/140100513", 128, 64);
 	OutputLine(NULL, "　これはかなり行けそうだ！",
 		   NULL, " This looks like it would be really good!", Line_WaitForInput);
 	PlaySE(4, "S03/01/140100514", 128, 64);
@@ -742,6 +746,7 @@
 	DrawBustshot( 2, "sa_se_sa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......あ、!w1000...............ぁ.....................あ、!w700......ご、...ごめんなさい............。￥
+	PlaySE(4, "S03/04/140400118", 128, 64);
 	OutputLine(NULL, "「……あ、",
 		   NULL, "\"...Ah...", Line_ContinueAfterTyping);
 
@@ -795,6 +800,7 @@
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
 
+	PlaySE(4, "S03/04/140400119", 128, 64);
 	OutputLine(NULL, "「……ご",
 		   NULL, "\"...I...", Line_ContinueAfterTyping);
 
@@ -1049,7 +1055,6 @@
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S03/01/140100520", 128, 64);
 	OutputLine(NULL, "……お前、",
 		   NULL, " what......", Line_ContinueAfterTyping);
 
@@ -1373,6 +1378,7 @@
 	PlaySE(4, "S03/04/140400136", 128, 64);
 	OutputLine(NULL, "「………………………ぅぅぅぅぅ…、",
 		   NULL, "\"............ooooh...", Line_WaitForInput);
+	PlaySE(4, "S03/02/140200156", 128, 64);
 	OutputLine(NULL, "……沙都子、",
 		   NULL, " ...Satoko...", Line_WaitForInput);
 	PlaySE(4, "S03/02/140200157", 128, 64);
@@ -1829,6 +1835,7 @@
 
 
 //「............え...？￥
+	PlaySE(4, "S03/03/140300279", 128, 64);
 	OutputLine(NULL, "「…………え…？」",
 		   NULL, "\"......Huh...?\"", Line_Normal);
 	ClearMessage();
@@ -1883,7 +1890,6 @@
 
 //　沙都子の叔父を、!w1000!s0抹殺する!sd＠
 //　そのための方法はいくらでもある＠それこそ無限の手段があるのだ￥
-	PlaySE(4, "S03/01/140100888", 128, 64);
 	OutputLine(NULL, "　沙都子の叔父を、",
 		   NULL, "I would", Line_ContinueAfterTyping);
 
@@ -2613,7 +2619,7 @@
 	PlaySE(4, "S03/01/140100543", 128, 64);
 	OutputLine(NULL, "「うるさい。",
 		   NULL, "\"Shut it.", Line_WaitForInput);
-	PlaySE(4, "S03/01/140100544", 128, 64);
+	
 	OutputLine(NULL, "…黄色い声で話しかけるな。」",
 		   NULL, " ...Quit squeaking at me like that.\"", Line_Normal);
 	ClearMessage();
@@ -2622,6 +2628,9 @@
 
 //「.........ッ！！」「.........ひ、...！」「..................。＠
 //　びくっとして、仲間たちが後退る￥
+	PlaySE(4, "S03/02/140200166", 128, 64);
+	PlaySE(5, "S03/02/140200167", 128, 64);
+	PlaySE(6, "S03/02/140200168", 128, 64);
 	OutputLine(NULL, "「………ッ！！」「………ひ、…！」「………………。」",
 		   NULL, "\"......!!\" \"...Eep...!\" \".........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

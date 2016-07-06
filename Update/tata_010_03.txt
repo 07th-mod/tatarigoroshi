@@ -274,6 +274,7 @@
 //「それを読むから楽しいのよ＠初めからトリックを教えちゃったら楽しみがなくなっちゃうわ。＠
 //　...別に娯楽性が欲しくて知りたいわけじゃない＠
 //　......誤魔化そうとするお袋を何とかおだてて、答えを引き出す...￥
+	PlaySE(4, "S03/01/140100550", 128, 64);
 	OutputLine(NULL, "「……うん。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
 	PlaySE(4, "S03/01/140100551", 128, 64);
@@ -430,8 +431,10 @@
 	PlaySE(4, "S03/00/142700017", 128, 64);
 	OutputLine(NULL, "「正解。",
 		   NULL, "\"Correct.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700018", 128, 64);
 	OutputLine(NULL, "特に肝心なのは、当たり前だけど、「起」に当たる部分よ。",
 		   NULL, " The beginning, of course, is especially important.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700019", 128, 64);
 	OutputLine(NULL, "スタートの「起」がなかったら、そもそも物語は始まらない。」",
 		   NULL, " If there is no beginning, then the story never starts.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -504,6 +507,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100563", 128, 64);
 	OutputLine(NULL, "「……そもそも、",
 		   NULL, "\"...Just has to...", Line_ContinueAfterTyping);
 
@@ -520,6 +524,7 @@
 
 //「つまり、......うーん、例えばよ＠誰も立ち入らない深い森の奥で、おじいさんが一人暮らしをしているとする。＠
 //「うん...。￥
+	PlaySE(4, "S03/00/142700027", 128, 64);
 	OutputLine(NULL, "「つまり、……うーん、例えばよ。",
 		   NULL, "\"For example... Hmm, how about this?", Line_WaitForInput);
 	PlaySE(4, "S03/00/142700028", 128, 64);
@@ -585,10 +590,13 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/00/142700037", 128, 64);
 	OutputLine(NULL, "「圭一。",
 		   NULL, "\"Keiichi.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700038", 128, 64);
 	OutputLine(NULL, "…この事件はね、おじいさんが殺されているのが見つかって初めて「起」を迎えるのよ。",
 		   NULL, " ...This incident would only begin when it was found out that the old man was killed.", Line_WaitForInput);
+	PlaySE(4, "S03/00/142700039", 128, 64);
 	OutputLine(NULL, "…もしもこの後、誰もおじいさんの家を訪れなかったら、永久に「起」は訪れない。」",
 		   NULL, " ...If nobody ever visited the old man's house after that, that beginning would never occur.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1120,7 +1128,6 @@
 //　目指すロッカーは...俺のロッカーではない＠......それは、!w800...ある日偶然、見つけてしまった、!w800.........禁断のロッカー￥
 	OutputLine(NULL, "　目指すロッカーは…俺のロッカーではない。",
 		   NULL, "The one I was looking for... wasn't my own.", Line_WaitForInput);
-	PlaySE(4, "S03/01/140100282", 128, 64);
 	OutputLine(NULL, "……それは、",
 		   NULL, " ...It was...", Line_ContinueAfterTyping);
 
@@ -1222,7 +1229,6 @@
 
 //　そう＠
 //　............悟史は、監督の少年野球チームの入っていた＠
-	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
