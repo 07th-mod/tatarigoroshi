@@ -11,5 +11,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 # Known issues
 
 > **MINOR**: on omake_03.txt, several lines are missing voice files and some new dialog is added on the PS3 version
+
 > **MAJOR?**: in tata_001, the intro has no voices. Still unknown if these voices were included on the PS2 version, will check later.
+
 > **MAJOR**: lots of text regarding Satoko's abuse has been removed or not voiced at all on the PS3 version

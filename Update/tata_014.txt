@@ -308,6 +308,7 @@
 	ClearMessage();
 
 //「.......................................。＠
+	PlaySE(4, "S03/01/140101094", 128, 64);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\"..................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -678,6 +679,7 @@
 	PlaySE(4, "S03/01/140101097", 128, 64);
 	OutputLine(NULL, "…名前は…前原、圭一です。",
 		   NULL, " ...My name... is Keiichi... Maebara.", Line_WaitForInput);
+	PlaySE(4, "S03/01/140101098", 128, 64);
 	OutputLine(NULL, "…あ、住所は、鹿骨市雛見沢村ＸＸＸ番地…。」",
 		   NULL, " ...Oh, and my address... ___ Hinamizawa Village, Shishibone...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -861,6 +863,7 @@
 
 
 //「.......................................。＠
+	PlaySE(4, "S03/00/taiB04005", 128, 64);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\"..................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -922,6 +925,7 @@
 
 
 //　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか＠そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか＠今後の究明が待たれています。￥
+	PlaySE(4, "S03/00/ana0400002_1", 128, 64);
 	OutputLine(NULL, "　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか。",
 		   NULL, "When did the governor who requested the SDF's dispatch actually become aware of the outbreak of such an unprecedented catastrophe?", Line_WaitForInput);
 	OutputLine(NULL, "そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか。",
@@ -1022,6 +1026,7 @@
 	ClearMessage();
 
 //『...非情に悔やまれています＠この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう＠少なくとも、村全滅という惨劇は免れた可能性があります。￥
+	PlaySE(4, "S03/00/ana0400004", 128, 64);
 	OutputLine(NULL, "『…非情に悔やまれています。",
 		   NULL, "\"...It is extremely regrettable.", Line_WaitForInput);
 	OutputLine(NULL, "この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう。",
@@ -1085,6 +1090,7 @@
 
 
 //　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです＠環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。＠
+	PlaySE(4, "S03/00/ana0400005_1", 128, 64);
 	OutputLine(NULL, "　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです。",
 		   NULL, "Sources closer to him claimed the governor had been drinking all night, and had gone to sleep in a drunken state.", Line_WaitForInput);
 	OutputLine(NULL, "環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。』",
@@ -1143,6 +1149,7 @@
 	ClearMessage();
 
 //『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております＠...先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。￥
+	PlaySE(4, "S03/00/ana0400008", 128, 64);
 	OutputLine(NULL, "『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております。",
 		   NULL, "\"Here with us in the studio today is Dr. Fujiwara, a professor at ____ University who is well-acquainted with volcanic disasters.", Line_WaitForInput);
 	OutputLine(NULL, "…先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。』",
@@ -1157,6 +1164,7 @@
 
 
 //　火山大国日本にはたくさんの活火山がありますが＠それらの火口部はいずれも危険なガスの噴出する危険性があり、一般登山者も火口部周辺には立ち入らないのが一般的です。￥
+	PlaySE(4, "S03/00/fuji0400002", 128, 64);
 	OutputLine(NULL, "　火山大国日本にはたくさんの活火山がありますが、",
 		   NULL, "Japan is a volcanic nation, and so has many active volcanoes.", Line_WaitForInput);
 	PlaySE(4, "S03/00/fuji0400002", 128, 64);
@@ -1683,6 +1691,7 @@
 
 
 //「前原くん＠　聞こえるかい？＠　聞こえるなら瞬きでいいからしてくれ！＠　前原くん＠　前原くん＠　前原くん！！￥
+	PlaySE(4, "S03/00/ishaC04004", 128, 64);
 	OutputLine(NULL, "「前原くん！",
 		   NULL, "\"Maebara-kun!", Line_WaitForInput);
 	PlaySE(4, "S03/00/ishaC04005", 128, 64);
@@ -1691,8 +1700,10 @@
 	PlaySE(4, "S03/00/ishaC04006", 128, 64);
 	OutputLine(NULL, "　聞こえるなら瞬きでいいからしてくれ！！",
 		   NULL, " If you can hear me, just blink!!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04007", 128, 64);
 	OutputLine(NULL, "　前原くん！",
 		   NULL, " Maebara-kun!", Line_WaitForInput);
+	PlaySE(4, "S03/00/ishaC04008", 128, 64);
 	OutputLine(NULL, "　前原くん！",
 		   NULL, " Maebara-kun!", Line_WaitForInput);
 	PlaySE(4, "S03/00/ishaC04009", 128, 64);
