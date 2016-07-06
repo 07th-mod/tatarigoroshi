@@ -11,15 +11,15 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Scripts progress
 
->Bold lines mean "in progress"
+>Bold lines means "in progress"
 
 - [x] omake_03.txt
 - [x] tata_001.txt
 - [x] tata_002.txt
 - [x] tata_003.txt
-- [ ] **tata_004.txt**
-- [ ] tata_005.txt
-- [ ] tata_008.txt
+- [x] tata_004.txt
+- [x] tata_005.txt
+- [ ] **tata_008.txt**
 - [ ] tata_008_02.txt
 - [ ] tata_009.txt
 - [ ] tata_009_02.txt
