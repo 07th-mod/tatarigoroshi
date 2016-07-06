@@ -16,8 +16,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] omake_03.txt
 - [x] tata_001.txt
 - [x] tata_002.txt
-- [ ] **tata_003.txt**
-- [ ] tata_004.txt
+- [x] tata_003.txt
+- [ ] **tata_004.txt**
 - [ ] tata_005.txt
 - [ ] tata_008.txt
 - [ ] tata_008_02.txt
