@@ -27,12 +27,12 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] tata_010_02.txt
 - [x] tata_010_03.txt
 - [x] tata_010_04.txt
-- [ ] tata_011.txt   
+- [x] tata_011.txt   
 - [ ] tata_011_02.txt
 - [ ] tata_011_03.txt
 - [ ] tata_012.txt   
-- [ ] tata_013.txt   
-- [ ] tata_013_02.txt
+- [x] tata_013.txt   
+- [x] tata_013_02.txt
 - [x] tata_014.txt    
 - [x] tata_ep01.txt   
 - [x] tata_ep02.txt   
