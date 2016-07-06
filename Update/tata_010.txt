@@ -108,7 +108,7 @@
 	PlaySE(4, "S03/03/140300247", 128, 64);
 	OutputLine(NULL, "「打ち合わせ会なんて名ばかりの宴会だよ。",
 		   NULL, "\"They only called it that—it was more like a party.", Line_WaitForInput);
-	PlaySE(4, "S18/03/160300090", 128, 64);
+	PlaySE(4, "S03/03/140300248", 128, 64);
 	OutputLine(NULL, "毎年やってるお祭りだもん。",
 		   NULL, " We have the festival every year, right?", Line_WaitForInput);
 
@@ -134,6 +134,7 @@
 	DrawBustshot( 1, "me_se_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「うん＠婆っちゃの代わりにいろいろ挨拶しなきゃなんないし＠それにね、祭りってのは準備からもう始まってるからねぇ！￥
+	PlaySE(4, "S03/03/140300250", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yep.", Line_WaitForInput);
 	PlaySE(4, "S03/03/140300251", 128, 64);
@@ -238,6 +239,7 @@
 	PlaySE(4, "S03/02/140200123", 128, 64);
 	OutputLine(NULL, "……先生がいろいろと手配してくれたんでしょ？",
 		   NULL, " ...Sensei is doing things for her, right?", Line_WaitForInput);
+	PlaySE(4, "S03/02/140200124", 128, 64);
 	OutputLine(NULL, "うん。",
 		   NULL, " Mm.", Line_WaitForInput);
 	PlaySE(4, "S03/02/140200125", 128, 64);
@@ -269,7 +271,7 @@
 	DrawBustshot( 3, "re_se_de_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...それで＠　沙都子ちゃんのこと、なんて言ってたの？＠
-	PlaySE(4, "S05/13/VX_akasaka_0004", 128, 64);
+	PlaySE(4, "S03/02/140200127", 128, 64);
 	OutputLine(NULL, "…それで？",
 		   NULL, " ...What happened?", Line_WaitForInput);
 	PlaySE(4, "S03/02/140200128", 128, 64);
@@ -283,10 +285,13 @@
 
 //「うん＠先生があの後、直接、県の児童相談所に電話してね＠児童福祉司が昨夜の内に訪問したらしいよ＠私の叔母さんにも、今後定期的にアプローチするようにと連絡があったって。＠
 //「......小難しい話はいいよ＠それより沙都子はどうなったんだよ＠保護されたのか？！￥
+	PlaySE(4, "S03/03/140300255", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yep.", Line_WaitForInput);
+	PlaySE(4, "S03/03/MIO040401", 128, 64);
 	OutputLine(NULL, "先生があの後、直接、県の児童相談所に電話してね。",
 		   NULL, " Chie-sensei called the child consultation center right after we talked to her.", Line_WaitForInput);
+	PlaySE(4, "S03/03/MIO040402", 128, 64);
 	OutputLine(NULL, "児童福祉司が昨夜の内に訪問したらしいよ。",
 		   NULL, " A child welfare officer apparently visited before the night was over.", Line_WaitForInput);
 	PlaySE(4, "S03/03/140300258", 128, 64);
@@ -342,7 +347,6 @@
 //　そうだ＠
 //　いくら議論したって不安は募るばかり＠
 //　......学校に行って、沙都子が無事かどうかを確かめる方がはるかに手っ取り早い￥
-	PlaySE(4, "S02/03/130300575", 128, 64);
 	OutputLine(NULL, "　そうだ。",
 		   NULL, "Right.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -407,6 +411,7 @@
 //「圭ちゃん、沙都子は来てるよ＠よかった...！＠
 //「来てるだけじゃわからないだろ＠沙都子の顔を見るまで...何もわかるものか！＠
 //　ばたばたと教室へ駆け込む￥
+	PlaySE(4, "S03/02/140200131", 128, 64);
 	OutputLine(NULL, "「圭ちゃん、沙都子は来てるよ。",
 		   NULL, "\"Kei-chan, Satoko came.", Line_WaitForInput);
 	PlaySE(4, "S03/02/140200132", 128, 64);
@@ -494,6 +499,7 @@
 	DrawBustshot( 1, "me_se_de_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 50, TRUE);
 
 //「...保護司、来たんでしょ＠　......その、...どういう話になったわけ？＠
+	PlaySE(4, "S03/03/MIO040403", 128, 64);
 	OutputLine(NULL, "「…保護司、来たんでしょ？",
 		   NULL, "\"...A probation officer came, right?", Line_WaitForInput);
 	PlaySE(4, "S03/03/MIO040404", 128, 64);
@@ -537,8 +543,10 @@
 	ClearMessage();
 
 //「...私も叔父様もとんだ迷惑でしたのよ＠急にあんな人に押しかけられて、もう...。＠
+	PlaySE(4, "S03/04/140400097", 128, 64);
 	OutputLine(NULL, "「…私も叔父様もとんだ迷惑でしたのよ。",
 		   NULL, "\"...It was a big bother to both me and my uncle.", Line_WaitForInput);
+	PlaySE(4, "S03/04/140400098", 128, 64);
 	OutputLine(NULL, "急にあんな人に押しかけられて、もう…。」",
 		   NULL, " That person just barged on in on us suddenly, geez...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -720,6 +728,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/KEI040401", 128, 64);
 	OutputLine(NULL, "「じゃあどうして？！",
 		   NULL, "\"Then why?!", Line_WaitForInput);
 	OutputLine(NULL, "　どうして沙都子の意思が変に尊重されて…保護されないことに？！」",
@@ -729,6 +738,7 @@
 
 
 //「...それは......、児童相談所長がいろいろ検討した末に判断を......。￥
+	PlaySE(4, "S03/22/CHIE040402", 128, 64);
 	OutputLine(NULL, "「…それは……、児童相談所長がいろいろ検討した末に判断を……。」",
 		   NULL, "\"...Well... After the person in charge at the child consultation center looked into it from many angles, they determined...\"", Line_Normal);
 	ClearMessage();
@@ -750,7 +760,6 @@
 //先生、昨日あんた、絶対に助けるから大丈夫って言わなかったか？＠　これはどういうことだよ？＠　おかしいじゃねえかよ？＠　ええッおい！！＠
 	OutputLine(NULL, "　先生、昨日あんた、絶対に助けるから大丈夫って言わなかったか？！",
 		   NULL, " Sensei, didn't you say it was going to be all right, since you'd definitely save her?!", Line_WaitForInput);
-	PlaySE(4, "S15/00/VT4C_docM2095", 128, 64);
 	OutputLine(NULL, "　これはどういうことだよ？！",
 		   NULL, " What's the meaning of this?!", Line_WaitForInput);
 	OutputLine(NULL, "　おかしいじゃねえかよ？！",
@@ -764,8 +773,10 @@
 	DrawBustshot( 3, "ri_se_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「.....................圭一＠......実は、沙都子の児童虐待の通報は、これが三回目なのです＠......過去にも、...二回あったのです。＠
+	PlaySE(4, "S03/05/140500025", 128, 64);
 	OutputLine(NULL, "「…………………圭一。",
 		   NULL, "\".........Keiichi.", Line_WaitForInput);
+	PlaySE(4, "S03/05/140500026", 128, 64);
 	OutputLine(NULL, "……実は、沙都子の児童虐待の通報は、これが三回目なのです。",
 		   NULL, " ...This is actually the third time someone has reported Satoko's child abuse.", Line_WaitForInput);
 	PlaySE(4, "S03/05/140500027", 128, 64);
@@ -951,8 +962,10 @@
 	PlaySE(4, "S03/22/CHIE040404", 128, 64);
 	OutputLine(NULL, "両親、",
 		   NULL, " wanted to trick her parents...", Line_WaitForInput);
+	PlaySE(4, "S03/22/CHIE040405", 128, 64);
 	OutputLine(NULL, "…特に義理のお父さんを陥れるのを目的に、自傷と作話で…嘘の虐待話を作って……、",
 		   NULL, " especially her stepfather, so she inflicted wounds on herself so she could... make up a false story about abuse...", Line_WaitForInput);
+	PlaySE(4, "S03/22/CHIE040406", 128, 64);
 	OutputLine(NULL, "自分で虐待ＳＯＳに電話したって。」",
 		   NULL, " And that she sent out an SOS herself.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1147,6 +1160,7 @@
 	ClearMessage();
 
 //「.........あ、!w800............ひょっとして、!w700......そのせいで、!w700......おととしの冬は...様子見に...？＠
+	PlaySE(4, "S03/01/140100497", 128, 64);
 	OutputLine(NULL, "「………あ、",
 		   NULL, "\"...Oh......", Line_ContinueAfterTyping);
 
@@ -1178,8 +1192,10 @@
 
 //「......はい＠...............児童相談所に、ちゃんと昔の記録が残ってましたですから＠......沙都子の嘘の可能性もあるから慎重に、...ということになりましたのです。＠
 //「............何だよそ＠。......つまり、...何だよ＠...沙都子は、......嘘をつくかも知れないから慎重に＠...だから、.........様子を見ろ、ってことに、......なってるのかよ？！￥
+	PlaySE(4, "S03/05/140500034", 128, 64);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
+	PlaySE(4, "S03/05/140500035", 128, 64);
 	OutputLine(NULL, "……………児童相談所に、ちゃんと昔の記録が残ってましたですから、",
 		   NULL, " ......The child consultation center had all their past records...", Line_WaitForInput);
 	PlaySE(4, "S03/05/140500036", 128, 64);
@@ -1350,6 +1366,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S03/01/140100507", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
