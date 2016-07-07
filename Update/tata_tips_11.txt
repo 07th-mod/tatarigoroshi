@@ -1,0 +1,308 @@
+﻿void main()
+{
+
+//*Sub_Tips_055
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+	PlayBGM( 0, "lsys30", 128, 0 );
+////dwaveplayloop 10
+//■厚生省統計
+//!s50
+	SetSpeedOfMessage( TRUE, 100, );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　昭和ＸＸ年度
+	OutputLine(NULL, "　昭和ＸＸ年度",
+		   NULL, "Year 19__", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　主たる虐待者（厚生省報告例）/
+	OutputLine(NULL, "　主たる虐待者（厚生省報告例）",
+		   NULL, "Principal Abusers (in cases reported to the Ministry of Health and Welfare)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	DisableWindow();
+	DrawFilm( 2, 153, 153, 153, 255, 0, 100, TRUE );
+	DrawBustshot( 3, "sa_se_mu_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );
+
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　総数　５，３５２件
+	OutputLine(NULL, "　総数　５，３５２件",
+		   NULL, "Total: 5,352", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　実母
+	OutputLine(NULL, "　実母",
+		   NULL, "Mother by blood:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　!s50２，９４３件（５５．０％）
+	OutputLine(NULL, "　　　２，９４３件（５５．０％）",
+		   NULL, "2,943 (55.0%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　実母以外の母
+	OutputLine(NULL, "　実母以外の母",
+		   NULL, "Mother not by blood:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　　　!s50２０３件（３．８％）
+	OutputLine(NULL, "　　　　　２０３件（３．８％）",
+		   NULL, "203 ( 3.8%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　実父
+	OutputLine(NULL, "　実父",
+		   NULL, "Father by blood:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　!s50１，４４５件（２７．０％）
+	OutputLine(NULL, "　　　１，４４５件（２７．０％）",
+		   NULL, "1,445 (27.0%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　実父以外の父
+	OutputLine(NULL, "　実父以外の父",
+		   NULL, "Father not by blood:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　　　!s50４８８件（９．１％）/
+	OutputLine(NULL, "　　　　　４８８件（９．１％）",
+		   NULL, "488 ( 9.1%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　昭和ＸＸ年度
+	OutputLine(NULL, "　昭和ＸＸ年度",
+		   NULL, "Year 19__", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+
+//　虐待の内容別相談件数（厚生省報告例）
+	OutputLine(NULL, "　虐待の内容別相談件数（厚生省報告例）",
+		   NULL, "Instances by Type of Abuse (in cases reported to the Ministry of Health and Welfare)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+//　総数　５，３５２件
+	OutputLine(NULL, "　総数　５，３５２件",
+		   NULL, "Total: 5,352", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　身体的暴力
+	OutputLine(NULL, "　身体的暴力",
+		   NULL, "Physical abuse:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　!s50２，７８０件（５１．９％）
+	OutputLine(NULL, "　　　２，７８０件（５１．９％）",
+		   NULL, "2,780 (51.9%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　ネグレクト（育児放棄）
+	OutputLine(NULL, "　ネグレクト（育児放棄）",
+		   NULL, "Neglect (abandonment of child):", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　!s50１，７２８件（３２．３％）
+	OutputLine(NULL, "　　　１，７２８件（３２．３％）",
+		   NULL, "1,728 (32.3%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　心理的虐待
+	OutputLine(NULL, "　心理的虐待",
+		   NULL, "Psychological abuse:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　　　!s50４５８件（８．６％）/
+	OutputLine(NULL, "　　　　　４５８件（８．６％）",
+		   NULL, "458 ( 8.6%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　登校禁止
+	OutputLine(NULL, "　登校禁止",
+		   NULL, "Forbidden from going to school:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　　　　!s50７５件（１．４％）
+	OutputLine(NULL, "　　　　　　７５件（１．４％）",
+		   NULL, "75 ( 1.4%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	SetStyleOfMessageSwinging( 0 );
+//　性的暴行
+	OutputLine(NULL, "　性的暴行",
+		   NULL, "Sexual violence:", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 2, "lsys24", 128, 0 );
+	PlaySE( 3, "wa_026", 128, 64 );
+	SetStyleOfMessageSwinging( 1 );
+//!s0　　　　　!s50３１１件（５．８％）/
+	OutputLine(NULL, "　　　　　３１１件（５．８％）",
+		   NULL, "311 ( 5.8%)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0, );
+	DisableWindow();
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "black", 1000 );
+	FadeFilm( 0, TRUE );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	StopSE( 3 );
+//gosub *tip_e
+//return
+
+
+}
