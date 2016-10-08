@@ -19,7 +19,7 @@ This patch aims to combine the efforts of the ps3 voice patch and the ps3 sprite
 
 * Higurashi When They Cry Hou - Ch.3 Tatarigoroshi ([Steam](http://store.steampowered.com/app/472870/) or [MangaGamer](http://www.mangagamer.com/detail.php?goods_type=1&product_code=176))
 * [HigurashiPS3-Voices01.zip (uses S19, S20 folders)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices01.zip) + [HigurashiPS3-Voices02.zip (uses S03 folder)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices02.zip) [(or create a symlink using your EP1 files)](https://github.com/07th-mod/tatarigoroshi#creating-a-symlink)
-* [Graphics mod (coming soon)]()
+* [Graphics mod](http://www.mediafire.com/file/sa9vl1y02784689/Higurashi+Ch.3+-+PS3+Graphics+Mod+1.0.rar)
 * [Voice patch](https://github.com/07th-mod/tatarigoroshi/releases)
 
 # Releases
