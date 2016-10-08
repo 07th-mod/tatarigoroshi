@@ -68,6 +68,6 @@ Usually, older contributors are welcome to join the repository and push their ow
 
 # Credits
 
-- GuraMan - For making the graphics mod
-- enumag - For coding the new automation script
+- @DoctorDiablo - For making the graphics mod
+- @enumag - For coding the new automation script
 - Anon - For giving us the PS3 files and scripts
