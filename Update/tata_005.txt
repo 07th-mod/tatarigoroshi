@@ -285,7 +285,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "white", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_067", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_066", "left", 0, 0, 300 );
 	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「おはよう＠　圭一くん！＠
@@ -910,7 +910,7 @@
 		   NULL, "Rena nodded gently.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_203", 400 );
+	DrawScene( "bg_203a", 400 );
 
 //「...私たちはいい事ばかりは続かないって、...ずーっと教えられてきたから＠
 //　...楽しいことの裏側を時々恐れるよね＠それってちょっぴり悲しいことだけど...＠でも、そのお陰で、私たちは楽しい毎日がずーっと続くように、努力することを覚えたんだよ。＠
@@ -1523,7 +1523,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg_203", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_203a", "up", 0, 0, 300 );
 
 //　沙都子は相変わらずいないけど＠
 //　......いつの間にか、いつものお昼の賑やかさを取り戻している￥
@@ -1692,6 +1692,10 @@
 	OutputLine(NULL, "　みんなで談笑していると、富田くんと岡村くんがやって来て、おずおずと話し掛けてきた。",
 		   NULL, "Having heard our friendly banter, Tomita-kun and Okamura-kun walked up and timidly spoke to us.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tomita1_Kanashimi", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "oka1_Def_0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	
 
 //「...あのぅ、......前原さん＠楽しくお話中、申し訳ないんですけど...。＠
 //「ちょっとお力をお借りしたくて...。＠
@@ -1729,6 +1733,9 @@
 		   NULL, " You can't use an eraser, either.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshot( 3, "oka1_Odoroki_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
 
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
@@ -1747,6 +1754,9 @@
 	OutputLine(NULL, "　そうなんですか…？！」",
 		   NULL, " Seriously...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 3, "oka1_Def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 
 	OutputLine(NULL, "　そうじゃないだろ、と富田くんが岡村くんを肘で小突く。",
@@ -1786,6 +1796,9 @@
 	OutputLine(NULL, "　富田くんと岡村くんはしばらく相談の後、こう答えた。",
 		   NULL, "Tomita-kun and Okamura-kun conversed for a short time, then gave their reply.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "oka1_Warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
 
 //「では、前原さんには授業中に居眠りができる権利を与えましょう＠それでどうです？￥
 	PlaySE(4, "S19/25/502500049", 128, 64);
@@ -1808,6 +1821,9 @@
 	OutputLine(NULL, "何でお前らに権利をもらわなくちゃならんのだ。」",
 		   NULL, " Why do I need your permission for it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Shinken", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
 	PlaySE(4, "S19/24/502400058", 128, 64);
@@ -1881,6 +1897,10 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_110", "right", 0, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tomita1_Def", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "oka1_Def_0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
 
 //「わかった、俺の降参だ＠ボールを取ってやるから、居眠りの権利を俺にくれ。＠
 //「へ...＠　え、えぇ、まぁ......。＠
@@ -1894,6 +1914,9 @@
 	OutputLine(NULL, "ボールを取ってやるから、居眠りの権利を俺にくれ。」",
 		   NULL, " I'll get your ball for you, so give me all the rights to naptime.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Odoroki", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
 	PlaySE(4, "S19/24/502400060", 128, 64);
@@ -1923,6 +1946,10 @@
 	OutputLine(NULL, "いいな！！」",
 		   NULL, " Got it?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 3, "oka1_Shinken", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 1, "tomita1_Ikari_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
 	PlaySE(4, "S19/24/502400062", 128, 64);
@@ -1975,6 +2002,9 @@
 	OutputLine(NULL, "　よっと！！",
 		   NULL, " Come on!!", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tomita1_Warai_0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "oka1_Warai", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あ、取れた＠　取れましたよ前原さん＠　どうもありがとうございましたー！！＠
 //　ボールは雨どいを転がり、校舎の裏手の方に落ちていった＠
@@ -1990,6 +2020,9 @@
 	OutputLine(NULL, "　どうもありがとうございましたー！！」",
 		   NULL, " Thank you so much!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
 
 
 	OutputLine(NULL, "　ボールは雨どいを転がり、校舎の裏手の方に落ちていった。",
@@ -4356,7 +4389,7 @@
 //＜梨花ちゃん
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	DrawBustshotWithFiltering( 3, "me_se_ik_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 2, "me_se_ik_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「ったくッ＠　あんたら、何やってんだよ！＠　仲間だろ？＠　何でぼーっとしてたんだよ！＠　何で圭ちゃんを助けなかったんだよ！！＠
 //「ご、...ごめんなさい...委員長...。＠
@@ -4379,6 +4412,10 @@
 		   NULL, " Why didn't you help Kei-chan?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tomita1_Kanashimi", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "oka1_Shinken", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
 
 	PlaySE(4, "S19/24/502400066", 128, 64);
 	OutputLine(NULL, "「ご、…ごめんなさい…委員長…。」",
@@ -4394,6 +4431,10 @@
 	OutputLine(NULL, "　富田くんたちはシュンとうな垂れていた。",
 		   NULL, "Tomita-kun and the others hung their heads in silence.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+
 
 //「よせよ魅音...＠富田くんたちはその場にいなかったんだ＠責めるのはよせ。＠
 	PlaySE(4, "S19/01/HR_KEI33260", 128, 64);
@@ -4407,9 +4448,8 @@
 		   NULL, " Stop blaming them.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
 	DisableWindow();
-	DrawBustshot( 3, "me_se_ik_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 2, "me_se_ik_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「ち、...............ちっくしょう！＠　大石のヤツ......！！＠
 //　魅音は不機嫌そうに床を踵で何度も蹴りつけていた￥
