@@ -1069,7 +1069,7 @@
 		   NULL, "Tomitake-san was the only one with a pained grin, but we all were smiling, me included.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_077", 400 );
+	DrawScene( "black", 400 );
 
 //　......ダム工事に関連する人間を次々に祟り殺した、オヤシロさま＠
 	OutputLine(NULL, "　……ダム工事に関連する人間を次々に祟り殺した、オヤシロさま。",
@@ -1134,11 +1134,11 @@
 		   NULL, "\"......Have you heard the news that Satoko's uncle has returned?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
 	OutputLine(NULL, "　富竹さんと楽しそうに話していた鷹野さんは、俺が突然話しかけてくるとは思わず、きょとんとしていた。",
 		   NULL, "Takano-san, who had been enjoying a few words with Tomitake-san, was caught unawares by my sudden inquiry.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	DrawScene( "bg_074", 400 );
 	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「あ、ごめんなさい＠今、何て？＠
@@ -1316,6 +1316,9 @@
 		   NULL, " Do you know the true identity of Santa Claus?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawScene( "black", 400 );
+
 
 	OutputLine(NULL, "　え？",
 		   NULL, "Huh?", Line_WaitForInput);
@@ -1323,7 +1326,7 @@
 		   NULL, " I got a strange question all of a sudden, and I couldn't immediately answer.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawScene( "cg_115", 1000 );
 
 //「なぁに、知らないの＠　............パパよ＠みんなの家のパパ。＠
 //「......な、なんだ＠...そういう意味ですか＠そりゃそうですよ＠どんなものの正体だって、最終的には人間です＠だってここは人間しかいない世界なんですから＠全ての現象は人間で解明できるはずです。＠
@@ -1364,9 +1367,7 @@
 	OutputLine(NULL, "　変な言い方になってしまったと思ったが、鷹野さんはその返事がまんざらでもなさそうだった。",
 		   NULL, "I felt like I put that somewhat strangely, but Takano-san was not as dissatisfied with that reply as I might have guessed.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-
+	
 //「あら、...その年齢の内からそれに気付けるなんて、なかなかね。その通りよ＠人間の世で起こる現象は全て人間の都合で人間が起こす＠......では前原くん、もう一度尋ねるわよ＠今度はサンタクロースじゃなくて、!w1000/
 	PlaySE(4, "S03/09/140900046", 128, 64);
 	OutputLine(NULL, "「あら、…その年齢の内からそれに気付けるなんて、なかなかね。その通りよ。",
@@ -1391,8 +1392,6 @@
 	OutputLine(NULL, "……オヤシロさま。",
 		   NULL, " ...but Oyashiro-sama.", Line_WaitForInput);
 
-	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //...オヤシロさまの祟りの正体は...何かわかるかしら？＠
 //　鷹野さんが、...一歩近付き、俺の瞳を覗きこみながら...そう問い掛けた￥
@@ -1449,7 +1448,9 @@
 	DisableWindow();
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
+	DrawScene( "bg_074", 400 );
 	DrawBustshot( 3, "tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	PlayBGM( 1, "msys07", 128, 0 );
 
 //「............前原くん＠ここだけの話だよ＠　...鷹野さんはね、オヤシロさまの祟りを巡る一連の連続怪死事件をね＠......雛見沢の村人が何かの儀式に基づいて行っている人為的殺人事件でないかと見ているんだよ。￥

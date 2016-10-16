@@ -70,4 +70,5 @@ Usually, older contributors are welcome to join the repository and push their ow
 
 - @DoctorDiablo - For making the graphics mod
 - @enumag - For coding the new automation script
+- @Grelo - For inserting the CGs and weather sprites
 - Anon - For giving us the PS3 files and scripts
