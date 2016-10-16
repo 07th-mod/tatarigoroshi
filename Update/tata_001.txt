@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //＜沙都子編opening＞
@@ -122,7 +122,7 @@
 	OutputLine(NULL, "「そうそう、大家さん、",
 		   NULL, "\"Oh, right, Landlord,", Line_WaitForInput);
 	OutputLine(NULL, "すったらん言わんと思ってた。」",
-		   NULL, " I di'nt think that would be the first thing you said.\"", Line_WaitForInput);
+		   NULL, " I did'nt think that would be the first thing you said.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -1701,14 +1701,12 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	DisableWindow();
-	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "me_se_de_a1", "left", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "re_se_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「いや、別にフォローってわけじゃないよ＠梨花ちゃんがずば抜けて料理がうまいから目立たないだけでさ＠沙都子だって、まぁ基本くらいはマスターしてるよ。ね？￥
 	PlaySE(4, "S19/02/500200365", 128, 64);
 	OutputLine(NULL, "「いや、別にフォローってわけじゃないよ。",
-		   NULL, "\"No, she's not trying to cover for her or anything.", Line_WaitForInput);
+		   NULL, "\"No, I'm not trying to cover for her or anything.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200366", 128, 64);
 	OutputLine(NULL, "梨花ちゃんがずば抜けて料理がうまいから目立たないだけでさ。",
 		   NULL, " It's just that Rika-chan's cooking is by far the best of all of us, so hers doesn't stand out.", Line_WaitForInput);
@@ -1716,20 +1714,16 @@
 	OutputLine(NULL, "沙都子だって、まぁ基本くらいはマスターしてるよ。ね？」",
 		   NULL, " Satoko has mastered the basics too, right?\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "ri_se_ni_a1", "m1", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 3, "sa_se_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......少なくとも、ご飯とお味噌汁くらいは作れますです。＠
 	PlaySE(4, "S19/04/500400140", 128, 64);
 	OutputLine(NULL, "「……少なくとも、ご飯とお味噌汁くらいは作れますです。」",
-		   NULL, "\"...At the very least, she can cook rice and miso soup.\"", Line_WaitForInput);
+		   NULL, "\"...At the very least, I can cook rice and miso soup.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	DisableWindow();
-	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "re_se_wa_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "re_se_wa_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「うーん、カリフラワーとブロッコリーの見分けはつかないけど、ね☆＠
 	PlaySE(4, "S19/02/500200368", 128, 64);
@@ -3130,7 +3124,7 @@
 //「...なぁんだ＠考えるより生むが易しだな～＠お料理の本さえあれば、誰だってシェフの味が出せるじゃんよ～＠　さすがはお料理の本～......。＠
 	PlaySE(4, "S19/01/HR_KEI23770", 128, 64);
 	OutputLine(NULL, "「…なぁんだ。",
-		   NULL, "\"...Well.", Line_WaitForInput);
+		   NULL, "\"...Well.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "考えるより生むが易しだな〜。",
 		   NULL, " It's easier to give it a shot than think about it, right~?", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI23780", 128, 64);
@@ -4472,7 +4466,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_170", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_210", "left", 0, 0, 300 );
 
 //　沙都子ひとりを台所に残し、俺は梨花ちゃんに引きずられて居間に戻ってきた￥
 	OutputLine(NULL, "　沙都子ひとりを台所に残し、俺は梨花ちゃんに引きずられて居間に戻ってきた。",
@@ -4577,7 +4571,7 @@
 		   NULL, "I recalled Satoko's slightly annoyed expression from before.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_170", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_210", "left", 0, 0, 300 );
 
 //「...俺、日中、沙都子のことをちょっと馬鹿にし過ぎちゃったよな...＠　ひょっとして......、それで根に持たれた...？＠
 //　つい、沙都子をいつものノリで売り言葉と買い言葉で挑発してしまったが＠......言い過ぎだったようにも思う...＠
@@ -4634,7 +4628,7 @@
 		   NULL, " Her eyes were sharp, and her movements were brisk... to the point where it was a little scary.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "sa_si_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+	DrawBustshot( 3, "sa_si_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //　気取られたのか、こちらを振り返り、不機嫌そうにキッと睨みつける＠
 //　...俺はすくみあがって慌てて首を引っ込めた￥
@@ -4648,7 +4642,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_170", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_210", "left", 0, 0, 300 );
 
 //「怒ってる...＠　やっぱり怒ってる...＠　...あぁぁ、俺はどんな復讐をされるんだろう...＠　ああぁあぁあー...。＠
 	PlaySE(4, "S19/01/HR_KEI24470", 128, 64);
@@ -6019,10 +6013,7 @@
 
 	OutputLine(NULL, "　そのあまりに白々しい態度が何だか小憎らしくてかわいくて、俺も沙都子も、どちらからともなく大笑いしてしまう。",
 		   NULL, "Her attitude was clear as day, but it was annoyingly cute—so both Satoko and I suddenly burst into laughter.", Line_Normal);
-	ClearMessage();
-	DisableWindow();
-	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg_170", "up", 0, 0, 300 );
+
 
 //　食卓をにぎわす笑い声＠
 //　......毎日の無味簡素な食卓が、こんな風に笑い声で満たされるなんて、...思いもしなかった＠
@@ -6049,8 +6040,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ri_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "ri_si_ni_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......もちろんなのですよ＠...笑いはご飯をおいしくするのです。＠
 	PlaySE(4, "S19/05/500500136", 128, 64);
