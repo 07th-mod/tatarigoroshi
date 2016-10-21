@@ -324,7 +324,7 @@
 
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "sa_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sa1a_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「をっほっほ！＠　密着距離まで入れば私の有利は動きませんわねぇ＠/
 	PlaySE(4, "S03/04/140400111", 128, 64);
@@ -335,7 +335,7 @@
 		   NULL, " At close range like this, my advantage is unwavering!", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 2, "sa_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sa1a_AkuwaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　う～ん、圭一さんの分のお大根が実においしいですわぁ！＠
 //「...ちっくしょう...、バトル開始時から密着でいきなりコンボとは......＠無念...。￥
@@ -374,6 +374,11 @@
 		   NULL, "Satoko was grinning wider than I'd ever seen as she chomped down on her mouthful of the daikon she'd plundered from me—did it really taste that good?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawScene( "cg_043a", 1000 );
+
+
+
 //　そんな沙都子が、もう何だか可愛らしく＠、...これまでに何度もそうしてきたように、頭を鷲掴みにして、わしわしと撫でてやる...￥
 	OutputLine(NULL, "　そんな沙都子が、もう何だか可愛らしくて",
 		   NULL, "Satoko was somewhat cute like that...", Line_WaitForInput);
@@ -381,6 +386,7 @@
 		   NULL, " and just as I'd done many times, I grabbed her head and started petting it...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	DrawScene( "cg_043b", 400 );
 	DrawScene( "black", 400 );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );

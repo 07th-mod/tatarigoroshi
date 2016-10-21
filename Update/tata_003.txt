@@ -502,7 +502,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "white", 400 );
-	DrawScene( "bg_203", 400 );
+	DrawScene( "bg_203a", 400 );
 
 //!s0「「「ええぇーーー？！」」」!sd/
 //!s0
@@ -1312,7 +1312,7 @@
 	DisableWindow();
 	DrawScene( "white", 400 );
 	PlayBGM( 2, "lsys20", 128, 0 );
-	DrawSceneWithMask( "bg_123", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_126", "left", 0, 0, 300 );
 
 //　興宮小学校ってのがどこにあるのかは、実はよく知らない＠
 	OutputLine(NULL, "　興宮小学校ってのがどこにあるのかは、実はよく知らない。",
@@ -2279,6 +2279,9 @@
 	OutputLine(NULL, "　レナが舌をカメレオンのように伸ばし、梨花ちゃんをぐるぐる巻きにして捕食する！",
 		   NULL, "Rena stuck out her tongue like a chameleon and preyed upon Rika-chan while spinning her around!", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawScene( "cg_046", 1000 );
+
 
 //「梨花ちゃんかぁいい＠　梨花ちゃんかぁいい！＠　はぅ～～！！＠
 //「み！　み～～～ッ！！＠
@@ -2314,9 +2317,7 @@
 	OutputLine(NULL, "まるでレナの顔に押し潰されてるかのようだ…。",
 		   NULL, " It looked like it was being crushed by Rena's...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_149", "left", 0, 0, 300 );
-	DrawBustshot( 2, "sa_se_ak_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	
 
 //「...何があったかは存じませんけど、...梨花が自業自得のようですわね。＠
 //「あぁ＠俺も最近、ようやく梨花ちゃんがただ可愛いだけじゃないと悟ったぞ...。￥
@@ -2333,8 +2334,7 @@
 	OutputLine(NULL, "俺も最近、ようやく梨花ちゃんがただ可愛いだけじゃないと悟ったぞ…。」",
 		   NULL, " I recently found out that Rika-chan isn't only cute...\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_148", "right", 0, 0, 300 );
+	
 
 //「はぅ～～！＠　圭一くんに許可をもらったんだよ～！＠　お持ち帰り～～～～！！！＠
 //「......みーー！！/
@@ -2397,7 +2397,6 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys02", 128, 0 );
-	DrawBustshot( 2, "sa_se_ak_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg_149", "left", 0, 0, 300 );
 
 
@@ -5119,7 +5118,7 @@
 	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	DrawScene( "bg_203", 200 );
+	DrawScene( "bg_203a", 200 );
 
 //　ガシーーーーーーーーーンッ！！！￥
 	OutputLine(NULL, "　ガシーーーーーーーーーンッ！！！！",
@@ -5476,7 +5475,9 @@
 	OutputLine(NULL, "今日は不調かな？」",
 		   NULL, " Not feeling well today?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	
+	DisableWindow();
+	DrawBustshot( 2, "kameda2a_Shinken_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S19/23/202800049", 128, 64);
 	OutputLine(NULL, "「…………く…！」",
@@ -5494,6 +5495,8 @@
 	OutputLine(NULL, "「…く、……おのれ……！！」",
 		   NULL, "\"...Grr... you little...!!\"", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
 
 	PlaySE( 3, "wa_008", 128, 64 );
 	Wait( 200 );
@@ -5542,6 +5545,9 @@
 		   NULL, " ...Hu-hu-hu!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshot( 2, "kameda2a_Shinken_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
 
 	PlaySE(4, "S19/23/202800051", 128, 64);
 	OutputLine(NULL, "「………ぅぅ……！」",
@@ -5559,6 +5565,8 @@
 	OutputLine(NULL, "　…あの甲子園を席巻したピッチャー、県立大島の亀田が…気圧されている？！",
 		   NULL, "...Was Ooshima's Kameda, the pitcher who conquered Koshien... losing the mental battle?!", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
 
 	PlaySE( 3, "wa_008", 128, 64 );
 	Wait( 200 );
@@ -5590,13 +5598,15 @@
 		   NULL, " Everyone calls you the best... You'd never walk the batter!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshot( 2, "kameda2a_Shinken_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
 
 	PlaySE(4, "S19/23/202800052", 128, 64);
 	OutputLine(NULL, "「…………く、…くそぅ…。」",
 		   NULL, "\"......Sh-Shit...\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_149", "right", 0, 0, 300 );
+	
 
 //　ざわざわざわ...＠
 //　思わぬ異常事態に報道陣には戸惑いが広がっていた￥
@@ -5608,7 +5618,8 @@
 	OutputLine(NULL, "　思わぬ異常事態に報道陣には戸惑いが広がっていた。",
 		   NULL, "The abnormal, unexpected situation spread confusion throughout the reporters.", Line_Normal);
 	ClearMessage();
-
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
 
 
 //「...な、!w600...何者だよ、!w800...あの前原圭一って男は...＠　あの豪速球を前にして、ここまでの余裕とは？！＠
@@ -5730,7 +5741,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawScene( "bg_150", 400 );
+	DrawScene( "bg_203a", 400 );
 
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 200 );
@@ -5783,6 +5794,9 @@
 	OutputLine(NULL, "　…こういう演出をして、亀田くんが負けてもおかしくない雰囲気を作り出そうというのだろうが…。",
 		   NULL, "...Perhaps she wanted this little play of ours to create a mood where it wouldn't be strange for Kameda-kun to lose, but...", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_150", 400 );
+
 
 //「......沙都子＠これ、...どう見てもやり過ぎだぞ。＠
 	PlaySE(4, "S19/01/HR_KEI30050", 128, 64);
@@ -5830,7 +5844,7 @@
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 200 );
 	PlaySE( 3, "wa_006", 128, 64 );
-	DrawSceneWithMask( "bg_149", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_203a", "right", 0, 0, 300 );
 
 //「ボール！＠　フォアボール！！＠
 //「......臆したか亀田くん！＠　見損なったぞ！！！＠
@@ -6097,10 +6111,18 @@
 		   NULL, " Come on now, Kameda-san!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "kameda2a_Warai_0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
 
 	PlaySE(4, "S19/23/202800055", 128, 64);
 	OutputLine(NULL, "「ふ、…ふはははははは！",
 		   NULL, "\"Hu... Pfahahahaha!", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 1, "kameda2a_Shinken_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+
 	PlaySE(4, "S19/23/202800056", 128, 64);
 	OutputLine(NULL, "　馬鹿にするな！",
 		   NULL, " You makin' fun of me?", Line_WaitForInput);
@@ -6110,6 +6132,11 @@
 	PlaySE(4, "S19/23/202800058", 128, 64);
 	OutputLine(NULL, "　Ｋさ、…いや！",
 		   NULL, " K-sa—no!", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 1, "kameda2a_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	
 	PlaySE(4, "S19/23/202800059", 128, 64);
 	OutputLine(NULL, "　前原さんならともかく…お前如きに遅れなど取るものか！！」",
 		   NULL, " Maebara-san was one thing... but you think I'll lose to the likes of you?!\"", Line_WaitForInput);
@@ -6200,6 +6227,10 @@
 	OutputLine(NULL, "　だからこそ、亀田くんがこう言ったとしても不思議はなかった。",
 		   NULL, "And that's why it didn't sound strange when Kameda-kun said this.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "kameda2a_Niyari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+
 
 //「...お前如きに本気で投げても仕方がないな＠チャンスだ＠次の一球は下投げでのんびり投げてやる＠１発くらいヒットを打って、お母ちゃんに自慢できるタネにさせてやる...！！＠
 //　もちろん、このセリフすらも全て筋書きだ＠
@@ -6216,6 +6247,9 @@
 	OutputLine(NULL, "１発くらいヒットを打って、お母ちゃんに自慢できるタネにさせてやる…！！」",
 		   NULL, " I'll let you get a hit or two so you can go home and brag to mommy...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
 
 
 	OutputLine(NULL, "　もちろん、このセリフすらも全て筋書きだ。",
@@ -6277,6 +6311,9 @@
 	OutputLine(NULL, "　そのやりとりを終えてから、亀田くんはセットポジションから投球体勢に入る。",
 		   NULL, "Our exchange over, Kameda-kun moved from set position into a pitching stance.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawScene( "cg_109e", 1000 );
+
 
 //「さぁ！＠　手加減の球を投げなさいなー！＠　大ホームランにしてさしあげますわぁ！！＠
 //　...全ての打席を三振で凡退＠
@@ -6359,7 +6396,7 @@
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene( "white", 10 );
-	DrawScene( "bg_203", 200 );
+	DrawScene( "cg_109b", 200 );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlaySE( 3, "wa_007", 128, 64 );
 
@@ -6386,11 +6423,7 @@
 	OutputLine(NULL, "　大きいぃ…！！",
 		   NULL, " Look at it go...!!", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene( "white", 400 );
-	DrawBustshot( 3, "sa_se_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene( "bg_149", 300 );
-
+	
 
 //「走る必要もありませんわね＠...をーっほっほっほっほ！！＠
 	PlaySE(4, "S19/04/500400560", 128, 64);
@@ -6401,9 +6434,6 @@
 		   NULL, " ...Ohh-ho-ho-ho-ho!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
-	DisableWindow();
-	FadeBustshotWithFiltering( 3, "right", 1, FALSE, 0, 0, 300, TRUE );
 
 //　沙都子の放った特大アーチが...校舎屋上へ消えていく...＠
 	OutputLine(NULL, "　沙都子の放った特大アーチが…校舎屋上へ消えていく…。",
@@ -6440,6 +6470,7 @@
 		   NULL, "Satoko strutted over to first base.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	DrawScene( "bg_150", 400 );
 	DrawBustshotWithFiltering( 2, "sa_se_de_a1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
@@ -6521,7 +6552,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "white", "left", 0, 0, 300 );
-	DrawScene( "bg_203", 400 );
+	DrawScene( "bg_203a", 400 );
 
 //　俺と沙都子が順にホームベースを踏み、...見事にサヨナラ勝ちだ！＠
 //　仲間が俺たちを祝福して迎えてくれた￥
@@ -6899,7 +6930,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "white", 10 );
-	DrawScene( "bg_203", 200 );
+	DrawScene( "bg_203a", 200 );
 
 //!s0「「「「おおおぉおぉおー！！」」」」!sd/
 //!s0

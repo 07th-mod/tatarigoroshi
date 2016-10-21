@@ -743,6 +743,10 @@
 	PlaySE(4, "S03/01/140101175", 128, 64);
 	OutputLine(NULL, "………さてあんたは、…何日後に水で死ぬかな？",
 		   NULL, " ......Now then... I wonder how many days it will take you to drown?", Line_WaitForInput);
+
+	DisableWindow();
+	DrawScene( "cg_114", 1000 );
+	
 	PlaySE(4, "S03/01/140101176", 128, 64);
 	OutputLine(NULL, "　…ふ、ははははははははははははははは。",
 		   NULL, " ...Hu, hahahahahahahahahaha.", Line_WaitForInput);

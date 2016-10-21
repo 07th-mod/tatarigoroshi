@@ -8,7 +8,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_118", "left", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_118a", "left", 0, 0, 1300 );
 
 //　家の灯りがこうこうとまぶしい＠
 	OutputLine(NULL, "　家の灯りがこうこうとまぶしい。",
@@ -346,7 +346,7 @@
 
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawSceneWithMask( "bg_258", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_258b", "right", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //　死体の近くで見た街路灯の特徴をよく覚えていたのは...幸運だった＠
@@ -523,7 +523,7 @@
 		   NULL, "The moment I thought that... I took a good look all around me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_258", 50 );
+	DrawScene( "bg_258b", 50 );
 
 //　......寝ぼけ掛けていた神経を全て叩き起こし......周囲の気配を探る............￥
 	OutputLine(NULL, "　……寝ぼけ掛けていた神経を全て叩き起こし……周囲の気配を探る…………。",
@@ -772,7 +772,7 @@
 		   NULL, "...I was... so exhausted... that I wanted to lie down right here and sleep...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_258", 400 );
+	DrawScene( "bg_258b", 400 );
 	PlayBGM( 1, "msys24", 128, 0 );
 
 //　............終わった＠
@@ -944,7 +944,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_252", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_142a", "left", 0, 0, 300 );
 
 //　...結局、左手でシャベルを持ち、片手で自転車にまたがる他なかった＠
 	OutputLine(NULL, "　…結局、左手でシャベルを持ち、片手で自転車にまたがる他なかった。",
@@ -970,7 +970,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 300 );
-	DrawScene( "bg_254", 1000 );
+	DrawScene( "bg_253a", 1000 );
 
 //　......前方にゆらりと二本の灯りが見えた＠
 	OutputLine(NULL, "　……前方にゆらりと二本の灯りが見えた。",
@@ -1086,8 +1086,8 @@
 		   NULL, " ...I lifted my face off the ground... and looked at her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_254", "up", 0, 0, 300 );
+	DrawBustshot( 2, "ta_si_de_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "bg_253a", "up", 0, 0, 300 );
 
 	PlaySE( 3, "wa_032", 128, 64 );
 
@@ -1099,7 +1099,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_aw_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「こんばんは＠月の綺麗な夜ね＠...前原くん。＠
 	PlaySE(4, "S03/09/140900088", 128, 64);
@@ -1135,7 +1135,7 @@
 		   NULL, "...Out of all the people I could have met... I got the sudden feeling that this was the one I wanted to see the least...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_de_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「こんな時間にどうしたのかしら＠　傘もささずに全身ずぶ濡れの泥まみれで＠......それは何＠　......シャベル？＠
 	PlaySE(4, "S03/09/140900091", 128, 64);
@@ -1183,7 +1183,7 @@
 		   NULL, "...Don't let her on to anything, lest you dig your own grave...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_wa_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...噂じゃあなた、ゴルフクラブで野球に参加したそうだけど＠そのシャベルも、つまりはそういうこと＠　くすくすくす...、傘の代わりってわけかしら？＠
 	PlaySE(4, "S03/09/140900095", 128, 64);
@@ -1213,7 +1213,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_aw_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......ふぅん＠それをこの土砂降りの中、取りに行ったわけ...？＠
 	PlaySE(4, "S03/09/140900098", 128, 64);
@@ -1231,7 +1231,7 @@
 		   NULL, "\"...When I left my house, I didn't think it would rain, so...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_de_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...あら、降り出したのは結構前よ＠　...あなた、ずいぶん前から表にいるのね。＠
 	PlaySE(4, "S03/09/140900100", 128, 64);
@@ -1361,7 +1361,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 2, "lsys23", 128, 0 );
-	DrawBustshot( 2, "ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_aw_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.....................コワイ顔＠いじめ過ぎちゃったかしら？　くすくす！＠
 	PlaySE(4, "S03/09/140900106", 128, 64);
@@ -1383,7 +1383,7 @@
 		   NULL, "......But the dark clouds in my mind didn't go away...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_de_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「それはそうと...＠いつまで自転車にまたがったまま、地面に這いつくばってるつもり...＠　そろそろどいてくれるかしら。＠
 	PlaySE(4, "S03/09/140900108", 128, 64);
@@ -1503,7 +1503,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_wa_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「見捨てるのも気の毒だし＠...私がやさしい人で良かったわね、くすくすくす...。＠
 	PlaySE(4, "S03/09/140900116", 128, 64);
@@ -1520,7 +1520,7 @@
 		   NULL, "...Nobody good has ever called themselves a nice person... but that would have been a terrible thing to say to someone holding me up like this.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_103", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_103a", "left", 0, 0, 300 );
 
 //　鷹野さんの手を借りて、助手席に座る＠
 	OutputLine(NULL, "　鷹野さんの手を借りて、助手席に座る。",
@@ -1593,8 +1593,8 @@
 		   NULL, "My expression reflected my thoughts, and the exact thought seemed to get through to her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_254", "up", 0, 0, 300 );
+	DrawBustshot( 2, "ta_si_de_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "bg_253a", "up", 0, 0, 300 );
 
 
 //「......わかったわ、わかったわ＠積んであげる＠......今夜だけはお姉さんもやさしくしてあげるわ。...くすくすくすくす...。＠
@@ -1679,7 +1679,7 @@
 		   NULL, "...Eventually, outlasted by my silence, Takano-san gave a short shrug and sighed.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "ta_si_wa_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.........はいはい、わかったわ＠ボクはシャベルがないと困っちゃうんでしょう＠　...そんなコワイ目しなくてもいいわよ。＠
 	PlaySE(4, "S03/09/140900129", 128, 64);
@@ -1709,7 +1709,7 @@
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 300 );
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawSceneWithMask( "bg_103", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_103a", "left", 0, 0, 300 );
 
 //「じゃ、行くわよ＠...前原くんのお家って、あの前原屋敷でいいんでしょう？＠
 	PlaySE(4, "S03/09/140900132", 128, 64);
@@ -1754,7 +1754,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_104", "up", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_104a", "up", 0, 0, 1300 );
 
 //「.........られた？￥
 	PlaySE(4, "S03/09/140900136", 128, 64);
@@ -1963,7 +1963,7 @@
 	DisableWindow();
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_103", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_103a", "right", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //　その時、不意に鷹野さんが振り返り、俺に目を合わせた￥
@@ -2138,7 +2138,7 @@
 		   NULL, "...I thought I must have fallen asleep by accident.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_121", "up", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_121a", "up", 0, 0, 1300 );
 
 //　窓の外を見ると...ぼんやりとした灯りに大きな建物が浮かび上がっていた＠
 	OutputLine(NULL, "　窓の外を見ると…ぼんやりとした灯りに大きな建物が浮かび上がっていた。",
@@ -2244,7 +2244,7 @@
 		   NULL, "...Takano-san opened the passenger side door for me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1_a", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「本当に肩は必要ないかしら＠　もう一回だけ甘えてもいいのよ＠　くすくす...。＠
 	PlaySE(4, "S03/09/140900153", 128, 64);
@@ -2288,7 +2288,7 @@
 		   NULL, "I let Takano-san hold the umbrella over me, then pushed my bicycle up to the front door.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_118", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_118a", "left", 0, 0, 300 );
 
 //「...ありがとうございます＠もうここまでで大丈夫です。＠
 	PlaySE(4, "S03/01/140100699", 128, 64);
@@ -2310,7 +2310,7 @@
 		   NULL, "...It was really, seriously... terrible luck.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1_a", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「じゃあ、...私はこれで失礼するわね＠前原くんと二人きりで夜のドライブだったなんて、...みんなにはナイショよ＠　くすくす...、特にジロウさんにはね。＠
 	PlaySE(4, "S03/09/140900156", 128, 64);
@@ -2372,8 +2372,8 @@
 	DisableWindow();
 	DrawScene( "black", 400 );
 	FadeFilm( 1000, TRUE );
-	DrawBustshot( 3, "ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene( "bg_118", 1000 );
+	DrawBustshot( 3, "ta_si_wa_a1_a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene( "bg_118a", 1000 );
 
 //「あの後ろに積んであった自転車、......富竹さんのですよね...？＠
 	PlaySE(4, "S03/01/140100701", 128, 64);
@@ -2387,7 +2387,7 @@
 		   NULL, "Takano-san's eyes... I think they sharpened for a moment.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "ta_si_aw_a1_a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「.................................どうしてそう思うのかしら...？＠
 	PlaySE(4, "S03/09/140900159", 128, 64);
@@ -2434,7 +2434,7 @@
 		   NULL, "Takano-san, her hair elegantly fluttering... peers into my eyes.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	DrawBustshot( 3, "ta_si_de_a1_a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 
 //「......だって＠...雛見沢には民宿なんてないのよ＠　ならジロウさんは町に泊まっていることになるわよね。＠
 	PlaySE(4, "S03/09/140900163", 128, 64);
@@ -2479,7 +2479,7 @@
 		   NULL, " ...That's why Jirou-san was riding a bike.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "ta_si_aw_a1_a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「...そのジロウさんの自転車が私の車に積んであって＠...ジロウさんは私の車に乗っていないなら、!w1000.........おかしいじゃない＠......ジロウさんは雛見沢で自転車ナシ...ってことになっちゃうわよ＠ジロウさんを放っておいて自転車だけが私の車に積んであるなんて、ね＠　ありえないでしょう？＠
 	PlaySE(4, "S03/09/140900169", 128, 64);
@@ -2566,7 +2566,7 @@
 		   NULL, "...But...... the most wild, instinctive part of me... warned me not to pry.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "ta_si_wa_a1_a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あれは私の自転車なのよ＠.........ジロウさんに選んでもらったから、センスが似てるのは間違いないけれどね。＠
 	PlaySE(4, "S03/09/140900178", 128, 64);
@@ -2588,7 +2588,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	DrawScene( "cg_111a", 1000 );
 
 //「私とあなたは今夜、出会わなかった。￥
 	PlaySE(4, "S03/09/140900180", 128, 64);
@@ -2668,9 +2668,6 @@
 	OutputLine(NULL, "……この女と出会わなかった方がよかった。",
 		   NULL, " ...I wish I'd never met this woman.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 3, "ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene( "black", 400 );
 
 //　この女から漂う...腐臭のような臭いの気配は、.........きっと今の俺から滲み出ている気配と、...何ら変わらない＠
 	OutputLine(NULL, "　この女から漂う…腐臭のような臭いの気配は、………きっと今の俺から滲み出ている気配と、…何ら変わらない。",
@@ -2740,9 +2737,6 @@
 	ClearMessage();
 
 	FadeOutBGM( 0, 1000, TRUE );
-	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_118", "up", 0, 0, 300 );
 
 //「...それでいいなら、そういうことでもいいです＠......俺と鷹野さんは今夜、出会わなかった。＠
 	PlaySE(4, "S03/01/140100714", 128, 64);
@@ -2770,6 +2764,8 @@
 		   NULL, "\"...Why do you think that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawScene( "cg_111b", 1000 );
 
 
 //「いちいちうるさいわね＠...それくらい自分で考えられないの、坊や。＠
@@ -2780,6 +2776,9 @@
 	OutputLine(NULL, "…それくらい自分で考えられないの、坊や。」",
 		   NULL, " ...You can't figure that out on your own, boy?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawScene( "black", 400 );
 
 
 //　............坊やという見下した言葉で、俺との会話をぴしゃりと遮る￥
@@ -2837,7 +2836,8 @@
 		   NULL, "she shook her hair elegantly and turned on her heel.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawScene( "bg_118a", 400 );
+	DrawBustshot( 2, "ta_si_wa_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...よかったわね＠...私がやさしい人で。＠
 	PlaySE(4, "S03/09/140900189", 128, 64);
@@ -3041,7 +3041,7 @@
 		   NULL, "Even the sound of the engine faded into the sound of the heavy rain, and was inaudible now.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_118", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_118a", "right", 0, 0, 300 );
 
 //　......俺もまた踵を返す＠
 	OutputLine(NULL, "　……俺もまた踵を返す。",
@@ -3226,7 +3226,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_118", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_118a", "left", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //「..........................................。＠
