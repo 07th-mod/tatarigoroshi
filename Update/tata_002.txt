@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 ////*TatarigorosiHen_Day2
@@ -3603,13 +3603,12 @@
 	PlaySE(4, "S19/04/500400369", 128, 64);
 	OutputLine(NULL, "　梨花だけをさらし者にするなんて、本当に意地悪な人でございますこと！」",
 		   NULL, " Humiliating only Rika like that—he is truly a rotten person!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S19/03/660300269", 128, 64);
 	OutputLine(NULL, "　別にそんなつもりじゃ…。",
 		   NULL, "I didn't mean...", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 //　ただ俺は、弁当の恩を仇で返すわけにはいかないと思って......￥
 	OutputLine(NULL, "　ただ俺は、弁当の恩を仇で返すわけにはいかないと思って……。",
@@ -3979,7 +3978,7 @@
 		   NULL, "\"W-What an indiscreet thing to say!", Line_WaitForInput);
 	PlaySE(4, "S19/04/500400391", 128, 64);
 	OutputLine(NULL, "　私はそんな物騒なの御免ですわよ！！」",
-		   NULL, " I want no part of something so disturbing!!\"", Line_WaitForInput);
+		   NULL, " I want no part in something so disturbing!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5114,6 +5113,7 @@
 	PlaySE(4, "S19/04/500400433", 128, 64);
 	OutputLine(NULL, "「ちょっと圭一さん！",
 		   NULL, "\"Hey, Keiichi-san!", Line_WaitForInput);
+	PlaySE(4, "S19/04/500400434", 128, 64);
 	OutputLine(NULL, "　お食事の最中におトイレなんて言っちゃマナー違反ですわよ！」",
 		   NULL, " It's bad manners to say such words during a meal!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -5389,7 +5389,6 @@
 //　今のこのゆるやかな時間がただただ繰り返されることに、俺は何の不安を感じているって言うんだ？
 	OutputLine(NULL, "　今のこのゆるやかな時間がただただ繰り返されることに、俺は何の不安を感じているって言うんだ？",
 		   NULL, "You feel uneasy about something just from spending time so leisurely?", Line_Normal);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 //　何も不安に思うことなんかないんだ＠
 //　......だって、毎日を、楽しく、やさしく過して何のバチが当たるって言うんだよ...￥
@@ -5644,7 +5643,7 @@
 		   NULL, "\"Cool.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI27440", 128, 64);
 	OutputLine(NULL, "…よかったね。",
-		   NULL, " ...That's good.", Line_Normal);
+		   NULL, " ...That's good.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI27450", 128, 64);
 	OutputLine(NULL, "お疲れ。」",
 		   NULL, " Well done.\"", Line_Normal);
