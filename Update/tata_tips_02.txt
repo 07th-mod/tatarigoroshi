@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -203,6 +203,7 @@
 		   NULL, "\"...But still...", Line_WaitForInput);
 	OutputLine(NULL, "…よくかかったよなぁ…。",
 		   NULL, " ...That was some trap...", Line_WaitForInput);
+	PlaySE(4, "S20/01/440100108", 128, 64);
 	OutputLine(NULL, "……あんな器用なトラップ、富田くんが窓を登る時、",
 		   NULL, " You would have had to know everything to set something like that up:", Line_ContinueAfterTyping);
 
@@ -210,7 +211,6 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S20/01/440100108", 128, 64);
 	OutputLine(NULL, "どこに手を置いて、どこに足を置くかとか、どこへ飛び降りるとか、そういうのを全部読まなくちゃ絶対に掛からないぞ…？！」",
 		   NULL, " where they'd put their hands, their legs, where they'd jump down...?!\"", Line_Normal);
 	ClearMessage();
