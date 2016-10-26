@@ -793,6 +793,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_109", "right", 0, 0, 300 );
 
 //　沙都子にネタを教えられ、俺はみんなの輪を抜け出し...こっそり、クラスメートの弁当箱を探す￥
 	OutputLine(NULL, "　沙都子にネタを教えられ、俺はみんなの輪を抜け出し…こっそり、クラスメートの弁当箱を探す。",
@@ -844,6 +845,8 @@ void main()
 		   NULL, " How did they buy you out?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DrawBustshotWithFiltering( 3, "oka1_Shinken", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "tomita1_Shinken", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	PlaySE(4, "S19/24/502400014", 128, 64);
 	OutputLine(NULL, "「いいいいい、いきなり何ですか前原さん？！",
