@@ -674,6 +674,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S19/01/HR_KEI27900", 128, 64);
 	OutputLine(NULL, "「…あの、",
 		   NULL, "\"...Excuse me...", Line_ContinueAfterTyping);
 
@@ -681,7 +682,6 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S19/01/HR_KEI27900", 128, 64);
 	OutputLine(NULL, "…ここだけの話ですけど…。",
 		   NULL, " This is just between you and me, but...", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI27910", 128, 64);
@@ -866,6 +866,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 // 　そして島角、/
+	PlaySE(4, "S19/00/cusB50003", 128, 64);
 	OutputLine(NULL, "　そして島角、",
 		   NULL, " And then to their corners,", Line_ContinueAfterTyping);
 
@@ -2967,7 +2968,6 @@ void main()
 
 	OutputLine(NULL, "　なんだ、みんなクラスメートじゃないか。",
 		   NULL, "Isn't everyone here a classmate?", Line_WaitForInput);
-	PlaySE(4, "S19/06/500600418", 128, 64);
 	OutputLine(NULL, "…あ、そっか。",
 		   NULL, " ...Oh, I see.", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢の学校ってうちだけだもんな。",
@@ -3280,7 +3280,7 @@ void main()
 		   NULL, " ...I think.\"", Line_Normal);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
+	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "sa_se_ak_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
@@ -5017,6 +5017,7 @@ void main()
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S19/23/202800039", 128, 64);
 	OutputLine(NULL, "く、",
 		   NULL, " A-", Line_ContinueAfterTyping);
 
@@ -5024,7 +5025,6 @@ void main()
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S19/23/202800039", 128, 64);
 	OutputLine(NULL, "食い放題ッ！！！」",
 		   NULL, " All you can eat!!!\"", Line_ContinueAfterTyping);
 
@@ -6880,8 +6880,9 @@ void main()
 	PlaySE(4, "S19/04/500400575", 128, 64);
 	OutputLine(NULL, "　亀田さんの登場で一時は危うかったですが、圭一さんの活躍で見事獲得できましたのよー！！」",
 		   NULL, " It wasn't looking good for a while when Kameda-kun appeared, but thanks to Keiichi-san we've won that privilege!!\"", Line_WaitForInput);
-	OutputLine(NULL, "　なるほどな、そういう話になってたのか。",
-		   NULL, " I see—so that's what this was about.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLine(NULL, "なるほどな、そういう話になってたのか。",
+		   NULL, "I see—so that's what this was about.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
