@@ -21,8 +21,8 @@ This patch aims to combine the efforts of the ps3 voice patch and the ps3 sprite
 * [HigurashiPS3-Voices01.zip (uses S19, S20 folders)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices01.zip) + [HigurashiPS3-Voices02.zip (uses S03 folder)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices02.zip)
 * [Graphics mod](https://drive.google.com/open?id=0B1aVgt2KPT71ZGpuOTJlQTJCbmc)
 =======
-* [HigurashiPS3-Voices01.zip (uses S19, S20 folders)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices01.zip) + [HigurashiPS3-Voices02.zip (uses S03 folder)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices02.zip) [(or create a symlink using your EP1 files)](https://github.com/07th-mod/tatarigoroshi#creating-a-symlink)
-* [Graphics mod](https://mega.nz/#!tIEhSYYR!74hfVpoTPKwXEs5sIGyharq4wKjgltdgknXUr0VWku8)
+* [HigurashiPS3-Voices01.zip (uses S19, S20 folders)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices01.zip) + [HigurashiPS3-Voices02.zip (uses S03 folder)](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices02.zip)
+* [Graphics mod](https://drive.google.com/open?id=0B1aVgt2KPT71ZGpuOTJlQTJCbmc)
 >>>>>>> 9425cb90ecf14d4d41adf97dbb3fe9279d4f3e1a
 * [Voice patch](https://github.com/07th-mod/tatarigoroshi/releases)
 
