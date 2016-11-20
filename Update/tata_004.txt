@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 ////*TatarigorosiHen_Day4
@@ -1236,7 +1236,7 @@
 //「...楽しそうですね＠あんなにはしゃいで。￥
 	PlaySE(4, "S19/10/501000048", 128, 64);
 	OutputLine(NULL, "「…楽しそうですね。",
-		   NULL, "\"...She looks like she's having fun.", Line_Normal);
+		   NULL, "\"...She looks like she's having fun.", Line_ContinueAfterTyping);
 	PlaySE(4, "S19/10/501000049", 128, 64);
 	OutputLine(NULL, "あんなにはしゃいで。」",
 		   NULL, " Quite a lot of it.\"", Line_Normal);
@@ -1574,8 +1574,7 @@
 
 //　あの時は家出したという事実を知らなかったから、漠然と聞き流していたが...＠........................￥
 	OutputLine(NULL, "　あの時は家出したという事実を知らなかったから、漠然と聞き流していたが…。",
-		   NULL, "I didn't know the details of him having run away from home at the time, so I didn't pay much attention to it, but...", Line_WaitForInput);
-	PlaySE(4, "S06/03/150300336", 128, 64);
+		   NULL, "I didn't know the details of him having run away from home at the time, so I didn't pay much attention to it, but...", Line_ContinueAfterTyping);
 	OutputLine(NULL, "……………………。",
 		   NULL, "............", Line_Normal);
 	ClearMessage();
@@ -1974,7 +1973,7 @@
 //　昨夜、俺の両親が帰ってくることを知った時、沙都子が言っていた＠
 	OutputLine(NULL, "　昨夜、俺の両親が帰ってくることを知った時、沙都子が言っていた、",
 		   NULL, "When she found out my parents were coming home the other night, Satoko said,", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　「食事は家族みんなで食べた方がおいしいに決まっている...＠
 	OutputLine(NULL, "　「食事は家族みんなで食べた方がおいしいに決まっている…」",
@@ -2169,7 +2168,6 @@
 //　呼んでくれますよ＠きっと＠
 	OutputLine(NULL, "　呼んでくれますよ。",
 		   NULL, "She'd call him that.", Line_WaitForInput);
-	PlaySE(4, "S20/05/VTK2_rika2062", 128, 64);
 	OutputLine(NULL, "きっと。",
 		   NULL, " I knew it.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -2257,10 +2255,7 @@
 
 
 	OutputLine(NULL, "　とても簡単なことですよ。",
-		   NULL, "\"It's a very simple one.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
+		   NULL, "\"It's a very simple one.\"", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　監督はそう言いながらにっこりと笑う。",
 		   NULL, "The Coach said this, giving me a grin.", Line_Normal);
 	ClearMessage();
@@ -2301,7 +2296,7 @@
 
 //　...ただのんびりと、沙都子がみんなとはしゃぎ、楽しい時間を過ごすのを眺めているだけだった＠
 	OutputLine(NULL, "　…ただのんびりと、沙都子がみんなとはしゃぎ、楽しい時間を過ごすのを眺めているだけだった。",
-		   NULL, "...We just sat their comfortably, gazing at Satoko and everyone else having a good time.", Line_WaitForInput);
+		   NULL, "...We just sat there comfortably, gazing at Satoko and everyone else having a good time.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　家族を失いこそしたが、見守ってくれる人がいる＠それがどれほど心強いことか...￥
@@ -2428,8 +2423,10 @@
 
 //「器具を使ったプレイは、ちゃんと知識を身に付けてからにして下さいね＠間違った知識を持ってると、本当に危険なんです。＠
 //「なるほどな＠用法を正しく守ってお使い下さいってよく書いてあるもんな。＠
+	PlaySE(4, "S19/06/500600356", 128, 64);
 	OutputLine(NULL, "「器具を使ったプレイは、ちゃんと知識を身に付けてからにして下さいね。",
 		   NULL, "\"Please leave the item-using play for after she's acquired the proper knowledge.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600357", 128, 64);
 	OutputLine(NULL, "間違った知識を持ってると、本当に危険なんです。」",
 		   NULL, " It would be very dangerous to go in with the wrong idea.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2668,10 +2665,10 @@
 		   NULL, " I'll think about it.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600374", 128, 64);
 	OutputLine(NULL, "圭ちゃんが雛見沢ファイターズに移籍するんなら考えてもいいかな。",
-		   NULL, " Maybe I will if Kei-chan join the Hinamizawa Fighters?", Line_WaitForInput);
+		   NULL, " Maybe I will if Kei-chan joins the Hinamizawa Fighters?", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600375", 128, 64);
 	OutputLine(NULL, "私、カッコイイ男の子がいないと応援する張り合いがないんです。」",
-		   NULL, " I can't get into a cheering mood when there's no good-looking guys on the team.\"", Line_WaitForInput);
+		   NULL, " I can't get into a cheering mood when there's no good-looking guy on the team.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2949,7 +2946,7 @@
 		   NULL, " Should I join in to make this a battle of the siblings?", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600386", 128, 64);
 	OutputLine(NULL, "　多分、やめといた方がお姉の為だと思いますけどー？」",
-		   NULL, " For your sake, I don't think we should—but if you want to!\"", Line_WaitForInput);
+		   NULL, " For your sake, I don't think we should—but if you want to?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -3113,7 +3110,7 @@
 	DrawBustshot( 3, "re_si_ha_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「はぅ＠/
-	PlaySE(4, "S09/02/170200599", 128, 64);
+	PlaySE(4, "S19/02/500200595", 128, 64);
 	OutputLine(NULL, "「はぅ！",
 		   NULL, "\"Hau!", Line_WaitForInput);
 
