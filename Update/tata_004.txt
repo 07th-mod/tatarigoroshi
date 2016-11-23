@@ -2103,12 +2103,15 @@ void main()
 //「...............幸せですよ＠沙都子。＠
 //　え＠　監督は、俺が断言したので、ちょっと驚いて振り返った￥
 	PlaySE(4, "S19/01/HR_KEI30840", 128, 64);
-	OutputLine(NULL, "「……………幸せですよ。",
-		   NULL, "\"......You're wrong.", Line_WaitForInput);
+	OutputLine(NULL, "「……………幸せですよ。沙都子。」",
+		   NULL, "\"......You're wrong. Satoko's happy.\"", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
 	PlaySE(4, "S19/01/HR_KEI30850", 128, 64);
-	OutputLine(NULL, "沙都子。」",
-		   NULL, " Satoko's happy.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_WaitForInput);
 
 
 	OutputLine(NULL, "　え？",
