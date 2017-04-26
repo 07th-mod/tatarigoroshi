@@ -4,7 +4,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   set "DEL=%%a"
 )
 
-call :colorEcho a0 "Downloading graphics patch... (test)"
+call :colorEcho a0 "Downloading graphics patch..."
 echo.
 call :colorEcho 0a "Sometimes you won't get a download ETA or file size, but the download will be completed normally"
 echo.
