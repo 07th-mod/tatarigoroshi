@@ -34,7 +34,7 @@ call :colorEcho a0 "Extracting files..."
 echo.
 timeout /t 1 > nul
 .\7za.exe x tatarigoroshi-steam-sprites.zip
-echo D | xcopy /E /Y .\tatarigoroshi-steam-sprites\tatarigoroshi-steam-sprites\CGAlt .\CGAlt > nul
+echo D | xcopy /E /Y .\tatarigoroshi-steam-sprites\CGAlt .\CGAlt > nul
 rmdir /S /Q .\tatarigoroshi-steam-sprites > nul
 .\7za.exe x Tatarigoroshi-Voices.zip
 echo S | .\7za.exe x Tatarigoroshi.Voice.and.Graphics.Patch.v1.7.zip
