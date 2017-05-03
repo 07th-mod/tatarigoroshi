@@ -1,5 +1,5 @@
 # PS3 Voice and Graphics Patch
-### For Higurashi No Naku Koro Ni - Chapter 3 Tatarigoroshi
+#### For Higurashi No Naku Koro Ni - Chapter 3 Tatarigoroshi
 
 > This repository **only** hosts the script files and a few voice files needed to fix bugs, check our [wiki](https://github.com/07th-mod/guide/wiki/Getting-started) for instructions on how to install the patch!
 
