@@ -906,7 +906,7 @@ void main()
 		   NULL, " It did—but I felt like a married life with her would be anything but normal.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_110", 400 );
+	DrawScene( "bg_108", 400 );
 
 //　しかし、みんなすごいよな＠
 //　まだ全然若いのに、しっかり自炊できている＠
@@ -1205,7 +1205,7 @@ void main()
 
 	DisableWindow();
 	DrawScene( "white", 10 );
-	DrawScene( "bg_110", 10 );
+	DrawScene( "bg_108", 10 );
 
 //!s0「何とかなるかああぁあぁぁッ！！」!sd/
 //!s0
@@ -1476,7 +1476,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sa_se_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_ha_b2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「そうそう！　人生、何事も経験でございましてよ？＠
 	PlaySE(4, "s19/04/500400129", 128, 64);
@@ -1642,7 +1642,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "ri_se_ni_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg_110", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_108", "right", 0, 0, 300 );
 
 
 //「......ボクが見てないと、お鍋とか火元とか不安なのです＠たまにガスの元栓も閉め忘れてるのです。＠
@@ -1948,7 +1948,7 @@ void main()
 
 
 	DisableWindow();
-	DrawBustshot( 2, "sa_se_na_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sa_se_na_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...わぁああぁあぁあああぁんッ！＠　圭々のばかぁー！＠　わああぁああぁあん！！＠
 	PlaySE(4, "s19/04/500400159", 128, 64);
@@ -2283,7 +2283,7 @@ void main()
 	DisableWindow();
 	PlayBGM( 1, "msys03", 128, 0 );
 	DrawBustshot( 3, "re_se_bi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg_110", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_108", "right", 0, 0, 300 );
 
 //「み、魅ぃちゃん！＠　そ、それは......！！！＠
 	PlaySE(4, "s19/02/500200373", 128, 64);
@@ -2363,7 +2363,7 @@ void main()
 		   NULL, "Rena, and Mion, and Satoko. Everyone nodded deeply in agreement.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_110", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_108", "left", 0, 0, 300 );
 	DrawBustshotWithFiltering( 2, "sa_se_aw_a1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「もっとも、圭一さんには、明日のお弁当以前に、今夜のお夕食の方が問題でしょうけどねぇ...＠/
@@ -2372,7 +2372,7 @@ void main()
 		   NULL, "\"Although Keiichi-san's problem might be his own dinner tonight, rather than tomorrow's bento...", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 2, "sa_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sa_se_ha_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //をっほっほっほ！＠
 //「はん＠　俺が今夜、どんな素晴らしいディナーになるか、見ることができなくて残念だな！＠　明日の弁当でその片鱗をほんの少しだけ見せてやるから楽しみにしていろよ！！￥
@@ -2417,7 +2417,7 @@ void main()
 		   NULL, " Ku-ku-ku-ku!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "sa_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sa_se_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「えぇ、楽しみでしてよー！＠　明日、圭一さんはきっと土下座して、それだけはどうかご勘弁を～！＠　って泣きながら言うんでしてよ！＠　あぁ、目に浮かぶようですわー！！＠
 //「にゃ、にゃにをーー！！！」/
@@ -2622,7 +2622,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "bg_039", "up", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_040", "up", 0, 0, 1300 );
 	PlayBGM( 1, "msys05", 128, 0 );
 
 //　その日は一日＠
@@ -3676,7 +3676,7 @@ void main()
 	PlayBGM( 1, "msys03", 128, 0 );
 	DrawBustshot( 3, "sa_si_bi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawBustshot( 1, "ri_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_116", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_115", "left", 0, 0, 300 );
 
 //　何事かと振り向くと、何とそこには沙都子と梨花ちゃんがいた￥
 	OutputLine(NULL, "　何事かと振り向くと、何とそこには沙都子と梨花ちゃんがいた。",
@@ -3732,7 +3732,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_170", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_115", "up", 0, 0, 300 );
 
 //　危機一髪のところで大火災を免れ、３人でぜーぜーと肩で息をする...￥
 	OutputLine(NULL, "　危機一髪のところで大火災を免れ、３人でぜーぜーと肩で息をする…。",
@@ -3824,7 +3824,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
-	DrawSceneWithMask( "bg_116", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_115", "up", 0, 0, 300 );
 
 //　話を聞いてみると...＠
 //　俺が放火的料理に没頭していたので、沙都子と梨花ちゃんが鳴らしてたチャイムに気付かなかったらしい＠
@@ -4210,7 +4210,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawScene( "bg_170", 400 );
+	DrawScene( "bg_115", 400 );
 
 //　...結局、俺は大口叩いて、晩飯ひとつ満足に作れなかったわけだ＠
 //　このままじゃ今晩はメシ抜き...＠
@@ -4361,7 +4361,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "ri_si_ni_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_116", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_115", "left", 0, 0, 300 );
 
 //「......圭一は黙って見ているといいのですよ。＠
 //　そう言ってにっこり微笑む＠
@@ -4552,7 +4552,7 @@ void main()
 		   NULL, " There haven't been any sounds of blood spilling, or bursting, or explosions...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_116", 400 );
+	DrawScene( "bg_115", 400 );
 
 //　...少なくともこの時点で、俺よりも料理は達者なことは証明されている＠
 //　北条沙都子バーサス前原圭一の料理勝負は...早くも勝負アリみたいだ...＠
@@ -5136,7 +5136,7 @@ void main()
 		   NULL, "She spread her arms wide to demonstrate the width of how well they got along.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_170", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_115", "left", 0, 0, 300 );
 
 //　梨花ちゃんが言うには＠
 	OutputLine(NULL, "　梨花ちゃんが言うには。",
@@ -6258,7 +6258,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "bg_170", 1000 );
+	DrawScene( "bg_115", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
 	DrawBustshotWithFiltering( 3, "ri_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
