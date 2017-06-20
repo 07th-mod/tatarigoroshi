@@ -1,4 +1,4 @@
-﻿
+
 void main()
 {
 	SetValidityOfSaving( FALSE );
@@ -113,7 +113,7 @@ void Game()
 	DrawScene("black", 1000);
 
 	CallSection("Day1");
-	
+
 }
 
 void Day1()
@@ -199,7 +199,7 @@ void Day8()
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
 
-	
+
 	JumpSection("Day8_2");
 }
 
@@ -208,7 +208,7 @@ void Day8_2()
 	CallScript( "tata_008_02" );
 
 	StoreValueToLocalWork( ChapterNumber, 7 );
-	
+
 	JumpSection("Day9");
 }
 
@@ -232,7 +232,7 @@ void Day9_2()
 	CallScript( "tata_009_02" );
 
 	StoreValueToLocalWork( ChapterNumber, 9 );
-	
+
 	JumpSection("Day10");
 }
 
@@ -241,7 +241,7 @@ void Day10()
 	CallScript( "tata_010" );
 
 	StoreValueToLocalWork( ChapterNumber, 10 );
-	
+
 	JumpSection("Day10_2");
 }
 
@@ -411,6 +411,6 @@ void ChapterPreview()
 	FadeOutBGM( 2, 1000, FALSE );
 
 	DrawScene("black", 1000);
-	
+
 	CallSection("Title");
 }
