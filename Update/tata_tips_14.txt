@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //*Sub_Tips_058
@@ -14,52 +14,47 @@
 //!s50
 //locate 12,0
 	PlayBGM( 2, "lsys24", 128, 0 );
-	SetSpeedOfMessage( TRUE, 100, );
 	SetStyleOfMessageSwinging( 2 );
 
 //昭和５７年７月ＸＸ日
 	OutputLine(NULL, "昭和５７年７月ＸＸ日",
 		   NULL, "July __, 1982", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 	SetStyleOfMessageSwinging( 0 );
 //興宮警察署捜査一課
 	OutputLine(NULL, "興宮警察署捜査一課",
 		   NULL, "Okonomiya Police Station 1st Investigative Division", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 //locate 3,3
 //高杉課長　殿
 	OutputLine(NULL, "高杉課長　殿",
 		   NULL, "Chief Takasugi", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 //locate 10,5
 	SetStyleOfMessageSwinging( 2 );
 //Ｘｘ県警麻薬犯罪撲滅本部
 	OutputLine(NULL, "ＸＸ県警麻薬犯罪撲滅本部",
 		   NULL, "____ Prefecture Police Headquarters for the Eradication of Drug-Related Crime", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 //locate 12,6
 //鹿骨支部長　ＸＸＸＸ
@@ -67,11 +62,10 @@
 		   NULL, "Shishibone Branch Head, ____ ____", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //locate 3,9
 	SetStyleOfMessageSwinging( 1 );
@@ -81,8 +75,7 @@
 		   NULL, "Regarding incident _ designated as undercover investigation", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -93,9 +86,8 @@
 		   NULL, "This message is to inform you that a section of the testimony records of an incident under this police headquarters' jurisdiction has been found", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //当本部担当事件の供述調書内に確認されたことを通達する。/
@@ -103,8 +95,7 @@
 		   NULL, " that is thought to be related to the undercover investigation of the incident in question (Okinomiya Police Station X, Hinamizawa Village housewife slaughter incident).", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	PlayBGM( 2, "lsys24", 128, 0 );
 
@@ -113,9 +104,8 @@
 		   NULL, "During investigation of suspect ___ ___ who was arrested for possession of illegal drugs,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //標記事件の犯行をほのめかす供述があり、その中に、犯人しか知り得ない情報が含まれていることが明らかとなった。
@@ -123,9 +113,7 @@
 		   NULL, " there was testimony related to the crime in question, and as part of it, we learned that the criminal had information only he could have known.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
@@ -135,9 +123,7 @@
 		   NULL, "Therefore, this record of testimony (duplicate attached) will be provided to you.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
@@ -147,8 +133,7 @@
 		   NULL, "If this testimonial is to be believed, then there is an extremely high chance that suspect ___ ___ was the culprit behind the incident in question.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	PlayBGM( 2, "lsys24", 128, 0 );
 
@@ -157,9 +142,8 @@
 		   NULL, "In addition, the head investigator on the case received this report and inquired as to the incident with the Okinomiya Police Station,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //７月１日県警本部長発令の秘匿捜査指定（昭和５７年総総管イ１－１２）を対応した興宮署担当者が誤解し、/
@@ -167,9 +151,8 @@
 		   NULL, " but the responsible party at Okinomiya Station, who responded to the designated undercover investigation announced by the prefectural police's general director on July 1 (1982, Osamu Fusakane, B1-12), misunderstood,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //担当取調官に対し、事件の存在を正しく説明しなかった。
@@ -177,9 +160,7 @@
 		   NULL, " and did not explain the incident's existence to the head investigator on the case properly.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
@@ -189,9 +170,8 @@
 		   NULL, "Because of this, the case's head investigator was not aware of the importance of the testimony as it related to the case in question,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //その結果、現場確認等を怠り、今日まで放置するに至ったことを謝罪する。/
@@ -199,8 +179,7 @@
 		   NULL, " and as a result, was negligent when combing the scene; we apologize for having left it in the dark until now.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -212,10 +191,8 @@
 		   NULL, "In addition, there is a postscript stating that suspect ___ ___ died while in confinement yesterday on X/XX.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	SetSpeedOfMessage( FALSE, 0, );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
