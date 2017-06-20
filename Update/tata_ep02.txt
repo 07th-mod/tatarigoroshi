@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 //■未公開の録音取材...
 ////*TatarigorosiHen_Ep2
@@ -28,6 +36,8 @@ void main()
 	DrawScene( "bg_126", 1000 );
 
 //　大阪府内に住むある老夫婦が＠８年前に死亡した息子の遺品を整理中に一本のカセットテープを発見した￥
+	ClearMessage();
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大阪府内に住むある老夫婦が、",
 		   NULL, "An elderly couple living in Osaka Prefecture", Line_WaitForInput);
 	OutputLine(NULL, "８年前に死亡した息子の遺品を整理中に一本のカセットテープを発見した。",
@@ -35,11 +45,13 @@ void main()
 	ClearMessage();
 
 //　夫婦の息子（４７歳・事故当時）は、平成７年に釣り船の転覆事故により行方不明となった＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　夫婦の息子（４７歳・事故当時）は、平成７年に釣り船の転覆事故により行方不明となった。",
-		   NULL, "Their son went missing when his fishing boat capsized in 1995. He was 47 at the time of his death.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "Their son went missing when his fishing boat capsized in 1995. He was 47 at the time of his death.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　平成１５年をもって８年が経過し、心の整理をつける意味で息子の遺品の整理を始めた際、問題のカセットテープを発見する￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　平成１５年をもって８年が経過し、心の整理をつける意味で息子の遺品の整理を始めた際、問題のカセットテープを発見する。",
 		   NULL, "Eight years later, in 2003, they had begun to organize their son's remains in order to organize their minds, and came across the cassette tape in question.", Line_Normal);
 	ClearMessage();
@@ -47,6 +59,7 @@ void main()
 	DrawScene( "bg_180", 400 );
 
 //　故人は昭和５０年代後半から平成元年まで＠過激な写真週刊誌に記者として勤務していた経験があり、この時の取材テープのひとつだと思われる￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　故人は昭和５０年代後半から平成元年まで、",
 		   NULL, "From 1975 to 1989,", Line_WaitForInput);
 	OutputLine(NULL, "過激な写真週刊誌に記者として勤務していた経験があり、この時の取材テープのひとつだと思われる。",
@@ -54,21 +67,25 @@ void main()
 	ClearMessage();
 
 //　テープのラベルには、昭和５８年１１月２８日・前原圭一と記されていた＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　テープのラベルには、昭和５８年１１月２８日・前原圭一と記されていた。",
-		   NULL, "The label on the tape read \"11-28-1983 Keiichi Maebara.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "The label on the tape read \"11-28-1983 Keiichi Maebara.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　昭和５８年６月に発生した、かの雛見沢大災害の唯一の生存者、前原圭一を取材した際の録音テープだと思われる￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月に発生した、かの雛見沢大災害の唯一の生存者、前原圭一を取材した際の録音テープだと思われる。",
 		   NULL, "It is thought the tape was recorded during an interview with Keiichi Maebara, the only survivor of the Great Hinamizawa Disaster that occurred in June of 1983.", Line_Normal);
 	ClearMessage();
 
 //　大災害を生き残り、謎に包まれた６月２１日の深夜を知る唯一の人間として、当時多くの関心が集まったが、公の場で肉声で語ることは一切なかった＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大災害を生き残り、謎に包まれた６月２１日の深夜を知る唯一の人間として、当時多くの関心が集まったが、公の場で肉声で語ることは一切なかった。",
-		   NULL, "As the only person who lived through the disaster on the night of June 21, shrouded in mystery, many interested parties attempted to question him, but he never once spoke physically to anyone in a public place.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "As the only person who lived through the disaster on the night of June 21, shrouded in mystery, many interested parties attempted to question him, but he never once spoke physically to anyone in a public place.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...ゆえに、このテープは極めて価値のあるものではないかと騒がれることになる￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ゆえに、このテープは極めて価値のあるものではないかと騒がれることになる。",
 		   NULL, "...Therefore, the tape caused quite a stir, possibly being of extremely high value.", Line_Normal);
 	ClearMessage();
@@ -79,6 +96,7 @@ void main()
 	PlaySE( 3, "wa_038", 128, 64 );
 
 //　...ガチャリ￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ガチャリ。",
 		   NULL, "...Click.", Line_Normal);
 	ClearMessage();
@@ -87,21 +105,24 @@ void main()
 
 //「.........何だか録音されてると思うと、すごくしゃべりにくいですね。＠
 	PlaySE(4, "s03/01/140101111", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………何だか録音されてると思うと、すごくしゃべりにくいですね。」",
-		   NULL, "\"......It's really hard to talk about stuff when I know I'm being recorded.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"......It's really hard to talk about stuff when I know I'm being recorded.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「気にしない気にしない＠ほら、こうすれば録音してるのも気にならないでしょ？＠
 	PlaySE(4, "s03/00/kisya04001", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「気にしない気にしない。",
 		   NULL, "\"Please, don't worry about it.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04002", 128, 64);
 	OutputLine(NULL, "ほら、こうすれば録音してるのも気にならないでしょ？」",
-		   NULL, " Here, it won't be a problem if I do this, right?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, " Here, it won't be a problem if I do this, right?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　（これ以降、急に録音状態が悪くなる＠録音機に何か被せた？￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　（これ以降、急に録音状態が悪くなる。",
 		   NULL, "(After this, the sound quality dramatically decreases.", Line_WaitForInput);
 	OutputLine(NULL, "録音機に何か被せた？）",
@@ -110,6 +131,7 @@ void main()
 
 //「じゃあ始めるね＠...まず、最初の質問から＠圭一くんは、あの大災害の夜、どこにいたのかな？＠
 	PlaySE(4, "s03/00/kisya04003", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「じゃあ始めるね。",
 		   NULL, "\"Then let's get started.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04004", 128, 64);
@@ -117,12 +139,13 @@ void main()
 		   NULL, " ...Here's my first question.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04005", 128, 64);
 	OutputLine(NULL, "圭一くんは、あの大災害の夜、どこにいたのかな？」",
-		   NULL, " Keiichi-kun, where were you the night of the Great Disaster?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Keiichi-kun, where were you the night of the Great Disaster?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.........神社から裏に抜けて...ずっと林道を進んで...＠.........吊り橋があるんですよ＠山に入る少し前に＠...そこから落ちて気を失ってました。￥
 	PlaySE(4, "s03/01/140101112", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………神社から裏に抜けて…ずっと林道を進んで…。",
 		   NULL, "\"...I had gone behind the shrine... then took a path through the woods for a while...", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101113", 128, 64);
@@ -138,13 +161,15 @@ void main()
 
 //「それは大災害の夜、つまり２１日から２２日にかけての深夜のこと？＠
 	PlaySE(4, "s03/00/kisya04006", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それは大災害の夜、つまり２１日から２２日にかけての深夜のこと？」",
-		   NULL, "\"Did this happen during the night of the disaster—between the 21st and the 22nd?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Did this happen during the night of the disaster—between the 21st and the 22nd?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.........いいえ＠２１日の火曜日の朝です＠それで、次の日の昼間に目を覚ましたわけですから......一日半はそこで気を失ってたと思います。￥
 	PlaySE(4, "s03/01/140101116", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………いいえ。",
 		   NULL, "\"......No.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101117", 128, 64);
@@ -157,33 +182,37 @@ void main()
 
 //「どうしてそんなところに＠　誰もが持つ疑問だけど、当日は平日で、しかも落ちた橋は君の家と学校からは大きく離れているよね？＠
 	PlaySE(4, "s03/00/kisya04007", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どうしてそんなところに？",
 		   NULL, "\"Why on earth were you there?", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04008", 128, 64);
 	OutputLine(NULL, "　誰もが持つ疑問だけど、当日は平日で、しかも落ちた橋は君の家と学校からは大きく離れているよね？」",
-		   NULL, " I mean, I'm sure everyone wants to know, but the bridge you fell from that day—a weekday, I might add—was quite far from both your house and the school, wasn't it?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I mean, I'm sure everyone wants to know, but the bridge you fell from that day—a weekday, I might add—was quite far from both your house and the school, wasn't it?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「....................................。＠
 	PlaySE(4, "s03/01/140101119", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………………………。」",
-		   NULL, "\"..................\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"..................\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「ざっくばらんに言って、君が大災害の発生を事前に知っていて＠村から逃げる途中に吊り橋から落ちたんじゃないかっていう声もあるんだけど？＠
 	PlaySE(4, "s03/00/kisya04009", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ざっくばらんに言って、君が大災害の発生を事前に知っていて、",
 		   NULL, "\"Speaking frankly, there are some who say you knew of the Great Disaster beforehand,", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04010", 128, 64);
 	OutputLine(NULL, "村から逃げる途中に吊り橋から落ちたんじゃないかっていう声もあるんだけど？」",
-		   NULL, " and fell from the rope bridge as you were trying to flee the village.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " and fell from the rope bridge as you were trying to flee the village.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...冗談じゃないです＠勝手なことを言わないで下さい。￥
 	PlaySE(4, "s03/01/140101120", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…冗談じゃないです。",
 		   NULL, "\"...This isn't a joke.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101121", 128, 64);
@@ -193,6 +222,7 @@ void main()
 
 //「私もずいぶんひどい言い分だと思うよ＠気を悪くしないでね＠......さて、次に圭一くんが落ちたという吊り橋なんだけど、...地図で言うとココだよね＠　神社の裏から林道を抜けて至る吊り橋というのは。＠
 	PlaySE(4, "s03/00/kisya04011", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「私もずいぶんひどい言い分だと思うよ。",
 		   NULL, "\"I think it's a terrible thing to say too.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04012", 128, 64);
@@ -200,15 +230,17 @@ void main()
 		   NULL, " Please don't be offended.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04013", 128, 64);
 	OutputLine(NULL, "……さて、次に圭一くんが落ちたという吊り橋なんだけど、…地図で言うとココだよね？",
-		   NULL, " ...Anyway, about the rope bridge you fell from... It was right here on the map, right?", Line_WaitForInput);
+		   NULL, " ...Anyway, about the rope bridge you fell from... It was right here on the map, right? ", Line_ModeSpecific);
 	PlaySE(4, "s03/00/kisya04014", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神社の裏から林道を抜けて至る吊り橋というのは。」",
-		   NULL, " The rope bridge beyond the back of the shrine and through the path in the woods.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "The rope bridge beyond the back of the shrine and through the path in the woods.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「..................多分＠...俺も、あんまり行かないところなので自信はないですが。￥
 	PlaySE(4, "s03/01/140101122", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………多分。",
 		   NULL, "\".........Probably.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101123", 128, 64);
@@ -218,25 +250,28 @@ void main()
 
 //「ははははは＠そんな行かないところにどうして平日の朝に行ったのか、疑問は尽きないけどなぁ。＠
 	PlaySE(4, "s03/00/kisya04015", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ははははは。",
 		   NULL, "\"Hahahahaha.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04016", 128, 64);
 	OutputLine(NULL, "そんな行かないところにどうして平日の朝に行ったのか、疑問は尽きないけどなぁ。」",
-		   NULL, " I guess I just want to know why you were out somewhere you'd never been before on a weekday morning.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I guess I just want to know why you were out somewhere you'd never been before on a weekday morning.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.......................................。￥
 	PlaySE(4, "s03/01/140101124", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\".....................\"", Line_Normal);
 	ClearMessage();
 
 //「それで、......この、君が気絶していたという河原なんだけど、実はそれはありえないという噂は知っているかい？＠
 	PlaySE(4, "s03/00/kisya04017", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それで、……この、君が気絶していたという河原なんだけど、実はそれはありえないという噂は知っているかい？」",
-		   NULL, "\"And then... well, about the river bed you fell unconscious on, have you heard the rumors about that being impossible?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"And then... well, about the river bed you fell unconscious on, have you heard the rumors about that being impossible?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -244,6 +279,7 @@ void main()
 
 //「...”ありえない”...＠......また、!w600......ありえない、!w900...ですか...＠　また...＠まだ...。＠
 	PlaySE(4, "s03/01/140101125", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…“ありえない”…。",
 		   NULL, "\"...'Impossible'...", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101126", 128, 64);
@@ -268,10 +304,11 @@ void main()
 		   NULL, " Again...", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101128", 128, 64);
 	OutputLine(NULL, "まだ…。」",
-		   NULL, " again...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, " again...\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //（しばらくの間、前原圭一は"ありえない"を何度か口ごもる￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（しばらくの間、前原圭一は“ありえない”を何度か口ごもる）",
 		   NULL, "(For a little while, Keiichi Maebara mutters the word \"impossible\" several times.)", Line_Normal);
 	ClearMessage();
@@ -280,41 +317,47 @@ void main()
 
 //「...どうして、...ありえないと？＠
 	PlaySE(4, "s03/01/140101129", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…どうして、…ありえないと？」",
-		   NULL, "\"...Why... would it be impossible?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"...Why... would it be impossible?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「火山ガスが発生したのは鬼ヶ淵という沼なのは知ってるよね＠
 	PlaySE(4, "s03/00/kisya04018", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「火山ガスが発生したのは鬼ヶ淵という沼なのは知ってるよね？",
-		   NULL, "\"You know how the volcanic gas originated in the Onigafuchi Swamp?", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"You know how the volcanic gas originated in the Onigafuchi Swamp?", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　それで学者の先生が緻密な模型を使ってシミュレーションをしたら、興味深いことがわかったんだってさ。＠
 	PlaySE(4, "s03/00/kisya04019", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それで学者の先生が緻密な模型を使ってシミュレーションをしたら、興味深いことがわかったんだってさ。」",
-		   NULL, "Some scholars did some pretty delicate simulations and modeling and discovered something very interesting.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Some scholars did some pretty delicate simulations and modeling and discovered something very interesting.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「....................................。￥
 	PlaySE(4, "s03/01/140101130", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"........................\"", Line_Normal);
 	ClearMessage();
 
 //「例の火山ガスってのは空気よりも重いらしくて＠地形に沿って、低いところへ低いところへ流れ込む、水みたいな性質があるんだってさ＠それで、発生源の鬼ヶ淵沼からそういうガスが噴出し、どれくらいの時間をかけて村を覆うかの実験がされたんだ＠.........そしたらさ＠君が気絶していたという河原＠流れ込むんだよ、!w800ガスが。￥
 	PlaySE(4, "s03/00/kisya04020", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「例の火山ガスってのは空気よりも重いらしくて、",
 		   NULL, "\"The volcanic gas was heavier than the air,", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04021", 128, 64);
 	OutputLine(NULL, "地形に沿って、低いところへ低いところへ流れ込む、水みたいな性質があるんだってさ。",
-		   NULL, " so it went along the ground, flowing into lower and lower places, kind of like what water does.", Line_WaitForInput);
+		   NULL, " so it went along the ground, flowing into lower and lower places, kind of like what water does. ", Line_ModeSpecific);
 	PlaySE(4, "s03/00/kisya04022", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それで、発生源の鬼ヶ淵沼からそういうガスが噴出し、どれくらいの時間をかけて村を覆うかの実験がされたんだ。",
-		   NULL, " And with Onigafuchi Swamp as its source, they were able to test how much time it would take for the gas to erupt and spread across the whole village.", Line_WaitForInput);
+		   NULL, "And with Onigafuchi Swamp as its source, they were able to test how much time it would take for the gas to erupt and spread across the whole village.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04023", 128, 64);
 	OutputLine(NULL, "………そしたらさ。",
 		   NULL, " ...So, well.", Line_WaitForInput);
@@ -328,45 +371,52 @@ void main()
 
 	PlaySE(4, "s03/00/kisya04025", 128, 64);
 	OutputLine(NULL, "流れ込むんだよ、",
-		   NULL, " The gas...", Line_WaitForInput);
+		   NULL, " The gas... ", Line_ModeSpecific);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ガスが。」",
-		   NULL, " It would have flowed down there.\"", Line_Normal);
+		   NULL, "It would have flowed down there.\"", Line_Normal);
 	ClearMessage();
 
 //「............よく言っている意味がわからないんですが。￥
 	PlaySE(4, "s03/01/140101131", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………よく言っている意味がわからないんですが。」",
 		   NULL, "\"......I don't really understand what you're getting at.\"", Line_Normal);
 	ClearMessage();
 
 //「つまり、君が本当にこの河原で気絶してたなら、君は丸一晩、猛毒の火山ガスの中にいたことになるんだよ＠だからつまり、君がここで気絶をしていた可能性は否定されたわけさ。＠
 	PlaySE(4, "s03/00/kisya04026", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「つまり、君が本当にこの河原で気絶してたなら、君は丸一晩、猛毒の火山ガスの中にいたことになるんだよ。",
-		   NULL, "\"In other words, if you were really passed out on that river bed, you would have been in the middle of all the toxic gas that was spreading everywhere that night.", Line_WaitForInput);
+		   NULL, "\"In other words, if you were really passed out on that river bed, you would have been in the middle of all the toxic gas that was spreading everywhere that night. ", Line_ModeSpecific);
 	PlaySE(4, "s03/00/kisya04027", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だからつまり、君がここで気絶をしていた可能性は否定されたわけさ。」",
-		   NULL, " That means there was no chance you could have been passed out there.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "That means there was no chance you could have been passed out there.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「....................................。￥
 	PlaySE(4, "s03/01/140101132", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"........................\"", Line_Normal);
 	ClearMessage();
 
 //「もっとざっくばらんに言うよ＠私はね、...君がウソをついてるんじゃないかなぁって思うんだ＠
 	PlaySE(4, "s03/00/kisya04028", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「もっとざっくばらんに言うよ。",
 		   NULL, "\"Allow me to be a little more frank.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04029", 128, 64);
 	OutputLine(NULL, "私はね、…君がウソをついてるんじゃないかなぁって思うんだ。",
-		   NULL, " I think that maybe... you might be telling a lie.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I think that maybe... you might be telling a lie.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......君は大災害の時、安全なところに身を潜めていて、...ガスが薄れた頃合を見計らって村に現れて自衛隊の人に保護された＠......どうかな＠　図星かなぁ？＠
 	PlaySE(4, "s03/00/kisya04030", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……君は大災害の時、安全なところに身を潜めていて、…ガスが薄れた頃合を見計らって村に現れて自衛隊の人に保護された。",
 		   NULL, "...During the Great Disaster, you were hiding in a safe place... keeping an eye out for when the gas got thinner, then reappeared and were secured by the SDF.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04031", 128, 64);
@@ -374,23 +424,26 @@ void main()
 		   NULL, " ...How about that?", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04032", 128, 64);
 	OutputLine(NULL, "　図星かなぁ？」",
-		   NULL, " Is that right on the mark?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, " Is that right on the mark?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //（しばらくの間、記者は前原圭一をおちょくるように問い詰めるが、深いため息が聞こえるだけだ。￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（しばらくの間、記者は前原圭一をおちょくるように問い詰めるが、深いため息が聞こえるだけだ。）",
 		   NULL, "(For a short time, the journalist presses Keiichi Maebara further, in a teasing way, but all that can be heard are heavy sighs.)", Line_Normal);
 	ClearMessage();
 
 //「............別に、仮にそうだったとしても、...俺は今さら驚きませんけどね。＠
 	PlaySE(4, "s03/01/140101133", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………別に、仮にそうだったとしても、…俺は今さら驚きませんけどね。」",
-		   NULL, "\"......Even if that was the case... I wouldn't be surprised at this point.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"......Even if that was the case... I wouldn't be surprised at this point.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「驚かないとは、...どういう意味だい？￥
 	PlaySE(4, "s03/00/kisya04033", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「驚かないとは、…どういう意味だい？」",
 		   NULL, "\"What do you mean... you wouldn't be surprised?\"", Line_Normal);
 	ClearMessage();
@@ -414,6 +467,7 @@ void main()
 
 //「.........あんたもさっき言いましたよね＠"ありえない"って＠......あの雛見沢では、ありえないことなんて、いくらでも起こるんです￥
 	PlaySE(4, "s03/01/140101134", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………あんたもさっき言いましたよね。",
 		   NULL, "\"...You said it before, didn't you?", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101135", 128, 64);
@@ -425,6 +479,7 @@ void main()
 	ClearMessage();
 
 //　...あそこじゃ、いないはずの場所に人がいる＠死んだはずの人が生きてる＠...そんなこと、珍しいことじゃないんですよ＠......まさか、俺自身が、死んだはずなのに生きているってヤツを、...立証しようとはね、......はははははは＠あはははははははは...はっはっはっはっはっはっは！＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あそこじゃ、いないはずの場所に人がいる。",
 		   NULL, "...There are people who shouldn't be exist.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101137", 128, 64);
@@ -432,23 +487,26 @@ void main()
 		   NULL, " Dead people end up alive.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101138", 128, 64);
 	OutputLine(NULL, "…そんなこと、珍しいことじゃないんですよ。",
-		   NULL, " ...It's not really that unusual.", Line_WaitForInput);
+		   NULL, " ...It's not really that unusual. ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140101139", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……まさか、俺自身が、死んだはずなのに生きているってヤツを、…立証しようとはね、……はははははは。",
-		   NULL, " ...Never thought I, of all people, would be asked to prove... that I was still alive when I was supposed to have died... hahahahahaha.", Line_WaitForInput);
+		   NULL, "...Never thought I, of all people, would be asked to prove... that I was still alive when I was supposed to have died... hahahahahaha.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101140", 128, 64);
 	OutputLine(NULL, "あはははははははは…はっはっはっはっはっはっは！」",
-		   NULL, " Ahahahahahahaha... ha-ha-ha-ha-ha-ha-ha-ha!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Ahahahahahahaha... ha-ha-ha-ha-ha-ha-ha-ha!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「あっははははははは！　はっはっは...。＠
 	PlaySE(4, "s03/00/kisya04034", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あっははははははは！　はっはっは…。」",
-		   NULL, "\"Ah-hahahahahaha! Ha-ha-ha...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "\"Ah-hahahahahaha! Ha-ha-ha...\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //（記者も前原圭一もしばらくの間、笑い合う。￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（記者も前原圭一もしばらくの間、笑い合う。）",
 		   NULL, "(The journalist and Keiichi Maebara both laugh for a while.)", Line_Normal);
 	ClearMessage();
@@ -464,26 +522,29 @@ void main()
 
 //「じゃあ圭一くん、話を変えるよ＠あの大災害が雛見沢連続怪死事件の５年目の祟りではないかという話には、どう思う？＠
 	PlaySE(4, "s03/00/kisya04035", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「じゃあ圭一くん、話を変えるよ。",
 		   NULL, "\"All right, then, I'll change the subject.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04036", 128, 64);
 	OutputLine(NULL, "あの大災害が雛見沢連続怪死事件の５年目の祟りではないかという話には、どう思う？」",
-		   NULL, " What do you think of the debate about whether this disaster was the curse—the fifth year of the serial freak death incidents in Hinamizawa?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " What do you think of the debate about whether this disaster was the curse—the fifth year of the serial freak death incidents in Hinamizawa?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「いや、それはないですね＠５年目の祟りは俺ですから。＠
 	PlaySE(4, "s03/01/140101141", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いや、それはないですね。",
 		   NULL, "\"I don't think it was.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101142", 128, 64);
 	OutputLine(NULL, "５年目の祟りは俺ですから。」",
-		   NULL, " I was the curse that year, after all.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I was the curse that year, after all.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「え＠　あははははは＠　何のこと？＠
 	PlaySE(4, "s03/00/kisya04037", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Hm?", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04038", 128, 64);
@@ -491,12 +552,13 @@ void main()
 		   NULL, " Ahahahaha!", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04039", 128, 64);
 	OutputLine(NULL, "　何のこと？」",
-		   NULL, " What do you mean?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " What do you mean?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「何のことって、......あんたの話に対する答えですよ。￥
 	PlaySE(4, "s03/01/140101143", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何のことって、……あんたの話に対する答えですよ。」",
 		   NULL, "\"What do I... I was just answering the question.\"", Line_Normal);
 	ClearMessage();
@@ -512,6 +574,7 @@ void main()
 
 //「あの大災害は、...まぁ、言っても信じないでしょうけど＠......俺が起こしたんです＠......俺がね、...こんな村、丸ごと死んじまえって願ったから、起こったんです。＠
 	PlaySE(4, "s03/01/140101144", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あの大災害は、…まぁ、言っても信じないでしょうけど。",
 		   NULL, "\"The curse... well, you probably won't believe me when I tell you this.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101145", 128, 64);
@@ -519,22 +582,24 @@ void main()
 		   NULL, " ...I was the one who caused it.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101146", 128, 64);
 	OutputLine(NULL, "……俺がね、…こんな村、丸ごと死んじまえって願ったから、起こったんです。」",
-		   NULL, " ...I was the one... who wished for the whole village to die, and it happened.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ...I was the one... who wished for the whole village to die, and it happened.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「ははははは...＠それは...豪快な話だね。＠
 	PlaySE(4, "s03/00/kisya04040", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ははははは…。",
 		   NULL, "\"Hahahahaha...", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04041", 128, 64);
 	OutputLine(NULL, "それは…豪快な話だね。」",
-		   NULL, " What an... exciting story.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " What an... exciting story.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「豪快＠　...そういう面白い言い方もあるんですね...。￥
 	PlaySE(4, "s03/01/140101147", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「豪快？",
 		   NULL, "\"Exciting?", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101148", 128, 64);
@@ -553,6 +618,7 @@ void main()
 
 //「鷹野さんも俺が殺したし、監督も大石も俺が殺した＠...あの時の俺にはね、何か神懸かり的な力が宿ってたんですよ＠.........そう、...例えるなら、足音かな。＠
 	PlaySE(4, "s03/01/140101149", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「鷹野さんも俺が殺したし、監督も大石も俺が殺した。",
 		   NULL, "\"I was the one who killed Takano-san, and Coach and Ooishi too.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101150", 128, 64);
@@ -560,22 +626,24 @@ void main()
 		   NULL, " ...At the time, I had some kind of divine power.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101151", 128, 64);
 	OutputLine(NULL, "………そう、…例えるなら、足音かな。」",
-		   NULL, " ......Yes... I suppose it was like footsteps.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ......Yes... I suppose it was like footsteps.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「足音...＠　って、...はははは、何だいそれ？＠
 	PlaySE(4, "s03/00/kisya04042", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「足音…？",
 		   NULL, "\"Footsteps...?", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04043", 128, 64);
 	OutputLine(NULL, "　って、…はははは、何だいそれ？」",
-		   NULL, " Wait... hahahahaha, what's that supposed to mean?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Wait... hahahahaha, what's that supposed to mean?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「あんた、...足音を聞いたこともないんですか＠...ぺたぺた＠ひたひた＠くっくっく。￥
 	PlaySE(4, "s03/01/140101152", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あんた、…足音を聞いたこともないんですか。",
 		   NULL, "\"You... have you never heard footsteps before?", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101153", 128, 64);
@@ -599,6 +667,7 @@ void main()
 
 //「あんたも、今日からは歩いてる時、不意に立ち止まってみると面白いですよ＠.........それでね＠...自分がちゃんと立ち止まったにも関わらず、!w1000......足音がひとつ、余計に聞こえたなら＠............気をつけた方がいいですよ＠......ふふふふふ。＠
 	PlaySE(4, "s03/01/140101156", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あんたも、今日からは歩いてる時、不意に立ち止まってみると面白いですよ。",
 		   NULL, "\"Today, when you're walking around, try stopping suddenly—something interesting will happen.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101157", 128, 64);
@@ -613,18 +682,20 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……足音がひとつ、余計に聞こえたなら、",
-		   NULL, " even though you'd already stopped walking......", Line_WaitForInput);
+		   NULL, " even though you'd already stopped walking...... ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140101159", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………気をつけた方がいいですよ。",
-		   NULL, " You'd better be careful, you know.", Line_WaitForInput);
+		   NULL, "You'd better be careful, you know.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101160", 128, 64);
 	OutputLine(NULL, "……ふふふふふ。」",
-		   NULL, " ...Huhuhuhuhu.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ...Huhuhuhuhu.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「あ...あははははは＠　そ、そうだね、気をつけるようにするよ＠はは、ははは！￥
 	PlaySE(4, "s03/00/kisya04044", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あ…あははははは！",
 		   NULL, "\"Ah... ahahahaha!", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04045", 128, 64);
@@ -637,6 +708,7 @@ void main()
 
 //「............そんなに俺、...面白いこと話してますか？￥
 	PlaySE(4, "s03/01/140101161", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………そんなに俺、…面白いこと話してますか？」",
 		   NULL, "\"......Is what I'm saying... really that funny to you?\"", Line_Normal);
 	ClearMessage();
@@ -651,19 +723,22 @@ void main()
 
 //「あんた、...さっきからへらへらと笑ってばかりですね...＠......監督と同じだ＠...俺のこと、同情したり話を聞いたりしてるふりをしながらその実、......人のことを異常者扱いしてる目だ。＠
 	PlaySE(4, "s03/01/140101162", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あんた、…さっきからへらへらと笑ってばかりですね…。",
 		   NULL, "\"You've... been doing nothing but laugh in my face this whole time...", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101163", 128, 64);
 	OutputLine(NULL, "……監督と同じだ。",
-		   NULL, " ...You're just like Coach.", Line_WaitForInput);
+		   NULL, " ...You're just like Coach. ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140101164", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…俺のこと、同情したり話を聞いたりしてるふりをしながらその実、……人のことを異常者扱いしてる目だ。」",
-		   NULL, " ...You pretend to sympathize with me, to listen to what I have to say... but your eyes are telling me you think I'm a lunatic.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "...You pretend to sympathize with me, to listen to what I have to say... but your eyes are telling me you think I'm a lunatic.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「はは、はは＠...そんなことはないよ＠ははは...。＠
 	PlaySE(4, "s03/00/kisya04047", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はは、はは。",
 		   NULL, "\"Haha, haha.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04048", 128, 64);
@@ -671,12 +746,13 @@ void main()
 		   NULL, " ...That's not true.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04049", 128, 64);
 	OutputLine(NULL, "ははは…。」",
-		   NULL, " Hahaha...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Hahaha...\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「いや、...俺にはわかるんです＠あんたの目は監督と同じだ。￥
 	PlaySE(4, "s03/01/140101165", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いや、…俺にはわかるんです。",
 		   NULL, "\"No... I can tell.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101166", 128, 64);
@@ -694,6 +770,7 @@ void main()
 
 //「............あの日以来、もう足音は聞こえない＠...だから俺にはもう、あんな恐ろしい力は残ってないだろうけど＠......今ここでもう一度、......あんたの死を願ってみるよ＠俺に不愉快な話ばかりをするあんたの死を＠
 	PlaySE(4, "s03/01/140101167", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………あの日以来、もう足音は聞こえない。",
 		   NULL, "\"......I never heard the footsteps again after that day.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101168", 128, 64);
@@ -701,15 +778,17 @@ void main()
 		   NULL, " ...So I don't think I have that terrible power anymore.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101169", 128, 64);
 	OutputLine(NULL, "……今ここでもう一度、……あんたの死を願ってみるよ。",
-		   NULL, " ...Perhaps... right here, right now, I'll wish for you to die.", Line_WaitForInput);
+		   NULL, " ...Perhaps... right here, right now, I'll wish for you to die. ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140101170", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺に不愉快な話ばかりをするあんたの死を。",
-		   NULL, " I'll wish for your death, for saying all these unpleasant things.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I'll wish for your death, for saying all these unpleasant things.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...そうだな、今回はひとつ、死に方も決めてみようかな＠.........鷹野さんは焼け死にだったから、!w1000............じゃああんたは逆に水だ＠...水に溺れて死ぬ、ってのはどうだい？￥
 	PlaySE(4, "s03/01/140101171", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そうだな、今回はひとつ、死に方も決めてみようかな。",
 		   NULL, "...Yes, this time, why don't I decide how you die?", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101172", 128, 64);
@@ -738,6 +817,7 @@ void main()
 //「...絶好調だった当時の俺なら、次の朝までには必ず死んでる＠.........さてあんたは、...何日後に水で死ぬかな＠　...ふ、ははははははははははははははは＠...あんたも気をつけろよ＠!s0俺!w300如!w300キ!w300ニ!w300、!w300祟!w300リ!w300殺!w300サ!w300レ!w300ル!w300ナ？!w1500...!w100...!w100は!w100は!w100は!w100は!w100は!w100は!w100は!w100は!w100は!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w100っは!w500
 //!sd
 	PlaySE(4, "s03/01/140101174", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…絶好調だった当時の俺なら、次の朝までには必ず死んでる。",
 		   NULL, "\"...If I'm in top form like I was then, you'd die before tomorrow morning for sure.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140101175", 128, 64);
@@ -749,10 +829,11 @@ void main()
 
 	PlaySE(4, "s03/01/140101176", 128, 64);
 	OutputLine(NULL, "　…ふ、ははははははははははははははは。",
-		   NULL, " ...Hu, hahahahahahahahahaha.", Line_WaitForInput);
+		   NULL, " ...Hu, hahahahahahahahahaha. ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140101177", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…あんたも気をつけろよ。",
-		   NULL, " ...You'd better be careful, you know.", Line_WaitForInput);
+		   NULL, "...You'd better be careful, you know.", Line_WaitForInput);
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
 
@@ -1018,9 +1099,10 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 //!sd
 
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //（前原圭一の笑い声の途中で録音は止められている。￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（前原圭一の笑い声の途中で録音は止められている。）",
 		   NULL, "(The recording ends in the middle of Keiichi Maebara's laughter.)", Line_Normal);
 	ClearMessage();

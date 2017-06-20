@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 
 //■エピローグ
@@ -14,22 +22,25 @@ void main()
 	DrawScene( "bg_047", 1000 );
 
 //!s100
-	SetDrawingPointOfMessage( 0, 6 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 0, 6 ); }
 	SetStyleOfMessageSwinging( 1 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 //locate 4,6
 //　昭和５８年６月２２日未明。
+	ClearMessage();
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月２２日未明。",
 		   NULL, "June 22, 1983, early morning.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 	SetStyleOfMessageSwinging( 0 );
 //　Ｘｘ県鹿骨市雛見沢村で、広域災害が発生。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＸＸ県鹿骨市雛見沢村で、広域災害が発生。",
 		   NULL, "A widespread disaster occurred in Hinamizawa Village, Shishibone, ___ Prefecture.", Line_ContinueAfterTyping);
 
@@ -43,36 +54,40 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。",
 		   NULL, "Volcanic gas (carbon dioxide and hydrogen sulfide) erupted from Onigafuchi Swamp, one of the Hinamizawa area's water sources, and spread through the entire village.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　犠牲者１２００余名。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　犠牲者１２００余名。",
 		   NULL, "There were 1200 victims.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　行方不明者２０余名。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　行方不明者２０余名。",
 		   NULL, "20 have gone missing.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　周辺自治体から約６０万人が避難する空前の大災害となった。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　周辺自治体から約６０万人が避難する空前の大災害となった。",
 		   NULL, "The catastrophe was unprecedented, forcing local governments to evacuate approximately six hundred thousand people.", Line_ContinueAfterTyping);
 
@@ -82,6 +97,7 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　その後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、",
 		   NULL, "According to later investigations, magma pools and hot springs were uncovered directly under Onigafuchi Swamp,", Line_ContinueAfterTyping);
 
@@ -103,15 +119,17 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。",
 		   NULL, "In addition, directly after the incident broke out, many came forth claiming this disaster was a curse based in Hinamizawa Village legends, first sparking a wave of chaos.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、",
 		   NULL, "There were apparently local legends of a curse spreading a miasma, destroying the village,", Line_ContinueAfterTyping);
 
@@ -133,16 +151,23 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。
-	OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
-		   NULL, "More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.", Line_ContinueAfterTyping);
+	if (AdvMode) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
+			   NULL, "<size=-2>More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.</size>", Line_ContinueAfterTyping);
+	} else {
+		OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
+			   NULL, "More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.", Line_ContinueAfterTyping);
+	}
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、",
 		   NULL, "In addition, relatives of those in Hinamizawa Village who had escaped the disaster complained of sickness afterwards and were hospitalized.", Line_ContinueAfterTyping);
 
@@ -163,6 +188,7 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、",
 		   NULL, "On top of that, several relatives professing to be possessed by Oyashiro-sama's curse committed suicide in strange ways...", Line_ContinueAfterTyping);
 
@@ -181,6 +207,7 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、",
 		   NULL, "Wild visions of terrible toxic gas sneaking around in the middle of the night killing people spilled across the country,", Line_ContinueAfterTyping);
 
@@ -194,22 +221,24 @@ void main()
 		   NULL, " causing a steady stream of people complaining of insomnia, difficulty breathing, headache, dizziness, etc.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　中には取り憑かれたと自称し、奇行を行なう者もいた。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　中には取り憑かれたと自称し、奇行を行なう者もいた。",
 		   NULL, "Some who identified themselves as being obsessed by it began doing odd things.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　それらのほとんどは過激な報道による思い込みによるものだったが、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それらのほとんどは過激な報道による思い込みによるものだったが、",
 		   NULL, "Most of these were mistakenly attributed by the tabloid press...", Line_ContinueAfterTyping);
 
@@ -229,6 +258,7 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。",
 		   NULL, "The Hinamizawa Village region, the object of all kinds of rumors and speculation, is currently closed off, and even flying overhead is prohibited.", Line_ContinueAfterTyping);
 
@@ -238,15 +268,17 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　ガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。",
 		   NULL, "The prohibition was, at one point, undone as a result of a decrease in the gas's density, but that autumn another gas burst was confirmed, leading to the area being cordoned off again.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である...。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である…。",
 		   NULL, "Word is that the area is sound asleep, all traces of its former life intact and left to rot...", Line_ContinueAfterTyping);
 	FadeOutBGM( 2, 10, TRUE );
@@ -257,26 +289,29 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　最終的な生存者は、雛見沢村ＸＸＸ番地在住の男子、前原圭一（１Ｘ歳）のみ。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最終的な生存者は、雛見沢村ＸＸＸ番地在住の男子、前原圭一（１Ｘ歳）のみ。",
 		   NULL, "Only one survivor remains—Keiichi Maebara, age 1_, who lived at ___ Hinamizawa Village.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　救出時はガスによる呼吸困難で肺水腫を起こしかけていたが、必死の救命活動の結果、一命を取り留めた。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　救出時はガスによる呼吸困難で肺水腫を起こしかけていたが、必死の救命活動の結果、一命を取り留めた。",
 		   NULL, "At the time of rescue, he had some trouble breathing due to fluid buildup in his lungs, but as a result of life-saving procedures he was kept alive.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　現在は県内の総合病院に入院している。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　現在は県内の総合病院に入院している。",
 		   NULL, "He is currently in a general hospital somewhere in the prefecture.", Line_ContinueAfterTyping);
 
@@ -286,36 +321,40 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　連日取材陣が押しかけているが、一切の面会は謝絶されている。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　連日取材陣が押しかけているが、一切の面会は謝絶されている。",
 		   NULL, "The press have been asking for him for some time, but all interviews are being refused.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　......彼が、雛見沢で何を見たのか。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……彼が、雛見沢で何を見たのか。",
 		   NULL, "...What did he see in Hinamizawa?", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　６月の２１日から２２日にかけて、雛見沢で何があったのか。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　６月の２１日から２２日にかけて、雛見沢で何があったのか。",
 		   NULL, "What happened between June 21 and June 22 in Hinamizawa Village?", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　今日でも彼は、黙して語ろうとしない...。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日でも彼は、黙して語ろうとしない…。",
 		   NULL, "Today he remains silent, unwilling to speak of it...", Line_ContinueAfterTyping);
 

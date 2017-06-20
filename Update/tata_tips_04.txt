@@ -1,6 +1,14 @@
 
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 //*Sub_Tips_048
 //gosub *tip_s
@@ -16,9 +24,11 @@ void main()
 
 //「詩音さんも少しは手伝ってくださいー。＠
 	PlaySE(4, "s20/10/441000024", 128, 64);
+	ClearMessage();
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「詩音さんも少しは手伝ってくださいー。」",
-		   NULL, "\"Shion-san, why don't you help out a little?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Shion-san, why don't you help out a little?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -26,6 +36,7 @@ void main()
 
 //「女の子に重いものを運ばせようって言うんですか＠そんなだからいい歳になっても相手が見つからないんですよ監督は。￥
 	PlaySE(4, "s20/06/440600012", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「女の子に重いものを運ばせようって言うんですか。",
 		   NULL, "\"Are you asking a girl to carry something heavy?", Line_WaitForInput);
 	OutputLine(NULL, "そんなだからいい歳になっても相手が見つからないんですよ監督は。」",
@@ -36,11 +47,12 @@ void main()
 
 //「えーとですね、そういうのを曰くこう言います＠えー、余計なお世話です。＠
 	PlaySE(4, "s20/10/441000025", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えーとですね、そういうのを曰くこう言います。",
 		   NULL, "\"Well, you see, at times like these, here's what people say.", Line_WaitForInput);
 	OutputLine(NULL, "えー、余計なお世話です。」",
-		   NULL, " Ahem—it's none of your business.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Ahem—it's none of your business.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -48,6 +60,7 @@ void main()
 
 //「あっはははははははは。￥
 	PlaySE(4, "s20/06/440600013", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あっはははははははは。」",
 		   NULL, "\"Ahahahahahahaha.\"", Line_Normal);
 	ClearMessage();
@@ -56,12 +69,14 @@ void main()
 	DrawSceneWithMask( "bg_151", "up", 0, 0, 300 );
 
 //　今日のバーベキュー大会に使った器材をワゴン車いっぱいに積む＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日のバーベキュー大会に使った器材をワゴン車いっぱいに積む。",
-		   NULL, "He was loading the station wagon with heaps of equipment we'd used for today's barbecue meeting.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "He was loading the station wagon with heaps of equipment we'd used for today's barbecue meeting.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　手伝ってくれた父兄たちもみんな帰り始めている￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　手伝ってくれた父兄たちもみんな帰り始めている。",
 		   NULL, "All the fathers and sons who had helped were starting to get on their way.", Line_Normal);
 	ClearMessage();
@@ -70,6 +85,7 @@ void main()
 
 //「......さて＠詩音さんはどうしますか＠あなた、ここまでは何で来ました＠　自転車でしたら積んで送って差し上げますよ。＠
 	PlaySE(4, "s20/10/441000026", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……さて。",
 		   NULL, "\"...All right.", Line_WaitForInput);
 	OutputLine(NULL, "詩音さんはどうしますか。",
@@ -79,8 +95,8 @@ void main()
 		   NULL, " Why did you come all the way here?", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000028", 128, 64);
 	OutputLine(NULL, "　自転車でしたら積んで送って差し上げますよ。」",
-		   NULL, " If you rode here on your bike, I can give you a lift.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " If you rode here on your bike, I can give you a lift.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -88,6 +104,7 @@ void main()
 
 //「バイクだからいいです＠お心遣いだけでうれしいってことにしときます。￥
 	PlaySE(4, "s20/06/440600014", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「バイクだからいいです。",
 		   NULL, "\"I did, but I'll be fine riding back.", Line_WaitForInput);
 	OutputLine(NULL, "お心遣いだけでうれしいってことにしときます。」",
@@ -98,11 +115,12 @@ void main()
 
 //「............今日は来てくれてうれしかったですよ＠やはりマネージャーさんがいないとパッとしませんからねぇ。＠
 	PlaySE(4, "s20/10/441000029", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………今日は来てくれてうれしかったですよ。",
 		   NULL, "\"......I was glad you came today.", Line_WaitForInput);
 	OutputLine(NULL, "やはりマネージャーさんがいないとパッとしませんからねぇ。」",
-		   NULL, " Things don't quite fit together without the manager here.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Things don't quite fit together without the manager here.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -110,6 +128,7 @@ void main()
 
 //「まだ私、マネージャーなんですか＠　１年もまるまるサボってんだから、こんな無能マネージャー、いい加減に解雇するべきだと思いますよ。￥
 	PlaySE(4, "s20/06/440600015", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まだ私、マネージャーなんですか？",
 		   NULL, "\"Am I still the manager?", Line_WaitForInput);
 	OutputLine(NULL, "　１年もまるまるサボってんだから、こんな無能マネージャー、いい加減に解雇するべきだと思いますよ。」",
@@ -120,11 +139,12 @@ void main()
 
 //「えぇ＠詩音さんが辞めたいって自分で言えたらいつでも解雇してあげますよ。＠
 	PlaySE(4, "s20/10/441000030", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"All right.", Line_WaitForInput);
 	OutputLine(NULL, "詩音さんが辞めたいって自分で言えたらいつでも解雇してあげますよ。」",
-		   NULL, " If you say you want to quit, then I'll fire you whenever you want.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " If you say you want to quit, then I'll fire you whenever you want.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -132,6 +152,7 @@ void main()
 
 //「...ちぇ＠ズルイなぁ＠/
 	PlaySE(4, "s20/06/440600016", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…ちぇ。",
 		   NULL, "\"...Grr.", Line_WaitForInput);
 	OutputLine(NULL, "ズルイなぁ。",
@@ -152,13 +173,15 @@ void main()
 
 //「詩音ちゃんももっともっと素直になれば、とってもキュートで可愛い女の子なのに＠お父さんは悲しいですよ、一体どこで捻じ曲がってこんなにひねくれてしまったんだか＠　あぁ、お父さんの愛の抱擁で力強く包み込めば目が覚めますか？＠　でしたら遠慮なく！＠/
 	PlaySE(4, "s20/10/441000031", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「詩音ちゃんももっともっと素直になれば、とってもキュートで可愛い女の子なのに。",
 		   NULL, "\"If you were more honest with yourself, Shion-chan, you'd be far cuter.", Line_WaitForInput);
 	OutputLine(NULL, "お父さんは悲しいですよ、一体どこで捻じ曲がってこんなにひねくれてしまったんだか！",
-		   NULL, " Your father is so sad—where did he go so wrong as to deserve such a rebellious daughter?", Line_WaitForInput);
+		   NULL, " Your father is so sad—where did he go so wrong as to deserve such a rebellious daughter? ", Line_ModeSpecific);
 	PlaySE(4, "s20/10/441000032", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁ、お父さんの愛の抱擁で力強く包み込めば目が覚めますか？！",
-		   NULL, " Oh, perhaps if your father catches you in a big, loving embrace, you'll open your eyes?!", Line_WaitForInput);
+		   NULL, "Oh, perhaps if your father catches you in a big, loving embrace, you'll open your eyes?!", Line_WaitForInput);
 	OutputLine(NULL, "　でしたら遠慮なく！！",
 		   NULL, " Well then, don't mind if I do!!", Line_WaitForInput);
 
@@ -171,6 +194,7 @@ void main()
 	ClearMessage();
 
 //　...監督が精一杯ふざけてみせるが、詩音は遠くを見るような目で微笑むだけで、取り合わなかった￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…監督が精一杯ふざけてみせるが、詩音は遠くを見るような目で微笑むだけで、取り合わなかった。",
 		   NULL, "...Coach was fooling around with all his might, but Shion just smiled into the distance without responding.", Line_Normal);
 	ClearMessage();
@@ -180,31 +204,35 @@ void main()
 
 //「............何も変わってない＠監督がヘンな人で、みんなの賑わいも何も変わってないのに。＠
 	PlaySE(4, "s20/06/440600018", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………何も変わってない。",
 		   NULL, "\"......Nothing's changed.", Line_WaitForInput);
 	OutputLine(NULL, "監督がヘンな人で、みんなの賑わいも何も変わってないのに。」",
-		   NULL, " You're still a weirdo, Coach, and everyone's still lively as ever.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " You're still a weirdo, Coach, and everyone's still lively as ever.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...悟史くんだけ、いない＠...とおっしゃりたいのですか。＠
 	PlaySE(4, "s20/10/441000034", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…悟史くんだけ、いない。",
 		   NULL, "\"...Even though Satoshi-kun isn't here.", Line_WaitForInput);
 	OutputLine(NULL, "…とおっしゃりたいのですか。」",
-		   NULL, " ...Is that what you wanted to say?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ...Is that what you wanted to say?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.....................。＠
 	PlaySE(4, "s20/06/440600019", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………………。」",
-		   NULL, "\"............\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"............\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「帰ってきますよ＠きっと＠待っている人がいるんですから。＠
 	PlaySE(4, "s20/10/441000035", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「帰ってきますよ。",
 		   NULL, "\"He'll come home.", Line_WaitForInput);
 	PlaySE(4, "s20/05/vtk2_rika2062", 128, 64);
@@ -212,12 +240,13 @@ void main()
 		   NULL, " I'm sure of it.", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000036", 128, 64);
 	OutputLine(NULL, "待っている人がいるんですから。」",
-		   NULL, " He has someone waiting for him.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " He has someone waiting for him.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...............ふん＠...勝手なこと言ってて下さい。￥
 	PlaySE(4, "s20/06/440600020", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……………ふん。",
 		   NULL, "\"......Hmph.", Line_WaitForInput);
 	OutputLine(NULL, "…勝手なこと言ってて下さい。」",
@@ -226,15 +255,17 @@ void main()
 
 //「彼も罪作りな人ですよねぇ＠こんな可愛い彼女を置き去りにして、どこへ行ってしまったんだか。＠
 	PlaySE(4, "s20/10/441000037", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「彼も罪作りな人ですよねぇ。",
 		   NULL, "\"He sure is cruel, isn't he?", Line_WaitForInput);
 	OutputLine(NULL, "こんな可愛い彼女を置き去りにして、どこへ行ってしまったんだか。」",
-		   NULL, " Going off to who knows where, leaving such a cute girlfriend behind.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Going off to who knows where, leaving such a cute girlfriend behind.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「へ？＠　かか、彼女！＠　誰が＠　誰が！＠　......へ？！＠
 	PlaySE(4, "s20/06/440600021", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「へ？！",
 		   NULL, "\"Heh?!", Line_WaitForInput);
 	OutputLine(NULL, "　かか、彼女！！",
@@ -247,37 +278,41 @@ void main()
 		   NULL, " Who?!", Line_WaitForInput);
 	PlaySE(4, "s20/06/440600024", 128, 64);
 	OutputLine(NULL, "　……へ？！」",
-		   NULL, " ...Huh?!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ...Huh?!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「ぷ、...くっくっく、はっはっはっはっはっは！￥
 	PlaySE(4, "s20/10/441000038", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぷ、…くっくっく、はっはっはっはっはっは！」",
 		   NULL, "\"Pfft... hu hu hu, ha ha ha ha ha ha!\"", Line_Normal);
 	ClearMessage();
 
 //「......ちぇー、...もう＠　いつまで笑ってるんですか！＠　かぁんとーくー！！＠
 	PlaySE(4, "s20/06/440600025", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……ちぇー、…もう！",
 		   NULL, "\"...Pff... geez!", Line_WaitForInput);
 	OutputLine(NULL, "　いつまで笑ってるんですか！！",
 		   NULL, " Quit laughing already!!", Line_WaitForInput);
 	PlaySE(4, "s20/06/440600026", 128, 64);
 	OutputLine(NULL, "　かぁんとーくー！！」",
-		   NULL, " Coooach!!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Coooach!!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「はっはっは＠　わーっはっはっはっは！！＠
 	PlaySE(4, "s20/10/441000039", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はっはっは！",
 		   NULL, "\"Ha ha ha!", Line_WaitForInput);
 	OutputLine(NULL, "　わーっはっはっはっは！！」",
-		   NULL, " Wahh ha ha ha!!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, " Wahh ha ha ha!!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　しばらくの間、監督はおなかをよじりながら笑い転げていた...￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しばらくの間、監督はおなかをよじりながら笑い転げていた…。",
 		   NULL, "Coach bent over and laughed heartily for a little while...", Line_Normal);
 	ClearMessage();
@@ -287,11 +322,12 @@ void main()
 
 //「では、またお会いしましょうね＠試合にもたまには応援に来てくださいよ。＠
 	PlaySE(4, "s20/10/441000040", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「では、またお会いしましょうね。",
 		   NULL, "\"We'll see each other again.", Line_WaitForInput);
 	OutputLine(NULL, "試合にもたまには応援に来てくださいよ。」",
-		   NULL, " Please come and root for us once in a while, okay?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Please come and root for us once in a while, okay?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -299,6 +335,7 @@ void main()
 
 //「ま、気が向いたら＠...私、マネージャーなんか全然、もぅやる気ないんですから。￥
 	PlaySE(4, "s20/06/440600027", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ま、気が向いたら。",
 		   NULL, "\"If I feel like it.", Line_WaitForInput);
 	OutputLine(NULL, "…私、マネージャーなんか全然、もぅやる気ないんですから。」",
@@ -309,14 +346,15 @@ void main()
 
 //「...いいんですよ＠あなたが嫌ならいつでもクビにしてあげますよ＠嫌がるのを無理やりってのは私の性ではありませんからね。＠
 	PlaySE(4, "s20/10/441000041", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…いいんですよ。",
 		   NULL, "\"...That's fine.", Line_WaitForInput);
 	OutputLine(NULL, "あなたが嫌ならいつでもクビにしてあげますよ。",
 		   NULL, " If you don't like it, I'll fire you.", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000042", 128, 64);
 	OutputLine(NULL, "嫌がるのを無理やりってのは私の性ではありませんからね。」",
-		   NULL, " I'm not the kind of person who likes forcing people to do things against their will.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I'm not the kind of person who likes forcing people to do things against their will.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -324,6 +362,7 @@ void main()
 
 //「..............................ちぇ＠あーはいはい＠　すみませんねすみませんね＠　私の負けです＠気が向いたらまた応援に来ますので、今日は堪忍して下さい。￥
 	PlaySE(4, "s20/06/440600028", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………………………ちぇ。",
 		   NULL, "\"..................Grr.", Line_WaitForInput);
 	OutputLine(NULL, "あーはいはい！",
@@ -343,6 +382,7 @@ void main()
 
 //「ふっふっふ＠　おっと、もうこんな時間＠　器材返す約束の時間が...＠　先方をもうだいぶ待たせてますね＠　では、今日はこの辺で＠　また次の試合でお会いしましょう！＠
 	PlaySE(4, "s20/10/441000043", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふっふっふ！",
 		   NULL, "\"Hu hu hu!", Line_WaitForInput);
 	OutputLine(NULL, "　おっと、もうこんな時間！",
@@ -358,8 +398,8 @@ void main()
 		   NULL, " I'll be leaving for today, then!", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000047", 128, 64);
 	OutputLine(NULL, "　また次の試合でお会いしましょう！」",
-		   NULL, " Let's meet again at the next game!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Let's meet again at the next game!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -367,6 +407,7 @@ void main()
 
 //「えぇ、気が向いたらね＠さよなら、監督。￥
 	PlaySE(4, "s20/06/440600032", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えぇ、気が向いたらね。",
 		   NULL, "\"Yes, if I feel like it.", Line_WaitForInput);
 	OutputLine(NULL, "さよなら、監督。」",

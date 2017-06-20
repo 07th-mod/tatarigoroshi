@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 //*Sub_Tips_057
 //gosub *tip_s
@@ -17,89 +25,99 @@ void main()
 	SetStyleOfMessageSwinging( 2 );
 
 //福児庶エ２－３第４４号
+	ClearMessage();
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "福児庶エ２−３第４４号",
 		   NULL, "Fukujisho D2-3 Number 44", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 //locate 12,2
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //昭和５２年Ｘ月ＸＸ日
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "昭和５２年Ｘ月ＸＸ日",
 		   NULL, "______ __, 1977", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 	SetStyleOfMessageSwinging( 0 );
 //児童名：
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "児童名：",
 		   NULL, "Child name:", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　北条沙都子（Ｘ歳）
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条沙都子（Ｘ歳）",
 		   NULL, "Satoko Houjou (_ y/o)", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　鹿骨市雛見沢村ＸＸＸ番地在住/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鹿骨市雛見沢村ＸＸＸ番地在住",
 		   NULL, "Residence: ___ Hinamizawa Village, Shishibone", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //（１）相談の経路
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（１）相談の経路",
 		   NULL, "(i) Consultation circumstances", Line_ContinueAfterTyping);
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　本児より子ども虐待ＳＯＳに電話相談有り。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本児より子ども虐待ＳＯＳに電話相談有り。",
 		   NULL, "Telephone SOS from child of child abuse.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //（２）虐待の状況
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（２）虐待の状況",
 		   NULL, "(ii) Abuse situation", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　本児が養父に身体的虐待を受けているという訴え。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本児が養父に身体的虐待を受けているという訴え。",
 		   NULL, "Child claims she is being physically abused by her adoptive father.", Line_ContinueAfterTyping);
 
@@ -109,57 +127,63 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //（３）家族構成（●虐待者）
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（３）家族構成（●虐待者）",
 		   NULL, "(iii) Family structure (● marks abusers)", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　●養父、実母、兄、本児
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　●養父、実母、兄、本児",
 		   NULL, "●Adoptive father, real mother, older brother, child in question", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　※養父と実母は昭和ＸＸ年に入籍。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　※養父と実母は昭和ＸＸ年に入籍。",
 		   NULL, "Note: Adoptive father and real mother entered family registry in 19__.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //本児は離婚した前夫との子。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "本児は離婚した前夫との子。",
 		   NULL, "The child is the daughter of the mother's previous husband.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //（４）児童相談所の対応
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（４）児童相談所の対応",
 		   NULL, "(iv) Child consultation center's response", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　本児より電話相談が入り、同日、学校に電話で、本児の状況を聞き取り。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本児より電話相談が入り、同日、学校に電話で、本児の状況を聞き取り。",
 		   NULL, "On the day of the child's telephone consultation, the center called the child's school and asked of her situation.", Line_ContinueAfterTyping);
 
@@ -173,12 +197,13 @@ void main()
 		   NULL, " On that day, the child welfare officer on duty visited the child's house and conducted an interview.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　養父は真摯に指導を受け入れ、以後、市の育児ワークショップを受講することに同意した。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　養父は真摯に指導を受け入れ、以後、市の育児ワークショップを受講することに同意した。",
 		   NULL, "The adoptive father sincerely listened to instruction and agreed to take child-raising workshops in the city from now on.", Line_ContinueAfterTyping);
 
@@ -193,21 +218,23 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //（５）その他
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（５）その他",
 		   NULL, "(v) Other notes", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　市教育相談所で本児に対し数度のカウンセリングの結果、/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　市教育相談所で本児に対し数度のカウンセリングの結果、",
 		   NULL, "As a result of numerous counseling sessions at the city's education consultation office regarding the child,", Line_ContinueAfterTyping);
 
@@ -221,12 +248,13 @@ void main()
 		   NULL, " we learned there was a high possibility the cause of the child's excessive distrust towards her adoptive father was the result of a lack of communication.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　当初訴えのあったような虐待は実際には行なわれておらず、本児が養父を遠ざけるため、虚実の訴えをした様子。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　当初訴えのあったような虐待は実際には行なわれておらず、本児が養父を遠ざけるため、虚実の訴えをした様子。",
 		   NULL, "The abuse she claimed hadn't actually taken place—she had made a false report to distance herself from her adoptive father.", Line_ContinueAfterTyping);
 
@@ -236,16 +264,18 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //（以下は当時の担当者のえんぴつによる走り書き）
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（以下は当時の担当者のえんぴつによる走り書き）",
 		   NULL, "(Below is a note written in pencil by the person on duty at the time)", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　むしろ娘の方に問題があったようだ。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　むしろ娘の方に問題があったようだ。",
 		   NULL, "The problem appeared to be more with the daughter.", Line_ContinueAfterTyping);
 
@@ -259,12 +289,13 @@ void main()
 		   NULL, " Chief Investigator F of the city's education consultation office said that most of her stories of abuse were likely fabrications.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　今後は本児への指導を中心に行なうこととなった。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今後は本児への指導を中心に行なうこととなった。",
 		   NULL, "They decided to shift the focus of their coaching to the child.", Line_ContinueAfterTyping);
 
