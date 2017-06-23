@@ -19,7 +19,6 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 
 	DisableWindow();
-	SetValidityOfInput( FALSE );
 	DrawScene( "black", 3000 );
 
 	PlayBGM( 1, "msys12", 128, 0 );
@@ -36,11 +35,7 @@ void main()
 	DrawScene( "tyuui2", 1000 );
 	DrawScene( "black", 4000 );
 
-
-
-
 	Wait( 3000 );
-	SetValidityOfInput( TRUE );
 
 ////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 //!sd
@@ -564,14 +559,14 @@ void main()
 	OutputLine(NULL, "　腸引きずり出されて、耳鼻そぎ落とされてぇ。",
 		   NULL, " Her intestines were pulled out, and her ears and nose cut off.", Line_WaitForInput);
 	OutputLine(NULL, "こういう死に方はしたくねぇよなぁ。",
-		   NULL, " That's definitely not how I want to go.", Line_WaitForInput);
+		   NULL, " That's definitely not how I want to go. ", Line_ModeSpecific);
 	OutputLine(NULL, "指が惨いよな。",
-		   NULL, " Her fingers are in a bad state, too.", Line_WaitForInput);
+		   NULL, "Her fingers are in a bad state, too.", Line_WaitForInput);
 	OutputLine(NULL, "両手両指に五寸釘がびっしり打たれてる。",
-		   NULL, " There are long nails stuck in all of them, on both hands. ", Line_ModeSpecific);
+		   NULL, " There are long nails stuck in all of them, on both hands.", Line_WaitForInput);
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "どうゆう拷問だよ、コレ。」",
-		   NULL, "What kind of torture was this, anyway?\"", Line_Normal);
+		   NULL, " What kind of torture was this, anyway?\"", Line_Normal);
 	ClearMessage();
 
 //■『ひぐらしのなく頃に』タイトルの表示
