@@ -211,13 +211,14 @@ void main()
 		   NULL, " Contacted anti-abuse network in the city.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　助言指導とし、以後定期的に地域の民生委員が訪問指導することとなった。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　助言指導とし、以後定期的に地域の民生委員が訪問指導することとなった。",
-		   NULL, " As part of this suggested coaching, a district welfare officer in the area began visiting for coaching at fixed intervals.", Line_ContinueAfterTyping);
+		   NULL, "As part of this suggested coaching, a district welfare officer in the area began visiting for coaching at fixed intervals.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);

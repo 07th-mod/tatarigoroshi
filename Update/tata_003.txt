@@ -576,7 +576,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 	ShakeScreen( 1, 50, 20, 4, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -899,15 +899,16 @@ void main()
 
 	PlaySE( 3, "wa_010", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 // !s0　それはメガネや制服だって同じなんですよ！!sd/
 //!s0
 
 
 	PlaySE(4, "s19/00/cusa50013", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Man</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはメガネや制服だって同じなんですよ！",
-		   NULL, " And that goes for glasses and school uniforms too!", Line_ContinueAfterTyping);
+		   NULL, "And that goes for glasses and school uniforms too!", Line_ContinueAfterTyping);
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	PlaySE( 3, "wa_011", 128, 64 );
@@ -917,11 +918,10 @@ void main()
 // 　そこを前原先生はよく理解している！＠　イベントは参加毎に必ず壁で大行列だし...、￥
 	PlaySE(4, "s19/00/cusa50014", 128, 64);
 	OutputLine(NULL, "　そこを前原先生はよく理解している！！",
-		   NULL, " Maebara-sensei understands these things perfectly!! ", Line_ModeSpecific);
+		   NULL, " Maebara-sensei understands these things perfectly!!", Line_WaitForInput);
 	PlaySE(4, "s19/00/cusa50015", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Man</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　イベントは参加毎に必ず壁で大行列だし…、」",
-		   NULL, "Every event sees him along the wall, with a huge lineup...\"", Line_Normal);
+		   NULL, " Every event sees him along the wall, with a huge lineup...\"", Line_Normal);
 	ClearMessage();
 
 //「あ、あのすみません...＠絵ってのは...壁に飾るものじゃないんですか...？？＠
@@ -968,7 +968,7 @@ void main()
 
 	PlaySE( 3, "wa_010", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -999,7 +999,7 @@ void main()
 	ShakeScreen( 1, 50, 20, 3, 0, );
 
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2641,7 +2641,7 @@ void main()
 	ShakeScreen( 1, 50, 20, 1, 0, );
 	PlaySE( 3, "wa_029", 128, 64 );
 	ShakeScreen( 0, 50, 20, 1, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -4567,7 +4567,7 @@ void main()
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -5075,7 +5075,7 @@ void main()
 	ShakeScreen( 1, 50, 20, 4, 0, );
 	DrawScene( "bg_235", 400 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -5436,7 +5436,7 @@ void main()
 
 	PlaySE( 3, "wa_006", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -5806,7 +5806,7 @@ void main()
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -7121,7 +7121,7 @@ void main()
 
 	ShakeScreen( 1, 50, 20, 3, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -7665,7 +7665,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 	ShakeScreen( 1, 50, 20, 4, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -8033,7 +8033,7 @@ void main()
 
 	PlaySE( 3, "wa_005", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 

@@ -6571,7 +6571,7 @@ void main()
 // !sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -7637,7 +7637,7 @@ void main()
 
 	PlaySE( 3, "wa_022", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 

@@ -239,13 +239,14 @@ void main()
 		   NULL, "As a result of numerous counseling sessions at the city's education consultation office regarding the child,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //本児の養父への過度の不信、コミュニケーション不足が原因である可能性が高いことがわかった。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "本児の養父への過度の不信、コミュニケーション不足が原因である可能性が高いことがわかった。",
-		   NULL, " we learned there was a high possibility the cause of the child's excessive distrust towards her adoptive father was the result of a lack of communication.", Line_ContinueAfterTyping);
+		   NULL, "we learned there was a high possibility the cause of the child's excessive distrust towards her adoptive father was the result of a lack of communication.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_ModeSpecific);

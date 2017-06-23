@@ -172,13 +172,14 @@ void main()
 		   NULL, "In addition, relatives of those in Hinamizawa Village who had escaped the disaster complained of sickness afterwards and were hospitalized.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。",
-		   NULL, " Some of them even died of unknown causes, further encouraging such extreme opinions.", Line_ContinueAfterTyping);
+		   NULL, "Some of them even died of unknown causes, further encouraging such extreme opinions.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -212,13 +213,14 @@ void main()
 		   NULL, "Wild visions of terrible toxic gas sneaking around in the middle of the night killing people spilled across the country,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。",
-		   NULL, " causing a steady stream of people complaining of insomnia, difficulty breathing, headache, dizziness, etc.", Line_ContinueAfterTyping);
+		   NULL, "causing a steady stream of people complaining of insomnia, difficulty breathing, headache, dizziness, etc.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_ModeSpecific);

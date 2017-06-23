@@ -48,13 +48,14 @@ void main()
 		   NULL, "Traces left behind from when the body seemed to have been bound indicated usage of a specific restraining table rather than rope or another common method.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　両手各指の関節への拘束が特に厳重であるのが特徴。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　両手各指の関節への拘束が特に厳重であるのが特徴。",
-		   NULL, " Finger joints on either hand appear to have been bound especially tightly.", Line_ContinueAfterTyping);
+		   NULL, "Finger joints on either hand appear to have been bound especially tightly.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_ModeSpecific);
@@ -121,13 +122,14 @@ void main()
 		   NULL, "One long nail stuck in each joint of each finger on each hand, for a total of thirty.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　遺体の指は２０センチ四方の板に打ち付けられており、この板は拘束台の一部である可能性が極めて高い。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遺体の指は２０センチ四方の板に打ち付けられており、この板は拘束台の一部である可能性が極めて高い。",
-		   NULL, " The deceased's fingers were nailed to wooden planks twenty square centimeters large; extremely likely these planks were part of the restraining table.", Line_ContinueAfterTyping);
+		   NULL, "The deceased's fingers were nailed to wooden planks twenty square centimeters large; extremely likely these planks were part of the restraining table.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_ModeSpecific);

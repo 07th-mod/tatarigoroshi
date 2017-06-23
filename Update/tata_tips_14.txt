@@ -102,13 +102,14 @@ void main()
 		   NULL, "This message is to inform you that a section of the testimony records of an incident under this police headquarters' jurisdiction has been found", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //当本部担当事件の供述調書内に確認されたことを通達する。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "当本部担当事件の供述調書内に確認されたことを通達する。",
-		   NULL, " that is thought to be related to the undercover investigation of the incident in question (Okinomiya Police Station X, Hinamizawa Village housewife slaughter incident).", Line_ContinueAfterTyping);
+		   NULL, "that is thought to be related to the undercover investigation of the incident in question (Okinomiya Police Station X, Hinamizawa Village housewife slaughter incident).", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -121,13 +122,14 @@ void main()
 		   NULL, "During investigation of suspect ___ ___ who was arrested for possession of illegal drugs,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //標記事件の犯行をほのめかす供述があり、その中に、犯人しか知り得ない情報が含まれていることが明らかとなった。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "標記事件の犯行をほのめかす供述があり、その中に、犯人しか知り得ない情報が含まれていることが明らかとなった。",
-		   NULL, " there was testimony related to the crime in question, and as part of it, we learned that the criminal had information only he could have known.", Line_ContinueAfterTyping);
+		   NULL, "there was testimony related to the crime in question, and as part of it, we learned that the criminal had information only he could have known.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_ModeSpecific);
@@ -162,28 +164,29 @@ void main()
 		   NULL, "In addition, the head investigator on the case received this report and inquired as to the incident with the Okinomiya Police Station,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //７月１日県警本部長発令の秘匿捜査指定（昭和５７年総総管イ１－１２）を対応した興宮署担当者が誤解し、/
 	if (AdvMode) {
-		, "７月１日県警本部長発令の秘匿捜査指定（昭和５７年総総管イ１−１２）を対応した興宮署担当者が誤解し、
-	
-			   NULL, "<size=-2> but the responsible party at Okinomiya Station, who responded to the designated undercover investigation announced by the prefectural police's general director on July 1 (1982, Osamu Fusakane, B1-12), misunderstood,</size>", Line_ContinueAfterTyping);
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "７月１日県警本部長発令の秘匿捜査指定（昭和５７年総総管イ１−１２）を対応した興宮署担当者が誤解し、",
+			   NULL, "<size=-2>but the responsible party at Okinomiya Station, who responded to the designated undercover investigation announced by the prefectural police's general director on July 1 (1982, Osamu Fusakane, B1-12), misunderstood,</size>", Line_ContinueAfterTyping);
 	} else {
-	
-			   NULL, " but the responsible party at Okinomiya Station, who responded to the designated undercover investigation announced by the prefectural police's general director on July 1 (1982, Osamu Fusakane, B1-12), misunderstood,", Line_ContinueAfterTyping);
+		OutputLine(NULL, "７月１日県警本部長発令の秘匿捜査指定（昭和５７年総総管イ１−１２）を対応した興宮署担当者が誤解し、",
+			   NULL, "but the responsible party at Okinomiya Station, who responded to the designated undercover investigation announced by the prefectural police's general director on July 1 (1982, Osamu Fusakane, B1-12), misunderstood,", Line_ContinueAfterTyping);
 	}
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //担当取調官に対し、事件の存在を正しく説明しなかった。
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "担当取調官に対し、事件の存在を正しく説明しなかった。",
-		   NULL, " and did not explain the incident's existence to the head investigator on the case properly.", Line_ContinueAfterTyping);
+		   NULL, "and did not explain the incident's existence to the head investigator on the case properly.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_ModeSpecific);
@@ -197,13 +200,14 @@ void main()
 		   NULL, "Because of this, the case's head investigator was not aware of the importance of the testimony as it related to the case in question,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //その結果、現場確認等を怠り、今日まで放置するに至ったことを謝罪する。/
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その結果、現場確認等を怠り、今日まで放置するに至ったことを謝罪する。",
-		   NULL, " and as a result, was negligent when combing the scene; we apologize for having left it in the dark until now.", Line_ContinueAfterTyping);
+		   NULL, "and as a result, was negligent when combing the scene; we apologize for having left it in the dark until now.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
