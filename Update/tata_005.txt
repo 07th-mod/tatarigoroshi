@@ -3434,17 +3434,17 @@ void main()
 		   NULL, "Nobody wants to have a grudge held against them.", Line_WaitForInput);
 	PlaySE(4, "s19/11/500700086", 128, 64);
 	OutputLine(NULL, "…敵を作らないに、…越したことなんか、",
-		   NULL, " ...There's nothing positive... about making...", Line_WaitForInput);
-	OutputLine(NULL, "ない。",
-		   NULL, " enemies.", Line_ContinueAfterTyping);
-
+		   NULL, " ...There's nothing positive... about making...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ない。",
+		   NULL, " enemies. ", Line_ModeSpecific);
 
 	PlaySE(4, "s19/11/500700087", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……ん？",
-		   NULL, " ...Hm?", Line_WaitForInput);
+		   NULL, "...Hm?", Line_WaitForInput);
 	PlaySE(4, "s19/11/500700088", 128, 64);
 	OutputLine(NULL, "　どうしました？",
 		   NULL, " What's the matter?", Line_WaitForInput);
@@ -3460,11 +3460,10 @@ void main()
 //　ほらぁ、気持ちいいでしょ＠　んっふっふっふ...！￥
 	PlaySE(4, "s19/11/500700091", 128, 64);
 	OutputLine(NULL, "　ほらぁ、気持ちいいでしょ？",
-		   NULL, " See? Feels good, right? ", Line_ModeSpecific);
+		   NULL, " See? Feels good, right?", Line_WaitForInput);
 	PlaySE(4, "s19/11/500700092", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　んっふっふっふ…！」",
-		   NULL, "Nfu-fu-fu-fu...!\"", Line_Normal);
+		   NULL, " Nfu-fu-fu-fu...!\"", Line_Normal);
 	ClearMessage();
 
 //　い、.........いてて、......てててて............ッ...￥
@@ -4598,10 +4597,10 @@ void main()
 	PlaySE(4, "s19/10/501000191", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……今思い出しても、ぞっとします。",
-		   NULL, "\"...I still shudder to think about it.", Line_WaitForInput);
+		   NULL, "\"...I still shudder to think about it. ", Line_ModeSpecific);
 	PlaySE(4, "s19/10/501000192", 128, 64);
 	OutputLine(NULL, "……今の元気な沙都子ちゃんしか知らないあなたには、",
-		   NULL, " ...You've never known any Satoko but the energetic and healthy one now...", Line_ContinueAfterTyping);
+		   NULL, "...You've never known any Satoko but the energetic and healthy one now...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

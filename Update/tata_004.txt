@@ -5896,10 +5896,11 @@ void main()
 		   NULL, "\"It's a portent of Oyashiro-sama's curse—there's no doubt.", Line_WaitForInput);
 	PlaySE(4, "s19/02/500200627", 128, 64);
 	OutputLine(NULL, "きっと悟史くんは、心のどこかで雛見沢を捨てて逃げ出そうという気持ちがあったんだと思う。",
-		   NULL, " I think, somewhere deep down, Satoshi-kun was probably thinking about abandoning Hinamizawa and running away.", Line_WaitForInput);
+		   NULL, " I think, somewhere deep down, Satoshi-kun was probably thinking about abandoning Hinamizawa and running away. ", Line_ModeSpecific);
 	PlaySE(4, "s19/02/500200628", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…それをオヤシロさまは許さなかった。」",
-		   NULL, " ...And Oyashiro-sama wouldn't allow that.\"", Line_ModeSpecific);
+		   NULL, "...And Oyashiro-sama wouldn't allow that.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

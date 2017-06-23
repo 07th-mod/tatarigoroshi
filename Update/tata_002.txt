@@ -1611,7 +1611,7 @@ void main()
 	PlaySE(4, "s19/25/502500017", 128, 64);
 	if (AdvMode) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「おかずも心のこもらない、お惣菜や缶詰ばかり。",
-		   NULL, "\"The side dishes have no spirit in them either—they're all prepackaged or canned food.", Line_WaitForInput);
+		   NULL, "\"The side dishes have no spirit in them either—they're all prepackaged or canned food. ", Line_ModeSpecific);
 
 
 	DisableWindow();
@@ -1620,7 +1620,7 @@ void main()
 
 	PlaySE(4, "s19/24/502400020", 128, 64);
 	OutputLine(NULL, "つまり前原さんのお弁当には、お弁当の三大要素！",
-		   NULL, " In other words, out of the three necessary requirements for a bento:", Line_WaitForInput);
+		   NULL, "In other words, out of the three necessary requirements for a bento:", Line_WaitForInput);
 //!s0
 
 	PlaySE(4, "s19/24/502400021", 128, 64);
@@ -2412,12 +2412,10 @@ void main()
 //長文のため＠を￥に変更
 
 //!s0
-	SetSpeedOfMessage( TRUE, 127, );
-
 	PlaySE(4, "s19/25/502500028", 128, 64);
 	if (AdvMode) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　図書券でしょう？！",
-		   NULL, "The gift certificate, right?!", Line_ContinueAfterTyping);
+		   NULL, "The gift certificate, right?!", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 2, "oka1_Odoroki_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -2428,7 +2426,7 @@ void main()
 	Wait( 1000 );
 	PlaySE(4, "s19/25/502500029", 128, 64);
 	OutputLine(NULL, "　一万円ですよ一万円！！",
-		   NULL, " It's 10,000 yen! 10,000!!", Line_ContinueAfterTyping);
+		   NULL, " It's 10,000 yen! 10,000!!", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 2, "oka1_Shinken", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -2439,7 +2437,7 @@ void main()
 	Wait( 1000 );
 	PlaySE(4, "s19/25/502500030", 128, 64);
 	OutputLine(NULL, "　コミックスが何冊買えるか計算できますか？！",
-		   NULL, " Can you calculate how many comic books you could buy with that?!", Line_ContinueAfterTyping);
+		   NULL, " Can you calculate how many comic books you could buy with that?! ", Line_ModeSpecific);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
@@ -2448,7 +2446,7 @@ void main()
 	Wait( 1000 );
 	PlaySE(4, "s19/25/502500031", 128, 64);
 	OutputLine(NULL, "　１０数巻程度の単行本なら即座にフルコンプ可能です！！",
-		   NULL, " You could instantly complete a full collection if it was around 10 volumes long!!", Line_ContinueAfterTyping);
+		   NULL, "You could instantly complete a full collection if it was around 10 volumes long!!", Line_WaitForInput);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
@@ -2472,7 +2470,6 @@ void main()
 	OutputLine(NULL, "　これによって癒される心の至福とセーターでは比べ物にならないのです！」",
 		   NULL, "The bliss of your soothed heart can't be compared to the sweater!\"", Line_ContinueAfterTyping);
 //!sd/
-	SetSpeedOfMessage( FALSE, 0, );
 	PlaySE( 3, "wa_007", 128, 64 );
 	DisableWindow();
 	DrawScene( "white", 50 );
@@ -4522,7 +4519,7 @@ void main()
 
 //「いいかじゃありませんわ！＠　圭一さんは大人しくしてるんですのよ！＠　全て私と梨花でやりますから！＠　私に今だけ命をお預けあそばせ！＠
 	PlaySE(4, "s19/04/500400395", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いいかじゃありませんわ！！",
 		   NULL, "\"What do you mean, ready!?", Line_WaitForInput);
 	PlaySE(4, "s19/04/500400396", 128, 64);
