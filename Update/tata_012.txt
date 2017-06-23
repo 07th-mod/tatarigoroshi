@@ -852,8 +852,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　そう＠...今日という日と、今日から始まる世界は、俺が勝ち取ったものなのだ＠
-	PlaySE(4, "s19/03/990300629", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "…今日という日と、今日から始まる世界は、俺が勝ち取ったものなのだ。",
@@ -9092,8 +9091,7 @@ void main()
 	DrawScene( "black", 400 );
 
 //　そう＠......あの男の死体を掘り出し、......背中を...見ておきたい＠
-	PlaySE(4, "s19/03/990300629", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "……あの男の死体を掘り出し、……背中を…見ておきたい。",

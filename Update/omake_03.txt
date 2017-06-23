@@ -884,10 +884,11 @@ void main()
 	PlaySE(4, "s20/22/441400034", 128, 64);
 	if (AdvMode) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「綿流し編で、お祭りの最中に鷹野さんと富竹さんが祭具殿に忍び込む、というシーンがありますけど。",
-		   NULL, "\"There's a scene where during Watanagashi, Takano-san and Tomitake-san sneak into the ritual implement storehouse.", Line_WaitForInput);
+		   NULL, "\"There's a scene where during Watanagashi, Takano-san and Tomitake-san sneak into the ritual implement storehouse. ", Line_ModeSpecific);
 	PlaySE(4, "s20/22/441400035", 128, 64);
+	if (AdvMode) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…あのシーンも、他のシナリオでは描かれなかっただけで、起こったことになってるのかもしれませんね。」",
-		   NULL, " ...The same scene may have still happened in the other stories, even though it wasn't portrayed.\"", Line_ModeSpecific);
+		   NULL, "...The same scene may have still happened in the other stories, even though it wasn't portrayed.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
