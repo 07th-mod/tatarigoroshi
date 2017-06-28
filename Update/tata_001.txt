@@ -1734,17 +1734,17 @@ void main()
 		   NULL, " You relied entirely on Rika-chan back then, didn't you?!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei23190", 128, 64);
 	OutputLine(NULL, "　あの時、沙都子がした料理は何だ？！",
-		   NULL, " What did you cook at the time, exactly?!", Line_WaitForInput);
+		   NULL, " What did you cook at the time, exactly?! ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei23200", 128, 64);
 	OutputLine(NULL, "　レナのカレーに塩を一袋入れて、",
-		   NULL, " You put a bag of salt in Rena's curry,", Line_WaitForInput);
+		   NULL, "You put a bag of salt in Rena's curry,", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei23210", 128, 64);
 	OutputLine(NULL, "魅音のご飯に塩を一袋入れて、",
-		   NULL, " a bag of salt in Mion's rice, ", Line_ModeSpecific);
+		   NULL, " a bag of salt in Mion's rice,", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei23220", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…俺の鍋をひっくり返しやがってー！！」",
-		   NULL, "...and you flipped over my pan!!\"", Line_Normal);
+		   NULL, " ...and you flipped over my pan!!\"", Line_Normal);
 	ClearMessage();
 
 //　以前のカレー勝負の時の因縁が再発！＠
