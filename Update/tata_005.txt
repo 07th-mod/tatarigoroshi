@@ -1855,7 +1855,7 @@ void main()
 	PlaySE(5, "s19/03/500300603", 128, 64);
 	PlaySE(6, "s19/05/500500262", 128, 64);
 	PlaySE(7, "s19/01/hr_kei32710_01", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Member</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「わーっはっはっはっはっはっはっは…！！！」」」",
 		   NULL, "\"\"\"Wahh-ha-ha-ha-ha-ha-ha-ha-ha...!!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -4827,7 +4827,7 @@ void main()
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
