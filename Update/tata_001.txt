@@ -114,7 +114,7 @@ void main()
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それに気付いた、洗濯物を干していた主婦が声をかける。",
-		   NULL, "...When the housewife hanging out the laundry notice him, she called out.", Line_Normal);
+		   NULL, "...When the housewife hanging out the laundry noticed him, she called out.", Line_Normal);
 	ClearMessage();
 
 //「あんれ、こんぬつわー＠　今日もお暑いこって！＠
@@ -1103,7 +1103,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -1189,7 +1189,7 @@ void main()
 		   NULL, " ...Yeah...?", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei23010", 128, 64);
 	OutputLine(NULL, "ふぁあぁ〜……、",
-		   NULL, " *yaaaawn*~...", Line_Normal);
+		   NULL, " *yaaaawn*~...", Line_ContinueAfterTyping);
 
 	Wait( 1000 );
 
@@ -1349,7 +1349,7 @@ void main()
 	PlayBGM( 1, "msys03", 128, 0 );
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -1369,7 +1369,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　バリバリ！！",
-		   NULL, " Scritch scratch!!", Line_ModeSpecific);
+		   NULL, " Scritch scratch!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "re_se_na_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -1497,7 +1497,7 @@ void main()
 	PlaySE(5, "s19/03/500300235", 128, 64);
 	PlaySE(6, "s19/04/500400128", 128, 64);
 	PlaySE(7, "s19/05/500500080", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Member</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「いいい、言ってません、言ってません！」」」",
 		   NULL, "\"\"\"N-N-N-No, we didn't say anything!\"\"\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2404,7 +2404,7 @@ void main()
 	PlaySE(5, "s19/03/500300248", 128, 64);
 	PlaySE(6, "s19/05/500500086", 128, 64);
 	PlaySE(7, "s19/04/500400165", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Member</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「おおおぉぉ…！！！」」」",
 		   NULL, "\"\"\"Whoaaaa...!!!\"\"\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2503,7 +2503,7 @@ void main()
 	FadeOutBGM( 1, 1000, TRUE );
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 0, 50, 20, 4, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -2765,7 +2765,7 @@ void main()
 		   NULL, " Stretch!!\"", Line_ContinueAfterTyping);
 	PlaySE( 3, "wa_029", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -2852,7 +2852,7 @@ void main()
 		   NULL, "No, more importantly... If they make me say bad things about curry to Chie-sensei's face... what'll happen to me...?!?", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_006", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3318,7 +3318,7 @@ void main()
 		   NULL, "And his name is... Keiichi Maebara!!", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3346,7 +3346,7 @@ void main()
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -3722,6 +3722,7 @@ void main()
 		   NULL, "I crushed the bag of miso in my fist and put half of its contents into the pot!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_003", 128, 64 );
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -3911,7 +3912,7 @@ void main()
 		   NULL, "The great Keiichi Maebara's cooking is exciting!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_007", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -3978,12 +3979,10 @@ void main()
 //　...ドハデな炎の柱が天井を焦がし始めた頃＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ドハデな炎の柱が天井を焦がし始めた頃、",
-		   NULL, "...Right as the crazy pillar of flame started to burn the ceiling,", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...Right as the crazy pillar of flame started to burn the ceiling,", Line_WaitForInput);
 
 
 //　目の前の素敵なクッキングが、実は致命的な災害に至ろうとしていることにようやく気が付く...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　目の前の素敵なクッキングが、実は致命的な災害に至ろうとしていることにようやく気が付く…。",
 		   NULL, "I finally realized that the fabulous cooking before my eyes had culminated into an actually life-threatening disaster...", Line_Normal);
 	ClearMessage();
@@ -4548,7 +4547,7 @@ void main()
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -4625,7 +4624,7 @@ void main()
 		   NULL, "...Ahhh... I've completely lost...!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_040", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();

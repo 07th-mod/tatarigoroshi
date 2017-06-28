@@ -3511,7 +3511,7 @@ void main()
 	OutputLine(NULL, "　でも……。",
 		   NULL, "With one word, \"but...\"", Line_Normal);
 	OutputLine(NULL, "…と一言残し、俯いてしまう…。",
-		   NULL, " She looked down...", Line_ModeSpecific);
+		   NULL, " She looked down...", Line_Normal);
 	ClearMessage();
 
 //「みんなで遊んだ方が楽しいのは沙都子だってよく知ってるだろ＠　俺たちは仲間だぜ＠　みんなで一緒に過すように出来てるんだよ＠　沙都子だって昨日、みんなでお祭りで騒いで楽しかったろ？＠
@@ -6628,7 +6628,7 @@ void main()
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
