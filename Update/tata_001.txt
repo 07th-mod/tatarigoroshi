@@ -5289,14 +5289,14 @@ void main()
 		   NULL, "\"This is how you prepare the miso for the soup!", Line_WaitForInput);
 	PlaySE(4, "s19/04/500400232", 128, 64);
 	OutputLine(NULL, "　おたまに少量を掬い取って、お箸で溶きながら！",
-		   NULL, " You scoop a little out with the ladle and break it up with chopsticks!", Line_WaitForInput);
+		   NULL, " You scoop a little out with the ladle and break it up with chopsticks! ", Line_ModeSpecific);
 	PlaySE(4, "s19/04/500400233", 128, 64);
-	OutputLine(NULL, "　少しずつ加えて味見をしながら慎重にですのよ。",
-		   NULL, " It's important to add a little at a time and keep tasting it. ", Line_ModeSpecific);
-	PlaySE(4, "s19/04/500400234", 128, 64);
 	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　少しずつ加えて味見をしながら慎重にですのよ。",
+		   NULL, "It's important to add a little at a time and keep tasting it.", Line_WaitForInput);
+	PlaySE(4, "s19/04/500400234", 128, 64);
 	OutputLine(NULL, "丸ごとひねり出してお鍋に開けちゃうなんて、言語道断でしてよー？！」",
-		   NULL, "Dumping the entire thing into the pot is absolutely outrageous!!\"", Line_ModeSpecific);
+		   NULL, " Dumping the entire thing into the pot is absolutely outrageous!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
