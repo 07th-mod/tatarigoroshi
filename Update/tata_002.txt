@@ -1123,9 +1123,7 @@ void main()
 		   NULL, " If you have any last words before we tally up the results, I'll listen to them now.", Line_WaitForInput);
 	PlaySE(4, "s19/03/990300159", 128, 64);
 	OutputLine(NULL, "　くっくっく！」",
-		   NULL, " Ku-ku-ku!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+		   NULL, " Ku-ku-ku!\"", Line_Normal);
 
 
 	ClearMessage();
@@ -1136,6 +1134,7 @@ void main()
 	PlaySE(4, "s19/01/hr_kei25620", 128, 64);
 	OutputLine(NULL, "「も、…申開きって何だよ。」",
 		   NULL, "\"W...What do you mean by last words?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlaySE(4, "s19/03/500300300", 128, 64);
 	OutputLine(NULL, "「圭ちゃんがここで何かを訴えることで、わずかな得点加算が望めるかもしれないってこと。",
 		   NULL, " \"I mean that you might be hoping for a few extra points if you appeal somehow to the crowd.", Line_WaitForInput);
