@@ -1370,19 +1370,19 @@ void main()
 		   NULL, " Kei-chan knew he couldn't lose today's bento showdown beforehand, didn't he?", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300308", 128, 64);
 	OutputLine(NULL, "　それを承知で昨日あれだけの大見得を切ったんだからさ。",
-		   NULL, " He did all that grandstanding yesterday, well aware of that.", Line_WaitForInput);
+		   NULL, " He did all that grandstanding yesterday, well aware of that. ", Line_ModeSpecific);
 	PlaySE(4, "s19/03/500300309", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "甘やかす必要なんて全然ないと思うけどなぁ？",
-		   NULL, " I don't think there's any reason to go easy on him, do you? ", Line_ModeSpecific);
+		   NULL, "I don't think there's any reason to go easy on him, do you?", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 1, "me_se_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　ねぇ沙都子。￥
 	PlaySE(4, "s19/03/500300310", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ねぇ沙都子。」",
-		   NULL, "Right, Satoko?\"", Line_Normal);
+		   NULL, " Right, Satoko?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_108", "right", 0, 0, 300 );
@@ -1446,14 +1446,14 @@ void main()
 		   NULL, "\"Look, this one was just taken out of a can, wasn't it?", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300312", 128, 64);
 	OutputLine(NULL, "　こっちのキュウリは包丁が通ってなくて綺麗に切れてないし〜。",
-		   NULL, " This cucumber here isn't cut cleanly, like the knife didn't go all the way through~", Line_WaitForInput);
+		   NULL, " This cucumber here isn't cut cleanly, like the knife didn't go all the way through~ ", Line_ModeSpecific);
 	PlaySE(4, "s19/03/500300313", 128, 64);
-	OutputLine(NULL, "圭ちゃん、包丁とか全然扱ったことないでしょ。",
-		   NULL, " Kei-chan, you never used a knife, did you? ", Line_ModeSpecific);
-	PlaySE(4, "s19/03/500300314", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "圭ちゃん、包丁とか全然扱ったことないでしょ。",
+		   NULL, "Kei-chan, you never used a knife, did you?", Line_WaitForInput);
+	PlaySE(4, "s19/03/500300314", 128, 64);
 	OutputLine(NULL, "経験不足が明らかなんだよねぇ。」",
-		   NULL, "Your lack of experience is apparent.\"", Line_ModeSpecific);
+		   NULL, " Your lack of experience is apparent.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
