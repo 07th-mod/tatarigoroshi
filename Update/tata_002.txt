@@ -3335,14 +3335,14 @@ void main()
 		   NULL, "\"But as Kei-chan said, cooking is not all about taste.", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300352", 128, 64);
 	OutputLine(NULL, "心もまた、隠し味として認められるべきだよね。",
-		   NULL, " The spirit put into it should be considered subtle seasoning.", Line_WaitForInput);
+		   NULL, " The spirit put into it should be considered subtle seasoning. ", Line_ModeSpecific);
 	PlaySE(4, "s19/03/500300353", 128, 64);
-	OutputLine(NULL, "でもそれは得点評価で言えば、小数点以下。",
-		   NULL, " For grading, though, that would only amount to a few points. ", Line_ModeSpecific);
-	PlaySE(4, "s19/03/500300354", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でもそれは得点評価で言えば、小数点以下。",
+		   NULL, "For grading, though, that would only amount to a few points.", Line_WaitForInput);
+	PlaySE(4, "s19/03/500300354", 128, 64);
 	OutputLine(NULL, "本当に微細なもので、その出来具合の評価を改めるには至らない。」",
-		   NULL, "It's so subtle that it's not enough to alter the results.\"", Line_ModeSpecific);
+		   NULL, " It's so subtle that it's not enough to alter the results.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3643,14 +3643,14 @@ void main()
 		   NULL, " It was absolutely great!!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei26320", 128, 64);
 	OutputLine(NULL, "　だから詰めてきた！！",
-		   NULL, " That's why I packed it!!", Line_WaitForInput);
+		   NULL, " That's why I packed it!! ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei26330", 128, 64);
-	OutputLine(NULL, "　本当に昨夜のメシがまずかったら詰めてなんかこないぞ。",
-		   NULL, " If dinner last night had been bad, then I would never have brought it to school. ", Line_ModeSpecific);
-	PlaySE(4, "s19/01/hr_kei26340", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本当に昨夜のメシがまずかったら詰めてなんかこないぞ。",
+		   NULL, "If dinner last night had been bad, then I would never have brought it to school.", Line_WaitForInput);
+	PlaySE(4, "s19/01/hr_kei26340", 128, 64);
 	OutputLine(NULL, "食パンと牛乳パックを持って登校してくる！！」",
-		   NULL, "I would have come here with some bread and a milk carton!!\"", Line_ModeSpecific);
+		   NULL, " I would have come here with some bread and a milk carton!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
