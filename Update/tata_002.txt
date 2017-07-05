@@ -2517,13 +2517,14 @@ void main()
 	PlaySE(4, "s19/24/502400036_03", 128, 64);
 	if (AdvMode) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「以上より、送り手の心と、受け手の心には何の因果関係もないことが立証されたと思います。",
-		   NULL, "\"I believe this has demonstrated that the spirit of the giver and the spirit of the receiver have no causal relationship.", Line_WaitForInput);
+		   NULL, "\"I believe this has demonstrated that the spirit of the giver and the spirit of the receiver have no causal relationship. ", Line_ModeSpecific);
 	PlaySE(4, "s19/24/502400036_04", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…つまり！！",
-		   NULL, " ...Yes!!", Line_WaitForInput);
+		   NULL, "...Yes!!", Line_WaitForInput);
 	PlaySE(4, "s19/24/502400036_05", 128, 64);
 	OutputLine(NULL, "　前原さんがどれだけ苦労して弁当を作ろうとも！",
-		   NULL, " No matter how much Maebara-san struggled to make this bento! ", Line_ModeSpecific);
+		   NULL, " No matter how much Maebara-san struggled to make this bento!", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 2, "tomita1_Ikari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -2533,9 +2534,8 @@ void main()
 	SetSpeedOfMessage( TRUE, 127, );
 	PlaySE( 3, "wa_007", 128, 64 );
 	PlaySE(4, "s19/24/502400036_06", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは私たち受け手が採点に手心を加えるものにはなりえないのです！！」",
-		   NULL, "That cannot enter into consideration for the rest of us on the receiving end!!\"", Line_ContinueAfterTyping);
+		   NULL, " That cannot enter into consideration for the rest of us on the receiving end!!\"", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
