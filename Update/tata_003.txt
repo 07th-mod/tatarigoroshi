@@ -124,22 +124,22 @@ void main()
 		   NULL, "\"So the house was empty for two days after all that?", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300376", 128, 64);
 	OutputLine(NULL, "　くっくっく、短い攻略期間だったねぇ！",
-		   NULL, " Hu-hu-hu, that didn't leave much time!", Line_WaitForInput);
+		   NULL, " Hu-hu-hu, that didn't leave much time! ", Line_ModeSpecific);
 
 	DisableWindow();
 	DrawBustshot( 3, "me_se_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　で＠　圭ちゃんは意中のキャラを攻略できたのかなぁ？＠　両親不在はエロゲー主人公の基本だしねぇ！＠
 	PlaySE(4, "s19/03/500300377", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　で？",
-		   NULL, " So?", Line_WaitForInput);
+		   NULL, "So?", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300378", 128, 64);
 	OutputLine(NULL, "　圭ちゃんは意中のキャラを攻略できたのかなぁ？！",
-		   NULL, " Kei-chan, did you manage to go after the character who was in your heart?! ", Line_ModeSpecific);
+		   NULL, " Kei-chan, did you manage to go after the character who was in your heart?!", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300379", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　両親不在はエロゲー主人公の基本だしねぇ！」",
-		   NULL, "The absence of parents is a must-have for eroge protagonists!\"", Line_ModeSpecific);
+		   NULL, " The absence of parents is a must-have for eroge protagonists!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

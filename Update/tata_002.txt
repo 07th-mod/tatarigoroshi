@@ -5492,14 +5492,14 @@ void main()
 		   NULL, "\"No, it WILL run away!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei27150", 128, 64);
 	OutputLine(NULL, "　出来立てほやほやの最高の味は、出来た瞬間からどんどん逃げていくんだ。",
-		   NULL, " The best and freshest flavors are running away from the moment the meal is completed.", Line_WaitForInput);
+		   NULL, " The best and freshest flavors are running away from the moment the meal is completed. ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei27160", 128, 64);
-	OutputLine(NULL, "沙都子が百、おいしく作ったものなら、俺はその百を丸々味わう義務がある！",
-		   NULL, " If you were to make a hundred delicious things, then I would have a duty to taste every one of them! ", Line_ModeSpecific);
-	PlaySE(4, "s19/01/hr_kei27170", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "沙都子が百、おいしく作ったものなら、俺はその百を丸々味わう義務がある！",
+		   NULL, "If you were to make a hundred delicious things, then I would have a duty to taste every one of them!", Line_WaitForInput);
+	PlaySE(4, "s19/01/hr_kei27170", 128, 64);
 	OutputLine(NULL, "　それが食う側のマナーってもんだ！」",
-		   NULL, "It's just good manners to do so!\"", Line_Normal);
+		   NULL, " It's just good manners to do so!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "sa_se_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
