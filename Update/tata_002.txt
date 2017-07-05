@@ -2442,6 +2442,7 @@ void main()
 //!d1000　１０数巻程度の単行本なら即座にフルコンプ可能です！！/
 	Wait( 1000 );
 	PlaySE(4, "s19/25/502500031", 128, 64);
+	if (AdvMode) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１０数巻程度の単行本なら即座にフルコンプ可能です！！",
 		   NULL, "You could instantly complete a full collection if it was around 10 volumes long!!", Line_WaitForInput);
 
@@ -2451,7 +2452,7 @@ void main()
 //　愉快で面白おかしくてちょっとＨなマンガが何十冊...！＠/
 	PlaySE(4, "s19/25/502500032", 128, 64);
 	OutputLine(NULL, "　愉快で面白おかしくてちょっとＨなマンガが何十冊…！！",
-		   NULL, " Dozens of happy, humorous, slightly perverted manga...!! ", Line_ModeSpecific);
+		   NULL, " Dozens of happy, humorous, slightly perverted manga...!!", Line_WaitForInput);
 
 	PlaySE( 3, "wa_008", 128, 64 );
 	Wait( 200 );
@@ -2463,9 +2464,8 @@ void main()
 
 //　これによって癒される心の至福とセーターでは比べ物にならないのです！」!sd/
 	PlaySE(4, "s19/25/502500033", 128, 64);
-	if (AdvMode) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これによって癒される心の至福とセーターでは比べ物にならないのです！」",
-		   NULL, "The bliss of your soothed heart can't be compared to the sweater!\"", Line_ContinueAfterTyping);
+		   NULL, " The bliss of your soothed heart can't be compared to the sweater!\"", Line_ContinueAfterTyping);
 //!sd/
 	PlaySE( 3, "wa_007", 128, 64 );
 	DisableWindow();
