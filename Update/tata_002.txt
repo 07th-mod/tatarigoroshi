@@ -1264,20 +1264,21 @@ void main()
 	PlaySE(4, "s19/03/500300300", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「圭ちゃんがここで何かを訴えることで、わずかな得点加算が望めるかもしれないってこと。",
-		   NULL, " \"I mean that you might be hoping for a few extra points if you appeal somehow to the crowd.", Line_WaitForInput);
+		   NULL, "\"I mean that you might be hoping for a few extra points if you appeal somehow to the crowd.", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300301", 128, 64);
 	OutputLine(NULL, "…くっくっく！",
-		   NULL, " ...Ku-ku-ku!", Line_WaitForInput);
-	PlaySE(4, "s19/03/500300302", 128, 64);
-	OutputLine(NULL, "　何しろ今日の勝負はビリでさえなければいいんだから。",
-		   NULL, " After all, for today's showdown, you just need to avoid coming in last. ", Line_ModeSpecific);
-	PlaySE(4, "s19/03/500300303", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "うまくすれば…何とか罰ゲームから逃れることができるかもよ？」",
-		   NULL, "If you do well enough... then maybe you'll be able to worm out of the punishment game.\"", Line_Normal);
+		   NULL, " ...Ku-ku-ku!", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	PlaySE(4, "s19/03/500300302", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何しろ今日の勝負はビリでさえなければいいんだから。",
+		   NULL, "After all, for today's showdown, you just need to avoid coming in last.", Line_WaitForInput);
+	PlaySE(4, "s19/03/500300303", 128, 64);
+	OutputLine(NULL, "うまくすれば…何とか罰ゲームから逃れることができるかもよ？」",
+		   NULL, " If you do well enough... then maybe you'll be able to worm out of the punishment game.\"", Line_Normal);
 
 
+	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "sa_se_aw_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
