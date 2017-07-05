@@ -2572,7 +2572,7 @@ void main()
 	PlaySE(4, "s19/00/allg50002_04", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f5e6d3>女子全員</color>", NULL, "<color=#f5e6d3>All Girls</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「そうよそうよ！！」」」",
-		   NULL, "\"\"\"That's right!!\"\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"\"That's right!!\"\"\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 3, "wa_005", 128, 64 );
@@ -2586,7 +2586,7 @@ void main()
 	PlaySE(8, "s19/00/allg50003_04", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f5e6d3>女子全員</color>", NULL, "<color=#f5e6d3>All Girls</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「ブーーーー！！！」」」",
-		   NULL, "\"\"\"Boooo!!!\"\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"\"Boooo!!!\"\"\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 3, "wa_006", 128, 64 );
@@ -2599,7 +2599,8 @@ void main()
 	PlaySE(7, "s19/00/allb50001d", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f5e6d3>男子全員</color>", NULL, "<color=#f5e6d3>All Boys</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「味が全てだ！！」」」",
-		   NULL, "\"\"\"Taste is most important!!\"\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"\"Taste is most important!!\"\"\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 3, "wa_005", 128, 64 );
 	ShakeScreen( 1, 50, 20, 2, 0, );
@@ -2610,8 +2611,10 @@ void main()
 	PlaySE(6, "s19/00/allg50004_02", 128, 64);
 	PlaySE(7, "s19/00/allg50004_03", 128, 64);
 	PlaySE(8, "s19/00/allg50004_04", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>女子全員</color>", NULL, "<color=#f5e6d3>All Girls</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「女の敵ぃー！！」」」",
-		   NULL, " \"\"\"Enemy of women!!\"\"\"", Line_ContinueAfterTyping);
+		   NULL, " \"\"\"Enemy of women!!\"\"\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 0, 50, 20, 2, 0, );
@@ -2621,6 +2624,7 @@ void main()
 	PlaySE(5, "s19/00/allb50002b", 128, 64);
 	PlaySE(6, "s19/00/allb50002c", 128, 64);
 	PlaySE(7, "s19/00/allb50002d", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>男子全員</color>", NULL, "<color=#f5e6d3>All Boys</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「何だとブス！！」」」",
 		   NULL, " \"\"\"What was that, ugly?!\"\"\"", Line_ContinueAfterTyping);
 //!sd
