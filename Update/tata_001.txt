@@ -5692,13 +5692,9 @@ void main()
 //　......今は遠くに住んでいる兄の面影を、俺を通して垣間見ているのだろうか￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子はひょっとして…。",
-		   NULL, "Could Satoko have been...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Could Satoko have been...", Line_WaitForInput);
 	OutputLine(NULL, "　……今は遠くに住んでいる兄の面影を、俺を通して垣間見ているのだろうか。",
-		   NULL, "...getting a glimpse of her brother, who now lived far away, through me?", Line_Normal);
+		   NULL, " ...getting a glimpse of her brother, who now lived far away, through me?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_210", "left", 0, 0, 300 );
@@ -6698,7 +6694,7 @@ void main()
 //「「あっはっはっはっはっはっは...！！」＠
 //　家族と過すのとはまったく違う、だけれどもどこか懐かしい...団欒のひとときだった￥
 	PlaySE(4, "s19/05/500500138", 128, 64);
-	PlaySE(4, "s19/01/hr_kei25070_01", 128, 64);
+	PlaySE(5, "s19/01/hr_kei25070_01", 128, 64);
 	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>＆<color=#956f6e>圭一</color>", NULL, "<color=#6972c1>Rika</color> & <color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「あっはっはっはっはっはっは…！！」」",
 		   NULL, "\"\"Ah-ha-ha-ha-ha-ha-ha-ha...!!\"\"", Line_ModeSpecific);

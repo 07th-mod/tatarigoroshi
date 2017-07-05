@@ -674,13 +674,9 @@ void main()
 //　卵とそぼろの二色が美しい...これまたお弁当の定番＠そぼろ弁当だ￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナの弁当は……、",
-		   NULL, "Rena's bento...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Rena's bento...", Line_WaitForInput);
 	OutputLine(NULL, "　卵とそぼろの二色が美しい…これまたお弁当の定番、",
-		   NULL, "was a beautiful mix of the two colors of eggs and minced meat... and it, too, was a bento staple,", Line_WaitForInput);
+		   NULL, " was a beautiful mix of the two colors of eggs and minced meat... and it, too, was a bento staple,", Line_WaitForInput);
 	OutputLine(NULL, "そぼろ弁当だ！",
 		   NULL, " the soboro bento!", Line_Normal);
 	ClearMessage();
@@ -1252,12 +1248,10 @@ void main()
 		   NULL, " If you have any last words before we tally up the results, I'll listen to them now.", Line_WaitForInput);
 	PlaySE(4, "s19/03/990300159", 128, 64);
 	OutputLine(NULL, "　くっくっく！」",
-		   NULL, " Ku-ku-ku!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Ku-ku-ku!\"", Line_Normal);
 
 
-
-	if (AdvMode == 0) { ClearMessage(); }
+	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "me_se_to_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -1265,20 +1259,22 @@ void main()
 	PlaySE(4, "s19/01/hr_kei25620", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「も、…申開きって何だよ。」",
-		   NULL, "\"W...What do you mean by last words?\"", Line_WaitForInput);
+		   NULL, "\"W...What do you mean by last words?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlaySE(4, "s19/03/500300300", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「圭ちゃんがここで何かを訴えることで、わずかな得点加算が望めるかもしれないってこと。",
 		   NULL, " \"I mean that you might be hoping for a few extra points if you appeal somehow to the crowd.", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300301", 128, 64);
 	OutputLine(NULL, "…くっくっく！",
-		   NULL, " ...Ku-ku-ku! ", Line_ModeSpecific);
+		   NULL, " ...Ku-ku-ku!", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300302", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何しろ今日の勝負はビリでさえなければいいんだから。",
-		   NULL, "After all, for today's showdown, you just need to avoid coming in last.", Line_WaitForInput);
+		   NULL, " After all, for today's showdown, you just need to avoid coming in last. ", Line_ModeSpecific);
 	PlaySE(4, "s19/03/500300303", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "うまくすれば…何とか罰ゲームから逃れることができるかもよ？」",
-		   NULL, " If you do well enough... then maybe you'll be able to worm out of the punishment game.\"", Line_Normal);
+		   NULL, "If you do well enough... then maybe you'll be able to worm out of the punishment game.\"", Line_Normal);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
