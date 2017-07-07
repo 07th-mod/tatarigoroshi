@@ -5011,11 +5011,7 @@ void main()
 //　俺が憎まれ口を叩くタイミングだ＠...でもそれはやらない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつもならこの辺で。",
-		   NULL, "Normally, right about now...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Normally, right about now...", Line_WaitForInput);
 	OutputLine(NULL, "　俺が憎まれ口を叩くタイミングだ。",
 		   NULL, "was the time I would start messing with her.", Line_WaitForInput);
 	OutputLine(NULL, "…でもそれはやらない。",
@@ -6155,9 +6151,9 @@ void main()
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　豚肉なんか、ちゃんとタイムサービスを利用して半額で買ったんだぜ！",
 		   NULL, "I got the pork during the sale and got it half off!", Line_WaitForInput);
-	OutputLine(NULL, "　へへ！",
-		   NULL, " Heh heh!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei27410_04", 128, 64);
+	OutputLine(NULL, "　へへ！",
+		   NULL, " Heh heh!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　主婦の知恵って言うのかな！",
 		   NULL, " The things a housewife knows, right?", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei27410_05", 128, 64);
@@ -6435,7 +6431,7 @@ void main()
 		   NULL, "\"I gotta get you to teach me a whole bunch more stuff, too.", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei27550", 128, 64);
 	OutputLine(NULL, "…ようやく炊飯器の使い方と味噌汁の作り方を覚えた程度だし。」",
-		   NULL, " ...I finally managed to figure out how to use the rice cooker and how to cook miso soup, after all.", Line_ModeSpecific);
+		   NULL, " ...I finally managed to figure out how to use the rice cooker and how to cook miso soup, after all.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

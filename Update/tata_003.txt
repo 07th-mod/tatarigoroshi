@@ -1915,7 +1915,9 @@ void main()
 		   NULL, " I will give you a pat on the head.", Line_WaitForInput);
 	PlaySE(4, "s19/05/500500217", 128, 64);
 	OutputLine(NULL, "ゴルフクラブで大暴れが楽しみなのですよ。」",
-		   NULL, " I can't wait to see your golf club rampage.\"", Line_WaitForInput);
+		   NULL, " I can't wait to see your golf club rampage.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　非常時だって言うのに、梨花ちゃんが背伸びをして俺の頭をねだる。",
 		   NULL, " Despite the emergency situation, Rika-chan reached up and stroked me on the head.", Line_Normal);
 	ClearMessage();
@@ -3125,12 +3127,14 @@ void main()
 	PlaySE(4, "s19/04/500400531", 128, 64);
 	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「梨花ぁ！」",
-		   NULL, "\"Rikaa!\"", Line_ContinueAfterTyping);
+		   NULL, "\"Rikaa!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	DrawBustshot( 1, "ri_se_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......み～～！！」!w700/
 	PlaySE(4, "s19/05/500500231", 128, 64);
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……み〜〜！！」",
 		   NULL, " \"...Meep~~!!\"", Line_ContinueAfterTyping);
 
