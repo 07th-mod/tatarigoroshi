@@ -3231,14 +3231,14 @@ void main()
 		   NULL, "\"...You've figured it out, right?", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300405", 128, 64);
 	OutputLine(NULL, "　昔のチームが劣勢になって、つまりそれで、飛び入りでリリーフ登板することになって…。",
-		   NULL, " His old team was losing, so that's why he jumped in as relief pitcher and took the mound...", Line_WaitForInput);
+		   NULL, " His old team was losing, so that's why he jumped in as relief pitcher and took the mound... ", Line_ModeSpecific);
 	PlaySE(4, "s19/03/500300406", 128, 64);
-	OutputLine(NULL, "もうばったばったよ。",
-		   NULL, " Now it's just terrible. ", Line_ModeSpecific);
-	PlaySE(4, "s19/03/500300407", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もうばったばったよ。",
+		   NULL, "Now it's just terrible.", Line_WaitForInput);
+	PlaySE(4, "s19/03/500300407", 128, 64);
 	OutputLine(NULL, "出塁は愚か、ファールも打てない有様なわけ。」",
-		   NULL, "We can't even hit any foul balls, much less get anyone on base.\"", Line_Normal);
+		   NULL, " We can't even hit any foul balls, much less get anyone on base.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
@@ -4542,19 +4542,19 @@ void main()
 		   NULL, "\"Ah-hahahahaha!", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300434", 128, 64);
 	OutputLine(NULL, "　…あんたたち、圭ちゃんと同じクラスで生活してて何にも感じないわけぇ？",
-		   NULL, " ...You don't feel any confidence in Kei-chan after being in the same class with him?", Line_WaitForInput);
+		   NULL, " ...You don't feel any confidence in Kei-chan after being in the same class with him? ", Line_ModeSpecific);
 
 	DisableWindow();
 	DrawBustshot( 1, "me_se_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　......彼はね、ゆくゆくはあの力で世界を制するかもしれない＠...圭ちゃんと組めば...世界制覇は容易だなぁ＠　くっくっく！！￥
 	PlaySE(4, "s19/03/500300435", 128, 64);
-	OutputLine(NULL, "　……彼はね、ゆくゆくはあの力で世界を制するかもしれない。",
-		   NULL, " ...Someday, he could be strong enough to control all of humanity. ", Line_ModeSpecific);
-	PlaySE(4, "s19/03/500300436", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……彼はね、ゆくゆくはあの力で世界を制するかもしれない。",
+		   NULL, "...Someday, he could be strong enough to control all of humanity.", Line_WaitForInput);
+	PlaySE(4, "s19/03/500300436", 128, 64);
 	OutputLine(NULL, "…圭ちゃんと組めば…世界制覇は容易だなぁ！",
-		   NULL, "...Join Kei-chan... and you could easily rule the world!", Line_WaitForInput);
+		   NULL, " ...Join Kei-chan... and you could easily rule the world!", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300437", 128, 64);
 	OutputLine(NULL, "　くっくっく！！」",
 		   NULL, " Hu-hu-hu!!\"", Line_Normal);
