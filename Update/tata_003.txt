@@ -4492,7 +4492,7 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawSceneWithMask( "bg_150", "up", 0, 0, 1300 );
-	DrawBustshot( 1, "re_se_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "re_se_de_a1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 //「...圭一くん、うまくやれるかな。＠
@@ -4940,6 +4940,7 @@ void main()
 		   NULL, " The kinds a girl would love... pretty, cute, and sweet...", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_006", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //そんな洋菓子が大好きなんだよなぁッ？！？！」/
 	PlaySE(4, "s19/01/hr_kei29270", 128, 64);
@@ -5019,7 +5020,7 @@ void main()
 	PlaySE(4, "s19/01/hr_kei29300_01", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ニキビだらけの欲望丸出しのスポーツ刈りが、汚すように！！",
-		   NULL, "And with your acne-laden face, your sports cut, and your lust in full display, you sully them!!", Line_WaitForInput);
+		   NULL, "And with your acne-laden face, your sports cut, and your lust in full display, you sully them!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　バリバリとむしゃむしゃと！！」",
 		   NULL, " Crunch, crunch, munch, munch!!\"", Line_ContinueAfterTyping);
 
@@ -5044,7 +5045,7 @@ void main()
 		   NULL, " You eat desserts—but you don't love them!!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	Wait( 200 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //蹂躙し、/
 	PlaySE(4, "s19/01/hr_kei29330", 128, 64);
@@ -5052,7 +5053,7 @@ void main()
 		   NULL, " You just dirty them,", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	Wait( 200 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //しゃぶりつくしているだけ！！/
 	PlaySE(4, "s19/01/hr_kei29330_01", 128, 64);
