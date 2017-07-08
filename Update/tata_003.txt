@@ -4820,7 +4820,7 @@ void main()
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 	DrawScene( "bg_235", 400 );
 //!sd
-	OutputLineAll(NULL, "", Line_Normal);
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	ClearMessage();
 //...亀田の顔面を指差すッ！￥
@@ -5023,7 +5023,7 @@ void main()
 	OutputLine(NULL, "ニキビだらけの欲望丸出しのスポーツ刈りが、汚すように！！",
 		   NULL, "And with your acne-laden face, your sports cut, and your lust in full display, you sully them!!", Line_WaitForInput);
 	OutputLine(NULL, "　バリバリとむしゃむしゃと！！」",
-		   NULL, "Crunch, crunch, munch, munch!!\"", Line_ContinueAfterTyping);
+		   NULL, " Crunch, crunch, munch, munch!!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 100, 20, 4, 0, );
@@ -5040,7 +5040,7 @@ void main()
 	PlaySE(4, "s19/01/hr_kei29310", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだ！！",
-		   NULL, " \"That's right!!", Line_WaitForInput);
+		   NULL, "\"That's right!!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei29320", 128, 64);
 	OutputLine(NULL, "　お前はデザートを食べて、愛でているんじゃない！！",
 		   NULL, " You eat desserts—but you don't love them!!", Line_ContinueAfterTyping);
@@ -5083,12 +5083,12 @@ void main()
 //「ぎゃああああぁあぁぁああぁあぁあッ！！＠　もうダメだぁあ！＠　知られてしまったぁぁぁ！＠　俺の密かな楽しみが知られてしまったぁ＠　もう生きていけない！＠　死ぬしか...死ぬしかぁぁぁッ！！！￥
 	PlaySE(4, "s19/01/hr_kei29340", 128, 64);
 	OutputLine(NULL, "　お前はデザートを…汚して楽しんでいるだけなんだぁあぁぁあッ！！！」",
-		   NULL, "All you do... is relish in the enjoyment of soiling them!!!\"", Line_ModeSpecific);
+		   NULL, " All you do... is relish in the enjoyment of soiling them!!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlaySE(4, "s19/23/202800023", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぎゃああああぁあぁぁああぁあぁあッ！！！",
-		   NULL, " \"Gyaaaaaaaahhhhh!!!", Line_WaitForInput);
+		   NULL, "\"Gyaaaaaaaahhhhh!!!", Line_WaitForInput);
 	PlaySE(4, "s19/23/202800024", 128, 64);
 	OutputLine(NULL, "　もうダメだぁあ！！",
 		   NULL, " Please, no more!!", Line_WaitForInput);
@@ -5242,34 +5242,36 @@ void main()
 //「そうだ！＠　そして俺はお前に感銘を受けたのだ！＠　デザートはただ単に食後に食べる甘い物＠...今までずっとそう思ってた！＠　それは間違ってた！＠　お前がそれを教えてくれたんだ！＠　お前に出会ったお陰で...俺は、俺はッ！＠　明日から同じデザートを一味も二味も違った味わい方ができるようになるだろう＠例えば.../
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　責められるどころか、自らを誇れと言われ…亀田くんは困惑を隠せない。",
-		   NULL, "Instead of blaming him, I told him to have pride in himself... and Kameda-kun couldn't hide his confusion.", Line_WaitForInput);
+		   NULL, "Instead of blaming him, I told him to have pride in himself... and Kameda-kun couldn't hide his confusion.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlaySE(4, "s19/01/hr_kei29450", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだ！！",
 		   NULL, " \"Yes!!", Line_WaitForInput);
 	OutputLine(NULL, "　そして俺はお前に感銘を受けたのだ！！",
-		   NULL, " I have been deeply moved by what you've shown me!! ", Line_ModeSpecific);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " I have been deeply moved by what you've shown me!!", Line_WaitForInput);
 	OutputLine(NULL, "　デザートはただ単に食後に食べる甘い物。",
-		   NULL, "Desserts are nothing but sweet foods eaten after meals...", Line_WaitForInput);
+		   NULL, " Desserts are nothing but sweet foods eaten after meals...", Line_WaitForInput);
 	OutputLine(NULL, "…今までずっとそう思ってた！！",
 		   NULL, " That's what I'd thought this whole time!!", Line_WaitForInput);
 	OutputLine(NULL, "　それは間違ってた！！",
 		   NULL, " But I was mistaken!!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei29460", 128, 64);
 	OutputLine(NULL, "　お前がそれを教えてくれたんだ！！",
-		   NULL, " And you showed me that!!", Line_WaitForInput);
+		   NULL, " And you showed me that!! ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei29470", 128, 64);
-	OutputLine(NULL, "　お前に出会ったお陰で…俺は、俺はッ！！",
-		   NULL, " Thanks to you, I... I can...!! ", Line_ModeSpecific);
-	PlaySE(4, "s19/01/hr_kei29480", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お前に出会ったお陰で…俺は、俺はッ！！",
+		   NULL, "Thanks to you, I... I can...!!", Line_WaitForInput);
+	PlaySE(4, "s19/01/hr_kei29480", 128, 64);
 	OutputLine(NULL, "　明日から同じデザートを一味も二味も違った味わい方ができるようになるだろう。",
-		   NULL, "Starting tomorrow, I will be able to enjoy my desserts in a completely different way.", Line_WaitForInput);
+		   NULL, " Starting tomorrow, I will be able to enjoy my desserts in a completely different way.", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei29490", 128, 64);
 	OutputLine(NULL, "例えば…",
 		   NULL, " For example...", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_011", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //苺のショートケーキ！！＠
 	PlaySE(4, "s19/01/hr_kei29500", 128, 64);
