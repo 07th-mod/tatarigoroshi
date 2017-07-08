@@ -4491,8 +4491,8 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawBustshot( 1, "re_se_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg_150", "up", 0, 0, 1300 );
+	DrawBustshot( 1, "re_se_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 
 
 //「...圭一くん、うまくやれるかな。＠
@@ -4820,13 +4820,11 @@ void main()
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 	DrawScene( "bg_235", 400 );
 //!sd
-	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	ClearMessage();
 //...亀田の顔面を指差すッ！￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…亀田の顔面を指差すッ！！",
-		   NULL, "pointed right at Kameda's face!!", Line_Normal);
+		   NULL, " pointed right at Kameda's face!!", Line_Normal);
 	ClearMessage();
 
 //「ならば聞くべきじゃないのかッ？＠　それほど尊い勝利を放棄させるに値する.../
@@ -4839,6 +4837,7 @@ void main()
 		   NULL, " Something worth abandoning your precious 'victory' for...", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_012", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //どんな対価が提供されるのかを！！＠
 	PlaySE(4, "s19/01/hr_kei29190", 128, 64);
