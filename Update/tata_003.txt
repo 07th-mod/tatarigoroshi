@@ -4569,7 +4569,7 @@ void main()
 		   NULL, " You eat desserts—but you don't love them!!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	Wait( 200 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //蹂躙し、/
 	PlaySE(4, "s19/01/hr_kei29330", 128, 64);
@@ -4577,7 +4577,7 @@ void main()
 		   NULL, " You just dirty them,", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	Wait( 200 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //しゃぶりつくしているだけ！！/
 	PlaySE(4, "s19/01/hr_kei29330_01", 128, 64);
