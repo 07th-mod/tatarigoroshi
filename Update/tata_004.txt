@@ -1372,7 +1372,7 @@ void main()
 	PlaySE(4, "s19/10/501000048", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…楽しそうですね。",
-		   NULL, "\"...She looks like she's having fun.", Line_ContinueAfterTyping);
+		   NULL, "\"...She looks like she's having fun.", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000049", 128, 64);
 	OutputLine(NULL, "あんなにはしゃいで。」",
 		   NULL, " Quite a lot of it.\"", Line_Normal);
@@ -1962,11 +1962,7 @@ void main()
 		   NULL, "\"...Umm...", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei30770", 128, 64);
 	OutputLine(NULL, "…じゃあ沙都子って、",
-		   NULL, " Then Satoko is............", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Then Satoko is............", Line_WaitForInput);
 
 	PlaySE(4, "s19/01/hr_kei30780", 128, 64);
 	OutputLine(NULL, "……………えっと、」",
@@ -2352,7 +2348,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "s19/01/hr_kei30850", 128, 64);
+	PlaySE(5, "s19/01/hr_kei30850", 128, 64);
 	OutputLineAll(NULL, "\n", Line_WaitForInput);
 
 

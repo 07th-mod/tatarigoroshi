@@ -2418,9 +2418,9 @@ void main()
 	DrawBustshot( 2, "oka1_Odoroki_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE( 3, "wa_005", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //!d1000　一万円ですよ一万円！！/
-	Wait( 1000 );
 	PlaySE(4, "s19/25/502500029", 128, 64);
 	OutputLine(NULL, "　一万円ですよ一万円！！",
 		   NULL, " It's 10,000 yen! 10,000!!", Line_WaitForInput);
@@ -2429,18 +2429,18 @@ void main()
 	DrawBustshot( 2, "oka1_Shinken", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE( 3, "wa_017", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //!d1000　コミックスが何冊買えるか計算できますか？！/
-	Wait( 1000 );
 	PlaySE(4, "s19/25/502500030", 128, 64);
 	OutputLine(NULL, "　コミックスが何冊買えるか計算できますか？！",
 		   NULL, " Can you calculate how many comic books you could buy with that?! ", Line_ModeSpecific);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //!d1000　１０数巻程度の単行本なら即座にフルコンプ可能です！！/
-	Wait( 1000 );
 	PlaySE(4, "s19/25/502500031", 128, 64);
 	if (AdvMode) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１０数巻程度の単行本なら即座にフルコンプ可能です！！",
@@ -2563,10 +2563,10 @@ void main()
 	SetSpeedOfMessage( TRUE, 127, );
 
 	PlaySE(4, "s19/00/allg50002", 128, 64);
-	PlaySE(4, "s19/00/allg50002_01", 128, 64);
-	PlaySE(4, "s19/00/allg50002_02", 128, 64);
-	PlaySE(4, "s19/00/allg50002_03", 128, 64);
-	PlaySE(4, "s19/00/allg50002_04", 128, 64);
+	PlaySE(5, "s19/00/allg50002_01", 128, 64);
+	PlaySE(6, "s19/00/allg50002_02", 128, 64);
+	PlaySE(7, "s19/00/allg50002_03", 128, 64);
+	PlaySE(8, "s19/00/allg50002_04", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f5e6d3>女子全員</color>", NULL, "<color=#f5e6d3>All Girls</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「そうよそうよ！！」」」",
 		   NULL, "\"\"\"That's right!!\"\"\"", Line_ModeSpecific);
