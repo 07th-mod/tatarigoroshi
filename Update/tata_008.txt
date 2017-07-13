@@ -906,11 +906,7 @@ void main()
 //　富田くんも岡村くんも、めいめいに心配していたことを伝える￥
 	PlaySE(4, "s03/24/142400015", 128, 64);
 	OutputLine(NULL, "「北条…！」",
-		   NULL, "\"Houjou...!\"", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+		   NULL, "\"Houjou...!\"", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "oka1_Shinken", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -4646,11 +4642,8 @@ void main()
 //　叔父だけでなく、その仲間も何人かいるようだった￥
 	PlaySE(4, "s03/00/gorob04001", 128, 64);
 	OutputLine(NULL, "「それよか、鉄っちゃんのツモだぜよー。」",
-		   NULL, "\"Whatever, it's your draw, Tecchan!\"", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 700 );
-	SetValidityOfInput( TRUE );
+		   NULL, "\"Whatever, it's your draw, Tecchan!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlaySE(4, "s03/00/goroc04001", 128, 64);
 	OutputLine(NULL, "「椿さん、リーチしよったで。」",

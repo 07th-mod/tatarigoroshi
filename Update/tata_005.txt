@@ -4283,11 +4283,7 @@ void main()
 		   NULL, "\"......People say that something bad will surely happen to those he gets close to.", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000207", 128, 64);
 	OutputLine(NULL, "…雛見沢ではね、大石のことをオヤシロさまの、」",
-		   NULL, " ...In Hinamizawa, they think Ooishi is Oyashiro-sama's—\"", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
+		   NULL, " ...In Hinamizawa, they think Ooishi is Oyashiro-sama's—\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();

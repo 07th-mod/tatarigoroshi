@@ -1877,7 +1877,6 @@ void main()
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "s19/04/500400153", 128, 64);
 	OutputLine(NULL, "…えっと、……。",
 		   NULL, " umm...", Line_WaitForInput);
 	PlaySE(4, "s19/04/500400154", 128, 64);
@@ -2094,7 +2093,7 @@ void main()
 
 	PlaySE(4, "s19/03/500300245", 128, 64);
 	OutputLine(NULL, "　明日のお弁当で勝負ってのはどう？！",
-		   NULL, "Let's have a bento showdown tomorrow!", Line_ContinueAfterTyping);
+		   NULL, "Let's have a bento showdown tomorrow!", Line_WaitForInput);
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -3226,7 +3225,7 @@ void main()
 	FadeFilm( 100, TRUE );
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 5, 0, );
-	Wait( 500 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　もっと初心者にやさしいマニュアルはないのかぁあぁ！！」/
 	PlaySE(4, "s19/01/hr_kei23820", 128, 64);
@@ -3369,6 +3368,7 @@ void main()
 	PlaySE( 3, "wa_006", 128, 64 );
 	DrawScene( "bg_115", 50 );
 	ShakeScreen( 1, 100, 20, 4, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //あぁ、それなら適量に入れてやるさぁッ！！＠
 //　思い切り味噌の袋を握りつぶし、中身の半分ほどを鍋に入れてみる！/

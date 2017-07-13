@@ -320,12 +320,7 @@ void main()
 		   NULL, " ...So, well.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04024", 128, 64);
 	OutputLine(NULL, "君が気絶していたという河原。",
-		   NULL, " That river bed you were unconscious on.", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-
+		   NULL, " That river bed you were unconscious on.", Line_WaitForInput);
 	PlaySE(4, "s03/00/kisya04025", 128, 64);
 	OutputLine(NULL, "流れ込むんだよ、",
 		   NULL, " The gas...", Line_WaitForInput);
