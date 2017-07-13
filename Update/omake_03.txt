@@ -504,7 +504,7 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "６。",
-		   NULL, " six.", Line_ContinueAfterTyping);
+		   NULL, " six.", Line_WaitForInput);
 // !sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1368,6 +1368,7 @@ void main()
 		   NULL, "Time to go back to Hinamizawa, lock up Satoko-chan, and—hah, hah—raise her into a maid servant~~♪.", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_029", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　では雛見沢にバイクで帰りますか＠キーを入れて、カチっと＠/
 	PlaySE(4, "s20/10/441000097", 128, 64);
