@@ -5393,19 +5393,17 @@ void main()
 		   NULL, "I draw ever closer to the trembling maidens, and then, one by one... I show them... hu-hu-hu!!!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei29670", 128, 64);
 	OutputLine(NULL, "　ひとつ食べるごとに…次は誰を食べようかにゃあと…顎をこう、くいと持って、品定めをして…、",
-		   NULL, " For every one I eat... I hold my jaw tight, just like this, and appraise the goods... wondering which to eat next... ", Line_ModeSpecific);
+		   NULL, " For every one I eat... I hold my jaw tight, just like this, and appraise the goods... wondering which to eat next...", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei29680", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "くっくっく！」",
-		   NULL, "Hu-hu-hu!\"", Line_WaitForInput);
-	OutputLine(NULL, "（少女はケーキと翻訳して下さいね☆",
-		   NULL, " (Please translate \"girls\" as \"cake,\" all right☆?", Line_WaitForInput);
-	OutputLine(NULL, "　圭一くんはどうやらケーキセット盛り合わせの話をしているようです（編注））",
-		   NULL, " Keiichi-kun seems to be talking about cake combination platters (emphasis mine))", Line_ModeSpecific);
+		   NULL, " Hu-hu-hu!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode == 0) { ClearMessage(); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（少女はケーキと翻訳して下さいね☆",
+		   NULL, "(Please translate \"girls\" as \"cake,\" all right☆?", Line_WaitForInput);
+	OutputLine(NULL, "　圭一くんはどうやらケーキセット盛り合わせの話をしているようです（編注））",
+		   NULL, " Keiichi-kun seems to be talking about cake combination platters (emphasis mine))", Line_Normal);
+	ClearMessage();
 
 //「......見せ付けるように...！＠　顎をこう、...くいともって、ご、ごくりッ！！！＠
 	PlaySE(4, "s19/23/202800036", 128, 64);
@@ -5511,22 +5509,24 @@ void main()
 	OutputLine(NULL, "　もうこんな試合どうでもいいやぁ！",
 		   NULL, " I don't care about it anymore! ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei29760", 128, 64);
-	OutputLine(NULL, "　そんなことより……、試合が終わったらエンジェルモートに行って、",
-		   NULL, "Instead... once this game is over... ", Line_ModeSpecific);
-	PlaySE(4, "s19/01/hr_kei29770", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんなことより……、試合が終わったらエンジェルモートに行って、",
+		   NULL, "Instead... once this game is over...", Line_WaitForInput);
+	PlaySE(4, "s19/01/hr_kei29770", 128, 64);
 	OutputLine(NULL, "……フリルとリボンで西洋人形のように飾られた、ゴシックロリータ少女、食い放題で行こうかなぁ？！",
-		   NULL, "why don't I head down to Angel Mort and get all-you-can eat of gothic lolitas, decorated like western dolls in frills and ribbons?!", Line_WaitForInput);
+		   NULL, " why don't I head down to Angel Mort and get all-you-can eat of gothic lolitas, decorated like western dolls in frills and ribbons?!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei29780", 128, 64);
 	OutputLine(NULL, "　ぐっひゃっひゃっひゃッ！！",
-		   NULL, " Guh-hya-hya-hya!!", Line_WaitForInput);
+		   NULL, " Guh-hya-hya-hya!!", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei29790", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今夜は…豪快に徹底的に食い散らかしじゃぁいッ！！！」",
-		   NULL, " Tonight... will be the greatest feast I have ever known!!!\"", Line_ModeSpecific);
+		   NULL, "Tonight... will be the greatest feast I have ever known!!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s19/23/202800039", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ロ、ロリータを…",
 		   NULL, "\"L-Lolitas...", Line_ContinueAfterTyping);
 
@@ -5534,7 +5534,6 @@ void main()
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "s19/23/202800039", 128, 64);
 	OutputLine(NULL, "く、",
 		   NULL, " A-", Line_ContinueAfterTyping);
 
@@ -5609,13 +5608,14 @@ void main()
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
 // 　さっき言ったはずだ！＠　認めるか否かが男の分岐路なのだ！！＠　貴様は胸を張れるべき男！＠　さぁ！＠　手を差し出せ！＠　自らの偉大さを示してみろ！＠　俺と一緒に...俺たちの世界を認めるんだぁああぁああぁッ！！！！＠
 //「...ぅ..................ぅぅぅぅぅぅぅぅぅぅーーーッ！！！！＠
 	PlaySE(4, "s19/01/hr_kei29830", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さっき言ったはずだ！！",
-		   NULL, " I already said!!", Line_WaitForInput);
+		   NULL, "I already said!!", Line_WaitForInput);
 	OutputLine(NULL, "　認めるか否かが男の分岐路なのだ！！！",
 		   NULL, " Admitting your perversion is what separates the boys from the men!!!", Line_WaitForInput);
 	OutputLine(NULL, "　貴様は胸を張れるべき男！！",
@@ -5623,13 +5623,13 @@ void main()
 	OutputLine(NULL, "　さぁ！！",
 		   NULL, " Now!!", Line_WaitForInput);
 	OutputLine(NULL, "　手を差し出せ！！",
-		   NULL, " Reach out your hand!! ", Line_ModeSpecific);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Reach out your hand!!", Line_WaitForInput);
 	OutputLine(NULL, "　自らの偉大さを示してみろ！！",
-		   NULL, "And show me how great you really are!!", Line_WaitForInput);
+		   NULL, " And show me how great you really are!!", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei29830_01", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺と一緒に…俺たちの世界を認めるんだぁああぁああぁッ！！！！」",
-		   NULL, " Come with me... and accept that it is our world!!!!\"", Line_ModeSpecific);
+		   NULL, "Come with me... and accept that it is our world!!!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5780,13 +5780,8 @@ void main()
 	PlaySE(4, "s19/01/hr_kei29890", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……俺のことは、",
-		   NULL, "\"...Just call me...", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+		   NULL, "\"...Just call me...", Line_WaitForInput);
 	PlaySE( 3, "wa_010", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //...Ｋと呼べ。＠
 //「け、......Ｋ＠.........Ｋぇぇい...！！」/
@@ -6204,7 +6199,8 @@ void main()
 
 //「...な、!w600...何者だよ、!w800...あの前原圭一って男は...＠　あの豪速球を前にして、ここまでの余裕とは？！＠
 //「ふ、ふん、かなわないと見て空威張りをしているだけさ＠あんな不真面目そうな男にあの亀田が打たれるはずはない...。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s19/00/cama50003", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Man</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…な、",
 		   NULL, "\"...Wha...", Line_ContinueAfterTyping);
 
