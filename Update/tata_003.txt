@@ -7798,22 +7798,22 @@ void main()
 		   NULL, "\"This comeback wouldn't have happened were it not for you getting on base.", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000021", 128, 64);
 	OutputLine(NULL, "ぜひ明日のバーベキューにはいらして下さい。",
-		   NULL, " Please, come to tomorrow's barbecue.", Line_WaitForInput);
+		   NULL, " Please, come to tomorrow's barbecue. ", Line_ModeSpecific);
 
 	DisableWindow();
 	DrawBustshot( 3, "ir_yk_de_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...いやいやそれよりも＠　ぜひうちのチームに入りませんか？＠　あなたとなら...県下を制覇できるかも...！！！￥
 	PlaySE(4, "s19/10/501000022", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…いやいやそれよりも！",
 		   NULL, " ...No, besides that!", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000023", 128, 64);
 	OutputLine(NULL, "　ぜひうちのチームに入りませんか？！",
-		   NULL, " Would you please consider joining the team?! ", Line_ModeSpecific);
+		   NULL, " Would you please consider joining the team?!", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000024", 128, 64);
-	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたとなら…県下を制覇できるかも…！！！」",
-		   NULL, "If you were with us... we could dominate the whole prefecture...!!!\"", Line_Normal);
+		   NULL, " If you were with us... we could dominate the whole prefecture...!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "re_se_wa_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
