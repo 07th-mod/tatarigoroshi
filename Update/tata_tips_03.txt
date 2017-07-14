@@ -64,10 +64,10 @@ void main()
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //「わわ＠　な、何だぁ？！＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「わわ！",
-		   NULL, "\"Whaa?!", Line_WaitForInput);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s20/01/440100120", 128, 64);
+	OutputLine(NULL, "「わわ！",
+		   NULL, "\"Whaa?!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　な、何だぁ？！」",
 		   NULL, " What was that?!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -80,8 +80,12 @@ void main()
 	PlaySE(4, "s20/02/440200072", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「今、廊下からすごいのが聞こえた！",
-		   NULL, "\"I just heard something really loud from the hallway!", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200073", 128, 64);
+		   NULL, "\"I just heard something really loud from the hallway!", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
 	OutputLine(NULL, "　何だろ！",
 		   NULL, " What was it?", Line_WaitForInput);
 	PlaySE(4, "s20/02/440200073", 128, 64);
@@ -269,11 +273,10 @@ void main()
 	PlaySE(4, "s20/10/441000009", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もちろん大きな家ですから、ベテランのお局様と化したメイド長から、新米のぴちぴちしたメイドさんまでがたくさんいるのです！！",
-		   NULL, "Being a large house, of course, they have all kinds of maids—from the veteran ones who turned mean and don't want to give up their jobs, to the new ones who are young and full of energy!!", Line_WaitForInput);
+		   NULL, "Being a large house, of course, they have all kinds of maids—from the veteran ones who turned mean and don't want to give up their jobs, to the young ones full of energy!!", Line_WaitForInput);
 	OutputLine(NULL, "　ほら、想像できますか？",
-		   NULL, " See, can you imagine that? ", Line_ModeSpecific);
+		   NULL, " See, can you imagine that? ", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000010", 128, 64);
-	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ほらぁ…♪」",
 		   NULL, "Yes...♪\"", Line_Normal);
 	ClearMessage();
@@ -319,13 +322,13 @@ void main()
 		   NULL, " Do it over!", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000016", 128, 64);
 	OutputLine(NULL, "　バッシャ！！",
-		   NULL, " Splash!!", Line_WaitForInput);
+		   NULL, " Splash!! ", Line_ModeSpecific);
 	PlaySE(4, "s20/10/441000017", 128, 64);
-	OutputLine(NULL, "　バケツを逆さにぶっかけられるメイドさん！",
-		   NULL, " A bucket falls upside-down on the maid! ", Line_ModeSpecific);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　バケツを逆さにぶっかけられるメイドさん！",
+		   NULL, "A bucket falls upside-down on the maid!", Line_WaitForInput);
 	OutputLine(NULL, "　びしょ濡れのメイドさんが…泣きそうになりながら、それでも健気に…、はぁはぁ！！",
-		   NULL, "She's soaking wet... and she wants to cry, but still puts on a brave face... haa haa!!", Line_WaitForInput);
+		   NULL, " She's soaking wet... and she wants to cry, but still puts on a brave face... haa haa!!", Line_WaitForInput);
 	PlaySE(4, "s20/10/441000018", 128, 64);
 	OutputLine(NULL, "　メ・イ・ド〜〜〜〜♪♪♪！！」",
 		   NULL, " Maaaiiidddsss~~~~♪♪♪!!\"", Line_Normal);
