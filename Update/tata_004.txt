@@ -1108,7 +1108,7 @@ void main()
 		   NULL, "\"Satoko did have a plan.", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300480", 128, 64);
 	OutputLine(NULL, "亀田を口説き落とすなんて真似は圭ちゃん以外には出来なかったわけだし。",
-		   NULL, " But you're the only one who could have won over Kameda like you did, Kei-chan.", Line_Normal);
+		   NULL, " But you're the only one who could have won over Kameda like you did, Kei-chan.", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 3, "me_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1524,6 +1524,7 @@ void main()
 	PlaySE(4, "s19/10/501000071", 128, 64);
 	OutputLine(NULL, "　沙都子ちゃんのお兄さんです。",
 		   NULL, " Satoko-chan's older brother, I mean.", Line_WaitForInput);
+	PlaySE(4, "s19/10/501000072", 128, 64);
 	OutputLine(NULL, "北条悟史（さとし）くんと言いましてね。",
 		   NULL, " His name is Satoshi Houjou-kun,", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000073", 128, 64);
