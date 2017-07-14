@@ -3152,6 +3152,7 @@ void main()
 	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
 	DrawScene( "black", 3000 );
@@ -3159,9 +3160,8 @@ void main()
 
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_074", "up", 0, 0, 300 );
-	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys01", 128, 0 );
+	DrawSceneWithMask( "bg_074", "up", 0, 0, 300 );
 
 //　今日のゲームは脱落形式だから、負けた人間はゲームから抜け、バーベキューの後片付けをしていた￥
 	OutputLine(NULL, "　今日のゲームは脱落形式だから、負けた人間はゲームから抜け、バーベキューの後片付けをしていた。",
