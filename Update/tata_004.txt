@@ -301,14 +301,14 @@ void main()
 		   NULL, "\"You underestimate us, Satoko!", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei30410", 128, 64);
 	OutputLine(NULL, "　俺たちが来た以上、まさか霜降りが一口でも食べられるなんて思ってるんじゃないだろうなぁ？！",
-		   NULL, " Now that we've arrived, you don't think you'll be able to have even one bite of that fabulously marbled beef, do you?!", Line_WaitForInput);
+		   NULL, " Now that we've arrived, you don't think you'll be able to have even one bite of that fabulously marbled beef, do you?! ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei30420", 128, 64);
-	OutputLine(NULL, "　以前、ここで弁当を食った時を思い出せ。",
-		   NULL, " Remember when we ate our bento here? ", Line_ModeSpecific);
-	PlaySE(4, "s19/01/hr_kei30430", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　以前、ここで弁当を食った時を思い出せ。",
+		   NULL, " Remember when we ate our bento here?", Line_WaitForInput);
+	PlaySE(4, "s19/01/hr_kei30430", 128, 64);
 	OutputLine(NULL, "俺と沙都子の致命的なリーチ差で、今回も圧倒してやるぜー！！」",
-		   NULL, "You and I have a fatal difference in reach—I'll be overwhelming you once again!!\"", Line_Normal);
+		   NULL, " You and I have a fatal difference in reach—I'll be overwhelming you once again!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "sa_si_bi_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1115,14 +1115,14 @@ void main()
 		   NULL, "\"Okay, is everyone listening?", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000042", 128, 64);
 	OutputLine(NULL, "　昨日は大勝利でしたね。",
-		   NULL, " We won a huge game yesterday.", Line_WaitForInput);
+		   NULL, " We won a huge game yesterday. ", Line_ModeSpecific);
 	PlaySE(4, "s19/10/501000043", 128, 64);
-	OutputLine(NULL, "すごいピッチャーの登場で苦戦もしましたが、",
-		   NULL, " It had become a hard battle after that amazing pitcher came in, ", Line_ModeSpecific);
-	PlaySE(4, "s19/10/501000044", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すごいピッチャーの登場で苦戦もしましたが、",
+		   NULL, "It had become a hard battle after that amazing pitcher came in,", Line_WaitForInput);
+	PlaySE(4, "s19/10/501000044", 128, 64);
 	OutputLine(NULL, "こちらも同じくらい頼もしい助っ人の登場で、見事、逆転勝利を収めることができました。」",
-		   NULL, "but thanks to equally-reliable saviors on our side, we scored a beautiful turnaround victory.\"", Line_ModeSpecific);
+		   NULL, " but thanks to equally-reliable saviors on our side, we scored a beautiful turnaround victory.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1230,7 +1230,7 @@ void main()
 		   NULL, "\"Satoko did have a plan.", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300480", 128, 64);
 	OutputLine(NULL, "亀田を口説き落とすなんて真似は圭ちゃん以外には出来なかったわけだし。",
-		   NULL, " But you're the only one who could have won over Kameda like you did, Kei-chan.", Line_Normal);
+		   NULL, " But you're the only one who could have won over Kameda like you did, Kei-chan.", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 3, "me_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -2255,19 +2255,19 @@ void main()
 		   NULL, " ......By law, obviously a single individual can't adopt a child.", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000096", 128, 64);
 	OutputLine(NULL, "だから私は…沙都子ちゃんを養子にしてあげられないんです。",
-		   NULL, " So I... can't make Satoko-chan my adopted daughter.", Line_WaitForInput);
+		   NULL, " So I... can't make Satoko-chan my adopted daughter. ", Line_ModeSpecific);
 
 	DisableWindow();
 	DrawBustshot( 3, "ir_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...はっはっはっは、残念です＠沙都子ちゃんにパパって呼んでもらえる計画は早くも頓挫ですから。￥
 	PlaySE(4, "s19/10/501000097", 128, 64);
-	OutputLine(NULL, "…はっはっはっは、残念です。",
-		   NULL, " ...Ha-ha-ha-ha—what a shame. ", Line_ModeSpecific);
-	PlaySE(4, "s19/10/501000098", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…はっはっはっは、残念です。",
+		   NULL, "...Ha-ha-ha-ha—what a shame.", Line_WaitForInput);
+	PlaySE(4, "s19/10/501000098", 128, 64);
 	OutputLine(NULL, "沙都子ちゃんにパパって呼んでもらえる計画は早くも頓挫ですから。」",
-		   NULL, "Didn't take long for my plan to get her to call me Papa to hit a setback.\"", Line_Normal);
+		   NULL, " Didn't take long for my plan to get her to call me Papa to hit a setback.\"", Line_Normal);
 	ClearMessage();
 
 //　突拍子もないことを言い出す人だから＠
@@ -2349,7 +2349,8 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	PlaySE(5, "s19/01/hr_kei30850", 128, 64);
-	OutputLineAll(NULL, "\n", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	OutputLine(NULL, "　え？",
