@@ -1230,7 +1230,7 @@ void main()
 		   NULL, "\"Satoko did have a plan.", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300480", 128, 64);
 	OutputLine(NULL, "亀田を口説き落とすなんて真似は圭ちゃん以外には出来なかったわけだし。",
-		   NULL, " But you're the only one who could have won over Kameda like you did, Kei-chan.", Line_Normal);
+		   NULL, " But you're the only one who could have won over Kameda like you did, Kei-chan.", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 3, "me_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1695,6 +1695,7 @@ void main()
 	PlaySE(4, "s19/10/501000071", 128, 64);
 	OutputLine(NULL, "　沙都子ちゃんのお兄さんです。",
 		   NULL, " Satoko-chan's older brother, I mean.", Line_WaitForInput);
+	PlaySE(4, "s19/10/501000072", 128, 64);
 	OutputLine(NULL, "北条悟史（さとし）くんと言いましてね。",
 		   NULL, " His name is Satoshi Houjou-kun,", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000073", 128, 64);
@@ -2517,7 +2518,7 @@ void main()
 	OutputLine(NULL, "　とても簡単なことですよ。",
 		   NULL, "\"It's a very simple one.\"", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　監督はそう言いながらにっこりと笑う。",
-		   NULL, "The Coach said this, giving me a grin.", Line_Normal);
+		   NULL, " The Coach said this, giving me a grin.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "ir_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -3494,6 +3495,7 @@ void main()
 	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
 	DrawScene( "black", 3000 );
@@ -3501,9 +3503,8 @@ void main()
 
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_074", "up", 0, 0, 300 );
-	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys01", 128, 0 );
+	DrawSceneWithMask( "bg_074", "up", 0, 0, 300 );
 
 //　今日のゲームは脱落形式だから、負けた人間はゲームから抜け、バーベキューの後片付けをしていた￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4332,7 +4333,7 @@ void main()
 		   NULL, " To another school?", Line_WaitForInput);
 	PlaySE(4, "s19/06/500600428", 128, 64);
 	OutputLine(NULL, "それを誰かが見た？",
-		   NULL, " And that someone saw it?", Line_Normal);
+		   NULL, " And that someone saw it?", Line_WaitForInput);
 	PlaySE(4, "s19/06/500600429", 128, 64);
 	OutputLine(NULL, "　それとも聞いた？」",
 		   NULL, " Or heard about it?\"", Line_Normal);
