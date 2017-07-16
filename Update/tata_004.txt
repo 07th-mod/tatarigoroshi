@@ -4810,22 +4810,22 @@ void main()
 	OutputLine(NULL, "　なぜここ一番で俺は勝てないんだぁぁ！！",
 		   NULL, " Why couldn't I win now of all times?!", Line_WaitForInput);
 	OutputLine(NULL, "　今日は絶対に勝ちたい、この罰ゲームは誰かにやらせてみたいと思うといつも負ける！！",
-		   NULL, " Whenever I think 'I'll definitely win today' and that 'I'll make someone else play the punishment game', I lose!!", Line_WaitForInput);
+		   NULL, " Whenever I think 'I'll definitely win today' and that 'I'll make someone else play the punishment game', I lose!! ", Line_ModeSpecific);
 
 	PlaySE( 3, "wa_010", 128, 64 );
 
 //　足りないのか？＠/
 	PlaySE(4, "s19/01/hr_kei31750_02", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　足りないのか？！",
-		   NULL, " Is it not enough?! ", Line_ModeSpecific);
+		   NULL, "Is it not enough?!", Line_WaitForInput);
 
 	PlaySE( 3, "wa_011", 128, 64 );
 
 //　勝利への信念が足りないのか？＠/
 	PlaySE(4, "s19/01/hr_kei31750_03", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　勝利への信念が足りないのか？！",
-		   NULL, "Do I not believe hard enough in victory?!", Line_WaitForInput);
+		   NULL, " Do I not believe hard enough in victory?!", Line_WaitForInput);
 
 	PlaySE( 3, "wa_029", 128, 64 );
 
@@ -5686,13 +5686,9 @@ void main()
 //　きっと...沙都子に謝罪する手紙のようなものが残されてたんではないかと、漠然と思っていた＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから悟史が家出をした時にも、",
-		   NULL, "So when Satoshi ran away...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "So when Satoshi ran away...", Line_WaitForInput);
 	OutputLine(NULL, "　きっと…沙都子に謝罪する手紙のようなものが残されてたんではないかと、漠然と思っていた。",
-		   NULL, "he would probably have left some kind of a letter apologizing to Satoko—that was just kind of what I figured.", Line_ModeSpecific);
+		   NULL, " he would probably have left some kind of a letter apologizing to Satoko—that was just kind of what I figured.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......でも、...何だか魅音の話す雰囲気は、...家出のそれとは...少し異なっている￥
@@ -5749,13 +5745,9 @@ void main()
 		   NULL, "\"I think that's a lie.", Line_WaitForInput);
 	PlaySE(4, "s19/02/500200619", 128, 64);
 	OutputLine(NULL, "悟史くんは家出なんかじゃない。」",
-		   NULL, " Satoshi-kun didn't run away,\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Satoshi-kun didn't run away,\"", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　レナがそう、きっぱり断じた。",
-		   NULL, "declared Rena shortly.", Line_Normal);
+		   NULL, " declared Rena shortly.", Line_Normal);
 	ClearMessage();
 
 //「......ちょっと待てよ＠...転校したわけでもなく＠引越したわけでもなく＠...それで家出したわけでもないなら...＠一体、悟史はどうして...、＠
@@ -5921,19 +5913,19 @@ void main()
 		   NULL, " I apologized for it!", Line_WaitForInput);
 	PlaySE(4, "s19/02/500200632", 128, 64);
 	OutputLine(NULL, "　でも悟史くんはきっと謝らなかった。",
-		   NULL, " But Satoshi-kun probably didn't.", Line_WaitForInput);
+		   NULL, " But Satoshi-kun probably didn't. ", Line_ModeSpecific);
 
 	DisableWindow();
 	DrawBustshot( 3, "re_si_hii_b1_b", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //だから＠　オヤシロさまの祟りにあってしまったに違いないのッ！！￥
 	PlaySE(4, "s19/02/500200633", 128, 64);
-	OutputLine(NULL, "だから！",
-		   NULL, " It must have been! ", Line_ModeSpecific);
-	PlaySE(4, "s19/02/500200634", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから！",
+		   NULL, "It must have been!", Line_WaitForInput);
+	PlaySE(4, "s19/02/500200634", 128, 64);
 	OutputLine(NULL, "　オヤシロさまの祟りにあってしまったに違いないのッ！！」",
-		   NULL, "It must have been Oyashiro-sama's curse!!\"", Line_Normal);
+		   NULL, " It must have been Oyashiro-sama's curse!!\"", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 2, "lsys25", 128, 0 );
@@ -6395,12 +6387,12 @@ void main()
 //　...それで、何年か前にダム工事で雛見沢が水没することになって...＠その時に工事関係者が死んだとか何とかで、それがオヤシロさまの祟りってことになってるらしい＠...そういう話だ￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それで、何年か前にダム工事で雛見沢が水没することになって…、",
-		   NULL, "...And a few years ago, when they started talking about flooding Hinamizawa as part of the dam project...", Line_WaitForInput);
-	OutputLine(NULL, "その時に工事関係者が死んだとか何とかで、それがオヤシロさまの祟りってことになってるらしい。",
-		   NULL, " One of the people worked on site died or something, and people blamed it on Oyashiro-sama's curse. ", Line_ModeSpecific);
+		   NULL, "...And a few years ago, when they started talking about flooding Hinamizawa as part of the dam project... ", Line_ModeSpecific);
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時に工事関係者が死んだとか何とかで、それがオヤシロさまの祟りってことになってるらしい。",
+		   NULL, "One of the people worked on site died or something, and people blamed it on Oyashiro-sama's curse.", Line_WaitForInput);
 	OutputLine(NULL, "…そういう話だ。",
-		   NULL, "...That's how it was.", Line_Normal);
+		   NULL, " ...That's how it was.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_si_de_a1_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -7154,13 +7146,9 @@ void main()
 //　......今日までと同じ、楽しい明日が訪れることを確認するまでは、...この胸のもやもやは取れない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そう理屈でわかっていても。",
-		   NULL, "...But even though I understood it logically...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...But even though I understood it logically...", Line_WaitForInput);
 	OutputLine(NULL, "　……今日までと同じ、楽しい明日が訪れることを確認するまでは、…この胸のもやもやは取れない。",
-		   NULL, "the mist in my heart wasn't going to fade... until tomorrow turned out to be as fun as today.", Line_Normal);
+		   NULL, " the mist in my heart wasn't going to fade... until tomorrow turned out to be as fun as today.", Line_Normal);
 	ClearMessage();
 
 //「......変だぞ俺＠......さっきのみんなとのやりとり、...ちょっと気にし過ぎだぜ...。＠
