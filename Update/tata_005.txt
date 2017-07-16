@@ -466,7 +466,7 @@ void main()
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……何だか胸のつかえが取れない。",
-		   NULL, "but the load on my chest remained where it was.", Line_WaitForInput);
+		   NULL, "But the load on my chest remained where it was.", Line_WaitForInput);
 	OutputLine(NULL, "ちょっと不快な気持ちだった。",
 		   NULL, " It wasn't very pleasant at all.", Line_Normal);
 	ClearMessage();
@@ -1222,14 +1222,14 @@ void main()
 		   NULL, "\"It's really hard to think like that.", Line_WaitForInput);
 	PlaySE(4, "s19/02/500200679", 128, 64);
 	OutputLine(NULL, "…多くの人たちは日々の幸せに飽食してるよ。",
-		   NULL, " ...A lot of people take their everyday happiness for granted.", Line_WaitForInput);
+		   NULL, " ...A lot of people take their everyday happiness for granted. ", Line_ModeSpecific);
 	PlaySE(4, "s19/02/500200680", 128, 64);
-	OutputLine(NULL, "今日と同じ明日が訪れると信じきってるから、今日できることを明日に送る。",
-		   NULL, " They think tomorrow will be the same as today, so they leave things they could do today for tomorrow. ", Line_ModeSpecific);
-	PlaySE(4, "s19/02/500200681", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今日と同じ明日が訪れると信じきってるから、今日できることを明日に送る。",
+		   NULL, "They think tomorrow will be the same as today, so they leave things they could do today for tomorrow.", Line_WaitForInput);
+	PlaySE(4, "s19/02/500200681", 128, 64);
 	OutputLine(NULL, "今日してやれるやさしさを、明日に送ってしまう。」",
-		   NULL, "They leave the kindness they could have shown today until tomorrow.\"", Line_ModeSpecific);
+		   NULL, " They leave the kindness they could have shown today until tomorrow.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1375,10 +1375,10 @@ void main()
 	PlaySE(4, "s19/02/500200694", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「沙都子ちゃんの元気な顔を見れたら安心するつもりだった…。",
-		   NULL, "\"Because...", Line_WaitForInput);
+		   NULL, "\"Because... you thought seeing Satoko-chan's energetic face would cheer you up.", Line_WaitForInput);
 	PlaySE(4, "s19/02/500200695", 128, 64);
 	OutputLine(NULL, "……かな？」",
-		   NULL, " you thought seeing Satoko-chan's energetic face would cheer you up?\"", Line_Normal);
+		   NULL, "...Right?\"", Line_Normal);
 	ClearMessage();
 
 //　...まったくの図星だった＠
@@ -1391,13 +1391,9 @@ void main()
 //　俺の胸の中のもやもやなど、吹き飛ばすように消せたに違いない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今朝、全員が笑顔でそろうことができたなら、",
-		   NULL, "If everyone had been here with smiles on their faces this morning,", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "If everyone had been here with smiles on their faces this morning,", Line_WaitForInput);
 	OutputLine(NULL, "　俺の胸の中のもやもやなど、吹き飛ばすように消せたに違いない。",
-		   NULL, "then the murk in my heart would have definitely been blown to smithereens.", Line_Normal);
+		   NULL, " then the murk in my heart would have definitely been blown to smithereens.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1727,13 +1723,9 @@ void main()
 //　......いつの間にか、いつものお昼の賑やかさを取り戻している￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は相変わらずいないけど、",
-		   NULL, "Satoko still wasn't here...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Satoko still wasn't here...", Line_WaitForInput);
 	OutputLine(NULL, "　……いつの間にか、いつものお昼の賑やかさを取り戻している。",
-		   NULL, "but at some point, we had regained our lively lunchtime.", Line_Normal);
+		   NULL, " but at some point, we had regained our lively lunchtime.", Line_Normal);
 	ClearMessage();
 
 //　はしゃぎ＠
@@ -1741,19 +1733,11 @@ void main()
 //　ふざけて＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　はしゃぎ、",
-		   NULL, "We had fun,", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "We had fun,", Line_WaitForInput);
 	OutputLine(NULL, "　笑い、",
-		   NULL, "we smiled,", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " we smiled,", Line_WaitForInput);
 	OutputLine(NULL, "　ふざけて。",
-		   NULL, "and we fooled around.", Line_ModeSpecific);
+		   NULL, " and we fooled around.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...みんな、ありがとう＠きっとこれが一番正しい＠
@@ -1863,13 +1847,9 @@ void main()
 //　...お腹の底にたまった嫌なものを、笑いと一緒に全部吐き出すつもりで＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お腹の底から、みんなで大笑いした。",
-		   NULL, "Everyone laughed uproariously from their stomachs...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Everyone laughed uproariously from their stomachs...", Line_WaitForInput);
 	OutputLine(NULL, "　…お腹の底にたまった嫌なものを、笑いと一緒に全部吐き出すつもりで。",
-		   NULL, "trying to laugh out all of the bad stuff accumulating in them.", Line_ModeSpecific);
+		   NULL, " trying to laugh out all of the bad stuff accumulating in them.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　弁当箱が空になる頃には、もういつも通りのみんなだった...￥
