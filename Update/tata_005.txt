@@ -2318,7 +2318,7 @@ void main()
 
 //「どうもどうも、こんにちは＠お昼休み中、すみませんねぇ。￥
 	PlaySE(4, "s19/11/500700018", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Middle-Aged Man</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#a59da9>中年男</color>", NULL, "<color=#a59da9>Middle-Aged Man</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どうもどうも、こんにちは。",
 		   NULL, "\"Hello there—good day.", Line_WaitForInput);
 	PlaySE(4, "s19/11/500700019", 128, 64);
@@ -2867,7 +2867,7 @@ void main()
 //　...こんな、言葉が自分の口から出るなんて、思いもしなかった￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…でもそれは俺も同じだ。",
-		   NULL, "..I did as well.", Line_ModeSpecific);
+		   NULL, "...I did as well.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2893,13 +2893,9 @@ void main()
 //　...昨日までの平穏を...取り戻せるはず.........￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…なかったことに出来れば…取り戻せるはず。",
-		   NULL, "...If I could do that... then I could get back...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...If I could do that... then I could get back...", Line_WaitForInput);
 	OutputLine(NULL, "　…昨日までの平穏を…取り戻せるはず………。",
-		   NULL, "the peace we had until yesterday... I could get it back...", Line_Normal);
+		   NULL, " the peace we had until yesterday... I could get it back...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -3270,14 +3266,14 @@ void main()
 		   NULL, "His works go on display twice a year in the Great Ariake Exhibition in Tokyo, don't they?", Line_WaitForInput);
 	PlaySE(4, "s19/11/500700066", 128, 64);
 	OutputLine(NULL, "どんな立派な絵を描かれるかは存じませんがね。",
-		   NULL, " I don't know what sort of fantastic pictures he creates, though.", Line_WaitForInput);
+		   NULL, " I don't know what sort of fantastic pictures he creates, though. ", Line_ModeSpecific);
 	PlaySE(4, "s19/11/500700067", 128, 64);
-	OutputLine(NULL, "お母さんも知的そうな方じゃないですか。",
-		   NULL, " Then there's your mother—she seems intelligent too. ", Line_ModeSpecific);
-	PlaySE(4, "s19/11/500700068", 128, 64);
 	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お母さんも知的そうな方じゃないですか。",
+		   NULL, "Then there's your mother—she seems intelligent too.", Line_WaitForInput);
+	PlaySE(4, "s19/11/500700068", 128, 64);
 	OutputLine(NULL, "高学歴って聞きましたよ？",
-		   NULL, "I heard she was a high academic achiever.", Line_Normal);
+		   NULL, " I heard she was a high academic achiever.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "oi_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -4179,7 +4175,7 @@ void main()
 //「...あんなに痛かったのに、あざひとつないないんて...。＠
 //「それだけあいつが慣れている、ということですよ。＠
 //　.........あいつ、か...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…あんなに痛かったのに、あざひとつないないんて…。」",
 		   NULL, "\"...It hurt so much, but there isn't a single bruise...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4266,13 +4262,9 @@ void main()
 //　「大石が沙都子のところへ来るべくして来た」と言っているように見え、...少し面白くない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何だかその仕種が、",
-		   NULL, "Somehow, that gesture seemed...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Somehow, that gesture seemed...", Line_WaitForInput);
 	OutputLine(NULL, "　「大石が沙都子のところへ来るべくして来た」と言っているように見え、…少し面白くない。",
-		   NULL, "to be saying Ooishi was bound to come to Satoko, and did... and that it was no laughing matter.", Line_Normal);
+		   NULL, " to be saying Ooishi was bound to come to Satoko, and did... and that it was no laughing matter.", Line_Normal);
 	ClearMessage();
 
 //「....................................。￥
@@ -4578,6 +4570,7 @@ void main()
 	OutputLine(NULL, "「……今思い出しても、ぞっとします。",
 		   NULL, "\"...I still shudder to think about it. ", Line_ModeSpecific);
 	PlaySE(4, "s19/10/501000192", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……今の元気な沙都子ちゃんしか知らないあなたには、",
 		   NULL, "...You've never known any Satoko but the energetic and healthy one now...", Line_ContinueAfterTyping);
 
@@ -5123,14 +5116,14 @@ void main()
 		   NULL, "\"Please excuse me.", Line_WaitForInput);
 	PlaySE(4, "s19/10/501000218", 128, 64);
 	OutputLine(NULL, "大した怪我ではありませんが、患部を揉んだりするようなことはくれぐれも避けてください。",
-		   NULL, " You weren't wounded badly, but please avoid putting pressure on your shoulders or anything along those lines.", Line_WaitForInput);
+		   NULL, " You weren't wounded badly, but please avoid putting pressure on your shoulders or anything along those lines. ", Line_ModeSpecific);
 	PlaySE(4, "s19/10/501000219", 128, 64);
-	OutputLine(NULL, "もしも高熱が出たり、腫れたりするようなことがあったらすぐに連絡してくださいね。",
-		   NULL, " If you get a high fever or it starts to swell, contact me right away, okay? ", Line_ModeSpecific);
-	PlaySE(4, "s19/10/501000220", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もしも高熱が出たり、腫れたりするようなことがあったらすぐに連絡してくださいね。",
+		   NULL, "If you get a high fever or it starts to swell, contact me right away, okay?", Line_WaitForInput);
+	PlaySE(4, "s19/10/501000220", 128, 64);
 	OutputLine(NULL, "そんな事はないとは思いますが。」",
-		   NULL, "I don't think it'll happen, though.\"", Line_Normal);
+		   NULL, " I don't think it'll happen, though.\"", Line_Normal);
 	ClearMessage();
 
 //「...あ、......そうだ、監督＠...さっきみんなが来る直前、何か言ってましたよね＠大石のことをオヤシロさまの何とか、って。￥
@@ -5232,13 +5225,9 @@ void main()
 //　さらに誰か１人が神隠し（この辺りでは鬼隠しと呼ぶらしい...）に遭うという＠......何だかよく出来た話だった＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　６月のお祭りの日に必ず誰か１人が死んで、",
-		   NULL, "On the festival day in June, one person would always die,", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "On the festival day in June, one person would always die,", Line_WaitForInput);
 	OutputLine(NULL, "　さらに誰か１人が神隠し（この辺りでは鬼隠しと呼ぶらしい…）に遭うという、",
-		   NULL, "and another person would be spirited away (but they seem to call it \"demoning away\" here...).", Line_WaitForInput);
+		   NULL, " and another person would be spirited away (but they seem to call it \"demoning away\" here...).", Line_WaitForInput);
 	OutputLine(NULL, "……何だかよく出来た話だった。",
 		   NULL, " ...What a fine story that was.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -5418,7 +5407,7 @@ void main()
 	PlaySE(4, "s19/01/hr_kei33400", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あの、…………沙都子、今日、…欠席したじゃないですか。」",
-		   NULL, "\"Umm...... Today, Satoko... She was absent today, wasn't she?\"", Line_ModeSpecific);
+		   NULL, "\"Umm...... Today, Satoko... She was absent today.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
