@@ -28,6 +28,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「起」を起こさない究極は、…死体を発見されないこと。",
 		   NULL, "The ultimate way not to create a \"beginning\"... was to not let the corpse be found.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1124,12 +1125,14 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"...............\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……あんな、擦り切れるまでに虐め抜かれて。",
 		   NULL, "\"...She was completely worn out from all the abuse.", Line_WaitForInput);
 	OutputLine(NULL, "…俺たちはあんなになるまで、ずっと見捨ててきた。」",
@@ -1138,6 +1141,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………見捨ててたわけじゃないよ。",
 		   NULL, "\"......We didn't fail her.", Line_WaitForInput);
 	PlaySE(4, "s03/03/140300291", 128, 64);

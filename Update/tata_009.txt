@@ -483,6 +483,7 @@ void main()
 
 //「やぁ、申し訳ないね＠君、雛見沢の人だよね？＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「やぁ、申し訳ないね。",
 		   NULL, "\"Hey, excuse me.", Line_WaitForInput);
 	OutputLine(NULL, "君、雛見沢の人だよね？」",
@@ -496,6 +497,7 @@ void main()
 
 //「...............そうですけど。￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……………そうですけど。」",
 		   NULL, "\"......Yes, why?\"", Line_Normal);
 	ClearMessage();
@@ -641,6 +643,7 @@ void main()
 //「僕は富竹＠フリーカメラマンさ＠専門は野鳥と風景＠まだまだ無名だけどね。＠
 //　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「僕は富竹。",
 		   NULL, "\"I'm Tomitake.", Line_WaitForInput);
 	OutputLine(NULL, "フリーカメラマンさ。",
@@ -659,6 +662,7 @@ void main()
 
 //「前原です＠...まぁその、よろしく。＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「前原です。",
 		   NULL, "\"I'm Maebara.", Line_WaitForInput);
 	OutputLine(NULL, "…まぁその、よろしく。」",
@@ -670,6 +674,7 @@ void main()
 //「前原くんかい＠　よろしくね！＠
 //　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「前原くんかい！",
 		   NULL, "\"Maebara-kun?", Line_WaitForInput);
 	OutputLine(NULL, "　よろしくね！」",
@@ -2262,6 +2267,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「風邪って言ってたよねー。」「みんな家に帰ったらうがいをちゃんとしましょうって先生言ってました。」",
 		   NULL, "\"She said she had a cold!\" \"Chie-sensei said everyone should make sure to rinse their mouths out really well!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2533,6 +2539,7 @@ void main()
 
 //「沙都子が風邪なんかじゃないことは、俺たちが一番知ってるだろ＠.........例え冗談でも、二度とそういう白々しいことを言うな＠...次は怒るからな。＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「沙都子が風邪なんかじゃないことは、俺たちが一番知ってるだろ。",
 		   NULL, "\"We know best of all she doesn't have a cold, don't we?", Line_WaitForInput);
 	OutputLine(NULL, "………例え冗談でも、二度とそういう白々しいことを言うな。",
@@ -3009,6 +3016,7 @@ void main()
 
 //「............俺は、...沙都子がどうして叔父にいじめられてるのを耐えてるか、知ってる。＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………俺は、…沙都子がどうして叔父にいじめられてるのを耐えてるか、知ってる。」",
 		   NULL, "\"......I know... why Satoko is enduring her uncle's torture.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3085,6 +3093,7 @@ void main()
 //　みんな、...俯く＠
 //　.........みんな、...同じことを考えているのだ...￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……沙都子は、叔父のいじめに耐えれば兄が帰ってくると信じることによって、…今を耐え抜こうとしてるのかもしれない。",
 		   NULL, "\"...Satoko believes her brother will come back if she can withstand the abuse... maybe that's why she's trying to push through.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100328", 128, 64);
@@ -3153,6 +3162,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「もちろん、公的機関への通報で沙都子が保護されるのが確定してからだ。",
 		   NULL, "\"Of course, only after we're sure that reporting it to a public agency will guarantee her safety.", Line_WaitForInput);
 	OutputLine(NULL, "…その確認のない内は、沙都子をかえって危険にさらすこともありえるからな。」",
@@ -3166,6 +3176,7 @@ void main()
 //「.........難しいね＠...先生との会話の中でその確約ってのが取れるわけ？＠
 //　自信なんかない＠......でも、やらなきゃならないだろ￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………難しいね。",
 		   NULL, "\"...It's a difficult problem.", Line_WaitForInput);
 	OutputLine(NULL, "…先生との会話の中でその確約ってのが取れるわけ？」",
@@ -3677,6 +3688,7 @@ void main()
 //「児童福祉法という法律があります＠この法律で、児童に対する虐待は何人に対しても認められていないことが明記されています。＠
 //「らしいですね＠...それで？￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「児童福祉法という法律があります。",
 		   NULL, "\"There's a law called the Child Welfare Law.", Line_WaitForInput);
 	OutputLine(NULL, "この法律で、児童に対する虐待は何人に対しても認められていないことが明記されています。」",
@@ -3685,6 +3697,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「らしいですね。",
 		   NULL, "\"So it would seem.", Line_WaitForInput);
 	OutputLine(NULL, "…それで？」",
@@ -3712,12 +3725,14 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「その福祉司というお役所の人は、連絡して書類で申請して何日後に助けに来てくれるんです？」",
 		   NULL, "\"How many days would it take after you contact the social worker and submit the paperwork for her to be saved?\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「即日です。",
 		   NULL, "\"It would be the same day.", Line_WaitForInput);
 	OutputLine(NULL, "彼らの仕事は、児童の安全を緊急に保護することですから。」",
@@ -3727,6 +3742,7 @@ void main()
 //「知ってますよ＠緊急性があると判断された場合ですよね＠...認められなかったら、...先生と同じ＠指導をして、様子見をするんですよね＠
 //　見てるだけ＠沙都子の叔父の機嫌を悪くして、沙都子をその場に残したまま、それっきり。＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「知ってますよ。",
 		   NULL, "\"I know that.", Line_WaitForInput);
 	OutputLine(NULL, "緊急性があると判断された場合ですよね。",
@@ -3752,6 +3768,7 @@ void main()
 
 //「............圭ちゃん、...ちょっと言い過ぎ...。￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………圭ちゃん、…ちょっと言い過ぎ…。」",
 		   NULL, "\"......Kei-chan... that's going a little too far...\"", Line_Normal);
 	ClearMessage();
@@ -3759,6 +3776,7 @@ void main()
 //「嘘はついてないだろ＠去年だか一昨年だかに児童相談所が来た時がまさにそうだったんだろ＠　その結果どうなった＠　...俺よりも魅音や先生の方がよっぽどよく知ってるだろうが！＠
 //　...魅音に言われるまでもなく、言い過ぎだった￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「嘘はついてないだろ。",
 		   NULL, "\"I'm not lying, am I?", Line_WaitForInput);
 	OutputLine(NULL, "去年だか一昨年だかに児童相談所が来た時がまさにそうだったんだろ？",
@@ -4007,6 +4025,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「相当なんてもんじゃないぞ！！",
 		   NULL, "\"It's not just pretty bad!!", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100379", 128, 64);

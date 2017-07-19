@@ -1843,6 +1843,7 @@ void main()
 
 //「じゃあ圭ちゃん、私と一緒に言いましょうね＠せーの！＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「じゃあ圭ちゃん、私と一緒に言いましょうね。",
 		   NULL, "\"Okay, Kei-chan, let's say it at the same time.", Line_WaitForInput);
 	OutputLine(NULL, "せーの！」",
@@ -1867,6 +1868,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 127, );
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「「次回のシナリオの主人公は園崎詩音になりました〜〜！！」」",
 		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_ContinueAfterTyping);
 // !sd/
@@ -2118,6 +2120,7 @@ void main()
 
 //「この３つの謎に挑み、どんなに辛くとも挫けることなく戦い続けてくれた全ての方に＠......その熱意に感謝するために、本来お送りする予定でなかった最後のシナリオをお送りします＠どうかお楽しみ下さい。￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「この３つの謎に挑み、どんなに辛くとも挫けることなく戦い続けてくれた全ての方に。",
 		   NULL, "\"For all of you warriors who never yielded to these three mysteries and kept on fighting... ", Line_ModeSpecific);
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

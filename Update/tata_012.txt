@@ -3250,6 +3250,7 @@ void main()
 
 //「「「さよーーならーーー！！」」＠
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「「「さよーーならーーー！！」」」",
 		   NULL, "\"\"\"Good-bye!!\"\"\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

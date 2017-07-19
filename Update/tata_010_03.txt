@@ -360,6 +360,7 @@ void main()
 //「本当に完全なトリックだったら、名探偵に解く余地がないじゃない。＠
 //　......それはそうだが＠...それでは意味がない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「もちろん、クリスティの『そして誰もいなくなった』は母さんの一番のお薦めね。",
 		   NULL, "\"Of course, Agatha Christie's 'And Then There Were None' is my top recommendation.", Line_WaitForInput);
 	OutputLine(NULL, "もちろん『オリエント急行』の大胆なトリックも良かったわ。あれは完全に想像の外だった。」",
@@ -475,6 +476,7 @@ void main()
 
 //「物語にならない、って、どういう意味...？￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「物語にならない、って、どういう意味…？」",
 		   NULL, "\"Don't even become stories? What does that mean...?\"", Line_Normal);
 	ClearMessage();
@@ -542,6 +544,7 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………え、",
 		   NULL, "\"......Wait...", Line_ContinueAfterTyping);
 
