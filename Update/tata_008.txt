@@ -288,13 +288,9 @@ void main()
 //　...沙都子の安否がわからないから不安なのか、どちらなのかはわからない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…梨花ちゃんが、仲間であるはずの自分に話してくれないのが不愉快なのか。",
-		   NULL, "...I couldn't tell if she was unhappy that Rika-chan wouldn't talk about it with her own friends...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...I couldn't tell if she was unhappy that Rika-chan wouldn't talk about it with her own friends...", Line_WaitForInput);
 	OutputLine(NULL, "　…沙都子の安否がわからないから不安なのか、どちらなのかはわからない。",
-		   NULL, "or if she was concerned over Satoko's well-being.", Line_Normal);
+		   NULL, " or if she was concerned over Satoko's well-being.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "down", 0, 0, 300 );
@@ -536,8 +532,7 @@ void main()
 
 //　...無理もない＠
 //　...どんな重病、もしくは大怪我で...なんて心配していたら、当の本人は涼やかに豆腐屋で買い物をしていたというのだから￥
-	PlaySE(4, "s03/01/140101026", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…無理もない。",
 		   NULL, "...It was understandable.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1033,11 +1028,13 @@ void main()
 	if (AdvMode) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「北条…！」",
 		   NULL, "\"Houjou...!\"", Line_WaitForInput);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "oka1_Shinken", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	PlaySE(4, "s03/25/142500016", 128, 64);
+	if (AdvMode) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「大丈夫だったかよ？！　風邪とかじゃないのか…？？」",
 		   NULL, " \"Were you all right?! Were you sick or something...??\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1673,14 +1670,10 @@ void main()
 	PlaySE(4, "s03/03/140300004", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……いや、その、……沙都子の叔父が帰ってきたっての、帰ってきた初日から知ってたよ…。",
-		   NULL, "\"...Well, I mean... I knew from the first day that Satoko's uncle had come home...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
+		   NULL, "\"...Well, I mean... I knew from the first day that Satoko's uncle had come home...", Line_WaitForInput);
 	PlaySE(4, "s03/03/140300005", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "この間の日曜日に……ふらっと、雛見沢に帰ってきたって……、」",
-		   NULL, "That he... just randomly showed up in Hinamizawa last Sunday...\"", Line_ModeSpecific);
+		   NULL, " That he... just randomly showed up in Hinamizawa last Sunday...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1778,7 +1771,7 @@ void main()
 	DrawSceneWithMask( "bg_108", "up", 0, 0, 1300 );
 
 //「......自宅に＠...何で連れ戻すんだよ...？＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……自宅に、",
 		   NULL, "\"...Why..", Line_WaitForInput);
 	OutputLine(NULL, "…何で連れ戻すんだよ…？」",
@@ -1790,7 +1783,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "me_se_ma_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ろくでなしの寄生虫だからね＠...自分ひとりじゃ炊事は愚か、掃除ひとつできないし。＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ろくでなしの寄生虫だからね。",
 		   NULL, "\"Because he's a good-for-nothing parasite.", Line_WaitForInput);
 	OutputLine(NULL, "…自分ひとりじゃ炊事は愚か、掃除ひとつできないし。」",
@@ -1802,7 +1795,7 @@ void main()
 	DrawBustshotWithFiltering( 3, "re_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「そ......そんな...、炊事やお掃除のために...沙都子ちゃんを連れ戻したって言うの？！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ……そんな…、炊事やお掃除のために…沙都子ちゃんを連れ戻したって言うの？！」",
 		   NULL, "\"But... But that's... He brought Satoko-chan back to have her cook and clean?!\"", Line_Normal);
 	ClearMessage();
@@ -1847,7 +1840,7 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 
 //「......沙都子が家に閉じ込められて＠!s0/
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……沙都子が家に閉じ込められて、",
 		   NULL, "\"...Satoko was locked up at home...", Line_WaitForInput);
 // !s0/
