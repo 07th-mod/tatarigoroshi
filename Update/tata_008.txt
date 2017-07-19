@@ -1771,9 +1771,11 @@ void main()
 	DrawSceneWithMask( "bg_108", "up", 0, 0, 1300 );
 
 //「......自宅に＠...何で連れ戻すんだよ...？＠
+	PlaySE(4, "s03/01/140100059", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……自宅に、",
 		   NULL, "\"...Why..", Line_WaitForInput);
+	PlaySE(4, "s03/01/140100060", 128, 64);
 	OutputLine(NULL, "…何で連れ戻すんだよ…？」",
 		   NULL, " did he bring her with him?\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1783,9 +1785,11 @@ void main()
 	DrawBustshotWithFiltering( 1, "me_se_ma_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ろくでなしの寄生虫だからね＠...自分ひとりじゃ炊事は愚か、掃除ひとつできないし。＠
+	PlaySE(4, "s03/03/140300007", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ろくでなしの寄生虫だからね。",
 		   NULL, "\"Because he's a good-for-nothing parasite.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300008", 128, 64);
 	OutputLine(NULL, "…自分ひとりじゃ炊事は愚か、掃除ひとつできないし。」",
 		   NULL, " ...He can't even cook by himself, much less do any cleaning.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1795,6 +1799,7 @@ void main()
 	DrawBustshotWithFiltering( 3, "re_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「そ......そんな...、炊事やお掃除のために...沙都子ちゃんを連れ戻したって言うの？！￥
+	PlaySE(4, "s03/02/140200010", 128, 64);
 	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ……そんな…、炊事やお掃除のために…沙都子ちゃんを連れ戻したって言うの？！」",
 		   NULL, "\"But... But that's... He brought Satoko-chan back to have her cook and clean?!\"", Line_Normal);
@@ -1841,11 +1846,13 @@ void main()
 
 //「......沙都子が家に閉じ込められて＠!s0/
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/03/140300009", 128, 64);
 	OutputLine(NULL, "「……沙都子が家に閉じ込められて、",
 		   NULL, "\"...Satoko was locked up at home...", Line_WaitForInput);
 // !s0/
 	SetSpeedOfMessage( TRUE, 127, );
 
+	PlaySE(4, "s03/03/140300010", 128, 64);
 	OutputLine(NULL, "…いじめられながら家事をやらされてる……、",
 		   NULL, " and tormented into doing the housework...", Line_WaitForInput);
 //!sd"@
@@ -1856,7 +1863,7 @@ void main()
 //...いじめられながら家事をやらされてる......、!sd@
 // っていう、......噂なんだよ...。＠
 
-	PlaySE(4, "s03/03/mio040102", 128, 64);
+	PlaySE(4, "s03/03/140300011", 128, 64);
 	OutputLine(NULL, "っていう、……噂なんだよ…。」",
 		   NULL, " Those are... the rumors...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
