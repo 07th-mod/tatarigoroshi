@@ -2597,7 +2597,7 @@ void main()
 	DrawBustshot( 3, "re_se_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「.........今は家事を強制されてるから、...学校に残ることもできないんだね。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………今は家事を強制されてるから、…学校に残ることもできないんだね。」",
 		   NULL, "\"......He's making her do the chores now... so she can't stay at school either.\"", Line_Normal);
 	ClearMessage();
@@ -2738,6 +2738,7 @@ void main()
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「両者の意見を聞いて総合的に判断するんだとさ。",
 		   NULL, "\"They said they'd base their judgement on what they heard from both sides.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300046", 128, 64);
 	OutputLine(NULL, "ご立派ご立派。」",
 		   NULL, " Great of them, wasn't it?\"", Line_Normal);
 	ClearMessage();
@@ -3164,6 +3165,7 @@ void main()
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…ほら、梨花ちゃんって、…両親いないのに生活してるだろ？",
 		   NULL, "\"...I mean, Rika-chan... you're living without any parents, right?", Line_WaitForInput);
+	PlaySE(4, "s03/01/140100078", 128, 64);
 	OutputLine(NULL, "　……保護者のいない子供って、……孤児院みたいなところに入れられちゃうんじゃないっけ…？」",
 		   NULL, " ...Don't kids with no guardians... have to go to orphanages and stuff...?\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3225,23 +3227,28 @@ void main()
 	PlaySE(4, "s03/03/140300076", 128, 64);
 	OutputLine(NULL, "…村長の、公由のおじいちゃんが梨花ちゃんの保護者なんだよ。",
 		   NULL, " The mayor, old man Kimiyoshi, is Rika-chan's guardian.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300077", 128, 64);
 	OutputLine(NULL, "ちゃんと県知事の許可を得た正式な。」",
 		   NULL, " He got official permission from the governor of the prefecture.\"", Line_Normal);
 	ClearMessage();
 
 //「へー...＠養子みたいなものか？＠
 //「養子とは違う＠別に籍を入れなくても保護者にはなれるんだよ。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/01/140100082", 128, 64);
 	OutputLine(NULL, "「へー…。",
 		   NULL, "\"Huh...", Line_WaitForInput);
+	PlaySE(4, "s03/01/140100083", 128, 64);
 	OutputLine(NULL, "養子みたいなものか？」",
 		   NULL, " So you're adopted?\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/03/140300078", 128, 64);
 	OutputLine(NULL, "「養子とは違う。",
 		   NULL, "\"No, not adopted.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300079", 128, 64);
 	OutputLine(NULL, "別に籍を入れなくても保護者にはなれるんだよ。」",
 		   NULL, " You can be someone's guardian without being in the same family.\"", Line_Normal);
 	ClearMessage();
@@ -3250,9 +3257,11 @@ void main()
 	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......あ、わかってきた＠...つまり、梨花ちゃんは普通に暮らしてるけど、法律の上では村長さんの家に住んでることになってるんだね...？＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/02/140200050", 128, 64);
 	OutputLine(NULL, "「……あ、わかってきた。",
 		   NULL, "\"...Oh, I get it.", Line_WaitForInput);
+	PlaySE(4, "s03/02/140200051", 128, 64);
 	OutputLine(NULL, "…つまり、梨花ちゃんは普通に暮らしてるけど、法律の上では村長さんの家に住んでることになってるんだね…？」",
 		   NULL, " ...Rika-chan lives by herself, but by law, she's considered to live with the mayor, right...?\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3262,11 +3271,14 @@ void main()
 	DrawBustshot( 1, "me_se_wi_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「まぁそんなとこ＠そのお陰で梨花ちゃんは孤児院送りを免れてるってわけ＠...孤児院って言うか、児童擁護院のことだけど。＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/03/140300080", 128, 64);
 	OutputLine(NULL, "「まぁそんなとこ。",
 		   NULL, "\"Yeah, basically.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300081", 128, 64);
 	OutputLine(NULL, "そのお陰で梨花ちゃんは孤児院送りを免れてるってわけ。",
 		   NULL, " That's how Rika-chan avoids being sent to an orphanage.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300082", 128, 64);
 	OutputLine(NULL, "…孤児院って言うか、児童擁護院のことだけど。」",
 		   NULL, " ...Actually, it would be child and family services, not an orphanage.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3277,9 +3289,11 @@ void main()
 	DrawBustshot( 3, "ri_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「......みー＠難しいことはよくわかりませんが、...つまりはそういうことなのです。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/05/140500010", 128, 64);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"...Meep.", Line_WaitForInput);
+	PlaySE(4, "s03/05/140500011", 128, 64);
 	OutputLine(NULL, "難しいことはよくわかりませんが、…つまりはそういうことなのです。」",
 		   NULL, " I don't understand the hard things... but anyway, she's right.\"", Line_Normal);
 	ClearMessage();
