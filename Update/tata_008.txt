@@ -3322,7 +3322,7 @@ void main()
 //「魅音、今、興味深いことを言ったな＠...籍が違っても保護者になれるみたいなことを言ったよな＠......じゃあ、形だけでも村長さんとかが沙都子の保護者になってくれればいいんじゃないのか？！＠
 //　そうすれば...立場は梨花ちゃんと同じだ＠
 //　...また梨花ちゃんと二人での元の生活に戻れる...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100084", 128, 64);
 	OutputLine(NULL, "「魅音、今、興味深いことを言ったな。",
 		   NULL, "\"Interesting you should say that, Mion.", Line_WaitForInput);
@@ -3350,7 +3350,7 @@ void main()
 
 //「とーころがそうは行かないの＠　...だって、叔父だって保護者のつもりなんだもん。＠
 //「......ちょっと待て＠わけがわからなくなったぞ＠...そもそも保護者って何だ。＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/03/140300083", 128, 64);
 	OutputLine(NULL, "「とーころがそうは行かないの！",
 		   NULL, "\"Too bad it won't work!", Line_WaitForInput);
@@ -3360,7 +3360,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100087", 128, 64);
 	OutputLine(NULL, "「……ちょっと待て。",
 		   NULL, "\"...Wait a minute.", Line_WaitForInput);
@@ -3386,7 +3386,7 @@ void main()
 	ClearMessage();
 
 //「...なら叔父は保護者じゃないな＠ずっと沙都子をほったらかしにしてた！＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100090", 128, 64);
 	OutputLine(NULL, "「…なら叔父は保護者じゃないな。",
 		   NULL, "\"...Then her uncle isn't her guardian.", Line_WaitForInput);
@@ -3402,7 +3402,7 @@ void main()
 //「でも保護者だと主張されたらそれまでだよ＠
 //　沙都子が連れ戻されてから数日＠その間の食事代は叔父の財布から出てるよね＠
 //　一応、面倒を見てると主張できなくもない＠それに、一年間、沙都子をほったらかしたとは言え、最初の一年間は生活の面倒を見た実績がある＠でも村長にはその実績はない。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/03/140300085", 128, 64);
 	OutputLine(NULL, "「でも保護者だと主張されたらそれまでだよ？",
 		   NULL, "\"But if he insists he's her guardian, then that's it!", Line_ModeSpecific);
@@ -3419,7 +3419,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/03/140300088", 128, 64);
 	OutputLine(NULL, "　一応、面倒を見てると主張できなくもない。",
 		   NULL, "He is sort of looking after her, so he'd probably insist.", Line_WaitForInput);
@@ -3435,7 +3435,7 @@ void main()
 	DrawBustshotWithFiltering( 3, "re_se_ko_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......意地悪な叔父さんと村長さんが、同時に保護者を主張したら......叔父さんの方が強いってこと...？＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/02/140200052", 128, 64);
 	OutputLine(NULL, "「……意地悪な叔父さんと村長さんが、同時に保護者を主張したら……叔父さんの方が強いってこと…？」",
 		   NULL, "\"...So then if both the mean uncle and the mayor requested guardianship at the same time... the uncle would make more sense?\"", Line_ModeSpecific);
@@ -3447,7 +3447,7 @@ void main()
 	DrawSceneWithMask( "bg_108", "left", 0, 0, 1300 );
 
 //「その可能性が高いってこと＠　...それに、保護者ってのは実際に面倒を見てる人を指すんだよ＠　実際に寝床や食事を握ってる叔父と、名義だけ貸そうとしてる村長じゃどうにもならない。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/03/140300091", 128, 64);
 	OutputLine(NULL, "「その可能性が高いってこと！",
 		   NULL, "\"No, but he'd have a better chance!", Line_WaitForInput);
@@ -4843,7 +4843,7 @@ void main()
 
 //「......この袋、...セブンスマート...？＠　おいおい......自転車で行くにはちょっと遠すぎないか？！＠
 //　見れば...袋にはぎっしりと酒瓶や酒のつまみ、タバコのボックスが詰められていた＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100150", 128, 64);
 	OutputLine(NULL, "「……この袋、…セブンスマート…？！",
 		   NULL, "\"...Those bags... Sevens Mart...?!", Line_WaitForInput);
@@ -5407,7 +5407,7 @@ void main()
 
 //「...私も２つ持ちますから＠...ほら＠...前原さんも持つのを手伝ってあげて下さい。＠
 //　日本酒の瓶がいくつも詰まった袋とお酒のおつまみがぎっしり詰まった袋￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000009", 128, 64);
 	OutputLine(NULL, "「…私も２つ持ちますから。",
 		   NULL, "\"...I'll carry two of them myself.", Line_WaitForInput);
@@ -5549,7 +5549,7 @@ void main()
 //「......いや、...はは＠...重いですね。＠
 //　..............................ぐ、!w900............くそ、!w800............くそ......＠
 //　沙都子の家の玄関先まで大した距離はないはずなのに...、...ビニール袋にぐいぐいと両の手のひらを締め付けられ...、真っ赤な跡になってしまう￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000012", 128, 64);
 	OutputLine(NULL, "「……いや、…はは。",
 		   NULL, "\"...Well... Haha.", Line_WaitForInput);
@@ -5587,7 +5587,7 @@ void main()
 //「.......................................ぐ...。＠
 //　激情がこみ上げ、喉の奥をちりちりと刺激する＠
 //　......でも、...それを口からほとばしらせたところで...何の解決にもならない＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100162", 128, 64);
 	OutputLine(NULL, "「…………………………………ぐ…。」",
 		   NULL, "\"............Guh...\"", Line_ModeSpecific);
@@ -5979,7 +5979,7 @@ void main()
 
 //「...階段から落ちたんですの＠...ほほほほ。＠
 //　俺の猛り狂う激情が...喉をぶち破って吐き出そうとした瞬間、......俺の口元はがっちりと押さえつけられていた...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/04/140400070", 128, 64);
 	OutputLine(NULL, "「…階段から落ちたんですの。",
 		   NULL, "\"...I fell down the stairs!", Line_WaitForInput);
@@ -7492,14 +7492,14 @@ void main()
 //「.........あ、...監督は、...法律とか詳しいですか？＠
 //「いえ、平均的に疎いですが、何か...？＠
 //　......沙都子のことで魅音たちと議論したことを思い出す＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100209", 128, 64);
 	OutputLine(NULL, "「………あ、…監督は、…法律とか詳しいですか？」",
 		   NULL, "\"...Oh... Coach... Do you know a lot about laws?\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000078", 128, 64);
 	OutputLine(NULL, "「いえ、平均的に疎いですが、何か…？」",
 		   NULL, "\"No, I know even less than the average person, why?\"", Line_ModeSpecific);
@@ -7519,7 +7519,7 @@ void main()
 
 //「児童福祉法で、...でしたっけ...＠児童の安全を確保するために緊急措置として、親子を分離させるという方法があるそうです。＠
 //「緊急措置...？＠　じゃあ...すぐに沙都子を叔父の下から救い出せるということじゃないですか！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000079", 128, 64);
 	OutputLine(NULL, "「児童福祉法で、…でしたっけ…。",
 		   NULL, "\"Hmm, what was it... the Child Welfare Law?", Line_WaitForInput);
@@ -7529,7 +7529,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100210", 128, 64);
 	OutputLine(NULL, "「緊急措置…？！",
 		   NULL, "\"They can do that...?!", Line_WaitForInput);
@@ -7728,14 +7728,14 @@ void main()
 //「......みんなと相談して、児童相談所とかに通報すべきか...なんて話をしてました。＠
 //「聞いてますよね＠...昨年も福祉司さんが沙都子ちゃんのところに行ってるのは。＠
 //「...はい＠......結局、様子見で、...余計にいじめられたって話も。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100216", 128, 64);
 	OutputLine(NULL, "「……みんなと相談して、児童相談所とかに通報すべきか…なんて話をしてました。」",
 		   NULL, "\"...I talked with everyone and we were wondering... if we should report it to the child consultation center.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000094", 128, 64);
 	OutputLine(NULL, "「聞いてますよね。",
 		   NULL, "\"I have heard...", Line_WaitForInput);
@@ -7745,7 +7745,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100217", 128, 64);
 	OutputLine(NULL, "「…はい。",
 		   NULL, "\"...Yes...", Line_WaitForInput);
@@ -7757,7 +7757,7 @@ void main()
 //「あれ、........................沙都子ちゃんが自分で通報したらしいんです＠...で、その結果、余計いじめが水面下へ移行してエスカレートした＠...沙都子ちゃんに降りかかるいじめも増え、それをかばう悟史くんの負担も著しく増えた...。＠
 //「......え、......ひょっとして...沙都子＠......それ、通報した自分の責任だなんて思ってるんじゃ......。＠
 //　監督は静かに頷く￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000096", 128, 64);
 	OutputLine(NULL, "「あれ、……………………沙都子ちゃんが自分で通報したらしいんです。",
 		   NULL, "\"That was......... Apparently Satoko-chan reported it herself.", Line_WaitForInput);
@@ -7771,7 +7771,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100219", 128, 64);
 	OutputLine(NULL, "「……え、……ひょっとして…沙都子、",
 		   NULL, "\"...Huh... Could Satoko...", Line_WaitForInput);
@@ -7788,7 +7788,7 @@ void main()
 
 //「...多分、沙都子ちゃんに通報の話をすると、とても嫌がるか、その必要はないと強がりを言うと思います＠沙都子ちゃんに内緒で通報したとしても...、福祉司に対して、自分は虐待を受けていないと言い張るでしょうね。＠
 //　......強がりでなかなか負けを認めない沙都子の性格から。それは容易にうかがえる￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000099", 128, 64);
 	OutputLine(NULL, "「…多分、沙都子ちゃんに通報の話をすると、とても嫌がるか、その必要はないと強がりを言うと思います。",
 		   NULL, "\"...Satoko-chan would probably either hate it if you suggested reporting the abuse or feign courage and say you didn't need to. ", Line_ModeSpecific);
@@ -7806,7 +7806,7 @@ void main()
 
 //「一応、...児童相談所には、裁判所の許可も当事者の許可も一切不要で緊急措置ができる強い権限があるんだそうです＠......虐待が公然の事実なら、沙都子ちゃんが否定しても身柄は強制的に保護されるでしょう＠.........それは沙都子ちゃんにとっては、...負けを意味するものなのかもしれませんが。＠
 //「か、...勝ち負けの問題じゃないですよ！＠　沙都子は現実に...！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000101", 128, 64);
 	OutputLine(NULL, "「一応、…児童相談所には、裁判所の許可も当事者の許可も一切不要で緊急措置ができる強い権限があるんだそうです。",
 		   NULL, "\"And there are... strict limitations on this emergency measure—the child consultation center would need permission both from the court and from the concerned party. ", Line_ModeSpecific);
@@ -7820,7 +7820,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100221", 128, 64);
 	OutputLine(NULL, "「か、…勝ち負けの問題じゃないですよ！！",
 		   NULL, "\"T-This isn't about winning or losing!!", Line_WaitForInput);
@@ -7831,7 +7831,7 @@ void main()
 
 //「.......................................話を折りますが＠...身柄が保護されると、擁護院等の施設に送致されます＠...そうするとですね、そこで暮らすことになるのでつまり、...引越しということになります＠...ですから学区変更で転校にもなります。＠
 //「...............て、!w800............転校は、!w700...仕方ないです＠...それであいつが保護されるなら。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000104", 128, 64);
 	OutputLine(NULL, "「…………………………………話を折りますが。",
 		   NULL, "\"...............Back on topic.", Line_WaitForInput);
@@ -7848,7 +7848,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100223", 128, 64);
 	OutputLine(NULL, "「……………て、",
 		   NULL, "\"......That......", Line_ContinueAfterTyping);
@@ -7873,7 +7873,7 @@ void main()
 //「沙都子ちゃんはその辺の事情も知っています＠だからますます保護を望みません。＠
 //「......どうして！！＠
 //「あの家で悟史くんの帰りを待つのが、沙都子ちゃんの生きる理由だからですよ＠...............兄に捨てられ、廃人同然になりかけた少女が、...何に生きる理由を見出したか＠......あなたのでなく、沙都子ちゃんの価値観で考えてあげてください。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/10/141000108", 128, 64);
 	OutputLine(NULL, "「沙都子ちゃんはその辺の事情も知っています。",
 		   NULL, "\"Satoko-chan understands all those things.", Line_WaitForInput);
