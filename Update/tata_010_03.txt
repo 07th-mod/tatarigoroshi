@@ -543,7 +543,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "s03/01/140100561", 128, 64);
 	OutputLine(NULL, "「………え、",
 		   NULL, "\"......Wait...", Line_ContinueAfterTyping);
@@ -551,7 +551,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	
+
 	OutputLine(NULL, "…………ちょ、ちょっと待って。",
 		   NULL, " ...Wait a second.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100562", 128, 64);
