@@ -544,15 +544,14 @@ void main()
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "s03/01/140100561", 128, 64);
 	OutputLine(NULL, "「………え、",
 		   NULL, "\"......Wait...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-
-	PlaySE(4, "s03/01/140100561", 128, 64);
+	
 	OutputLine(NULL, "…………ちょ、ちょっと待って。",
 		   NULL, " ...Wait a second.", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100562", 128, 64);
