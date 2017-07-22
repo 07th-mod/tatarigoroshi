@@ -3508,13 +3508,14 @@ void main()
 		   NULL, " Coach, he's... I don't know, he's got a lot of money, right?", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100097", 128, 64);
 	OutputLine(NULL, "　自分で言ってたくらいなんだし！",
-		   NULL, " He even said it himself!", Line_WaitForInput);
-	OutputLine(NULL, "　本当の親でなくても保護者になれるなら……監督でも可能なんだ！！",
-		   NULL, " Even if he's not her real father... Coach could become her guardian!! ", Line_ModeSpecific);
-	PlaySE(4, "s03/01/140100099", 128, 64);
+		   NULL, " He even said it himself! ", Line_ModeSpecific);
+	PlaySE(4, "ps2/s03/01/140100098", 256, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本当の親でなくても保護者になれるなら……監督でも可能なんだ！！",
+		   NULL, "Even if he's not her real father... Coach could become her guardian!!", Line_WaitForInput);
+	PlaySE(4, "s03/01/140100099", 128, 64);
 	OutputLine(NULL, "　監督なら…沙都子の面倒を立派に見てくれる気がする！」",
-		   NULL, "Coach would... he would be great at taking care of her!\"", Line_Normal);
+		   NULL, " Coach would... he would be great at taking care of her!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_se_ik_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
