@@ -3404,14 +3404,10 @@ void main()
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "ps2/s03/03/140300085", 256, 64);
 	OutputLine(NULL, "「でも保護者だと主張されたらそれまでだよ？",
-		   NULL, "\"But if he insists he's her guardian, then that's it!", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
+		   NULL, "\"But if he insists he's her guardian, then that's it!", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/03/140300086", 256, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子が連れ戻されてから数日。",
-		   NULL, "It's been a few days since Satoko was taken back to her house.", Line_WaitForInput);
+		   NULL, " It's been a few days since Satoko was taken back to her house.", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/03/140300087", 256, 64);
 	OutputLine(NULL, "その間の食事代は叔父の財布から出てるよね？",
 		   NULL, " Her uncle's been paying for her meals, since then, right?", Line_ModeSpecific);
