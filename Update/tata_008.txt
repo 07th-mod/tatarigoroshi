@@ -3737,14 +3737,14 @@ void main()
 		   NULL, "\"Then what about your relatives in Okinomiya?!", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100113", 128, 64);
 	OutputLine(NULL, "　聞いた話じゃ、こっちもかなりの豪邸に住んでるらしいじゃないか！！",
-		   NULL, " From what I heard, they're living in luxury themselves!!", Line_WaitForInput);
+		   NULL, " From what I heard, they're living in luxury themselves!! ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140100114", 128, 64);
-	OutputLine(NULL, "　町には親類の経営する店がたくさんあるそうだし！！",
-		   NULL, " There's plenty of shops your relatives manage in town too!! ", Line_ModeSpecific);
-	PlaySE(4, "s03/01/140100115", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　町には親類の経営する店がたくさんあるそうだし！！",
+		   NULL, "There's plenty of shops your relatives manage in town too!!", Line_WaitForInput);
+	PlaySE(4, "s03/01/140100115", 128, 64);
 	OutputLine(NULL, "　立派な資産家じゃないかよ、おいッ！！」",
-		   NULL, "Your family are basically millionaires, aren't they?!\"", Line_ModeSpecific);
+		   NULL, " Your family are basically millionaires, aren't they?!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
