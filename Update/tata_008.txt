@@ -4002,7 +4002,7 @@ void main()
 	PlaySE(4, "s03/02/140200065", 128, 64);
 	OutputLine(NULL, "余ってるお部屋、いくつか沙都子ちゃんに分けてあげればいいじゃない。",
 		   NULL, " You should just give a few of the empty ones to Satoko-chan.", Line_WaitForInput);
-	PlaySE(4, "s03/02/140200066", 128, 64);
+	PlaySE(4, "s03/02/140200066_1", 128, 64);
 	OutputLine(NULL, "それでめでたく沙都子ちゃんの悩みは解決！",
 		   NULL, " And then her worries would all be over!", Line_Normal);
 	ClearMessage();
@@ -4010,7 +4010,8 @@ void main()
 	DrawBustshot( 3, "re_se_de_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　あら何＠　これでもう終わり＠　あっけない話だったね＠　はいはい解決お疲れさま！＠　じゃあもう今日はいい？＠　私帰るねランランラン！＠　今日は久しぶりに宝探しにでも行こうかな！＠　昨日まではずっと沙都子ちゃんのことが心配で全然遊ぶ気になんかならなかったしぃ！＠　今日はどんな宝物が見つかるかな、はぅー......＠/
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "s03/02/140200066_2", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あら何？",
 		   NULL, "What's this?", Line_WaitForInput);
 	PlaySE(4, "s03/02/140200067", 128, 64);
