@@ -2819,14 +2819,14 @@ void main()
 	PlaySE(4, "s03/03/mio040106", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しばらくは毎週決まった日に民生委員さんが訪問してたみたい。",
-		   NULL, "\"The welfare officer apparently went to visit on the same day each week for a while.", Line_WaitForInput);
+		   NULL, "\"The welfare officer apparently went to visit on the same day each week for a while. ", Line_ModeSpecific);
 	PlaySE(4, "s03/03/mio040107", 128, 64);
-	OutputLine(NULL, "叔父夫婦も、自分たちが見張られてることを気にして、目立ついじめはしなくなったらしいけど。",
-		   NULL, " The aunt and uncle knew they were being watched, though, and didn't torment them in any way that would stand out. ", Line_ModeSpecific);
-	PlaySE(4, "s03/03/140300058", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "叔父夫婦も、自分たちが見張られてることを気にして、目立ついじめはしなくなったらしいけど。",
+		   NULL, "The aunt and uncle knew they were being watched, though, and didn't torment them in any way that would stand out.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300058", 128, 64);
 	OutputLine(NULL, "………それで済む訳ないでしょ…普通。」",
-		   NULL, "...Of course... that wasn't the end of it.\"", Line_ModeSpecific);
+		   NULL, " ...Of course... that wasn't the end of it.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
