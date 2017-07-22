@@ -2857,14 +2857,14 @@ void main()
 		   NULL, "\"...Their aunt was really damn stubborn.", Line_WaitForInput);
 	PlaySE(4, "s03/03/140300060", 128, 64);
 	OutputLine(NULL, "…女特有の陰湿さって言うのかな。",
-		   NULL, " ...She's one of the most spiteful people I've ever known.", Line_WaitForInput);
+		   NULL, " ...She's one of the most spiteful people I've ever known. ", Line_ModeSpecific);
 	PlaySE(4, "s03/03/140300061", 128, 64);
-	OutputLine(NULL, "………相当嫌らしいことをしてたらしいよ。",
-		   NULL, " ......Apparently she was doing some pretty disgusting things. ", Line_ModeSpecific);
-	PlaySE(4, "s03/03/140300062", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "………相当嫌らしいことをしてたらしいよ。",
+		   NULL, "......Apparently she was doing some pretty disgusting things.", Line_WaitForInput);
+	PlaySE(4, "s03/03/140300062", 128, 64);
 	OutputLine(NULL, "………沙都子、…最後の方は呼吸するだけのボロ人形みたいだった…。」",
-		   NULL, "......Satoko... was like a doll that did nothing but breathe by the end of it...\"", Line_ModeSpecific);
+		   NULL, " ......Satoko... was like a doll that did nothing but breathe by the end of it...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...ってことは何だ＠
