@@ -3666,17 +3666,17 @@ void main()
 		   NULL, "\"Shit, damn it, what the hell?!", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100103", 128, 64);
 	OutputLine(NULL, "　俺は必死に沙都子を救おうと考えてるのに駄目だ駄目だってそればっかりッ！！",
-		   NULL, " I'm desperately thinking of how to save Satoko, and all you're saying is no, no!!", Line_WaitForInput);
+		   NULL, " I'm desperately thinking of how to save Satoko, and all you're saying is no, no!! ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/140100104", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お前ら、本当は沙都子のことなんかどうでもいいんだろ？！",
-		   NULL, " Don't you care about Satoko at all?!", Line_WaitForInput);
+		   NULL, "Don't you care about Satoko at all?!", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100105", 128, 64);
 	OutputLine(NULL, "　仲間のこと、本気で心配してないんだろッ？！",
-		   NULL, " Are you even worried about our friend one bit?! ", Line_ModeSpecific);
+		   NULL, " Are you even worried about our friend one bit?!", Line_WaitForInput);
 	PlaySE(4, "s03/01/140100106", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうなんだよ！！」",
-		   NULL, "What do you have to say for yourself?!\"", Line_Normal);
+		   NULL, " What do you have to say for yourself?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_se_bi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
