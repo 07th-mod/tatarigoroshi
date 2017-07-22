@@ -3449,8 +3449,8 @@ void main()
 	PlaySE(4, "ps2/s03/03/140300092", 256, 64);
 	OutputLine(NULL, "　…それに、保護者ってのは実際に面倒を見てる人を指すんだよ？",
 		   NULL, " ...The term 'guardian' refers to the person actually caring for her, right? ", Line_ModeSpecific);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "ps2/s03/03/140300093", 256, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実際に寝床や食事を握ってる叔父と、名義だけ貸そうとしてる村長じゃどうにもならない。」",
 		   NULL, "The uncle actually has a bed and food for her, but the mayor would just have his name—it wouldn't even be a contest.\"", Line_Normal);
 	ClearMessage();
