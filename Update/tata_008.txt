@@ -7413,14 +7413,14 @@ void main()
 		   NULL, "\"...I pray for Satoko-chan's happiness as well... but I have a position in society and a job to do every day.", Line_WaitForInput);
 	PlaySE(4, "s03/10/141000068", 128, 64);
 	OutputLine(NULL, "…私が沙都子ちゃんのために割いてあげられる時間は少ない。",
-		   NULL, " ...I have little time that I can devote to Satoko-chan.", Line_WaitForInput);
+		   NULL, " ...I have little time that I can devote to Satoko-chan. ", Line_ModeSpecific);
 	PlaySE(4, "s03/10/141000069", 128, 64);
-	OutputLine(NULL, "……でもあなたは違います。",
-		   NULL, " ...But you're different. ", Line_ModeSpecific);
-	PlaySE(4, "s03/10/141000070", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……でもあなたは違います。",
+		   NULL, "...But you're different.", Line_WaitForInput);
+	PlaySE(4, "s03/10/141000070", 128, 64);
 	OutputLine(NULL, "…学校で生活を共にし、沙都子ちゃんや悟史くんとも年はほとんど離れていない。」",
-		   NULL, "...You go to school with her, and you're closer to her and Satoshi-kun in age.\"", Line_ModeSpecific);
+		   NULL, " ...You go to school with her, and you're closer to her and Satoshi-kun in age.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -7438,14 +7438,14 @@ void main()
 		   NULL, "\"...I know you think you can only do so much...", Line_WaitForInput);
 	PlaySE(4, "s03/10/141000072", 128, 64);
 	OutputLine(NULL, "…それでも、私よりはずっと沙都子ちゃんに手を差し伸べられる場所にいるのです。",
-		   NULL, " but you're in a position where you can give Satoko-chan a hand much better than I can.", Line_WaitForInput);
+		   NULL, " but you're in a position where you can give Satoko-chan a hand much better than I can. ", Line_ModeSpecific);
 	PlaySE(4, "s03/10/141000073", 128, 64);
-	OutputLine(NULL, "……だから、…私の分まで沙都子ちゃんの力になってあげてほしい。",
-		   NULL, " ...So... I want you to help her enough for the both of us. ", Line_ModeSpecific);
-	PlaySE(4, "s03/10/141000074", 128, 64);
 	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……だから、…私の分まで沙都子ちゃんの力になってあげてほしい。",
+		   NULL, "...So... I want you to help her enough for the both of us.", Line_WaitForInput);
+	PlaySE(4, "s03/10/141000074", 128, 64);
 	OutputLine(NULL, "そう願っています。」",
-		   NULL, "That's what I wish for.\"", Line_ModeSpecific);
+		   NULL, " That's what I wish for.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
