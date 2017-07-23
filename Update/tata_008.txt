@@ -5150,8 +5150,10 @@ void main()
 	PlaySE(4, "s03/21/142000066", 128, 64);
 	OutputLine(NULL, "　すったら、先生も上がって行きますか。",
 		   NULL, " Why don't you come on inside too?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "もうオーラスですから、すんぐ入れますよ。",
 		   NULL, " We're in the last round, so you can get in right away.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ピンのワンツー、何でもアリで。」",
 		   NULL, " A hundred yen per thousand points, and anything goes.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5186,6 +5188,7 @@ void main()
 	if (AdvMode) { OutputLine("<color=#e9d785>鉄平</color>", NULL, "<color=#e9d785>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぞんな〜、遊んで行ってくださいよ。",
 		   NULL, "\"Aww, nah~ Come play a round!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "先生、お金持ちじゃないですかぁ。",
 		   NULL, " You've got a lot of money, yeah?", Line_WaitForInput);
 	PlaySE(4, "s03/21/142000070", 128, 64);
@@ -5211,8 +5214,10 @@ void main()
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「沙都子、とっとと乾きモンを持って来んかい！",
 		   NULL, "\"Satoko, could you bring us the damn snacks?!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ビールも冷めてもーた。",
 		   NULL, " And start gettin' those beers chilled too.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "冷蔵庫から冷えてるの出しちょくれな！！」",
 		   NULL, " Go get us some cold ones from the fridge!!\"", Line_Normal);
 	ClearMessage();
@@ -6367,6 +6372,7 @@ void main()
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「沙都子ぉおぉお！！",
 		   NULL, "\"Satokooooo!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　早ぅ乾きモン持って来んかぁいッ！！！」",
 		   NULL, " Could you bring us the snacks already?!?!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
