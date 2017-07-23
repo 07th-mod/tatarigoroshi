@@ -4798,10 +4798,11 @@ void main()
 	DrawBustshotWithFiltering( 1, "sa_se_ha_a1_b", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...買い物の帰りに偶然、監督にお会いしたんですのよ＠...送ってくださるというので、お言葉に甘えたのですわ。＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/04/140400034", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…買い物の帰りに偶然、監督にお会いしたんですのよ。",
 		   NULL, "\"...I happened to run into Coach on my way back from shopping.", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/04/140400035", 128, 64);
 	OutputLine(NULL, "…送ってくださるというので、お言葉に甘えたのですわ。」",
 		   NULL, " ...He said he'd bring me home, so I accepted his offer.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4811,8 +4812,8 @@ void main()
 	DrawBustshot( 3, "ir_si_de_a2_b", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......自転車でこんなに買い物をしたら、運びきれませんからね。￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/10/141000003_004", 128, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……自転車でこんなに買い物をしたら、運びきれませんからね。」",
 		   NULL, "\"...She wouldn't have been able to carry all those groceries on her bike.\"", Line_Normal);
 	ClearMessage();
@@ -4904,12 +4905,14 @@ void main()
 	DrawBustshot( 1, "sa_se_ya_a1_b", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......当然ですわ＠...私、お酒なんか飲めませんしおつまみも嫌いですし＠...タバコなんか吸うわけ...、￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/04/140400039", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……当然ですわ。",
 		   NULL, "\"...Of course not.", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/04/140400040", 128, 64);
 	OutputLine(NULL, "…私、お酒なんか飲めませんしおつまみも嫌いですし。",
 		   NULL, " ...I do not drink sake, and I hate snacks.", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/04/140400041", 128, 64);
 	OutputLine(NULL, "…タバコなんか吸うわけ…、」",
 		   NULL, " ...Of course I don't smoke, either...\"", Line_Normal);
 	ClearMessage();
@@ -5002,10 +5005,11 @@ void main()
 	PlayBGM( 2, "lsys11", 128, 0 );
 
 //「沙都子ぉ！＠　燗のガス、掛けっ放しで出よったんな、このダラズッ！！＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/17/142000001", 128, 64);
+	if (AdvMode) { OutputLine("<color=#e9d785>鉄平</color>", NULL, "<color=#e9d785>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「沙都子ぉ！！",
 		   NULL, "\"Satokoo!!", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/17/142000002", 128, 64);
 	OutputLine(NULL, "　燗のガス、掛けっ放しで出よったんな、このダラズッ！！」",
 		   NULL, " You left the heat for the sake on when you left, you halfwit!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5018,21 +5022,24 @@ void main()
 //「ボケがぁッ！＠　せっかくの吟醸、台無しにしよってん＠　ボケぇッ！！＠
 //　...ごめんなさい...ごめんなさい...ごめんなさい...＠
 //　沙都子がみすぼらしく...ぺこぺこと何度も頭を下げて謝る...＠...怯えた小動物...という形容詞がまさにぴったりだった￥
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/04/140400042", 128, 64);
 	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…ご、ごめんなさい……。",
 		   NULL, "\"...I-I'm sorry...", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/04/140400043", 128, 64);
 	OutputLine(NULL, "でも、…すぐに買いに行けって言ったから……。」",
 		   NULL, " But you... told me to go right away...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/17/142000003", 128, 64);
 	OutputLine(NULL, "「ボケがぁッ！！",
 		   NULL, "\"You idiot!!", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/17/142000004", 128, 64);
 	OutputLine(NULL, "　せっかくの吟醸、台無しにしよってん！",
 		   NULL, " All that brewing I did for nothing!", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/17/142000005", 128, 64);
 	OutputLine(NULL, "　ボケぇッ！！」",
 		   NULL, " Idiot!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5340,7 +5347,7 @@ void main()
 
 //「何......やってんだよ...あいつッ？＠　麻雀って、...そんなのに遊び呆けて...沙都子に、こんなのを買いに行かせるのかよッ？！￥
 	PlaySE(4, "ps2/s03/01/140100155", 240, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何……やってんだよ…あいつッ？！",
 		   NULL, "\"What... does that guy... think he's doing?!", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/01/140100156", 240, 64);
@@ -5367,10 +5374,10 @@ void main()
 //「監督ッ！＠　こんなの、まかり通っていいんですか？＠　こんなの絶対に...！！＠
 //　...激情する俺の言葉すらも、監督は聞こえない風を装った＠
 	PlaySE(4, "ps2/s03/10/141000007", 240, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…さぁ。前原さんも手伝ってあげて下さい。",
 		   NULL, "\"...Maebara-san, you help too, please.", Line_WaitForInput);
-	PlaySE(4, "s03/10/141000008", 128, 64);
+	PlaySE(4, "ps2/s03/10/141000008", 128, 64);
 	OutputLine(NULL, "ほら、男の子なんですから、こっちの重い袋を持ちましょう。」",
 		   NULL, " You're a boy—you get to carry this heavy one.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
