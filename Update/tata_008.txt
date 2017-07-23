@@ -5032,8 +5032,8 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "ps2/s03/17/142000003", 240, 64);
+	if (AdvMode) { OutputLine("<color=#e9d785>鉄平</color>", NULL, "<color=#e9d785>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「やかましいわ！！",
 		   NULL, "\"Shut up!!", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/17/142000004", 240, 64);
