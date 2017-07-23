@@ -7767,15 +7767,15 @@ void main()
 //「あれ、........................沙都子ちゃんが自分で通報したらしいんです＠...で、その結果、余計いじめが水面下へ移行してエスカレートした＠...沙都子ちゃんに降りかかるいじめも増え、それをかばう悟史くんの負担も著しく増えた...。＠
 //「......え、......ひょっとして...沙都子＠......それ、通報した自分の責任だなんて思ってるんじゃ......。＠
 //　監督は静かに頷く￥
-	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlaySE(4, "ps2/s03/10/141000096", 240, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あれ、……………………沙都子ちゃんが自分で通報したらしいんです。",
 		   NULL, "\"That was......... Apparently Satoko-chan reported it herself.", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/10/141000097", 240, 64);
 	OutputLine(NULL, "…で、その結果、余計いじめが水面下へ移行してエスカレートした。",
 		   NULL, " ...And as a result the abuse worsened, but was kept just out of sight. ", Line_ModeSpecific);
 	PlaySE(4, "ps2/s03/10/141000098", 240, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…沙都子ちゃんに降りかかるいじめも増え、それをかばう悟史くんの負担も著しく増えた…。」",
 		   NULL, "...She was under even more torment, and the burden on Satoshi-kun for protecting her rose considerably...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -7802,8 +7802,8 @@ void main()
 	PlaySE(4, "ps2/s03/10/141000099", 240, 64);
 	OutputLine(NULL, "「…多分、沙都子ちゃんに通報の話をすると、とても嫌がるか、その必要はないと強がりを言うと思います。",
 		   NULL, "\"...Satoko-chan would probably either hate it if you suggested reporting the abuse or feign courage and say you didn't need to. ", Line_ModeSpecific);
-	PlaySE(4, "s03/10/141000100", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlaySE(4, "ps2/s03/10/141000100", 240, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "沙都子ちゃんに内緒で通報したとしても…、福祉司に対して、自分は虐待を受けていないと言い張るでしょうね。」",
 		   NULL, "And even if you reported it in secret... she'd probably insist to the social worker that she wasn't being abused.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -7821,7 +7821,7 @@ void main()
 	OutputLine(NULL, "「一応、…児童相談所には、裁判所の許可も当事者の許可も一切不要で緊急措置ができる強い権限があるんだそうです。",
 		   NULL, "\"And there are... strict limitations on this emergency measure—the child consultation center would need permission both from the court and from the concerned party. ", Line_ModeSpecific);
 	PlaySE(4, "ps2/s03/10/141000102", 240, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……虐待が公然の事実なら、沙都子ちゃんが否定しても身柄は強制的に保護されるでしょう。",
 		   NULL, "...If the abuse was known to the public, they could forcibly shelter her even if she denied it.", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/10/141000103", 240, 64);
@@ -7847,14 +7847,14 @@ void main()
 		   NULL, "\"...............Back on topic.", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/10/141000105", 240, 64);
 	OutputLine(NULL, "…身柄が保護されると、擁護院等の施設に送致されます。",
-		   NULL, " ...After they placed her under their protection, she would be sent to a child care institution or the like.", Line_WaitForInput);
+		   NULL, " ...After they placed her under their protection, she would be sent to a child care institution or the like. ", Line_ModeSpecific);
 	PlaySE(4, "ps2/s03/10/141000106", 240, 64);
+	if (AdvMode) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…そうするとですね、そこで暮らすことになるのでつまり、…引越しということになります。",
-		   NULL, " ...And she would basically be living there... so it would mean moving away. ", Line_ModeSpecific);
+		   NULL, "...She would basically be living there... so it would mean moving away.", Line_WaitForInput);
 	PlaySE(4, "ps2/s03/10/141000107", 240, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…ですから学区変更で転校にもなります。」",
-		   NULL, "...And with the change in residence would come a change in schools, too.\"", Line_ModeSpecific);
+		   NULL, " ...And with the change in residence would come a change in schools, too.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
