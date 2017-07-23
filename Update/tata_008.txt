@@ -7876,6 +7876,7 @@ void main()
 
 	OutputLine(NULL, "…仕方ないです。",
 		   NULL, " It has to be done.", Line_WaitForInput);
+	PlaySE(4, "ps2/s03/01/140100224", 240, 64);
 	OutputLine(NULL, "…それであいつが保護されるなら。」",
 		   NULL, " ...If that's what it will take for her to be safe.\"", Line_Normal);
 	ClearMessage();
@@ -7893,8 +7894,8 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/s03/01/140100225", 240, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……どうして！！」",
 		   NULL, "\"...Why?!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
