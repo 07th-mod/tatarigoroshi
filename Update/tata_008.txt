@@ -7559,10 +7559,8 @@ void main()
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "…それを望まないかもしれません。",
-		   NULL, " might not want that.", Line_WaitForInput);
-	OutputLine(NULL, "虐待されている本人が避難を望まなければ、弱いでしょうから。」",
-		   NULL, " Unless the person being abused wants shelter, anyway—it doesn't go that far.\"", Line_ModeSpecific);
+	OutputLine(NULL, "…それを望まないかもしれません。」",
+		   NULL, " might not want that.\"", Line_WaitForInput);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -7954,20 +7952,21 @@ void main()
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、……本人が根を上げるまで、……見ていろ、と。",
-		   NULL, "and that... I should watch... until she gives in.", Line_Normal);
+		   NULL, "And that... I should watch... until she gives in.", Line_Normal);
 	ClearMessage();
 
 //　...結局＠
 //　...何のかんの言っても、...監督の答えもまた、!w1000...様子見￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…結局、",
-		   NULL, "...In the end...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...In the end...", Line_ContinueAfterTyping);
 
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…何のかんの言っても、…監督の答えもまた、",
-		   NULL, "no matter what I said... Coach himself was saying...", Line_ContinueAfterTyping);
+		   NULL, " no matter what I said... Coach himself was saying...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -7999,14 +7998,14 @@ void main()
 	PlaySE(4, "s03/01/kei040116", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…俺は、………本当に沙都子が危ないと感じたら、…誰の意思も聞かずに通報します。",
-		   NULL, "\"...If... If I feel that Satoko is really in danger... I will report it without asking anyone's opinion.", Line_WaitForInput);
+		   NULL, "\"...If... If I feel that Satoko is really in danger... I will report it without asking anyone's opinion. ", Line_ModeSpecific);
 	PlaySE(4, "s03/01/kei040117", 128, 64);
-	OutputLine(NULL, "……その結果、沙都子は不快な思いをして、……俺を恨むことがあるかもしれないけど…。",
-		   NULL, " ...She might not be happy with the result... and she might hate me for it......... ", Line_ModeSpecific);
-	PlaySE(4, "s03/01/kei040118", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……その結果、沙都子は不快な思いをして、……俺を恨むことがあるかもしれないけど…。",
+		   NULL, "...She might not be happy with the result... and she might hate me for it.........", Line_WaitForInput);
+	PlaySE(4, "s03/01/kei040118", 128, 64);
 	OutputLine(NULL, "…………最終的にはそれが沙都子の幸せにつながると信じます。」",
-		   NULL, "But I believe that will ultimately be what brings Satoko happiness.\"", Line_Normal);
+		   NULL, " But I believe that will ultimately be what brings Satoko happiness.\"", Line_Normal);
 	ClearMessage();
 
 //　監督は俺に振り返り、......まじまじと俺の瞳を見つめた＠
@@ -8019,7 +8018,7 @@ void main()
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……この年の子供が、…何を…、と顔に書いてあるのがわかる。",
-		   NULL, "...It was written all over his face... He was shocked... and what such a young kid had said.", Line_Normal);
+		   NULL, "...It was written all over his face... He was shocked... at what such a young kid had said.", Line_Normal);
 	ClearMessage();
 
 //「...........................どうして、...あなたはそこまで......。＠
