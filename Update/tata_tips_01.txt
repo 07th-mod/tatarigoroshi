@@ -1,13 +1,5 @@
 void main()
 {
-	int AdvMode;
-	AdvMode = 1;
-	int Line_ModeSpecific;
-	if (AdvMode) {
-		Line_ModeSpecific = Line_Normal;
-	} else {
-		Line_ModeSpecific = Line_WaitForInput;
-	}
 
 //*Sub_Tips_045
 //gosub *tip_s
@@ -21,29 +13,29 @@ void main()
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「俺が保証する＠沙都子ならこの山で篭城して、一個師団相手くらいなら充分にあしらえるに違いない。＠
-	PlaySE(4, "s20/01/440100092", 128, 64);
 	ClearMessage();
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100092", 128);
 	OutputLine(NULL, "「俺が保証する。",
 		   NULL, "\"I know one thing for sure.", Line_WaitForInput);
 	OutputLine(NULL, "沙都子ならこの山で篭城して、一個師団相手くらいなら充分にあしらえるに違いない。」",
-		   NULL, " Satoko could fend off an entire army division by holing up in this mountain.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Satoko could fend off an entire army division by holing up in this mountain.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「私は知ってるよ＠沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。＠
-	PlaySE(4, "s20/03/440300088", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/03/440300088", 128);
 	OutputLine(NULL, "「私は知ってるよ。",
 		   NULL, "\"I know all about it!", Line_WaitForInput);
 	OutputLine(NULL, "沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。」",
-		   NULL, " Satoko was one of the Soviet military advisors that gave training on traps to that one country.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Satoko was one of the Soviet military advisors that gave training on traps to that one country.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「そんなヘンな話はいいから...誰か助けてぇえぇ～～！！￥
-	PlaySE(4, "s20/02/440200057", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200057", 128);
 	OutputLine(NULL, "「そんなヘンな話はいいから…誰か助けてぇえぇ〜〜！！」",
 		   NULL, "\"Stop saying weird things... Somebody help meee~~!!\"", Line_Normal);
 	ClearMessage();
@@ -52,25 +44,25 @@ void main()
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //　......一体、...どういう仕掛けにどういう風に引っ掛かれば俺たちはこうなるんだろう￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……一体、…どういう仕掛けにどういう風に引っ掛かれば俺たちはこうなるんだろう。",
 		   NULL, "...How did it come to this? What traps did we fall for, and how did we fall for them?", Line_Normal);
 	ClearMessage();
 
 //　魅音は脱出不可能のやたらと細い落し穴にはまり、首だけを地上にのぞかせていた＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は脱出不可能のやたらと細い落し穴にはまり、首だけを地上にのぞかせていた。",
-		   NULL, "Mion was caught in a profusely thin pitfall she couldn't escape from, and only her head was poking above the ground.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "Mion was caught in a profusely thin pitfall she couldn't escape from, and only her head was poking above the ground.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　レナは頭からすっぽりブリキのバケツを被り、それが脱げなくてもがいている＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは頭からすっぽりブリキのバケツを被り、それが脱げなくてもがいている。",
-		   NULL, "Rena's head was completely covered by a tin bucket; she was squirming around in a vain attempt to remove it.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "Rena's head was completely covered by a tin bucket; she was squirming around in a vain attempt to remove it.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...どちらも実に滑稽だが、それでもまだいいさ＠足が地に着いてるだけマシだ￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…どちらも実に滑稽だが、それでもまだいいさ。",
 		   NULL, "...Either of these really were funny, but that's where it ended.", Line_WaitForInput);
 	OutputLine(NULL, "足が地に着いてるだけマシだ。",
@@ -81,21 +73,21 @@ void main()
 	PlayBGM( 2, "lsys12", 128, 0 );
 
 //「......圭ちゃんの方はどーおー＠　抜けられそうー＠　早く抜け出しておじさんを助けてよー。＠
-	PlaySE(4, "s20/03/440300089", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/03/440300089", 128);
 	OutputLine(NULL, "「……圭ちゃんの方はどーおー？",
 		   NULL, "\"...Kei-chan, what about youuu?", Line_WaitForInput);
 	OutputLine(NULL, "　抜けられそうー？",
 		   NULL, " Think you can get out of that?", Line_WaitForInput);
-	PlaySE(4, "s20/03/440300090", 128, 64);
+	PlayVoice(4, "s20/03/440300090", 128);
 	OutputLine(NULL, "　早く抜け出しておじさんを助けてよー。」",
-		   NULL, " Hurry up and get out so you can save this old man!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Hurry up and get out so you can save this old man!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「ぬ、抜け出して助けるのは魅音の方だー＠　この簀巻き状態の俺に、何をしろと言うんだー！￥
-	PlaySE(4, "s20/01/440100093", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100093", 128);
 	OutputLine(NULL, "「ぬ、抜け出して助けるのは魅音の方だー！",
 		   NULL, "\"Y-You're the one who should be breaking out and saving me, Mion!", Line_WaitForInput);
 	OutputLine(NULL, "　この簀巻き状態の俺に、何をしろと言うんだー！」",
@@ -103,13 +95,13 @@ void main()
 	ClearMessage();
 
 //　...俺の体はぐるぐるの簀巻き状態で、地上から２ｍくらいに吊り上げられていた＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺の体はぐるぐるの簀巻き状態で、地上から２ｍくらいに吊り上げられていた。",
-		   NULL, "...I was wrapped up in a bamboo mat and hanging two meters above the ground.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "...I was wrapped up in a bamboo mat and hanging two meters above the ground.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　あぁ、...どんなトラップを仕掛けたらこんな風になるんだよ＠　えぇ？＠　沙都子￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁ、…どんなトラップを仕掛けたらこんな風になるんだよ？",
 		   NULL, "Agh... What was this trap and how did I fall into it?", Line_WaitForInput);
 	OutputLine(NULL, "　えぇ？！",
@@ -121,7 +113,7 @@ void main()
 	DrawScene( "black", 1000 );
 
 //　そもそもの発端は、都会育ちの俺が自然に親しんでないとか何とかで、山へ散策に行こうなんて話からだった￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そもそもの発端は、都会育ちの俺が自然に親しんでないとか何とかで、山へ散策に行こうなんて話からだった。",
 		   NULL, "This all started when they suggested that I was unfamiliar with nature, having grown up in the city, and proposed a little exploration on the mountain.", Line_Normal);
 	ClearMessage();
@@ -131,8 +123,8 @@ void main()
 	DrawBustshotWithFiltering( 3, "re_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「うーん、でもレナもよく裏山は知らないよ＠/
-	PlaySE(4, "s20/02/440200058", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200058", 128);
 	OutputLine(NULL, "「うーん、でもレナもよく裏山は知らないよ？",
 		   NULL, "\"Hmm, but Rena doesn't really know how it is back there either!", Line_WaitForInput);
 
@@ -140,25 +132,25 @@ void main()
 	DrawBustshot( 3, "re_se_ha_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　レナじゃ迷子になっちゃう＠はぅ。＠
-	PlaySE(4, "s20/02/440200059", 128, 64);
+	PlayVoice(4, "s20/02/440200059", 128);
 	OutputLine(NULL, "　レナじゃ迷子になっちゃう。",
 		   NULL, " Rena might get lost.", Line_WaitForInput);
 	OutputLine(NULL, "はぅ。」",
-		   NULL, " Hau.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Hau.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "me_se_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「裏山ねぇ＠...小さい頃はよく遊んだけど、...ここ何年かはさっぱりだなぁ＠あそこ、道を誤るとかなりデンジャラスに迷うんだよなぁ。￥
-	PlaySE(4, "s20/03/440300091", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/03/440300091", 128);
 	OutputLine(NULL, "「裏山ねぇ。",
 		   NULL, "\"The mountain out back, huh?", Line_WaitForInput);
 	OutputLine(NULL, "…小さい頃はよく遊んだけど、…ここ何年かはさっぱりだなぁ。",
 		   NULL, " ...I played there a lot when I was little... but I haven't gone there for years.", Line_WaitForInput);
-	PlaySE(4, "s20/03/440300092", 128, 64);
+	PlayVoice(4, "s20/03/440300092", 128);
 	OutputLine(NULL, "あそこ、道を誤るとかなりデンジャラスに迷うんだよなぁ。」",
 		   NULL, " If you get lost out there, things can get pretty dangerous.\"", Line_Normal);
 	ClearMessage();
@@ -167,39 +159,39 @@ void main()
 	DrawBustshotWithFiltering( 1, "sa_se_ha_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「裏山なら私たちにお任せですわよー＠　山が丸ごと、私と梨花の遊び場なんですもの＠ねぇ梨花ぁ？＠
-	PlaySE(4, "s20/04/440400043", 128, 64);
-	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/04/440400043", 128);
 	OutputLine(NULL, "「裏山なら私たちにお任せですわよー！",
 		   NULL, "\"You can leave the mountain to us!", Line_WaitForInput);
 	OutputLine(NULL, "　山が丸ごと、私と梨花の遊び場なんですもの。",
 		   NULL, " The whole thing is our playground.", Line_WaitForInput);
-	PlaySE(4, "s20/04/440400044", 128, 64);
+	PlayVoice(4, "s20/04/440400044", 128);
 	OutputLine(NULL, "ねぇ梨花ぁ？」",
-		   NULL, " Isn't that right, Rika?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Isn't that right, Rika?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "ri_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......みー！￥
-	PlaySE(4, "s20/05/440500025", 128, 64);
-	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/05/440500025", 128);
 	OutputLine(NULL, "「……みー！」",
 		   NULL, "\"...Mew!\"", Line_Normal);
 	ClearMessage();
 
 //「おー＠それは心強いな＠じゃあここは二人の顔を立てて、二人の道案内でハイキングと行こうじゃねーか！＠
-	PlaySE(4, "s20/01/440100094", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100094", 128);
 	OutputLine(NULL, "「おー。",
 		   NULL, "\"Oh, I see!", Line_WaitForInput);
 	OutputLine(NULL, "それは心強いな。",
 		   NULL, " How reassuring.", Line_WaitForInput);
-	PlaySE(4, "s20/01/440100095", 128, 64);
+	PlayVoice(4, "s20/01/440100095", 128);
 	OutputLine(NULL, "じゃあここは二人の顔を立てて、二人の道案内でハイキングと行こうじゃねーか！」",
-		   NULL, " We'll defer to you two this time and have you be our tour guides!", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " We'll defer to you two this time and have you be our tour guides!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -207,21 +199,21 @@ void main()
 	DrawBustshotWithFiltering( 1, "re_se_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「でも圭一くん...＠裏山は迷うから遊びに行っちゃいけないって夏休みのしおりにも書いてあるよ。＠
-	PlaySE(4, "s20/02/440200060", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200060", 128);
 	OutputLine(NULL, "「でも圭一くん…。",
 		   NULL, "\"Wait, Keiichi-kun...", Line_WaitForInput);
 	OutputLine(NULL, "裏山は迷うから遊びに行っちゃいけないって夏休みのしおりにも書いてあるよ。」",
-		   NULL, " The summer vacation guidebook says not to play on the mountain because you'll get lost.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " The summer vacation guidebook says not to play on the mountain because you'll get lost.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
 	DrawBustshot( 3, "ri_se_ni_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......まだ夏休みではありませんですから、大丈夫なのですよ＠ボクたちが道を知ってますからご安心なのです。￥
-	PlaySE(4, "s20/05/440500026", 128, 64);
-	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/05/440500026", 128);
 	OutputLine(NULL, "「……まだ夏休みではありませんですから、大丈夫なのですよ。",
 		   NULL, "\"...It isn't summer vacation yet, so it's all right.", Line_WaitForInput);
 	OutputLine(NULL, "ボクたちが道を知ってますからご安心なのです。」",
@@ -231,13 +223,13 @@ void main()
 	DrawBustshot( 2, "sa_se_ha_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「裏山は昔から私たちの遊び場でございますもの＠　庭も同然＠　抜け道、近道までばっちりでございましてよー！￥
-	PlaySE(4, "s20/04/440400045", 128, 64);
-	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/04/440400045", 128);
 	OutputLine(NULL, "「裏山は昔から私たちの遊び場でございますもの！",
 		   NULL, "\"The mountain has always been our playground!", Line_WaitForInput);
 	OutputLine(NULL, "　庭も同然！",
 		   NULL, " Our backyard!", Line_WaitForInput);
-	PlaySE(4, "s20/04/440400046", 128, 64);
+	PlayVoice(4, "s20/04/440400046", 128);
 	OutputLine(NULL, "　抜け道、近道までばっちりでございましてよー！」",
 		   NULL, " We know all the secret paths and shortcuts!\"", Line_Normal);
 	ClearMessage();
@@ -245,20 +237,20 @@ void main()
 	DrawScene( "black", 1000 );
 
 //　......確かに沙都子と梨花ちゃんはちゃんと道を知ってたさ＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……確かに沙都子と梨花ちゃんはちゃんと道を知ってたさ。",
-		   NULL, "...Yes, both Satoko and Rika-chan knew the path like the back of their hands.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...Yes, both Satoko and Rika-chan knew the path like the back of their hands.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　お陰で、村の中じゃ絶対に味わえない大自然や眺望、新鮮な空気を満喫できたさ＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お陰で、村の中じゃ絶対に味わえない大自然や眺望、新鮮な空気を満喫できたさ。",
-		   NULL, "Thanks to them, we had our fill of fresh air, gorgeous views, and Mother Nature, the likes of which you could never see in the village.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "Thanks to them, we had our fill of fresh air, gorgeous views, and Mother Nature, the likes of which you could never see in the village.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　だが、途中からおかしくなり始めたんだ！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、途中からおかしくなり始めたんだ！！",
 		   NULL, "But things got strange partway through!!", Line_Normal);
 	ClearMessage();
@@ -275,34 +267,34 @@ void main()
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「そうそう＠皆さん＠ここからは私が歩いた足跡の通りに歩くんですわよ。＠
-	PlaySE(4, "s20/04/440400047", 128, 64);
-	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/04/440400047", 128);
 	OutputLine(NULL, "「そうそう。",
 		   NULL, "\"Oh, yes.", Line_WaitForInput);
 	OutputLine(NULL, "皆さん。",
 		   NULL, " Everyone, I have something to say.", Line_WaitForInput);
-	PlaySE(4, "s20/04/440400048", 128, 64);
+	PlayVoice(4, "s20/04/440400048", 128);
 	OutputLine(NULL, "ここからは私が歩いた足跡の通りに歩くんですわよ。」",
-		   NULL, " From here on, you must follow exactly where I go.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " From here on, you must follow exactly where I go.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「はぁ...＠　突然、何を言い出すんだ？＠
-	PlaySE(4, "s20/01/440100096", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100096", 128);
 	OutputLine(NULL, "「はぁ…？",
 		   NULL, "\"Huh...?", Line_WaitForInput);
 	OutputLine(NULL, "　突然、何を言い出すんだ？」",
-		   NULL, " What are you talking about all of a sudden?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " What are you talking about all of a sudden?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "ri_si_ni_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......大人しく沙都子の言うことを聞くほうが身のためなのです。￥
-	PlaySE(4, "s20/05/440500027", 128, 64);
-	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/05/440500027", 128);
 	OutputLine(NULL, "「……大人しく沙都子の言うことを聞くほうが身のためなのです。」",
 		   NULL, "\"...It would be safer to do as Satoko says.\"", Line_Normal);
 	ClearMessage();
@@ -311,13 +303,13 @@ void main()
 	DrawBustshot( 2, "re_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あれれ＠ねー、魅ぃちゃん、ほらこれ＠なんだろね＠/
-	PlaySE(4, "s20/02/440200061", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200061", 128);
 	OutputLine(NULL, "「あれれ。",
 		   NULL, "\"Oh, my.", Line_WaitForInput);
 	OutputLine(NULL, "ねー、魅ぃちゃん、ほらこれ。",
 		   NULL, " Hey, Mii-chan, look at this.", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200062", 128, 64);
+	PlayVoice(4, "s20/02/440200062", 128);
 	OutputLine(NULL, "なんだろね。",
 		   NULL, " What is it?", Line_WaitForInput);
 
@@ -325,7 +317,7 @@ void main()
 	DrawBustshot( 2, "re_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //引っ張るのかな＠　かな？￥
-	PlaySE(4, "s20/02/440200063", 128, 64);
+	PlayVoice(4, "s20/02/440200063", 128);
 	OutputLine(NULL, "引っ張るのかな？",
 		   NULL, " Should I pull it?", Line_WaitForInput);
 	OutputLine(NULL, "　かな？」",
@@ -335,7 +327,7 @@ void main()
 	DrawScene( "black", 50 );
 
 //　ピン＠/
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ピン。",
 		   NULL, "Suddenly.", Line_WaitForInput);
 
@@ -370,7 +362,7 @@ void main()
 	Wait( 150 );
 
 //　レナが凧糸のようなものを引っ張ると、レナのすぐ脇に頭上の木の枝に括り付けられていた竹槍の束がドカドカドカッ！！　と降り注ぐ！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナが凧糸のようなものを引っ張ると、レナのすぐ脇に頭上の木の枝に括り付けられていた竹槍の束がドカドカドカッ！！　と降り注ぐ！！",
 		   NULL, "When Rena pulled the kite string, a bundle of bamboo spears fastened to a tree branch all came raining down with a clatter right next to where Rena was standing!!", Line_Normal);
 	ClearMessage();
@@ -380,13 +372,13 @@ void main()
 	PlayBGM( 1, "msys03", 128, 0 );
 
 //「わーーー！＠　わーーー！＠　何これ？！!w500/
-	PlaySE(4, "s20/03/440300093", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/03/440300093", 128);
 	OutputLine(NULL, "「わーーー！！",
 		   NULL, "\"Wahhhh!!", Line_WaitForInput);
 	OutputLine(NULL, "　わーーー！！",
 		   NULL, " Wahhhh!!", Line_WaitForInput);
-	PlaySE(4, "s20/03/440300094", 128, 64);
+	PlayVoice(4, "s20/03/440300094", 128);
 	OutputLine(NULL, "　何これ？！",
 		   NULL, " What is this?!", Line_ContinueAfterTyping);
 
@@ -398,7 +390,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　何？！!w400/
-	PlaySE(4, "s20/03/440300095", 128, 64);
+	PlayVoice(4, "s20/03/440300095", 128);
 	OutputLine(NULL, "　何？！",
 		   NULL, " What?!", Line_ContinueAfterTyping);
 
@@ -410,7 +402,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　何？！!w400/
-	PlaySE(4, "s20/03/440300096", 128, 64);
+	PlayVoice(4, "s20/03/440300096", 128);
 	OutputLine(NULL, "　何？！",
 		   NULL, " What?!", Line_ContinueAfterTyping);
 
@@ -422,7 +414,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　ぎゃーー！！」/
-	PlaySE(4, "s20/03/440300097", 128, 64);
+	PlayVoice(4, "s20/03/440300097", 128);
 	OutputLine(NULL, "　ぎゃーー！！」",
 		   NULL, " Gyaaa!!\"", Line_ContinueAfterTyping);
 
@@ -433,17 +425,17 @@ void main()
 	PlaySE( 3, "wa_002", 128, 64 );
 	Wait( 200 );
 
-	OutputLineAll(NULL, "", Line_ModeSpecific);
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "ri_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......懐かしいのですよ＠これは確か、２年生の２学期に沙都子が作ったトラップなのです。￥
-	PlaySE(4, "s20/05/440500028", 128, 64);
-	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/05/440500028", 128);
 	OutputLine(NULL, "「……懐かしいのですよ。",
 		   NULL, "\"...That brings back memories.", Line_WaitForInput);
 	OutputLine(NULL, "これは確か、２年生の２学期に沙都子が作ったトラップなのです。」",
@@ -454,18 +446,18 @@ void main()
 	DrawBustshotWithFiltering( 3, "sa_si_ya_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「危なかったですわねぇ＠竹槍の先端には犬のフンが塗ってありますから、傷になるとあとで腐り出しますわよ。＠
-	PlaySE(4, "s20/04/440400049", 128, 64);
-	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/04/440400049", 128);
 	OutputLine(NULL, "「危なかったですわねぇ。",
 		   NULL, "\"That was a close one.", Line_WaitForInput);
 	OutputLine(NULL, "竹槍の先端には犬のフンが塗ってありますから、傷になるとあとで腐り出しますわよ。」",
-		   NULL, " The tips of the spears are covered in dog poop, so if one of them hurts you, the wound will start to fester.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " The tips of the spears are covered in dog poop, so if one of them hurts you, the wound will start to fester.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！￥
-	PlaySE(4, "s20/01/440100097", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100097", 128);
 	OutputLine(NULL, "「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！」",
 		   NULL, "\"W-When did this turn into freaking Vietnam?!\"", Line_Normal);
 	ClearMessage();
@@ -473,14 +465,14 @@ void main()
 	FadeAllBustshots( 400, TRUE );
 
 //　......沙都子と梨花ちゃんが言うには＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……沙都子と梨花ちゃんが言うには、",
-		   NULL, "...According to Satoko and Rika-chan...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...According to Satoko and Rika-chan...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...小学校低学年の頃、トラップ作りが沙都子的に大ブレイクして、この山の至るところに仕掛けて回ったらしいのだ...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…小学校低学年の頃、トラップ作りが沙都子的に大ブレイクして、この山の至るところに仕掛けて回ったらしいのだ…。",
 		   NULL, "...Earlier in elementary school, Satoko had been on a trap-making craze, and set them up along every inch of this mountain...", Line_Normal);
 	ClearMessage();
@@ -488,15 +480,15 @@ void main()
 	DrawBustshotWithFiltering( 3, "re_si_ko_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...圭一くん、ひょっとして......裏山が立入禁止なのは迷うからじゃなくて、...危ないからじゃないのかな...。＠
-	PlaySE(4, "s20/02/440200064", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200064", 128);
 	OutputLine(NULL, "「…圭一くん、ひょっとして……裏山が立入禁止なのは迷うからじゃなくて、…危ないからじゃないのかな…。」",
-		   NULL, "\"...Keiichi-kun, maybe... they didn't tell us not to go on the mountain because we'd get lost... but because it was dangerous...?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"...Keiichi-kun, maybe... they didn't tell us not to go on the mountain because we'd get lost... but because it was dangerous...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　俺も魅音もそのレナの仮説に全力で頷く￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺も魅音もそのレナの仮説に全力で頷く。",
 		   NULL, "Mion and I both nodded wholeheartedly at Rena's hypothesis.", Line_Normal);
 	ClearMessage();
@@ -504,29 +496,29 @@ void main()
 	DrawBustshotWithFiltering( 1, "sa_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「さ＠　先を急ぎますわよ＠早く戻らないと暗くなってしまいますわ＠暗くなったら、私だって危ないでございますからね。＠
-	PlaySE(4, "s20/04/440400050", 128, 64);
-	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/04/440400050", 128);
 	OutputLine(NULL, "「さ！",
 		   NULL, "\"Come, now!", Line_WaitForInput);
 	OutputLine(NULL, "　先を急ぎますわよ。",
 		   NULL, " We are hurrying on ahead.", Line_WaitForInput);
-	PlaySE(4, "s20/04/440400051", 128, 64);
+	PlayVoice(4, "s20/04/440400051", 128);
 	OutputLine(NULL, "早く戻らないと暗くなってしまいますわ。",
 		   NULL, " If we do not return soon, it will get dark.", Line_WaitForInput);
-	PlaySE(4, "s20/04/440400052", 128, 64);
+	PlayVoice(4, "s20/04/440400052", 128);
 	OutputLine(NULL, "暗くなったら、私だって危ないでございますからね。」",
-		   NULL, " If it gets dark, it may even become dangerous for me.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " If it gets dark, it may even become dangerous for me.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　そ、そんな危ない山に何で連れてきたぁあぁあああぁああ！＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そ、そんな危ない山に何で連れてきたぁあぁあああぁああ！！",
-		   NULL, "B-But you're the one who brought us to this crazy mountain!!", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "B-But you're the one who brought us to this crazy mountain!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　何で健全で平均的な日本人男子の俺が、ブービートラップに命を脅かされなくちゃらならないんだぁッ！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何で健全で平均的な日本人男子の俺が、ブービートラップに命を脅かされなくちゃらならないんだぁッ！！",
 		   NULL, "Why was an average healthy Japanese boy like me being forced to deal with life-threatening booby traps?!", Line_Normal);
 	ClearMessage();
@@ -534,7 +526,7 @@ void main()
 	DrawScene( "black", 400 );
 
 //　......そして＠......沙都子たちの姿をちょっと見失った途端に、俺たちは３人まとめて仲良くトラップに絡め取られたというワケだ...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そして、",
 		   NULL, "...And then...", Line_WaitForInput);
 	OutputLine(NULL, "……沙都子たちの姿をちょっと見失った途端に、俺たちは３人まとめて仲良くトラップに絡め取られたというワケだ…。",
@@ -545,34 +537,34 @@ void main()
 	PlayBGM( 2, "lsys12", 128, 0 );
 
 //「......誰か出して～～＠　私、おトイレに行きたいの～～！！＠
-	PlaySE(4, "s20/03/440300098", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/03/440300098", 128);
 	OutputLine(NULL, "「……誰か出して〜〜！",
 		   NULL, "\"...Someone get me out~~!", Line_WaitForInput);
 	OutputLine(NULL, "　私、おトイレに行きたいの〜〜！！」",
-		   NULL, " I have to go to the bathroom~~!!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " I have to go to the bathroom~~!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「そんなことより～＠　誰かこのバケツ取って～！＠　前が見えない～＠　はぅ～！！＠
-	PlaySE(4, "s20/02/440200065", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200065", 128);
 	OutputLine(NULL, "「そんなことより〜！",
 		   NULL, "\"Never mind that~!", Line_WaitForInput);
 	OutputLine(NULL, "　誰かこのバケツ取って〜！！",
 		   NULL, " Somebody get the bucket off me~!!", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200066", 128, 64);
+	PlayVoice(4, "s20/02/440200066", 128);
 	OutputLine(NULL, "　前が見えない〜！",
 		   NULL, " I can't see in front of me~!", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200067", 128, 64);
+	PlayVoice(4, "s20/02/440200067", 128);
 	OutputLine(NULL, "　はぅ〜！！」",
-		   NULL, " Hau~!!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Hau~!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...おいレナ、あんまり暴れるな＠ぱ、ぱんつが見えるぞ...。￥
-	PlaySE(4, "s20/01/440100098", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100098", 128);
 	OutputLine(NULL, "「…おいレナ、あんまり暴れるな。",
 		   NULL, "\"...Wait, Rena, don't struggle around so much.", Line_WaitForInput);
 	OutputLine(NULL, "ぱ、ぱんつが見えるぞ…。」",
@@ -580,19 +572,19 @@ void main()
 	ClearMessage();
 
 //「は、はぅーーー！！＠　見た？＠　見た？＠　圭一くんが見た！＠　はぅ～～～！！！￥
-	PlaySE(4, "s20/02/440200068", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/02/440200068", 128);
 	OutputLine(NULL, "「は、はぅーーー！！！",
 		   NULL, "\"H-Hauuuu!!!", Line_WaitForInput);
 	OutputLine(NULL, "　見た？！",
 		   NULL, " You saw?!", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200069", 128, 64);
+	PlayVoice(4, "s20/02/440200069", 128);
 	OutputLine(NULL, "　見た？！",
 		   NULL, " You saw?!", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200070", 128, 64);
+	PlayVoice(4, "s20/02/440200070", 128);
 	OutputLine(NULL, "　圭一くんが見た！！",
 		   NULL, " Keiichi-kun, you saw!!", Line_WaitForInput);
-	PlaySE(4, "s20/02/440200071", 128, 64);
+	PlayVoice(4, "s20/02/440200071", 128);
 	OutputLine(NULL, "　はぅ〜〜〜！！！」",
 		   NULL, " Hau~~~!!!\"", Line_Normal);
 	ClearMessage();
@@ -614,14 +606,14 @@ void main()
 //!sd
 
 //　スパパパパパ、スパパパパ、スパパパーンッ！！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　スパパパパパ、スパパパパ、スパパパーンッ！！！",
 		   NULL, "Smash, crash, smash, smash smash crash bash!!!", Line_Normal);
 	ClearMessage();
 
 //「み、見えてるだろ絶対...！＠　バケツ被ってても、見えてるだろ絶、/
-	PlaySE(4, "s20/01/440100099", 128, 64);
-	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100099", 128);
 	OutputLine(NULL, "「み、見えてるだろ絶対…！！",
 		   NULL, "\"O-Of course you can see them...!!", Line_WaitForInput);
 	OutputLine(NULL, "　バケツ被ってても、見えてるだろ絶、",
@@ -630,7 +622,7 @@ void main()
 	PlaySE( 3, "wa_005", 128, 64 );
 
 //げは、!w200/
-	PlaySE(4, "s20/01/440100100", 128, 64);
+	PlayVoice(4, "s20/01/440100100", 128);
 	OutputLine(NULL, "げは、",
 		   NULL, " gehah,", Line_ContinueAfterTyping);
 
@@ -642,7 +634,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //ごほ！！!w400/
-	PlaySE(4, "s20/01/440100101", 128, 64);
+	PlayVoice(4, "s20/01/440100101", 128);
 	OutputLine(NULL, "ごほ！！",
 		   NULL, " gohoh!!", Line_ContinueAfterTyping);
 
@@ -654,7 +646,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　ぐぼれッ！！￥
-	PlaySE(4, "s20/01/440100102", 128, 64);
+	PlayVoice(4, "s20/01/440100102", 128);
 	OutputLine(NULL, "　ぐぼれッ！！」",
 		   NULL, " Gbhbhreh!!\"", Line_Normal);
 	ClearMessage();
@@ -662,7 +654,7 @@ void main()
 	DrawScene( "bg_142", 400 );
 
 //　バケツレナにサンドバックにされる俺と、わんわんと泣く魅音￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　バケツレナにサンドバックにされる俺と、わんわんと泣く魅音。",
 		   NULL, "Bucket Rena was using me as a sandbag, and Mion was crying.", Line_Normal);
 	ClearMessage();
@@ -670,19 +662,19 @@ void main()
 	DrawBustshotWithFiltering( 3, "ri_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......落し穴から抜けられなくて、かぁいそかぁいそなのです。＠
-	PlaySE(4, "s20/05/440500029", 128, 64);
-	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/05/440500029", 128);
 	OutputLine(NULL, "「……落し穴から抜けられなくて、かぁいそかぁいそなのです。」",
-		   NULL, "\"...You can't get out of the pitfall? How sad, how sad.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"...You can't get out of the pitfall? How sad, how sad.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "sa_si_yah_b1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「もー、皆さん、だから言いましたでしょう＠　私から離れたらいけませんでしてよ、って！￥
-	PlaySE(4, "s20/04/440400053", 128, 64);
-	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/04/440400053", 128);
 	OutputLine(NULL, "「もー、皆さん、だから言いましたでしょう？",
 		   NULL, "\"Geez, didn't I already tell you all?", Line_WaitForInput);
 	OutputLine(NULL, "　私から離れたらいけませんでしてよ、って！」",
@@ -690,20 +682,20 @@ void main()
 	ClearMessage();
 
 //　今になって悟る俺＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今になって悟る俺。",
-		   NULL, "I finally had an epiphany.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "I finally had an epiphany.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......妙に沙都子が裏山にみんなを連れて行きたがってたのは...、歴代の自慢のトラップを俺たちに見せたかったからに違いない＠
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……妙に沙都子が裏山にみんなを連れて行きたがってたのは…、歴代の自慢のトラップを俺たちに見せたかったからに違いない。",
-		   NULL, "...Satoko had been so bent on taking everyone out to the mountain... because she wanted to brag about all the traps she'd set up here over the years.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "...Satoko had been so bent on taking everyone out to the mountain... because she wanted to brag about all the traps she'd set up here over the years.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......それなら見るだけにしてくれよ＠...はまり心地まで味わいたくないー！￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それなら見るだけにしてくれよ。",
 		   NULL, "...You could have stopped just at showing them to us.", Line_WaitForInput);
 	OutputLine(NULL, "…はまり心地まで味わいたくないー！！",
@@ -711,7 +703,7 @@ void main()
 	ClearMessage();
 
 //　梨花ちゃんは俺たち３人の頭を順々に撫で、これ以上ないくらいにご満悦な様子だった...￥
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんは俺たち３人の頭を順々に撫で、これ以上ないくらいにご満悦な様子だった…。",
 		   NULL, "Rika-chan pets our three heads in sequence, in an incredibly satisfied mood...", Line_Normal);
 	ClearMessage();

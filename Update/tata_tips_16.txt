@@ -1,13 +1,5 @@
 void main()
 {
-	int AdvMode;
-	AdvMode = 1;
-	int Line_ModeSpecific;
-	if (AdvMode) {
-		Line_ModeSpecific = Line_Normal;
-	} else {
-		Line_ModeSpecific = Line_WaitForInput;
-	}
 
 //■タイトル：５年目の犠牲者
 	EnableJumpingOfReturnIcon();
@@ -20,36 +12,36 @@ void main()
 	DrawScene( "bg_254a", 400 );
 
 //「.........今年の祟り、ってことっすかね。￥
-	PlaySE(4, "s20/19/443100049", 128, 64);
 	ClearMessage();
-	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/19/443100049", 128);
 	OutputLine(NULL, "「………今年の祟り、ってことっすかね。」",
 		   NULL, "\"...This year's curse, then?\"", Line_Normal);
 	ClearMessage();
 
 //「...そういうことになるんですかねぇ＠......毎年いろんな殺し方を見せてくれますが、今年は特に際立っていますねぇ。＠
-	PlaySE(4, "s20/11/440700221", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700221", 128);
 	OutputLine(NULL, "「…そういうことになるんですかねぇ。",
 		   NULL, "\"...That's what it looks like.", Line_WaitForInput);
 	OutputLine(NULL, "……毎年いろんな殺し方を見せてくれますが、今年は特に際立っていますねぇ。」",
-		   NULL, " ...He kills them differently every year, but this is particularly conspicuous, isn't it?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " ...He kills them differently every year, but this is particularly conspicuous, isn't it?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「自分で自分の喉を掻き破るなんて...＠...普通じゃないっす...。＠
-	PlaySE(4, "s20/19/443100050", 128, 64);
-	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/19/443100050", 128);
 	OutputLine(NULL, "「自分で自分の喉を掻き破るなんて…。",
 		   NULL, "\"Clawing out your own throat...", Line_WaitForInput);
 	OutputLine(NULL, "…普通じゃないっす…。」",
-		   NULL, " ...That isn't normal...\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " ...That isn't normal...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「あとは鑑識のじいさまに任せましょう＠...きっと何かの怪しげな薬物を検出してくれるに違いありません。￥
-	PlaySE(4, "s20/11/440700222", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700222", 128);
 	OutputLine(NULL, "「あとは鑑識のじいさまに任せましょう。",
 		   NULL, "\"Let's leave the rest to the old man in forensics.", Line_WaitForInput);
 	OutputLine(NULL, "…きっと何かの怪しげな薬物を検出してくれるに違いありません。」",
@@ -57,120 +49,120 @@ void main()
 	ClearMessage();
 
 //「お疲れさまです＠　お疲れさまでーす！！＠
-	PlaySE(4, "s20/00/442500019", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/442500019", 128);
 	OutputLine(NULL, "「お疲れさまです！",
 		   NULL, "\"Thank you!", Line_WaitForInput);
 	OutputLine(NULL, "　お疲れさまでーす！！」",
-		   NULL, " Thank you for your hard work!!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Thank you for your hard work!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「あ、大石さん＠　小宮山さんたちが到着しました！＠
-	PlaySE(4, "s20/19/443100051", 128, 64);
-	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/19/443100051", 128);
 	OutputLine(NULL, "「あ、大石さん！",
 		   NULL, "\"Oh, Ooishi-san!", Line_WaitForInput);
 	OutputLine(NULL, "　小宮山さんたちが到着しました！」",
-		   NULL, " Komiyama-san and the others have arrived!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Komiyama-san and the others have arrived!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「大石さん、お疲れさまです＠　今年は一等、キてるのが出たらしいじゃないですか。＠
-	PlaySE(4, "s20/00/442500020", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/442500020", 128);
 	OutputLine(NULL, "「大石さん、お疲れさまです！",
 		   NULL, "\"Ooishi-san, much appreciated!", Line_WaitForInput);
 	OutputLine(NULL, "　今年は一等、キてるのが出たらしいじゃないですか。」",
-		   NULL, " Well, it would seem we have a pretty crazy one this year.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Well, it would seem we have a pretty crazy one this year.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「えぇ＠裏をかかれました＠......私ゃてっきり、今夜死ぬのは北条鉄平だとばかり思ってたんですがね...。￥
-	PlaySE(4, "s20/11/440700223", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700223", 128);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	OutputLine(NULL, "裏をかかれました。",
 		   NULL, " We've been outsmarted.", Line_WaitForInput);
-	PlaySE(4, "s20/11/440700224", 128, 64);
+	PlayVoice(4, "s20/11/440700224", 128);
 	OutputLine(NULL, "……私ゃてっきり、今夜死ぬのは北条鉄平だとばかり思ってたんですがね…。」",
 		   NULL, " ...I was absolutely under the impression Teppei Houjou would get killed tonight...\"", Line_Normal);
 	ClearMessage();
 
 //「ホトケは何者です？＠
-	PlaySE(4, "s20/00/442500021", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/442500021", 128);
 	OutputLine(NULL, "「ホトケは何者です？」",
-		   NULL, "\"Who is the deceased?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"Who is the deceased?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「富竹ジロウ＠年に何回か雛見沢に来てる趣味の写真家さんです＠......ノーマークだったなぁ...。＠
-	PlaySE(4, "s20/11/440700225", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700225", 128);
 	OutputLine(NULL, "「富竹ジロウ。",
 		   NULL, "\"Jirou Tomitake.", Line_WaitForInput);
 	OutputLine(NULL, "年に何回か雛見沢に来てる趣味の写真家さんです。",
 		   NULL, " A photographer with a hobby for coming to Hinamizawa a few times a year.", Line_WaitForInput);
-	PlaySE(4, "s20/11/440700226", 128, 64);
+	PlayVoice(4, "s20/11/440700226", 128);
 	OutputLine(NULL, "……ノーマークだったなぁ…。」",
-		   NULL, " ...We didn't even have him marked...\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " ...We didn't even have him marked...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...どうなんでしょうね＠北条宅にずっと張り付いてたのがバレて、ターゲットを変更したとか。＠
-	PlaySE(4, "s20/19/443100052", 128, 64);
-	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/19/443100052", 128);
 	OutputLine(NULL, "「…どうなんでしょうね。",
 		   NULL, "\"...I wonder what happened?", Line_WaitForInput);
 	OutputLine(NULL, "北条宅にずっと張り付いてたのがバレて、ターゲットを変更したとか。」",
-		   NULL, " Did they realize we were watching the Houjou residence the whole time and decide to switch their target?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Did they realize we were watching the Houjou residence the whole time and decide to switch their target?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.....................かなぁ。.........裏目ったなぁ......。￥
-	PlaySE(4, "s20/11/440700227", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700227", 128);
 	OutputLine(NULL, "「…………………かなぁ。………裏目ったなぁ……。」",
 		   NULL, "\".........Maybe...... We sure flubbed this one...\"", Line_Normal);
 	ClearMessage();
 
 //「で、北条鉄平の方は何も問題なし？＠
-	PlaySE(4, "s20/00/442500022", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/442500022", 128);
 	OutputLine(NULL, "「で、北条鉄平の方は何も問題なし？」",
-		   NULL, "\"And there are no problems with Teppei Houjou?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"And there are no problems with Teppei Houjou?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「えぇ＠夕方頃に娘が祭りに出掛けて、その少し後にバイクで出掛けまして＠...先に娘が帰ってきて、...あれ＠　まだ帰ってないかな＠　どこかで飲んだ暮れてるのかな...？￥
-	PlaySE(4, "s20/11/440700228", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700228", 128);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Correct.", Line_WaitForInput);
 	OutputLine(NULL, "夕方頃に娘が祭りに出掛けて、その少し後にバイクで出掛けまして。",
 		   NULL, " His daughter left for the festival in the evening, and a little while later, he left on his motorbike.", Line_WaitForInput);
-	PlaySE(4, "s20/11/440700229", 128, 64);
+	PlayVoice(4, "s20/11/440700229", 128);
 	OutputLine(NULL, "…先に娘が帰ってきて、…あれ？",
 		   NULL, " ...His daughter came back first... wait.", Line_WaitForInput);
-	PlaySE(4, "s20/11/440700230", 128, 64);
+	PlayVoice(4, "s20/11/440700230", 128);
 	OutputLine(NULL, "　まだ帰ってないかな？",
-		   NULL, " Has he not come back yet? ", Line_ModeSpecific);
-	PlaySE(4, "s20/11/440700231", 128, 64);
-	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Has he not come back yet? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700231", 128);
 	OutputLine(NULL, "　どこかで飲んだ暮れてるのかな…？」",
 		   NULL, "Is he still out drinking somewhere...?\"", Line_Normal);
 	ClearMessage();
 
 //「大石さん、いらっしゃますかぁ？＠　高杉課長からです＠１号車の無線にお願いします！！￥
-	PlaySE(4, "s20/00/keijib44011", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/keijib44011", 128);
 	OutputLine(NULL, "「大石さん、いらっしゃますかぁ？！",
 		   NULL, "\"Ooishi-san, are you there?!", Line_WaitForInput);
 	OutputLine(NULL, "　高杉課長からです。",
 		   NULL, " Call from Chief Takasugi.", Line_WaitForInput);
-	PlaySE(4, "s20/00/keijib44012", 128, 64);
+	PlayVoice(4, "s20/00/keijib44012", 128);
 	OutputLine(NULL, "１号車の無線にお願いします！！」",
 		   NULL, " He's on the line in Car 1!!\"", Line_Normal);
 	ClearMessage();
