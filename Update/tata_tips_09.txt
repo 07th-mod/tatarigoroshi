@@ -31,6 +31,7 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //ＸＸ県福祉部児童課資料
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ＸＸ県福祉部児童課資料",
 		   NULL, " _____ Prefecture Juvenile Welfare Division Report", Line_ContinueAfterTyping);
 
