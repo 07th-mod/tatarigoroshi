@@ -67,6 +67,12 @@ void main()
 		SetGlobalFlag(GAltSEflowMaxNum , 0);
 	}
 
+	//Setting Load command must have same value(without ModNVLADVModeSetteingLoad)
+	//value sort : NameFormat,WindowPosX,WindowPosY,WindowSizeX,WindowSizeY,WindowMarginLeft,WindowMarginTop,WindowMarginRight,WindowMarginBottom,FontID,CharSpacing,LineSpacing,FontSize
+	ModADVModeSettingLoad("<size=+4>{0}\n</size>", 0, -275, 1150, 250, 60, 30, 50, 30, 3, 0, 8, 30);
+	ModNVLModeSettingLoad("", 0, 0, 1240, 720, 60, 30, 50, 30, 3, 0, 1, 30);
+	ModNVLADVModeSettingLoad("", -4, -75, 1024, 768, 60, 30, 50, 30, 3, 0, 8, 30);
+
 	if(GetGlobalFlag(GADVMode) == 1) {
 		SetNameFormat("<size=+4>{0}\n</size>");
 		SetWindowPos(0, -275);
@@ -91,6 +97,8 @@ void main()
 
 	SetScreenAspect("0.5625");
 	SetGUIPosition(0, 0);
+	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
+	DisableWindow();
 
 	CallScript( "flow" );
 }
