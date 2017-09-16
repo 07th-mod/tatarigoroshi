@@ -70,8 +70,8 @@ void main()
 	//Setting Load command must have same value(without ModNVLADVModeSetteingLoad)
 	//value sort : NameFormat,WindowPosX,WindowPosY,WindowSizeX,WindowSizeY,WindowMarginLeft,WindowMarginTop,WindowMarginRight,WindowMarginBottom,FontID,CharSpacing,LineSpacing,FontSize
 	ModADVModeSettingLoad("<size=+4>{0}\n</size>", 0, -275, 1150, 250, 60, 30, 50, 30, 3, 0, 8, 30);
-	ModNVLModeSettingLoad("", 0, 0, 1240, 720, 60, 30, 50, 30, 3, 0, 1, 30);
-	ModNVLADVModeSettingLoad("", -4, -75, 1024, 768, 60, 30, 50, 30, 3, 0, 8, 30);
+	ModNVLModeSettingLoad("", 0, 0, 1240, 720, 60, 30, 50, 30, 3, 0, 8, 30);
+	ModNVLADVModeSettingLoad("", -4, -75, 1024, 768, 60, 30, 50, 30, 3, 0, 8, 36);
 
 	if(GetGlobalFlag(GADVMode) == 1) {
 		SetNameFormat("<size=+4>{0}\n</size>");
@@ -91,8 +91,8 @@ void main()
 		SetGlobalFlag(GLinemodeSp , Line_WaitForInput);
 		SetFontId(3); //0 is MS Gothic (default japanese), 1 is MS PGothic (default english), 2 is dejavu sans, 3 is source han sans chinese simplified (for chinese)
 		SetCharSpacing(0); //use negative values to make characters appear closer together
-		SetLineSpacing(1);
-		SetFontSize(30);
+		SetLineSpacing(8);
+		SetFontSize(36);
 	}
 
 	SetScreenAspect("0.5625");
