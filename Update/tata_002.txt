@@ -553,7 +553,7 @@ void main()
 
 	PlayVoice(4, "s19/01/hr_kei25510", 128);
 	OutputLine(NULL, "　あの園崎魅音が作れるわけがなぁいいい！！！」",
-		   NULL, " Mion Sonozaki couldn't possibly make this!!!\"", Line_ContinueAfterTyping);
+		   NULL, " Mion Sonozaki couldn't possibly make this!!!\"", Line_Continue);
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	PlaySE( 3, "wa_006", 128, 64 );
@@ -1614,25 +1614,25 @@ void main()
 
 	PlayVoice(4, "s19/24/502400021", 128);
 	OutputLine(NULL, "　愛",
-		   NULL, " love,", Line_ContinueAfterTyping);
+		   NULL, " love,", Line_Continue);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 //・心/
 	OutputLine(NULL, "・心",
-		   NULL, " spirit,", Line_ContinueAfterTyping);
+		   NULL, " spirit,", Line_Continue);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 //・味の内、２つも欠けていると断言できるのです！！」/
 	OutputLine(NULL, "・味の内、２つも欠けていると断言できるのです！！」",
-		   NULL, " and taste, we can assert that Maebara-san's bento is lacking two of these!!\"", Line_ContinueAfterTyping);
+		   NULL, " and taste, we can assert that Maebara-san's bento is lacking two of these!!\"", Line_Continue);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
@@ -1883,7 +1883,7 @@ void main()
 		   NULL, " ...To turn your failures at cooking due to lack of skill into scars of hard work instead...", Line_WaitForInput);
 	PlayVoice(4, "s19/03/500300328", 128);
 	OutputLine(NULL, "やはりこの男、",
-		   NULL, " As I thought...", Line_ContinueAfterTyping);
+		   NULL, " As I thought...", Line_Continue);
 
 	PlaySE( 3, "wa_010", 128, 64 );
 
@@ -1991,7 +1991,7 @@ void main()
 		   NULL, "\"That's right.", Line_WaitForInput);
 	PlayVoice(4, "s19/25/502500019", 128);
 	OutputLine(NULL, "心をこめて頑張りましたって言って、コックが消し炭みたいなハンバーグを持ってきたら、それにお金を払います？",
-		   NULL, " If a chef brought you burned steak and said they put their spirit into it and tried hard, would you pay them?", Line_ContinueAfterTyping);
+		   NULL, " If a chef brought you burned steak and said they put their spirit into it and tried hard, would you pay them?", Line_Continue);
 
 	PlaySE( 3, "wa_005", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -1999,7 +1999,7 @@ void main()
 //　払わないですよね？！/
 	PlayVoice(4, "s19/25/502500020", 128);
 	OutputLine(NULL, "　払わないですよね？！",
-		   NULL, " You wouldn't, would you?!", Line_ContinueAfterTyping);
+		   NULL, " You wouldn't, would you?!", Line_Continue);
 
 	PlaySE( 3, "wa_005", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -2011,7 +2011,7 @@ void main()
 //　つまりそういうことなんです！」/
 	PlayVoice(4, "s19/25/502500021", 128);
 	OutputLine(NULL, "　つまりそういうことなんです！」",
-		   NULL, " It's the same thing!\"", Line_ContinueAfterTyping);
+		   NULL, " It's the same thing!\"", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 
@@ -2056,7 +2056,7 @@ void main()
 
 	PlayVoice(4, "s19/01/hr_kei25820", 128);
 	OutputLine(NULL, "　完食してみせる！！」",
-		   NULL, " I would eat it all!!\"", Line_ContinueAfterTyping);
+		   NULL, " I would eat it all!!\"", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 //!sd
@@ -2105,7 +2105,7 @@ void main()
 		   NULL, " Does your bento make us feel that way, Maebara-san?!", Line_WaitForInput);
 	PlayVoice(4, "s19/25/502500024", 128);
 	OutputLine(NULL, "　いいえ、僕には伝わりません！」",
-		   NULL, " No, it doesn't make me feel that way!\"", Line_ContinueAfterTyping);
+		   NULL, " No, it doesn't make me feel that way!\"", Line_Continue);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -2457,7 +2457,7 @@ void main()
 //　これによって癒される心の至福とセーターでは比べ物にならないのです！」!sd/
 	PlayVoice(4, "s19/25/502500033", 128);
 	OutputLine(NULL, "　これによって癒される心の至福とセーターでは比べ物にならないのです！」",
-		   NULL, " The bliss of your soothed heart can't be compared to the sweater!\"", Line_ContinueAfterTyping);
+		   NULL, " The bliss of your soothed heart can't be compared to the sweater!\"", Line_Continue);
 //!sd/
 	PlaySE( 3, "wa_007", 128, 64 );
 	DisableWindow();
@@ -2527,7 +2527,7 @@ void main()
 	PlaySE( 3, "wa_007", 128, 64 );
 	PlayVoice(4, "s19/24/502400036_06", 128);
 	OutputLine(NULL, "　それは私たち受け手が採点に手心を加えるものにはなりえないのです！！」",
-		   NULL, " That cannot enter into consideration for the rest of us on the receiving end!!\"", Line_ContinueAfterTyping);
+		   NULL, " That cannot enter into consideration for the rest of us on the receiving end!!\"", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -2615,7 +2615,7 @@ void main()
 	PlayVoice(6, "s19/00/allb50002c", 128);
 	PlayVoice(7, "s19/00/allb50002d", 128);
 	OutputLine(NULL, "「「「何だとブス！！」」」",
-		   NULL, " \"\"\"What was that, ugly?!\"\"\"", Line_ContinueAfterTyping);
+		   NULL, " \"\"\"What was that, ugly?!\"\"\"", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -2798,7 +2798,7 @@ void main()
 //　それを認めよッ！！！」/
 	PlayVoice(4, "s19/01/hr_kei25980", 128);
 	OutputLine(NULL, "　それを認めよッ！！！」",
-		   NULL, " Admit it!!!\"", Line_ContinueAfterTyping);
+		   NULL, " Admit it!!!\"", Line_Continue);
 
 	DisableWindow();
 	DrawScene( "white", 10 );
@@ -3122,7 +3122,7 @@ void main()
 	PlayVoice(6, "s19/00/allb50003c", 128);
 	PlayVoice(7, "s19/00/allb50003d", 128);
 	OutputLine(NULL, "「「「「ああぁ？！？！　まったく同じ内容だぁぁ！！！」」」",
-		   NULL, "\"\"\"\"Ahhh?!?! They're exactly the same!!!\"\"\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"\"\"Ahhh?!?! They're exactly the same!!!\"\"\"\"", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -3483,7 +3483,7 @@ void main()
 		   NULL, "\"With that over with, this case is closed!!!", Line_WaitForInput);
 	PlayVoice(4, "s19/03/500300365", 128);
 	OutputLine(NULL, "　今日のビリは…",
-		   NULL, " Today, last place goes to...", Line_ContinueAfterTyping);
+		   NULL, " Today, last place goes to...", Line_Continue);
 //!s0/
 	SetSpeedOfMessage( TRUE, 127, );
 	PlaySE( 3, "wa_008", 128, 64 );
@@ -3507,7 +3507,7 @@ void main()
 	PlayVoice(6, "s19/00/allg50006_03", 128);
 	PlayVoice(7, "s19/00/allg50006_04", 128);
 	OutputLine(NULL, "「「「「うをおおおぉおっぉぉおおぉお…！！！」」」」",
-		   NULL, "\"\"\"\"Woooooooooaaaahhh...!!!\"\"\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"\"\"Woooooooooaaaahhh...!!!\"\"\"\"", Line_Continue);
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	PlaySE( 3, "wa_006", 128, 64 );
@@ -4582,7 +4582,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/04/500400399", 128);
 	OutputLine(NULL, "「や、やーいやーい！",
-		   NULL, "\"H-Hey, you over there!", Line_ContinueAfterTyping);
+		   NULL, "\"H-Hey, you over there!", Line_Continue);
 
 	Wait( 1000 );
 
@@ -6145,7 +6145,7 @@ void main()
 		   NULL, "I got the pork during the sale and got it half off!", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei27410_04", 128);
 	OutputLine(NULL, "　へへ！",
-		   NULL, " Heh heh!", Line_ContinueAfterTyping);
+		   NULL, " Heh heh!", Line_Continue);
 	OutputLine(NULL, "　主婦の知恵って言うのかな！",
 		   NULL, " The things a housewife knows, right?", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei27410_05", 128);
@@ -6821,11 +6821,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/04/500400462", 128);
 	OutputLine(NULL, "「べ、別におかしくはありませんけど",
-		   NULL, "\"I-It isn't weird or anything, but......", Line_ContinueAfterTyping);
+		   NULL, "\"I-It isn't weird or anything, but......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………その、……。」",
 		   NULL, " well...\"", GetGlobalFlag(GLinemodeSp));

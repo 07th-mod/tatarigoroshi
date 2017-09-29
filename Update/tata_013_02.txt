@@ -697,18 +697,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100950", 128);
 	OutputLine(NULL, "「うわぁあぁああッ！！……………、",
-		   NULL, "\"Uwaaahhhhh!!", Line_ContinueAfterTyping);
+		   NULL, "\"Uwaaahhhhh!!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……さ、",
-		   NULL, " .........Sa...", Line_ContinueAfterTyping);
+		   NULL, " .........Sa...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "沙都子か。",
 		   NULL, " Satoko?", Line_WaitForInput);
@@ -870,18 +870,18 @@ void main()
 		   NULL, "\"...It... it can't be...", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400214", 128);
 	OutputLine(NULL, "……あの、……監督が、",
-		   NULL, " ...Coach... he...", Line_ContinueAfterTyping);
+		   NULL, " ...Coach... he...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……自殺なんて、",
-		   NULL, " would never...", Line_ContinueAfterTyping);
+		   NULL, " would never...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…そんなの絶対に………！」",
 		   NULL, " never ever... kill himself...!\"", Line_Normal);
@@ -1055,11 +1055,11 @@ void main()
 		   NULL, "\"...I, well...", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100959", 128);
 	OutputLine(NULL, "…昨日、監督と、",
-		   NULL, " Yesterday, I, um...", Line_ContinueAfterTyping);
+		   NULL, " Yesterday, I, um...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "その…………喧嘩、…して。",
 		   NULL, " got into a...... a fight... with Coach.", Line_WaitForInput);
@@ -1573,11 +1573,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100996", 128);
 	OutputLine(NULL, "「…俺が……死ねと願うと、",
-		   NULL, "\"...I... wished for her to die...", Line_ContinueAfterTyping);
+		   NULL, "\"...I... wished for her to die...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……次の日には……死んでるんだ。",
 		   NULL, " and the next day... she was dead.", Line_WaitForInput);
@@ -1606,18 +1606,18 @@ void main()
 		   NULL, "\"...I heard from the police earlier... but apparently he went missing.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101001", 128);
 	OutputLine(NULL, "……………実は昨日、",
-		   NULL, " ......And yesterday, actually......", Line_ContinueAfterTyping);
+		   NULL, " ......And yesterday, actually......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………あいつにも、",
-		   NULL, " I, well...", Line_ContinueAfterTyping);
+		   NULL, " I, well...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…死んじまえって、…念じてたんだ。」",
 		   NULL, " wished... that he would die.\"", GetGlobalFlag(GLinemodeSp));
@@ -1873,11 +1873,11 @@ void main()
 		   NULL, "\".......................You probably...", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101025", 128);
 	OutputLine(NULL, "……俺のこと、……頭が変になった、",
-		   NULL, " think... I've gone...", Line_ContinueAfterTyping);
+		   NULL, " think... I've gone...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "って、……思ってるんだろうな。",
 		   NULL, " a little crazy, don't you?", Line_WaitForInput);
@@ -1945,25 +1945,25 @@ void main()
 //　...はぁ、!w800......ぐ、!w600......はぁ、!w600......はぁ...！￥
 	PlayVoice(4, "s03/04/140400265", 128);
 	OutputLine(NULL, "　…はぁ、",
-		   NULL, " ...Hah...", Line_ContinueAfterTyping);
+		   NULL, " ...Hah...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……ぐ、",
-		   NULL, " guh...", Line_ContinueAfterTyping);
+		   NULL, " guh...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……はぁ、",
-		   NULL, " hah...", Line_ContinueAfterTyping);
+		   NULL, " hah...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……はぁ…！」",
 		   NULL, " hah...!\"", Line_Normal);
@@ -2895,11 +2895,11 @@ void main()
 		   NULL, " and Ooishi-san, didn't you?!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400278", 128);
 	OutputLine(NULL, "　……叔父さまを殺そうとして、",
-		   NULL, " ...You killed my uncle...", Line_ContinueAfterTyping);
+		   NULL, " ...You killed my uncle...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……梨花まで……梨花までッ！！",
 		   NULL, " and then... you killed Rika!!", Line_WaitForInput);
@@ -3322,18 +3322,18 @@ void main()
 		   NULL, "\"......Why... did you turn out this way...?", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400305", 128);
 	OutputLine(NULL, "　圭一さんのこと……ぅっく、",
-		   NULL, " Keiichi-san, I... hic...", Line_ContinueAfterTyping);
+		   NULL, " Keiichi-san, I... hic...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……だい、",
-		   NULL, " I really...", Line_ContinueAfterTyping);
+		   NULL, " I really...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……大好きだったのに………。」",
 		   NULL, " really liked you...\"", Line_Normal);
@@ -4184,11 +4184,11 @@ void main()
 		   NULL, "\"...My father and mother, too... they vanished in that muddy stream.", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400334", 128);
 	OutputLine(NULL, "……意地悪だった叔母も死んだけど、",
-		   NULL, " ...My mean aunt died too..", Line_ContinueAfterTyping);
+		   NULL, " ...My mean aunt died too..", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……誰よりも私を可愛がってくれた…にーにーも私を捨てて…家出してしまった。",
 		   NULL, " but then Nii-nii... who loved me more than anyone... ran away from home.", Line_WaitForInput);
@@ -4198,11 +4198,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400336", 128);
 	OutputLine(NULL, "…………そして！！　…圭一さんが転校してきて…やっと楽しい毎日が戻ってきたと思ったのに、",
-		   NULL, "......and then!! ...Keiichi-san transferred in... and I thought I'd finally gotten my fun life back...", Line_ContinueAfterTyping);
+		   NULL, "......and then!! ...Keiichi-san transferred in... and I thought I'd finally gotten my fun life back...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……今度は…圭一さんが取り憑かれて……。",
 		   NULL, " but this time... Keiichi-san was possessed...", Line_WaitForInput);
@@ -4497,18 +4497,18 @@ void main()
 		   NULL, "\"...Y...You...!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400357", 128);
 	OutputLine(NULL, "　最後の……",
-		   NULL, " At the very...", Line_ContinueAfterTyping);
+		   NULL, " At the very...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "最後で………、",
-		   NULL, " very end...", Line_ContinueAfterTyping);
+		   NULL, " very end...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…圭一さんの…ふりを……！！」",
 		   NULL, " you're still pretending... to be Keiichi-san...!!\"", GetGlobalFlag(GLinemodeSp));

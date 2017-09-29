@@ -713,11 +713,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300180", 128);
 	OutputLine(NULL, "「圭ちゃんが何の話をしようとしてるかわからないけど、",
-		   NULL, "\"I don't know what you're getting at, Kei-chan...", Line_ContinueAfterTyping);
+		   NULL, "\"I don't know what you're getting at, Kei-chan...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…話す前に釘を刺すよ。",
 		   NULL, " but let me say this beforehand.", Line_WaitForInput);
@@ -808,11 +808,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100411", 128);
 	OutputLine(NULL, "「……オヤシロさまの祟りって、",
-		   NULL, "\"...You know that stuff...", Line_ContinueAfterTyping);
+		   NULL, "\"...You know that stuff...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………あるよな。」",
 		   NULL, " about Oyashiro-sama's curse, right?\"", GetGlobalFlag(GLinemodeSp));
@@ -926,18 +926,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100420", 128);
 	OutputLine(NULL, "「もしも……今年の祟りが、",
-		   NULL, "\"If... this year's curse...", Line_ContinueAfterTyping);
+		   NULL, "\"If... this year's curse...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……沙都子の叔父じゃなかったなら、",
-		   NULL, " isn't going to be on Satoko's uncle...", Line_ContinueAfterTyping);
+		   NULL, " isn't going to be on Satoko's uncle...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……沙都子の叔父に変えてくれ。",
 		   NULL, " then please change it to him.", Line_WaitForInput);
@@ -1021,11 +1021,11 @@ void main()
 		   NULL, "\"The string of freak deaths in Hinamizawa...", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300194", 128);
 	OutputLine(NULL, "…通称『オヤシロさまの祟り』は、園崎家が主導で御三家が起こしている…村ぐるみの事件だ、",
-		   NULL, " also called Oyashiro-sama's curse—you're saying they're incidents perpetrated by the village... carried out by the Three Families at the Sonozaki's instructions?", Line_ContinueAfterTyping);
+		   NULL, " also called Oyashiro-sama's curse—you're saying they're incidents perpetrated by the village... carried out by the Three Families at the Sonozaki's instructions?", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……でしょ？」",
 		   NULL, " Is that it?\"", Line_Normal);
@@ -1072,25 +1072,25 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300197", 128);
 	OutputLine(NULL, "　私が祟りを決め、",
-		   NULL, "I would have chosen the target of the curse,", Line_ContinueAfterTyping);
+		   NULL, "I would have chosen the target of the curse,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "指示をし、",
-		   NULL, " given the instructions,", Line_ContinueAfterTyping);
+		   NULL, " given the instructions,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…何人も殺めて、",
-		   NULL, " killed many people,", Line_ContinueAfterTyping);
+		   NULL, " killed many people,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "消したことになる。",
 		   NULL, " and gotten rid of others.", Line_WaitForInput);
@@ -1219,11 +1219,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100446", 128);
 	OutputLine(NULL, "「……あぁ、",
-		   NULL, "\"...Right.", Line_ContinueAfterTyping);
+		   NULL, "\"...Right.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………それはわかっているさ。」",
 		   NULL, " ...I understand that, it's just...\"", Line_Normal);
@@ -1234,11 +1234,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300207", 128);
 	OutputLine(NULL, "「………………だから圭ちゃんの必死の訴えには胸を打たれるけど、",
-		   NULL, "\"......It was touching to hear such a desperate plea, Kei-chan...", Line_ContinueAfterTyping);
+		   NULL, "\"......It was touching to hear such a desperate plea, Kei-chan...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…それだけ。",
 		   NULL, " but that was all it was.", Line_WaitForInput);
@@ -1302,11 +1302,11 @@ void main()
 		   NULL, "...We may have been a little extreme during the dam war, but that's all.", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300217", 128);
 	OutputLine(NULL, "……人殺しなんて大それたこと、",
-		   NULL, " ...We would never do something...", Line_ContinueAfterTyping);
+		   NULL, " ...We would never do something...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…絶対にやらないよ。」",
 		   NULL, " so insane as to kill people.\"", Line_Normal);

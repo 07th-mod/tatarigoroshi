@@ -59,7 +59,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100120", 128);
 	OutputLine(NULL, "「わわ！",
-		   NULL, "\"Whaa?!", Line_ContinueAfterTyping);
+		   NULL, "\"Whaa?!", Line_Continue);
 	OutputLine(NULL, "　な、何だぁ？！」",
 		   NULL, " What was that?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -72,11 +72,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200072", 128);
 	OutputLine(NULL, "「今、廊下からすごいのが聞こえた！",
-		   NULL, "\"I just heard something really loud from the hallway!", Line_ContinueAfterTyping);
+		   NULL, "\"I just heard something really loud from the hallway!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　何だろ！",
 		   NULL, " What was it?", Line_WaitForInput);

@@ -121,18 +121,18 @@ void main()
 //......で、!w1000......その、!w800.........ドラム缶の中に、...多分、人じゃないかと思うんです＠人らしきものが灯油か何かで焼かれた...という感じで＠......その、......警察の人にも連絡した方がいいんじゃないかと思いまして...。＠
 	PlayVoice(4, "s20/00/villc44005", 128);
 	OutputLine(NULL, "………で、",
-		   NULL, " ......And...", Line_ContinueAfterTyping);
+		   NULL, " ......And...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……その、",
-		   NULL, " well......", Line_ContinueAfterTyping);
+		   NULL, " well......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………ドラム缶の中に、…多分、人じゃないかと思うんです。",
 		   NULL, " in the oil drum... I think it might be a person.", Line_WaitForInput);

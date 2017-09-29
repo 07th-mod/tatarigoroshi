@@ -538,11 +538,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100561", 128);
 	OutputLine(NULL, "「………え、",
-		   NULL, "\"......Wait...", Line_ContinueAfterTyping);
+		   NULL, "\"......Wait...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………ちょ、ちょっと待って。",
 		   NULL, " ...Wait a second.", Line_WaitForInput);
@@ -580,11 +580,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100563", 128);
 	OutputLine(NULL, "「……そもそも、",
-		   NULL, "\"...Just has to...", Line_ContinueAfterTyping);
+		   NULL, "\"...Just has to...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……発覚しない事件。」",
 		   NULL, " never come to light.\"", Line_Normal);

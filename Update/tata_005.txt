@@ -1935,7 +1935,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/25/502500048", 128);
 	OutputLine(NULL, "「…え、えぇ？！",
-		   NULL, "\"...Wait, what?!", Line_ContinueAfterTyping);
+		   NULL, "\"...Wait, what?!", Line_Continue);
 //!!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -2194,11 +2194,11 @@ void main()
 		   NULL, " I should be able to reach it.", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei32940", 128);
 	OutputLine(NULL, "………よいしょ、",
-		   NULL, " ......Here we go...", Line_ContinueAfterTyping);
+		   NULL, " ......Here we go...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "っと…！」",
 		   NULL, " Urgh...!\"", Line_Normal);
@@ -3401,10 +3401,10 @@ void main()
 		   NULL, "Nobody wants to have a grudge held against them.", Line_WaitForInput);
 	PlayVoice(4, "s19/11/500700086", 128);
 	OutputLine(NULL, "…敵を作らないに、…越したことなんか、",
-		   NULL, " ...There's nothing positive... about making...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...There's nothing positive... about making...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ない。",
 		   NULL, " enemies. ", GetGlobalFlag(GLinemodeSp));
 
@@ -3679,7 +3679,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/11/500700100", 128);
 	OutputLine(NULL, "「…………………………………。",
-		   NULL, "\"..................", Line_ContinueAfterTyping);
+		   NULL, "\"..................", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -4355,11 +4355,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/10/501000182", 128);
 	OutputLine(NULL, "「……前原さんは、",
-		   NULL, "\"...Maebara-san...", Line_ContinueAfterTyping);
+		   NULL, "\"...Maebara-san...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…そうか。",
 		   NULL, " Oh, right.", Line_WaitForInput);
@@ -4386,11 +4386,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/10/501000184", 128);
 	OutputLine(NULL, "「…………オヤシロさまの祟りと沙都子ちゃんの話は、",
-		   NULL, "\"......Have you heard anything about...", Line_ContinueAfterTyping);
+		   NULL, "\"......Have you heard anything about...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…少しは聞いたことがありますか？」",
 		   NULL, " Oyashiro-sama's curse, and about Satoko-chan?\"", GetGlobalFlag(GLinemodeSp));
@@ -4411,11 +4411,11 @@ void main()
 		   NULL, "\"...Satoko's parents were dam proponents...", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei33160", 128);
 	OutputLine(NULL, "…転落事故で死んだのは祟りだ、",
-		   NULL, " and their accidental death was because of the curse...", Line_ContinueAfterTyping);
+		   NULL, " and their accidental death was because of the curse...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "って話ですか…？」",
 		   NULL, " You mean that...?\"", GetGlobalFlag(GLinemodeSp));
@@ -4565,11 +4565,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/10/501000192", 128);
 	OutputLine(NULL, "……今の元気な沙都子ちゃんしか知らないあなたには、",
-		   NULL, "...You've never known any Satoko but the energetic and healthy one now...", Line_ContinueAfterTyping);
+		   NULL, "...You've never known any Satoko but the energetic and healthy one now...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……土気色の顔をして、ただ日陰でぼーっとしているだけの彼女など、想像もつかないでしょう…。」",
 		   NULL, " so you probably couldn't imagine her face being so deathly pale, a girl always standing dazed in the shade of trees...\"", Line_Normal);
@@ -4783,7 +4783,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/03/500300609", 128);
 	OutputLine(NULL, "「圭ちゃぁあぁああぁん！！」",
-		   NULL, "\"Kei-chaaaaaaan!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"Kei-chaaaaaaan!!\"", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -5142,24 +5142,24 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/10/501000221", 128);
 	OutputLine(NULL, "「……あぁ、",
-		   NULL, "\"...Right.", Line_ContinueAfterTyping);
+		   NULL, "\"...Right.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	FadeOutBGM( 1, 1000, TRUE );
 	PlaySE( 3, "wa_023", 128, 64 );
 
 	OutputLine(NULL, "",
-		   NULL, " They think he's", Line_ContinueAfterTyping);
+		   NULL, " They think he's", Line_Continue);
 
 //『オヤシロさまの使い』!sd、ですよ＠もちろん悪口ですがね。＠
 //!s0/
 	SetSpeedOfMessage( TRUE, 127, );
 
 	OutputLine(NULL, "『オヤシロさまの使い』",
-		   NULL, " Oyashiro-sama's servant", Line_ContinueAfterTyping);
+		   NULL, " Oyashiro-sama's servant", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 

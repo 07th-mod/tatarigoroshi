@@ -1997,18 +1997,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e9d785>鉄平</color>", NULL, "<color=#e9d785>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/21/142000050", 128);
 	OutputLine(NULL, "「……たすけ……、",
-		   NULL, "\"...Hel...", Line_ContinueAfterTyping);
+		   NULL, "\"...Hel...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………ひぃ…、",
-		   NULL, " ......ee...", Line_ContinueAfterTyping);
+		   NULL, " ......ee...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……ひい！！」",
 		   NULL, " ...eee!!\"", GetGlobalFlag(GLinemodeSp));
@@ -2576,18 +2576,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100660", 128);
 	OutputLine(NULL, "「………はぁ………はぁ……はぁ！",
-		   NULL, "\"...Hah...hah...hah!", Line_ContinueAfterTyping);
+		   NULL, "\"...Hah...hah...hah!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　はぁ…！",
-		   NULL, " Hah...!", Line_ContinueAfterTyping);
+		   NULL, " Hah...!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　…はぁ…！！」",
 		   NULL, " ...Hah...!!\"", Line_Normal);
@@ -3528,18 +3528,18 @@ void main()
 		   NULL, "\"...Satoshi.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100666", 128);
 	OutputLine(NULL, "………俺、",
-		   NULL, " ......I...", Line_ContinueAfterTyping);
+		   NULL, " ......I...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……多分、お前のこと、",
-		   NULL, " probably, well...", Line_ContinueAfterTyping);
+		   NULL, " probably, well...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "誤解してた。」",
 		   NULL, " misunderstood you.\"", GetGlobalFlag(GLinemodeSp));

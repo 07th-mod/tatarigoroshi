@@ -1171,11 +1171,11 @@ void main()
 		   NULL, "\"...So, well...", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100586", 128);
 	OutputLine(NULL, "…せめて、",
-		   NULL, " At least...", Line_ContinueAfterTyping);
+		   NULL, " At least...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………一夜くらい、遊ばせてやろうじゃないか。」",
 		   NULL, " Couldn't we at least let her have fun for one night?\"", GetGlobalFlag(GLinemodeSp));
@@ -1469,18 +1469,18 @@ void main()
 		   NULL, " ...hic...", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300319", 128);
 	OutputLine(NULL, "…………………………………………ねぇ、あなた",
-		   NULL, " ..................Hey, you're", Line_ContinueAfterTyping);
+		   NULL, " ..................Hey, you're", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……………悟史くん、",
-		   NULL, " .........Satoshi-kun...", Line_ContinueAfterTyping);
+		   NULL, " .........Satoshi-kun...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……なんでしょ…？」",
 		   NULL, " aren't you...?\"", Line_Normal);
@@ -1696,11 +1696,11 @@ void main()
 		   NULL, "\"......Yes.", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300337", 128);
 	OutputLine(NULL, "……転校でもなく、家出でもなく、",
-		   NULL, " ...He didn't transfer, or run away from home...", Line_ContinueAfterTyping);
+		   NULL, " ...He didn't transfer, or run away from home...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……消えたの。」",
 		   NULL, " He disappeared.\"", Line_Normal);
@@ -2093,11 +2093,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300352", 128);
 	OutputLine(NULL, "沙都子のために買うと言ってたぬいぐるみが、",
-		   NULL, "That stuffed animal he said he was buying for Satoko...", Line_ContinueAfterTyping);
+		   NULL, "That stuffed animal he said he was buying for Satoko...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…売れてショーケースからなくなってたの。",
 		   NULL, " It was gone from the display, sold.", Line_WaitForInput);
@@ -2328,11 +2328,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300372", 128);
 	OutputLine(NULL, "「……それもまた、……悟史と同じように、",
-		   NULL, "\"...Or is it like... with Satoshi...", Line_ContinueAfterTyping);
+		   NULL, "\"...Or is it like... with Satoshi...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……言えない？」",
 		   NULL, " where you can't say?\"", GetGlobalFlag(GLinemodeSp));

@@ -151,11 +151,11 @@ void main()
 		   NULL, " Everything's exactly like you said...!!", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100106", 128);
 	OutputLine(NULL, "　…………あ！",
-		   NULL, " ......Ah!", Line_ContinueAfterTyping);
+		   NULL, " ......Ah!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　かかった！！！」",
 		   NULL, " It got them!!!\"", Line_Normal);
@@ -226,11 +226,11 @@ void main()
 		   NULL, " ...That was some trap...", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100108", 128);
 	OutputLine(NULL, "……あんな器用なトラップ、富田くんが窓を登る時、",
-		   NULL, " You would have had to know everything to set something like that up:", Line_ContinueAfterTyping);
+		   NULL, " You would have had to know everything to set something like that up:", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "どこに手を置いて、どこに足を置くかとか、どこへ飛び降りるとか、そういうのを全部読まなくちゃ絶対に掛からないぞ…？！」",
 		   NULL, " where they'd put their hands, their legs, where they'd jump down...?!\"", Line_Normal);
@@ -599,7 +599,7 @@ void main()
 
 	PlayVoice(4, "s20/01/440100118", 128);
 	OutputLine(NULL, "　ぎゃーーーーー！！！」",
-		   NULL, " Gyaaaaaahhhh!!!\"", Line_ContinueAfterTyping);
+		   NULL, " Gyaaaaaahhhh!!!\"", Line_Continue);
 // !sd/
 
 	ShakeScreen( 1, 50, 20, 3, 0, );
@@ -680,32 +680,32 @@ void main()
 //より優雅にト!w400・ラ!w400・ッ!w400・プ♪!w400と呼んでほしいですわー！￥
 	PlayVoice(4, "s20/04/440400075", 128);
 	OutputLine(NULL, "より優雅にト",
-		   NULL, " I would prefer you call it something more refined:", Line_ContinueAfterTyping);
+		   NULL, " I would prefer you call it something more refined:", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "・ラ",
-		   NULL, " a", Line_ContinueAfterTyping);
+		   NULL, " a", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "・ッ",
-		   NULL, " trap", Line_ContinueAfterTyping);
+		   NULL, " trap", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "・プ♪",
-		   NULL, "♪", Line_ContinueAfterTyping);
+		   NULL, "♪", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "と呼んでほしいですわー！」",
 		   NULL, " please!\"", Line_Normal);

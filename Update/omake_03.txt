@@ -68,7 +68,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/09/440900124", 128);
 	OutputLine(NULL, "　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」",
-		   NULL, "Personally, I wanted to get a scene of the gas coming in, the villagers spasming and foaming at the mouth one by one before dying—do you all think so too?\"", Line_ContinueAfterTyping);
+		   NULL, "Personally, I wanted to get a scene of the gas coming in, the villagers spasming and foaming at the mouth one by one before dying—do you all think so too?\"", Line_Continue);
 
 	PlaySE( 3, "wa_029", 128, 64 );
 
@@ -461,39 +461,39 @@ void main()
 
 	PlayVoice(4, "s20/10/441000077", 128);
 	OutputLine(NULL, "１、",
-		   NULL, " One,", Line_ContinueAfterTyping);
+		   NULL, " One,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "２、",
-		   NULL, " two,", Line_ContinueAfterTyping);
+		   NULL, " two,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "３、",
-		   NULL, " three,", Line_ContinueAfterTyping);
+		   NULL, " three,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "４、",
-		   NULL, " four,", Line_ContinueAfterTyping);
+		   NULL, " four,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "５、",
-		   NULL, " five,", Line_ContinueAfterTyping);
+		   NULL, " five,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "６。",
 		   NULL, " six.", Line_WaitForInput);
@@ -1281,18 +1281,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/08/440800139", 128);
 	OutputLine(NULL, "「……あー…、",
-		   NULL, "\"...Uhh...", Line_ContinueAfterTyping);
+		   NULL, "\"...Uhh...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…その死亡が確定している人って、",
-		   NULL, " ...When you say 'dies no matter what'...", Line_ContinueAfterTyping);
+		   NULL, " ...When you say 'dies no matter what'...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…やっぱり僕のことかな。」",
 		   NULL, " you're talking about me, aren't you?\"", GetGlobalFlag(GLinemodeSp));
@@ -1358,7 +1358,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000096", 128);
 	OutputLine(NULL, "　早く雛見沢に帰って、沙都子ちゃんを拉致監禁してハァハァに調教してご奉仕メイドですよ〜〜♪",
-		   NULL, "Time to go back to Hinamizawa, lock up Satoko-chan, and—hah, hah—raise her into a maid servant~~♪.", Line_ContinueAfterTyping);
+		   NULL, "Time to go back to Hinamizawa, lock up Satoko-chan, and—hah, hah—raise her into a maid servant~~♪.", Line_Continue);
 
 	PlaySE( 3, "wa_029", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -1415,7 +1415,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400227", 128);
 	OutputLine(NULL, "「成・敗ッ！！!",
-		   NULL, "\"Judgment!!!", Line_ContinueAfterTyping);
+		   NULL, "\"Judgment!!!", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -1468,7 +1468,7 @@ void main()
 		   NULL, " Nfu-fu!", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700416", 128);
 	OutputLine(NULL, "　私の名前はクラウド・大石☆",
-		   NULL, " My name is Kuraudo Ooishi☆.", Line_ContinueAfterTyping);
+		   NULL, " My name is Kuraudo Ooishi☆.", Line_Continue);
 
 	PlaySE( 3, "wa_010", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -1642,7 +1642,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300391", 128);
 	OutputLine(NULL, "「これにて！！　一件落着ッ！！！」",
-		   NULL, "\"And with that!! The case has been closed!!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"And with that!! The case has been closed!!!\"", Line_Continue);
 // !sd/
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1862,7 +1862,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「「次回のシナリオの主人公は園崎詩音になりました〜〜！！」」",
-		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_Continue);
 // !sd/
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -2004,7 +2004,7 @@ void main()
 		   NULL, " Like...", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600132", 128);
 	OutputLine(NULL, "みたいな〜☆」",
-		   NULL, " 'You, sir, are the criminal'☆.\"", Line_ContinueAfterTyping);
+		   NULL, " 'You, sir, are the criminal'☆.\"", Line_Continue);
 
 	PlaySE( 3, "wa_029", 128, 64 );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -2077,18 +2077,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200282", 128);
 	OutputLine(NULL, "「………「鬼隠し編」",
-		   NULL, "\"......Onikakushi,", Line_ContinueAfterTyping);
+		   NULL, "\"......Onikakushi,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "「綿流し編」",
-		   NULL, " Watanagashi,", Line_ContinueAfterTyping);
+		   NULL, " Watanagashi,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "そして「祟殺し編」。",
 		   NULL, " and Tatarigoroshi.", Line_WaitForInput);

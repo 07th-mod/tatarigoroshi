@@ -840,7 +840,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100487", 128);
 	OutputLine(NULL, "「何だよそりゃああぁあぁあぁあッ！！！",
-		   NULL, "\"What the hell is that?!?", Line_ContinueAfterTyping);
+		   NULL, "\"What the hell is that?!?", Line_Continue);
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	ShakeScreen( 1, 50, 20, 3, 0, );
@@ -1229,11 +1229,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/22/141400085", 240);
 	OutputLine(NULL, "「……沙都子ちゃんは、わざと体に傷を作り、",
-		   NULL, "\"...Satoko-chan purposely hurt herself...", Line_ContinueAfterTyping);
+		   NULL, "\"...Satoko-chan purposely hurt herself...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…お義父さんに虐待を受けているとね、……自分で通報して、お義父さんを追い出そうとした。」",
 		   NULL, " and told them that she was being abused by her stepfather... in an attempt to chase him out.\"", GetGlobalFlag(GLinemodeSp));
@@ -1243,19 +1243,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/01/140100496", 240);
 	OutputLine(NULL, "「………でも、",
-		   NULL, "\"...But...", Line_ContinueAfterTyping);
+		   NULL, "\"...But...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 
 	OutputLine(NULL, "……結局、",
-		   NULL, " in the end...", Line_ContinueAfterTyping);
+		   NULL, " in the end...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…沙都子を虐めてたわけだろ、その義父は。」",
 		   NULL, " her stepfather did abuse her, right?\"", GetGlobalFlag(GLinemodeSp));
@@ -1306,25 +1306,25 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100497", 128);
 	OutputLine(NULL, "「………あ、",
-		   NULL, "\"...Oh......", Line_ContinueAfterTyping);
+		   NULL, "\"...Oh......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………ひょっとして、",
-		   NULL, " Could it be...", Line_ContinueAfterTyping);
+		   NULL, " Could it be...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……そのせいで、",
-		   NULL, " that's why...", Line_ContinueAfterTyping);
+		   NULL, " that's why...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……おととしの冬は…様子見に…？」",
 		   NULL, " the winter before last... they decided to wait and see...?\"", GetGlobalFlag(GLinemodeSp));

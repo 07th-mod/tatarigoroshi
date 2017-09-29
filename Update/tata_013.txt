@@ -2195,18 +2195,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100941", 128);
 	OutputLine(NULL, "「うごおおおおおぉおおぉおお！！！",
-		   NULL, "\"Ughoooohhhhhhhhhh!!!", Line_ContinueAfterTyping);
+		   NULL, "\"Ughoooohhhhhhhhhh!!!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　殺してやらああぁああああぁあぁぁぁぁあぁッ！！！",
-		   NULL, " I'll kiiill yoooooouuuuuuuuu!!!", Line_ContinueAfterTyping);
+		   NULL, " I'll kiiill yoooooouuuuuuuuu!!!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　ぐおおおおぉおおぉおおおおぉおぉおおおおおぉおおおおおおぉおぉおおおおおぉおっぉおぉぉおッ！！」",
 		   NULL, " Guoahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh!!\"", Line_Normal);

@@ -282,18 +282,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100244", 128);
 	OutputLine(NULL, "「……………俺たちは、",
-		   NULL, "\"......Are we...", Line_ContinueAfterTyping);
+		   NULL, "\"......Are we...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…無力、",
-		   NULL, " so powerless...", Line_ContinueAfterTyping);
+		   NULL, " so powerless...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……か。」",
 		   NULL, " ...?\"", GetGlobalFlag(GLinemodeSp));
@@ -1554,11 +1554,11 @@ void main()
 		   NULL, "...Maebara-kun, I'll ask you again then.", Line_WaitForInput);
 	PlayVoice(4, "s03/09/140900049", 128);
 	OutputLine(NULL, "今度はサンタクロースじゃなくて、",
-		   NULL, " This time, not Santa Claus,", Line_ContinueAfterTyping);
+		   NULL, " This time, not Santa Claus,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	StopBGM( 0 );
 
@@ -3034,11 +3034,11 @@ void main()
 		   NULL, "\"...Back then, whenever Satoko was... abused... she probably cried and hid behind her brother.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100326", 128);
 	OutputLine(NULL, "……でも結局、…そのせいで兄が逃げてしまったんだと、",
-		   NULL, " ...But Satoko thinks that... in the end...", Line_ContinueAfterTyping);
+		   NULL, " ...But Satoko thinks that... in the end...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……沙都子は思ってる。」",
 		   NULL, " that's why her brother ran away.\"", GetGlobalFlag(GLinemodeSp));
@@ -3760,7 +3760,7 @@ void main()
 
 
 	PlayVoice(4, "ps2/s03/01/140100366", 240);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "　見てるだけ。",
 		   NULL, "They'd just watch.", Line_WaitForInput);
 	PlayVoice(4, "ps2/s03/01/140100367", 240);

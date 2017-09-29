@@ -1258,7 +1258,7 @@ void main()
 //『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています＠
 	PlayVoice(4, "s03/00/ana0400005", 128);
 	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping);
+		OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_Continue);
 		OutputLine(NULL, "『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています。",
 			   NULL, "<size=-2>\"As has recently been pointed out by citizens' groups, his trip with honorary Diet members to inspect other prefectures was based solely on good relations, and it's rumored they preoccupied themselves with a drinking party.</size>", GetGlobalFlag(GLinemodeSp));
 	} else {
@@ -1472,11 +1472,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140101107", 128);
 	OutputLine(NULL, "「………………なんですか、",
-		   NULL, "\".........Wait.........", Line_ContinueAfterTyping);
+		   NULL, "\".........Wait.........", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……………それ。」",
 		   NULL, " what?\"", GetGlobalFlag(GLinemodeSp));
