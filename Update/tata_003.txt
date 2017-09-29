@@ -557,10 +557,10 @@ void main()
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/02/500200480", 128);
 	PlayVoice(5, "s19/03/500300392", 128);
 	PlayVoice(6, "s19/04/500400491", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(7, "s19/05/500500195", 128);
 	OutputLine(NULL, "「「「ええぇーーー？！」」」",
 		   NULL, "\"\"\"Whaaaat?!\"\"\"", Line_ContinueAfterTyping);
@@ -7240,7 +7240,7 @@ void main()
 //　富田くんと岡村くんが俺を讃えてくれた＠
 //「どうだ、見たかよ富田くん岡村くん！＠　見事ひっくり返してやったぜー！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「ま、前原さんー！",
 		   NULL, "\"M-Maebara-san!", Line_WaitForInput);
 	OutputLine(NULL, "　すごいです、カッコよかったです！！",
@@ -7643,11 +7643,11 @@ void main()
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>生徒たち</color>", NULL, "<color=#f5e6d3>Pupils</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/02/500200550", 128);
 	PlayVoice(5, "s19/04/500400576", 128);
 	PlayVoice(6, "s19/05/500500241", 128);
 	PlayVoice(7, "s19/00/allb50005b", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>生徒たち</color>", NULL, "<color=#f5e6d3>Pupils</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(8, "s19/00/allg50006_04", 128);
 	OutputLine(NULL, "「「「「おおおぉおぉおー！！」」」」",
 		   NULL, "\"\"\"\"Yeaahhhhhhh!!\"\"\"\"", Line_ContinueAfterTyping);

@@ -1826,10 +1826,10 @@ void main()
 
 
 //「「「わーっはっはっはっはっはっはっは...！！！」」￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/02/500200704", 128);
 	PlayVoice(5, "s19/03/500300603", 128);
 	PlayVoice(6, "s19/05/500500262", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(7, "s19/01/hr_kei32710_01", 128);
 	OutputLine(NULL, "「「「わーっはっはっはっはっはっはっは…！！！」」」",
 		   NULL, "\"\"\"Wahh-ha-ha-ha-ha-ha-ha-ha-ha...!!!\"\"\"", Line_Normal);
@@ -2161,8 +2161,8 @@ void main()
 	DrawBustshot( 1, "tomita1_Ikari_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
-	PlayVoice(4, "s19/24/502400062", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/502400062", 128);
 	PlayVoice(5, "s19/25/502500053", 128);
 	OutputLine(NULL, "「「うぉおーっす！！」」",
 		   NULL, "\"\"Yeah!!\"\"", GetGlobalFlag(GLinemodeSp));
@@ -4168,7 +4168,7 @@ void main()
 //「それだけあいつが慣れている、ということですよ。＠
 //　.........あいつ、か...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「…あんなに痛かったのに、あざひとつないないんて…。」",
 		   NULL, "\"...It hurt so much, but there isn't a single bruise...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

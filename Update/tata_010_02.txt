@@ -2896,9 +2896,9 @@ void main()
 
 //「.........ッ！！」「.........ひ、...！」「..................。＠
 //　びくっとして、仲間たちが後退る￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/02/140200166", 128);
 	PlayVoice(5, "s03/02/140200167", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s03/02/140200168", 128);
 	OutputLine(NULL, "「………ッ！！」「………ひ、…！」「………………。」",
 		   NULL, "\"......!!\" \"...Eep...!\" \".........\"", GetGlobalFlag(GLinemodeSp));

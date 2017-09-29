@@ -211,6 +211,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //「「「わっはっはっはっはっは！！」」￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(2, "s20/02/440200237", 128);
 	PlayVoice(3, "s20/03/440300363", 128);
 	PlayVoice(4, "s20/04/440400213", 128);
@@ -218,7 +219,6 @@ void main()
 	PlayVoice(6, "s20/08/440800128", 128);
 	PlayVoice(7, "s20/09/440900125", 128);
 	PlayVoice(8, "s20/06/440600132_01", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(9, "s20/11/440700400_01", 128);
 	OutputLine(NULL, "「「「わっはっはっはっはっは！！」」」",
 		   NULL, "\"\"\"Wah-ha-ha-ha-ha-ha-ha!!\"\"\"", Line_Normal);
@@ -583,6 +583,7 @@ void main()
 
 
 //「「「乾杯～～～！！！！」」＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(1, "s20/03/440300368", 128);
 	PlayVoice(2, "s20/04/440400218", 128);
 	PlayVoice(3, "s20/05/440500133", 128);
@@ -591,7 +592,6 @@ void main()
 	PlayVoice(6, "s20/06/440600104", 128);
 	PlayVoice(7, "s20/10/441000080", 128);
 	PlayVoice(8, "s20/22/441400031", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(9, "s20/11/440700402_01", 128);
 	OutputLine(NULL, "「「「乾杯〜〜〜！！！！」」」",
 		   NULL, "\"\"\"Cheers~~~!!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
@@ -1835,7 +1835,7 @@ void main()
 
 //「じゃあ圭ちゃん、私と一緒に言いましょうね＠せーの！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「じゃあ圭ちゃん、私と一緒に言いましょうね。",
 		   NULL, "\"Okay, Kei-chan, let's say it at the same time.", Line_WaitForInput);
 	OutputLine(NULL, "せーの！」",
@@ -1860,7 +1860,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 127, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「「次回のシナリオの主人公は園崎詩音になりました〜〜！！」」",
 		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_ContinueAfterTyping);
 // !sd/
@@ -1876,8 +1876,8 @@ void main()
 	PlayBGM( 1, "msys01", 128, 0 );
 
 //「「「え、えぇええ゛ぇえぇえー？！？！」」￥
-	PlayVoice(4, "s20/03/440300394", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>＆<color=#5ec69a>魅音</color>", NULL, "<color=#f0953d>Rena</color> & <color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/03/440300394", 128);
 	PlayVoice(5, "s20/02/440200275", 128);
 	OutputLine(NULL, "「「「え、えぇええ゛ぇえぇえー？！？！」」」",
 		   NULL, "\"\"\"W-Whaaaaaaat?!?!\"\"\"", Line_Normal);
@@ -2112,7 +2112,7 @@ void main()
 
 //「この３つの謎に挑み、どんなに辛くとも挫けることなく戦い続けてくれた全ての方に＠......その熱意に感謝するために、本来お送りする予定でなかった最後のシナリオをお送りします＠どうかお楽しみ下さい。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「この３つの謎に挑み、どんなに辛くとも挫けることなく戦い続けてくれた全ての方に。",
 		   NULL, "\"For all of you warriors who never yielded to these three mysteries and kept on fighting... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

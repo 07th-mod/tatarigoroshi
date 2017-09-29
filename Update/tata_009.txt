@@ -475,7 +475,7 @@ void main()
 
 //「やぁ、申し訳ないね＠君、雛見沢の人だよね？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「やぁ、申し訳ないね。",
 		   NULL, "\"Hey, excuse me.", Line_WaitForInput);
 	OutputLine(NULL, "君、雛見沢の人だよね？」",
@@ -489,7 +489,7 @@ void main()
 
 //「...............そうですけど。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「……………そうですけど。」",
 		   NULL, "\"......Yes, why?\"", Line_Normal);
 	ClearMessage();
@@ -635,7 +635,7 @@ void main()
 //「僕は富竹＠フリーカメラマンさ＠専門は野鳥と風景＠まだまだ無名だけどね。＠
 //　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「僕は富竹。",
 		   NULL, "\"I'm Tomitake.", Line_WaitForInput);
 	OutputLine(NULL, "フリーカメラマンさ。",
@@ -654,7 +654,7 @@ void main()
 
 //「前原です＠...まぁその、よろしく。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「前原です。",
 		   NULL, "\"I'm Maebara.", Line_WaitForInput);
 	OutputLine(NULL, "…まぁその、よろしく。」",
@@ -666,7 +666,7 @@ void main()
 //「前原くんかい＠　よろしくね！＠
 //　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「前原くんかい！",
 		   NULL, "\"Maebara-kun?", Line_WaitForInput);
 	OutputLine(NULL, "　よろしくね！」",

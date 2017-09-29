@@ -193,8 +193,8 @@ void main()
 	DrawBustshot( 1, "me_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「「おおーーーッ！！」￥
-	PlayVoice(4, "s19/02/500200559", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>＆<color=#5ec69a>魅音</color>", NULL, "<color=#f0953d>Rena</color> & <color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/02/500200559", 128);
 	PlayVoice(5, "s19/03/500300467", 128);
 	OutputLine(NULL, "「「おおーーーッ！！」」",
 		   NULL, "\"\"Yeaaahhh!!\"\"", Line_Normal);
@@ -1152,10 +1152,10 @@ void main()
 	ClearMessage();
 
 //「「「「かんぱ～～～～い！！！」」」￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大勢</color>", NULL, "<color=#f5e6d3>Crowd</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/00/allb50007", 128);
 	PlayVoice(5, "s19/00/allb50007b", 128);
 	PlayVoice(6, "s19/00/allg50008", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大勢</color>", NULL, "<color=#f5e6d3>Crowd</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(7, "s19/00/allg50008_04", 128);
 	OutputLine(NULL, "「「「「かんぱ〜〜〜〜い！！！」」」」",
 		   NULL, "\"\"\"\"Cheeeeeeeers!!!\"\"\"\"", Line_Normal);
