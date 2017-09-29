@@ -7621,7 +7621,7 @@ void main()
 		   NULL, " ...This... is a really horrible idea, but...", Line_WaitForInput);
 	PlayVoice(4, "s03/10/141000235", 128);
 	OutputLine(NULL, "……前原さんが殺した相手が…叔父でなく、別人である可能性は…？」",
-		   NULL, " Is it possible that the person you killed... wasn't actually her uncle...?\"", Line_Continue);
+		   NULL, " Is it possible that the person you killed... wasn't actually her uncle...?\"", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 3, "wa_022", 128, 64 );
 
