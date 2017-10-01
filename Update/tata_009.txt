@@ -1597,14 +1597,14 @@ void main()
 		   NULL, "\"No, don't misunderstand me.", Line_WaitForInput);
 	PlayVoice(4, "s03/09/140900056", 128);
 	OutputLine(NULL, "私は、それに至る教義や思想、文化を民俗学的見地から研究することがライフワークなの。",
-		   NULL, " My life's work is to research teachings, thoughts, and cultures from the viewpoint of folklorism.", Line_WaitForInput);
+		   NULL, " My life's work is to research teachings, thoughts, and cultures from the viewpoint of folklorism. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/09/140900057", 128);
 	OutputLine(NULL, "別に犯人が誰かなんてことにはまったく興味がないのよ？",
-		   NULL, " I don't really care at all about who the culprit really is... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "I don't really care at all about who the culprit really is...", Line_WaitForInput);
 	PlayVoice(4, "s03/09/140900058", 128);
 	OutputLine(NULL, "　…そこだけ勘違いしないでちょうだいね。」",
-		   NULL, "Just keep that in mind, please.\"", Line_Normal);
+		   NULL, " Just keep that in mind, please.\"", Line_Normal);
 	ClearMessage();
 
 //　...えっと......、......鷹野さんが、とんでもないことを言っていることだけはわかる＠
