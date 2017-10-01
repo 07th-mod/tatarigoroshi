@@ -1466,14 +1466,14 @@ void main()
 		   NULL, " Well, of course.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100271", 128);
 	OutputLine(NULL, "どんなものの正体だって、最終的には人間です。",
-		   NULL, " Everything ultimately comes down to humans in the end.", Line_WaitForInput);
+		   NULL, " Everything ultimately comes down to humans in the end. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100272", 128);
 	OutputLine(NULL, "だってここは人間しかいない世界なんですから。",
-		   NULL, " After all, humans are the only ones living in the world. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "After all, humans are the only ones living in the world.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100273", 128);
 	OutputLine(NULL, "全ての現象は人間で解明できるはずです。」",
-		   NULL, "All strange things should be explainable in terms of human actions.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " All strange things should be explainable in terms of human actions.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
