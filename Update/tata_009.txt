@@ -3031,14 +3031,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/01/140100327", 240);
 	OutputLine(NULL, "「……沙都子は、叔父のいじめに耐えれば兄が帰ってくると信じることによって、…今を耐え抜こうとしてるのかもしれない。",
-		   NULL, "\"...Satoko believes her brother will come back if she can withstand the abuse... maybe that's why she's trying to push through.", Line_WaitForInput);
+		   NULL, "\"...Satoko believes her brother will come back if she can withstand the abuse... maybe that's why she's trying to push through. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100328", 128);
 	OutputLine(NULL, "でも、…そんな思い込みと悟史が帰ってくるのはまったく無関係なことだ。",
-		   NULL, " But... that assumption has nothing to do with Satoshi coming back. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "But... that assumption has nothing to do with Satoshi coming back.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100329", 128);
 	OutputLine(NULL, "………沙都子には悪いが、…それが現実だ。」",
-		   NULL, "...It hurts to say that about Satoko... but it's the truth.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...It hurts to say that about Satoko... but it's the truth.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
