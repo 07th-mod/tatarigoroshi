@@ -1533,13 +1533,11 @@ void main()
 //　その伝説を持てはやすのがクリスマス商戦で儲けようとする企業の戦略であるなら＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その伝説を持てはやすのがクリスマス商戦で儲けようとする企業の戦略であるなら、",
-		   NULL, "If lionizing that legend was a corporate tactic to try and profit during Christmas sales, then...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "If lionizing that legend was a corporate tactic to try and profit during Christmas sales, then...", Line_WaitForInput);
 
 //　.........オヤシロさまの祟りの正体は￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………オヤシロさまの祟りの正体は？",
-		   NULL, "what was Oyashiro-sama, really?", Line_Normal);
+		   NULL, " what was Oyashiro-sama, really?", Line_Normal);
 	ClearMessage();
 
 //「.........え、............っと、............。＠
