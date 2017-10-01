@@ -2198,13 +2198,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE(4, "girlb04001", 128, 64);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「風邪って言ってたよねー。」",
-		   NULL, "\"She said she had a cold!\"", Line_WaitForInput);
-	PlaySE(4, "girlb04002", 128, 64);
-	OutputLine(NULL, "「みんな家に帰ったらうがいをちゃんとしましょうって先生言ってました。」",
-		   NULL, "\"Chie-sensei said everyone should make sure to rinse their mouths out really well!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女子</color>", NULL, "<color=#f5e6d3>Girl</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s03/00/girlb04001", 128);
+	OutputLine(NULL, "「風邪って言ってたよねー。",
+		   NULL, "\"She said she had a cold!", Line_WaitForInput);
+	PlayVoice(4, "s03/00/girlb04002", 128);
+	OutputLine(NULL, "みんな家に帰ったらうがいをちゃんとしましょうって先生言ってました。」",
+		   NULL, " Chie-sensei said everyone should make sure to rinse their mouths out really well!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
