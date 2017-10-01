@@ -57,11 +57,11 @@ void dialog03()
 
 //「前原くんかい＠　よろしくね！＠
 //　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/08/140800014", 128)
 	OutputLine(NULL, "「うーん、明日は遠出するつもりだったんだけど……。",
-		   NULL, "\"Maebara-kun?", Line_WaitForInput);
+		   NULL, "\"Yep, I was planning to go out tomorrow but...", Line_WaitForInput);
 	PlayVoice(4, "s03/08/140800015", 128)
 	OutputLine(NULL, "ちょっと、計画を立て直した方がいいかもしれないなぁ」",
-		   NULL, " Pleased to meet you!\"", Line_Normal);
+		   NULL, " I guess it's not a bad idea to make some changes to my plan.\"", Line_Normal);
 }
