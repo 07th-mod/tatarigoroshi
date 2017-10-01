@@ -3654,14 +3654,14 @@ void main()
 		   NULL, "\"I'd contact the prefecture's child consultation center.", Line_WaitForInput);
 	PlayVoice(4, "s03/22/chie040304", 128);
 	OutputLine(NULL, "さっき前原くんは追い返される、と言いましたね。",
-		   NULL, " You said just now that I would be turned away, didn't you?", Line_WaitForInput);
+		   NULL, " You said just now that I would be turned away, didn't you? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/22/chie040305", 128);
 	OutputLine(NULL, "児童福祉司は必要に応じて警察官を同行させることができます。",
-		   NULL, " Child welfare officers can bring the police with them if the situation demands. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Child welfare officers can bring the police with them if the situation demands.", Line_WaitForInput);
 	PlayVoice(4, "s03/22/chie040306", 128);
 	OutputLine(NULL, "恫喝には絶対に屈しません。」",
-		   NULL, "They will not submit to intimidation.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " They will not submit to intimidation.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
