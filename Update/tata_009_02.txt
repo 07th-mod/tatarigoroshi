@@ -230,7 +230,7 @@ void main()
 		   NULL, "...Even if Sensei 100% understood the situation and passionately explained it to the other person... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……最後に保護を決めるのは、児童相談所という公的機関なのだ。",
-		   NULL, "at the end, the child consultation center, as a public agency, would be the ones to decide whether to get her to safety.", Line_WaitForInput);
+		   NULL, "At the end, the child consultation center, as a public agency, would be the ones to decide whether to get her to safety.", Line_WaitForInput);
 	OutputLine(NULL, "…先生だってそれをわかっているから、………あんな頼りない表情になってしまうのだ。",
 		   NULL, " ...Sensei understood that as well as us... and that's why she looked so unreliable right now.", Line_Normal);
 	ClearMessage();
@@ -1064,6 +1064,7 @@ void main()
 	PlayVoice(4, "s03/03/140300196", 128);
 	OutputLine(NULL, "雛見沢連続怪死事件が、園崎家主導の事件なんだとしたら、…それじゃ主犯格は私ってことだよね？",
 		   NULL, " If the freak death incidents in Hinamizawa were carried out by the will of the Sonozaki family... that would mean the main culprit would be me, wouldn't it? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); }
 
 	DisableWindow();
 	DrawBustshot( 2, "me_se_de_b1_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
