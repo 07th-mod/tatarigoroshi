@@ -25,18 +25,20 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　「児童虐待」とは、保護者（親権を行う者、未成年後見人その他の者で、児童を現に監護するものをいう。以下同じ）が/
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　「児童虐待」とは、保護者（親権を行う者、未成年後見人その他の者で、児童を現に監護するものをいう。以下同じ）が",
-			   NULL, "<size=-2>The term \"child abuse\" means the following acts committed by a custodian (meaning a person who exercises parental authority, a guardian of a minor or other person who is currently engaged in the custody of a child; hereinafter the same shall apply)</size>", Line_ContinueAfterTyping);
-	} else {
-		OutputLine(NULL, "　「児童虐待」とは、保護者（親権を行う者、未成年後見人その他の者で、児童を現に監護するものをいう。以下同じ）が",
-			   NULL, "The term \"child abuse\" means the following acts committed by a custodian (meaning a person who exercises parental authority, a guardian of a minor or other person who is currently engaged in the custody of a child; hereinafter the same shall apply)", Line_ContinueAfterTyping);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「児童虐待」とは、保護者",
+		   NULL, "The term \"child abuse\" means the following acts committed by a custodian", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	PlayBGM( 2, "lsys24", 128, 0 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（親権を行う者、未成年後見人その他の者で、児童を現に監護するものをいう。以下同じ）が",
+		   NULL, " (meaning a person who exercises parental authority, a guardian of a minor or other person who is currently engaged in the custody of a child; hereinafter the same shall apply)", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //その監護する児童（十八歳に満たない者をいう。以下同じ）に対し、次に掲げる行為をすることをいう。/
