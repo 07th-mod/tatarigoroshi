@@ -846,15 +846,25 @@ void main()
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_Continue);
+
+	Wait( 2000 );
 
 //先生、昨日あんた、絶対に助けるから大丈夫って言わなかったか？＠　これはどういうことだよ？＠　おかしいじゃねえかよ？＠　ええッおい！！＠
 	OutputLine(NULL, "　先生、昨日あんた、絶対に助けるから大丈夫って言わなかったか？！",
 		   NULL, " Sensei, didn't you say it was going to be all right, since you'd definitely save her?!", Line_Continue);
+
+	Wait( 1000 );
+
 	OutputLine(NULL, "　これはどういうことだよ？！",
 		   NULL, " What's the meaning of this?!", Line_Continue);
+
+	Wait( 1000 );
+
 	OutputLine(NULL, "　おかしいじゃねえかよ？！",
 		   NULL, " This doesn't make any sense!!", Line_Continue);
+
+	Wait( 1000 );
+
 	OutputLine(NULL, "　ええッおい！！」",
 		   NULL, " Answer me, damn it!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
