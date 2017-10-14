@@ -1579,14 +1579,14 @@ void main()
 		   NULL, "\"......Satoko is still trying her best.", Line_WaitForInput);
 	PlayVoice(4, "s03/05/140500044", 128);
 	OutputLine(NULL, "…もう少し、…見守ってあげましょうです…。",
-		   NULL, " ...Let's watch over her... a little longer...", Line_WaitForInput);
+		   NULL, " ...Let's watch over her... a little longer... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/05/140500045", 128);
 	OutputLine(NULL, "相談所の人が、今後も定期的に訪問すると言ってるのです。",
-		   NULL, " The person from the consultation center said they'd visit periodically from now on. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "The person from the consultation center said they'd visit periodically from now on.", Line_WaitForInput);
 	PlayVoice(4, "s03/05/140500046", 128);
 	OutputLine(NULL, "……大変なことになったら、すぐに助けてくれますよ…。」",
-		   NULL, "...If something terrible happens, they'll help her right away...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...If something terrible happens, they'll help her right away...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
