@@ -1508,6 +1508,8 @@ void main()
 	PlayVoice(4, "s03/02/140200156", 128);
 	OutputLine(NULL, "「……沙都子、",
 		   NULL, "\"...Satoko...", Line_ContinueAfterTyping);
+	WaitToFinishVoicePlaying(4);
+	Wait(300);
 	PlayVoice(4, "s03/02/140200157", 128);
 	OutputLine(NULL, "…ちゃん………。」",
 		   NULL, " chan......\"", GetGlobalFlag(GLinemodeSp));
