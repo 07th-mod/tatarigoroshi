@@ -137,7 +137,7 @@ void main()
 //　つまり......完全犯罪は存在するのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり……完全犯罪は存在するのだ。",
-		   NULL, "And that meant...perfect crimes did exist.", Line_Normal);
+		   NULL, "And that meant... perfect crimes did exist.", Line_Normal);
 	ClearMessage();
 
 //　いや、それどころか完全犯罪とは一種の芸術品と言っていい＠
@@ -351,7 +351,7 @@ void main()
 //「......母さんの好きな小説のタイトルが知りたいんじゃないよ＠母さんが一番舌を巻いた完全トリックが知りたいんだよ。＠
 //「本当に完全なトリックだったら、名探偵に解く余地がないじゃない。＠
 //　......それはそうだが＠...それでは意味がない￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「もちろん、クリスティの『そして誰もいなくなった』は母さんの一番のお薦めね。",
 		   NULL, "\"Of course, Agatha Christie's 'And Then There Were None' is my top recommendation.", Line_WaitForInput);
@@ -468,9 +468,8 @@ void main()
 
 //「物語にならない、って、どういう意味...？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "", 128);
-	OutputLine(NULL, "「物語にならない、って、どういう意味…？」",
-		   NULL, "\"Don't even become stories? What does that mean...?\"", Line_Normal);
+	OutputLine(NULL, "物語にならない、って、どういう意味…？",
+		   NULL, "Don't even become stories? What does that mean...?", Line_Normal);
 	ClearMessage();
 
 //「圭一、物語の最低構成要素は？＠
