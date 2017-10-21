@@ -8,6 +8,7 @@ void dialog000()
 
 void dialog001()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/142700008", 128);
 	OutputLine(NULL, "「もちろん、クリスティの『そして誰もいなくなった』は母さんの一番のお薦めね。",
 		   NULL, "\"Of course, Agatha Christie's 'And Then There Were None' is my top recommendation.", Line_WaitForInput);
