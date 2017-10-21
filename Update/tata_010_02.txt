@@ -1507,7 +1507,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/02/140200156", 128);
 	OutputLine(NULL, "「……沙都子、",
-		   NULL, "\"...Satoko...", Line_ContinueAfterTyping);
+		   NULL, "\"...Satoko...", Line_Continue);
 	WaitToFinishVoicePlaying(4);
 	Wait(300);
 	PlayVoice(4, "s03/02/140200157", 128);
