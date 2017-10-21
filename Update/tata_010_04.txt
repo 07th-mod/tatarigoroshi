@@ -1418,17 +1418,17 @@ void main()
 		   NULL, " hic...", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300312", 128);
 	OutputLine(NULL, "………あは、……あははははは。",
-		   NULL, " ......aha... ahahahahaha.", Line_WaitForInput);
+		   NULL, " ......aha... ahahahahaha. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300313", 128);
 	OutputLine(NULL, "でも、…お相子かな。",
-		   NULL, " But I guess... we're even, huh?", Line_WaitForInput);
+		   NULL, "But I guess... we're even, huh?", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300314", 128);
 	OutputLine(NULL, "…私、全然、あなたとの約束、…守ってないから。",
-		   NULL, " ...I couldn't... couldn't keep the promise I made with you. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " ...I couldn't... couldn't keep the promise I made with you.", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300315", 128);
 	OutputLine(NULL, "…あの子はずっと放ったらかしだし…ね…。」",
-		   NULL, "...I left her alone... alone, all this time...\"", Line_Normal);
+		   NULL, " ...I left her alone... alone, all this time...\"", Line_Normal);
 	ClearMessage();
 
 //　...俺は相槌を打てない＠
