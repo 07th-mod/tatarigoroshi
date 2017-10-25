@@ -3744,22 +3744,22 @@ void main()
 		   NULL, "\"...I'm so glad you enjoyed yourself at the festival...!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400164", 128);
 	OutputLine(NULL, "　私の分まで楽しく過せて本当におよろしかったことですこと！！",
-		   NULL, " I'm so glad you had enough fun for me too!!", Line_WaitForInput);
+		   NULL, " I'm so glad you had enough fun for me too!! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400165", 128);
 	OutputLine(NULL, "　私だって…部活がしたいですわ！！",
-		   NULL, " I mean... I want to participate in the club too!!", Line_WaitForInput);
+		   NULL, "I mean... I want to participate in the club too!!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400166", 128);
 	OutputLine(NULL, "　みんなで楽しく大騒ぎして…楽しくて楽しくて…！！！",
-		   NULL, " Making such a racket with everyone... is so much fun...!!! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Making such a racket with everyone... is so much fun...!!!", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 2, "sa_se_sa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　でも...今の私、......そんなの...、...そんなのッ！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400167", 128);
 	OutputLine(NULL, "　でも…今の私、……そんなの…、…そんなのッ！！」",
-		   NULL, "But... right now... I can't... I can't!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " But... right now... I can't... I can't!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
