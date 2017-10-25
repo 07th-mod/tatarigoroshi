@@ -2902,14 +2902,14 @@ void main()
 		   NULL, "\"But it would be.", Line_WaitForInput);
 	PlayVoice(4, "s03/09/140900175", 128);
 	OutputLine(NULL, "…つまり、この雛見沢において、ジロウさんとその自転車がばらばらに存在することはありえない、ということなのよ。",
-		   NULL, " ...What I mean is, Jirou-san and his bicycle being in different places in Hinamizawa wouldn't make sense.", Line_WaitForInput);
+		   NULL, " ...What I mean is, Jirou-san and his bicycle being in different places in Hinamizawa wouldn't make sense. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/09/140900176", 128);
 	OutputLine(NULL, "………以上の理由から、この自転車がジロウさんのものであるわけがない。",
-		   NULL, " ...And for those reasons, it means this bicycle can't be his. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...And for those reasons, it means this bicycle can't be his.", Line_WaitForInput);
 	PlayVoice(4, "s03/09/140900177", 128);
 	OutputLine(NULL, "………理解できたかしら…？」",
-		   NULL, "...Do you understand now...?\"", Line_Normal);
+		   NULL, " ...Do you understand now...?\"", Line_Normal);
 	ClearMessage();
 
 //　...鷹野さんの言い回しが少々わかりにくいが、...それ以上に、どことなく凄みを感じさせる薄気味悪さが...とても嫌だった＠
