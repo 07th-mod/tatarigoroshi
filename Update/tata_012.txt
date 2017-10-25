@@ -1501,14 +1501,14 @@ void main()
 		   NULL, "\"Ah-ha-ha-ha!", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300386", 128);
 	OutputLine(NULL, "　梨花ちゃんも実質、ビリみたいなもんだったじゃない！",
-		   NULL, " Weren't you supposed to be the one in last place, Rika-chan?", Line_WaitForInput);
+		   NULL, " Weren't you supposed to be the one in last place, Rika-chan? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/03/140300387", 128);
 	OutputLine(NULL, "　あそこで…起死回生の大技でガムをゲットとは…さすがは我が部の部員！",
-		   NULL, " It was such a turnaround when you pulled off getting that chewing gum... I should have expected that from a member of my club! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "It was such a turnaround when you pulled off getting that chewing gum... I should have expected that from a member of my club!", Line_WaitForInput);
 	PlayVoice(4, "s03/03/140300388", 128);
 	OutputLine(NULL, "　見事だったよ！！」",
-		   NULL, "It was fantastic!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It was fantastic!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
