@@ -1709,19 +1709,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/02/140200190", 128);
 	OutputLine(NULL, "「なかなか倒せないから、額を狙ったり、素早く何発も撃ったりしていろいろと試したんだよね。",
-		   NULL, "\"We were having a hard time knocking it over, so we tried aiming at the forehead, and rapid-fire shooting and stuff.", Line_WaitForInput);
+		   NULL, "\"We were having a hard time knocking it over, so we tried aiming at the forehead, and rapid-fire shooting and stuff. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/02/140200191", 128);
 	OutputLine(NULL, "それで圭一くん、鉄砲を何丁も予め用意して、素早く撃って見せてくれたんだよね！",
-		   NULL, " And then, Keiichi-kun, you got a whole bunch of guns ready beforehand and shot them all! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "And then, Keiichi-kun, you got a whole bunch of guns ready beforehand and shot them all!", Line_WaitForInput);
 
 	DisableWindow();
 	DrawBustshot( 2, "re_se_ha_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　カッコよかった。...はぅ～！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/02/140200192", 128);
 	OutputLine(NULL, "　カッコよかった。…はぅ〜！」",
-		   NULL, "It was so cool... Hau~!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It was so cool... Hau~!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　.........だから、!w800...誰が￥
