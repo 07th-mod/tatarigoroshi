@@ -2727,14 +2727,12 @@ void main()
 //　聞けば聞くほど...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　聞けば聞くほど…、",
-		   NULL, "The more I asked...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "The more I asked...", Line_WaitForInput);
 
 
 //　......昨日、『前原圭一』が...確かに間違いなく＠綿流しの会場の...古手神社境内に存在したことが...明白になっていく＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……昨日、『前原圭一』が…確かに間違いなく、",
-		   NULL, "...the more it became clear without any doubt...", Line_WaitForInput);
+		   NULL, " ...the more it became clear without any doubt...", Line_WaitForInput);
 	OutputLine(NULL, "綿流しの会場の…古手神社境内に存在したことが…明白になっていく。",
 		   NULL, " that \"Keiichi Maebara\" was present at the Furude Shrine grounds during the Watanagashi festival.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
