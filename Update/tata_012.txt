@@ -10648,14 +10648,14 @@ void main()
 		   NULL, "\"What a rebellious look you're wearing.", Line_WaitForInput);
 	PlayVoice(4, "s03/11/140700038", 128);
 	OutputLine(NULL, "これを期に少しその辺りをお勉強してしまいましょうか？",
-		   NULL, " Why don't we use this opportunity to teach you a thing or two in that regard?", Line_WaitForInput);
+		   NULL, " Why don't we use this opportunity to teach you a thing or two in that regard? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/11/140700039", 128);
 	OutputLine(NULL, "　今は平和な時代ですがね。",
-		   NULL, " We really do live in peace these days. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "We really do live in peace these days.", Line_WaitForInput);
 	PlayVoice(4, "s03/11/140700040", 128);
 	OutputLine(NULL, "私があなたくらいだった頃は、何でも鉄拳制裁が普通でして、」",
-		   NULL, "When I was about your age, corporal punishment was the norm for everything—\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " When I was about your age, corporal punishment was the norm for everything—\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
