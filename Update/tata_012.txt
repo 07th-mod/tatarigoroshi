@@ -7656,11 +7656,10 @@ void main()
 		   NULL, " I mean, we were both at Satoko's house when she was bringing his alcohol inside, and there was a man who stuck his face out the window to look!", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100887", 128);
 	OutputLine(NULL, "　あいつですよね？！",
-		   NULL, " It was him, right?! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " It was him, right?!", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100888", 128);
 	OutputLine(NULL, "　沙都子の叔父は！」",
-		   NULL, "That was Satoko's uncle, right?!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " That was Satoko's uncle, right?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -7889,14 +7888,14 @@ void main()
 		   NULL, "\"...None of this... makes any sense.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100893", 128);
 	OutputLine(NULL, "……そうやって整理して言うと、…まるで俺が悪い夢を見ていて、……実は殺人なんて存在しなかったんではないかと思えてしまう。",
-		   NULL, " ...When I look at everything that way... it's almost like I'm just having a nightmare... and there's no killer at all.", Line_WaitForInput);
+		   NULL, " ...When I look at everything that way... it's almost like I'm just having a nightmare... and there's no killer at all. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100894", 128);
 	OutputLine(NULL, "……でも、…事実なんです。",
-		   NULL, " ...But... it's the truth. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...But... it's the truth.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100895", 128);
 	OutputLine(NULL, "この手で、バットで、ガツンガツンと殴ったあの感触は…絶対に夢や幻なんかじゃないんです…！」",
-		   NULL, "The sensation as I used my own hands, and that bat, to bash him again and again... It was no illusion or dream...!\"", Line_Normal);
+		   NULL, " The sensation as I used my own hands, and that bat, to bash him again and again... It was no illusion or dream...!\"", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, FALSE );
