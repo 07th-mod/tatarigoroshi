@@ -5904,14 +5904,14 @@ void main()
 		   NULL, "\"Hmm, you don't seem to have a cold.", Line_WaitForInput);
 	PlayVoice(4, "s03/10/141000133", 128);
 	OutputLine(NULL, "…むしろ、全身の擦り傷や切り傷の方が痛々しいくらいです。",
-		   NULL, " ...Actually, those scrapes and cuts all over you seem to be the painful thing.", Line_WaitForInput);
+		   NULL, " ...Actually, those scrapes and cuts all over you seem to be the painful thing. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/10/141000134", 128);
 	OutputLine(NULL, "ひょっとして、半そで半ズボンで藪の中に入って遊びましたか？",
-		   NULL, " Don't tell me you were playing in the bushes with short sleeves and shorts? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Don't tell me you were playing in the bushes with short sleeves and shorts?", Line_WaitForInput);
 	PlayVoice(4, "s03/10/141000135", 128);
 	OutputLine(NULL, "　切り傷から破傷風菌が入った可能性もないとは言えませんし…。」",
-		   NULL, "I mean, I can't say for sure you haven't been infected with tetanus...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I mean, I can't say for sure you haven't been infected with tetanus...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　昨日の、あの男を追いかける時に、あちこちの梢で体を引っ掻いた＠
