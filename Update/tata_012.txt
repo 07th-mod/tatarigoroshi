@@ -8402,7 +8402,7 @@ void main()
 		   NULL, "\"What do you mean, burned corpse?", Line_WaitForInput);
 	PlayVoice(4, "s03/10/141000272", 128);
 	OutputLine(NULL, "それは事故ですか？」",
-		   NULL, " Was it an accident?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Was it an accident?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
