@@ -13,9 +13,11 @@ void dialog001()
 	OutputLine(NULL, "「変わった質問をしましたね。",
 		   NULL, "\"That was a strange question.", Line_WaitForInput);
 	PlayVoice(4, "s03/10/141000144", 128);
+	//<missing translation> underage drinking
 	OutputLine(NULL, "ひょっとして今日、寝不足ですか？",
 		   NULL, " Did you have too much to drink and forget about what happened last night?", Line_WaitForInput);
 	PlayVoice(4, "s03/10/141000145", 128);
+	//<missing translation> underage drinking
 	OutputLine(NULL, "　いけませんよー、成長期は良く食べよく寝て育つんですから」",
 		   NULL, " And underaged, too—you bad child.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
