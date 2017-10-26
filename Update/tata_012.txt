@@ -6949,15 +6949,11 @@ void main()
 //　夕方から土砂降りになるまで＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　夕方から土砂降りになるまで、",
-		   NULL, "From the late afternoon until it started to rain,", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
+		   NULL, "From the late afternoon until it started to rain,", Line_WaitForInput);
 
 //　俺には"祭り会場に行くような時間はありえない"
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺には“祭り会場に行くような時間はありえない”",
-		   NULL, "there was no time for me to possibly have gone to the festival.", Line_Normal);
+		   NULL, " there was no time for me to possibly have gone to the festival.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "ir_hk_de_a1_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
