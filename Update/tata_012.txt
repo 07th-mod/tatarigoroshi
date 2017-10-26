@@ -10810,7 +10810,7 @@ void main()
 		   NULL, " But after digging so far, the ground suddenly hardened.", Line_WaitForInput);
 	PlayVoice(4, "s03/00/polib04003", 128);
 	OutputLine(NULL, "……多分、元々掘った穴よりも、深く掘り進んだのだと思います。」",
-		   NULL, " ...We think we've gone down further than the hole that was originally dug.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...We think we've gone down further than the hole that was originally dug.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
