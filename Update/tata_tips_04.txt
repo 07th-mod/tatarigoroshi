@@ -30,7 +30,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600012", 128);
 	OutputLine(NULL, "「女の子に重いものを運ばせようって言うんですか。",
-		   NULL, "\"Are you asking a girl to carry something heavy?", Line_WaitForInput);
+		   NULL, "\"Are you asking a girl to carry something heavy?", Line_Continue);
+	Wait(2200);
 	OutputLine(NULL, "そんなだからいい歳になっても相手が見つからないんですよ監督は。」",
 		   NULL, " This is why you still haven't found a nice lady at your age, Coach.\"", Line_Normal);
 	ClearMessage();
@@ -41,7 +42,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000025", 128);
 	OutputLine(NULL, "「えーとですね、そういうのを曰くこう言います。",
-		   NULL, "\"Well, you see, at times like these, here's what people say.", Line_WaitForInput);
+		   NULL, "\"Well, you see, at times like these, here's what people say.", Line_Continue);
+	Wait(2500);
 	OutputLine(NULL, "えー、余計なお世話です。」",
 		   NULL, " Ahem—it's none of your business.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -79,7 +81,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000026", 128);
 	OutputLine(NULL, "「……さて。",
-		   NULL, "\"...All right.", Line_WaitForInput);
+		   NULL, "\"...All right.", Line_Continue);
+	Wait(600);
 	OutputLine(NULL, "詩音さんはどうしますか。",
 		   NULL, " So, Shion-san...", Line_WaitForInput);
 	PlayVoice(4, "s20/10/441000027", 128);
@@ -98,7 +101,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600014", 128);
 	OutputLine(NULL, "「バイクだからいいです。",
-		   NULL, "\"I did, but I'll be fine riding back.", Line_WaitForInput);
+		   NULL, "\"I did, but I'll be fine riding back.", Line_Continue);
+	Wait(700);
 	OutputLine(NULL, "お心遣いだけでうれしいってことにしときます。」",
 		   NULL, " I appreciate your consideration.\"", Line_Normal);
 	ClearMessage();
@@ -109,7 +113,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000029", 128);
 	OutputLine(NULL, "「…………今日は来てくれてうれしかったですよ。",
-		   NULL, "\"......I was glad you came today.", Line_WaitForInput);
+		   NULL, "\"......I was glad you came today.", Line_Continue);
+	Wait(1200);
 	OutputLine(NULL, "やはりマネージャーさんがいないとパッとしませんからねぇ。」",
 		   NULL, " Things don't quite fit together without the manager here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -122,7 +127,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600015", 128);
 	OutputLine(NULL, "「まだ私、マネージャーなんですか？",
-		   NULL, "\"Am I still the manager?", Line_WaitForInput);
+		   NULL, "\"Am I still the manager?", Line_Continue);
+	Wait(1900);
 	OutputLine(NULL, "　１年もまるまるサボってんだから、こんな無能マネージャー、いい加減に解雇するべきだと思いますよ。」",
 		   NULL, " I've been shirking my duty for an entire year, so maybe you should just fire such an incompetent manager already.\"", Line_Normal);
 	ClearMessage();
@@ -133,7 +139,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000030", 128);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "\"All right.", Line_WaitForInput);
+		   NULL, "\"All right.", Line_Continue);
+	Wait(800);
 	OutputLine(NULL, "詩音さんが辞めたいって自分で言えたらいつでも解雇してあげますよ。」",
 		   NULL, " If you say you want to quit, then I'll fire you whenever you want.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -146,7 +153,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600016", 128);
 	OutputLine(NULL, "「…ちぇ。",
-		   NULL, "\"...Grr.", Line_WaitForInput);
+		   NULL, "\"...Grr.", Line_Continue);
+	Wait(600);
 	OutputLine(NULL, "ズルイなぁ。",
 		   NULL, " That's not fair.", Line_WaitForInput);
 
@@ -167,13 +175,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000031", 128);
 	OutputLine(NULL, "「詩音ちゃんももっともっと素直になれば、とってもキュートで可愛い女の子なのに。",
-		   NULL, "\"If you were more honest with yourself, Shion-chan, you'd be far cuter.", Line_WaitForInput);
+		   NULL, "\"If you were more honest with yourself, Shion-chan, you'd be far cuter.", Line_Continue);
+	Wait(4000);
 	OutputLine(NULL, "お父さんは悲しいですよ、一体どこで捻じ曲がってこんなにひねくれてしまったんだか！",
 		   NULL, " Your father is so sad—where did he go so wrong as to deserve such a rebellious daughter? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000032", 128);
 	OutputLine(NULL, "　あぁ、お父さんの愛の抱擁で力強く包み込めば目が覚めますか？！",
-		   NULL, "Oh, perhaps if your father catches you in a big, loving embrace, you'll open your eyes?!", Line_WaitForInput);
+		   NULL, "Oh, perhaps if your father catches you in a big, loving embrace, you'll open your eyes?!", Line_Continue);
+	Wait(3800);
 	OutputLine(NULL, "　でしたら遠慮なく！！",
 		   NULL, " Well then, don't mind if I do!!", Line_WaitForInput);
 
@@ -198,7 +208,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600018", 128);
 	OutputLine(NULL, "「…………何も変わってない。",
-		   NULL, "\"......Nothing's changed.", Line_WaitForInput);
+		   NULL, "\"......Nothing's changed.", Line_Continue);
+	Wait(2000);
 	OutputLine(NULL, "監督がヘンな人で、みんなの賑わいも何も変わってないのに。」",
 		   NULL, " You're still a weirdo, Coach, and everyone's still lively as ever.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -208,7 +219,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000034", 128);
 	OutputLine(NULL, "「…悟史くんだけ、いない。",
-		   NULL, "\"...Even though Satoshi-kun isn't here.", Line_WaitForInput);
+		   NULL, "\"...Even though Satoshi-kun isn't here.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "…とおっしゃりたいのですか。」",
 		   NULL, " ...Is that what you wanted to say?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -227,6 +239,7 @@ void main()
 	PlayVoice(4, "s20/10/441000035", 128);
 	OutputLine(NULL, "「帰ってきますよ。",
 		   NULL, "\"He'll come home.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "きっと。",
 		   NULL, " I'm sure of it.", Line_WaitForInput);
 	PlayVoice(4, "s20/10/441000036", 128);
@@ -239,7 +252,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600020", 128);
 	OutputLine(NULL, "「……………ふん。",
-		   NULL, "\"......Hmph.", Line_WaitForInput);
+		   NULL, "\"......Hmph.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "…勝手なこと言ってて下さい。」",
 		   NULL, " ...Say whatever you want.\"", Line_Normal);
 	ClearMessage();
@@ -248,7 +262,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000037", 128);
 	OutputLine(NULL, "「彼も罪作りな人ですよねぇ。",
-		   NULL, "\"He sure is cruel, isn't he?", Line_WaitForInput);
+		   NULL, "\"He sure is cruel, isn't he?", Line_Continue);
+	Wait(1500);
 	OutputLine(NULL, "こんな可愛い彼女を置き去りにして、どこへ行ってしまったんだか。」",
 		   NULL, " Going off to who knows where, leaving such a cute girlfriend behind.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -258,7 +273,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600021", 128);
 	OutputLine(NULL, "「へ？！",
-		   NULL, "\"Heh?!", Line_WaitForInput);
+		   NULL, "\"Heh?!", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　かか、彼女！！",
 		   NULL, " G-G-Girlfriend?!", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600022", 128);
@@ -284,7 +300,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600025", 128);
 	OutputLine(NULL, "「……ちぇー、…もう！",
-		   NULL, "\"...Pff... geez!", Line_WaitForInput);
+		   NULL, "\"...Pff... geez!", Line_Continue);
+	Wait(2300);
 	OutputLine(NULL, "　いつまで笑ってるんですか！！",
 		   NULL, " Quit laughing already!!", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600026", 128);
@@ -297,7 +314,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000039", 128);
 	OutputLine(NULL, "「はっはっは！",
-		   NULL, "\"Ha ha ha!", Line_WaitForInput);
+		   NULL, "\"Ha ha ha!", Line_Continue);
+	Wait(1300);
 	OutputLine(NULL, "　わーっはっはっはっは！！」",
 		   NULL, " Wahh ha ha ha!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -315,7 +333,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000040", 128);
 	OutputLine(NULL, "「では、またお会いしましょうね。",
-		   NULL, "\"We'll see each other again.", Line_WaitForInput);
+		   NULL, "\"We'll see each other again.", Line_Continue);
+	Wait(1300);
 	OutputLine(NULL, "試合にもたまには応援に来てくださいよ。」",
 		   NULL, " Please come and root for us once in a while, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -328,7 +347,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600027", 128);
 	OutputLine(NULL, "「ま、気が向いたら。",
-		   NULL, "\"If I feel like it.", Line_WaitForInput);
+		   NULL, "\"If I feel like it.", Line_Continue);
+	Wait(1700);
 	OutputLine(NULL, "…私、マネージャーなんか全然、もぅやる気ないんですから。」",
 		   NULL, " ...I have no desire to be the manager anymore, after all.\"", Line_Normal);
 	ClearMessage();
@@ -339,7 +359,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000041", 128);
 	OutputLine(NULL, "「…いいんですよ。",
-		   NULL, "\"...That's fine.", Line_WaitForInput);
+		   NULL, "\"...That's fine.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "あなたが嫌ならいつでもクビにしてあげますよ。",
 		   NULL, " If you don't like it, I'll fire you.", Line_WaitForInput);
 	PlayVoice(4, "s20/10/441000042", 128);
@@ -355,7 +376,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600028", 128);
 	OutputLine(NULL, "「…………………………ちぇ。",
-		   NULL, "\"..................Grr.", Line_WaitForInput);
+		   NULL, "\"..................Grr.", Line_Continue);
+	Wait(3000);
 	OutputLine(NULL, "あーはいはい！",
 		   NULL, " Okay, fine, fine!", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600029", 128);
@@ -375,7 +397,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/10/441000043", 128);
 	OutputLine(NULL, "「ふっふっふ！",
-		   NULL, "\"Hu hu hu!", Line_WaitForInput);
+		   NULL, "\"Hu hu hu!", Line_Continue);
+	Wait(1200);
 	OutputLine(NULL, "　おっと、もうこんな時間！",
 		   NULL, " Whoops, that time already?", Line_WaitForInput);
 	PlayVoice(4, "s20/10/441000044", 128);
@@ -400,7 +423,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600032", 128);
 	OutputLine(NULL, "「えぇ、気が向いたらね。",
-		   NULL, "\"Yes, if I feel like it.", Line_WaitForInput);
+		   NULL, "\"Yes, if I feel like it.", Line_Continue);
+	Wait(2000);
 	OutputLine(NULL, "さよなら、監督。」",
 		   NULL, " Good-bye, Coach.\"", Line_Normal);
 	ClearMessage();
