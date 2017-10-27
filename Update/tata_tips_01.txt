@@ -17,7 +17,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100092", 128);
 	OutputLine(NULL, "「俺が保証する。",
-		   NULL, "\"I know one thing for sure.", Line_WaitForInput);
+		   NULL, "\"I know one thing for sure.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "沙都子ならこの山で篭城して、一個師団相手くらいなら充分にあしらえるに違いない。」",
 		   NULL, " Satoko could fend off an entire army division by holing up in this mountain.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -27,7 +28,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300088", 128);
 	OutputLine(NULL, "「私は知ってるよ。",
-		   NULL, "\"I know all about it!", Line_WaitForInput);
+		   NULL, "\"I know all about it!", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。」",
 		   NULL, " Satoko was one of the Soviet military advisors that gave training on traps to that one country.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -76,7 +78,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300089", 128);
 	OutputLine(NULL, "「……圭ちゃんの方はどーおー？",
-		   NULL, "\"...Kei-chan, what about youuu?", Line_WaitForInput);
+		   NULL, "\"...Kei-chan, what about youuu?", Line_Continue);
+	Wait(800);
 	OutputLine(NULL, "　抜けられそうー？",
 		   NULL, " Think you can get out of that?", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300090", 128);
@@ -89,7 +92,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100093", 128);
 	OutputLine(NULL, "「ぬ、抜け出して助けるのは魅音の方だー！",
-		   NULL, "\"Y-You're the one who should be breaking out and saving me, Mion!", Line_WaitForInput);
+		   NULL, "\"Y-You're the one who should be breaking out and saving me, Mion!", Line_Continue);
+	Wait(1100);
 	OutputLine(NULL, "　この簀巻き状態の俺に、何をしろと言うんだー！」",
 		   NULL, " What do you expect me to do in this freaking bamboo mat?!\"", Line_Normal);
 	ClearMessage();
@@ -134,7 +138,8 @@ void main()
 //　レナじゃ迷子になっちゃう＠はぅ。＠
 	PlayVoice(4, "s20/02/440200059", 128);
 	OutputLine(NULL, "　レナじゃ迷子になっちゃう。",
-		   NULL, " Rena might get lost.", Line_WaitForInput);
+		   NULL, " Rena might get lost.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "はぅ。」",
 		   NULL, " Hau.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -147,7 +152,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300091", 128);
 	OutputLine(NULL, "「裏山ねぇ。",
-		   NULL, "\"The mountain out back, huh?", Line_WaitForInput);
+		   NULL, "\"The mountain out back, huh?", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "…小さい頃はよく遊んだけど、…ここ何年かはさっぱりだなぁ。",
 		   NULL, " ...I played there a lot when I was little... but I haven't gone there for years.", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300092", 128);
@@ -162,7 +168,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400043", 128);
 	OutputLine(NULL, "「裏山なら私たちにお任せですわよー！",
-		   NULL, "\"You can leave the mountain to us!", Line_WaitForInput);
+		   NULL, "\"You can leave the mountain to us!", Line_Continue);
+	Wait(2300);
 	OutputLine(NULL, "　山が丸ごと、私と梨花の遊び場なんですもの。",
 		   NULL, " The whole thing is our playground.", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400044", 128);
@@ -185,12 +192,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100094", 128);
 	OutputLine(NULL, "「おー。",
-		   NULL, "\"Oh, I see!", Line_WaitForInput);
+		   NULL, "\"Oh, I see!", Line_Continue);
+	Wait(500);
 	OutputLine(NULL, "それは心強いな。",
 		   NULL, " How reassuring.", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100095", 128);
 	OutputLine(NULL, "じゃあここは二人の顔を立てて、二人の道案内でハイキングと行こうじゃねーか！」",
-		   NULL, " We'll defer to you two this time and have you be our tour guides!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " We'll defer to you two this time and have you be our tour guides!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -202,7 +210,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200060", 128);
 	OutputLine(NULL, "「でも圭一くん…。",
-		   NULL, "\"Wait, Keiichi-kun...", Line_WaitForInput);
+		   NULL, "\"Wait, Keiichi-kun...", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "裏山は迷うから遊びに行っちゃいけないって夏休みのしおりにも書いてあるよ。」",
 		   NULL, " The summer vacation guidebook says not to play on the mountain because you'll get lost.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -215,7 +224,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500026", 128);
 	OutputLine(NULL, "「……まだ夏休みではありませんですから、大丈夫なのですよ。",
-		   NULL, "\"...It isn't summer vacation yet, so it's all right.", Line_WaitForInput);
+		   NULL, "\"...It isn't summer vacation yet, so it's all right.", Line_Continue);
+	Wait(2500);
 	OutputLine(NULL, "ボクたちが道を知ってますからご安心なのです。」",
 		   NULL, " We know the path, so there's no need to worry.\"", Line_Normal);
 	ClearMessage();
@@ -226,7 +236,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400045", 128);
 	OutputLine(NULL, "「裏山は昔から私たちの遊び場でございますもの！",
-		   NULL, "\"The mountain has always been our playground!", Line_WaitForInput);
+		   NULL, "\"The mountain has always been our playground!", Line_Continue);
+	Wait(2500);
 	OutputLine(NULL, "　庭も同然！",
 		   NULL, " Our backyard!", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400046", 128);
@@ -270,7 +281,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400047", 128);
 	OutputLine(NULL, "「そうそう。",
-		   NULL, "\"Oh, yes.", Line_WaitForInput);
+		   NULL, "\"Oh, yes.", Line_Continue);
 	OutputLine(NULL, "皆さん。",
 		   NULL, " Everyone, I have something to say.", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400048", 128);
@@ -283,7 +294,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100096", 128);
 	OutputLine(NULL, "「はぁ…？",
-		   NULL, "\"Huh...?", Line_WaitForInput);
+		   NULL, "\"Huh...?", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　突然、何を言い出すんだ？」",
 		   NULL, " What are you talking about all of a sudden?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -306,7 +318,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200061", 128);
 	OutputLine(NULL, "「あれれ。",
-		   NULL, "\"Oh, my.", Line_WaitForInput);
+		   NULL, "\"Oh, my.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "ねー、魅ぃちゃん、ほらこれ。",
 		   NULL, " Hey, Mii-chan, look at this.", Line_WaitForInput);
 	PlayVoice(4, "s20/02/440200062", 128);
@@ -319,7 +332,8 @@ void main()
 //引っ張るのかな＠　かな？￥
 	PlayVoice(4, "s20/02/440200063", 128);
 	OutputLine(NULL, "引っ張るのかな？",
-		   NULL, " Should I pull it?", Line_WaitForInput);
+		   NULL, " Should I pull it?", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　かな？」",
 		   NULL, " Should I?\"", Line_Normal);
 	ClearMessage();
@@ -375,7 +389,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300093", 128);
 	OutputLine(NULL, "「わーーー！！",
-		   NULL, "\"Wahhhh!!", Line_WaitForInput);
+		   NULL, "\"Wahhhh!!", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　わーーー！！",
 		   NULL, " Wahhhh!!", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300094", 128);
@@ -437,7 +452,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500028", 128);
 	OutputLine(NULL, "「……懐かしいのですよ。",
-		   NULL, "\"...That brings back memories.", Line_WaitForInput);
+		   NULL, "\"...That brings back memories.", Line_Continue);
+	Wait(1400);
 	OutputLine(NULL, "これは確か、２年生の２学期に沙都子が作ったトラップなのです。」",
 		   NULL, " Satoko made this trap in the second semester of second grade.\"", Line_Normal);
 	ClearMessage();
@@ -449,7 +465,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400049", 128);
 	OutputLine(NULL, "「危なかったですわねぇ。",
-		   NULL, "\"That was a close one.", Line_WaitForInput);
+		   NULL, "\"That was a close one.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "竹槍の先端には犬のフンが塗ってありますから、傷になるとあとで腐り出しますわよ。」",
 		   NULL, " The tips of the spears are covered in dog poop, so if one of them hurts you, the wound will start to fester.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -499,7 +516,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400050", 128);
 	OutputLine(NULL, "「さ！",
-		   NULL, "\"Come, now!", Line_WaitForInput);
+		   NULL, "\"Come, now!", Line_Continue);
 	OutputLine(NULL, "　先を急ぎますわよ。",
 		   NULL, " We are hurrying on ahead.", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400051", 128);
@@ -540,7 +557,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300098", 128);
 	OutputLine(NULL, "「……誰か出して〜〜！",
-		   NULL, "\"...Someone get me out~~!", Line_WaitForInput);
+		   NULL, "\"...Someone get me out~~!", Line_Continue);
+	Wait(1500);
 	OutputLine(NULL, "　私、おトイレに行きたいの〜〜！！」",
 		   NULL, " I have to go to the bathroom~~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -550,7 +568,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200065", 128);
 	OutputLine(NULL, "「そんなことより〜！",
-		   NULL, "\"Never mind that~!", Line_WaitForInput);
+		   NULL, "\"Never mind that~!", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　誰かこのバケツ取って〜！！",
 		   NULL, " Somebody get the bucket off me~!!", Line_WaitForInput);
 	PlayVoice(4, "s20/02/440200066", 128);
@@ -566,7 +585,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100098", 128);
 	OutputLine(NULL, "「…おいレナ、あんまり暴れるな。",
-		   NULL, "\"...Wait, Rena, don't struggle around so much.", Line_WaitForInput);
+		   NULL, "\"...Wait, Rena, don't struggle around so much.", Line_Continue);
+	Wait(2000);
 	OutputLine(NULL, "ぱ、ぱんつが見えるぞ…。」",
 		   NULL, " I-I can see your panties...\"", Line_Normal);
 	ClearMessage();
@@ -575,7 +595,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200068", 128);
 	OutputLine(NULL, "「は、はぅーーー！！！",
-		   NULL, "\"H-Hauuuu!!!", Line_WaitForInput);
+		   NULL, "\"H-Hauuuu!!!", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　見た？！",
 		   NULL, " You saw?!", Line_WaitForInput);
 	PlayVoice(4, "s20/02/440200069", 128);
@@ -615,7 +636,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100099", 128);
 	OutputLine(NULL, "「み、見えてるだろ絶対…！！",
-		   NULL, "\"O-Of course you can see them...!!", Line_WaitForInput);
+		   NULL, "\"O-Of course you can see them...!!", Line_Continue);
+	Wait(1500);
 	OutputLine(NULL, "　バケツ被ってても、見えてるだろ絶、",
 		   NULL, " You may be in a bucket, but you can definitely—", Line_ContinueAfterTyping);
 
@@ -676,7 +698,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400053", 128);
 	OutputLine(NULL, "「もー、皆さん、だから言いましたでしょう？",
-		   NULL, "\"Geez, didn't I already tell you all?", Line_WaitForInput);
+		   NULL, "\"Geez, didn't I already tell you all?", Line_Continue);
+	Wait(2000);
 	OutputLine(NULL, "　私から離れたらいけませんでしてよ、って！」",
 		   NULL, " You weren't supposed to leave my side!\"", Line_Normal);
 	ClearMessage();
