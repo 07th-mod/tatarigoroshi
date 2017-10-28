@@ -2962,14 +2962,14 @@ void main()
 		   NULL, " How can I trust a person like you?!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400286", 128);
 	OutputLine(NULL, "　人を殺した時の記憶が…欠落してるだけなんじゃありませんの？！",
-		   NULL, " Didn't your memory of killing them... just slip your mind?!", Line_WaitForInput);
+		   NULL, " Didn't your memory of killing them... just slip your mind?! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400287", 128);
 	OutputLine(NULL, "　いや、…………記憶がないふりをしてるだけなんじゃありませんの？！",
-		   NULL, " No...... maybe you're only pretending not to remember!! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "No...... maybe you're only pretending not to remember!!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400288", 128);
 	OutputLine(NULL, "　第一、…その鉈は何なんですのよッ！！",
-		   NULL, "Besides... what is that hatchet for?!", Line_WaitForInput);
+		   NULL, " Besides... what is that hatchet for?!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400289", 128);
 	OutputLine(NULL, "　説明してごらんなさいな！！」",
 		   NULL, " Try explaining that!!\"", GetGlobalFlag(GLinemodeSp));
@@ -2997,11 +2997,10 @@ void main()
 		   NULL, " Why did you do it?!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400293", 128);
 	OutputLine(NULL, "　ちょっと意地悪だったけど…楽しくて、…やさしい…一度は…本当のにーにーかもしれないとまで思ったのに………",
-		   NULL, " You were a little mean... but you were fun... and kind... and once, I even thought you might be my real Nii-nii... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " You were a little mean... but you were fun... and kind... and once, I even thought you might be my real Nii-nii...", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400294", 128);
 	OutputLine(NULL, "どうしてそんな風になってしまったんですのッ！！」",
-		   NULL, "Why did you turn into this?!\"", Line_Normal);
+		   NULL, " Why did you turn into this?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 300 );
@@ -3774,14 +3773,14 @@ void main()
 		   NULL, " ...Maybe they... were possessed, just like Keiichi-san.", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400323", 128);
 	OutputLine(NULL, "…………あの時は…殺されるとしか思わなかったから、…そこまで考えは及ばなかったけど…。",
-		   NULL, " ......At the time... I was only thinking I would be killed... so I didn't think about it...", Line_WaitForInput);
+		   NULL, " ......At the time... I was only thinking I would be killed... so I didn't think about it... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400324", 128);
 	OutputLine(NULL, "……今ならわかる。",
-		   NULL, " but now I understand. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "But now I understand.", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400325", 128);
 	OutputLine(NULL, "………あれは……乗り移った、…何か悪いものの仕業だった。」",
-		   NULL, "...That was... the work of something evil... that possessed you.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...That was... the work of something evil... that possessed you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4192,14 +4191,14 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……誰よりも私を可愛がってくれた…にーにーも私を捨てて…家出してしまった。",
-		   NULL, " but then Nii-nii... who loved me more than anyone... ran away from home.", Line_WaitForInput);
+		   NULL, " but then Nii-nii... who loved me more than anyone... ran away from home. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400335", 128);
 	OutputLine(NULL, "……そして…。",
-		   NULL, " ...And then... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...And then...", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400336", 128);
 	OutputLine(NULL, "…………そして！！　…圭一さんが転校してきて…やっと楽しい毎日が戻ってきたと思ったのに、",
-		   NULL, "......and then!! ...Keiichi-san transferred in... and I thought I'd finally gotten my fun life back...", Line_Continue);
+		   NULL, " ......and then!! ...Keiichi-san transferred in... and I thought I'd finally gotten my fun life back...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -4209,16 +4208,17 @@ void main()
 		   NULL, " but this time... Keiichi-san was possessed...", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400337", 128);
 	OutputLine(NULL, "……梨花も……殺されて……。",
-		   NULL, " and even Rika... got killed...", Line_WaitForInput);
-	PlayVoice(4, "s03/04/140400338", 128);
-	OutputLine(NULL, "……ぅうううぅううぅううぅッ！！",
-		   NULL, " ...mmmmmmmgh!!", Line_Normal);
+		   NULL, " and even Rika... got killed...", Line_Normal);
 	ClearMessage();
 
 //　.........聞いたの私＠　オヤシロさまは...本当に祟りを成すときは...本人をすぐに殺さないんだ、って！＠　親しい人から順に殺して...みんな殺してから...最後に殺すんだ、ってッ！＠　だから...圭一さんも......祟りにやられて.........ぅうううぅううぅううッ！！＠　きっと......今度はレナさんや魅音さんが祟られてしまうんですわ！＠　そして...殺したり...殺されたり...！＠　もう...いやッ＠　嫌ぁあぁああああぁあぁあああぁッ！！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s03/04/140400338", 128);
+	OutputLine(NULL, "……ぅうううぅううぅううぅッ！！",
+		   NULL, "...mmmmmmmgh!!", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "　………聞いたの私！",
-		   NULL, "......There's something I heard once!", Line_WaitForInput);
+		   NULL, " ......There's something I heard once!", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400339", 128);
 	OutputLine(NULL, "　オヤシロさまは…本当に祟りを成すときは…本人をすぐに殺さないんだ、って！！",
 		   NULL, " Oyashiro-sama... when he really curses someone... he doesn't kill them right away!! ", GetGlobalFlag(GLinemodeSp));
@@ -4482,11 +4482,10 @@ void main()
 		   NULL, " ...No... in fact, maybe I should never have done it at all.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101084", 128);
 	OutputLine(NULL, "……だけど、…………お前に幸せになって欲しくって、…したことだったんだ。",
-		   NULL, " ...But...... I did it... because I wanted you to be happy. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " ...But...... I did it... because I wanted you to be happy.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101085", 128);
 	OutputLine(NULL, "…それだけは…信じてくれ。」",
-		   NULL, "...Please... just believe that.\"", Line_Normal);
+		   NULL, " ...Please... just believe that.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "sa_to_sa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -4541,14 +4540,14 @@ void main()
 		   NULL, " ...We were nothing.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101089", 128);
 	OutputLine(NULL, "……お前が笑っていないと…駄目だんだ…。",
-		   NULL, " ...Without your smile... we were nothing...", Line_WaitForInput);
+		   NULL, " ...Without your smile... we were nothing... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140101090", 128);
 	OutputLine(NULL, "………だから、……俺が消えたら、………笑ってくれ。",
-		   NULL, " ...So... after I disappear... please, smile. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...So... after I disappear... please, smile. ", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101091", 128);
 	OutputLine(NULL, "…俺が死ぬことで、…新しい生活を迎えたなら、…きっと、…笑ってくれ。",
-		   NULL, "...If you can get on with your new life... by my dying... then please... just smile.", Line_WaitForInput);
+		   NULL, " ...If you can get on with your new life... by my dying... then please... just smile.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101092", 128);
 	OutputLine(NULL, "……………それだけ、…約束してくれないか………。」",
 		   NULL, " ......Can't you... at least promise me that...?\"", Line_Normal);
