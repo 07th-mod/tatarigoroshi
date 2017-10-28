@@ -1013,14 +1013,12 @@ void main()
 //　.........それとも＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………それとも、",
-		   NULL, "......Or maybe...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "......Or maybe...", Line_WaitForInput);
 
 
 //　...死体がなかったように、...バイクもまた、沼に放り込まれてないことになっているのだろうか...￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…死体がなかったように、…バイクもまた、沼に放り込まれてないことになっているのだろうか…？",
-		   NULL, "just like how the corpse wasn't here... maybe the motorbike didn't get thrown into the swamp either...?", Line_Normal);
+		   NULL, " just like how the corpse wasn't here... maybe the motorbike didn't get thrown into the swamp either...?", Line_Normal);
 	ClearMessage();
 
 //　ここにバイクがないのは、...俺が沼に捨てたからじゃなくて、あいつが町に出掛けてまだ帰ってこないだけのことかもしれない＠
@@ -1636,14 +1634,12 @@ void main()
 //　そう、言うなれば...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、言うなれば…。",
-		   NULL, "If one did...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "If one did...", Line_WaitForInput);
 
 
 //　.........この家は、......昨夜のある瞬間から、...時間が止まってしまっている￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………この家は、……昨夜のある瞬間から、…時間が止まってしまっている。",
-		   NULL, "...then it would mean... that in this house... time had been stopped ever since some moment last night.", Line_Normal);
+		   NULL, " ...then it would mean... that in this house... time had been stopped ever since some moment last night.", Line_Normal);
 	ClearMessage();
 
 //　シュンシュンシュンシュン......￥
