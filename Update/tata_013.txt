@@ -1921,9 +1921,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400192", 128);
 	OutputLine(NULL, "「……………け………いちさ、……………ひ…………へ……、」",
-		   NULL, "\"......Ke...ichi......sa...... hee...... heh...\"", Line_WaitForInput);
+		   NULL, "\"......Ke...ichi......sa...... hee...... heh...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は俺の姿を認め、弱々しく応えたが…。",
-		   NULL, " Satoko recognized me and muttered a response, but...", Line_Normal);
+		   NULL, "Satoko recognized me and muttered a response, but...", Line_Normal);
 	ClearMessage();
 
 //　目はどろりとして焦点が合わず、意識がはっきりしていないのがわかる＠
@@ -2016,31 +2020,33 @@ void main()
 //「...............大丈夫か、沙都子...＠もう、大丈夫だからな＠...必ず俺が、...にーにーが助けてやるからな...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…これ以上は…素人の俺には…無理…！！",
-		   NULL, "...Anything more than this... would be too much... for the likes of an amateur...!!", Line_WaitForInput);
+		   NULL, "...Anything more than this... would be too much... for the likes of an amateur...!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100929", 128);
 	OutputLine(NULL, "「……………大丈夫か、沙都子…。",
 		   NULL, " \"......What happened, Satoko...?", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100930", 128);
 	OutputLine(NULL, "もう、大丈夫だからな。",
-		   NULL, " You're all right now.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " You're all right now.", Line_WaitForInput);
 
 
 //「.....................ごせんさんじゅうきゅー...＠......ごせん、ごほ！......よんじゅー......はぁ............はあ............！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100931", 128);
 	OutputLine(NULL, "…必ず俺が、…にーにーが助けてやるからな…。」",
-		   NULL, "...I will... your Nii-nii will save you for sure...\"", Line_WaitForInput);
+		   NULL, " ...I will... your Nii-nii will save you for sure...\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/04/140400193", 240);
 	OutputLine(NULL, "「…………………ごせんさんじゅうきゅー…。",
-		   NULL, " \".........five thousand thirty-nine...", Line_Normal);
-	ClearMessage();
+		   NULL, "\".........five thousand thirty-nine...", Line_WaitForInput);
 
 //　...？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/04/140400194", 240);
 	OutputLine(NULL, "……ごせん、ごほ！……よんじゅー……はぁ…………はあ…………！」",
-		   NULL, "...five th—*cough*! ...forty... hah...... hah......!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...five th—*cough*! ...forty... hah...... hah......!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2063,17 +2069,18 @@ void main()
 //「沙都子...お前、......数を数えてるのか？＠　...なんで...ッ！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………その瞬間、…その呪いの言葉の意味がわかる…！",
-		   NULL, "...And at that moment... I understood what they were for...!", Line_WaitForInput);
+		   NULL, "...And at that moment... I understood what they were for...!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/01/140100932", 240);
 	OutputLine(NULL, "「沙都子…お前、……数を数えてるのか？！",
-		   NULL, " \"Satoko... you... you're counting?!", Line_Normal);
-	ClearMessage();
+		   NULL, "\"Satoko... you... you're counting?!", Line_WaitForInput);
 
 //　...よく、小さい子供をお風呂に入れる時、...百数えたら出ていいよ...なんてやるじゃないか......＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/01/140100933", 240);
 	OutputLine(NULL, "　…なんで…ッ！！」",
-		   NULL, "...Why...?!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...Why...?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2092,17 +2099,19 @@ void main()
 //「ば、.........馬鹿野郎ッ！＠　お前の家の風呂は...いくつ数える決まりになってんだよッ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だが、……五千三十九ッ？！!",
-		   NULL, "...But... five thousand thirty-nine?!!", Line_WaitForInput);
+		   NULL, "...But... five thousand thirty-nine?!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/01/140100934", 240);
 	OutputLine(NULL, "「ば、………馬鹿野郎ッ！！",
-		   NULL, " \"You... you moron!!", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"You... you moron!!", Line_WaitForInput);
 
 
 //「...........................まん.........。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps2/s03/01/140100935", 240);
 	OutputLine(NULL, "　お前の家の風呂は…いくつ数える決まりになってんだよッ！！」",
-		   NULL, "How... how long were you supposed to count in your own bathtub?!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " How... how long were you supposed to count in your own bathtub?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2110,18 +2119,24 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/04/140400195", 240);
 	OutputLine(NULL, "「………………………まん………。」",
-		   NULL, "\"............Ten... tho...\"", Line_WaitForInput);
+		   NULL, "\"............Ten... tho...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……耳を疑い、…沙都子の常識を疑う。",
-		   NULL, " ...I doubted my ears... and doubted her common sense.", Line_Normal);
+		   NULL, "...I doubted my ears... and doubted her common sense.", Line_Normal);
 	ClearMessage();
 
 //「ふ、ふざけるな馬鹿野郎ッ！＠　一万なんて数えられる馬鹿がどこにいるんだよッ！＠　数えられるわけねえだろ？＠　その前に茹って死んじまうに決まってんだろ？＠　どうしてこんなことに...ッ！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…い、一万だってッ？！",
-		   NULL, "...T-Ten thousand?!", Line_WaitForInput);
+		   NULL, "...T-Ten thousand?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps2/s03/01/140100936", 240);
 	OutputLine(NULL, "「ふ、ふざけるな馬鹿野郎ッ！！",
-		   NULL, " \"You're a freaking idiot!!", Line_WaitForInput);
+		   NULL, "\"You're a freaking idiot!!", Line_WaitForInput);
 	PlayVoice(4, "ps2/s03/01/140100937", 240);
 	OutputLine(NULL, "　一万なんて数えられる馬鹿がどこにいるんだよッ！！",
 		   NULL, " What kind of dumbass can count to ten thousand?!", Line_WaitForInput);
