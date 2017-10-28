@@ -792,11 +792,15 @@ void main()
 //「.........今、警察が話してるのを聞いてた限りじゃ、.........＠......監督が、自殺したらしい。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400208", 128);
-	OutputLine(NULL, "「………今、警察が話してるのを聞いてた限りじゃ、………。",
-		   NULL, "\"...From... what I just heard the police talking about...", Line_WaitForInput);
+	OutputLine(NULL, "「………今、警察が話してるのを聞いてた限りじゃ、………。」",
+		   NULL, "\"...From... what I just heard the police talking about...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100954", 128);
-	OutputLine(NULL, "……監督が、自殺したらしい。」",
-		   NULL, " ...Coach... apparently committed suicide.\"", Line_Normal);
+	OutputLine(NULL, "「……監督が、自殺したらしい。」",
+		   NULL, "\"...Coach... apparently committed suicide.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, FALSE );
