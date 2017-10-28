@@ -1906,16 +1906,14 @@ void main()
 		   NULL, " It's me, Keiichi!", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140100927", 128);
 	OutputLine(NULL, "　わかるか？！",
-		   NULL, " Keiichi!", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Do you understand?!", Line_WaitForInput);
 
 
 
 //「...............け.........いちさ、...............ひ............へ......、＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140100928", 128);
 	OutputLine(NULL, "　聞こえるか？！」",
-		   NULL, "Can you hear me?!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Can you hear me?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
