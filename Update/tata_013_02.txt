@@ -784,16 +784,14 @@ void main()
 //「...それより、...これは一体、何事なんですの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400207", 128);
-	OutputLine(NULL, "「…それより、…これは一体、何事なんですの。」",
-		   NULL, "\"...Anyway... what on earth... is going on?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「…それより、…これは一体、何事なんですの。",
+		   NULL, "\"...Anyway... what on earth... is going on?", Line_WaitForInput);
 
 
 //「.........今、警察が話してるのを聞いてた限りじゃ、.........＠......監督が、自殺したらしい。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/04/140400208", 128);
-	OutputLine(NULL, "「………今、警察が話してるのを聞いてた限りじゃ、………。」",
-		   NULL, "\"...From... what I just heard the police talking about...\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "………今、警察が話してるのを聞いてた限りじゃ、………。」",
+		   NULL, " ...From... what I just heard the police talking about...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1104,11 +1102,10 @@ void main()
 		   NULL, " ...Coach... was an adult too.", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400219", 128);
 	OutputLine(NULL, "……自分の命を捨てるに値する都合があって、………悩んだ末に選んだんですもの。",
-		   NULL, " ...He felt like there was something he had to give his life for... and chose to do so after a lot of worrying and suffering. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " ...He felt like there was something he had to give his life for... and chose to do so after a lot of worrying and suffering.", Line_WaitForInput);
 	PlayVoice(4, "s03/04/140400220", 128);
 	OutputLine(NULL, "……誰のせいでもありませんわ。」",
-		   NULL, "...It's not anyone's fault.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...It's not anyone's fault.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
