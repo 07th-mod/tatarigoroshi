@@ -349,19 +349,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/kisya04022", 128);
 	OutputLine(NULL, "それで、発生源の鬼ヶ淵沼からそういうガスが噴出し、どれくらいの時間をかけて村を覆うかの実験がされたんだ。",
-		   NULL, "And with Onigafuchi Swamp as its source, they were able to test how much time it would take for the gas to erupt and spread across the whole village.", Line_WaitForInput);
+		   NULL, "And with Onigafuchi Swamp as its source, they were able to test how much time it would take for the gas to erupt and spread across the whole village. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/kisya04023", 128);
 	OutputLine(NULL, "………そしたらさ。",
-		   NULL, " ...So, well.", Line_WaitForInput);
+		   NULL, "...So, well.", Line_WaitForInput);
 	PlayVoice(4, "s03/00/kisya04024", 128);
 	OutputLine(NULL, "君が気絶していたという河原。",
 		   NULL, " That river bed you were unconscious on.", Line_WaitForInput);
 	PlayVoice(4, "s03/00/kisya04025", 128);
 	OutputLine(NULL, "流れ込むんだよ、",
-		   NULL, " The gas... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>記者</color>", NULL, "<color=#f5e6d3>Reporter</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " The gas...", Line_Continue);
 	OutputLine(NULL, "ガスが。」",
-		   NULL, "It would have flowed down there.\"", Line_Normal);
+		   NULL, " It would have flowed down there.\"", Line_Normal);
 	ClearMessage();
 
 //「............よく言っている意味がわからないんですが。￥
@@ -466,7 +466,7 @@ void main()
 	ClearMessage();
 
 //　...あそこじゃ、いないはずの場所に人がいる＠死んだはずの人が生きてる＠...そんなこと、珍しいことじゃないんですよ＠......まさか、俺自身が、死んだはずなのに生きているってヤツを、...立証しようとはね、......はははははは＠あはははははははは...はっはっはっはっはっはっは！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あそこじゃ、いないはずの場所に人がいる。",
 		   NULL, "...There are people who shouldn't be exist.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101137", 128);
@@ -656,10 +656,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140101156", 128);
 	OutputLine(NULL, "「あんたも、今日からは歩いてる時、不意に立ち止まってみると面白いですよ。",
-		   NULL, "\"Today, when you're walking around, try stopping suddenly—something interesting will happen.", Line_WaitForInput);
+		   NULL, "\"Today, when you're walking around, try stopping suddenly—something interesting will happen. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140101157", 128);
 	OutputLine(NULL, "………それでね。",
-		   NULL, " ......Anyway.", Line_WaitForInput);
+		   NULL, "......Anyway.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101158", 128);
 	OutputLine(NULL, "…自分がちゃんと立ち止まったにも関わらず、",
 		   NULL, " ...If you hear an extra footstep...", Line_Continue);
@@ -669,11 +670,10 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……足音がひとつ、余計に聞こえたなら、",
-		   NULL, " even though you'd already stopped walking...... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " even though you'd already stopped walking......", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101159", 128);
 	OutputLine(NULL, "…………気をつけた方がいいですよ。",
-		   NULL, "You'd better be careful, you know.", Line_WaitForInput);
+		   NULL, " You'd better be careful, you know.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101160", 128);
 	OutputLine(NULL, "……ふふふふふ。」",
 		   NULL, " ...Huhuhuhuhu.\"", GetGlobalFlag(GLinemodeSp));
@@ -762,14 +762,14 @@ void main()
 		   NULL, "\"......I never heard the footsteps again after that day.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101168", 128);
 	OutputLine(NULL, "…だから俺にはもう、あんな恐ろしい力は残ってないだろうけど。",
-		   NULL, " ...So I don't think I have that terrible power anymore.", Line_WaitForInput);
+		   NULL, " ...So I don't think I have that terrible power anymore. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/01/140101169", 128);
 	OutputLine(NULL, "……今ここでもう一度、……あんたの死を願ってみるよ。",
-		   NULL, " ...Perhaps... right here, right now, I'll wish for you to die. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "...Perhaps... right here, right now, I'll wish for you to die.", Line_WaitForInput);
 	PlayVoice(4, "s03/01/140101170", 128);
 	OutputLine(NULL, "俺に不愉快な話ばかりをするあんたの死を。",
-		   NULL, "I'll wish for your death, for saying all these unpleasant things.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I'll wish for your death, for saying all these unpleasant things.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1086,7 +1086,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 //!sd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_Continue); }
 
 //（前原圭一の笑い声の途中で録音は止められている。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
