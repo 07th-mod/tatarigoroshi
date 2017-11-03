@@ -2073,12 +2073,12 @@ void main()
 	OutputLine(NULL, "その後半部の新シナリオ、仮称「目明し編」は現在鋭意製作中です。",
 		   NULL, " The new story to begin the second half, temporarily called Meakashi, or 'eye-opening,' is currently undergoing diligent development. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps2/s20/02/440200281", 128);
 	OutputLine(NULL, "近い将来、皆さんに公開できると思いますので、どうか楽しみにしていただければ幸いです。」",
 		   NULL, "We should be able to unveil it to you all in the near future, so I hope you'll look forward to it.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 1, "re_se_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 //「.........「鬼隠し編」!w1000「綿流し編」!w1000そして「祟殺し編」＠この３つのシナリオを重ね透かし、皆さんにはどんな真実が見えてくるでしょうか＠......推理はまとまるどころか、ますます煙に巻かれていくだけ＠　う～～ん、あははは＠レナも全然わからないです＠あははは...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -2104,14 +2104,14 @@ void main()
 		   NULL, " What truths will you all come up with after reading these three stories?", Line_WaitForInput);
 	PlayVoice(4, "s20/02/440200284", 128);
 	OutputLine(NULL, "……推理はまとまるどころか、ますます煙に巻かれていくだけ？",
-		   NULL, " ...Or will you just come up with more questions instead of theories?", Line_WaitForInput);
+		   NULL, " ...Or will you just come up with more questions instead of theories? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200285", 128);
 	OutputLine(NULL, "　う〜〜ん、あははは。",
-		   NULL, " Hmmm, ahahaha. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Hmmm, ahahaha.", Line_WaitForInput);
 	PlayVoice(4, "s20/02/440200286", 128);
 	OutputLine(NULL, "レナも全然わからないです。",
-		   NULL, "Rena has no clue either.", Line_WaitForInput);
+		   NULL, " Rena has no clue either.", Line_WaitForInput);
 	PlayVoice(4, "s20/02/440200287", 128);
 	OutputLine(NULL, "あははは…。」",
 		   NULL, " Ahahaha...\"", Line_Normal);
