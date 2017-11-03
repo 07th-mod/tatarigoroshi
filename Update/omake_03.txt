@@ -957,7 +957,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400220", 128);
 	OutputLine(NULL, "「では……うーん。",
-		   NULL, "\"Well... hmm.", Line_WaitForInput);
+		   NULL, "\"Well... hmm.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "祟殺し編の場合ですと、…叔父を殺そうと決意する辺りですかしら。」",
 		   NULL, " In Tatarigoroshi... maybe whether you decide to kill the uncle or not.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
