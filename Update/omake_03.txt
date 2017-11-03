@@ -1978,18 +1978,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200276", 128);
 	OutputLine(NULL, "「『ひぐらしのなく頃に』も、今回の祟殺し編で３作目。",
-		   NULL, "\"With Tatarigoroshi, we're already at the third game in the Higurashi: When They Cry series.", Line_WaitForInput);
+		   NULL, "\"With Tatarigoroshi, we're already at the third game in the Higurashi: When They Cry series. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200277", 128);
 	OutputLine(NULL, "ミステリアスな謎を次々と提示してきた前半部はここで折り返しになり、",
-		   NULL, " This first half presented a lot of strange and exciting mysteries, but starting next time... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "This first half presented a lot of strange and exciting mysteries, but starting next time...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 
 //次回からはこれまでの謎を解決していく後半部、究明編（仮称）のスタートとなります。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/02/440200278b", 128);
 	OutputLine(NULL, "次回からはこれまでの謎を解決していく後半部、究明編（仮称）のスタートとなります。」",
-		   NULL, "the mysteries will start to be solved in the second half, marking the start of the Investigation Arc (temporary name).\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " the mysteries will start to be solved in the second half, marking the start of the Investigation Arc (temporary name).\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
