@@ -1932,7 +1932,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600124", 128);
 	OutputLine(NULL, "「まー、圭ちゃんの立ち絵なんてディスク容量の無駄遣いもいいとこですからね。",
-		   NULL, "\"Well, portraits of Kei-chan would be a big waste of disc space.", Line_WaitForInput);
+		   NULL, "\"Well, portraits of Kei-chan would be a big waste of disc space.", Line_Continue);
+	Wait(1000);
 	OutputLine(NULL, "ディスク１枚に納まらなくなったら、バッサリ没になる可能性激大ですけど。」",
 		   NULL, " If it couldn't all fit on one disc, there's a pretty high chance he'd be the first one dropped.\"", Line_Normal);
 	ClearMessage();
