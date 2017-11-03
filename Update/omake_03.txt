@@ -1838,7 +1838,7 @@ void main()
 	DrawBustshot( 2, "si_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「じゃあ圭ちゃん、私と一緒に言いましょうね＠せーの！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「じゃあ圭ちゃん、私と一緒に言いましょうね。",
 		   NULL, "\"Okay, Kei-chan, let's say it at the same time.", Line_WaitForInput);
@@ -1863,7 +1863,7 @@ void main()
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>＆<color=#956f6e>圭一</color>", NULL, "<color=#5ec69a>Shion</color> & <color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「「次回のシナリオの主人公は園崎詩音になりました〜〜！！」」",
 		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_Continue);
