@@ -2007,7 +2007,8 @@ void main()
 		   NULL, " You'd all better think up good signature phrases!", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600131", 128);
 	OutputLine(NULL, "　あなたを、犯人です。",
-		   NULL, " Like...", Line_WaitForInput);
+		   NULL, " Like...", Line_Continue);
+	WaitToFinishVoicePlaying(4);
 	PlayVoice(4, "s20/06/440600132", 128);
 	OutputLine(NULL, "みたいな〜☆」",
 		   NULL, " 'You, sir, are the criminal'☆.\"", Line_Continue);
