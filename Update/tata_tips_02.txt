@@ -661,17 +661,11 @@ void main()
 	DrawScene( "bg_109", 400 );
 
 //「......北条～！＠　あんな罠を仕掛けるのは北条しかいないー！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "", 128);
-	OutputLine(NULL, "「……北条〜！！",
-		   NULL, "\"...Houjou~!!", Line_WaitForInput);
-	OutputLine(NULL, "　あんな罠を仕掛けるのは北条しかいないー！！！」",
-		   NULL, " You're the only one who could have set up a trick like that!!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sa_se_bi_a1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_tips_02_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_tips_02_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 //「失礼でございますわね！＠　どこに証拠がございますの＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -728,15 +722,10 @@ void main()
 	ClearMessage();
 
 //「「天誅～～！！！」」/
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「「天誅〜〜！！！」」",
-		   NULL, "\"\"Payback~~!!!\"\"", Line_ContinueAfterTyping);
-
-	PlaySE( 3, "wa_003", 128, 64 );
-
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_tips_02_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_tips_02_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 
 	DisableWindow();
