@@ -34,9 +34,9 @@ void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "しかし、そんな強がりも二人がかり、しかも真っ白けの姿で無言のまま、……",
-		   NULL, "<missing translation>", Line_WaitForInput);
+		   NULL, "That being said, these two pretending to be tough, not only that but standing still completely blank and silent...", Line_WaitForInput);
 	OutputLine(NULL, "というより、喋りたくても口の中にまで石灰が詰まって、モゴモゴと喋れない様子で迫りくるさまは、……確かにホラ、沙都子ながらに怖いかも。",
-		   NULL, "<missing translation>", GetGlobalFlag(GLinemodeSp));
+		   NULL, "But anyway, ignoring what happened before, having someone chase you with their mouth full of lime in such a way they can't even speak... Yeah, that would be scary even for Satoko.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
