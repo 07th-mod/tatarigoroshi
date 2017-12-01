@@ -1012,6 +1012,9 @@ void main()
 		   NULL, "...None of the troopers would answer me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+
+	ModEnableNVLModeInADVMode();
+
 	DrawScene( "bg_101", 400 );
 	FadeOutBGM( 1, 1000, TRUE );
 
@@ -1567,6 +1570,9 @@ void main()
 	}
 	ClearMessage();
 	DisableWindow();
+
+	ModDisableNVLModeInADVMode();
+
 	DrawSceneWithMask( "bg_101", "up", 0, 0, 1300 );
 
 //「..................なんですか、!w800...............それ。＠
