@@ -1021,7 +1021,7 @@ void main()
 //　運転席でさっき無線とやり取りをしていた隊員が、車のラジオを付けた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　運転席でさっき無線とやり取りをしていた隊員が、車のラジオを付けた。",
-		   NULL, "The one in the driver's seat talking on his own radio turned on the vehicle's.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The one in the driver's seat talking on his own radio turned on the vehicle's.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1040,22 +1040,12 @@ void main()
 //『...より首相官邸で行なわれました＠記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが＠前例のない未曾有の大災害に直結したのではないかとの質問に対し奥野官房長官は、次のようにコメントしました。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400001", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『…より首相官邸で行なわれました。",
-			   NULL, "<size=-2>\"...was conducted at the prime minister's office.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが、",
-			   NULL, "<size=-2> In regards to questions from the press that the SDF not responding to the disaster promptly", Line_Continue);
-		OutputLine(NULL, "前例のない未曾有の大災害に直結したのではないかとの質問に対し奥野官房長官は、次のようにコメントしました。』",
-			   NULL, "<size=-2> was directly related to this unprecedented, unheard-of catastrophe, Chief Cabinet Secretary Okuno had this to say.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『…より首相官邸で行なわれました。",
-			   NULL, "\"...was conducted at the prime minister's office.", Line_Continue);
-		OutputLine(NULL, "記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが、",
-			   NULL, " In regards to questions from the press that the SDF not responding to the disaster promptly", Line_Continue);
-		OutputLine(NULL, "前例のない未曾有の大災害に直結したのではないかとの質問に対し奥野官房長官は、次のようにコメントしました。』",
-			   NULL, " was directly related to this unprecedented, unheard-of catastrophe, Chief Cabinet Secretary Okuno had this to say.\"", Line_Normal);
-	}
+	OutputLine(NULL, "『…より首相官邸で行なわれました。",
+		   NULL, "\"...was conducted at the prime minister's office.", Line_Continue);
+	OutputLine(NULL, "記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが、",
+		   NULL, " In regards to questions from the press that the SDF not responding to the disaster promptly", Line_Continue);
+	OutputLine(NULL, "前例のない未曾有の大災害に直結したのではないかとの質問に対し奥野官房長官は、次のようにコメントしました。』",
+		   NULL, " was directly related to this unprecedented, unheard-of catastrophe, Chief Cabinet Secretary Okuno had this to say.\"", Line_Normal);
 	ClearMessage();
 
 //『～でありまして...、県知事からの派遣要請を受けて、迅速に対応したものと思っております。￥
@@ -1072,32 +1062,21 @@ void main()
 		   NULL, "\"According to him, the SDF was prompt to respond to the crisis after receiving their orders.", Line_Continue);
 	Wait(1000);
 	OutputLine(NULL, "むしろ県側の事態把握に遅れがあった可能性を示唆しました。",
-		   NULL, " He implied that it was the prefecture's responsibility for taking too long to comprehend the situation.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " He implied that it was the prefecture's responsibility for taking too long to comprehend the situation.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか＠そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか＠今後の究明が待たれています。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400002_1", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか。",
-			   NULL, "<size=-5>When did the governor who requested the SDF's dispatch actually become aware of the outbreak of such an unprecedented catastrophe?", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか。",
-			   NULL, "<size=-5> And did he not invite further damage because of the time lost before he sent the request for disaster relief—in other words, because of the bureaucracy?", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "今後の究明が待たれています。』",
-			   NULL, "<size=-5> We are awaiting further investigation into the matter.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか。",
-			   NULL, "When did the governor who requested the SDF's dispatch actually become aware of the outbreak of such an unprecedented catastrophe?", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか。",
-			   NULL, " And did he not invite further damage because of the time lost before he sent the request for disaster relief—in other words, because of the bureaucracy?", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "今後の究明が待たれています。』",
-			   NULL, " We are awaiting further investigation into the matter.\"", Line_Normal);
-	}
+	OutputLine(NULL, "　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか。",
+		   NULL, "When did the governor who requested the SDF's dispatch actually become aware of the outbreak of such an unprecedented catastrophe?", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか。",
+		   NULL, " And did he not invite further damage because of the time lost before he sent the request for disaster relief—in other words, because of the bureaucracy?", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "今後の究明が待たれています。』",
+		   NULL, " We are awaiting further investigation into the matter.\"", Line_Normal);
 	ClearMessage();
 
 //『首相官邸より報道部の緒方記者がお送りしました＠さて、ここでもう一度、災害発生からの行政の対応を振り返ります。￥
@@ -1116,20 +1095,20 @@ void main()
 //　６月２１日から２２日にかけての深夜＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　６月２１日から２２日にかけての深夜。",
-		   NULL, "In the middle of the night, between June 21 and June 22.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "In the middle of the night, between June 21 and June 22.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　鹿骨市雛見沢村にて大規模な災害が発生＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鹿骨市雛見沢村にて大規模な災害が発生。",
-		   NULL, "A large-scale disaster broke out in Hinamizawa Village, Shishibone.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "A large-scale disaster broke out in Hinamizawa Village, Shishibone.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　詳細はまだ究明されていないが、雛見沢村地区の某所から猛毒の火山性ガスが噴出＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詳細はまだ究明されていないが、雛見沢村地区の某所から猛毒の火山性ガスが噴出。",
-		   NULL, "The details have not yet been investigated, but there was an eruption of volcanic gas from somewhere in the Hinamizawa area.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The details have not yet been investigated, but there was an eruption of volcanic gas from somewhere in the Hinamizawa area.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1150,25 +1129,25 @@ void main()
 	OutputLine(NULL, "　時刻は深夜。",
 		   NULL, "It happened in the middle of the night.", Line_WaitForInput);
 	OutputLine(NULL, "午前２時〜４時。",
-		   NULL, " 2:00 to 4:00 AM.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " 2:00 to 4:00 AM.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　雛見沢村の全戸、全世帯が罹災＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢村の全戸、全世帯が罹災。",
-		   NULL, "Every home and household in the village was afflicted.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Every home and household in the village was afflicted.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　住民のほとんどは睡眠中で、災害に気付くことなく死亡したと推定＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　住民のほとんどは睡眠中で、災害に気付くことなく死亡したと推定。",
-		   NULL, "With most of the residents asleep, it is thought that all died without noticing the crisis.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "With most of the residents asleep, it is thought that all died without noticing the crisis.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　深夜の就寝中の大災害が、その発覚を遅れさせたのである＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　深夜の就寝中の大災害が、その発覚を遅れさせたのである。",
-		   NULL, "The catastrophe striking in the middle of the night caused its detection to come too late.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The catastrophe striking in the middle of the night caused its detection to come too late.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1181,25 +1160,25 @@ void main()
 //　午前３時＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前３時。",
-		   NULL, "3:00 AM.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "3:00 AM.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　興宮の新聞販売店が、朝刊を運ぶ車を雛見沢村の出張所に送っていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　興宮の新聞販売店が、朝刊を運ぶ車を雛見沢村の出張所に送っていた。",
-		   NULL, "A news dealer's shop in Okinomiya sent a vehicle carrying the morning newspaper to its branch office in Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "A news dealer's shop in Okinomiya sent a vehicle carrying the morning newspaper to its branch office in Hinamizawa.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　いつもなら到着すると伝えてくる事務連絡の電話が、その日に限り、なかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつもなら到着すると伝えてくる事務連絡の電話が、その日に限り、なかった。",
-		   NULL, "Usually the shop would be contacted upon the vehicle's arrival, but this morning, that didn't happen.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Usually the shop would be contacted upon the vehicle's arrival, but this morning, that didn't happen.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　新聞販売店店主は電話を繰り返すが、応答がない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　新聞販売店店主は電話を繰り返すが、応答がない。",
-		   NULL, "The news dealer's shop made repeated calls, but got no response.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The news dealer's shop made repeated calls, but got no response.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　様子を見てくるように、長男を向かわせたが、これも音信不通になった...￥
@@ -1211,37 +1190,26 @@ void main()
 //『...非情に悔やまれています＠この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう＠少なくとも、村全滅という惨劇は免れた可能性があります。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400004", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『…非情に悔やまれています。",
-			   NULL, "<size=-2>\"...It is extremely regrettable.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう。",
-			   NULL, "<size=-2> If they had contacted the police or fire department at this point, it is highly possible the situation would have turned out more positively.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "少なくとも、村全滅という惨劇は免れた可能性があります。』",
-			   NULL, "<size=-2> At the very least, it's possible that a portion of the village might have been saved from tragic annihilation.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『…非情に悔やまれています。",
-			   NULL, "\"...It is extremely regrettable.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう。",
-			   NULL, " If they had contacted the police or fire department at this point, it is highly possible the situation would have turned out more positively.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "少なくとも、村全滅という惨劇は免れた可能性があります。』",
-			   NULL, " At the very least, it's possible that a portion of the village might have been saved from tragic annihilation.\"", Line_Normal);
-	}
+	OutputLine(NULL, "『…非情に悔やまれています。",
+		   NULL, "\"...It is extremely regrettable.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう。",
+		   NULL, " If they had contacted the police or fire department at this point, it is highly possible the situation would have turned out more positively.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "少なくとも、村全滅という惨劇は免れた可能性があります。』",
+		   NULL, " At the very least, it's possible that a portion of the village might have been saved from tragic annihilation.\"", Line_Normal);
 	ClearMessage();
 
 //　午前６時＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前６時。",
-		   NULL, "6:00 AM.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "6:00 AM.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　雛見沢村地区に近い住民から、卵の腐乱臭、めまい・吐き気・頭痛などを訴える１１９番通報が続々と入った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢村地区に近い住民から、卵の腐乱臭、めまい・吐き気・頭痛などを訴える１１９番通報が続々と入った。",
-		   NULL, "Residents in areas in the same region began continuously calling 119 to report the smell of rotten eggs, dizziness, nausea, and headaches.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Residents in areas in the same region began continuously calling 119 to report the smell of rotten eggs, dizziness, nausea, and headaches.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　消防司令部は同様の通報がが同時多発的に、限定された地域から発生したことから＠化学薬品を積載したトラック等の事故によるものではないかと推測、地元警察に通報した￥
@@ -1255,13 +1223,13 @@ void main()
 //　午前６時半＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前６時半。",
-		   NULL, "6:30 AM.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "6:30 AM.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　雛見沢村地区に巡回に向かった警邏車から、卵の腐乱臭を伝える連絡を最後に通信途絶＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢村地区に巡回に向かった警邏車から、卵の腐乱臭を伝える連絡を最後に通信途絶。",
-		   NULL, "Contact was lost with a patrol car on duty in the Hinamizawa area after the officer reported the smell of rotten eggs.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Contact was lost with a patrol car on duty in the Hinamizawa area after the officer reported the smell of rotten eggs.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　地元警察は致死性の高いガスによる広域災害の可能性があるとして、午前７時１５分、県と県警本部に通報した￥
@@ -1273,18 +1241,13 @@ void main()
 //　午前８時＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前８時。",
-		   NULL, "8:00 AM.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "8:00 AM.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　知事は近県へ視察旅行中であったため、規定に従い県環境防災部長が臨時の本部長となり災害対策本部を設置した＠
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　知事は近県へ視察旅行中であったため、規定に従い県環境防災部長が臨時の本部長となり災害対策本部を設置した。",
-			   NULL, "<size=-2>The governor was travelling to nearby prefectures for inspection, so in accordance with regulations, the prefectural environmental disaster prevention chief was provisionally escalated to director-general and set up a disaster countermeasures office.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　知事は近県へ視察旅行中であったため、規定に従い県環境防災部長が臨時の本部長となり災害対策本部を設置した。",
-			   NULL, "The governor was travelling to nearby prefectures for inspection, so in accordance with regulations, the prefectural environmental disaster prevention chief was provisionally escalated to director-general and set up a disaster countermeasures office.", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　知事は近県へ視察旅行中であったため、規定に従い県環境防災部長が臨時の本部長となり災害対策本部を設置した。",
+		   NULL, "The governor was travelling to nearby prefectures for inspection, so in accordance with regulations, the prefectural environmental disaster prevention chief was provisionally escalated to director-general and set up a disaster countermeasures office.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　だが、知事への連絡が付かず、その対応は遅れに遅れた￥
@@ -1294,34 +1257,21 @@ void main()
 	ClearMessage();
 
 //『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400005", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_Continue);
-		OutputLine(NULL, "『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています。",
-			   NULL, "<size=-2>\"As has recently been pointed out by citizens' groups, his trip with honorary Diet members to inspect other prefectures was based solely on good relations, and it's rumored they preoccupied themselves with a drinking party.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています。",
-			   NULL, "\"As has recently been pointed out by citizens' groups, his trip with honorary Diet members to inspect other prefectures was based solely on good relations, and it's rumored they preoccupied themselves with a drinking party.", GetGlobalFlag(GLinemodeSp));
-	}
+	OutputLine(NULL, "『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています。",
+		   NULL, "\"As has recently been pointed out by citizens' groups, his trip with honorary Diet members to inspect other prefectures was based solely on good relations, and it's rumored they preoccupied themselves with a drinking party.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです＠環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400005_1", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです。",
-			   NULL, "<size=-2>Sources closer to him claimed the governor had been drinking all night, and had gone to sleep in a drunken state.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。』",
-			   NULL, "<size=-2> He was completely drunk when the environmental chief phoned him as well, and apparently he could not get him to pay any attention to the matter.\"", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです。",
-			   NULL, "Sources closer to him claimed the governor had been drinking all night, and had gone to sleep in a drunken state.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。』",
-			   NULL, " He was completely drunk when the environmental chief phoned him as well, and apparently he could not get him to pay any attention to the matter.\"", GetGlobalFlag(GLinemodeSp));
-	}
+	OutputLine(NULL, "　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです。",
+		   NULL, "Sources closer to him claimed the governor had been drinking all night, and had gone to sleep in a drunken state.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。』",
+		   NULL, " He was completely drunk when the environmental chief phoned him as well, and apparently he could not get him to pay any attention to the matter.\"", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　こうして行政は、知事が事態を把握し、酔いから醒めるまでの約１時間の間、情報収集に徹するのみとなってしまう...￥
@@ -1333,31 +1283,23 @@ void main()
 //『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう＠また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400006", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう。",
-			   NULL, "<size=-7>\"Though not as extreme as the governor's case, the environmental chief who became director-general in the governor's absence will likely also be questioned about his negligence.", Line_Continue);
-		Wait(2000);
-		OutputLine(NULL, "また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。』",
-			   NULL, "<size=-7> In addition, without any procedures in place on the prefecture's side that predicted catastrophes this massive, they would always react too late, and that ended up being fatal.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう。",
-			   NULL, "\"Though not as extreme as the governor's case, the environmental chief who became director-general in the governor's absence will likely also be questioned about his negligence.", Line_Continue);
-		Wait(2000);
-		OutputLine(NULL, "また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。』",
-			   NULL, " In addition, without any procedures in place on the prefecture's side that predicted catastrophes this massive, they would always react too late, and that ended up being fatal.\"", Line_Normal);
-	}
+	OutputLine(NULL, "『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう。",
+		   NULL, "\"Though not as extreme as the governor's case, the environmental chief who became director-general in the governor's absence will likely also be questioned about his negligence.", Line_Continue);
+	Wait(2000);
+	OutputLine(NULL, "また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。』",
+		   NULL, " In addition, without any procedures in place on the prefecture's side that predicted catastrophes this massive, they would always react too late, and that ended up being fatal.\"", Line_Normal);
 	ClearMessage();
 
 //　午前９時１２分＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前９時１２分。",
-		   NULL, "9:12 AM.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "9:12 AM.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　県警本部の助言を受け、県知事は自衛隊に災害派遣を要請＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　県警本部の助言を受け、県知事は自衛隊に災害派遣を要請。",
-		   NULL, "On the advice of the prefectural police, the governor requested a disaster relief mission from the SDF.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On the advice of the prefectural police, the governor requested a disaster relief mission from the SDF.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　ガス防護の装備を持った化学防護隊が到着した時には、災害発生から実に８時間以上が経過していた...￥
@@ -1379,13 +1321,13 @@ void main()
 //　雛見沢村地区の全世帯が、全滅＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢村地区の全世帯が、全滅。",
-		   NULL, "All households in the Hinamizawa Village region were wiped out.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "All households in the Hinamizawa Village region were wiped out.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　犠牲者は１０００人以上＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　犠牲者は１０００人以上。",
-		   NULL, "There were over one thousand victims.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "There were over one thousand victims.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　自衛隊が現在、被害状況を確認中だが、その結果さらに犠牲者数は増えるものと予想される...￥
@@ -1397,26 +1339,18 @@ void main()
 //『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております＠...先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400008", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております。",
-			   NULL, "<size=-2>\"Here with us in the studio today is Dr. Fujiwara, a professor at ____ University who is well-acquainted with volcanic disasters.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "…先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。』",
-			   NULL, "<size=-2> ...Doctor, can such a sudden and horrible outburst of poisonous gas actually happen?\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております。",
-			   NULL, "\"Here with us in the studio today is Dr. Fujiwara, a professor at ____ University who is well-acquainted with volcanic disasters.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "…先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。』",
-			   NULL, " ...Doctor, can such a sudden and horrible outburst of poisonous gas actually happen?\"", Line_Normal);
-	}
+	OutputLine(NULL, "『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております。",
+		   NULL, "\"Here with us in the studio today is Dr. Fujiwara, a professor at ____ University who is well-acquainted with volcanic disasters.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "…先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。』",
+		   NULL, " ...Doctor, can such a sudden and horrible outburst of poisonous gas actually happen?\"", Line_Normal);
 	ClearMessage();
 
 //『火口部に限定して申し上げれば、決して珍しいことではありません＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>藤原</color>", NULL, "<color=#f5e6d3>Fujiwara</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/fuji0400001", 128);
 	OutputLine(NULL, "『火口部に限定して申し上げれば、決して珍しいことではありません。",
-		   NULL, "\"It isn't at all unusual for this to happen right around craters, at least.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"It isn't at all unusual for this to happen right around craters, at least.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1434,7 +1368,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400009", 128);
 	OutputLine(NULL, "『では今回、雛見沢村を襲った卵の腐乱臭のするガスというのも、火口部では一般的なガスということですか？』",
-		   NULL, "\"Does this mean the rotten egg smell that visited Hinamizawa Village was the normal sort of gas from volcanic craters?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Does this mean the rotten egg smell that visited Hinamizawa Village was the normal sort of gas from volcanic craters?\"", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1455,32 +1389,21 @@ void main()
 		   NULL, "\"Hinamizawa Village is very far away from the craters of any volcanoes.", Line_Continue);
 	Wait(1000);
 	OutputLine(NULL, "そういった火口部でない場所にもその硫化水素が発生することがあるのでしょうか？』",
-		   NULL, " Can hydrogen sulfide be generated even from a place not close to a crater?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Can hydrogen sulfide be generated even from a place not close to a crater?\"", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが......＠外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります＠極めて希少な例ですが、必ずしも火口部でなくても発生の可能性はあるということです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>藤原</color>", NULL, "<color=#f5e6d3>Fujiwara</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/fuji0400004", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが……。",
-			   NULL, "<size=-2>\"I don't know all the details, so I can't say anything concrete...", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります。",
-			   NULL, "<size=-2> But in other countries, there are records of gas eruptions due to magma buildup under hot springs.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "極めて希少な例ですが、必ずしも火口部でなくても発生の可能性はあるということです。』",
-			   NULL, "<size=-2> It's an extremely rare event, but it is possible for such a thing to happen even in a region not near craters.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが……。",
-			   NULL, "\"I don't know all the details, so I can't say anything concrete...", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります。",
-			   NULL, " But in other countries, there are records of gas eruptions due to magma buildup under hot springs.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "極めて希少な例ですが、必ずしも火口部でなくても発生の可能性はあるということです。』",
-			   NULL, " It's an extremely rare event, but it is possible for such a thing to happen even in a region not near craters.\"", Line_Normal);
-	}
+	OutputLine(NULL, "『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが……。",
+		   NULL, "\"I don't know all the details, so I can't say anything concrete...", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります。",
+		   NULL, " But in other countries, there are records of gas eruptions due to magma buildup under hot springs.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "極めて希少な例ですが、必ずしも火口部でなくても発生の可能性はあるということです。』",
+		   NULL, " It's an extremely rare event, but it is possible for such a thing to happen even in a region not near craters.\"", Line_Normal);
 	ClearMessage();
 
 //『先生、ありがとうございました＠...今、防衛庁から発表があった模様です＠防衛庁の森川さん？￥
@@ -1499,32 +1422,21 @@ void main()
 //『ハイ、防衛庁です＠先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて＠陸上自衛隊化学学校での分析の結果、二酸化炭素と硫化水素の混合ガスによるものだったと発表しました。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>森川</color>", NULL, "<color=#f5e6d3>Morikawa</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/mori0400001", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『ハイ、防衛庁です。",
-			   NULL, "<size=-2>\"Yes. I'm at the Japan Defense Agency.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて、",
-			   NULL, "<size=-2> The agency has just made an announcement regarding the source of the Hinamizawa Village gas disaster.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "陸上自衛隊化学学校での分析の結果、二酸化炭素と硫化水素の混合ガスによるものだったと発表しました。』",
-			   NULL, "<size=-2> Analysis from the Ground Self-Defense Force's Department of Chemistry has found that the gas was a mixture of carbon dioxide and hydrogen sulfide.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『ハイ、防衛庁です。",
-			   NULL, "\"Yes. I'm at the Japan Defense Agency.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて、",
-			   NULL, " The agency has just made an announcement regarding the source of the Hinamizawa Village gas disaster.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "陸上自衛隊化学学校での分析の結果、二酸化炭素と硫化水素の混合ガスによるものだったと発表しました。』",
-			   NULL, " Analysis from the Ground Self-Defense Force's Department of Chemistry has found that the gas was a mixture of carbon dioxide and hydrogen sulfide.\"", Line_Normal);
-	}
+	OutputLine(NULL, "『ハイ、防衛庁です。",
+		   NULL, "\"Yes. I'm at the Japan Defense Agency.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて、",
+		   NULL, " The agency has just made an announcement regarding the source of the Hinamizawa Village gas disaster.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "陸上自衛隊化学学校での分析の結果、二酸化炭素と硫化水素の混合ガスによるものだったと発表しました。』",
+		   NULL, " Analysis from the Ground Self-Defense Force's Department of Chemistry has found that the gas was a mixture of carbon dioxide and hydrogen sulfide.\"", Line_Normal);
 	ClearMessage();
 
 //『森川さん、そのガスは依然として噴出を続け、周囲に拡大しているのでしょうか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400012", 128);
 	OutputLine(NULL, "『森川さん、そのガスは依然として噴出を続け、周囲に拡大しているのでしょうか？』",
-		   NULL, "\"Miss Morikawa, do you know whether the gas is still erupting or spreading to nearby areas?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Miss Morikawa, do you know whether the gas is still erupting or spreading to nearby areas?\"", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1535,7 +1447,7 @@ void main()
 		   NULL, "\"According to the SDF's 9th division, who are currently engaged in a rescue operation at Hinamizawa Village, the gas density is steadily decreasing.", Line_Continue);
 	Wait(1000);
 	OutputLine(NULL, "これ以上の被害の拡大はないと発表しました。",
-		   NULL, " They've announced that the damage will not spread.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " They've announced that the damage will not spread.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1549,25 +1461,14 @@ void main()
 //『防衛庁から報道部の森川記者がお伝えしました＠続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします＠現在、避難所のひとつとなっている下篠崎小学校に報道部の......、ザザ、......者が...ってい、...ザザ...ザ、￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s03/00/ana0400013", 128);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "『防衛庁から報道部の森川記者がお伝えしました。",
-			   NULL, "<size=-2>\"That was Morikawa from the Japan Defense Agency.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします。",
-			   NULL, "<size=-2> And now we have a report on the state of those who have been made to evacuate the Okinomiya area.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "現在、避難所のひとつとなっている下篠崎小学校に報道部の……、ザザ、……者が…ってい、…ザザ…ザ、』",
-			   NULL, "<size=-2> Shimoshinozaki Elementary School is one of the evacuation sites, and we currently have a reporter on... bzzz... scene... bzzz... bzzz...\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "『防衛庁から報道部の森川記者がお伝えしました。",
-			   NULL, "\"That was Morikawa from the Japan Defense Agency.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします。",
-			   NULL, " And now we have a report on the state of those who have been made to evacuate the Okinomiya area.", Line_Continue);
-		Wait(1000);
-		OutputLine(NULL, "現在、避難所のひとつとなっている下篠崎小学校に報道部の……、ザザ、……者が…ってい、…ザザ…ザ、』",
-			   NULL, " Shimoshinozaki Elementary School is one of the evacuation sites, and we currently have a reporter on... bzzz... scene... bzzz... bzzz...\"", Line_Normal);
-	}
+	OutputLine(NULL, "『防衛庁から報道部の森川記者がお伝えしました。",
+		   NULL, "\"That was Morikawa from the Japan Defense Agency.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします。",
+		   NULL, " And now we have a report on the state of those who have been made to evacuate the Okinomiya area.", Line_Continue);
+	Wait(1000);
+	OutputLine(NULL, "現在、避難所のひとつとなっている下篠崎小学校に報道部の……、ザザ、……者が…ってい、…ザザ…ザ、』",
+		   NULL, " Shimoshinozaki Elementary School is one of the evacuation sites, and we currently have a reporter on... bzzz... scene... bzzz... bzzz...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
