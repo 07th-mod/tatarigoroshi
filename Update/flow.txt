@@ -32,6 +32,22 @@ void Title()
 	SetValidityOfSaving( FALSE );
 
 	DrawScene("white", 1000);
+	
+	if (GetGlobalFlag(GADVMode) == 1)
+	{
+	if (GetGlobalFlag(GLinemodeSp) == 2)
+		{
+		ModDisableNVLModeInADVMode();
+		DisableWindow();
+		}
+	} else {
+	StoreValueToLocalWork(NVL_in_ADV, 0);
+	}
+	
+	if (LoadValueFromLocalWork(DisableModHotkey) == 1)
+	{
+	StoreValueToLocalWork(DisableModHotkey, 0);
+	}
 
 	PlayBGM( 2, "lsys11", 128, 0 );
 
