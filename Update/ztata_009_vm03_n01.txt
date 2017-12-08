@@ -5,10 +5,10 @@ void main()
 void dialog01()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/08/140800001", 128);
+	ModPlayVoiceLS(4, 8, "s03/08/140800001", 128);
 	OutputLine(NULL, "「こんにちは、圭一くん。",
 		   NULL, "\"Good evening, Keiichi-kun.", Line_WaitForInput);
-	PlayVoice(4, "s03/08/140800001_1", 128);
+	ModPlayVoiceLS(4, 8, "s03/08/140800001_1", 128);
 	OutputLine(NULL, "こんなところで会うとわね」",
 		   NULL, " Didn't think we would meet here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -18,7 +18,7 @@ void dialog02()
 {
 //「...............そうですけど。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/01/140100246", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100246", 128);
 	OutputLine(NULL, "「……………富竹さん？」",
 		   NULL, "\"Tomitake-san?\"", Line_Normal);
 	ClearMessage();
@@ -35,20 +35,20 @@ void dialog03()
 //「僕は富竹＠フリーカメラマンさ＠専門は野鳥と風景＠まだまだ無名だけどね。＠
 //　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/08/140800012", 128);
+	ModPlayVoiceLS(4, 8, "s03/08/140800012", 128);
 	OutputLine(NULL, "「いやぁ、今日もいい天気でよかったよ。",
 		   NULL, "\"Hm, I'm really glad the weather is looking so good today.", Line_WaitForInput);
-	PlayVoice(4, "s03/08/140800013", 128);
+	ModPlayVoiceLS(4, 8, "s03/08/140800013", 128);
 	OutputLine(NULL, "天気予報だと寒冷前線が近づいてるって言ってたけど、まだ大丈夫みたいだね」",
 		   NULL, " The weather forecast said that a cold front is coming very soon, but it still looks fine here.\"", Line_Normal);
 	ClearMessage();
 
 //「前原です＠...まぁその、よろしく。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/01/140100251", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100251", 128);
 	OutputLine(NULL, "「そうですね。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
-	PlayVoice(4, "s03/01/140100252", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100252", 128);
 	OutputLine(NULL, "でもまだ、梅雨明けはしてないみたいですよ」",
 		   NULL, " But looks like the rainy season isn't over yet.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -58,10 +58,10 @@ void dialog03()
 //「前原くんかい＠　よろしくね！＠
 //　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/08/140800014", 128);
+	ModPlayVoiceLS(4, 8, "s03/08/140800014", 128);
 	OutputLine(NULL, "「うーん、明日は遠出するつもりだったんだけど……。",
 		   NULL, "\"Yep, I was planning to go out tomorrow but...", Line_WaitForInput);
-	PlayVoice(4, "s03/08/140800015", 128);
+	ModPlayVoiceLS(4, 8, "s03/08/140800015", 128);
 	OutputLine(NULL, "ちょっと、計画を立て直した方がいいかもしれないなぁ」",
 		   NULL, " I guess it's not a bad idea to make some changes to my plan.\"", Line_Normal);
 }

@@ -9,13 +9,13 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/10/141000143", 128);
+	ModPlayVoiceLS(4, 10, "s03/10/141000143", 128);
 	OutputLine(NULL, "「変わった質問をしましたね。",
 		   NULL, "\"That was a strange question.", Line_WaitForInput);
-	PlayVoice(4, "s03/10/141000144", 128);
+	ModPlayVoiceLS(4, 10, "s03/10/141000144", 128);
 	OutputLine(NULL, "アルコールの飲みすぎで昨夜の記憶がありませんか？",
 		   NULL, " Did you have too much to drink and forget about what happened last night?", Line_WaitForInput);
-	PlayVoice(4, "s03/10/141000145", 128);
+	ModPlayVoiceLS(4, 10, "s03/10/141000145", 128);
 	OutputLine(NULL, "　未成年なのに、いけない人ですねー。」",
 		   NULL, " And underaged, too—you bad child.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

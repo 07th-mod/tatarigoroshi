@@ -575,7 +575,7 @@ void main()
 //　......悔しかった＠
 //　......想いでは誰にも負けないと思っていた＠...それに関しては、監督にだって負けないと思っていた＠.........なのに...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/01/140100235", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100235", 128);
 	OutputLine(NULL, "「…………そんなにも、………子供って無力なのかよ……？」",
 		   NULL, "\"......Are kids... are they really this powerless...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -610,17 +610,17 @@ void main()
 //「起きてたの＠　さっきからご飯ってずっと呼んでるわよ？＠
 //「......あ、...ん、今行く...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/00/142700001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/142700001", 128);
 	OutputLine(NULL, "「起きてたの？",
 		   NULL, "\"Were you awake?", Line_WaitForInput);
-	PlayVoice(4, "s03/00/142700002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/142700002", 128);
 	OutputLine(NULL, "　さっきからご飯ってずっと呼んでるわよ？」",
 		   NULL, " I've been calling you for dinner for a while.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/01/140100236", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100236", 128);
 	OutputLine(NULL, "「……あ、…ん、今行く…。」",
 		   NULL, "\"...Oh... Yeah, I'm coming...\"", Line_Normal);
 	ClearMessage();
@@ -955,40 +955,40 @@ void main()
 //「...ボロボロ落として汚すぞ＠食事は食卓で食べなさい。＠
 //「............ん、...ごめん...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/00/142700003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/142700003", 128);
 	OutputLine(NULL, "「どうしたの圭一？",
 		   NULL, "\"What's wrong, Keiichi?", Line_WaitForInput);
-	PlayVoice(4, "s03/00/142700004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/142700004", 128);
 	OutputLine(NULL, "　ご飯は座って食べなさい。」",
 		   NULL, " Sit down and eat your food.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/01/140100237", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100237", 128);
 	OutputLine(NULL, "「ん、うん。",
 		   NULL, "\"Um, well.", Line_WaitForInput);
-	PlayVoice(4, "s03/01/140100238", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100238", 128);
 	OutputLine(NULL, "…ちょっと気分が変えたくなってさ。",
 		   NULL, " ...I'm kind of not in a good mood.", Line_WaitForInput);
-	PlayVoice(4, "s03/01/140100239", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100239", 128);
 	OutputLine(NULL, "…自分の部屋で食べてもいいかな。」",
 		   NULL, " ...Could I eat up in my room?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/00/142600001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/142600001", 128);
 	OutputLine(NULL, "「…ボロボロ落として汚すぞ。",
 		   NULL, "\"...You'll make a mess.", Line_WaitForInput);
-	PlayVoice(4, "s03/00/142600002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/142600002", 128);
 	OutputLine(NULL, "食事は食卓で食べなさい。」",
 		   NULL, " Eat dinner at the dinner table.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s03/01/140100240", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140100240", 128);
 	OutputLine(NULL, "「…………ん、…ごめん…。」",
 		   NULL, "\"......Mm... sorry...\"", Line_Normal);
 	ClearMessage();

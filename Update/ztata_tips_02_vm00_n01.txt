@@ -9,14 +9,14 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>富田＆岡村</color>", NULL, "<color=#f5e6d3>Tomita and Okamura</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "", 128);
+	ModPlayVoiceLS(4, 0, "", 128);
 	OutputLine(NULL, "「……北条〜！！",
 		   NULL, "\"...Houjou~!!", Line_WaitForInput);
 	OutputLine(NULL, "　あんな罠を仕掛けるのは北条しかいないー！！！」",
 		   NULL, " You're the only one who could have set up a trick like that!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sa_se_bi_a1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 4, "sa_se_bi_a1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 }
 
 void dialog002()
