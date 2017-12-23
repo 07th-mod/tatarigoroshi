@@ -1,0 +1,38 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/06/440600118", 128);
+	OutputLine(NULL, "「大したことじゃないです。",
+		   NULL, "\"It's no big deal.", Line_WaitForInput);
+	PlayVoice(4, "s20/06/440600119_1", 128);
+	OutputLine(NULL, "すでにご存じの方もおられるかと思いますけど、",
+		   NULL, " As you probably already know,", Line_WaitForInput);
+	PlayVoice(4, "s20/06/440600120", 128);
+	OutputLine(NULL, "閲覧できる資料に新しいものが追加されて、……私、園崎詩音のシナリオがプレイできるようになるってことですよ」",
+		   NULL, " a brand new chapter is being added. And I, Sonozaki Shion, will be the main character.", Line_ContinueAfterTyping);
+	WaitToFinishVoicePlaying(4);
+
+	PlaySE( 3, "wa_007", 128, 64 );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+	OutputLineAll(NULL, "", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/01/440100218", 128);
+	OutputLine(NULL, "風の噂じゃ、とうとう俺にも立ち絵が実装とか？！",
+		   NULL, "If the rumors are right, I might even get a portrait finally?!", Line_WaitForInput);
+	PlayVoice(4, "s20/01/440100219", 128);
+	OutputLine(NULL, "　へっへ～ん、俺の苦労を少しは思い知れ～！！』",
+		   NULL, " Ahem, at least try to understand my suffering a little!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
