@@ -9,7 +9,7 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "「じゃあ圭ちゃん、私と一緒に言いましょうね。",
 		   NULL, "\"Okay, Kei-chan, let's say it at the same time.", Line_WaitForInput);
 	OutputLine(NULL, "せーの！」",
@@ -34,7 +34,7 @@ void dialog001()
 	SetSpeedOfMessage( TRUE, 127, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>＆<color=#956f6e>圭一</color>", NULL, "<color=#5ec69a>Shion</color> & <color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "「「次回のシナリオの主人公は園崎詩音になりました〜〜！！」」",
 		   NULL, "\"\"The main character of the next story will be Shion Sonozaki~~!!\"\"", Line_Continue);
 // !sd/
@@ -48,10 +48,10 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s20/01/440100218", 128);
+	ModPlayVoiceLS(4, 1, "s20/01/440100218", 128, TRUE);
 	OutputLine(NULL, "　風の噂じゃ、とうとう俺にも立ち絵が実装とか？！",
 		   NULL, " If the rumors are right, I might even get a portrait finally?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s20/01/440100219", 128);
+	ModPlayVoiceLS(4, 1, "s20/01/440100219", 128, TRUE);
 	OutputLine(NULL, "　ひゃっほ〜い！！』",
 		   NULL, " Yahoo!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

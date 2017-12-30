@@ -145,7 +145,7 @@ void main()
 
 //「.........い、............いてて..................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101093", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101093", 128, TRUE);
 	OutputLine(NULL, "「………い、…………いてて………………。」",
 		   NULL, "\"......Ow...... agh.........\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -359,7 +359,7 @@ void main()
 
 //「.......................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101094", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101094", 128, TRUE);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\"..................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -705,10 +705,10 @@ void main()
 
 //「おい君＠　どこから入ってきた？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taia04001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04001", 128, TRUE);
 	OutputLine(NULL, "「おい君！",
 		   NULL, "\"Hey, you!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04002", 128, TRUE);
 	OutputLine(NULL, "　どこから入ってきた？！」",
 		   NULL, " Where did you come from?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -742,7 +742,7 @@ void main()
 
 //「............どこから入ってきたって、......いてててて......。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101095", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101095", 128, TRUE);
 	OutputLine(NULL, "「…………どこから入ってきたって、……いてててて……。」",
 		   NULL, "\"......Where did I... Oww, ow...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -769,10 +769,10 @@ void main()
 
 //「君は雛見沢の住民か＠　住所と名前は言えるか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taia04003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04003", 128, TRUE);
 	OutputLine(NULL, "「君は雛見沢の住民か？",
 		   NULL, "\"Do you live in Hinamizawa?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04004", 128, TRUE);
 	OutputLine(NULL, "　住所と名前は言えるか？」",
 		   NULL, " Can you tell us your name and address?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -780,13 +780,13 @@ void main()
 
 //「............一応、ここに住んでますけど＠...名前は...前原、圭一です＠...あ、住所は、鹿骨市雛見沢村ＸＸＸ番地...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101096", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101096", 128, TRUE);
 	OutputLine(NULL, "「…………一応、ここに住んでますけど。",
 		   NULL, "\"......Well, yeah, I sort of live here.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101097", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101097", 128, TRUE);
 	OutputLine(NULL, "…名前は…前原、圭一です。",
 		   NULL, " ...My name... is Keiichi... Maebara.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101098", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101098", 128, TRUE);
 	OutputLine(NULL, "…あ、住所は、鹿骨市雛見沢村ＸＸＸ番地…。」",
 		   NULL, " ...Oh, and my address... ___ Hinamizawa Village, Shishibone...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -800,19 +800,19 @@ void main()
 
 //「...本部、応答願います＠本部、応答願います＠４０２、生存者発見＠繰り返す、４０２、生存者発見＠場所は営林署入口前。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taia04005", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04005", 128, TRUE);
 	OutputLine(NULL, "「…本部、応答願います。",
 		   NULL, "\"...Base, do you read?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04006", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04006", 128, TRUE);
 	OutputLine(NULL, "本部、応答願います。",
 		   NULL, " Base, do you read?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04007", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04007", 128, TRUE);
 	OutputLine(NULL, "４０２、生存者発見。",
 		   NULL, " We have a 402—survivor discovered.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04008", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04008", 128, TRUE);
 	OutputLine(NULL, "繰り返す、４０２、生存者発見。",
 		   NULL, " I repeat, we have a 402, we've found a survivor.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04009", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04009", 128, TRUE);
 	OutputLine(NULL, "場所は営林署入口前。」",
 		   NULL, " He's in front of the forest service office.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -831,16 +831,16 @@ void main()
 
 //「生存者は健在＠全身に外傷認められるも、生命に支障なし＠自立歩行可能＠これより保護し本部へ送致します。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taia04010", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04010", 128, TRUE);
 	OutputLine(NULL, "「生存者は健在。",
 		   NULL, "\"Healthy.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04011", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04011", 128, TRUE);
 	OutputLine(NULL, "全身に外傷認められるも、生命に支障なし。",
 		   NULL, " Wounded all over, but not fatally.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04012", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04012", 128, TRUE);
 	OutputLine(NULL, "自立歩行可能。",
 		   NULL, " He can walk on his own.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taia04013", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taia04013", 128, TRUE);
 	OutputLine(NULL, "これより保護し本部へ送致します。」",
 		   NULL, " We'll send him to HQ for safety.\"", Line_Normal);
 	ClearMessage();
@@ -913,10 +913,10 @@ void main()
 
 //「......あの、......すみません＠.........何かあったんですか......？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101099", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101099", 128, TRUE);
 	OutputLine(NULL, "「……あの、……すみません。",
 		   NULL, "\"...Umm... Excuse me.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101100", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101100", 128, TRUE);
 	OutputLine(NULL, "………何かあったんですか……？」",
 		   NULL, " ...Has something happened...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -924,10 +924,10 @@ void main()
 
 //「君はどこにいたんだ＠　何をしていたんだ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taib04001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taib04001", 128, TRUE);
 	OutputLine(NULL, "「君はどこにいたんだ？",
 		   NULL, "\"Where were you?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taib04002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taib04002", 128, TRUE);
 	OutputLine(NULL, "　何をしていたんだ？」",
 		   NULL, " What were you doing?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -941,13 +941,13 @@ void main()
 	ClearMessage();
 //「.........ずーっと山に入ったところにある吊り橋から...落っこちて＠......河原で、多分気絶してました＠......今日が何曜日かもよくわからないです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101101", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101101", 128, TRUE);
 	OutputLine(NULL, "「………ずーっと山に入ったところにある吊り橋から…落っこちて。",
 		   NULL, "\"...I, umm... fell from a rope bridge way back in the mountains.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101102", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101102", 128, TRUE);
 	OutputLine(NULL, "……河原で、多分気絶してました。",
 		   NULL, " ...I think I passed out on the river bed.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101103", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101103", 128, TRUE);
 	OutputLine(NULL, "……今日が何曜日かもよくわからないです。」",
 		   NULL, " ...I don't actually know what day it is.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -955,10 +955,10 @@ void main()
 
 //「今日は昭和５８年の６月２２日＠水曜日だ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taib04003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taib04003", 128, TRUE);
 	OutputLine(NULL, "「今日は昭和５８年の６月２２日。",
 		   NULL, "\"Today is June 22nd, 1983.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/taib04004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taib04004", 128, TRUE);
 	OutputLine(NULL, "水曜日だ。」",
 		   NULL, " Wednesday.\"", Line_Normal);
 	ClearMessage();
@@ -979,13 +979,13 @@ void main()
 
 //「......改めて聞きますけど、...何があったんですか＠　何で自衛隊が来てるんです＠　何かの訓練ですか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101104", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101104", 128, TRUE);
 	OutputLine(NULL, "「……改めて聞きますけど、…何があったんですか？",
 		   NULL, "\"...Forgive me for asking again, but... did something happen?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101105", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101105", 128, TRUE);
 	OutputLine(NULL, "　何で自衛隊が来てるんです？",
 		   NULL, " Why is the SDF here?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101106", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101106", 128, TRUE);
 	OutputLine(NULL, "　何かの訓練ですか？」",
 		   NULL, " Is this a drill?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -993,7 +993,7 @@ void main()
 
 //「.......................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/taib04005", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/taib04005", 128, TRUE);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\"..................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1039,7 +1039,7 @@ void main()
 
 //『...より首相官邸で行なわれました＠記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが＠前例のない未曾有の大災害に直結したのではないかとの質問に対し奥野官房長官は、次のようにコメントしました。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400001", 128, TRUE);
 	OutputLine(NULL, "『…より首相官邸で行なわれました。",
 		   NULL, "\"...was conducted at the prime minister's office.", Line_Continue);
 	OutputLine(NULL, "記者団からの、自衛隊の災害出動が迅速に行なわれなかったことが、",
@@ -1050,14 +1050,14 @@ void main()
 
 //『～でありまして...、県知事からの派遣要請を受けて、迅速に対応したものと思っております。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>奥野</color>", NULL, "<color=#f5e6d3>Okuno</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/oku0400001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/oku0400001", 128, TRUE);
 	OutputLine(NULL, "『〜でありまして…、県知事からの派遣要請を受けて、迅速に対応したものと思っております。』",
 		   NULL, "\"~and so... I believe that once the SDF received the dispatch order from the prefectural governor, they responded promptly.\"", Line_Normal);
 	ClearMessage();
 
 //『と、このように述べ、要請を受けてからの自衛隊の出動は迅速であった＠むしろ県側の事態把握に遅れがあった可能性を示唆しました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400002", 128, TRUE);
 	OutputLine(NULL, "『と、このように述べ、要請を受けてからの自衛隊の出動は迅速であった。",
 		   NULL, "\"According to him, the SDF was prompt to respond to the crisis after receiving their orders.", Line_Continue);
 	Wait(1000);
@@ -1068,7 +1068,7 @@ void main()
 
 //　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか＠そして災害派遣要請までに、いわゆるお役所的なロスタイムが生じ、被害の拡大を招いたのではないか＠今後の究明が待たれています。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400002_1", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400002_1", 128, TRUE);
 	OutputLine(NULL, "　そもそも自衛隊の派遣を要請した県知事は、災害発生から前例のない大災害であることをいつ認識できたのか。",
 		   NULL, "When did the governor who requested the SDF's dispatch actually become aware of the outbreak of such an unprecedented catastrophe?", Line_Continue);
 	Wait(1000);
@@ -1081,7 +1081,7 @@ void main()
 
 //『首相官邸より報道部の緒方記者がお送りしました＠さて、ここでもう一度、災害発生からの行政の対応を振り返ります。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400003", 128, TRUE);
 	OutputLine(NULL, "『首相官邸より報道部の緒方記者がお送りしました。",
 		   NULL, "\"That was Mr. Okada, reporting from the prime minister's official residence.", Line_Continue);
 	Wait(1000);
@@ -1189,7 +1189,7 @@ void main()
 
 //『...非情に悔やまれています＠この時点で警察か消防への連絡があったなら、事態はもっと改善されていた可能性が高いでしょう＠少なくとも、村全滅という惨劇は免れた可能性があります。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400004", 128, TRUE);
 	OutputLine(NULL, "『…非情に悔やまれています。",
 		   NULL, "\"...It is extremely regrettable.", Line_Continue);
 	Wait(1000);
@@ -1258,7 +1258,7 @@ void main()
 
 //『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400005", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400005", 128, TRUE);
 	OutputLine(NULL, "『近年、市民団体によって指摘されていますが、議員待遇者との視察旅行は完全に親睦を目的にしたもので、酒宴三昧だと噂されています。",
 		   NULL, "\"As has recently been pointed out by citizens' groups, his trip with honorary Diet members to inspect other prefectures was based solely on good relations, and it's rumored they preoccupied themselves with a drinking party.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1266,7 +1266,7 @@ void main()
 
 //　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです＠環境部長から電話があった時も泥酔していて、まったく取り合ってもらえなかったのだそうです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400005_1", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400005_1", 128, TRUE);
 	OutputLine(NULL, "　近い筋の話では、知事は徹夜で飲んだくれて、泥酔状態で就寝していたそうです。",
 		   NULL, "Sources closer to him claimed the governor had been drinking all night, and had gone to sleep in a drunken state.", Line_Continue);
 	Wait(1000);
@@ -1282,7 +1282,7 @@ void main()
 
 //『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう＠また県としても大災害を想定したマニュアルが用意されておらず、対応が常に後手に回ってしまったのが致命的でした。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400006", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400006", 128, TRUE);
 	OutputLine(NULL, "『知事は言うに及びませんが、知事不在時には本部長を務めることになる環境部長にも、怠慢の責任が問われるでしょう。",
 		   NULL, "\"Though not as extreme as the governor's case, the environmental chief who became director-general in the governor's absence will likely also be questioned about his negligence.", Line_Continue);
 	Wait(2000);
@@ -1310,7 +1310,7 @@ void main()
 
 //『とにかく、深夜の就寝中というのが不運でした＠同じ災害でも日中に起こっていれば、まったく違ったでしょう。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400007", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400007", 128, TRUE);
 	OutputLine(NULL, "『とにかく、深夜の就寝中というのが不運でした。",
 		   NULL, "\"Whatever the case may be, it was unfortunate this happened while everyone was sleeping in the middle of the night.", Line_Continue);
 	Wait(1000);
@@ -1338,7 +1338,7 @@ void main()
 
 //『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております＠...先生、このような恐ろしい毒ガスが突然湧き出すようなことはあるのでしょうか。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400008", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400008", 128, TRUE);
 	OutputLine(NULL, "『スタジオにはゲストとして、火山性の災害にお詳しいＸＸ大学教授の藤原先生にお越しいただいております。",
 		   NULL, "\"Here with us in the studio today is Dr. Fujiwara, a professor at ____ University who is well-acquainted with volcanic disasters.", Line_Continue);
 	Wait(1000);
@@ -1348,7 +1348,7 @@ void main()
 
 //『火口部に限定して申し上げれば、決して珍しいことではありません＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>藤原</color>", NULL, "<color=#f5e6d3>Fujiwara</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/fuji0400001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/fuji0400001", 128, TRUE);
 	OutputLine(NULL, "『火口部に限定して申し上げれば、決して珍しいことではありません。",
 		   NULL, "\"It isn't at all unusual for this to happen right around craters, at least.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1356,7 +1356,7 @@ void main()
 
 //　火山大国日本にはたくさんの活火山がありますが＠それらの火口部はいずれも危険なガスの噴出する危険性があり、一般登山者も火口部周辺には立ち入らないのが一般的です。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>藤原</color>", NULL, "<color=#f5e6d3>Fujiwara</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/fuji0400002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/fuji0400002", 128, TRUE);
 	OutputLine(NULL, "　火山大国日本にはたくさんの活火山がありますが、",
 		   NULL, "Japan is a volcanic nation, and so has many active volcanoes.", Line_Continue);
 	Wait(1000);
@@ -1366,7 +1366,7 @@ void main()
 
 //『では今回、雛見沢村を襲った卵の腐乱臭のするガスというのも、火口部では一般的なガスということですか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400009", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400009", 128, TRUE);
 	OutputLine(NULL, "『では今回、雛見沢村を襲った卵の腐乱臭のするガスというのも、火口部では一般的なガスということですか？』",
 		   NULL, "\"Does this mean the rotten egg smell that visited Hinamizawa Village was the normal sort of gas from volcanic craters?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1374,7 +1374,7 @@ void main()
 
 //『卵の腐乱臭という特徴から、恐らく火山ガスの中でも事故例の多い硫化水素によるものだと考えられます＠高い濃度であれば、非常に危険なものです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>藤原</color>", NULL, "<color=#f5e6d3>Fujiwara</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/fuji0400003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/fuji0400003", 128, TRUE);
 	OutputLine(NULL, "『卵の腐乱臭という特徴から、恐らく火山ガスの中でも事故例の多い硫化水素によるものだと考えられます。",
 		   NULL, "\"Judging by how it smelled like rotten eggs, we think it was hydrogen sulfide, a gas seen particularly frequently in accidents compared to other volcanic gases.", Line_Continue);
 	Wait(1000);
@@ -1384,7 +1384,7 @@ void main()
 
 //『雛見沢村は火山の火口部とはまったく縁遠い場所にあるわけですが＠そういった火口部でない場所にもその硫化水素が発生することがあるのでしょうか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400010", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400010", 128, TRUE);
 	OutputLine(NULL, "『雛見沢村は火山の火口部とはまったく縁遠い場所にあるわけですが、",
 		   NULL, "\"Hinamizawa Village is very far away from the craters of any volcanoes.", Line_Continue);
 	Wait(1000);
@@ -1395,7 +1395,7 @@ void main()
 
 //『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが......＠外国の例で、温泉の地下のマグマ溜りからガスが噴出したという記録があります＠極めて希少な例ですが、必ずしも火口部でなくても発生の可能性はあるということです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>藤原</color>", NULL, "<color=#f5e6d3>Fujiwara</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/fuji0400004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/fuji0400004", 128, TRUE);
 	OutputLine(NULL, "『詳しいことがわかっていないので、まだはっきりとしたことは申し上げられませんが……。",
 		   NULL, "\"I don't know all the details, so I can't say anything concrete...", Line_Continue);
 	Wait(1000);
@@ -1408,7 +1408,7 @@ void main()
 
 //『先生、ありがとうございました＠...今、防衛庁から発表があった模様です＠防衛庁の森川さん？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400011", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400011", 128, TRUE);
 	OutputLine(NULL, "『先生、ありがとうございました。",
 		   NULL, "\"Thank you very much, Doctor.", Line_Continue);
 	Wait(1000);
@@ -1421,7 +1421,7 @@ void main()
 
 //『ハイ、防衛庁です＠先ほど防衛庁は雛見沢村ガス災害の主原因となった火山性ガスについて＠陸上自衛隊化学学校での分析の結果、二酸化炭素と硫化水素の混合ガスによるものだったと発表しました。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>森川</color>", NULL, "<color=#f5e6d3>Morikawa</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/mori0400001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/mori0400001", 128, TRUE);
 	OutputLine(NULL, "『ハイ、防衛庁です。",
 		   NULL, "\"Yes. I'm at the Japan Defense Agency.", Line_Continue);
 	Wait(1000);
@@ -1434,7 +1434,7 @@ void main()
 
 //『森川さん、そのガスは依然として噴出を続け、周囲に拡大しているのでしょうか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400012", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400012", 128, TRUE);
 	OutputLine(NULL, "『森川さん、そのガスは依然として噴出を続け、周囲に拡大しているのでしょうか？』",
 		   NULL, "\"Miss Morikawa, do you know whether the gas is still erupting or spreading to nearby areas?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1442,7 +1442,7 @@ void main()
 
 //『現在、雛見沢村で救助活動に入っている自衛隊第９師団の報告として、ガスの濃度は徐々に薄まりつつある＠これ以上の被害の拡大はないと発表しました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>森川</color>", NULL, "<color=#f5e6d3>Morikawa</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/mori0400002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/mori0400002", 128, TRUE);
 	OutputLine(NULL, "『現在、雛見沢村で救助活動に入っている自衛隊第９師団の報告として、ガスの濃度は徐々に薄まりつつある。",
 		   NULL, "\"According to the SDF's 9th division, who are currently engaged in a rescue operation at Hinamizawa Village, the gas density is steadily decreasing.", Line_Continue);
 	Wait(1000);
@@ -1453,14 +1453,14 @@ void main()
 
 //　ですが、依然、雛見沢村地区は危険な状態にあることには変わりなく、今後も注意深く監視を続ける必要があるようです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>森川</color>", NULL, "<color=#f5e6d3>Morikawa</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/mori0400003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/mori0400003", 128, TRUE);
 	OutputLine(NULL, "　ですが、依然、雛見沢村地区は危険な状態にあることには変わりなく、今後も注意深く監視を続ける必要があるようです。』",
 		   NULL, "However, it does not change the fact that surrounding areas are still in danger, and that very strict observation must be maintained.\"", Line_Normal);
 	ClearMessage();
 
 //『防衛庁から報道部の森川記者がお伝えしました＠続きまして、避難を余儀なくされている興宮地区住民の模様をリポートします＠現在、避難所のひとつとなっている下篠崎小学校に報道部の......、ザザ、......者が...ってい、...ザザ...ザ、￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>アナウンサー</color>", NULL, "<color=#f5e6d3>Announcer</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ana0400013", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ana0400013", 128, TRUE);
 	OutputLine(NULL, "『防衛庁から報道部の森川記者がお伝えしました。",
 		   NULL, "\"That was Morikawa from the Japan Defense Agency.", Line_Continue);
 	Wait(1000);
@@ -1478,7 +1478,7 @@ void main()
 
 //「..................なんですか、!w800...............それ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101107", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101107", 128, TRUE);
 	OutputLine(NULL, "「………………なんですか、",
 		   NULL, "\".........Wait.........", Line_Continue);
 
@@ -1606,13 +1606,13 @@ void main()
 
 //「もう大丈夫だよ＠具合は＠　歩けるかい？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04001", 128, TRUE);
 	OutputLine(NULL, "「もう大丈夫だよ。",
 		   NULL, "\"You're going to be all right.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04002", 128, TRUE);
 	OutputLine(NULL, "具合は？",
 		   NULL, " How do you feel?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04003", 128, TRUE);
 	OutputLine(NULL, "　歩けるかい？」",
 		   NULL, " Can you walk?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1620,10 +1620,10 @@ void main()
 
 //「............歩けます＠...いてて......。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101108", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101108", 128, TRUE);
 	OutputLine(NULL, "「…………歩けます。",
 		   NULL, "\"......Yes.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140101109", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101109", 128, TRUE);
 	OutputLine(NULL, "…いてて……。」",
 		   NULL, " ...Ow, oww...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1646,16 +1646,16 @@ void main()
 
 //「外傷多数＠骨折もしくは内臓損傷の可能性大＠頭部に大きな裂傷＠瞳孔正常、眼底に出血なくも脳内損傷の可能性は否定できず...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04004", 128, TRUE);
 	OutputLine(NULL, "「外傷多数。",
 		   NULL, "\"Multiple wounds.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04005", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04005", 128, TRUE);
 	OutputLine(NULL, "骨折もしくは内臓損傷の可能性大。",
 		   NULL, " High possibility of fractures and internal damage.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04006", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04006", 128, TRUE);
 	OutputLine(NULL, "頭部に大きな裂傷。",
 		   NULL, " Large laceration in the head.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishaa04007", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishaa04007", 128, TRUE);
 	OutputLine(NULL, "瞳孔正常、眼底に出血なくも脳内損傷の可能性は否定できず…。」",
 		   NULL, " Pupils normal, but even without bleeding from the fundus, brain damage is still possible...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1697,7 +1697,7 @@ void main()
 
 //「.........わ、............ああぁ......、......あぁああぁああぁぁぁあぁ.........。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140101110", 128);
+	ModPlayVoiceLS(4, 1, "s03/01/140101110", 128, TRUE);
 	OutputLine(NULL, "「………わ、…………ああぁ……、……あぁああぁああぁぁぁあぁ………。」",
 		   NULL, "\"......Wha...... ahh...... aaaaaahhhhhhhh......\"", Line_Normal);
 	ClearMessage();
@@ -1826,13 +1826,13 @@ void main()
 
 //「馬鹿ッ！＠　犠牲者を粗末に扱うな＠　彼は村の住民だぞ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04001", 128, TRUE);
 	OutputLine(NULL, "「馬鹿ッ！！",
 		   NULL, "\"You jackasses!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04002", 128, TRUE);
 	OutputLine(NULL, "　犠牲者を粗末に扱うな！",
 		   NULL, " Don't just throw the victims in like that!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04003", 128, TRUE);
 	OutputLine(NULL, "　彼は村の住民だぞ！」",
 		   NULL, " They lived here!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1932,16 +1932,16 @@ void main()
 
 //「.........？＠　おい、意識が喪失したぞ！＠　患者の名前を呼びかけろ＠　早くッ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04001", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04001", 128, TRUE);
 	OutputLine(NULL, "「………？！",
 		   NULL, "\"......?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04002", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04002", 128, TRUE);
 	OutputLine(NULL, "　おい、意識が喪失したぞ！！",
 		   NULL, " Hey, he's lost consciousness!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04003", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04003", 128, TRUE);
 	OutputLine(NULL, "　患者の名前を呼びかけろ！",
 		   NULL, " Shout his name!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04004", 128, TRUE);
 	OutputLine(NULL, "　早くッ！」",
 		   NULL, " Quickly!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1949,22 +1949,22 @@ void main()
 
 //「前原くん＠　聞こえるかい？＠　聞こえるなら瞬きでいいからしてくれ！＠　前原くん＠　前原くん＠　前原くん！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04004", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04004", 128, TRUE);
 	OutputLine(NULL, "「前原くん！",
 		   NULL, "\"Maebara-kun!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04005", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04005", 128, TRUE);
 	OutputLine(NULL, "　聞こえるかい？！",
 		   NULL, " Can you hear me?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04006", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04006", 128, TRUE);
 	OutputLine(NULL, "　聞こえるなら瞬きでいいからしてくれ！！",
 		   NULL, " If you can hear me, just blink!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04007", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04007", 128, TRUE);
 	OutputLine(NULL, "　前原くん！",
 		   NULL, " Maebara-kun!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04008", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04008", 128, TRUE);
 	OutputLine(NULL, "　前原くん！",
 		   NULL, " Maebara-kun!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishac04009", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishac04009", 128, TRUE);
 	OutputLine(NULL, "　前原くん！！」",
 		   NULL, " Maebara-kun!!\"", Line_Normal);
 	ClearMessage();
@@ -1979,31 +1979,31 @@ void main()
 
 //「呼吸が停止したぞ＠　気道確保＠　人工呼吸！＠　絶対に生かせ！＠　畜生畜生...！＠　もうこれ以上、死者は御免だぞ！＠　死んでもいい命なんかないんだ！＠　殺すな＠　殺すなぁあぁああッ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04005", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04005", 128, TRUE);
 	OutputLine(NULL, "「呼吸が停止したぞ！",
 		   NULL, "\"His breathing stopped!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04006", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04006", 128, TRUE);
 	OutputLine(NULL, "　気道確保！",
 		   NULL, " Get his respiratory tract open!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04007", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04007", 128, TRUE);
 	OutputLine(NULL, "　人工呼吸！！",
 		   NULL, " Use CPR!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04008", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04008", 128, TRUE);
 	OutputLine(NULL, "　絶対に生かせ！！",
 		   NULL, " Make him live!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04009", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04009", 128, TRUE);
 	OutputLine(NULL, "　畜生畜生…！！",
 		   NULL, " Damn it, damn it...!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04010", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04010", 128, TRUE);
 	OutputLine(NULL, "　もうこれ以上、死者は御免だぞ！！",
 		   NULL, " No more, no more dead people!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04011", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04011", 128, TRUE);
 	OutputLine(NULL, "　死んでもいい命なんかないんだ！！",
 		   NULL, " Nobody deserves to die!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04012", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04012", 128, TRUE);
 	OutputLine(NULL, "　殺すな！",
 		   NULL, " Don't kill him!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s03/00/ishab04013", 128);
+	ModPlayVoiceLS(4, 0, "s03/00/ishab04013", 128, TRUE);
 	OutputLine(NULL, "　殺すなぁあぁああッ！！」",
 		   NULL, " Don't kill hiiiiiiiiiiim!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

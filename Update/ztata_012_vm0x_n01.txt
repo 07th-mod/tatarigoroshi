@@ -9,13 +9,13 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s03/10/141000143", 128);
+	ModPlayVoiceLS(4, 10, "s03/10/141000143", 128, TRUE);
 	OutputLine(NULL, "「変わった質問をしましたね。",
 		   NULL, "\"That was a strange question.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s03/10/141000144", 128);
+	ModPlayVoiceLS(4, 10, "s03/10/141000144", 128, TRUE);
 	OutputLine(NULL, "ひょっとして今日、寝不足ですか？",
 		   NULL, " Perhaps you didn't sleep well last night?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s03/10/141000145", 128);
+	ModPlayVoiceLS(4, 10, "s03/10/141000145", 128, TRUE);
 	OutputLine(NULL, "　いけませんよー、成長期は良く食べよく寝て育つんですから」",
 		   NULL, " You can't do that. You have to sleep and eat well to grow up fine.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
