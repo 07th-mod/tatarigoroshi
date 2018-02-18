@@ -9,13 +9,13 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawScene( "t_ep0", 1000 );
+	DrawScene("text/t_ep0", 1000 );
 //	PlayBGM( 1, "msys12", 128, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
 	SetValidityOfInterface( FALSE );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 //!sd
 
@@ -25,7 +25,7 @@ void main()
 
 	DisableWindow();
 	PlayBGM( 2, "lsys20", 128, 0 );
-	DrawScene( "bg_126", 1000 );
+	DrawScene("background/mati4", 1000 );
 
 //　大阪府内に住むある老夫婦が＠８年前に死亡した息子の遺品を整理中に一本のカセットテープを発見した￥
 	ClearMessage();
@@ -48,7 +48,7 @@ void main()
 		   NULL, "Eight years later, in 2003, they had begun to organize their son's remains in order to organize their minds, and came across the cassette tape in question.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_180", 400 );
+	DrawScene("background/simen3", 400 );
 
 //　故人は昭和５０年代後半から平成元年まで＠過激な写真週刊誌に記者として勤務していた経験があり、この時の取材テープのひとつだと思われる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -84,7 +84,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
 	PlaySE( 3, "wa_038", 128, 64 );
 
 //　...ガチャリ￥
@@ -446,7 +446,7 @@ void main()
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 
 	DisableWindow();
-	DrawScene( "t_ep1", 1000 );
+	DrawScene("text/t_ep1", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -501,8 +501,8 @@ void main()
 //■真偽を確認するため、前原家の親戚筋にテープの声を確認してもらったが、録音状態が明瞭でなく、またかなりの時間が経っているため、確認した親類が声を思い出せず、前原圭一本人の声であるとの確証を得ることができなかった。
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep2", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -552,8 +552,8 @@ void main()
 
 //■...また、テープに記された１１月２８日という日付にも疑問が残っている。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep3", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep3", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -597,8 +597,8 @@ void main()
 //■なぜなら、前原圭一は災害から２ヶ月たった８月某日の自殺未遂を期に、精神障害が指摘され、医療施設に移送されていた。
 
 //	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep4", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep4", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -646,8 +646,8 @@ void main()
 
 //■施設は一切の取材を許さなかったため、昭和５８年８月以降の日付でマスコミのテープに肉声が残されている可能性は、極めて低いからである。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep5", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep5", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -702,8 +702,8 @@ void main()
 
 //■ただし、記者は現役当時、非常に強引な取材方法で非難を浴びたことがあり、施設に不法侵入して前原圭一を強行取材した可能性も否めない。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep6", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep6", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -749,8 +749,8 @@ void main()
 
 //■これは本当に前原圭一の肉声なのか...？　この録音テープの真偽は...未だ謎に包まれている。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep7", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep7", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -795,8 +795,8 @@ void main()
 
 //■記者はこの取材から十数年後。平成７年８月に、テープ内の前原圭一の予告通り、水の事故、海難事故で命を落とすことになる。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep8", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep8", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -812,7 +812,7 @@ void main()
 		   NULL, " ......Now then... I wonder how many days it will take you to drown?", Line_WaitForInput);
 
 	DisableWindow();
-	DrawScene( "cg_114", 1000 );
+	DrawScene("scene/114", 1000 );
 
 	ModPlayVoiceLS(4, 1, "s03/01/140101176", 128, TRUE);
 	OutputLine(NULL, "　…ふ、ははははははははははははははは。",
@@ -1097,8 +1097,8 @@ void main()
 
 //■そして、前原圭一は......
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep9", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep9", 1000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
@@ -1106,8 +1106,8 @@ void main()
 
 //■取材の翌々日の昭和５８年１１月３０日深夜。原因不明の高熱により急死した。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep10", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep10", 1000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
@@ -1115,8 +1115,8 @@ void main()
 
 //■死亡の前日、ナースコールで何度か告げた不審な言葉が記録に残ってる。
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep11", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep11", 1000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
@@ -1124,8 +1124,8 @@ void main()
 
 //■「足音が、またひとつ余計に...。」
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "t_ep12", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("text/t_ep12", 1000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
@@ -1137,7 +1137,7 @@ void main()
 //お疲れーーーーーー！！！！！！！！！！！！！
 
 
-	DrawScene( "black", 10000 );
+	DrawScene("black", 10000 );
 	FadeOutBGM( 1, 1000, TRUE );
 	PlaySE( 3, "wa_037", 128, 64 );
 
@@ -1145,18 +1145,18 @@ void main()
 
 //if %kaisou_mode = 1 goto *kaisou_mode
 
-	DrawScene( "white", 100 );
+	DrawScene("white", 100 );
 	PlaySE( 3, "wa_036", 128, 64 );
-	DrawScene( "end_2", 4000 );
+	DrawScene("end_2", 4000 );
 //lsph 21,":c;bmp\Efe\End_2.bmp",0,0
 //vsp 21,1
 ////print 10,4000
 
 	Wait( 1000 );
 
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 4000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 4000, TRUE );
 //csp -1
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //mov %Omake,1
 //mov %Tatarigorosi_END,1
@@ -1165,10 +1165,10 @@ void main()
 
 	Wait( 2000 );
 
-	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
+	DrawSceneWithMask("s_jump_back", "4", 0, 0, 1000 );
 //bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
 	PlaySE( 3, "wa_041", 128, 64 );
-	DrawSceneWithMask( "ex_otsu_tata", "5", 0, 0, 1000 );
+	DrawSceneWithMask("ex_otsu_tata", "5", 0, 0, 1000 );
 //bg ":c;BMP\Efe\Omake_Otukaresama3.BMP",18,1500,":c;BMP\Efe\5.bmp"
 
 	Wait( 10000 );

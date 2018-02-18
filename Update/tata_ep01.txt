@@ -9,9 +9,9 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys28", 128, 0 );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	DisableWindow();
-	DrawScene( "bg_047", 1000 );
+	DrawScene("background/hi1", 1000 );
 
 //!s100
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
@@ -40,8 +40,8 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
-	DrawScene( "bg_159", 400 );
+	DrawScene("black", 400 );
+	DrawScene("background/oni1", 400 );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
@@ -106,8 +106,8 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
-	DrawScene( "bg_203", 400 );
+	DrawScene("black", 400 );
+	DrawScene("background/sora5", 400 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。
@@ -138,8 +138,8 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
-	DrawScene( "bg_180", 400 );
+	DrawScene("black", 400 );
+	DrawScene("background/simen3", 400 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。
@@ -177,7 +177,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_180", 400 );
+	DrawScene("background/simen3", 400 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、/
@@ -248,7 +248,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_047", 400 );
+	DrawScene("background/hi1", 400 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。
@@ -279,7 +279,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　最終的な生存者は、雛見沢村ＸＸＸ番地在住の男子、前原圭一（１Ｘ歳）のみ。
@@ -357,16 +357,16 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 ////setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 	FadeOutBGM( 1, 1000, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "tatari_list", 1000 );
+	DrawScene("text/tatari_list", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	PlayBGM( 1, "msys22", 128, 0 );
 
 
@@ -379,7 +379,7 @@ void main()
 	//ScrollBG( "T_ED01_1", 0, 0, 0, 0, 2520, 0, 0, FALSE, 50400, TRUE );
 	//ScrollBG( "T_ED02_1", 0, 0, 0, 0, 2550, 0, 0, FALSE, 51000, TRUE );
 	FadeSprite( 5, 7000, FALSE );
-	DrawScene( "black", 7000 );
+	DrawScene("black", 7000 );
 	SetValidityOfInput( TRUE );
 
 

@@ -6,7 +6,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys21", 128, 0 );
 
 //　......死体の処理＠
@@ -30,9 +30,9 @@ void main()
 		   NULL, "It was even more important than killing him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	DrawFilm( 2, 136, 136, 136, 255, 0, 0, TRUE );
-	DrawScene( "bg_159", 1000 );
+	DrawScene("background/oni1", 1000 );
 
 //　漠然と考えて、...一番最初に思いついたのは、沼だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -136,7 +136,7 @@ void main()
 		   NULL, "But... as for the corpse......", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　悩んだ末、...俺は死体を沼に捨てることを選ばないことにする＠
 //　...入水自殺も溺死も、どちらも噂で...実際にあったのを誰か確認したわけじゃない＠
@@ -229,7 +229,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeFilm( 0, TRUE );
-	DrawSceneWithMask( "bg_141", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/mo1", "left", 0, 0, 300 );
 	PlayBGM( 2, "lsys19", 128, 0 );
 
 //　............林の中を抜ける、ちょっとした裏道￥
@@ -510,10 +510,10 @@ void main()
 		   NULL, "...I had wanted it to be close to the scene of the crime... but it naturally grew farther away.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 2, "lsys11", 128, 0 );
-	DrawSceneWithMask( "bg_258a", "left", 0, 0, 1300 );
+	DrawSceneWithMask("background/mo3_01", "left", 0, 0, 1300 );
 
 //　真っ暗な深き森の懐＠
 //　......ひぐらしの声だけが響き、人が軽々しく踏み込むべきところでないことを知らせている￥
@@ -626,7 +626,7 @@ void main()
 		   NULL, " ...It wouldn't be good to come off as suspicious to my parents.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_141a", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/mo1_01", "right", 0, 0, 300 );
 
 //　自宅へ帰り、早く魅音の家に電話しなくては＠
 //　そして魅音に今夜中に沙都子との約束を取り付けるように言わなくては＠......それで、とりあえず今日は終了...￥
@@ -858,7 +858,7 @@ void main()
 		   NULL, "I pedaled my bicycle hard to get back home.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_040a", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi3_01", "left", 0, 0, 300 );
 
 //　......どこかふわふわする＠
 //　...体と魂の歯車がずれているような感じ＠...実際の手足の先端と、俺が思っている手足の先端の微妙なブレ￥
@@ -914,7 +914,7 @@ void main()
 		   NULL, " then it's actually an important emotion to feel.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　結局、その感覚は、.........その晩、ずっと治まることはなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -924,24 +924,24 @@ void main()
 
 //■魅音に電話
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 1, 1000, TRUE );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawScene( "bg_117a", 1000 );
+	DrawScene("background/ma1_02", 1000 );
 
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 2, "lsys13", 128, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "bg_118", 2000 );
+	DrawScene("background/ma2", 2000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 //!sd
-	DrawSceneWithMask( "bg_115", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_d1", "left", 0, 0, 300 );
 
 //　魅音の家に自分から電話をかけるのは初めてだった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1332,7 +1332,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //「.....................嫌...＠............ぅっく...、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1486,7 +1486,7 @@ void main()
 		   NULL, " aren't you...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_115", 400 );
+	DrawScene("background/ma_d1", 400 );
 
 //「......み、......魅音、......さっきから...何の話だ...？＠
 //　...俺が名前を呼んだことで、......魅音の呪縛のようなものは解ける...￥
@@ -1874,7 +1874,7 @@ void main()
 		   NULL, " the story changed completely...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 //　悟史はきっと、...俺よりも冷静じゃなかった＠
 //　...実の妹が日々、虐められているのを目の前で見ている血のつながった兄だからこそ、...冷静さを保てなかったのかもしれない￥
@@ -1890,7 +1890,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
-	DrawScene( "bg_122", 400 );
+	DrawScene("background/moon", 400 );
 
 //　......それは、...叔母の撲殺死体が、あっさりとその晩に発見されてしまったからだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1917,7 +1917,7 @@ void main()
 		   NULL, "If the police conducted a full-blown investigation... it was easy to imagine they wouldn't take long to pin down Satoshi as the culprit.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_059", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ho1", "left", 0, 0, 300 );
 
 //　悟史は...沙都子との平穏な日々を望み、一度は手にしながら...＠...徐々に追い詰められていったんだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1933,8 +1933,8 @@ void main()
 		   NULL, "And then... he wanted to at least hold out until Satoko's birthday... but finally... they nailed him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "bg_153", 400 );
+	DrawScene("black", 1000 );
+	DrawScene("background/mati_o1", 400 );
 
 //　...悟史はその時、沙都子の誕生日に大きなぬいぐるみをプレゼントするために、まとまった貯金を持っていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1961,7 +1961,7 @@ void main()
 		   NULL, "...And he... decided... not to make Satoko the sister of a murderer...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 //　......だとしたら......それは何と言う苦渋の選択だったろう＠
 //　......沙都子の喜ぶ顔が見たくて貯めた貯金を、.........沙都子を悲しませるために使わなければならなかったなんて￥
@@ -1985,7 +1985,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_115", 400 );
+	DrawScene("background/ma_d1", 400 );
 
 //「..................悟史は......それで消えたのか...............。＠
 //「......それは...わからない＠......大石なんかはそう思ってるみたいだけどね。＠
@@ -2014,8 +2014,8 @@ void main()
 		   NULL, " ...Had he been slowly driven into a corner by that repulsive man's pigheaded pursuit...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg_180", "up", 0, 0, 300 );
+	DrawScene("black", 400 );
+	DrawSceneWithMask("background/simen3", "up", 0, 0, 300 );
 
 //「確かに状況証拠は揃ってるけど、......多分、圭ちゃんの推理ははずれだと思う＠......県内のどっかで捕まった覚醒剤でイカれたヤツが、犯行を自供したって言うし。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2076,8 +2076,8 @@ void main()
 		   NULL, "...Of course, if it was really a perfect crime... there would have been no reason for Satoshi to vanish.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg_115", "down", 0, 0, 300 );
+	DrawScene("black", 400 );
+	DrawSceneWithMask("background/ma_d1", "down", 0, 0, 300 );
 
 //「それに、...悟史には逃亡資金なんてなかったと思う＠悟史が預金を下ろした日＠.........これは誰に言っても信じてくれないんだけど...＠沙都子のために買うと言ってたぬいぐるみが、!w1000...売れてショーケースからなくなってたの＠......きっと、...悟史が買ったに違いない。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2403,7 +2403,7 @@ void main()
 		   NULL, " ...Click.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 //　北条悟史＠
 //　.........お前は一体、......＠
@@ -2556,7 +2556,7 @@ void main()
 		   NULL, "I'd never met him, never spoken to him... didn't even know his face... and yet I felt so connected to him... I'd never felt that way before.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_118", 400 );
+	DrawScene("background/ma2", 400 );
 
 //■幕間
 //if %kaisou_mode = 1 goto *kaisou_mode
@@ -2568,22 +2568,22 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 //	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 //	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask( "tata010_04", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("text/tata010_04", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("black", "mask_1900", 7, 0, 300 );
 
 }

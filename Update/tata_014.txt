@@ -10,8 +10,8 @@ void main()
 
 	DisableWindow();
 	// SetValidityOfInput( FALSE );
-	DrawScene( "bg_086", 10000 );
-	DrawScene( "black", 3000 );
+	DrawScene("background/kawa1", 10000 );
+	DrawScene("black", 3000 );
 	// SetValidityOfInput( TRUE );
 	PlayBGM( 2, "lsys19", 128, 0 );
 
@@ -44,7 +44,7 @@ void main()
 		   NULL, "Each sensation I felt... led to a new and different one awakening.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_086", 1000 );
+	DrawScene("background/kawa1", 1000 );
 
 //　気付くと...俺は河原にうつ伏せになって倒れていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -84,7 +84,7 @@ void main()
 		   NULL, "......Considering I'd dropped from there... it was a miracle that I could open my eyes again.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_003", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/damu4", "left", 0, 0, 300 );
 
 //　自分のすぐ近くに...子供が遊びで持ってきたのだろうか、...車から取り外されたらしい壊れたシートがひっくり返っていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -113,7 +113,7 @@ void main()
 		   NULL, "I'd failed to die... and now I was still stuck in this insane world.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_203a", 400 );
+	DrawScene("background/sora", 400 );
 
 //　.........俺はどのくらいここで気を失っていたのだろう￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -141,7 +141,7 @@ void main()
 		   NULL, "...Mentally, it felt like I'd been asleep here for a decade.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_086", 1000 );
+	DrawScene("background/kawa1", 1000 );
 
 //「.........い、............いてて..................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -204,7 +204,7 @@ void main()
 		   NULL, "The police were waiting for me without a doubt.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_003", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/damu4", "left", 0, 0, 300 );
 
 //　叔父殺しが今度こそバレて逮捕か、それとも今度こそ精神病院送りか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -238,8 +238,8 @@ void main()
 		   NULL, "I began to walk unsteadily... just limping along.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_141", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/mo1", "left", 0, 0, 300 );
 
 //　沢を下り、...獣道のような林道を抜け......＠...見知った道を求めてでたらめに歩く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -249,9 +249,9 @@ void main()
 		   NULL, " I walked haphazardly, searching for a path I knew.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_046", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/hi_scroll", "left", 0, 0, 300 );
 
 //　...その内に...ようやく馴染んだ道に行き当たり...、俺は診療所を目指して歩き出す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -265,7 +265,7 @@ void main()
 		   NULL, "......Not to my house... but to the clinic, which had treated me like a lunatic.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_041", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi4", "left", 0, 0, 300 );
 
 //　.........蒸し暑い￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -419,8 +419,8 @@ void main()
 		   NULL, "...Even at school, we apparently fumigate—they call it pest disinfection or something—once or twice a year...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "right", 0, 0, 300 );
-	DrawSceneWithMask( "bg_042", "right", 0, 0, 300 );
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi5", "right", 0, 0, 300 );
 
 //　さっきから、こんなに明るいのに誰とも行き会わない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -468,8 +468,8 @@ void main()
 		   NULL, " not even a breath... Hinamizawa was silent.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "right", 0, 0, 300 );
-	DrawSceneWithMask( "bg_040", "right", 0, 0, 300 );
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi3", "right", 0, 0, 300 );
 
 //　ここを曲がれば、......もうすぐ、学校が見えてくるはずだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -492,7 +492,7 @@ void main()
 		   NULL, "......It was simply... quiet.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 
 //　その静けさを、無関心を装って無視するのにも...そろそろ耐え難くなってきた頃、...学校が見えてきた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -500,7 +500,7 @@ void main()
 		   NULL, "Just as pretending to ignore the silence... had grown intolerable... I saw the school.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_093", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/g1", "right", 0, 0, 300 );
 
 //　そこで、俺はようやく音を聞くことができた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -563,7 +563,7 @@ void main()
 		   NULL, "......I felt bad for them having to work in such heat... and with such a stench about.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_027", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/gr1", "left", 0, 0, 300 );
 
 //　彼らは、トラックに積まれたカラフルな積荷を次々に校庭に並べていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -603,7 +603,7 @@ void main()
 		   NULL, "...I forgot my pain for a little while... captivated by this big forest ranger job I'd never seen before...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_028", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/gr2", "right", 0, 0, 300 );
 
 //　ぼー...っと、校門前に突っ立っている内に、...校庭のずっと向こうで働いている雨ガッパの人たちが俺に気が付いたようだった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -624,7 +624,7 @@ void main()
 		   NULL, "......I thought they might yell at me for getting in their way... so I decided to leave post haste.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_093", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/g1", "right", 0, 0, 300 );
 
 //　その時、後ろからトラックが２台やって来た＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -678,7 +678,7 @@ void main()
 		   NULL, "Then, certain white letters emblazoned on the side of the passing trucks caught my eye.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　『陸上自衛隊＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -701,7 +701,7 @@ void main()
 		   NULL, " Why was the army in the schoolyard...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_093", 400 );
+	DrawScene("background/g1", 400 );
 
 //「おい君＠　どこから入ってきた？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
@@ -858,7 +858,7 @@ void main()
 		   NULL, "...I couldn't help but think it seemed a little bit much.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 
 //　彼らに促されるまま、ジープの後ろに乗せられる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1015,7 +1015,7 @@ void main()
 
 	ModEnableNVLModeInADVMode();
 
-	DrawScene( "bg_101", 400 );
+	DrawScene("background/kuruma2", 400 );
 	FadeOutBGM( 1, 1000, TRUE );
 
 //　運転席でさっき無線とやり取りをしていた隊員が、車のラジオを付けた＠
@@ -1089,7 +1089,7 @@ void main()
 		   NULL, " At this point, we can take another look at the political response following this disaster.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
 	PlayBGM( 1, "msys28", 128, 0 );
 
 //　６月２１日から２２日にかけての深夜＠
@@ -1474,7 +1474,7 @@ void main()
 
 	ModDisableNVLModeInADVMode();
 
-	DrawSceneWithMask( "bg_101", "up", 0, 0, 1300 );
+	DrawSceneWithMask("background/kuruma2", "up", 0, 0, 1300 );
 
 //「..................なんですか、!w800...............それ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1569,7 +1569,7 @@ void main()
 		   NULL, "Where... where did everyone evacuate to...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_188", 400 );
+	DrawScene("background/sinryou_soto3", 400 );
 
 //　やがて、前方に見えてきたのは...監督の診療所だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1596,7 +1596,7 @@ void main()
 		   NULL, "Many SDF tents were set up in the clinic's big parking lot, and many strict security vehicles were parked there as well.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_188", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/sinryou_soto3", "left", 0, 0, 300 );
 
 //　ジープが来たことを認めると、診療所の中から防毒マスクを付けた白衣の人たちが担架を持ってバラバラと走ってくる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1642,7 +1642,7 @@ void main()
 		   NULL, "...People who seemed like doctors were looking at me and notifying others of my condition via radio.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_187", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/sinryou_soto1", "right", 0, 0, 300 );
 
 //「外傷多数＠骨折もしくは内臓損傷の可能性大＠頭部に大きな裂傷＠瞳孔正常、眼底に出血なくも脳内損傷の可能性は否定できず...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
@@ -1693,7 +1693,7 @@ void main()
 		   NULL, "...Two troops, holding shoulders and legs... like some kind of baggage... picked them up and threw them into the trunk...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //「.........わ、............ああぁ......、......あぁああぁああぁぁぁあぁ.........。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1716,7 +1716,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
-	DrawScene( "bg_027", 1000 );
+	DrawScene("background/gr1", 1000 );
 
 //　その瞬間、...色とりどりのズタ袋を荷台に満載して!s300.........!sd!w700学校の校庭に...魚河岸のように並べられていた...あの光景が......蘇る...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1820,9 +1820,9 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 1000, TRUE );
-	DrawSceneWithMask( "bg_187", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/sinryou_soto1", "right", 0, 0, 300 );
 
 //「馬鹿ッ！＠　犠牲者を粗末に扱うな＠　彼は村の住民だぞ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
@@ -1844,7 +1844,7 @@ void main()
 		   NULL, "The troops carrying the sacks answered me with a humble salute...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_203a", 1000 );
+	DrawScene("background/sora", 1000 );
 
 //locate 1,6
 //!s0......こんな狂った雛見沢なんか、死んじまえ。!sd
@@ -1927,7 +1927,7 @@ void main()
 		   NULL, "...That insane night... it's still going on... please, please end it already.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 	FadeFilm( 1000, TRUE );
 
 //「.........？＠　おい、意識が喪失したぞ！＠　患者の名前を呼びかけろ＠　早くッ！＠

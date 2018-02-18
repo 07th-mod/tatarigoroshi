@@ -27,7 +27,7 @@ void main()
 		   NULL, " Three chun, three dora—mangan with 1500 extra.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_071", 400 );
+	DrawScene("background/jansou", 400 );
 
 //「えー...＠　なんすかそれぇ...＠何でドラが３つも入んすかぁ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
@@ -298,7 +298,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	StopSE( 3 );
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );

@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_118a", "left", 0, 0, 1300 );
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/ma2_01", "left", 0, 0, 1300 );
 
 //　家の灯りがこうこうとまぶしい＠
 	ClearMessage();
@@ -127,7 +127,7 @@ void main()
 		   NULL, "I selected the fastest, most fundamental way of saving Satoko... and executed it without hesitation.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeOutBGM( 2, 1000, TRUE );
 
 //　あの男は死んだ＠
@@ -401,7 +401,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawSceneWithMask( "bg_258b", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/ymo3_01", "right", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //　死体の近くで見た街路灯の特徴をよく覚えていたのは...幸運だった＠
@@ -505,7 +505,7 @@ void main()
 		   NULL, " ...If I took too much time, I might lose my energy and strength again.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
 
 //　まるで砂浜に穴を掘っている気分だった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -608,7 +608,7 @@ void main()
 		   NULL, "The moment I thought that... I took a good look all around me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_258b", 50 );
+	DrawScene("background/ymo3_01", 50 );
 
 //　......寝ぼけ掛けていた神経を全て叩き起こし......周囲の気配を探る............￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -683,7 +683,7 @@ void main()
 		   NULL, "...I didn't breathe a sigh of relief.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	DrawSceneWithMask("black", "down", 0, 0, 300 );
 
 //　どれくらいの時間、泥水を掻き出しながら掘り続けたろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -897,7 +897,7 @@ void main()
 		   NULL, "...I was... so exhausted... that I wanted to lie down right here and sleep...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_258b", 400 );
+	DrawScene("background/ymo3_01", 400 );
 	PlayBGM( 1, "msys24", 128, 0 );
 
 //　............終わった＠
@@ -1091,8 +1091,8 @@ void main()
 		   NULL, "Plus, if I relaxed my posture even a little, it would fall out behind me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_142a", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ymo2_01", "left", 0, 0, 300 );
 
 //　...結局、左手でシャベルを持ち、片手で自転車にまたがる他なかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1120,8 +1120,8 @@ void main()
 		   NULL, " ...Even swaying like this, I got a little closer to home every time I pedaled.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "white", "c", 0, 0, 300 );
-	DrawScene( "bg_253a", 1000 );
+	DrawSceneWithMask("white", "c", 0, 0, 300 );
+	DrawScene("background/m_y2_04", 1000 );
 
 //　......前方にゆらりと二本の灯りが見えた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1254,8 +1254,8 @@ void main()
 		   NULL, " ...I lifted my face off the ground... and looked at her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_253a", "up", 0, 0, 300 );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/m_y2_04", "up", 0, 0, 300 );
 
 	PlaySE( 3, "wa_032", 128, 64 );
 
@@ -1268,7 +1268,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「こんばんは＠月の綺麗な夜ね＠...前原くん。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1309,7 +1309,7 @@ void main()
 		   NULL, "...Out of all the people I could have met... I got the sudden feeling that this was the one I wanted to see the least...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「こんな時間にどうしたのかしら＠　傘もささずに全身ずぶ濡れの泥まみれで＠......それは何＠　......シャベル？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1363,7 +1363,7 @@ void main()
 		   NULL, "...Don't let her on to anything, lest you dig your own grave...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...噂じゃあなた、ゴルフクラブで野球に参加したそうだけど＠そのシャベルも、つまりはそういうこと＠　くすくすくす...、傘の代わりってわけかしら？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1396,7 +1396,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......ふぅん＠それをこの土砂降りの中、取りに行ったわけ...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1416,7 +1416,7 @@ void main()
 		   NULL, "\"...When I left my house, I didn't think it would rain, so...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...あら、降り出したのは結構前よ＠　...あなた、ずいぶん前から表にいるのね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1565,7 +1565,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 2, "lsys23", 128, 0 );
-	ModDrawCharacter(2, 9, "character/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.....................コワイ顔＠いじめ過ぎちゃったかしら？　くすくす！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1590,7 +1590,7 @@ void main()
 		   NULL, "......But the dark clouds in my mind didn't go away...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「それはそうと...＠いつまで自転車にまたがったまま、地面に這いつくばってるつもり...＠　そろそろどいてくれるかしら。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1726,7 +1726,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「見捨てるのも気の毒だし＠...私がやさしい人で良かったわね、くすくすくす...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1745,7 +1745,7 @@ void main()
 		   NULL, "...Nobody good has ever called themselves a nice person... but that would have been a terrible thing to say to someone holding me up like this.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_103a", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/kuruma4_01", "left", 0, 0, 300 );
 
 //　鷹野さんの手を借りて、助手席に座る＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1806,7 +1806,7 @@ void main()
 		   NULL, " ...Well, given how you're already in here, it's already dirty, I suppose.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
 
 //　後部座席を振り返ると...、誰のだか知らないが折りたたみ式の自転車が積んであった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1828,8 +1828,8 @@ void main()
 		   NULL, "My expression reflected my thoughts, and the exact thought seemed to get through to her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_253a", "up", 0, 0, 300 );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/m_y2_04", "up", 0, 0, 300 );
 
 
 //「......わかったわ、わかったわ＠積んであげる＠......今夜だけはお姉さんもやさしくしてあげるわ。...くすくすくすくす...。＠
@@ -1926,7 +1926,7 @@ void main()
 		   NULL, "...Eventually, outlasted by my silence, Takano-san gave a short shrug and sighed.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 9, "character/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.........はいはい、わかったわ＠ボクはシャベルがないと困っちゃうんでしょう＠　...そんなコワイ目しなくてもいいわよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1957,9 +1957,9 @@ void main()
 		   NULL, " ...Takano-san watched me with a puzzled look.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawSceneWithMask( "bg_103a", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/kuruma4_01", "left", 0, 0, 300 );
 
 //「じゃ、行くわよ＠...前原くんのお家って、あの前原屋敷でいいんでしょう？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2009,8 +2009,8 @@ void main()
 		   NULL, "...From the rear-view mirror, that accursed place seemed to melt into the darkness.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_104a", "up", 0, 0, 1300 );
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/kuruma5_03", "up", 0, 0, 1300 );
 
 //「.........られた？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2118,7 +2118,7 @@ void main()
 		   NULL, " ...Hee-hee...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 2, "lsys25", 128, 0 );
 
 //　ガンガンと...わんわんと...＠
@@ -2247,7 +2247,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_103a", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/kuruma4_01", "right", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //　その時、不意に鷹野さんが振り返り、俺に目を合わせた￥
@@ -2345,7 +2345,7 @@ void main()
 //	DrawFilm( 2, 221, 221, 221, 255, 0, 1000, TRUE );
 //print 5
 	SetValidityOfWindowDisablingWhenGraphicsControl( FALSE );
-	DrawSceneWithMask( "tata_kuruma01", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma01", "down", 0, 0, 1000 );
 
 
 //　.........俺は......何て女と出会ってしまったんだろう...＠
@@ -2357,7 +2357,7 @@ void main()
 
 //	DrawFilm( 2, 204, 204, 204, 255, 0, 1000, TRUE );
 //print 5
-	DrawSceneWithMask( "tata_kuruma02", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma02", "down", 0, 0, 1000 );
 
 //　......今日、いろいろとありながらも......何とかうまく行き、......後は帰宅して眠るだけという...この最後の最後で.........何と言う不運......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2367,7 +2367,7 @@ void main()
 
 //	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
 //print 5
-	DrawSceneWithMask( "tata_kuruma03", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma03", "down", 0, 0, 1000 );
 //「.......................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s03/01/140100694", 128, TRUE);
@@ -2379,7 +2379,7 @@ void main()
 
 //	DrawFilm( 2, 136, 136, 136, 255, 0, 1000, TRUE );
 //print 5
-	DrawSceneWithMask( "tata_kuruma04", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma04", "down", 0, 0, 1000 );
 
 
 //　......そんな不安感は...次第に押し寄せる眠気の前に、......徐々にどうでもいいものになっていくのだった......￥
@@ -2390,7 +2390,7 @@ void main()
 
 //	DrawFilm( 2,  102, 102, 102, 255, 0, 1000, TRUE );
 //print 5
-	DrawSceneWithMask( "tata_kuruma05", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma05", "down", 0, 0, 1000 );
 
 //　.....................いいのか？　前原圭一...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2402,7 +2402,7 @@ void main()
 
 //	DrawFilm( 2,  68, 68, 68, 255, 0, 1000, TRUE );
 //print 5
-	DrawSceneWithMask( "tata_kuruma06", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma06", "down", 0, 0, 1000 );
 
 //　............この女、.........多分、生かしておかない方がいいぞ......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2412,7 +2412,7 @@ void main()
 
 //	DrawFilm( 2,  34, 34, 34, 255, 0, 1000, TRUE );
 //print 5
-	DrawSceneWithMask( "tata_kuruma07", "down", 0, 0, 1000 );
+	DrawSceneWithMask("tata_kuruma07", "down", 0, 0, 1000 );
 
 
 //　....................................今は......眠い￥
@@ -2421,7 +2421,7 @@ void main()
 		   NULL, "..................Right now... I'm tired.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
 //	FadeFilm( 1000, TRUE );
 	SetValidityOfWindowDisablingWhenGraphicsControl( TRUE );
 
@@ -2446,7 +2446,7 @@ void main()
 		   NULL, "...I thought I must have fallen asleep by accident.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_121a", "up", 0, 0, 1300 );
+	DrawSceneWithMask("background/ma5_01", "up", 0, 0, 1300 );
 
 //　窓の外を見ると...ぼんやりとした灯りに大きな建物が浮かび上がっていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2566,7 +2566,7 @@ void main()
 		   NULL, "...Takano-san opened the passenger side door for me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 9, "character/night/ta1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 9, "sprite/night/ta1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「本当に肩は必要ないかしら＠　もう一回だけ甘えてもいいのよ＠　くすくす...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2594,7 +2594,7 @@ void main()
 		   NULL, "...The rain was still pretty intense.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　後部座席から俺の自転車を下ろす＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2616,7 +2616,7 @@ void main()
 		   NULL, "I let Takano-san hold the umbrella over me, then pushed my bicycle up to the front door.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_118a", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma2_01", "left", 0, 0, 300 );
 
 //「...ありがとうございます＠もうここまでで大丈夫です。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2641,7 +2641,7 @@ void main()
 		   NULL, "...It was really, seriously... terrible luck.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 9, "character/night/ta1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 9, "sprite/night/ta1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「じゃあ、...私はこれで失礼するわね＠前原くんと二人きりで夜のドライブだったなんて、...みんなにはナイショよ＠　くすくす...、特にジロウさんにはね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2679,7 +2679,7 @@ void main()
 		   NULL, " ...His full name must be Jirou Tomitake, then.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　その時、.........さっき興味のなかったあの、後部座席のもう一台の、...折り畳み自転車が記憶に蘇る￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2688,8 +2688,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawFilm( 2, 170, 170, 170, 255, 0, 0, TRUE );
-	ModDrawCharacter(2, 8, "character/normal/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_003", "up", 0, 0, 1300 );
+	ModDrawCharacter(2, 8, "sprite/normal/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/damu4", "up", 0, 0, 1300 );
 
 //『やぁ、申し訳ないね。君、雛見沢の人だよね？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2709,10 +2709,10 @@ void main()
 		   NULL, "...And the bicycle he'd been riding......... It was......", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 1000, TRUE );
-	ModDrawCharacter(3, 9, "character/night/ta1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene( "bg_118a", 1000 );
+	ModDrawCharacter(3, 9, "sprite/night/ta1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene("background/ma2_01", 1000 );
 
 //「あの後ろに積んであった自転車、......富竹さんのですよね...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2728,7 +2728,7 @@ void main()
 		   NULL, "Takano-san's eyes... I think they sharpened for a moment.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 9, "character/night/ta1_akuwarai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/night/ta1_akuwarai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「.................................どうしてそう思うのかしら...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2780,7 +2780,7 @@ void main()
 		   NULL, "Takano-san, her hair elegantly fluttering... peers into my eyes.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 9, "character/night/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	ModDrawCharacter(3, 9, "sprite/night/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 
 //「......だって＠...雛見沢には民宿なんてないのよ＠　ならジロウさんは町に泊まっていることになるわよね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2829,7 +2829,7 @@ void main()
 		   NULL, " ...That's why Jirou-san was riding a bike.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 9, "character/night/ta1_akuwarai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/night/ta1_akuwarai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「...そのジロウさんの自転車が私の車に積んであって＠...ジロウさんは私の車に乗っていないなら、!w1000.........おかしいじゃない＠......ジロウさんは雛見沢で自転車ナシ...ってことになっちゃうわよ＠ジロウさんを放っておいて自転車だけが私の車に積んであるなんて、ね＠　ありえないでしょう？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2924,7 +2924,7 @@ void main()
 		   NULL, "...But...... the most wild, instinctive part of me... warned me not to pry.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 9, "character/night/ta1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/night/ta1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あれは私の自転車なのよ＠.........ジロウさんに選んでもらったから、センスが似てるのは間違いないけれどね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -2948,7 +2948,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawScene( "cg_111a", 1000 );
+	DrawScene("scene/111a", 1000 );
 
 //「私とあなたは今夜、出会わなかった。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -3150,7 +3150,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawScene( "cg_111b", 1000 );
+	DrawScene("scene/111b", 1000 );
 
 
 //「いちいちうるさいわね＠...それくらい自分で考えられないの、坊や。＠
@@ -3164,7 +3164,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 
 //　............坊やという見下した言葉で、俺との会話をぴしゃりと遮る￥
@@ -3231,8 +3231,8 @@ void main()
 		   NULL, "She shook her hair elegantly and turned on her heel.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_118a", 400 );
-	ModDrawCharacter(2, 9, "character/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawScene("background/ma2_01", 400 );
+	ModDrawCharacter(2, 9, "sprite/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...よかったわね＠...私がやさしい人で。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -3356,7 +3356,7 @@ void main()
 		   NULL, "...I... s h o u l d   n o t   h a v e   l e t   h e r   l i v e...!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 
 //　短いクラクションを一度鳴らし、...鷹野さんの車は土砂降りの中を走り去って行く＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3467,7 +3467,7 @@ void main()
 		   NULL, "Even the sound of the engine faded into the sound of the heavy rain, and was inaudible now.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_118a", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/ma2_01", "right", 0, 0, 300 );
 
 //　......俺もまた踵を返す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3502,7 +3502,7 @@ void main()
 		   NULL, "...I was covered in mud, and I made a squishing sound with every step I took.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　...ぐしゃ＠...ぐしゃ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3678,7 +3678,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_118a", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma2_01", "left", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //「..........................................。＠
@@ -3721,23 +3721,23 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 //	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 //	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask( "tata011_03", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("text/tata011_03", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("black", "mask_1900", 7, 0, 300 );
 
 
 

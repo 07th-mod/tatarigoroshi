@@ -9,10 +9,10 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlaySE( 3, "wa_001", 128, 64 );
 	Wait( 3000 );
-	DrawSceneWithMask( "bg_040", "up", 0, 0, 1300 );
+	DrawSceneWithMask("background/m_hi3", "up", 0, 0, 1300 );
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //　魅音たちは綿流しの祭りの準備があるとかで、俺にも来ないかと誘ったが、断った￥
@@ -37,23 +37,23 @@ void main()
 		   NULL, " Mion had a lot of nerve.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawSceneWithMask( "bg_040", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi3", "left", 0, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "bg_038", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi1", "left", 0, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "bg_120", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma3", "left", 0, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "up", 0, 0, 1300 );
+	DrawSceneWithMask("black", "up", 0, 0, 1300 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
-	DrawScene( "bg_115", 1000 );
+	DrawScene("background/ma_d1", 1000 );
 
 //!sd
 	FadeOutBGM( 1, 1000, TRUE );
@@ -72,7 +72,7 @@ void main()
 		   NULL, " ...It was because I wanted to be even calmer.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 	PlayBGM( 2, "lsys23", 128, 0 );
 
 //　すでにわかっている通りだが、あの男を殺すだけならあまりにも容易い＠
@@ -299,8 +299,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "white", 400 );
-	DrawSceneWithMask( "bg_115", "right", 0, 0, 300 );
+	DrawScene("white", 400 );
+	DrawSceneWithMask("background/ma_d1", "right", 0, 0, 300 );
 
 //「これまでの推理小説の中で、母さんが一番よく出来たと思った完全犯罪？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
@@ -589,7 +589,7 @@ void main()
 		   NULL, " never come to light.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_142", "down", 0, 0, 1300 );
+	DrawSceneWithMask("background/mo2", "down", 0, 0, 1300 );
 //	PlaySE( 3, "wa_026", 128, 64 );
 
 //「つまり、......うーん、例えばよ＠誰も立ち入らない深い森の奥で、おじいさんが一人暮らしをしているとする。＠
@@ -686,7 +686,7 @@ void main()
 		   NULL, "...The beginning would never occur...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //「だからつまり、物語は始まらない＠事件が発覚しないから探偵も呼ばれない＠そもそも誰も不審に思わないから謎も起こらない＠...おじいさんは今日もひとりでのんびり森の奥で暮らしているんだろうね...＠で、お空におじいさんの顔が浮かんでジ・エンド＠......どう、こんな感じで？＠
 //「......す、......すごいじゃないか...！＠　それ、ちゃんとしたトリックだよ？！￥
@@ -722,8 +722,8 @@ void main()
 		   NULL, " That's a pretty great trick!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_115", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_d1", "left", 0, 0, 300 );
 
 //「でも娯楽小説にはならないわね＠推理小説は所詮、娯楽書＠完全犯罪の指南書にはなり得ないんだから。＠
 //　...お袋を茶化すため、努めて明るく会話をしていたが...その胸中は興奮していた＠
@@ -840,11 +840,11 @@ void main()
 		   NULL, "There was no point in thinking inside my house anymore.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 2, "lsys12", 128, 0 );
-	DrawSceneWithMask( "bg_117", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma1", "left", 0, 0, 300 );
 
 //　俺は家を抜け出し、ガレージから自転車を出した＠
 //　......行き先は......とりあえずどこでもいい＠
@@ -866,7 +866,7 @@ void main()
 		   NULL, "I just rode through the wind, trying to calm my excitement by feeling the cool air on my body.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_203a", 1000 );
+	DrawScene("background/sora", 1000 );
 
 //　.........殺す場所とその方法、!w1000時間、!w1000死体の処理＠
 //　......この四点を詰めるだけで......計画は充分になる￥
@@ -953,13 +953,13 @@ void main()
 
 //■殺人準備
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "white", 400 );
+	DrawScene("white", 400 );
 
-	DrawSceneWithMask( "bg_040", "m1", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi3", "m1", 0, 0, 300 );
 
 //　表はまだセミの鳴く時間だ＠
 //　......昼下がり＠...夕方にはまだ遠かった￥
@@ -1004,8 +1004,8 @@ void main()
 		   NULL, "...If I heard a little bit of thunder, I'd definitely have expected a sudden evening shower.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "right", 0, 0, 300 );
-	DrawSceneWithMask( "bg_093", "right", 0, 0, 300 );
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/g1", "right", 0, 0, 300 );
 
 //　......まず目指したのは、学校だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1049,7 +1049,7 @@ void main()
 		   NULL, "But this was something I had chosen after a lot of thought.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	DrawSceneWithMask("black", "down", 0, 0, 300 );
 
 //　...現実に考えてみればいい。
 //＠銃刀法で刃渡り１０...何センチだったか以上の刃物は禁じられている＠
@@ -1130,7 +1130,7 @@ void main()
 		   NULL, " I will speak about it later.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_027", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/gr1", "right", 0, 0, 300 );
 
 //　土曜日の放課後はクラスメートがまだまだ校庭ではしゃぎまわっていた＠
 //　その中に俺が現れても、それはいつもの風景なので誰も不審には思わない￥
@@ -1177,7 +1177,7 @@ void main()
 		   NULL, "...At a location at which my appearance wouldn't be suspicious... I would acquire the weapon.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_028", 400 );
+	DrawScene("background/gr2", 400 );
 
 //　窓から教室を確認すると...、当然だが誰もいなかった＠
 //　教室に残るなんて、部活メンバーが部活をする時くらいだ＠
@@ -1205,9 +1205,9 @@ void main()
 		   NULL, "...Without glancing around nervously... as if I'd just gone to get something I'd forgotten, I casually went in the entrance.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_019", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/g2", "left", 0, 0, 300 );
 
 //　.........先生は職員室で事務に集中しているようだ＠
 //　廊下に姿はない＠
@@ -1228,7 +1228,7 @@ void main()
 		   NULL, "...Naturally, yet quickly as a shadow... I entered the classroom.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_108", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/gk1", "left", 0, 0, 300 );
 	PlayBGM( 2, "lsys25", 128, 0 );
 
 //　無人の教室には、普段では感じることのできない、不思議な空気が淀んでいる￥
@@ -1272,7 +1272,7 @@ void main()
 		   NULL, "I felt regret at wasting valuable thinking time on stupid delusions.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_108", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/gk1", "right", 0, 0, 300 );
 
 //　......教室の後ろには各生徒用のロッカーが並ぶ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1369,7 +1369,7 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
 	FadeOutBGM( 1, 1000, TRUE );
 
 //　きぃ...ぃぃぃ......￥
@@ -1455,7 +1455,7 @@ void main()
 		   NULL, "...It was one of the rules... for standing in for him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_109", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/gk3", "left", 0, 0, 300 );
 
 //　金属バットを...ぐっと握る￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1555,9 +1555,9 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "black", "right", 0, 0, 300 );
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
 	PlayBGM( 1, "msys12", 128, 0 );
-	DrawSceneWithMask( "bg_028", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/gr2", "right", 0, 0, 300 );
 
 //　俺は昇降口を出、...すぐ近くに止めてある建設重機に近付く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1664,13 +1664,13 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 //	Wait( 1000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	SetValidityOfInput( TRUE );
 
 }

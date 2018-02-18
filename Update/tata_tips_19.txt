@@ -53,7 +53,7 @@ void main()
 		   NULL, "There is a theory stating the shrine, or \"yashiro,\" dedicated to Oyashiro-sama itself became an object of worship.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「御社さま」と呼ばれるに至ったと言う説があるが、実にセンスの欠片もない。",
-		   NULL, And that people began calling it \"o-yashiro-sama,\" or \"lord honorable shrine\"—but this doesn't make a bit of sense.", Line_Normal);
+		   NULL, "And that people began calling it \"o-yashiro-sama,\" or \"lord honorable shrine\"—but this doesn't make a bit of sense.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 128, 64 );
@@ -171,7 +171,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );

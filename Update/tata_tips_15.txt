@@ -14,7 +14,7 @@ void main()
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DisableWindow();
-	DrawSceneWithMask( "bg_011", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/denwa", "up", 0, 0, 300 );
 	FadeOutBGM( 2, 10, TRUE );
 
 //「はいもしもし＠救急ですか、消防ですか。＠
@@ -79,7 +79,7 @@ void main()
 		   NULL, " I need to know exactly where you are, so please tell me your name, a phone number we can use to get in touch with you, and the exact location of the fire.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 
 //「消防司令部より通達＠ＸＸ山西側斜面にて不審火の通報あり＠街道から離れてることから、カップルの焚き火か、不法投棄のゴミに放火したかの可能性があります＠現場は深い森林地帯＠周辺に民家はないが、延焼の可能性あり＠直ちに現場を確認されたし。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>消防司令部</color>", NULL, "<color=#f5e6d3>Fire Department Headquarters</color>", NULL, Line_ContinueAfterTyping); }
@@ -175,7 +175,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
