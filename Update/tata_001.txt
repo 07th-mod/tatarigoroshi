@@ -2142,8 +2142,8 @@ void main()
 	OutputLine(NULL, "ブロッコリーは何色だ。",
 		   NULL, " What color is broccoli?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei23430", 128, TRUE);
-	OutputLine(NULL, "赤青緑って、テレビのブラウン管じゃあるまいしー！",
-		   NULL, " It's not red-blue-green, like a television!", Line_WaitForInput);
+	OutputLine(NULL, "青赤緑って、テレビのブラウン管じゃあるまいしー！",
+		   NULL, " Blue, red, green? It's not a television!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei23440", 128, TRUE);
 	OutputLine(NULL, "　ほれほれ、言ってみろ言ってみろ！」",
 		   NULL, " Come on, say it, say it!\"", GetGlobalFlag(GLinemodeSp));
@@ -2170,14 +2170,10 @@ void main()
 	DisableWindow();
 	ModDrawCharacter(2, 4, "sprite/normal/sa1b_naku_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-//「...わぁああぁあぁあああぁんッ！＠　圭々のばかぁー！＠　わああぁああぁあん！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s19/04/500400159", 128, TRUE);
-	OutputLine(NULL, "「…わぁああぁあぁあああぁんッ！！",
-		   NULL, "\"...Waaaahhhhhhhhhhhh!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "s19/04/500400160", 128, TRUE);
-	OutputLine(NULL, "　圭々のばかぁー！！",
-		   NULL, " Stupid Kei-kei!!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_001_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_001_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 4, "s19/04/500400161", 128, TRUE);
 	OutputLine(NULL, "　わああぁああぁあん！！」",
 		   NULL, " Waaahhhhhh!!\"", GetGlobalFlag(GLinemodeSp));
@@ -3453,13 +3449,11 @@ void main()
 		   NULL, " As long as I've got this...!!!", Line_Normal);
 	ClearMessage();
 
-//「...なぁんだ＠考えるより生むが易しだな～＠お料理の本さえあれば、誰だってシェフの味が出せるじゃんよ～＠　さすがはお料理の本～......。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei23770", 128, TRUE);
-	OutputLine(NULL, "「…なぁんだ。",
-		   NULL, "\"...Well.", Line_Continue);
-	OutputLine(NULL, "考えるより生むが易しだな〜。",
-		   NULL, " It's easier to give it a shot than think about it, right~?", Line_WaitForInput);
+	//「...なぁんだ＠考えるより生むが易しだな～＠お料理の本さえあれば、誰だってシェフの味が出せるじゃんよ～＠　さすがはお料理の本～......。
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_001_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_001_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei23780", 128, TRUE);
 	OutputLine(NULL, "お料理の本さえあれば、誰だってシェフの味が出せるじゃんよ〜☆",
 		   NULL, " Anyone can concoct the tastes of a gourmet chef as long as they have a cookbook~☆.", Line_WaitForInput);
@@ -7084,13 +7078,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei25150", 128, TRUE);
 	OutputLine(NULL, "「やれやれ…。",
-		   NULL, "\"Gimme a break...", Line_WaitForInput);
+		NULL, "\"Gimme a break...", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "沙都子の中の圭一株は大暴落みたいだな。",
-		   NULL, " Looks like Keiichi's approval ratings have plummeted in Satoko's mind.", Line_WaitForInput);
+		NULL, " Looks like Keiichi's approval ratings have plummeted in Satoko's mind.", Line_Continue);
+	Wait( 3000 );
 	OutputLine(NULL, "…安心しろ。",
-		   NULL, " ...Don't worry.", Line_WaitForInput);
+		NULL, " ...Don't worry.", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "皿くらいきっちりと洗ってみせるぞ。",
-		   NULL, " I'll clean those dishes up no problem.", Line_WaitForInput);
+		NULL, " I'll clean those dishes up no problem.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei25160", 128, TRUE);
 	OutputLine(NULL, "安心して帰れ。",
 		   NULL, " So don't worry about it and go home. ", GetGlobalFlag(GLinemodeSp));
