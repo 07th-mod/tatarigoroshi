@@ -23,17 +23,10 @@ void main()
 		   NULL, " Satoko could fend off an entire army division by holing up in this mountain.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-//「私は知ってるよ＠沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s20/03/440300088", 128, TRUE);
-	OutputLine(NULL, "「私は知ってるよ。",
-		   NULL, "\"I know all about it!", Line_Continue);
-	Wait(1000);
-	OutputLine(NULL, "沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。」",
-		   NULL, " Satoko was one of the Soviet military advisors that gave training on traps to that one country.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_tips_001_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_tips_001_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 //「そんなヘンな話はいいから...誰か助けてぇえぇ～～！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -93,7 +86,7 @@ void main()
 	ModPlayVoiceLS(4, 1, "s20/01/440100093", 128, TRUE);
 	OutputLine(NULL, "「ぬ、抜け出して助けるのは魅音の方だー！",
 		   NULL, "\"Y-You're the one who should be breaking out and saving me, Mion!", Line_Continue);
-	Wait(1100);
+	Wait(2400);
 	OutputLine(NULL, "　この簀巻き状態の俺に、何をしろと言うんだー！」",
 		   NULL, " What do you expect me to do in this freaking bamboo mat?!\"", Line_Normal);
 	ClearMessage();
@@ -472,12 +465,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s20/01/440100097", 128, TRUE);
-	OutputLine(NULL, "「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！」",
-		   NULL, "\"W-When did this turn into freaking Vietnam?!\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_tips_001_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_tips_001_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 	FadeAllBustshots( 400, TRUE );
 
