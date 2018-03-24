@@ -668,11 +668,11 @@ void main()
 	OutputLine(NULL, "「愚息の圭一です。",
 		   NULL, "\"This is my son, Keiichi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "s19/00/502600002", 128, TRUE);
-	OutputLine(NULL, "圭一、こちらは××出版の××さんだ。",
-		   NULL, " Keiichi, this is ___-san from ___.", Line_WaitForInput);
+	OutputLine(NULL, "圭一、こちらは出版社の本多さんだ。",
+		   NULL, " Keiichi, this is Honda-san, he's a publisher.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "s19/00/502600003", 128, TRUE);
-	OutputLine(NULL, "そしてこちらは××××××専務の××さん。",
-		   NULL, " And this person here is ___-san, the _____ manager.", Line_WaitForInput);
+	OutputLine(NULL, "そしてこちらは印刷会社の井上さん。",
+		   NULL, " And this person here is Inoue-san, who works as a printer.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "s19/00/502600004", 128, TRUE);
 	OutputLine(NULL, "ご挨拶しなさい。」",
 		   NULL, " Say your hellos.\"", GetGlobalFlag(GLinemodeSp));
@@ -1335,8 +1335,8 @@ void main()
 	OutputLine(NULL, "探したんだぞ。",
 		   NULL, " I was looking for you.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "s19/00/502600007", 128, TRUE);
-	OutputLine(NULL, "こちらの×××出版の××さんがな、ぜひ次のコピー誌で…、」",
-		   NULL, " ___-san here from ____ was looking for a photocopy—\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "こちらの出口さんがな、ぜひ次のコピー誌で…、」",
+		   NULL, " Deguchi-san here was hoping that for his next dojinshi—\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2029,19 +2029,10 @@ void main()
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
 	ModDrawCharacterWithFiltering(1, 10, "sprite/normal/iri3_def1_", "0", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
-//「その前原くんって子は...本当に助っ人になれるんですか...＠　相手はあの県立大島のエース、左腕の亀田くんですよ＠　甲子園クラスの投手を打ち崩せるなんて...一体どんな助っ人なんです...？！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s19/10/501000001", 128, TRUE);
-	OutputLine(NULL, "「その前原くんって子は…本当に助っ人になれるんですか…？",
-		   NULL, "\"This Maebara-kun kid... Will he really save us...?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s19/10/501000002", 128, TRUE);
-	OutputLine(NULL, "　相手はあの県立大島のエース、左腕の亀田くんですよ？",
-		   NULL, " We're up against the ace of Ooshima—left-arm Kameda-kun!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s19/10/501000003", 128, TRUE);
-	OutputLine(NULL, "　甲子園クラスの投手を打ち崩せるなんて…一体どんな助っ人なんです…？！」",
-		   NULL, " He can beat a Koshien-class pitcher... He must be a god...!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -2119,8 +2110,8 @@ void main()
 		   NULL, " \"He must have gone under the radar!!\"", Line_WaitForInput);
 	OutputLine(NULL, "　おい！",
 		   NULL, " \"Hey!", Line_WaitForInput);
-	OutputLine(NULL, "　阪神の××さんが腰を上げたぞ…！！",
-		   NULL, " ___-san from Hanshin stood up...!!\"", Line_WaitForInput);
+	OutputLine(NULL, "　あっちのスカウト部長が腰を上げたぞ…！！",
+		   NULL, " That scout stood up...!!\"", Line_WaitForInput);
 	OutputLine(NULL, "　おい！",
 		   NULL, " \"Hey!", Line_WaitForInput);
 	OutputLine(NULL, "　写真を撮れ！！",
@@ -2699,9 +2690,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei28580", 128, TRUE);
 	OutputLine(NULL, "「それでその危機的状況というのはどんな具合なんだ。",
-		   NULL, "\"So what's the crisis situation look like?", Line_WaitForInput);
+		   NULL, "\"So what's the crisis situation look like?", Line_Continue);
+	Wait( 3500 );
 	OutputLine(NULL, "……６対７。",
-		   NULL, " ...6 to 7.", Line_WaitForInput);
+		   NULL, " ...6 to 7.", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "ってことは負けてるのがうちのチームってことか。",
 		   NULL, " Which means our team is losing, huh?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei28590", 128, TRUE);
@@ -2735,11 +2728,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei28630", 128, TRUE);
 	OutputLine(NULL, "「…わかったよわかったよ悪かったよ。",
-		   NULL, "\"...All right, all right, I'm sorry!", Line_WaitForInput);
+		   NULL, "\"...All right, all right, I'm sorry!", Line_Continue);
+	Wait( 2000 );
 	OutputLine(NULL, "んで？",
-		   NULL, " Okay, so?", Line_WaitForInput);
+		   NULL, " Okay, so?", Line_Continue);
+	Wait( 500 );
 	OutputLine(NULL, "　俺の仕事は何だ。",
-		   NULL, " What am I doing?", Line_WaitForInput);
+		   NULL, " What am I doing?", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "ピンチヒッターでもやるのか？",
 		   NULL, " Am I gonna be the pinch hitter?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei28640", 128, TRUE);
@@ -2806,10 +2802,10 @@ void main()
 	ModPlayVoiceLS(4, 3, "s19/03/500300395", 128, TRUE);
 	OutputLine(NULL, "あれ、本物の甲子園ピッチャーなんだよ。",
 		   NULL, " That's a bona fide Koshien-level pitcher.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s19/03/500300396", 128, TRUE);
-	OutputLine(NULL, "県立大島のエース、左腕の亀田くんって、知らない？」",
-		   NULL, " Don't you know about Left-Arm Kameda-kun, the ace of Ooshima?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -3175,21 +3171,10 @@ void main()
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1a_nande_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
-//「たまたまね、今日の試合に県立大島の亀田くんが見物に来てたの。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s19/02/500200512", 128, TRUE);
-	OutputLine(NULL, "「たまたまね、今日の試合に県立大島の亀田くんが見物に来てたの。」",
-		   NULL, "\"And Kameda-kun from Ooshima just happened to show up to watch the game today.\"", GetGlobalFlag(GLinemodeSp));
-
-//＜レナ
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-//　県立大島ってのは、うちの県ではかなり知られた甲子園常連の学校らしい＠
-//　そして、その野球部のエースの亀田という男は...どうもかなりの腕前らしいのだ＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　県立大島ってのは、うちの県ではかなり知られた甲子園常連の学校らしい。",
-		   NULL, "Ooshima was apparently a fairly well-known school in our prefecture that frequently sent people to Koshien.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4761,9 +4746,11 @@ void main()
 //「そんなのは当り前だろう＠　どんな脅しにも買収にも、勝利を放棄させるような対価は存在しない！￥
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29160", 128, TRUE);
 	OutputLine(NULL, "勝利こそ絶対。",
-		   NULL, " Victory decides all.", Line_WaitForInput);
+		   NULL, " Victory decides all.", Line_Continue);
+	Wait( 2000 );
 	OutputLine(NULL, "何にも変えられないってわけだ。",
-		   NULL, " No one can change that.", Line_WaitForInput);
+		   NULL, " No one can change that.", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "…くっくっく！」",
 		   NULL, " ...Hu-hu-hu!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4908,15 +4895,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29220", 128, TRUE);
 	OutputLine(NULL, "「例えば、…君が焼肉食い放題に行ったとする。",
-		   NULL, "\"For example... let's say you went to a grilled meat buffet.", Line_WaitForInput);
+		   NULL, "\"For example... let's say you went to a grilled meat buffet.", Line_Continue);
+	Wait( 3500 );
 	OutputLine(NULL, "君が皿に盛って来るのは一体何だ？",
-		   NULL, " What, exactly, would be on your plate?", Line_WaitForInput);
+		   NULL, " What, exactly, would be on your plate?", Line_Continue);
+	Wait( 2500 );
 	OutputLine(NULL, "　…ロースか？",
-		   NULL, " ...Pork loin?", Line_WaitForInput);
+		   NULL, " ...Pork loin?", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "　カルビか？",
-		   NULL, " Korean barbecue?", Line_WaitForInput);
+		   NULL, " Korean barbecue?", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "　牛タンの山か？",
-		   NULL, " A pile of beef tongue?", Line_WaitForInput);
+		   NULL, " A pile of beef tongue?", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "　…くっくっく。",
 		   NULL, " ...Ku-ku-ku.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29230", 128, TRUE);
@@ -5141,20 +5133,10 @@ void main()
 	ModPlayVoiceLS(4, 23, "s19/23/202800030", 128, TRUE);
 	OutputLine(NULL, "こんな変なことを考えてデザートを食べているのはきっと世界で俺だけだぁぁ…。",
 		   NULL, " I'm probably the only one in the world who thinks those things while eating desserts...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 23, "s19/23/202800031", 128, TRUE);
-	OutputLine(NULL, "俺は爽やかなスポーツマンのふりをした…変態なんだぁ…。」",
-		   NULL, " I'm nothing but a... a pervert, pretending to be a proper sportsman...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29360", 128, TRUE);
-	OutputLine(NULL, "「そうだ。",
-		   NULL, "\"That's right.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29370", 128, TRUE);
-	OutputLine(NULL, "お前は変態だッ！！！」",
-		   NULL, " You're a pervert!!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
@@ -5180,15 +5162,10 @@ void main()
 		   NULL, " ...Instead, I clapped my hands down onto his shoulders!!!", Line_Normal);
 	ClearMessage();
 
-//「わめくな亀田！＠　男が変態で何が悪いッ？！？！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29380", 128, TRUE);
-	OutputLine(NULL, "「わめくな亀田！！",
-		   NULL, "\"Do not cry, Kameda!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29390", 128, TRUE);
-	OutputLine(NULL, "　男が変態で何が悪いッ？！？！」",
-		   NULL, " What's wrong with a man being a pervert?!?!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
 
 	FadeOutBGM( 1, 1000, TRUE );
@@ -5210,14 +5187,10 @@ void main()
 
 	PlayBGM( 1, "msys04", 128, 0 );
 
-//「男はすべからく変態だ！＠　だがそれを認めか否かで、男の器は天と地の差を持つのだ！！＠　お前は自分に素直だった！＠　それを自慢していい＠　威張っていい！＠　自分を誇りに思えぇえぇッ！！＠
-//　責められるどころか、自らを誇れと言われ...亀田くんは困惑を隠せない￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29400", 128, TRUE);
-	OutputLine(NULL, "「男はすべからく変態だ！！",
-		   NULL, "\"A man ought to be a pervert!!", Line_WaitForInput);
-	OutputLine(NULL, "　だがそれを認めか否かで、男の器は天と地の差を持つのだ！！！",
-		   NULL, " But admitting it sets a man apart from those below him!!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29410", 128, TRUE);
 	OutputLine(NULL, "　お前は自分に素直だった！！",
 		   NULL, " You've been honest to yourself!!", Line_WaitForInput);
@@ -5240,13 +5213,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29450", 128, TRUE);
 	OutputLine(NULL, "「そうだ！！",
-		   NULL, " \"Yes!!", Line_WaitForInput);
+		   NULL, " \"Yes!!", Line_Continue);
+	Wait( 500 );
 	OutputLine(NULL, "　そして俺はお前に感銘を受けたのだ！！",
-		   NULL, " I have been deeply moved by what you've shown me!!", Line_WaitForInput);
+		   NULL, " I have been deeply moved by what you've shown me!!", Line_Continue);
+	Wait( 2800 );
 	OutputLine(NULL, "　デザートはただ単に食後に食べる甘い物。",
-		   NULL, " Desserts are nothing but sweet foods eaten after meals...", Line_WaitForInput);
+		   NULL, " Desserts are nothing but sweet foods eaten after meals...", Line_Continue);
+	Wait( 3000 );
 	OutputLine(NULL, "…今までずっとそう思ってた！！",
-		   NULL, " That's what I'd thought this whole time!!", Line_WaitForInput);
+		   NULL, " That's what I'd thought this whole time!!", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "　それは間違ってた！！",
 		   NULL, " But I was mistaken!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29460", 128, TRUE);
@@ -5296,7 +5273,8 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…そうだ！",
-		   NULL, " Indeed!", Line_WaitForInput);
+		   NULL, " Indeed!", Line_Continue);
+	Wait( 800 );
 	OutputLine(NULL, "　どこか古風な…鹿鳴館華やかなりし頃の正統派のメイドを思わせる！！",
 		   NULL, " It's somehow old-fashioned... like the orthodox maids from the gaudy times of the late 1800s!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29520", 128, TRUE);
@@ -5337,10 +5315,11 @@ void main()
 		   NULL, "\"Because there are only strawberries, the soft, accented cream decoration ends up... looking like frills, laces, and embroidery... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29570", 128, TRUE);
-	OutputLine(NULL, "それを、上品な貴族の、ご主人さまのようにフォークで切り分け…、いやいやッ！！",
-		   NULL, "And she takes it, and splits it with her fork for her master, an elegant aristocrat... No, no!!", Line_WaitForInput);
-	OutputLine(NULL, "　それを下劣に、脂汗を浮かせた悪のご主人さまのようにしゃぶりつくところがワイルドなのかッ？！",
-		   NULL, " It would be wilder if she took it and sucked on it vulgarly, like her bad master in his greasy sweat?! ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "それを、上品な貴族の、ご主人さまのようにフォークで切り分け…、",
+		   NULL, "And she takes it, and splits it with her fork for her master, an elegant aristocrat...", Line_Continue);
+	Wait( 3000 );
+	OutputLine(NULL, "　いやいやッ！！それを下劣に、脂汗を浮かせた悪のご主人さまのようにしゃぶりつくところがワイルドなのかッ？！",
+		   NULL, " No, no!! It would be wilder if she took it and sucked on it vulgarly, like her bad master in his greasy sweat?! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29580", 128, TRUE);
 	OutputLine(NULL, "　い、いやそれより…ごくり！",
@@ -5373,19 +5352,17 @@ void main()
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29630", 128, TRUE);
 	OutputLine(NULL, "「お…俺、もう辛抱できないや…！！",
 		   NULL, "\"I... I can't hold it in anymore...!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29640", 128, TRUE);
-	OutputLine(NULL, "　帰りはエンジェルモートでショートケーキを飽きるまで慰み者に……くっくっく！！",
-		   NULL, " I'll go to Angel Mort on the way home and make a shortcake into my plaything all I want... hu-hu-hu!!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29650", 128, TRUE);
 	OutputLine(NULL, "　俺の為だけに美しく着飾った少女たちを…うっひっひっひ！！",
 		   NULL, " The girls, dressed up beautifully, just for me... uhee-hee-hee!! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29660", 128, TRUE);
-	OutputLine(NULL, "　身を寄せ合って震える少女たちをひとりずつ順番に…、見せ付けるように…くっくっく！！！",
-		   NULL, "I draw ever closer to the trembling maidens, and then, one by one... I show them... hu-hu-hu!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29670", 128, TRUE);
-	OutputLine(NULL, "　ひとつ食べるごとに…次は誰を食べようかにゃあと…顎をこう、くいと持って、品定めをして…、",
-		   NULL, " For every one I eat... I hold my jaw tight, just like this, and appraise the goods... wondering which to eat next...", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog008");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29680", 128, TRUE);
 	OutputLine(NULL, "くっくっく！」",
 		   NULL, " Hu-hu-hu!\"", GetGlobalFlag(GLinemodeSp));
@@ -5397,11 +5374,10 @@ void main()
 		   NULL, " Keiichi-kun seems to be talking about cake combination platters (emphasis mine))", Line_Normal);
 	ClearMessage();
 
-//「......見せ付けるように...！＠　顎をこう、...くいともって、ご、ごくりッ！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 23, "s19/23/202800036", 128, TRUE);
-	OutputLine(NULL, "「……見せ付けるように…！！",
-		   NULL, "\"...As if I'm showing off...!!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog009");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog009");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 23, "s19/23/202800037", 128, TRUE);
 	OutputLine(NULL, "　顎をこう、…くいともって、ご、ごくりッ！！！」",
 		   NULL, " I hold my jaw... tight like this... and... g-gulp!!!\"", GetGlobalFlag(GLinemodeSp));
@@ -5504,9 +5480,10 @@ void main()
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29760", 128, TRUE);
 	OutputLine(NULL, "　そんなことより……、試合が終わったらエンジェルモートに行って、",
 		   NULL, "Instead... once this game is over...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29770", 128, TRUE);
-	OutputLine(NULL, "……フリルとリボンで西洋人形のように飾られた、ゴシックロリータ少女、食い放題で行こうかなぁ？！",
-		   NULL, " why don't I head down to Angel Mort and get all-you-can eat of gothic lolitas, decorated like western dolls in frills and ribbons?!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog010");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog010");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29780", 128, TRUE);
 	OutputLine(NULL, "　ぐっひゃっひゃっひゃッ！！",
 		   NULL, " Guh-hya-hya-hya!!", GetGlobalFlag(GLinemodeSp));
@@ -5517,24 +5494,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 23, "s19/23/202800039", 128, TRUE);
-	OutputLine(NULL, "「ロ、ロリータを…",
-		   NULL, "\"L-Lolitas...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "く、",
-		   NULL, " A-", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "食い放題ッ！！！」",
-		   NULL, " All you can eat!!!\"", Line_Continue);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_003_vm0x_n01","dialog011");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_003_vm00_n01","dialog011");}
+	//VoiceMatchingEnd
 
 	DisableWindow();
 	DrawScene("white", 10 );
@@ -5607,15 +5570,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei29830", 128, TRUE);
 	OutputLine(NULL, "　さっき言ったはずだ！！",
-		   NULL, "I already said!!", Line_WaitForInput);
+		   NULL, "I already said!!", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "　認めるか否かが男の分岐路なのだ！！！",
-		   NULL, " Admitting your perversion is what separates the boys from the men!!!", Line_WaitForInput);
+		   NULL, " Admitting your perversion is what separates the boys from the men!!!", Line_Continue);
+	Wait( 2500 );
 	OutputLine(NULL, "　貴様は胸を張れるべき男！！",
-		   NULL, " You are a man entitled to pride!!", Line_WaitForInput);
+		   NULL, " You are a man entitled to pride!!", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "　さぁ！！",
-		   NULL, " Now!!", Line_WaitForInput);
+		   NULL, " Now!!", Line_Continue);
+	Wait( 800 );
 	OutputLine(NULL, "　手を差し出せ！！",
-		   NULL, " Reach out your hand!!", Line_WaitForInput);
+		   NULL, " Reach out your hand!!", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "　自らの偉大さを示してみろ！！",
 		   NULL, " And show me how great you really are!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -6475,11 +6443,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30080_01", 128, TRUE);
 	OutputLine(NULL, "（ああ。",
-		   NULL, "(Yeah.", Line_WaitForInput);
+		   NULL, "(Yeah.", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "でかしたぞ亀田くん！",
-		   NULL, " Well done, Kameda-kun!", Line_WaitForInput);
+		   NULL, " Well done, Kameda-kun!", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "　この調子で次のバッターも頼むぞ…！！",
-		   NULL, " Keep going like this for the next batter...!!", Line_WaitForInput);
+		   NULL, " Keep going like this for the next batter...!!", Line_Continue);
+	Wait( 2200 );
 	OutputLine(NULL, "　こんな試合、とっとと終わらせて…くっくっくっく☆！！）",
 		   NULL, " Let's wrap this thing up, and then... ku-ku-ku-ku☆!!)", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -6933,7 +6904,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "s19/23/202800065", 128, TRUE);
 	OutputLine(NULL, "（でもＫさん。",
-		   NULL, "(But K-san...", Line_WaitForInput);
+		   NULL, "(But K-san...", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "…いくら手を抜いて投げても…この子、本当に打てるんですかね？）",
 		   NULL, " However slowly I pitch... can this girl really hit it?)", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -6942,7 +6914,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30110_03", 128, TRUE);
 	OutputLine(NULL, "（…いいからお前は決められた通りに投げろ。",
-		   NULL, "(...Don't worry, and throw the ball like we planned.", Line_WaitForInput);
+		   NULL, "(...Don't worry, and throw the ball like we planned.", Line_Continue);
+	Wait( 2500 );
 	OutputLine(NULL, "俺には何となくわかってる。）",
 		   NULL, " I think I've got a good idea of how this'll turn out.)", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
