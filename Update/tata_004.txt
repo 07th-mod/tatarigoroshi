@@ -127,10 +127,10 @@ void main()
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30350", 128, TRUE);
 	OutputLine(NULL, "朝食は一日の基本だもんな。",
 		   NULL, " Breakfast is an important part of the day.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30360", 128, TRUE);
-	OutputLine(NULL, "きっと健康不良な魅音を飛び越して、ボインボインのナイスバデーになって、グラビアを独り占めだ！！」",
-		   NULL, " I'm sure you'll surpass that unhealthy Mion, get yourself a nice, sproingy body, and be all over the dirty magazines!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_004_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_004_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 
 	DisableWindow();
@@ -1709,7 +1709,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30710", 128, TRUE);
 	OutputLine(NULL, "「へぇ…。",
-		   NULL, "\"Huh...", Line_WaitForInput);
+		   NULL, "\"Huh...", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "そうなんですか…。」",
 		   NULL, " I see...\"", Line_Normal);
 	ClearMessage();
@@ -2597,11 +2598,10 @@ void main()
 
 	FadeOutBGM( 1, 1000, TRUE );
 
-//「まずですね、私のことをご主人様と呼ばせて、御奉仕メイドに再教育します。」/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s19/06/500600353", 128, TRUE);
-	OutputLine(NULL, "「まずですね、私のことをご主人様と呼ばせて、御奉仕メイドに再教育します。」",
-		   NULL, "\"Well, first, I would get her to call me Master, and re-educate her in the ways of a maidservant.\"", Line_Continue);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_004_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_004_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 	PlaySE( 3, "wa_029", 128, 64 );
 
@@ -2665,53 +2665,10 @@ void main()
 	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si1a_akuwarai_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 2, "lsys12", 128, 0 );
 
-//「そうそう＠沙都子を監禁木馬責めにして、肉奴隷にするってはっきり言いました。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s19/06/500600354", 128, TRUE);
-	OutputLine(NULL, "「そうそう。",
-		   NULL, "\"Oh, that's right.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s19/06/500600355", 128, TRUE);
-	OutputLine(NULL, "沙都子を監禁木馬責めにして、肉奴隷にするってはっきり言いました。」",
-		   NULL, " I clearly said I would put Satoko on a wooden bondage horse and make her my meat slave.\"", Line_Normal);
-	ClearMessage();
-//＜詩音
-	DisableWindow();
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-
-//「あ～～、それはいいですねぇ...＠沙都子ちゃんを...木馬責め...♪＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s19/10/501000117", 128, TRUE);
-	OutputLine(NULL, "「あ〜〜、それはいいですねぇ…。",
-		   NULL, "\"Ahhh, that sounds nice...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s19/10/501000118", 128, TRUE);
-	OutputLine(NULL, "沙都子ちゃんを…木馬責め…♪」",
-		   NULL, " Satoko-chan on... on a wooden horse...♪\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	DisableWindow();
-	ModDrawCharacter(3, 6, "sprite/normal/si1b_wink_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-
-//「器具を使ったプレイは、ちゃんと知識を身に付けてからにして下さいね＠間違った知識を持ってると、本当に危険なんです。＠
-//「なるほどな＠用法を正しく守ってお使い下さいってよく書いてあるもんな。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s19/06/500600356", 128, TRUE);
-	OutputLine(NULL, "「器具を使ったプレイは、ちゃんと知識を身に付けてからにして下さいね。",
-		   NULL, "\"Oh, 'pretty' and 'purity' are really hard to differentiate, right?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s19/06/500600357", 128, TRUE);
-	OutputLine(NULL, "間違った知識を持ってると、本当に危険なんです。」",
-		   NULL, " Be careful with mixing refined japanese words and english together.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30960", 128, TRUE);
-	OutputLine(NULL, "「なるほどな。",
-		   NULL, "\"I get it.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei30970", 128, TRUE);
-	OutputLine(NULL, "用法を正しく守ってお使い下さいってよく書いてあるもんな。」",
-		   NULL, " They do always write on labels to only use things for their intended purpose, after all.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_004_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_004_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 
 	DisableWindow();
@@ -3573,14 +3530,10 @@ void main()
 	ModDrawCharacterWithFiltering(3, 25, "sprite/normal/oka1_shinken_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
-
-//「だから沙都子を信じちゃいけないって警告したんですよー。＠
-//　富田くんと岡村くんが、言わんこっちゃないと口を揃える＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 24, "s19/24/502400052", 128, TRUE);
-	OutputLine(NULL, "「だから沙都子を信じちゃいけないって警告したんですよー。」",
-		   NULL, "\"I warned you about trusting Satoko!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_004_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_004_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3839,18 +3792,10 @@ void main()
 
 	PlaySE( 3, "wa_029", 128, 64 );
 
-//自分が調教されているメイドであると想像するんです＠/
-	ModPlayVoiceLS(4, 10, "s19/10/501000132", 128, TRUE);
-	OutputLine(NULL, "自分が調教されているメイドであると想像するんです。",
-		   NULL, " you should imagine that you're a domesticated maid.", Line_WaitForInput);
-
-	DisableWindow();
-	ModDrawCharacter(2, 10, "sprite/normal/iri1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-
-//...ほら、嗜虐的なシチュエーションが、何だか楽しそうになってきませんか...＠　う～ん、いいじゃないですかぁ...♪＠
-	ModPlayVoiceLS(4, 10, "s19/10/501000133", 128, TRUE);
-	OutputLine(NULL, "……ほら、嗜虐的なシチュエーションが、何だか楽しそうになってきませんか…☆",
-		   NULL, " ...See? Don't sadistic things seem kind of fun now...?☆", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_004_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_004_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 10, "s19/10/501000134", 128, TRUE);
 	OutputLine(NULL, "　う〜ん、いいじゃないですかぁ…♪」",
 		   NULL, " Yeeeah, it's nice, isn't it...♪\"", GetGlobalFlag(GLinemodeSp));
@@ -3878,10 +3823,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　俺推理では多分、「調教」と打つと変換されると見た…。",
-		   NULL, "The first thing that comes into mind when I think of \"domestication\" certainly isn't \"maids\"...", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_004_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_004_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
 //「......富田くん＠岡村くん＠...君たちの監督は実に面白いな＠こんなのでよく監督が務まるな。＠
 //　富田くんと岡村くんも、顔を見合わせてから苦笑いを返す＠
@@ -4800,7 +4745,8 @@ void main()
 //なぜここ一番で俺は勝てないんだぁぁ！＠　今日は絶対に勝ちたい、この罰ゲームは誰かにやらせてみたいと思うといつも負ける！＠/
 	ModPlayVoiceLS(4, 1, "s19/01/hr_kei31750_01", 128, TRUE);
 	OutputLine(NULL, "　なぜここ一番で俺は勝てないんだぁぁ！！",
-		   NULL, " Why couldn't I win now of all times?!", Line_WaitForInput);
+		   NULL, " Why couldn't I win now of all times?!", Line_Continue);
+	Wait( 3500 );
 	OutputLine(NULL, "　今日は絶対に勝ちたい、この罰ゲームは誰かにやらせてみたいと思うといつも負ける！！",
 		   NULL, " Whenever I think 'I'll definitely win today' and that 'I'll make someone else play the punishment game', I lose!! ", GetGlobalFlag(GLinemodeSp));
 
@@ -5461,14 +5407,14 @@ void main()
 		   NULL, "\"...Satoshi,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "その、",
 		   NULL, " well...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 2500 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	PlaySE( 3, "wa_024", 128, 64 );
