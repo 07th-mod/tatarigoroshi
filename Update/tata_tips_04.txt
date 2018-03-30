@@ -100,7 +100,7 @@ void main()
 //「バイクだからいいです＠お心遣いだけでうれしいってことにしときます。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "s20/06/440600014", 128, TRUE);
-	OutputLine(NULL, "「バイクだからいいです。",
+	OutputLine(NULL, "「スクーターだからいいです。",
 		   NULL, "\"I did, but I'll be fine riding back.", Line_Continue);
 	Wait(700);
 	OutputLine(NULL, "お心遣いだけでうれしいってことにしときます。」",
@@ -164,7 +164,8 @@ void main()
 //...............早く解放してくださいよね＠試合がある度に来ないかと電話が掛かってくるの、もうウザくてかなわないんですから。￥
 	ModPlayVoiceLS(4, 6, "s20/06/440600017", 128, TRUE);
 	OutputLine(NULL, "………………早く解放してくださいよね。",
-		   NULL, " .........Let me go soon, please?", Line_WaitForInput);
+		   NULL, " .........Let me go soon, please?", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "試合がある度に来ないかと電話が掛かってくるの、もうウザくてかなわないんですから。」",
 		   NULL, " Every time I don't show up at a game, I get an annoying phone call, and I can't stand those.\"", Line_Normal);
 	ClearMessage();
@@ -364,7 +365,7 @@ void main()
 	OutputLine(NULL, "あなたが嫌ならいつでもクビにしてあげますよ。",
 		   NULL, " If you don't like it, I'll fire you.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "s20/10/441000042", 128, TRUE);
-	OutputLine(NULL, "嫌がるのを無理やりってのは私の性ではありませんからね。」",
+	OutputLine(NULL, "嫌がるのを無理やりってのは私の性分ではありませんからね。」",
 		   NULL, " I'm not the kind of person who likes forcing people to do things against their will.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 

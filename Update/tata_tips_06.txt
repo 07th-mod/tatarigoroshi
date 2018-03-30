@@ -165,15 +165,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「噂じゃホトケさん、上納金とヤクに手を付けちゃったらしいっす＠話じゃ、かなりシャレにならない規模らしいっす。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "s20/19/443100044", 128, TRUE);
-	OutputLine(NULL, "「噂じゃホトケさん、上納金とヤクに手を付けちゃったらしいっす。",
-		   NULL, "\"Rumors say the deceased had her hands in both drug dealing and money to be paid to the government.", Line_Continue);
-	Wait(2500);
-	OutputLine(NULL, "話じゃ、かなりシャレにならない規模らしいっす。」",
-		   NULL, " And on a pretty significant scale, too, from what I've heard.\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_tips_06_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_tips_06_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 //「女が上納金に手を出した、か＠裏に男がいそうじゃのう＠女の単独犯なんてそうそうないぞ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
@@ -203,15 +198,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「そうそう...、大石さん＠女のヒモ、生きてるみたいですよ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "s20/19/443100045", 128, TRUE);
-	OutputLine(NULL, "「そうそう…、大石さん。",
-		   NULL, "\"About that... Ooishi-san.", Line_Continue);
-	Wait(1300);
-	OutputLine(NULL, "女のヒモ、生きてるみたいですよ。」",
-		   NULL, " Her man's apparently alive.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_tips_06_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_tips_06_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 
 //「生きてる＠　じゃあこれから死ぬんでしょうねぇ＠害虫が害虫を駆除してくれるんだから、ホントに素敵な自浄機能だと思いますよ。￥
@@ -265,7 +255,7 @@ void main()
 	OutputLine(NULL, "……事件のあと姿を消したって聞いてましたけど。",
 		   NULL, " ...I heard he disappeared after the incident, though.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "s20/11/440700219", 128, TRUE);
-	OutputLine(NULL, "…そうかぁ、愛人の所に転がり込んでたかぁ。」",
+	OutputLine(NULL, "…そうかぁ、その女の所に転がり込んでたかぁ。」",
 		   NULL, " ...I get it—he was staying at his lover's place, huh?\"", Line_Normal);
 	ClearMessage();
 
