@@ -1910,20 +1910,10 @@ void main()
 		   NULL, "They grinned dryly and scratched their heads.", Line_Normal);
 	ClearMessage();
 
-//「...何だよ一体＠ビニ本の墨塗りの消し方でも知りたいのか＠　ちなみにバターを塗ると消えるというのはまったくの迷信だぞ＠もちろん砂ケシも迷信だ。＠
-//!s0「...え、えぇ？！!sd/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei32720", 128, TRUE);
-	OutputLine(NULL, "「…何だよ一体。",
-		   NULL, "\"...What could it be?", Line_WaitForInput);
-	OutputLine(NULL, "ビニ本の墨塗りの消し方でも知りたいのか？",
-		   NULL, " Wanna know how to remove the censor bars in porn magazines?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei32740", 128, TRUE);
-	OutputLine(NULL, "　ちなみにバターを塗ると消えるというのはまったくの迷信だぞ。",
-		   NULL, " By the way, don't believe what you hear about butter doing the trick—total superstition.", Line_WaitForInput);
-	OutputLine(NULL, "もちろん砂ケシも迷信だ。」",
-		   NULL, " You can't use an eraser, either.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_005_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_005_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	DisableWindow();
 	ModDrawCharacter(3, 25, "sprite/normal/oka1_odoroki_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1940,7 +1930,9 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 
 	PlaySE( 3, "wa_029", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Continue);
+
+	Wait( 500 );
 
 //そうなんですか...？！＠
 //　そうじゃないだろ、と富田くんが岡村くんを肘で小突く￥
@@ -3252,10 +3244,10 @@ void main()
 	ModPlayVoiceLS(4, 11, "s19/11/500700064", 128, TRUE);
 	OutputLine(NULL, "　お父さん、高名や芸術家さんなんですってねぇ。",
 		   NULL, " I hear your father is a renowned artist. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "s19/11/500700065", 128, TRUE);
-	OutputLine(NULL, "年に２回ほど、東京の有明大展覧会に出展されてるそうじゃないですか。",
-		   NULL, "His works go on display twice a year in the Great Ariake Exhibition in Tokyo, don't they?", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_005_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_005_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 11, "s19/11/500700066", 128, TRUE);
 	OutputLine(NULL, "どんな立派な絵を描かれるかは存じませんがね。",
 		   NULL, " I don't know what sort of fantastic pictures he creates, though. ", GetGlobalFlag(GLinemodeSp));
@@ -4164,13 +4156,11 @@ void main()
 		   NULL, "...Even the pain had disappeared without a trace.", Line_Normal);
 	ClearMessage();
 
-//「...あんなに痛かったのに、あざひとつないないんて...。＠
+//...あんなに痛かったのに、あざひとつないないんて...。＠
 //「それだけあいつが慣れている、ということですよ。＠
 //　.........あいつ、か...￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	OutputLine(NULL, "「…あんなに痛かったのに、あざひとつないないんて…。」",
-		   NULL, "\"...It hurt so much, but there isn't a single bruise...\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…あんなに痛かったのに、あざひとつないないんて…。",
+		   NULL, "...It hurt so much, but not so much as a bruise remained...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4609,9 +4599,10 @@ void main()
 	ModPlayVoiceLS(4, 10, "s19/10/501000193", 128, TRUE);
 	OutputLine(NULL, "「……去年の綿流しのお祭りの夜にね、叔母が死んでしまったんです。",
 		   NULL, "\"...Last year, on the night of the Watanagashi Festival, their aunt died.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s19/10/501000194", 128, TRUE);
-	OutputLine(NULL, "……覚醒剤常用の異常者に、バットか何かで殴り殺されて。",
-		   NULL, " ...She was beaten to death with a baseball bat by a drug addict. ", GetGlobalFlag(GLinemodeSp));
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_005_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_005_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "s19/10/501000195", 128, TRUE);
 	OutputLine(NULL, "……綿流しの祭りの夜には、村の仇敵が祟りで死ぬと噂されてましたからね。",
