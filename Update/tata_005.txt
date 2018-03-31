@@ -4638,9 +4638,10 @@ void main()
 	ModPlayVoiceLS(4, 10, "s19/10/501000198", 128, TRUE);
 	OutputLine(NULL, "オヤシロさまの祟りを大層怖がり、逃げ出して雲隠れしてしまったそうです。",
 		   NULL, " He apparently grew incredibly frightened of Oyashiro-sama's curse and went into hiding.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s19/10/501000199", 128, TRUE);
-	OutputLine(NULL, "……聞いた話では、興宮辺りの愛人宅に転がり込んでるとか。」",
-		   NULL, " ...From what I've heard, he's staying with a lover somewhere in Okinomiya.\"", Line_Normal);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_005_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_005_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 	ClearMessage();
 
 //「...............それで、解放されたんですか＠　沙都子たちは。＠
