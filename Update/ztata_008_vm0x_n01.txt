@@ -101,3 +101,80 @@ void dialog011()
 		   NULL, "The one who brought an end to those terrible days... was some crazy drug addict nobody knew.", Line_Normal);
 	ClearMessage();
 }
+
+void dialog012()
+{
+//　沙都子の手に、スーパーの袋を渡す＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　たまらなくなって沙都子の手を、そっと握る。",
+		   NULL, "Before I could help it, I'd gently clasped Satoko's hand.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　.........その時、沙都子の手の甲に、/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………その時、沙都子の手のひらの熱が、異常なほど、",
+		   NULL, "...And then, I noticed how hot it was...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 1000, TRUE );
+
+//アザのようなものがあることに気付く￥
+	OutputLine(NULL, "……そう、汗ばむほどに火照っているのに気づいた。",
+		   NULL, " well above normal temperature, Satoko's hand was flushed and sweaty.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("black", 400 );
+
+//「......おい、沙都子...このアザ、...どうしたんだよ...？！＠
+//　...自分で、何て白々しいことを言ってるかよくわかる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "s03/01/kei040112", 128, TRUE);
+	OutputLine(NULL, "「……おい、沙都子…お前、まだ熱が…？！」",
+		   NULL, "\"...Hey, Satoko... Do you still have a fever?!\"", GetGlobalFlag(GLinemodeSp));
+
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(3, 4, "sprite/sunset/sa1a_muhyou_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask("background/ho1_02", "up", 0, 0, 300 );
+
+	PlayBGM( 1, "msys18", 128, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "s03/04/sato04012", 128, TRUE);
+	OutputLine(NULL, "「…………今年の夏風邪は、なかなかしつこいようですわね。",
+		   NULL, "\"......I just can't seem to shake this year's summer cold.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "s03/04/sato04013", 128, TRUE);
+	OutputLine(NULL, "気になさらないで下さいませ。」",
+		   NULL, " Please, pay it no mind.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog013()
+{
+//「......沙都子ちゃんは多分、...そういう虐めに耐えるのを試練だと考えているかもしれません。＠
+//「試練＠　......変な宗教じゃあるまいし...！！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "s03/10/iri04005", 128, TRUE);
+	OutputLine(NULL, "「……沙都子ちゃんは多分、…そういう仕打ちに耐えるのを試練だと考えているかもしれません。」",
+		   NULL, "\"...Satoko-chan probably... thinks of this poor treatment as a trial.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "s03/10/iri04006", 128, TRUE);
+	OutputLine(NULL, "「あの家で悟史くんの帰りを待つのが、沙都子ちゃんの生きる理由でもあります。",
+		   NULL, "\"Because Satoko-chan's reason for living is to wait at that house for Satoshi-kun to return.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "s03/10/iri04007", 128, TRUE);
+	OutputLine(NULL, "………兄に捨てられた少女が、…何に生きる理由を見出したか。",
+		   NULL, " ......The young girl abandoned by her brother... How did she find her reason to live? ", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog015()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "s03/01/kei040116", 128, TRUE);
+	OutputLine(NULL, "「…俺は、………本当に沙都子が危ないと感じたら、…誰の意思も聞かずに行動します。",
+		   NULL, "\"...If... If I feel that Satoko is really in danger... I will take action without asking anyone's opinion. ", GetGlobalFlag(GLinemodeSp));
+}

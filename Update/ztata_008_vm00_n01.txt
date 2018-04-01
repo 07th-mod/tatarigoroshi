@@ -100,3 +100,95 @@ void dialog011()
 		   NULL, "The one who brought an end to those terrible days... was some crazy drug addict nobody knew.", Line_Normal);
 	ClearMessage();
 }
+
+void dialog012()
+{
+//　沙都子の手に、スーパーの袋を渡す＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子の手に、スーパーの袋を渡す。",
+		   NULL, "I handed my supermarket bag over to Satoko.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　.........その時、沙都子の手の甲に、/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………その時、沙都子の手の甲に、",
+		   NULL, "...And then, I noticed on the back of Satoko's hand...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 1000, TRUE );
+
+//アザのようなものがあることに気付く￥
+	OutputLine(NULL, "アザのようなものがあることに気付く。",
+		   NULL, " there was something that looked like a bruise.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("black", 400 );
+
+//「......おい、沙都子...このアザ、...どうしたんだよ...？！＠
+//　...自分で、何て白々しいことを言ってるかよくわかる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "s03/01/kei040112", 128, TRUE);
+	OutputLine(NULL, "「……おい、沙都子…このアザ、…どうしたんだよ…？！」",
+		   NULL, "\"...Hey, Satoko... What's... what the heck is that bruise?!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…自分で、何て白々しいことを言ってるかよくわかる。",
+		   NULL, "...I knew as much as anyone else how transparent that sounded.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　......このアザが、...どういう経緯でできたかなんて、...沙都子が口に出して言うまでもないじゃないか￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……このアザが、…どういう経緯でできたかなんて、…沙都子が口に出して言うまでもないじゃないか。",
+		   NULL, "...I didn't need to hear it from Satoko... to know how this bruise... came to be.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(3, 4, "sprite/sunset/sa1a_muhyou_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask("background/ho1_02", "up", 0, 0, 300 );
+
+	PlayBGM( 1, "msys18", 128, 0 );
+
+//「............階段で転んだ時にちょっと打っただけですのよ＠気になさらないで下さいませ。＠
+//「.........う、...嘘だろ...！！＠
+//　監督が俺の背中を突っついた＠
+//　そして人差し指を自分の口に当て、声が大きいと...たしなめる￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "s03/04/sato04012", 128, TRUE);
+	OutputLine(NULL, "「…………階段で転んだ時にちょっと打っただけですのよ。",
+		   NULL, "\"......I just slipped on the stairs and hit it a little.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "s03/04/sato04013", 128, TRUE);
+	OutputLine(NULL, "気になさらないで下さいませ。」",
+		   NULL, " Please, pay it no mind.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog013()
+{
+//「......沙都子ちゃんは多分、...そういう虐めに耐えるのを試練だと考えているかもしれません。＠
+//「試練＠　......変な宗教じゃあるまいし...！！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "s03/10/iri04005", 128, TRUE);
+	OutputLine(NULL, "「……沙都子ちゃんは多分、…そういう虐めに耐えるのを試練だと考えているかもしれません。」",
+		   NULL, "\"...Satoko-chan probably... thinks of this abuse as a trial.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "s03/10/iri04006", 128, TRUE);
+	OutputLine(NULL, "「あの家で悟史くんの帰りを待つのが、沙都子ちゃんの生きる理由だからですよ。",
+		   NULL, "\"Because Satoko-chan's reason for living is to wait at that house for Satoshi-kun to return.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "s03/10/iri04007", 128, TRUE);
+	OutputLine(NULL, "……………兄に捨てられ、廃人同然になりかけた少女が、…何に生きる理由を見出したか。",
+		   NULL, " ......She was a husk, an empty shell after being abandoned by her brother... How did she find her reason to live? ", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog015()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "s03/01/kei040116", 128, TRUE);
+	OutputLine(NULL, "「…俺は、………本当に沙都子が危ないと感じたら、…誰の意思も聞かずに通報します。",
+		   NULL, "\"...If... If I feel that Satoko is really in danger... I will report it without asking anyone's opinion. ", GetGlobalFlag(GLinemodeSp));
+}
