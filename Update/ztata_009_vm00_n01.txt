@@ -93,3 +93,20 @@ void dialog03()
 		   NULL, "He seemed like a pretty silly man... but that felt kind of good considering I'd been suffocating with worry over Satoko all night.", Line_Normal);
 
 }
+
+void dialog04()
+{
+//「それくらいにしなよ、前原くん＠...せっかく助けてあげたのに、またオヤシロさまの祟りの話が始まっちゃうよ＠　.........う～ん、...涼しい内に散策に行きたかったのになぁ...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "s03/08/140800050", 128, TRUE);
+	OutputLine(NULL, "「それくらいにしなよ、前原くん。",
+		   NULL, "\"Let's leave it at that, Maebara-kun.", Line_WaitForInput);
+}
+
+void dialog05()
+{
+	ModPlayVoiceLS(4, 22, "s03/22/chie040302", 128, TRUE);
+	OutputLine(NULL, "…もしも、その、……叔父さんに虐められているという話が本当なら放って置けません。」",
+		   NULL, " ...If, well... If it's true that she's being abused by her uncle, then I can't leave it alone.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

@@ -65,3 +65,20 @@ void dialog03()
 	OutputLine(NULL, "ちょっと、計画を立て直した方がいいかもしれないなぁ」",
 		   NULL, " I guess it's not a bad idea to make some changes to my plan.\"", Line_Normal);
 }
+
+void dialog04()
+{
+//「それくらいにしなよ、前原くん＠...せっかく助けてあげたのに、またオヤシロさまの祟りの話が始まっちゃうよ＠　.........う～ん、...涼しい内に散策に行きたかったのになぁ...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "s03/08/140800050", 128, TRUE);
+	OutputLine(NULL, "「それくらいにしなよ、圭一くん。",
+		   NULL, "\"Let's leave it at that, Keiichi-kun.", Line_WaitForInput);
+}
+
+void dialog05()
+{
+	ModPlayVoiceLS(4, 22, "s03/22/chie040302", 128, TRUE);
+	OutputLine(NULL, "…その話が本当なら放って置けません。」",
+		   NULL, " ...If it's true, then I can't leave it alone.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

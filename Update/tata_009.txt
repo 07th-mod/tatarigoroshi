@@ -1789,11 +1789,10 @@ void main()
 	DisableWindow();
 	ModDrawCharacter(3, 8, "sprite/normal/tomi1_komaru_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
-//「それくらいにしなよ、前原くん＠...せっかく助けてあげたのに、またオヤシロさまの祟りの話が始まっちゃうよ＠　.........う～ん、...涼しい内に散策に行きたかったのになぁ...。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "s03/08/140800050", 128, TRUE);
-	OutputLine(NULL, "「それくらいにしなよ、前原くん。",
-		   NULL, "\"Let's leave it at that, Maebara-kun.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_009_vm03_n01","dialog04");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_009_vm00_n01","dialog04");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 8, "s03/08/140800051", 128, TRUE);
 	OutputLine(NULL, "…せっかく助けてあげたのに、またオヤシロさまの祟りの話が始まっちゃうよ？",
 		   NULL, " ...I just helped you escape, and now you're trying to talk about Oyashiro-sama again!", Line_WaitForInput);
@@ -3462,10 +3461,10 @@ void main()
 	ModPlayVoiceLS(4, 22, "s03/22/chie040301", 128, TRUE);
 	OutputLine(NULL, "「ど、…どうするもこうするも。",
 		   NULL, "\"W-Well, what would I do?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 22, "s03/22/chie040302", 128, TRUE);
-	OutputLine(NULL, "…もしも、その、……叔父さんに虐められているという話が本当なら放って置けません。」",
-		   NULL, " ...If, well... If it's true that she's being abused by her uncle, then I can't leave it alone.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_009_vm03_n01","dialog05");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_009_vm00_n01","dialog05");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
