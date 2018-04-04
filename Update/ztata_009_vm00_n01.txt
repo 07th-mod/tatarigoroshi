@@ -110,3 +110,25 @@ void dialog05()
 		   NULL, " ...If, well... If it's true that she's being abused by her uncle, then I can't leave it alone.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
+
+void dialog06()
+{
+//「県の児童相談所へ通報します＠さっき前原くんは追い返される、と言いましたね＠児童福祉司は必要に応じて警察官を同行させることができます＠恫喝には絶対に屈しません。＠
+//「その福祉司というお役所の人は、連絡して書類で申請して何日後に助けに来てくれるんです？＠
+//「即日です＠彼らの仕事は、児童の安全を緊急に保護することですから。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "s03/22/chie040303", 128, TRUE);
+	OutputLine(NULL, "「県の児童相談所へ通報します。",
+		   NULL, "\"I'd contact the prefecture's child consultation center.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "s03/22/chie040304", 128, TRUE);
+	OutputLine(NULL, "さっき前原くんは追い返される、と言いましたね。",
+		   NULL, " You said just now that I would be turned away, didn't you? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "s03/22/chie040305", 128, TRUE);
+	OutputLine(NULL, "児童福祉司は必要に応じて警察官を同行させることができます。",
+		   NULL, "Child welfare officers can bring the police with them if the situation demands.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "s03/22/chie040306", 128, TRUE);
+	OutputLine(NULL, "恫喝には絶対に屈しません。」",
+		   NULL, " They will not submit to intimidation.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
