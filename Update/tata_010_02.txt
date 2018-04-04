@@ -176,7 +176,7 @@ void main()
 //「いつもながら見事なお手前でございましてよ＠いつお嫁に行ってもおかしくない腕前ですわね！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "s03/04/140400106", 128, TRUE);
-	OutputLine(NULL, "「いつもながら見事なお手前でございましてよ。",
+	OutputLine(NULL, "「いつもながらお見事なお手前でございましてよ。",
 		   NULL, "\"I say it every time, but your craftsmanship is splendid.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "s03/04/140400107", 128, TRUE);
 	OutputLine(NULL, "いつお嫁に行ってもおかしくない腕前ですわね！」",
@@ -210,7 +210,7 @@ void main()
 //「レナにお嫁はマル禁ワードだね＠以後控えるようにー。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "s03/03/140300268", 128, TRUE);
-	OutputLine(NULL, "「レナにお嫁はマル禁ワードだね。",
+	OutputLine(NULL, "「レナにお嫁はＮＧワードだね。",
 		   NULL, "\"Using the word 'wife' is totally forbidden around Rena.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "s03/03/140300269", 128, TRUE);
 	OutputLine(NULL, "以後控えるようにー。」",
@@ -2891,7 +2891,7 @@ void main()
 	ModPlayVoiceLS(4, 1, "s03/01/140100543", 128, TRUE);
 	OutputLine(NULL, "「うるさい。",
 		   NULL, "\"Shut it.", Line_WaitForInput);
-
+	ModPlayVoiceLS(4, 1, "s03/01/140100544", 128, TRUE);
 	OutputLine(NULL, "…黄色い声で話しかけるな。」",
 		   NULL, " ...Quit squeaking at me like that.\"", Line_Normal);
 	ClearMessage();
