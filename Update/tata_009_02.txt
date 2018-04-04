@@ -444,10 +444,10 @@ void main()
 	ModPlayVoiceLS(4, 1, "s03/01/140100393", 128, TRUE);
 	OutputLine(NULL, "さすが金持ちだな。",
 		   NULL, " You really are rich, huh?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s03/01/140100394", 128, TRUE);
-	OutputLine(NULL, "家政婦なんか雇ってるのかよ。」",
-		   NULL, " You've even got housekeepers?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_009_02_vm0x_n01","dialog00");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_009_02_vm00_n01","dialog00");}
+	//VoiceMatchingEnd
 
 
 	DisableWindow();
@@ -526,7 +526,7 @@ void main()
 //「.........先に行っとくけど、......家はお金持ちかもしれないけど＠...私に自由にできるお金はまったくないんだからね...＠　そこだけは誤解しないでほしい...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "s03/03/140300169", 128, TRUE);
-	OutputLine(NULL, "「………先に行っとくけど、……家はお金持ちかもしれないけど、",
+	OutputLine(NULL, "「………先に言っとくけど、……家はお金持ちかもしれないけど、",
 		   NULL, "\"...Just to be clear... My family may be rich, but...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "s03/03/140300170", 128, TRUE);
 	OutputLine(NULL, "…私に自由にできるお金はまったくないんだからね…？",
