@@ -1467,6 +1467,8 @@ void main()
 	ModPlayVoiceLS(4, 3, "s03/03/140300318", 128, TRUE);
 	OutputLine(NULL, "……ぅっく……。",
 		   NULL, " ...hic...", Line_WaitForInput);
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "s03/03/140300319", 128, TRUE);
 	OutputLine(NULL, "…………………………………………ねぇ、あなた",
 		   NULL, " ..................Hey, you're", Line_Continue);
