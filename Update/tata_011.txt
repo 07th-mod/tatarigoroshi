@@ -914,10 +914,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/jukua04005", 128, TRUE);
-	OutputLine(NULL, "「クレペリン検査とも重ねましたが、その結果、興味深いことがわかりました。",
-		   NULL, "\"We gave him the Kraepelin test as well, and we learned some very interesting things as a result.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_011_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_011_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 0, "s03/00/jukua04006", 128, TRUE);
 	OutputLine(NULL, "前原くんは意味を持たない問題に非常に弱いのです。",
 		   NULL, " Maebara-kun is extremely weak when faced with questions that don't have any meaning. ", GetGlobalFlag(GLinemodeSp));
