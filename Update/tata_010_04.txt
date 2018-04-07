@@ -1545,9 +1545,10 @@ void main()
 	ModPlayVoiceLS(4, 3, "s03/03/140300324", 128, TRUE);
 	OutputLine(NULL, "「ご、ごめんね。",
 		   NULL, "\"S-Sorry.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s03/03/140300325", 128, TRUE);
-	OutputLine(NULL, "…ちょっと私、お酒が残ってるみたい。",
-		   NULL, " ...I think I'm still a little tipsy.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_010_04_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_010_04_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 3, "s03/03/140300326", 128, TRUE);
 	OutputLine(NULL, "…変なとこで感情的になっちゃった。",
 		   NULL, " ...I got all weirdly emotional.", Line_WaitForInput);
@@ -2017,15 +2018,10 @@ void main()
 	DrawScene("black", 400 );
 	DrawSceneWithMask("background/simen3", "up", 0, 0, 300 );
 
-//「確かに状況証拠は揃ってるけど、......多分、圭ちゃんの推理ははずれだと思う＠......県内のどっかで捕まった覚醒剤でイカれたヤツが、犯行を自供したって言うし。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s03/03/140300344", 128, TRUE);
-	OutputLine(NULL, "「確かに状況証拠は揃ってるけど、……多分、圭ちゃんの推理ははずれだと思う。",
-		   NULL, "\"The circumstantial evidence is all there... but I think your deduction is wrong.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s03/03/140300345", 128, TRUE);
-	OutputLine(NULL, "……県内のどっかで捕まった覚醒剤でイカれたヤツが、犯行を自供したって言うし。」",
-		   NULL, " ...They caught some crazy drug addict somewhere in the prefecture and he apparently turned himself in for the crime.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_010_04_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_010_04_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 //　.....................そうだ＠......異常者が犯行を自供して...決着したんだったな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
