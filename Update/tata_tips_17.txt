@@ -40,7 +40,7 @@ void main()
 //「こちら興宮ＳＰ、感度良好でーす。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Okinomiya PS</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "s20/00/vtp_okeijia_3001", 128, TRUE);
-	OutputLine(NULL, "「こちら興宮ＳＰ、感度良好でーす。」",
+	OutputLine(NULL, "「こちら興宮ＰＳ、感度良好でーす。」",
 		   NULL, "\"This is the Okinomiya Security Police, we read you loud and clear.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -51,16 +51,16 @@ void main()
 	OutputLine(NULL, "「あー、車両ナンバー照会をお願いします。",
 		   NULL, "\"Hello, we'd like you to look up a license plate for us.", Line_Continue);
 	Wait(1500);
-	OutputLine(NULL, "ＸＸ、ＸのＸＸＸＸ。」",
-		   NULL, " XX, X-XXXX.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "鹿骨、はの４３４４。」",
+		   NULL, " Shishibone, H-4344.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「復唱、ＸＸ、ＸのＸＸＸＸ＠少々お時間もらいますがよろしいですかー？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Okinomiya PS</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "s20/00/vtp_okeijia_3002", 128, TRUE);
-	OutputLine(NULL, "「復唱、ＸＸ、ＸのＸＸＸＸ。",
-		   NULL, "\"XX, X-XXXX, all right.", Line_Continue);
+	OutputLine(NULL, "「復唱、鹿骨、はの４３４４。",
+		   NULL, "\"Shishibone, H-4344, all right.", Line_Continue);
 	Wait(3300);
 	OutputLine(NULL, "少々お時間もらいますがよろしいですかー？」",
 		   NULL, " Please give us just a moment to look it up.\"", GetGlobalFlag(GLinemodeSp));
@@ -92,8 +92,8 @@ void main()
 
 //ＸＸ　ＸーＸＸＸＸ
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "ＸＸ　ＸーＸＸＸＸ",
-		   NULL, "XX X-XXXX", Line_ContinueAfterTyping);
+	OutputLine(NULL, "鹿骨 はの４３４４",
+		   NULL, "Shishibone H-4344", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -159,7 +159,7 @@ void main()
 //「興宮ＳＰより大石車どうぞー＠先ほどのナンバーが判明しましたー＠........................大石車どうぞー＠　.................................大石車、応答願います＠..................あれ＠　............電波、悪いのかな.....................＠......大石車応答ねが..................。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Okinomiya PS</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "s20/00/vtp_okeijia_3003", 128, TRUE);
-	OutputLine(NULL, "「興宮ＳＰより大石車どうぞー。",
+	OutputLine(NULL, "「興宮ＰＳより大石車どうぞー。",
 		   NULL, "\"Okinomiya Security Police to Ooishi.", Line_Continue);
 	Wait(1500);
 	OutputLine(NULL, "先ほどのナンバーが判明しましたー。",
