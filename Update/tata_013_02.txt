@@ -205,11 +205,10 @@ void main()
 		   NULL, " What else?\"", Line_Normal);
 	ClearMessage();
 
-//「高熱と失禁に重度の意識障害も見られました＠睡眠薬中毒の典型的な重症例だと思いましたので、ただちに対応に入りました。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医師</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/doca04009", 128, TRUE);
-	OutputLine(NULL, "「高熱と失禁に重度の意識障害も見られました。",
-		   NULL, "\"His high temperature and incontinence indicated a severe disturbance of consciousness.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_013_02_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_013_02_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 0, "s03/00/doca04010", 128, TRUE);
 	OutputLine(NULL, "睡眠薬中毒の典型的な重症例だと思いましたので、ただちに対応に入りました。」",
 		   NULL, " It seemed like a typical case of sleeping pill poisoning, so I immediately began to treat him.\"", GetGlobalFlag(GLinemodeSp));
@@ -371,12 +370,10 @@ void main()
 		   NULL, " could he... have...", Line_Normal);
 	ClearMessage();
 
-//「普段から睡眠薬を愛用していたとかは？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/komi04016", 128, TRUE);
-	OutputLine(NULL, "「普段から睡眠薬を愛用していたとかは？」",
-		   NULL, "\"Did he use sleeping medication regularly?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_013_02_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_013_02_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 
 //「......あまり知りません。＠
@@ -1118,11 +1115,10 @@ void main()
 	PlayBGM( 2, "lsys12", 128, 0 );
 	ModDrawCharacter(2, 4, "sprite/normal/sa5_yareyare_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-//「.....................いつまでも裸でいたくありませんわ＠...服が、...欲しい。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s03/04/140400221", 128, TRUE);
-	OutputLine(NULL, "「…………………いつまでも裸でいたくありませんわ。",
-		   NULL, "\".........I do not want to be naked forever.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_013_02_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_013_02_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 4, "s03/04/140400222", 128, TRUE);
 	OutputLine(NULL, "…服が、…欲しい。」",
 		   NULL, " ...I want... some clothes.\"", GetGlobalFlag(GLinemodeSp));
@@ -1447,11 +1443,10 @@ void main()
 	ModPlayVoiceLS(4, 1, "s03/01/140100983", 128, TRUE);
 	OutputLine(NULL, "眠ったり意識がなくなったりしたことはなかった。",
 		   NULL, " I wasn't sleeping or unconscious or anything. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140100984", 128, TRUE);
-	OutputLine(NULL, "だから夢遊病のようにふらふらと、記憶になく祭りに出掛けた…なんてことはありえない。」",
-		   NULL, "So it's not possible... that I walked to the festival in my sleep and forgot about it afterwards.\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_013_02_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_013_02_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 	DisableWindow();
 	ModDrawCharacter(2, 4, "sprite/normal/sa5_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -1938,9 +1933,10 @@ void main()
 	ModPlayVoiceLS(4, 4, "s03/04/140400263", 128, TRUE);
 	OutputLine(NULL, "「私はもう本当に大丈夫なんですのよ…！",
 		   NULL, "\"Really, I am fine now...!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "s03/04/140400264", 128, TRUE);
-	OutputLine(NULL, "　男の人に、いつまでも裸を晒していたくないんですのよ…！",
-		   NULL, " I do not want to expose my naked self to a man any more than this...!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_013_02_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_013_02_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
 
 //　...はぁ、!w800......ぐ、!w600......はぁ、!w600......はぁ...！￥
