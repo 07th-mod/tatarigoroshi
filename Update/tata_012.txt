@@ -1419,11 +1419,10 @@ void main()
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1a_wink_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
-//「圭ちゃんに詩音のあんぽんたんが、ちょっかい出して来たのを無視してね～＠/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s03/03/140300381", 128, TRUE);
-	OutputLine(NULL, "「圭ちゃんに詩音のあんぽんたんが、ちょっかい出して来たのを無視してね〜！",
-		   NULL, "\"And he ignored it when that blockhead Shion came up and made a pass at him~!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 	DisableWindow();
 	ModDrawCharacter(1, 3, "sprite/normal/me1b_warai_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -2394,10 +2393,10 @@ void main()
 	ModPlayVoiceLS(4, 2, "s03/02/140200204", 128, TRUE);
 	OutputLine(NULL, "「…そんなことも忘れちゃってるの？",
 		   NULL, "\"...How could you forget that?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s03/02/140200205", 128, TRUE);
-	OutputLine(NULL, "　…圭一くん、お酒は大人になるまで飲まない方がいいと思うな…。」",
-		   NULL, " ...Keiichi-kun, I think you shouldn't be drinking until you're an adult...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 
 //「だから＠　俺はいつ合流したんだよ...！＠
@@ -2644,12 +2643,10 @@ void main()
 		   NULL, "\"...I don't know what you're trying to ask.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-//「俺、昨日、記憶をなくすくらいビールを飲んじゃってさ...＠何も覚えてないんだよ＠......へへへへ...。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s03/01/140100749", 128, TRUE);
-	OutputLine(NULL, "「俺、昨日、記憶をなくすくらいビールを飲んじゃってさ…。",
-		   NULL, "\"I, uh, drank so much beer I lost some of my memory...", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s03/01/140100750", 128, TRUE);
 	OutputLine(NULL, "何も覚えてないんだよ。",
 		   NULL, " I don't remember a thing.", Line_WaitForInput);
@@ -5834,10 +5831,10 @@ void main()
 	OutputLine(NULL, "若いすべすべなお肌を見放題の触り放題〜☆",
 		   NULL, " You get to see and touch all that young, silky smooth skin~☆. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s03/10/141000126", 128, TRUE);
-	OutputLine(NULL, "　怪しいお注射で奴隷にして、私だけの専属メイドに〜〜…☆」",
-		   NULL, "I could inject them with a weird chemical that'd make them my slaves, and have them be my personal maids~~...☆\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
 //「ありがとうございました＠今のを見てただけで風邪が治りました＠失礼します＠ぺこり。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -6081,10 +6078,10 @@ void main()
 	ModPlayVoiceLS(4, 10, "s03/10/141000146", 128, TRUE);
 	OutputLine(NULL, "「えぇ、どうぞ。",
 		   NULL, "\"Yes, go ahead.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s03/10/141000147", 128, TRUE);
-	OutputLine(NULL, "二次性徴に入ってのシャイな悩み、大いに歓迎ですよ〜☆」",
-		   NULL, " I greatly welcome any shy, bashful worries you might have as you come into your secondary sex characteristics~☆.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
 
 
 //「..................俺と、!w700......瓜二つな人間がいる、!w1000...なんて、...ありえますか？￥
@@ -8054,11 +8051,10 @@ void main()
 	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri2_majime3_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 1, "msys20", 128, 0 );
 
-//「イソミタールかラボナールを混入＠味はミルクと砂糖で誤魔化してください。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s03/10/141000253", 128, TRUE);
-	OutputLine(NULL, "「イソミタールかラボナールを混入。",
-		   NULL, "\"Mix in amobarbital or Ravonal.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 10, "s03/10/141000254", 128, TRUE);
 	OutputLine(NULL, "味はミルクと砂糖で誤魔化してください。」",
 		   NULL, " Cover the taste with milk and sugar.\"", GetGlobalFlag(GLinemodeSp));
@@ -8401,12 +8397,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「...岐阜県警の発表では、他殺の可能性が極めて高いと...。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>局員</color>", NULL, "<color=#f5e6d3>Bureau Staff</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s03/00/kyoku04006", 128, TRUE);
-	OutputLine(NULL, "「…岐阜県警の発表では、他殺の可能性が極めて高いと…。」",
-		   NULL, "\"...According to the Gifu police's statement, the possibility is extremely high that she was murdered...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog008");}
+	//VoiceMatchingEnd
 
 	DisableWindow();
 	DrawScene("black", 400 );
@@ -10288,9 +10282,10 @@ void main()
 	ModPlayVoiceLS(4, 11, "s03/11/140700021", 128, TRUE);
 	OutputLine(NULL, "「……口より先に手を動かしてください。",
 		   NULL, "\"...Work, please, instead of talking.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "s03/11/140700022", 128, TRUE);
-	OutputLine(NULL, "口と手を一緒に動かすのは風俗の人だけ。",
-		   NULL, " Only people from the red light district do both at once.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog009");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog009");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 11, "s03/11/140700023", 128, TRUE);
 	OutputLine(NULL, "……ねぇ？」",
 		   NULL, " ...Isn't that right, boys?\"", GetGlobalFlag(GLinemodeSp));
