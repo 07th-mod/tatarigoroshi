@@ -36,3 +36,170 @@ void dialog002()
 		   NULL, " Ahem, at least try to understand my suffering a little!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
+
+void dialog003()
+{
+//A 私個人としては、大災害が実際に起こったときの惨劇の描写も欲しかったところだけど、みんなの感想も同じかしら？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "s20/09/440900124", 128, TRUE);
+	OutputLine(NULL, "　私個人としては、大災害が実際に起こったときの惨劇の描写も欲しかったところだけど、みんなの感想も同じかしら？」",
+		   NULL, "Personally, I wanted to get a scene depicting the tragedy unfolding after the disaster struck—do you all think so too?\"", Line_Continue);
+}
+
+void dialog004()
+{
+//A ではここで、今回の会合に改めてご参加いただく皆さんです。
+	ModPlayVoiceLS(4, 2, "s20/02/440200239", 128, TRUE);
+	OutputLine(NULL, "　ではここで、今回の会合に改めてご参加いただく皆さんです。",
+		   NULL, " Now here are our guests that debuted in this chapter.", Line_WaitForInput);
+}
+void dialog005()
+{
+//A 脇役にしては出番もセリフも多過ぎで、しかもキャラが強すぎましてよ」
+//
+	ModPlayVoiceLS(4, 4, "s20/04/440400215", 128, TRUE);
+	OutputLine(NULL, "脇役にしては出番もセリフも多過ぎで、しかもキャラが強すぎましてよ。」",
+		   NULL, " You had too many appearances, too much dialogue, and too strong a role for a minor character.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+//A 　今後どれだけ出番があるかはわかりませんが、その節は応援よろしくお願いしますね～」
+//
+	ModPlayVoiceLS(4, 10, "s20/10/441000075", 128, TRUE);
+	OutputLine(NULL, "　今後どれだけ出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
+		   NULL, " I don't know how much I'll get to appear from hereon, so please root for me!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog007()
+{
+//A では次に、我らが担任、知恵留美子先生～！！」
+//
+	ModPlayVoiceLS(4, 2, "s20/02/440200243", 128, TRUE);
+	OutputLine(NULL, "　では次に、我らが担任、知恵留美子先生～！！」",
+		   NULL, " Next up is our teacher, Chie-sensei~!!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog008()
+{
+//A 色々と登場シーンもあったのですが、今回カレー勝負で目立つシーンをいただきまして。
+// …カレーを馬鹿にする人は許せません。ええ」
+//
+	ModPlayVoiceLS(4, 22, "s20/22/441400026", 128, TRUE);
+	OutputLine(NULL, "　色々と登場シーンもあったのですが、今回カレー勝負で目立つシーンをいただきまして。",
+		   NULL, " I've appeared in various scenes, and this time I was given that memorable scene, the curry showdown.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "s20/22/441400027", 128, TRUE);
+	OutputLine(NULL, "…カレーを馬鹿にする人は許せません。ええ。」",
+		   NULL, " ...I just can't forgive those who would slight curry.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+//A 　だ、だれもバカになんてしていませんよっ？
+//
+	ModPlayVoiceLS(4, 2, "s20/02/440200245", 128, TRUE);
+	OutputLine(NULL, "　だ、だれもバカになんてしていませんよっ？",
+		   NULL, " N-Nobody here would even think of it!", Line_WaitForInput);
+}
+
+void dialog010()
+{
+//A 「劇中の私が入ったレストランは、園崎系列の店だったということですね。kvS20/11/440700406.園崎一族は、この辺りの飲食店やら何やらを経営しているわけですから」
+//
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "s20/11/440700405", 128, TRUE);
+	OutputLine(NULL, "「劇中の私が入ったレストランは、園崎系列の店だったということですね。",
+		   NULL, "\"Meaning that the restaurant I visited during the story must have been part of the Sonozaki group.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "s20/11/440700406", 128, TRUE);
+	OutputLine(NULL, "園崎一族は、この辺りの飲食店やら何やらを経営しているわけですから。」",
+		   NULL, " Since the Sonozaki family runs various eateries and businesses around these parts.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog011()
+{
+//A 「……『鬼隠し』のレナはコワイ人だけど、それは『鬼隠し』だけの設定、ということじゃなくて。
+// kvS20/02/440200259.…レナはレナで、４つのシナリオに、まったく変わらない設定で出演している、ということですね？」
+//
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "s20/02/440200258", 128, TRUE);
+	OutputLine(NULL, "「……『鬼隠し』のレナはコワイ人だけど、それは『鬼隠し』だけの設定、ということじゃなくて。",
+		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "s20/02/440200259", 128, TRUE);
+	OutputLine(NULL, "…レナはレナで、３つのシナリオに、まったく変わらない設定で出演している、ということですね？」",
+		   NULL, " it was because my character was the exact same in all three stories, is that it?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog012()
+{
+//A 「一般的なサスペンスアドベンチャーの視点で考えると…物語が派生する分岐点が存在したってことになりますね」
+//
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "s20/10/441000086", 128, TRUE);
+	OutputLine(NULL, "「一般的なサスペンスアドベンチャーの視点で考えると…物語が派生する分岐点が存在したってことになりますね。」",
+		   NULL, "\"If we think from the perspective of a general adventure game in the suspense genre... sometimes the story branches depending on choices, right?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog013()
+{
+//A 「『綿流し』で言うと、…お姉に人形を渡した、あるいは渡さなかった、というあたり？」
+//
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "s20/06/440600106", 128, TRUE);
+	OutputLine(NULL, "「『綿流し』で言うと、…お姉に人形を渡した、あるいは渡さなかった、というあたり？？」",
+		   NULL, "\"So in Watanagashi, the point where you do or don't give the doll to my sister?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+//A 「では、『祟殺し』に話を戻しますと……うーん。この場合ですと、…叔父を殺そうと決意するあたりですかしら
+//
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "s20/04/440400220", 128, TRUE);
+	OutputLine(NULL, "「では、『祟殺し』に話を戻しますと",
+		   NULL, "\"Well then, returning to the topic of Tatarigoroshi.", Line_Continue);
+	Wait(2000);
+	OutputLine(NULL, "……うーん。この場合ですと、…叔父を殺そうと決意するあたりですかしら。」",
+		   NULL, " Hmm, this time round... maybe whether you decide to kill the uncle or not.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog015()
+{
+	ModPlayVoiceLS(4, 9, "s20/09/440900135", 128, TRUE);
+	OutputLine(NULL, "…同居人の女性がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。」",
+		   NULL, " ...I think it branched back when the uncle's cohabitant disappeared because of some trouble and he returned to Hinamizawa.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog016()
+{
+//A …ちゃんと圭一さんが魅音さんの気持ちを理解して。kvS20/04/440400223.それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」
+//
+	ModPlayVoiceLS(4, 4, "s20/04/440400222", 128, TRUE);
+	OutputLine(NULL, "…ちゃんと圭一さんの気持ちを理解して。",
+		   NULL, " ...If we were more understanding of Keiichi-san's feelings...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "s20/04/440400223", 128, TRUE);
+	OutputLine(NULL, "それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」",
+		   NULL, " And if Ooishi-san and my uncle hadn't appeared... would we not have spent our time in peace, without anything happening?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog017()
+{
+//A 　あんたにゃ次は容赦なく痛い目見させてやるからね！！kvS20/03/440300384.　泣いて謝ったって許してやるもんかー！！！
+//
+	ModPlayVoiceLS(4, 3, "s20/03/440300383", 128, TRUE);
+	OutputLine(NULL, "　あんたにゃ次は容赦なく痛い目見させてやるからね！！",
+		   NULL, " Next time I'll make sure to be merciless in the pain I put you through!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "s20/03/440300384", 128, TRUE);
+	OutputLine(NULL, "　泣いて謝ったって許してやるもんかー！！！",
+		   NULL, " You can cry and apologize as much as you like, it won't work!!!", Line_WaitForInput);
+}

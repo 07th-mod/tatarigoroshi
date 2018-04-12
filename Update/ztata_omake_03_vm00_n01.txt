@@ -56,3 +56,189 @@ void dialog002()
 		   NULL, " Yahoo!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
+
+void dialog003()
+{
+//　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "s20/09/440900124", 128, TRUE);
+	OutputLine(NULL, "　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」",
+		   NULL, "Personally, I wanted to get a scene of the gas coming in, the villagers spasming and foaming at the mouth one by one before dying—do you all think so too?\"", Line_Continue);
+}
+
+void dialog004()
+{
+	ModPlayVoiceLS(4, 2, "s20/02/440200239", 128, TRUE);
+	OutputLine(NULL, "　ではここで、今回のシナリオから立ち絵新登場の皆さんです。",
+		   NULL, " Now here are all the new character portraits that debuted in this chapter.", Line_WaitForInput);
+}
+
+void dialog005()
+{
+	ModPlayVoiceLS(4, 4, "s20/04/440400215", 128, TRUE);
+	OutputLine(NULL, "今回限りの脇役にしては出番もセリフも多過ぎでしてよ。」",
+		   NULL, " You had too many appearances and too much dialogue to be a minor character this time.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	ModPlayVoiceLS(4, 10, "s20/10/441000075", 128, TRUE);
+	OutputLine(NULL, "　次回のシナリオでも出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
+		   NULL, " I don't know if I'll appear in the next scenario, so please root for me!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog007()
+{
+	ModPlayVoiceLS(4, 2, "s20/02/440200243", 128, TRUE);
+	OutputLine(NULL, "　では次に、第１回から登場していたにも関わらず、ずっと立ち絵がなかった、知恵先生〜！！」",
+		   NULL, " Next up we have Chie-sensei, who has been around since Chapter 1 but never had a portrait until now~!!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog008()
+{
+	ModPlayVoiceLS(4, 22, "s20/22/441400026", 128, TRUE);
+	OutputLine(NULL, "　第１回からずーっと学校シーンで登場させてもらってたんですけど、どういうわけか立ち絵がいただけなくて。",
+		   NULL, " They've had me appear in school scenes ever since the first chapter, but for whatever reason, I didn't have my own portrait.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "s20/22/441400027", 128, TRUE);
+	OutputLine(NULL, "…どうしてなんでしょうねぇ。」",
+		   NULL, " ...I wonder why?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	ModPlayVoiceLS(4, 2, "s20/02/440200245", 128, TRUE);
+	OutputLine(NULL, "　ど、どうしてなんでしょうね！",
+		   NULL, " Y-Yes, I wonder!", Line_WaitForInput);
+}
+
+void dialog010()
+{
+//「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません＠で、エンジェルモートってのは園崎一族が持つお店ですから...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "s20/11/440700405", 128, TRUE);
+	OutputLine(NULL, "「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません。",
+		   NULL, "\"When I mentioned a restaurant with cute uniforms during the story, it must have meant Angel Mort.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "s20/11/440700406", 128, TRUE);
+	OutputLine(NULL, "で、エンジェルモートってのは園崎一族が持つお店ですから…。」",
+		   NULL, " And Angel Mort is owned by the Sonozaki family, so...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog011()
+{
+//「......鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて＠...私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "s20/02/440200258", 128, TRUE);
+	OutputLine(NULL, "「……鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて。",
+		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "s20/02/440200259", 128, TRUE);
+	OutputLine(NULL, "…私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？」",
+		   NULL, " it was because my character was the exact same in all three stories, is that it?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog012()
+{
+//「一般的なサウンドノベル的に考えると...物語が派生する分岐点が存在したってことになりますね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "s20/10/441000086", 128, TRUE);
+	OutputLine(NULL, "「一般的なサウンドノベル的に考えると…物語が派生する分岐点が存在したってことになりますね。」",
+		   NULL, "\"If we think in a general sound novel type of way... sometimes the story branches depending on choices, right?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog013()
+{
+//「綿流し編で言うと、...お姉に人形を渡さなかった、という辺り？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "s20/06/440600106", 128, TRUE);
+	OutputLine(NULL, "「綿流し編で言うと、…お姉に人形を渡さなかった、という辺り？」",
+		   NULL, "\"So like... if in Watanagashi, you had given the doll to my sister?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+//「では......うーん＠祟殺し編の場合ですと、...叔父を殺そうと決意する辺りですかしら。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "s20/04/440400220", 128, TRUE);
+	OutputLine(NULL, "「では……うーん。",
+		   NULL, "\"Well... hmm.", Line_Continue);
+	Wait(2000);
+	OutputLine(NULL, "祟殺し編の場合ですと、…叔父を殺そうと決意する辺りですかしら。」",
+		   NULL, " In Tatarigoroshi... maybe whether you decide to kill the uncle or not.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog015()
+{
+	ModPlayVoiceLS(4, 9, "s20/09/440900135", 128, TRUE);
+	OutputLine(NULL, "…愛人がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。」",
+		   NULL, " ...I think it branched back when the uncle's lover disappeared because of some trouble and he returned to Hinamizawa.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog016()
+{
+	ModPlayVoiceLS(4, 4, "s20/04/440400222", 128, TRUE);
+	OutputLine(NULL, "…ちゃんと圭一さんが魅音さんにお人形をあげて。",
+		   NULL, " ...If Keiichi-san gave the doll to Mion-san...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "s20/04/440400223", 128, TRUE);
+	OutputLine(NULL, "それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」",
+		   NULL, " And if Ooishi-san and my uncle hadn't appeared... would we not have spent our time in peace, without anything happening?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog017()
+{
+	ModPlayVoiceLS(4, 3, "s20/03/440300383", 128, TRUE);
+	OutputLine(NULL, "　あんたにゃ次は容赦なく釘を打つからね！！",
+		   NULL, " Next time I'll pound nails into you without mercy!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "s20/03/440300384", 128, TRUE);
+	OutputLine(NULL, "　もうガシガシにー！！！",
+		   NULL, " Bang, bang!!!", Line_WaitForInput);
+}
+
+void dialog018()
+{
+
+}
+
+void dialog019()
+{
+
+}
+
+void dialog020()
+{
+
+}
+
+void dialog021()
+{
+
+}
+
+void dialog01()
+{
+
+}
+
+void dialog01()
+{
+
+}
+
+void dialog01()
+{
+
+}
+
+void dialog01()
+{
+
+}

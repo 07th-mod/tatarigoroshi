@@ -64,11 +64,10 @@ void main()
 		   NULL, " A bad end again, the type which we're so fond of, huh?☆ ", GetGlobalFlag(GLinemodeSp));
 //..\n<
 
-//　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "s20/09/440900124", 128, TRUE);
-	OutputLine(NULL, "　私個人としては、ガスに包まれて、ひとり、またひとりと村人が痙攣して泡を吹きながら息絶えていくシーンの描写も欲しかったところだけど、みんなの感想も同じかしら？」",
-		   NULL, "Personally, I wanted to get a scene of the gas coming in, the villagers spasming and foaming at the mouth one by one before dying—do you all think so too?\"", Line_Continue);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 	PlaySE( 3, "wa_029", 128, 64 );
 
@@ -233,9 +232,10 @@ void main()
 	ModPlayVoiceLS(4, 2, "s20/02/440200238", 128, TRUE);
 	OutputLine(NULL, "「さて！",
 		   NULL, "\"Okay!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s20/02/440200239", 128, TRUE);
-	OutputLine(NULL, "　ではここで、今回のシナリオから立ち絵新登場の皆さんです。",
-		   NULL, " Now here are all the new character portraits that debuted in this chapter.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 2, "s20/02/440200240", 128, TRUE);
 	OutputLine(NULL, "拍手でお迎え下さい〜！！",
 		   NULL, " Everyone give a big round of applause~!!", Line_WaitForInput);
@@ -269,10 +269,10 @@ void main()
 	ModPlayVoiceLS(4, 4, "s20/04/440400214", 128, TRUE);
 	OutputLine(NULL, "「本当ですわねぇ。",
 		   NULL, "\"It's true!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "s20/04/440400215", 128, TRUE);
-	OutputLine(NULL, "今回限りの脇役にしては出番もセリフも多過ぎでしてよ。」",
-		   NULL, " You had too many appearances and too much dialogue to be a minor character this time.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
 
 //＜沙都子
@@ -284,10 +284,10 @@ void main()
 	ModPlayVoiceLS(4, 10, "s20/10/441000074", 128, TRUE);
 	OutputLine(NULL, "「はははは☆",
 		   NULL, "\"Hahahaha☆.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "s20/10/441000075", 128, TRUE);
-	OutputLine(NULL, "　次回のシナリオでも出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
-		   NULL, " I don't know if I'll appear in the next scenario, so please root for me!\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
 //＜監督
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
@@ -298,10 +298,10 @@ void main()
 	ModPlayVoiceLS(4, 2, "s20/02/440200242", 128, TRUE);
 	OutputLine(NULL, "「ありがとうございました！",
 		   NULL, "\"Thank you very much!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s20/02/440200243", 128, TRUE);
-	OutputLine(NULL, "　では次に、第１回から登場していたにも関わらず、ずっと立ち絵がなかった、知恵先生〜！！」",
-		   NULL, " Next up we have Chie-sensei, who has been around since Chapter 1 but never had a portrait until now~!!\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 22, "sprite/normal/tie_1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
@@ -310,13 +310,10 @@ void main()
 	ModPlayVoiceLS(4, 22, "s20/22/441400025", 128, TRUE);
 	OutputLine(NULL, "「皆さん、どうもこんにちは！",
 		   NULL, "\"Hello there, everyone!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 22, "s20/22/441400026", 128, TRUE);
-	OutputLine(NULL, "　第１回からずーっと学校シーンで登場させてもらってたんですけど、どういうわけか立ち絵がいただけなくて。",
-		   NULL, " They've had me appear in school scenes ever since the first chapter, but for whatever reason, I didn't have my own portrait.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 22, "s20/22/441400027", 128, TRUE);
-	OutputLine(NULL, "…どうしてなんでしょうねぇ。」",
-		   NULL, " ...I wonder why?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog008");}
+	//VoiceMatchingEnd
 
 
 //＜知恵
@@ -328,9 +325,10 @@ void main()
 	ModPlayVoiceLS(4, 2, "s20/02/440200244", 128, TRUE);
 	OutputLine(NULL, "「……あ、はは、はははははは！",
 		   NULL, "\"...Ah, haha, hahahahaha!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s20/02/440200245", 128, TRUE);
-	OutputLine(NULL, "　ど、どうしてなんでしょうね！",
-		   NULL, " Y-Yes, I wonder!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog009");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog009");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 2, "s20/02/440200246", 128, TRUE);
 	OutputLine(NULL, "　あ、知恵先生に席を空けてあげてください〜！」",
 		   NULL, " Oh, someone give Chie-sensei a seat, please~!\"", Line_Normal);
@@ -779,15 +777,10 @@ void main()
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 	ModDrawCharacterWithFiltering(3, 11, "sprite/normal/oisi1_2_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
-//「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません＠で、エンジェルモートってのは園崎一族が持つお店ですから...。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "s20/11/440700405", 128, TRUE);
-	OutputLine(NULL, "「劇中の私が、制服の可愛いレストランと言っているのは、きっとエンジェルモートのことに違いありません。",
-		   NULL, "\"When I mentioned a restaurant with cute uniforms during the story, it must have meant Angel Mort.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "s20/11/440700406", 128, TRUE);
-	OutputLine(NULL, "で、エンジェルモートってのは園崎一族が持つお店ですから…。」",
-		   NULL, " And Angel Mort is owned by the Sonozaki family, so...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog010");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog010");}
+	//VoiceMatchingEnd
 
 
 //＜大石
@@ -827,15 +820,10 @@ void main()
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 2, "sprite/normal/re1a_def_a1_", "0", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
-//「......鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて＠...私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s20/02/440200258", 128, TRUE);
-	OutputLine(NULL, "「……鬼隠し編の私はコワイ人だけど、それは鬼隠し編だけの設定、ということじゃなくて。",
-		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s20/02/440200259", 128, TRUE);
-	OutputLine(NULL, "…私は私で、３つのシナリオに、まったく変わらない設定で出演している、ということですね？」",
-		   NULL, " it was because my character was the exact same in all three stories, is that it?\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog011");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog011");}
+	//VoiceMatchingEnd
 //＜レナ
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
@@ -916,12 +904,10 @@ void main()
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 10, "sprite/normal/iri1_def2_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
-//「一般的なサウンドノベル的に考えると...物語が派生する分岐点が存在したってことになりますね。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s20/10/441000086", 128, TRUE);
-	OutputLine(NULL, "「一般的なサウンドノベル的に考えると…物語が派生する分岐点が存在したってことになりますね。」",
-		   NULL, "\"If we think in a general sound novel type of way... sometimes the story branches depending on choices, right?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog012");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog012");}
+	//VoiceMatchingEnd
 
 
 //＜監督
@@ -929,12 +915,10 @@ void main()
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 	ModDrawCharacter(3, 6, "sprite/normal/si1b_tokui_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
-//「綿流し編で言うと、...お姉に人形を渡さなかった、という辺り？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s20/06/440600106", 128, TRUE);
-	OutputLine(NULL, "「綿流し編で言うと、…お姉に人形を渡さなかった、という辺り？」",
-		   NULL, "\"So like... if in Watanagashi, you had given the doll to my sister?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog013");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog013");}
+	//VoiceMatchingEnd
 
 
 //＜詩音
@@ -953,15 +937,10 @@ void main()
 	DrawSceneWithMask("background/res5", "right", 0, 0, 300 );
 	ModDrawCharacterWithFiltering(3, 4, "sprite/normal/sa1a_def_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
-//「では......うーん＠祟殺し編の場合ですと、...叔父を殺そうと決意する辺りですかしら。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s20/04/440400220", 128, TRUE);
-	OutputLine(NULL, "「では……うーん。",
-		   NULL, "\"Well... hmm.", Line_Continue);
-	Wait(1000);
-	OutputLine(NULL, "祟殺し編の場合ですと、…叔父を殺そうと決意する辺りですかしら。」",
-		   NULL, " In Tatarigoroshi... maybe whether you decide to kill the uncle or not.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog014");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog014");}
+	//VoiceMatchingEnd
 
 
 //＜沙都子
@@ -973,10 +952,10 @@ void main()
 	ModPlayVoiceLS(4, 9, "s20/09/440900134", 128, TRUE);
 	OutputLine(NULL, "「私はずっとそれ以前。",
 		   NULL, "\"I think it was way before that.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "s20/09/440900135", 128, TRUE);
-	OutputLine(NULL, "…愛人がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。」",
-		   NULL, " ...I think it branched back when the uncle's lover disappeared because of some trouble and he returned to Hinamizawa.\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog015");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog015");}
+	//VoiceMatchingEnd
 //＜鷹野
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
@@ -1011,13 +990,10 @@ void main()
 	ModPlayVoiceLS(4, 4, "s20/04/440400221", 128, TRUE);
 	OutputLine(NULL, "「………今、思ったんですけれど。",
 		   NULL, "\"...You know, I just thought of something.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "s20/04/440400222", 128, TRUE);
-	OutputLine(NULL, "…ちゃんと圭一さんが魅音さんにお人形をあげて。",
-		   NULL, " ...If Keiichi-san gave the doll to Mion-san...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "s20/04/440400223", 128, TRUE);
-	OutputLine(NULL, "それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」",
-		   NULL, " And if Ooishi-san and my uncle hadn't appeared... would we not have spent our time in peace, without anything happening?\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog016");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog016");}
+	//VoiceMatchingEnd
 //＜沙都子
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1b_wink_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
@@ -1085,12 +1061,10 @@ void main()
 	ModPlayVoiceLS(4, 3, "s20/03/440300382", 128, TRUE);
 	OutputLine(NULL, "　詩音んんん！！",
 		   NULL, " Shioooonnn!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s20/03/440300383", 128, TRUE);
-	OutputLine(NULL, "　あんたにゃ次は容赦なく釘を打つからね！！",
-		   NULL, " Next time I'll pound nails into you without mercy!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s20/03/440300384", 128, TRUE);
-	OutputLine(NULL, "　もうガシガシにー！！！",
-		   NULL, " Bang, bang!!!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog017");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog017");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 3, "s20/03/440300385", 128, TRUE);
 	OutputLine(NULL, "　待てこらぁあああぁあ！！」",
 		   NULL, " Just you waaaaait!!\"", Line_Normal);
