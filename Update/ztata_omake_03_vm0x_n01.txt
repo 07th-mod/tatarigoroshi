@@ -9,13 +9,13 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s20/06/440600118", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600118", 128, TRUE);
 	OutputLine(NULL, "「大したことじゃないです。",
 		   NULL, "\"It's no big deal.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s20/06/440600119_1", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600119_1", 128, TRUE);
 	OutputLine(NULL, "すでにご存じの方もおられるかと思いますけど、",
 		   NULL, " As you probably already know,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s20/06/440600120", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600120", 128, TRUE);
 	OutputLine(NULL, "閲覧できる資料に新しいものが追加されて、……私、園崎詩音のシナリオがプレイできるようになるってことですよ」",
 		   NULL, " a brand new chapter is being added. And I, Sonozaki Shion, will be the main character.", Line_ContinueAfterTyping);
 	WaitToFinishVoicePlaying(4);
@@ -29,10 +29,10 @@ void dialog002()
 {
 //　風の噂じゃ、俺のボイス数を超えてるとか？！kvS20/01/440100219.　へっへ～ん、俺の苦労を少しは思い知れ～！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s20/01/440100218", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100218", 128, TRUE);
 	OutputLine(NULL, "風の噂じゃ、俺のボイス数を超えてるとか？！",
 		   NULL, "If the rumors are right, you got even more voiced lines than me?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s20/01/440100219", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100219", 128, TRUE);
 	OutputLine(NULL, "　へっへ～ん、俺の苦労を少しは思い知れ～！！』",
 		   NULL, " Ha-hah! Get a small taste of my suffering~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -42,7 +42,7 @@ void dialog003()
 {
 //A 私個人としては、大災害が実際に起こったときの惨劇の描写も欲しかったところだけど、みんなの感想も同じかしら？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "s20/09/440900124", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900124", 128, TRUE);
 	OutputLine(NULL, "　私個人としては、大災害が実際に起こったときの惨劇の描写も欲しかったところだけど、みんなの感想も同じかしら？」",
 		   NULL, "Personally, I wanted to get a scene depicting the tragedy unfolding after the disaster struck—do you all think so too?\"", Line_Continue);
 }
@@ -50,7 +50,7 @@ void dialog003()
 void dialog004()
 {
 //A ではここで、今回の会合に改めてご参加いただく皆さんです。
-	ModPlayVoiceLS(4, 2, "s20/02/440200239", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200239", 128, TRUE);
 	OutputLine(NULL, "　ではここで、今回の会合に改めてご参加いただく皆さんです。",
 		   NULL, " Now here are our guests that debuted in this chapter.", Line_WaitForInput);
 }
@@ -58,7 +58,7 @@ void dialog005()
 {
 //A 脇役にしては出番もセリフも多過ぎで、しかもキャラが強すぎましてよ」
 //
-	ModPlayVoiceLS(4, 4, "s20/04/440400215", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400215", 128, TRUE);
 	OutputLine(NULL, "脇役にしては出番もセリフも多過ぎで、しかもキャラが強すぎましてよ。」",
 		   NULL, " You had too many appearances, too much dialogue, and too strong a role for a minor character.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -68,7 +68,7 @@ void dialog006()
 {
 //A 　今後どれだけ出番があるかはわかりませんが、その節は応援よろしくお願いしますね～」
 //
-	ModPlayVoiceLS(4, 10, "s20/10/441000075", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000075", 128, TRUE);
 	OutputLine(NULL, "　今後どれだけ出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
 		   NULL, " I don't know how much I'll get to appear from hereon, so please root for me!\"", Line_Normal);
 	ClearMessage();
@@ -78,7 +78,7 @@ void dialog007()
 {
 //A では次に、我らが担任、知恵留美子先生～！！」
 //
-	ModPlayVoiceLS(4, 2, "s20/02/440200243", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200243", 128, TRUE);
 	OutputLine(NULL, "　では次に、我らが担任、知恵留美子先生～！！」",
 		   NULL, " Next up is our teacher, Chie-sensei~!!\"", Line_Normal);
 	ClearMessage();
@@ -89,10 +89,10 @@ void dialog008()
 //A 色々と登場シーンもあったのですが、今回カレー勝負で目立つシーンをいただきまして。
 // …カレーを馬鹿にする人は許せません。ええ」
 //
-	ModPlayVoiceLS(4, 22, "s20/22/441400026", 128, TRUE);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/441400026", 128, TRUE);
 	OutputLine(NULL, "　色々と登場シーンもあったのですが、今回カレー勝負で目立つシーンをいただきまして。",
 		   NULL, " I've appeared in various scenes, and this time I was given that memorable scene, the curry showdown.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 22, "s20/22/441400027", 128, TRUE);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/441400027", 128, TRUE);
 	OutputLine(NULL, "…カレーを馬鹿にする人は許せません。ええ。」",
 		   NULL, " ...I just can't forgive those who would slight curry.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -102,7 +102,7 @@ void dialog009()
 {
 //A 　だ、だれもバカになんてしていませんよっ？
 //
-	ModPlayVoiceLS(4, 2, "s20/02/440200245", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200245", 128, TRUE);
 	OutputLine(NULL, "　だ、だれもバカになんてしていませんよっ？",
 		   NULL, " N-Nobody here would even think of it!", Line_WaitForInput);
 }
@@ -112,10 +112,10 @@ void dialog010()
 //A 「劇中の私が入ったレストランは、園崎系列の店だったということですね。kvS20/11/440700406.園崎一族は、この辺りの飲食店やら何やらを経営しているわけですから」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "s20/11/440700405", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700405", 128, TRUE);
 	OutputLine(NULL, "「劇中の私が入ったレストランは、園崎系列の店だったということですね。",
 		   NULL, "\"Meaning that the restaurant I visited during the story must have been part of the Sonozaki group.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "s20/11/440700406", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700406", 128, TRUE);
 	OutputLine(NULL, "園崎一族は、この辺りの飲食店やら何やらを経営しているわけですから。」",
 		   NULL, " Since the Sonozaki family runs various eateries and businesses around these parts.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -127,10 +127,10 @@ void dialog011()
 // kvS20/02/440200259.…レナはレナで、４つのシナリオに、まったく変わらない設定で出演している、ということですね？」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s20/02/440200258", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200258", 128, TRUE);
 	OutputLine(NULL, "「……『鬼隠し』のレナはコワイ人だけど、それは『鬼隠し』だけの設定、ということじゃなくて。",
 		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s20/02/440200259", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200259", 128, TRUE);
 	OutputLine(NULL, "…レナはレナで、３つのシナリオに、まったく変わらない設定で出演している、ということですね？」",
 		   NULL, " it was because my character was the exact same in all three stories, is that it?\"", Line_Normal);
 	ClearMessage();
@@ -141,7 +141,7 @@ void dialog012()
 //A 「一般的なサスペンスアドベンチャーの視点で考えると…物語が派生する分岐点が存在したってことになりますね」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s20/10/441000086", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000086", 128, TRUE);
 	OutputLine(NULL, "「一般的なサスペンスアドベンチャーの視点で考えると…物語が派生する分岐点が存在したってことになりますね。」",
 		   NULL, "\"If we think from the perspective of a general adventure game in the suspense genre... sometimes the story branches depending on choices, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -152,7 +152,7 @@ void dialog013()
 //A 「『綿流し』で言うと、…お姉に人形を渡した、あるいは渡さなかった、というあたり？」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s20/06/440600106", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600106", 128, TRUE);
 	OutputLine(NULL, "「『綿流し』で言うと、…お姉に人形を渡した、あるいは渡さなかった、というあたり？？」",
 		   NULL, "\"So in Watanagashi, the point where you do or don't give the doll to my sister?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -163,7 +163,7 @@ void dialog014()
 //A 「では、『祟殺し』に話を戻しますと……うーん。この場合ですと、…叔父を殺そうと決意するあたりですかしら
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s20/04/440400220", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400220", 128, TRUE);
 	OutputLine(NULL, "「では、『祟殺し』に話を戻しますと",
 		   NULL, "\"Well then, returning to the topic of Tatarigoroshi.", Line_Continue);
 	Wait(2000);
@@ -174,7 +174,7 @@ void dialog014()
 
 void dialog015()
 {
-	ModPlayVoiceLS(4, 9, "s20/09/440900135", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900135", 128, TRUE);
 	OutputLine(NULL, "…同居人の女性がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。」",
 		   NULL, " ...I think it branched back when the uncle's cohabitant disappeared because of some trouble and he returned to Hinamizawa.\"", Line_Normal);
 	ClearMessage();
@@ -184,10 +184,10 @@ void dialog016()
 {
 //A …ちゃんと圭一さんが魅音さんの気持ちを理解して。kvS20/04/440400223.それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」
 //
-	ModPlayVoiceLS(4, 4, "s20/04/440400222", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400222", 128, TRUE);
 	OutputLine(NULL, "…ちゃんと圭一さんの気持ちを理解して。",
 		   NULL, " ...If we were more understanding of Keiichi-san's feelings...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "s20/04/440400223", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400223", 128, TRUE);
 	OutputLine(NULL, "それで大石さんも私の叔父さんも現れなかったら、……何も起こらずに平和に過せるってことなんじゃありませんの？」",
 		   NULL, " And if Ooishi-san and my uncle hadn't appeared... would we not have spent our time in peace, without anything happening?\"", Line_Normal);
 	ClearMessage();
@@ -197,10 +197,10 @@ void dialog017()
 {
 //A 　あんたにゃ次は容赦なく痛い目見させてやるからね！！kvS20/03/440300384.　泣いて謝ったって許してやるもんかー！！！
 //
-	ModPlayVoiceLS(4, 3, "s20/03/440300383", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300383", 128, TRUE);
 	OutputLine(NULL, "　あんたにゃ次は容赦なく痛い目見させてやるからね！！",
 		   NULL, " Next time I'll make sure to be merciless in the pain I put you through!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s20/03/440300384", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300384", 128, TRUE);
 	OutputLine(NULL, "　泣いて謝ったって許してやるもんかー！！！",
 		   NULL, " You can cry and apologize as much as you like, it won't work!!!", Line_WaitForInput);
 }
@@ -210,7 +210,7 @@ void dialog018()
 //A 「鬼ヶ淵の沼に捧げ物を沈める…あの儀式、ですね！」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s20/06/440600110", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600110", 128, TRUE);
 	OutputLine(NULL, "「鬼ヶ淵の沼に捧げ物を沈める…あの儀式、ですね！」",
 		   NULL, "\"Sinking a ritual offering into the Onigafuchi Swamp, right!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -221,7 +221,7 @@ void dialog018()
 
 //A 「…さ、捧げ物って、…何をオヤシロさまに捧げるっていうんですか？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s20/02/440200266", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200266", 128, TRUE);
 	OutputLine(NULL, "「…さ、捧げ物って、…何をオヤシロさまに捧げるっていうんですか？」",
 		   NULL, "\"...A-An offering? ...What do you suggest is offered to Oyashiro-sama?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -231,7 +231,7 @@ void dialog019()
 {
 //A どんな分岐にも関係なく話の流れから脱落が確定している人だよ！
 //
-	ModPlayVoiceLS(4, 3, "s20/03/440300387", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300387", 128, TRUE);
 	OutputLine(NULL, "どんな分岐にも関係なく話の流れから脱落が確定している人だよ！",
 		   NULL, " Someone who is destined to drop out from the story no matter what happens!", Line_WaitForInput);
 }
@@ -241,7 +241,7 @@ void dialog020()
 //A 「……あー…、…その『脱落』が確定している人って、…やっぱり僕のことかな」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "s20/08/440800139", 128, TRUE);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800139", 128, TRUE);
 	OutputLine(NULL, "「……あー…、",
 		   NULL, "\"...Uhh...", Line_Continue);
 
@@ -265,7 +265,7 @@ void dialog021()
 {
 // 入江rvS20/10/441000094.「やぁ、私が北条叔父ですよ～」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s20/10/441000094", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000094", 128, TRUE);
 	OutputLine(NULL, "「やぁ、私が北条叔父ですよ〜。」",
 		   NULL, "\"Hiya, my name's Uncle Houjou~.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -276,7 +276,7 @@ void dialog021()
 
 // 沙都子rvS20/04/440400226.「……なんで監督さんが叔父さまの役を？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s20/04/440400226", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400226", 128, TRUE);
 	OutputLine(NULL, "「……なんで監督さんが叔父さまの役を？」",
 		   NULL, "\"...Why is Manager playing my Uncle?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -285,7 +285,7 @@ void dialog021()
 
 // 魅音rvS20/03/440300389.「だって、わざわざ呼びにいくのめんどくさいじゃない？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s20/03/440300389", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300389", 128, TRUE);
 	OutputLine(NULL, "「だって、わざわざ呼びにいくのめんどくさいじゃない？」",
 		   NULL, "\"Going to get him would be pretty tedious, wouldn't it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -297,18 +297,18 @@ void dialog021()
 
 // 入江rvS20/10/441000095.「はいは～い、行き場を失くしてロンリーブル～♪k
 // S20/10/441000096.　早く雛見沢に帰って、沙都子ちゃんをお持ち帰りしてじっくり教育、未来はご奉仕メイドですよ～～♪
-	ModPlayVoiceLS(4, 10, "s20/10/441000095", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000095", 128, TRUE);
 	OutputLine(NULL, "「はいは～い、行き場を失くしてロンリーブル～♪",
 		   NULL, " I'm so lonely and blue because my lover ran away~♪. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "s20/10/441000096", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000096", 128, TRUE);
 	OutputLine(NULL, "　早く雛見沢に帰って、沙都子ちゃんをお持ち帰りしてじっくり教育、未来はご奉仕メイドですよ～～♪",
 		   NULL, "Time to go back to Hinamizawa, take Satoko-chan home, train her, and make her into my future maid servant~~♪.", Line_Continue);
 }
 
 void dialog022()
 {
-	ModPlayVoiceLS(4, 2, "s20/02/440200269", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200269", 128, TRUE);
 	OutputLine(NULL, "　突然、レナの腕が光って唸って、大変なことに☆」",
 		   NULL, " Oh no, all of a sudden, this arm of mine is glowing with an awesome power☆.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -318,7 +318,7 @@ void dialog023()
 {
 //A もう言っちまってもいいんじゃないか、あれ」
 //
-	ModPlayVoiceLS(4, 1, "s20/01/440100215", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100215", 128, TRUE);
 	OutputLine(NULL, "　もう言っちまってもいいんじゃないか、あれ。」",
 		   NULL, " Isn't it about time we told them about it?\"", Line_Normal);
 	ClearMessage();
@@ -328,7 +328,7 @@ void dialog024()
 {
 //A とはいえ、もうすでにわかってる人たちもいるでしょうけど、まぁいいか
 //
-	ModPlayVoiceLS(4, 6, "s20/06/440600117", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600117", 128, TRUE);
 	OutputLine(NULL, "　とはいえ、もうすでにわかってる人たちもいるでしょうけど、まぁいいか。」",
 		   NULL, " I suspect that some people already figured it out, but okay.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -338,7 +338,7 @@ void dialog025()
 {
 //A .姉妹キャラでも遅れ登場した片割れの方が絶対に人気が出るってのは、ギャルゲー全盛時代から決められたお約束ですしー♪」
 //
-	ModPlayVoiceLS(4, 6, "s20/06/440600123", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600123", 128, TRUE);
 	OutputLine(NULL, "姉妹キャラでも遅れ登場した片割れの方が絶対に人気が出るってのは、ギャルゲー全盛時代から決められたお約束ですしー♪♪」",
 		   NULL, " The late-appearing sister of a pair is always popular, it's been that way since the golden era of galge♪.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -348,7 +348,7 @@ void dialog026()
 {
 //A とにかく俺はそのシナリオでは、主人公のお役御免！
 //
-	ModPlayVoiceLS(4, 1, "s20/01/440100217", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100217", 128, TRUE);
 	OutputLine(NULL, "とにかく俺はそのシナリオでは、主人公のお役御免！　",
 		   NULL, " Anyway, I've been fired from my main character post for once! ", GetGlobalFlag(GLinemodeSp));
 }
@@ -359,10 +359,10 @@ void dialog027()
 // ま～、園崎姉妹の実力ってヤツを、とくと皆さんにお見せしてさしあげますよ」
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s20/06/440600124", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600124", 128, TRUE);
 	OutputLine(NULL, "「まー、圭ちゃんのボイス数は異常ですから、他のシナリオに入れるようになればすぐに逆転されるでしょうけど。",
 		   NULL, "\"Well, Kei-chan has such a ridiculous number of voiced lines I'm sure that'll be turned around in the other schenarios.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s20/06/440600125", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600125", 128, TRUE);
 	OutputLine(NULL, "ま～、園崎姉妹の実力ってヤツを、とくと皆さんにお見せしてさしあげますよ。」",
 		   NULL, " Anyway, be prepared to experience the true prowess of the Sonozaki sisters.\"", Line_Normal);
 	ClearMessage();
@@ -372,18 +372,18 @@ void dialog028()
 {
 //A 「『ひぐらしのなく頃に粋』も、今回の『祟殺し』と、外伝の『染伝し』で一区切り。kvS20/02/440200277.ミステリアスな謎を次々と提示してきた出題編はここで折り返しになり、
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s20/02/440200276", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200276", 128, TRUE);
 	OutputLine(NULL, "「『ひぐらしのなく頃に粋』も、今回の『祟殺し』と、外伝の『染伝し』で一区切り。",
 		   NULL, "\"With Tatarigoroshi and the side story Someutsushi, we've hit a landmark point in the Higurashi: When They Cry series. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s20/02/440200277", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200277", 128, TRUE);
 	OutputLine(NULL, "ミステリアスな謎を次々と提示してきた前半部はここで折り返しになり、",
 		   NULL, "This first half presented a lot of strange and exciting mysteries, but starting next time...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 
 //次の章からはこれまでの謎に挑み、そしてさらなるドラマの幕開けとなります」
-	ModPlayVoiceLS(4, 2, "s20/02/440200278b", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200278b", 128, TRUE);
 	OutputLine(NULL, "次の章からはこれまでの謎に挑み、そしてさらなるドラマの幕開けとなります。」",
 		   NULL, " we'll start to challenge the mysteries from the next chapter, which will set the stage for yet more drama.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -393,10 +393,10 @@ void dialog029()
 {
 //A 御三家の秘密に近付きすぎて、閉じ込められていたぶられて！kvS20/03/440300397.　ヒサンな最期を遂げる役に決まってるー！！
 //
-	ModPlayVoiceLS(4, 3, "s20/03/440300396", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300396", 128, TRUE);
 	OutputLine(NULL, "　御三家の秘密に近付きすぎて、閉じ込められていたぶられて！",
 		   NULL, " You'll get too close to the Three Families' secrets, be imprisoned, and then get tormented!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s20/03/440300397", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300397", 128, TRUE);
 	OutputLine(NULL, "　ヒサンな最期を遂げる役に決まってるー！！」",
 		   NULL, " You're a shoe-in to meet a violent, unnatural death!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
