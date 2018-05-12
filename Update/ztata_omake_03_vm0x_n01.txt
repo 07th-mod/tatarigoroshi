@@ -33,7 +33,7 @@ void dialog002()
 	OutputLine(NULL, "風の噂じゃ、俺のボイス数を超えてるとか？！",
 		   NULL, "If the rumors are right, you got even more voiced lines than me?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100219", 128, TRUE);
-	OutputLine(NULL, "　へっへ～ん、俺の苦労を少しは思い知れ～！！』",
+	OutputLine(NULL, "　へっへ〜ん、俺の苦労を少しは思い知れ〜！！」",
 		   NULL, " Ha-hah! Get a small taste of my suffering~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
@@ -79,7 +79,7 @@ void dialog007()
 //A では次に、我らが担任、知恵留美子先生～！！」
 //
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200243", 128, TRUE);
-	OutputLine(NULL, "　では次に、我らが担任、知恵留美子先生～！！」",
+	OutputLine(NULL, "　では次に、我らが担任、知恵留美子先生〜！！」",
 		   NULL, " Next up is our teacher, Chie-sensei~!!\"", Line_Normal);
 	ClearMessage();
 }
@@ -128,7 +128,7 @@ void dialog011()
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200258", 128, TRUE);
-	OutputLine(NULL, "「……『鬼隠し』のレナはコワイ人だけど、それは『鬼隠し』だけの設定、ということじゃなくて。",
+	OutputLine(NULL, "「……「鬼隠し」のレナはコワイ人だけど、それは「鬼隠し」だけの設定、ということじゃなくて。",
 		   NULL, "\"...I was scary in Onikakushi, but that wasn't only because it was Onikakushi...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200259", 128, TRUE);
 	OutputLine(NULL, "…レナはレナで、３つのシナリオに、まったく変わらない設定で出演している、ということですね？」",
@@ -153,7 +153,7 @@ void dialog013()
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600106", 128, TRUE);
-	OutputLine(NULL, "「『綿流し』で言うと、…お姉に人形を渡した、あるいは渡さなかった、というあたり？？」",
+	OutputLine(NULL, "「「綿流し」で言うと、…お姉に人形を渡した、あるいは渡さなかった、というあたり？？」",
 		   NULL, "\"So in Watanagashi, the point where you do or don't give the doll to my sister?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
@@ -164,7 +164,7 @@ void dialog014()
 //
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400220", 128, TRUE);
-	OutputLine(NULL, "「では、『祟殺し』に話を戻しますと",
+	OutputLine(NULL, "「では、「祟殺し」に話を戻しますと",
 		   NULL, "\"Well then, returning to the topic of Tatarigoroshi.", Line_Continue);
 	Wait(2000);
 	OutputLine(NULL, "……うーん。この場合ですと、…叔父を殺そうと決意するあたりですかしら。」",
@@ -249,7 +249,7 @@ void dialog020()
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "…その『脱落』が確定している人って、",
+	OutputLine(NULL, "…その「脱落」が確定している人って、",
 		   NULL, " ...When you say someone who drops out no matter what...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
@@ -298,11 +298,11 @@ void dialog021()
 // 入江rvS20/10/441000095.「はいは～い、行き場を失くしてロンリーブル～♪k
 // S20/10/441000096.　早く雛見沢に帰って、沙都子ちゃんをお持ち帰りしてじっくり教育、未来はご奉仕メイドですよ～～♪
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000095", 128, TRUE);
-	OutputLine(NULL, "「はいは～い、行き場を失くしてロンリーブル～♪",
+	OutputLine(NULL, "「はいは〜い、行き場を失くしてロンリーブル〜♪",
 		   NULL, " I'm so lonely and blue because my lover ran away~♪. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000096", 128, TRUE);
-	OutputLine(NULL, "　早く雛見沢に帰って、沙都子ちゃんをお持ち帰りしてじっくり教育、未来はご奉仕メイドですよ～～♪",
+	OutputLine(NULL, "　早く雛見沢に帰って、沙都子ちゃんをお持ち帰りしてじっくり教育、未来はご奉仕メイドですよ〜〜♪",
 		   NULL, "Time to go back to Hinamizawa, take Satoko-chan home, train her, and make her into my future maid servant~~♪.", Line_Continue);
 }
 
@@ -363,7 +363,7 @@ void dialog027()
 	OutputLine(NULL, "「まー、圭ちゃんのボイス数は異常ですから、他のシナリオに入れるようになればすぐに逆転されるでしょうけど。",
 		   NULL, "\"Well, Kei-chan has such a ridiculous number of voiced lines I'm sure that'll be turned around in the other schenarios.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600125", 128, TRUE);
-	OutputLine(NULL, "ま～、園崎姉妹の実力ってヤツを、とくと皆さんにお見せしてさしあげますよ。」",
+	OutputLine(NULL, "ま〜、園崎姉妹の実力ってヤツを、とくと皆さんにお見せしてさしあげますよ。」",
 		   NULL, " Anyway, be prepared to experience the true prowess of the Sonozaki sisters.\"", Line_Normal);
 	ClearMessage();
 }
@@ -373,7 +373,7 @@ void dialog028()
 //A 「『ひぐらしのなく頃に粋』も、今回の『祟殺し』と、外伝の『染伝し』で一区切り。kvS20/02/440200277.ミステリアスな謎を次々と提示してきた出題編はここで折り返しになり、
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200276", 128, TRUE);
-	OutputLine(NULL, "「『ひぐらしのなく頃に粋』も、今回の『祟殺し』と、外伝の『染伝し』で一区切り。",
+	OutputLine(NULL, "「「ひぐらしのなく頃に粋」も、今回の「祟殺し」と、外伝の「染伝し」で一区切り。",
 		   NULL, "\"With Tatarigoroshi and the side story Someutsushi, we've hit a landmark point in the Higurashi: When They Cry series. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200277", 128, TRUE);

@@ -292,10 +292,10 @@ void main()
 //『こちら本部こちら本部＠小宮山さん、聞こえますかどーぞー...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>本部</color>", NULL, "<color=#f5e6d3>Headquarters</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s03/00/honbu04001", 128, TRUE);
-	OutputLine(NULL, "『こちら本部こちら本部。",
+	OutputLine(NULL, "「こちら本部こちら本部。",
 		   NULL, "\"This is HQ. This is HQ.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s03/00/honbu04002", 128, TRUE);
-	OutputLine(NULL, "小宮山さん、聞こえますかどーぞー…。』",
+	OutputLine(NULL, "小宮山さん、聞こえますかどーぞー…。」",
 		   NULL, " Komiyama-san, can you hear me? Over...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -499,10 +499,10 @@ void main()
 //『そちらに応援が向かいました＠課長から、そちらは応援に任せて大石車の捜索に戻れとのことです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>本部</color>", NULL, "<color=#f5e6d3>Headquarters</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s03/00/honbu04003", 128, TRUE);
-	OutputLine(NULL, "『そちらに応援が向かいました。",
+	OutputLine(NULL, "「そちらに応援が向かいました。",
 		   NULL, "\"I've sent you backup.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s03/00/honbu04004", 128, TRUE);
-	OutputLine(NULL, "課長から、そちらは応援に任せて大石車の捜索に戻れとのことです。』",
+	OutputLine(NULL, "課長から、そちらは応援に任せて大石車の捜索に戻れとのことです。」",
 		   NULL, " The chief wants you to leave the rest to them and get back to searching for Ooishi's car.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
