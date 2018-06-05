@@ -1340,7 +1340,7 @@ void main()
 		   NULL, " No eating out—it's too expensive.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/502700019", 128, TRUE);
 	OutputLine(NULL, "　圭一もそろそろ自炊と経済観念を学んでもいい頃だからね。」",
-		   NULL, " You're at the age where you should learn about cooking and personal finances now, after all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You're at the age where you should learn about cooking and personal finances now, after all.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...うんうん...＠何とかなる、!d1000何とかなる......￥
@@ -1759,13 +1759,14 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei23190", 128, TRUE);
 	OutputLine(NULL, "　あの時、沙都子がした料理は何だ？！",
 		   NULL, " What did you cook at the time, exactly?! ", GetGlobalFlag(GLinemodeSp));
+		   
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei23200", 128, TRUE);
 	OutputLine(NULL, "　レナのカレーに塩を一袋入れて、",
 		   NULL, "You put a bag of salt in Rena's curry,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei23210", 128, TRUE);
 	OutputLine(NULL, "魅音のご飯に塩を一袋入れて、",
 		   NULL, " a bag of salt in Mion's rice,", Line_WaitForInput);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei23220", 128, TRUE);
 	OutputLine(NULL, "…俺の鍋をひっくり返しやがってー！！」",
 		   NULL, " ...and you flipped over my pan!!\"", Line_Normal);
@@ -4002,7 +4003,7 @@ void main()
 
 //　目の前の素敵なクッキングが、実は致命的な災害に至ろうとしていることにようやく気が付く...￥
 	OutputLine(NULL, "　目の前の素敵なクッキングが、実は致命的な災害に至ろうとしていることにようやく気が付く…。",
-		   NULL, "I finally realized that the fabulous cooking before my eyes had culminated into an actually life-threatening disaster...", Line_Normal);
+		   NULL, " I finally realized that the fabulous cooking before my eyes had culminated into an actually life-threatening disaster...", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
