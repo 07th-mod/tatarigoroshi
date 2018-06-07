@@ -1265,7 +1265,7 @@ void main()
 //　......食卓の上には散らかった食事があり、......団欒とは程遠い食事風景を想像させた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……食卓の上には散らかった食事があり、……団欒とは程遠い食事風景を想像させた。",
-		   NULL, "...There was food scattered about the table... giving an impression decidedly different from a 'happy family's meal time'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...There was food scattered about the table... giving an impression decidedly different from a 'happy family's meal time.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1776,16 +1776,16 @@ void main()
 //「......さ、......沙都子おおっぉぉッ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100923", 128, TRUE);
-	OutputLine(NULL, "「……さ、……沙都子おおっぉぉッ！！」",
-		   NULL, "\"...Sa...Satokoooooo!!\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「……さ、……沙都子おおっぉぉッ！！",
+		   NULL, "\"...Sa...Satokoooooo!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「....................................。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100924", 128, TRUE);
-	OutputLine(NULL, "「………………………………。」",
-		   NULL, "\"..................\"", Line_Normal);
+	OutputLine(NULL, " ………………………………。」",
+		   NULL, "..................\"", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "msys08", 128, 0 );

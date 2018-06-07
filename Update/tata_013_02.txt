@@ -1212,16 +1212,16 @@ void main()
 	OutputLine(NULL, "　圭一さんと喧嘩したくらいで自殺するような人ではありませんわ。",
 		   NULL, " He would certainly not have killed himself after a petty fight with you, Keiichi-san.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400230", 128, TRUE);
-	OutputLine(NULL, "…自分を責めるのはおよしなさいませ。」",
-		   NULL, " ...Please, stop blaming yourself.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…自分を責めるのはおよしなさいませ。",
+		   NULL, " ...Please, stop blaming yourself.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps2/04/140400231", 240, TRUE);
-	OutputLine(NULL, "「……………………………………………。」",
-		   NULL, "\"........................\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……………………………………………。」",
+		   NULL, "........................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2237,7 +2237,7 @@ void main()
 //　...カラスたちの黒い巨体が飛び去り、............そのゴミ袋がむき出しになった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…カラスたちの黒い巨体が飛び去り、…………そのゴミ袋がむき出しになった。",
-		   NULL, "...When the crows' big, black bodies flew away...... they exposed the \"garbage bag\".", Line_Normal);
+		   NULL, "...When the crows' big, black bodies flew away...... they exposed the \"garbage bag.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("scene/113a", 1000 );
