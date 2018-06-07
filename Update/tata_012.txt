@@ -1674,16 +1674,16 @@ void main()
 	OutputLine(NULL, "昨日のお祭りで、みんなで頑張って落としたよ？",
 		   NULL, " Come on, we all worked really hard at the festival yesterday to get it down, remember?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200188", 128, TRUE);
-	OutputLine(NULL, "　でっかいぬいぐるみ。」",
-		   NULL, " The gigantic stuffed animal.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　でっかいぬいぐるみ。",
+		   NULL, " The gigantic stuffed animal.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.........でっかい、!w1000...ぬいぐるみ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200189", 128, TRUE);
-	OutputLine(NULL, "「………でっかい、",
-		   NULL, "\"...The gigantic...", Line_Continue);
+	OutputLine(NULL, " ………でっかい、",
+		   NULL, "...The gigantic...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -5809,7 +5809,7 @@ void main()
 //　そう言えば、学校の先生も監督のことを入江先生なんて呼んでたっけ...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言えば、学校の先生も監督のことを入江先生なんて呼んでたっけ…。",
-		   NULL, "Come to think of it, our teacher called him 'Irie-sensei', didn't she?", Line_Normal);
+		   NULL, "Come to think of it, our teacher called him 'Irie-sensei,' didn't she?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 10, "sprite/sunset/iri2_def2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -6153,7 +6153,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100816", 128, TRUE);
 	OutputLine(NULL, "「ドッペルのオバケ？」",
-		   NULL, "\"'Doppelgangers?'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"'Doppelgangers'?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -7186,7 +7186,7 @@ void main()
 		   NULL, " ...Your classmates probably mistook you for someone who looked very similar.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s03/10/141000210", 128, TRUE);
 	OutputLine(NULL, "それに集団心理が働いて、皆さんはあなたがお祭りにいたと錯覚してしまっているに違いありません。」",
-		   NULL, " Then, given how group psychology works, everyone just assumed that you had been at the festival.", Line_Normal);
+		   NULL, " Then, given how group psychology works, everyone just assumed that you had been at the festival.\"", Line_Normal);
 	ClearMessage();
 
 //　............見違いのわけはない＠
@@ -7199,7 +7199,7 @@ void main()
 //　...魅音たちは、『前原圭一』と一緒に遊んだと言っているのだ＠見間違えるのとは、訳が違う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…魅音たちは、「前原圭一」と一緒に遊んだと言っているのだ。",
-		   NULL, "...Mion and all the rest said they were spending time with 'Keiichi Maebara'.", Line_WaitForInput);
+		   NULL, "...Mion and all the rest said they were spending time with 'Keiichi Maebara.'", Line_WaitForInput);
 	OutputLine(NULL, "見間違えるのとは、訳が違う。",
 		   NULL, " It was much more than just having mistaken someone else for me.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -7607,7 +7607,7 @@ void main()
 		   NULL, " ...This... is a really horrible idea, but...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s03/10/141000235", 128, TRUE);
 	OutputLine(NULL, "……前原さんが殺した相手が…叔父でなく、別人である可能性は…？」",
-		   NULL, " Is it possible that the person you killed... wasn't actually her uncle...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Is it possible that the person you killed... wasn't actually her uncle...?\"", Line_Continue);
 
 	PlaySE( 3, "wa_022", 128, 64 );
 

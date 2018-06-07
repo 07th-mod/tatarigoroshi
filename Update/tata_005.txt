@@ -594,6 +594,7 @@ void main()
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「そうだね＠/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200648", 128, TRUE);
 	OutputLine(NULL, "「そうだね。",
 		   NULL, " \"You're right.", Line_WaitForInput);
@@ -884,7 +885,7 @@ void main()
 		   NULL, "\"Is it something you can tell Rena?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200657", 128, TRUE);
 	OutputLine(NULL, "　…どんな悩みかわからないけど、聞いて力になれることなら、聞くよ…？」",
-		   NULL, " ...I don't know what you're worried about, but I if I can help, then you can tell me, okay...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...I don't know what you're worried about, but if I can help, then you can tell me, okay...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4173,7 +4174,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………あいつ、か…。",
-		   NULL, "....\"Used to it\", huh...", Line_Normal);
+		   NULL, "....\"Used to it,\" huh...", Line_Normal);
 	ClearMessage();
 
 //「今度会った時は挑発しないことです＠あいつを怒らせて得をすることは何もありませんからね＠......自宅に制服警官を連れて押しかけてきたら、ご家族だっていい気持ちはしないでしょう...？＠
@@ -4508,7 +4509,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000190", 128, TRUE);
 	OutputLine(NULL, "……………沙都子ちゃんたち兄妹にとって、とても辛い生活だったと聞き及んでいます…。」",
-		   NULL, "......I've heard that for the siblings, it was a very rough life...", Line_Normal);
+		   NULL, "......I've heard that for the siblings, it was a very rough life...\"", Line_Normal);
 	ClearMessage();
 
 //　監督はぽつりぽつりと、叔父夫婦宅での沙都子たち北条兄妹の受難の数々を聞かせてくれた￥
@@ -5242,7 +5243,7 @@ void main()
 		   NULL, "\"...I don't have any idea who first suggested this.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000225", 128, TRUE);
 	OutputLine(NULL, "……いつの頃からか、大石のことを「オヤシロさまの使い」と呼ぶようになりました。」",
-		   NULL, " ...But at some point, everyone started calling Ooishi 'Oyashiro-sama's servant'.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...But at some point, everyone started calling Ooishi 'Oyashiro-sama's servant.'\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

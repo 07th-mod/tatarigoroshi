@@ -692,6 +692,7 @@ void main()
 	PlaySE( 3, "wa_042", 128, 64 );
 
 //「.........くそったれ...＠だから何だってんだよ...、やめて帰れってのか？＠　ええ？！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100635", 128, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「………くそったれ…。",
@@ -1033,7 +1034,7 @@ void main()
 //　...俺が編入されたクラスは生徒が４人しかいない、選抜と呼ばれるクラスだった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺が編入されたクラスは生徒が４人しかいない、選抜と呼ばれるクラスだった。",
-		   NULL, "...There were only four students in the class they put me in, which was called 'Select'.", Line_Normal);
+		   NULL, "...There were only four students in the class they put me in, which was called 'Select.'", Line_Normal);
 	ClearMessage();
 
 //　それが最高位のクラスで、...自分の下位のクラスにクラスメートが何人かいて＠...彼らがドッジボールや５０ｍ走で俺よりもずっといい成績を出していたことを思い出した時、初めて喜びが込み上げてきたのだ￥

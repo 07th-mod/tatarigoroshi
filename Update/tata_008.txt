@@ -501,16 +501,16 @@ void main()
 	OutputLine(NULL, "「いえ、……それが、",
 		   NULL, "\"No... Actually...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 24, "ps3/s03/24/142400004", 128, TRUE);
-	OutputLine(NULL, "……むしろ逆で…。」",
-		   NULL, " it's the opposite...\"", Line_Normal);
+	OutputLine(NULL, "……むしろ逆で…。",
+		   NULL, " it's the opposite...", Line_Normal);
 	ClearMessage();
 
 //「うちのばあちゃんの話だと＠......昨日の昼に、うちの店に豆腐を買いに来たらしいです。＠
 //　あ、富田の家は豆腐屋さんなんです、と岡村くんが付け加える￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 24, "ps3/s03/24/142400005", 128, TRUE);
-	OutputLine(NULL, "「うちのばあちゃんの話だと、",
-		   NULL, "\"I heard my grandma saying...", Line_WaitForInput);
+	OutputLine(NULL, "うちのばあちゃんの話だと、",
+		   NULL, "I heard my grandma saying...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 24, "ps3/s03/24/142400006", 128, TRUE);
 	OutputLine(NULL, "……昨日の昼に、うちの店に豆腐を買いに来たらしいです。」",
 		   NULL, " that she came to buy tofu at our shop yesterday.\"", GetGlobalFlag(GLinemodeSp));
@@ -785,7 +785,7 @@ void main()
 //　監督に聞いた話が...次々と思い出される￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　監督に聞いた話が…次々と思い出される。",
-		   NULL, "Everything Coach told me... came back in bits in pieces.", Line_Normal);
+		   NULL, "Everything Coach told me... came back in bits and pieces.", Line_Normal);
 	ClearMessage();
 
 //　...そうだ＠
@@ -864,15 +864,15 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 25, "ps3/s03/25/142500011", 128, TRUE);
-	OutputLine(NULL, "「あ、…いえ、いいんすよ…。」",
-		   NULL, "\"Oh... No, it's okay...\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「あ、…いえ、いいんすよ…。",
+		   NULL, "\"Oh... No, it's okay...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 25, "ps3/s03/25/142500012", 128, TRUE);
-	OutputLine(NULL, "「北条が重病で寝たきりになってないことがわかっただけでも、ほら。",
-		   NULL, "\"Now we know that she hasn't been in bed this whole time, gravely ill.", Line_WaitForInput);
+	OutputLine(NULL, "北条が重病で寝たきりになってないことがわかっただけでも、ほら。",
+		   NULL, "Now we know that she hasn't been in bed this whole time, gravely ill.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 25, "ps3/s03/25/142500013", 128, TRUE);
 	OutputLine(NULL, "儲けもんじゃないですか。」",
 		   NULL, " That's worth something, right?\"", Line_Normal);
@@ -1986,7 +1986,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100063", 128, TRUE);
 	OutputLine(NULL, "「…じゃ、…じゃあレナは………知ってるのかよ………？」",
-		   NULL, "\"...Fine... Then do... do you know something, Rena......?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...Fine... Then do... do you know something, Rena......?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

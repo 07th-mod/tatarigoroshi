@@ -431,8 +431,8 @@ void main()
 //「あ、...沙都子ちゃんの靴、あるよ！　あるよ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200130", 128, TRUE);
-	OutputLine(NULL, "「あ、…沙都子ちゃんの靴、あるよ！　あるよ！」",
-		   NULL, "\"Ah... Satoko's shoes are here! They're here!\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「あ、…沙都子ちゃんの靴、あるよ！　あるよ！",
+		   NULL, "\"Ah... Satoko's shoes are here! They're here!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -444,8 +444,8 @@ void main()
 //　ばたばたと教室へ駆け込む￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200131", 128, TRUE);
-	OutputLine(NULL, "「圭ちゃん、沙都子ちゃんは来てるよ。",
-		   NULL, "\"Kei-chan, Satoko came.", Line_WaitForInput);
+	OutputLine(NULL, "圭ちゃん、沙都子ちゃんは来てるよ。",
+		   NULL, "Kei-chan, Satoko came.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200132", 128, TRUE);
 	OutputLine(NULL, "よかった…！」",
 		   NULL, " Thank goodness...!\"", GetGlobalFlag(GLinemodeSp));
@@ -1382,7 +1382,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps2/01/140100506", 240, TRUE);
 	OutputLine(NULL, "　どうしてその事実が…昔の出来事で歪められなきゃならねえんだよ！！」",
-		   NULL, "Why is... Why is something that happened in the past getting in the way helping her now?!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Why is... Why is something that happened in the past getting in the way of helping her now?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

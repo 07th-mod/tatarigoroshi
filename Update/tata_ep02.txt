@@ -459,16 +459,20 @@ void main()
 		   NULL, "\"...You said it before, didn't you?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101135", 128, TRUE);
 	OutputLine(NULL, "“ありえない”って。",
-		   NULL, " That it was 'impossible.'", Line_WaitForInput);
+		   NULL, " That it was 'impossible.'", Line_Normal);
+	ClearMessage();
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101136", 128, TRUE);
 	OutputLine(NULL, "……あの雛見沢では、ありえないことなんて、いくらでも起こるんです。",
-		   NULL, " ...Impossible things happen in that Hinamizawa all the time.", Line_Normal);
+		   NULL, " ...Impossible things happen in that Hinamizawa all the time.", Line_Continue);
+	Wait( 1000 );
+	OutputLine(NULL, "　…あそこじゃ、いないはずの場所に人がいる。",
+		   NULL, "...There are people who shouldn't be existing.", Line_Normal);
 	ClearMessage();
 
 //　...あそこじゃ、いないはずの場所に人がいる＠死んだはずの人が生きてる＠...そんなこと、珍しいことじゃないんですよ＠......まさか、俺自身が、死んだはずなのに生きているってヤツを、...立証しようとはね、......はははははは＠あはははははははは...はっはっはっはっはっはっは！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…あそこじゃ、いないはずの場所に人がいる。",
-		   NULL, "...There are people who shouldn't be exist.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101137", 128, TRUE);
 	OutputLine(NULL, "死んだはずの人が生きてる。",
 		   NULL, " Dead people end up alive.", Line_WaitForInput);
@@ -590,8 +594,8 @@ void main()
 	OutputLine(NULL, "「豪快？",
 		   NULL, "\"Exciting?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101148", 128, TRUE);
-	OutputLine(NULL, "　…そういう面白い言い方もあるんですね…。」",
-		   NULL, " ...I supposed you could call it that...\"", Line_Normal);
+	OutputLine(NULL, "　…そういう面白い言い方もあるんですね…。",
+		   NULL, " ...I suppose you could call it that...", Line_Normal);
 	ClearMessage();
 
 //■なぜなら、前原圭一は災害から２ヶ月たった８月某日の自殺未遂を期に、精神障害が指摘され、医療施設に移送されていた。
@@ -606,8 +610,8 @@ void main()
 //「鷹野さんも俺が殺したし、監督も大石も俺が殺した＠...あの時の俺にはね、何か神懸かり的な力が宿ってたんですよ＠.........そう、...例えるなら、足音かな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101149", 128, TRUE);
-	OutputLine(NULL, "「鷹野さんも俺が殺したし、監督も大石も俺が殺した。",
-		   NULL, "\"I was the one who killed Takano-san, and Coach and Ooishi too.", Line_WaitForInput);
+	OutputLine(NULL, "鷹野さんも俺が殺したし、監督も大石も俺が殺した。",
+		   NULL, "I was the one who killed Takano-san, and Coach and Ooishi too.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101150", 128, TRUE);
 	OutputLine(NULL, "…あの時の俺にはね、何か神懸かり的な力が宿ってたんですよ。",
 		   NULL, " ...At the time, I had some kind of divine power.", Line_WaitForInput);
@@ -640,8 +644,8 @@ void main()
 	OutputLine(NULL, "ひたひた。",
 		   NULL, " Click click.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101155", 128, TRUE);
-	OutputLine(NULL, "くっくっく。」",
-		   NULL, " Ku-ku-ku.\"", Line_Normal);
+	OutputLine(NULL, "くっくっく。",
+		   NULL, " Ku-ku-ku.", Line_Normal);
 	ClearMessage();
 
 //■施設は一切の取材を許さなかったため、昭和５８年８月以降の日付でマスコミのテープに肉声が残されている可能性は、極めて低いからである。
@@ -655,8 +659,8 @@ void main()
 //「あんたも、今日からは歩いてる時、不意に立ち止まってみると面白いですよ＠.........それでね＠...自分がちゃんと立ち止まったにも関わらず、!w1000......足音がひとつ、余計に聞こえたなら＠............気をつけた方がいいですよ＠......ふふふふふ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101156", 128, TRUE);
-	OutputLine(NULL, "「あんたも、今日からは歩いてる時、不意に立ち止まってみると面白いですよ。",
-		   NULL, "\"Today, when you're walking around, try stopping suddenly—something interesting will happen. ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "あんたも、今日からは歩いてる時、不意に立ち止まってみると面白いですよ。",
+		   NULL, "Today, when you're walking around, try stopping suddenly—something interesting will happen. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101157", 128, TRUE);
 	OutputLine(NULL, "………それでね。",
@@ -696,8 +700,8 @@ void main()
 //「............そんなに俺、...面白いこと話してますか？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101161", 128, TRUE);
-	OutputLine(NULL, "「…………そんなに俺、…面白いこと話してますか？」",
-		   NULL, "\"......Is what I'm saying... really that funny to you?\"", Line_Normal);
+	OutputLine(NULL, "「…………そんなに俺、…面白いこと話してますか？",
+		   NULL, "\"......Is what I'm saying... really that funny to you?", Line_Normal);
 	ClearMessage();
 
 //■ただし、記者は現役当時、非常に強引な取材方法で非難を浴びたことがあり、施設に不法侵入して前原圭一を強行取材した可能性も否めない。
@@ -711,8 +715,8 @@ void main()
 //「あんた、...さっきからへらへらと笑ってばかりですね...＠......監督と同じだ＠...俺のこと、同情したり話を聞いたりしてるふりをしながらその実、......人のことを異常者扱いしてる目だ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101162", 128, TRUE);
-	OutputLine(NULL, "「あんた、…さっきからへらへらと笑ってばかりですね…。",
-		   NULL, "\"You've... been doing nothing but laugh in my face this whole time...", Line_WaitForInput);
+	OutputLine(NULL, " あんた、…さっきからへらへらと笑ってばかりですね…。",
+		   NULL, "You've... been doing nothing but laugh in my face this whole time...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101163", 128, TRUE);
 	OutputLine(NULL, "……監督と同じだ。",
 		   NULL, " ...You're just like Coach. ", GetGlobalFlag(GLinemodeSp));
@@ -743,8 +747,8 @@ void main()
 	OutputLine(NULL, "「いや、…俺にはわかるんです。",
 		   NULL, "\"No... I can tell.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101166", 128, TRUE);
-	OutputLine(NULL, "あんたの目は監督と同じだ。」",
-		   NULL, " Your eyes are the same as Coach's.\"", Line_Normal);
+	OutputLine(NULL, "あんたの目は監督と同じだ。",
+		   NULL, " Your eyes are the same as Coach's.", Line_Normal);
 	ClearMessage();
 
 //■これは本当に前原圭一の肉声なのか...？　この録音テープの真偽は...未だ謎に包まれている。
@@ -758,8 +762,8 @@ void main()
 //「............あの日以来、もう足音は聞こえない＠...だから俺にはもう、あんな恐ろしい力は残ってないだろうけど＠......今ここでもう一度、......あんたの死を願ってみるよ＠俺に不愉快な話ばかりをするあんたの死を＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101167", 128, TRUE);
-	OutputLine(NULL, "「…………あの日以来、もう足音は聞こえない。",
-		   NULL, "\"......I never heard the footsteps again after that day.", Line_WaitForInput);
+	OutputLine(NULL, "…………あの日以来、もう足音は聞こえない。",
+		   NULL, "......I never heard the footsteps again after that day.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101168", 128, TRUE);
 	OutputLine(NULL, "…だから俺にはもう、あんな恐ろしい力は残ってないだろうけど。",
 		   NULL, " ...So I don't think I have that terrible power anymore. ", GetGlobalFlag(GLinemodeSp));
@@ -789,8 +793,8 @@ void main()
 	OutputLine(NULL, "…………じゃああんたは逆に水だ。",
 		   NULL, " let's go with the opposite—with water.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101173", 128, TRUE);
-	OutputLine(NULL, "…水に溺れて死ぬ、ってのはどうだい？」",
-		   NULL, " ...I hope you drown and die—how's that?\"", Line_Normal);
+	OutputLine(NULL, "…水に溺れて死ぬ、ってのはどうだい？",
+		   NULL, " ...I hope you drown and die—how's that?", Line_Normal);
 	ClearMessage();
 
 //■記者はこの取材から十数年後。平成７年８月に、テープ内の前原圭一の予告通り、水の事故、海難事故で命を落とすことになる。
@@ -805,8 +809,8 @@ void main()
 //!sd
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101174", 128, TRUE);
-	OutputLine(NULL, "「…絶好調だった当時の俺なら、次の朝までには必ず死んでる。",
-		   NULL, "\"...If I'm in top form like I was then, you'd die before tomorrow morning for sure.", Line_WaitForInput);
+	OutputLine(NULL, "…絶好調だった当時の俺なら、次の朝までには必ず死んでる。",
+		   NULL, "...If I'm in top form like I was then, you'd die before tomorrow morning for sure.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101175", 128, TRUE);
 	OutputLine(NULL, "………さてあんたは、…何日後に水で死ぬかな？",
 		   NULL, " ......Now then... I wonder how many days it will take you to drown?", Line_WaitForInput);
@@ -1077,8 +1081,8 @@ void main()
 	Wait( 100 );
 	// (backup) SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "っは",
-		   NULL, " ha", Line_Continue);
+	OutputLine(NULL, "っは」",
+		   NULL, " ha\"", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );

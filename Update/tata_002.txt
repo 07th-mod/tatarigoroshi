@@ -1591,17 +1591,17 @@ void main()
 //「おかずも心のこもらない、お惣菜や缶詰ばかり＠つまり前原さんのお弁当には、お弁当の三大要素＠!s0　愛/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 25, "ps3/s19/25/502500017", 128, TRUE);
-	OutputLine(NULL, "「おかずも心のこもらない、お惣菜や缶詰ばかり。",
-		   NULL, "\"The side dishes have no spirit in them either—they're all prepackaged or canned food. ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「おかずも心のこもらない、お惣菜や缶詰ばかり。」",
+		   NULL, "\"The side dishes have no spirit in them either—they're all prepackaged or canned food.\"", GetGlobalFlag(GLinemodeSp));
 
 
 	DisableWindow();
 	ModDrawCharacter(1, 24, "sprite/normal/tomita1_ikari_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
-
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400020", 128, TRUE);
-	OutputLine(NULL, "つまり前原さんのお弁当には、お弁当の三大要素！",
-		   NULL, "In other words, out of the three necessary requirements for a bento:", Line_WaitForInput);
+	OutputLine(NULL, "「つまり前原さんのお弁当には、お弁当の三大要素！",
+		   NULL, "\"In other words, out of the three necessary requirements for a bento:", Line_WaitForInput);
 //!s0
 
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400021", 128, TRUE);
@@ -1824,7 +1824,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25690", 128, TRUE);
 	OutputLine(NULL, "「心の定義はなんだ。",
-		   NULL, "\"How do you measure spirit?", Line_WaitForInput);
+		   NULL, "\"How do you measure spirit?", Line_Continue);
 	OutputLine(NULL, "苦労か？",
 		   NULL, " By difficulty?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25700", 128, TRUE);
@@ -2772,11 +2772,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25970_01", 128, TRUE);
 	OutputLine(NULL, "　どんなにひどい手作り弁当であっても、ただ買ってきただけのコンビニ弁当とでは比べ物にならないほどの心がこめられている！！",
-		   NULL, "No matter how badly made it is, it has far more spirit than a bento that you just bought would ever have!!", Line_WaitForInput);
+		   NULL, "No matter how badly made it is, it has far more spirit than a bento that you just bought would ever have!!", GetGlobalFlag(GLinemodeSp));
+		   
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25970_02", 128, TRUE);
 	OutputLine(NULL, "　そしてそれは評価されている！！",
-		   NULL, " You see, that spirit <i>is</i> being graded!! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " You see, that spirit <i>is</i> being graded!! ", Line_Continue);
+	Wait( 1300 );
 	OutputLine(NULL, "　つまり、手作りによる心は、ちゃんと受け手に伝わってるのです！！",
 		   NULL, "Meaning, the spirit the cook put into the bento has already reached the recipients!!", Line_WaitForInput);
 
@@ -6495,7 +6497,7 @@ void main()
 //　......少なくとも、沙都子の「兄」としてそう思う￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……少なくとも、沙都子の「兄」としてそう思う。",
-		   NULL, "...At the very least, that's what I thought as Satoko's 'older brother'.", Line_Normal);
+		   NULL, "...At the very least, that's what I thought as Satoko's 'older brother.'", Line_Normal);
 	ClearMessage();
 
 //「じゃあ、学校の近くまで送ってやるよ＠あそこまで行けば、結構、外灯とかあるから大丈夫だろ。＠
@@ -6729,7 +6731,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しっかり者の、本当の沙都子でいるためには、兄が不可欠なんだ。",
-		   NULL, "In order for her to really be this levelheaded, having a brother was something she couldn't do without.", Line_Normal);
+		   NULL, "In order for her to really be this level-headed, having a brother was something she couldn't do without.", Line_Normal);
 	ClearMessage();
 
 //　...つまり、......沙都子にはまだまだ兄が必要なんだ＠
@@ -6912,15 +6914,15 @@ void main()
 	OutputLine(NULL, "「別に寂しくなんかありませんわ。",
 		   NULL, "\"It's not that I'm lonely.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/500400471", 128, TRUE);
-	OutputLine(NULL, "こうして、圭一さんがにーにーの代わりになってくれますしね！」",
-		   NULL, " Since Keiichi-san is being my Nii-nii for me right now!\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "こうして、圭一さんがにーにーの代わりになってくれますしね！",
+		   NULL, " Since Keiichi-san is being my Nii-nii for me right now!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/500400472", 128, TRUE);
-	OutputLine(NULL, "「えっと、……その！」",
-		   NULL, "\"Um... well, I...!\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "えっと、……その！」",
+		   NULL, "Um... well, I...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

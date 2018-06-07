@@ -2057,15 +2057,13 @@ void main()
 //　あの弾丸直球の異名を持つ...左腕の亀田を討ち取れるピンチヒッターだって？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ざわッ！！",
-		   NULL, "Murmur!!", Line_WaitForInput);
-	OutputLine(NULL, "　…何だって？！",
-		   NULL, " \"...What?!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Murmur!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あの弾丸直球の異名を持つ…左腕の亀田を討ち取れるピンチヒッターだって？！",
-		   NULL, "He's the pinch hitter we brought in to take out... Left-Arm Kameda, with his bullet fastball?!", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　…何だって？！　あの弾丸直球の異名を持つ…左腕の亀田を討ち取れるピンチヒッターだって？！",
+		   NULL, "\"...What?! He's the pinch hitter we brought in to take out... Left-Arm Kameda, with his bullet fastball?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　地方予選でノーヒットノーランを次々に打ち立てた、県立大島の無敗の魔神投手...＠
@@ -2690,7 +2688,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei28580", 128, TRUE);
 	OutputLine(NULL, "「それでその危機的状況というのはどんな具合なんだ。",
-		   NULL, "\"So what's the crisis situation look like?", Line_Continue);
+		   NULL, "\"So what's the crisis situation like?", Line_Continue);
 	Wait( 3500 );
 	OutputLine(NULL, "……６対７。",
 		   NULL, " ...6 to 7.", Line_Continue);
@@ -2823,7 +2821,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　現れた魅音は…何と、ぐるぐるの包帯巻き！",
-		   NULL, "Mion showed up... and to my surprised, she was wrapped up in bandages!", Line_WaitForInput);
+		   NULL, "Mion showed up... and to my surprise, she was wrapped up in bandages!", Line_WaitForInput);
 	OutputLine(NULL, "　い、一体、何があったんだ？！",
 		   NULL, " J-Just what on earth happened?!", Line_Normal);
 	ClearMessage();
@@ -6271,8 +6269,8 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Man</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/camc50006", 128, TRUE);
-	OutputLine(NULL, "「天才スラッガー、ゴルフ界へ移籍…か…。",
-		   NULL, "\"A genius slugger, making a transfer into the golf world...", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「天才スラッガー、ゴルフ界へ移籍…か…。」",
+		   NULL, "\"A genius slugger, making a transfer into the golf world...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -6281,8 +6279,8 @@ void main()
 		   NULL, "W-What a tremendous loss for baseball!", Line_WaitForInput);
 	OutputLine(NULL, "　輪転機を止めさせろ！",
 		   NULL, " Stop the presses!", Line_WaitForInput);
-	OutputLine(NULL, "　スポーツ欄は差し替えで行くぞッ！！」",
-		   NULL, " We're changing up our sports columns!!\"", Line_Normal);
+	OutputLine(NULL, "　スポーツ欄は差し替えで行くぞッ！！",
+		   NULL, " We're changing up our sports columns!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
