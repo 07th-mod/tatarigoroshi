@@ -11,8 +11,8 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	PlayBGM( 1, "msys11", 128, 0 );
+	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri1_def2_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/ji1", 400 );
-	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri1_def2_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「詩音さんも少しは手伝ってくださいー。＠
 	ClearMessage();
@@ -60,7 +60,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	DrawSceneWithMask("background/jok1", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/ji1", "up", 0, 0, 300 );
 
 //　今日のバーベキュー大会に使った器材をワゴン車いっぱいに積む＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -328,7 +328,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_def2_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask("background/jok1", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/ji1", "up", 0, 0, 300 );
 
 //「では、またお会いしましょうね＠試合にもたまには応援に来てくださいよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
