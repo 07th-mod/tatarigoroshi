@@ -18,7 +18,7 @@ void dialog001()
 //＜詩音
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-
+	DisableWindow();
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 300 );
 	PlaySE( 3, "wa_015", 128, 64 );

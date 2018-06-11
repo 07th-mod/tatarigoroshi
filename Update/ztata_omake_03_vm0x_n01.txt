@@ -17,7 +17,7 @@ void dialog001()
 		   NULL, " As you probably already know,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600120", 128, TRUE);
 	OutputLine(NULL, "閲覧できる資料に新しいものが追加されて、……私、園崎詩音のシナリオがプレイできるようになるってことですよ」",
-		   NULL, " a brand new chapter is being added. And I, Sonozaki Shion, will be the main character.", Line_ContinueAfterTyping);
+		   NULL, " a brand new chapter is being added. And I, Sonozaki Shion, will be the main character.\"", Line_ContinueAfterTyping);
 	WaitToFinishVoicePlaying(4);
 
 	PlaySE( 3, "wa_007", 128, 64 );
@@ -70,7 +70,7 @@ void dialog006()
 //
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000075", 128, TRUE);
 	OutputLine(NULL, "　今後どれだけ出番があるかはわかりませんが、その節は応援よろしくお願いしますね〜。」",
-		   NULL, " I don't know how much I'll get to appear from hereon, so please root for me!\"", Line_Normal);
+		   NULL, " I don't know how much I'll get to appear from here on, so please root for me!\"", Line_Normal);
 	ClearMessage();
 }
 
@@ -278,7 +278,7 @@ void dialog021()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400226", 128, TRUE);
 	OutputLine(NULL, "「……なんで監督さんが叔父さまの役を？」",
-		   NULL, "\"...Why is Manager playing my Uncle?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...Why is Coach playing my Uncle?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me1a_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );

@@ -56,7 +56,7 @@ void main()
 		   NULL, "At the very moment I was appreciating this gentle kindness, Satoko might be being bruised by her uncle's cruel words.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/ma_j3", "up", 0, 0, 1300 );
+	DrawSceneWithMask("background/ma_j3_01", "up", 0, 0, 1300 );
 
 //　２階に上がり自室にこもる＠
 //　......そして机に向かい、...腕を組んでみた＠
@@ -260,8 +260,6 @@ void main()
 	OutputLine(NULL, "　…さらに併せて…沙都子の安全を保護しなくては…。",
 		   NULL, "...We would need something more... to guarantee Satoko's safety...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("background/ma_j3_01", "up", 0, 0, 300 );
 
 //　頭をガリガリガリっと掻き、ほんのわずかの冷静さが欲しくて、頭を後ろにそらす＠
 //　.....................今日の仲間たちとの、怒鳴りあいが思い出されくる￥
@@ -276,8 +274,8 @@ void main()
 		   NULL, "......The memories of angry arguing with my friends today came to mind.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	PlayBGM( 1, "msys17", 128, 0 );
 	DrawScene("background/ma2", 400 );
-	PlayBGM( 1, "msys21", 128, 0 );
 
 //　レナに言われるまで気付けなかったことを恥じる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -352,8 +350,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	DrawFilm( 2, 136, 136, 136, 255, 0, 1000, TRUE );
-	DrawScene("background/gk1", 400 );
 
 //　.........食費の問題は、...子供の俺が考えるよりは、切実な厳しい問題かもしれない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -361,6 +357,9 @@ void main()
 		   NULL, "...As for food expenses... That might have been a more serious problem than a kid like me could imagine.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawScene("background/gk1", 400 );
+	
 //　昼の弁当は何とかなるだろ＠
 //　...仲間みんなで、これからはほんの少し多めに弁当を用意すればいい＠
 //　みんなで突付きあうんだから、何とかなる￥
@@ -468,8 +467,6 @@ void main()
 	OutputLine(NULL, "　やり遂げるんだ…！",
 		   NULL, "I would follow through on it...!", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("background/ma_d1", 400 );
 
 //　あ、でも...食費だけの話じゃない＠
 //　......風呂場とか洗濯場とか、生活ともなれば欠かせない要素ってたくさんある＠
@@ -604,7 +601,7 @@ void main()
 		   NULL, "At that point, there were two knocks at my door, and Mom poked her head inside.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/ma_j3_01", 400 );
+	DrawScene("background/ma_j3", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「起きてたの＠　さっきからご飯ってずっと呼んでるわよ？＠
@@ -681,6 +678,9 @@ void main()
 		   NULL, "...I couldn't imagine how hard it would be to add another place at the table...", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawScene("black", 400 );
+	
 //　.........考えろ前原圭一＠
 //　...食事を四人分にすることが難しいなら、...三人分の食事で四人が食うことを考えればいい￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -740,9 +740,6 @@ void main()
 	OutputLine(NULL, "　…さっきから考えもしなかったが、この隠れ住まうというのは実は必須条件なのだ。",
 		   NULL, "...I hadn't even thought about it, but her living here secretly was actually a necessity.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("black", 1000 );
-	DrawScene("background/ma3", 1000 );
 
 //　俺の家に沙都子を来させるという策は、公的機関が様子見だと判断した時に実施される＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -755,8 +752,6 @@ void main()
 	OutputLine(NULL, "　…つまり、沙都子の叔父が相変わらず保護者であり続ける場合だ。",
 		   NULL, "...In other words, if Satoko's uncle continued to be her guardian.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("background/ma5", 400 );
 
 //　そんな状況下で公然とうちにいることが知られていたなら、叔父はすぐにもうちに押しかけてきて、沙都子を連れ戻すだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -785,6 +780,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/ma_s1", "left", 0, 0, 300 );
+	PlayBGM( 1, "msys06", 128, 0 );
 
 //　......よし＠
 //　...非現実的な両親説得よりも、......隠れ住まう、隠居策で模索してみよう＠
@@ -899,8 +895,6 @@ void main()
 	OutputLine(NULL, "……まだ矛盾や盲点はあるか？",
 		   NULL, " ...No more contradictions or oversights, right?", Line_Normal);
 	ClearMessage();
-
-	PlayBGM( 1, "msys06", 128, 0 );
 
 //　...そうだ、朝と夜の食事＠
 //　.........朝は何とか我慢してもらうこともできる＠
@@ -1069,7 +1063,7 @@ void main()
 		   NULL, " ...It didn't open quietly.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys21", 128, 0 );
+	PlayBGM( 1, "msys17", 128, 0 );
 
 //　おいおい...、いつもは静かにすーっと開くじゃないか？＠
 //　何で今頃になって急に＠　欠陥住宅かよ？＠　もう家にガタが来たのか？＠　それともロウでも足りなくなんたのか？＠　ワックスでも塗ればいいのかッ？￥
@@ -1429,9 +1423,10 @@ void main()
 	DrawScene("background/ma2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	DrawScene("black", 1000 );
-	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawScene("black", 3000 );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 

@@ -12,7 +12,6 @@ void main()
 	DrawScene("black", 1000 );
 	PlaySE( 3, "wa_001", 128, 64 );
 	Wait( 3000 );
-	DrawSceneWithMask("background/m_hi3", "up", 0, 0, 1300 );
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //　魅音たちは綿流しの祭りの準備があるとかで、俺にも来ないかと誘ったが、断った￥
@@ -53,10 +52,10 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask("black", "up", 0, 0, 1300 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
-	DrawScene("background/ma_d1", 1000 );
 
 //!sd
 	FadeOutBGM( 1, 1000, TRUE );
+	PlayBGM( 2, "lsys23", 128, 0 );
 
 //　俺が家に帰って始めにしたのは、シャワーを浴びることだった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -71,9 +70,7 @@ void main()
 	OutputLine(NULL, "……さらなる冷静さがほしかったからだ。",
 		   NULL, " ...It was because I wanted to be even calmer.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	PlayBGM( 2, "lsys23", 128, 0 );
+	PlayBGM( 1, "lsys18", 128, 0 );
 
 //　すでにわかっている通りだが、あの男を殺すだけならあまりにも容易い＠
 //　...本当に難しいのは、その結果、俺が逮捕されず、平穏な日常を取り戻せる...という方だ￥
@@ -295,12 +292,14 @@ void main()
 		   NULL, "...I wonder... what the perfect crime would mean to her...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawScene("white", 400 );
-	DrawSceneWithMask("background/ma_d1", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_s1", "right", 0, 0, 300 );
+	PlayBGM( 1, "msys21", 128, 0 );
 
 //「これまでの推理小説の中で、母さんが一番よく出来たと思った完全犯罪？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
@@ -722,8 +721,7 @@ void main()
 		   NULL, " That's a pretty great trick!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	DrawSceneWithMask("background/ma_d1", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_s1", "left", 0, 0, 300 );
 
 //「でも娯楽小説にはならないわね＠推理小説は所詮、娯楽書＠完全犯罪の指南書にはなり得ないんだから。＠
 //　...お袋を茶化すため、努めて明るく会話をしていたが...その胸中は興奮していた＠
@@ -1050,6 +1048,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
+	FadeOutBGM( 2, 400, TRUE );
 
 //　...現実に考えてみればいい。
 //＠銃刀法で刃渡り１０...何センチだったか以上の刃物は禁じられている＠
@@ -1131,6 +1130,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/gr1", "right", 0, 0, 300 );
+	PlayBGM( 2, "lsys12", 128, 0 );
 
 //　土曜日の放課後はクラスメートがまだまだ校庭ではしゃぎまわっていた＠
 //　その中に俺が現れても、それはいつもの風景なので誰も不審には思わない￥
@@ -1272,7 +1272,7 @@ void main()
 		   NULL, "I felt regret at wasting valuable thinking time on stupid delusions.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/gk1", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/gk3", "right", 0, 0, 300 );
 
 //　......教室の後ろには各生徒用のロッカーが並ぶ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1624,6 +1624,11 @@ void main()
 		   NULL, "...So I was almost definitively fine in this case.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawScene("white", 50 );
+	DrawScene("black", 1000 );
+	DrawScene("background/gr2", 600 );
+	
 //　...日差しが、刺すように暑い。頭が一瞬朦朧としかける￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…日差しが、刺すように暑い。頭が一瞬朦朧としかける。",
