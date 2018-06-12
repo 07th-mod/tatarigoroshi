@@ -36,8 +36,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawFilm( 2, 153, 153, 153, 255, 0, 100, TRUE );
-	ModDrawCharacter(3, 4, "sprite/normal/sa1a_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );
+	ModDrawCharacter(3, 4, "sprite/flashback/sa1a_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
@@ -284,7 +283,6 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawScene("black", 1000 );
-	FadeFilm( 0, TRUE );
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );

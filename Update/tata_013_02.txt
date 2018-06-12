@@ -1023,7 +1023,7 @@ void main()
 		   NULL, "Wiping her tears, she stood up.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/normal/sa5_hannbeso_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 4, "sprite/normal/sa5_hannbeso_a3_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/sinryou_soto3", "up", 0, 0, 300 );
 
 //「............すまない。＠
@@ -3855,7 +3855,7 @@ void main()
 	FadeOutBGM( 2, 400, TRUE );
 	DrawScene("black", 1000 );
 	FadeOutBGM( 1, 3000, TRUE );
-	DrawScene("background/jsa1", 3000 );
+	DrawScene("flashback/jsa1", 3000 );
 	PlayBGM( 1, "msys09", 128, 0 );
 
 //　沙都子は、...みんなで境内でかくれんぼをしている時、...近寄ってはいけないと言われていた祭具殿の屋根によじ登り、...身を隠した＠
@@ -4025,7 +4025,7 @@ void main()
 		   NULL, "...It didn't take very long... for her to grow scared of what she'd done.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/jsa1", 400 );
+	DrawScene("flashback/jsa1", 400 );
 
 //　その凄まじい音は境内にも聞こえたようだった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

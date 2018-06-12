@@ -1834,8 +1834,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
-	ModDrawCharacter(2, 4, "sprite/normal/sa1a_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask("background/g1", "up", 0, 0, 1300 );
+	ModDrawCharacter(2, 4, "sprite/flashback/sa1a_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("flashback/g1", "up", 0, 0, 1300 );
 
 
 //　さっき校門で沙都子に会ったとき...家の掃除をしていた...なんて言っていたことを思い出す＠
@@ -2190,7 +2190,7 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 300, TRUE );
-	ModDrawCharacter(3, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 5, "sprite/normal/ri1_fuman_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	Wait( 1000 );
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 300, TRUE );
 	SetValidityOfInput( TRUE );
@@ -2510,7 +2510,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_komaru_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_fuman_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「..............................。＠
 //　レナは努めてやさしい笑顔をたたえながら、そっと梨花ちゃんに言った￥
@@ -3253,7 +3253,7 @@ void main()
 		   NULL, "Rika-chan shook her head, not particularly disturbed.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 5, "sprite/normal/ri1_niko_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+	ModDrawCharacter(3, 5, "sprite/normal/ri1_fuman_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「......それはですね、ボクは...＠...実は村長さん家の子供になっているからなのです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -5189,7 +5189,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(3, 10, "sprite/sunset/iri1_majime3_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 10, "sprite/sunset/iri1_majime2_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......いえ、!w800...遠慮します＠沙都子ちゃんとは偶然、お会いしたんで、ちょっとお送りしてあげただけです＠すぐに失礼します。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -5905,7 +5905,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(2, 10, "sprite/sunset/iri1_majime3_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "sprite/sunset/iri1_majime2_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして人差し指を自分の口に当て、声が大きいと…たしなめる。",
@@ -6278,7 +6278,7 @@ void main()
 		   NULL, "......Tears... trickled down from Satoko's eyes.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/sunset/sa1b_hau_b2_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 4, "sprite/sunset/sa1b_warai_b1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -6938,8 +6938,8 @@ void main()
 	DisableWindow();
 	DrawScene("black", 1000 );
 	FadeOutBGM( 2, 1000, TRUE );
-	ModDrawCharacter(2, 4, "sprite/normal/sa1b_warai_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask("background/ma_s1", "up", 0, 0, 1300 );
+	ModDrawCharacter(2, 4, "sprite/flashback/sa1b_warai_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("flashback/ma_s1", "up", 0, 0, 1300 );
 
 	PlayBGM( 1, "msys17", 128, 0 );
 
