@@ -23,10 +23,6 @@ void main()
 //..Late summer, 15th year of Heisei@
 //..\n<
 
-	DisableWindow();
-	PlayBGM( 2, "lsys20", 128, 0 );
-	DrawScene("background/mati4", 1000 );
-
 //　大阪府内に住むある老夫婦が＠８年前に死亡した息子の遺品を整理中に一本のカセットテープを発見した￥
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -55,7 +51,7 @@ void main()
 	OutputLine(NULL, "　故人は昭和５０年代後半から平成元年まで、",
 		   NULL, "From 1975 to 1989,", Line_WaitForInput);
 	OutputLine(NULL, "過激な写真週刊誌に記者として勤務していた経験があり、この時の取材テープのひとつだと思われる。",
-		   NULL, " the deceased had experience working as a journalist for a photography periodical, and this tape is thought to have been created during that time.", Line_Normal);
+		   NULL, " the deceased had experienced working as a journalist for a photography periodical, and this tape is thought to have been created during that time.", Line_Normal);
 	ClearMessage();
 
 //　テープのラベルには、昭和５８年１１月２８日・前原圭一と記されていた＠
@@ -305,7 +301,7 @@ void main()
 		   NULL, "(For a little while, Keiichi Maebara mutters the word \"impossible\" several times.)", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys25", 128, 0 );
+	PlayBGM( 1, "msys21", 128, 0 );
 
 //「...どうして、...ありえないと？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -826,6 +822,7 @@ void main()
 	OutputLine(NULL, "…あんたも気をつけろよ。",
 		   NULL, "...You'd better be careful, you know.", Line_WaitForInput);
 //!s0
+	Negative( 500 , FALSE );
 	SetSpeedOfMessage( TRUE, 127, );
 
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101178", 128, TRUE);
@@ -1092,6 +1089,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_Continue); }
 
+	DisableWindow();
+	FadeFilm( 2000 , FALSE );
+	DrawScene("black", 1000 );
+	
 //（前原圭一の笑い声の途中で録音は止められている。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "（前原圭一の笑い声の途中で録音は止められている。）",
@@ -1101,7 +1102,6 @@ void main()
 
 //■そして、前原圭一は......
 	DisableWindow();
-	DrawScene("black", 1000 );
 	DrawScene("text/t_ep9", 1000 );
 
 	SetValidityOfInput( FALSE );
@@ -1130,10 +1130,9 @@ void main()
 	DisableWindow();
 	DrawScene("black", 1000 );
 	DrawScene("text/t_ep12", 1000 );
-
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/vt1_keiichi3003", 128, TRUE);
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
-
 
 //シナリオセレクト時のＳＥで、女の子がアッハハハハって笑うのはあるでしょ。
 //あれで笑いながら黒くゆーっくりフェードアウトで終了。

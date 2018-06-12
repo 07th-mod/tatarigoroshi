@@ -9,9 +9,8 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 
 	DisableWindow();
-	DrawScene("white", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys12", 128, 0 );
-	DrawSceneWithMask("background/sora5", "m1", 0, 0, 300 );
 
 //　日曜日￥
 	ClearMessage();
@@ -107,7 +106,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	DrawSceneWithMask("background/ma_j3", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_j3_01", "up", 0, 0, 300 );
 
 //　......今日は人生で一番長い一日になるだろう＠
 //　一生において、鮮烈に記憶される日になるだろう￥
@@ -135,7 +134,7 @@ void main()
 		   NULL, "...We may have lived under the same roof, but they couldn't help being surprised by the deviation from how I usually spent my time.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/ma_g1", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_g3_01", "left", 0, 0, 300 );
 
 //　...俺はそれを尻目に...玄関へ行く＠
 //　心持ち、靴紐は固めに＠......決意を、結びの固さで示すかのように￥
@@ -355,8 +354,7 @@ void main()
 		   NULL, "The last twist was conspicuously difficult... but it finally submitted before the strength of my determination...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("white", 400 );
-	DrawSceneWithMask("background/m_hi8", "left", 0, 0, 300 );
+	DrawScene("black", 400 );
 
 //　沙都子の家の周辺は、...俺の活動半径の外側だ＠
 //　...ただこうして日中に自転車で走っているだけでも、......注意深い人間なら、不審に思うこともあるかもしれない￥
@@ -717,7 +715,7 @@ void main()
 		   NULL, " It was me talking to myself, me telling myself something.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/sora", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/mo3", "up", 0, 0, 300 );
 
 
 //　...どうして俺は......こんな思いをしながら、こんなところで穴なんか掘っているんだろう...＠
@@ -775,6 +773,7 @@ void main()
 	DisableWindow();
 	DrawScene("black", 3000 );
 	PlayBGM( 1, "msys27", 128, 0 );
+	FadeOutBGM( 2, 1000, TRUE );
 
 //　昔から特に身体的に優れていたわけじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -812,8 +811,6 @@ void main()
 	OutputLine(NULL, "　それが一転したのは、……お袋のほんのちょっとした一言だった。",
 		   NULL, "The thing that turned all that around... was just a few words from my mother.", Line_Normal);
 	ClearMessage();
-
-	FadeOutBGM( 2, 1000, TRUE );
 
 //「圭一＠あなた塾に入る気はない＠　学校の勉強がわかるようになって、楽しくなるわよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
@@ -870,7 +867,7 @@ void main()
 		   NULL, "Mom had made a loud groan, surprised at something.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/gk1", "up", 0, 0, 1300 );
+	DrawScene("background/gk1", 1300 );
 
 //「えっと、...６１って、平均点が６１点ですか？＠
 //「いいえ、違いますよお母さん＠全国展開する当塾での平均偏差値が６１です＠簡易式の知能検査でも非凡な数字が出ています＠...まず申し上げて、前原圭一くんは大変に頭がいい。￥
@@ -993,6 +990,9 @@ void main()
 		   NULL, " Have you ever made a die with twenty sides from a magazine extra or anything?\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawScene("black", 400 );
+	
 //　サイコロってのは１から６まであるもののことだ＠
 //　６よりも大きな目が出せるサイコロがあるなんて、このテストで知るまで考えたこともない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1020,8 +1020,6 @@ void main()
 	OutputLine(NULL, "だから作りたいとすぐに思った。",
 		   NULL, " So I immediately wanted to make it.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("black", 400 );
 
 //　やがて入塾￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1029,7 +1027,7 @@ void main()
 		   NULL, "Finally, I entered cram school.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/gk1", "up", 0, 0, 1300 );
+	DrawScene("background/gk1", 1300 );
 
 //　...俺が編入されたクラスは生徒が４人しかいない、選抜と呼ばれるクラスだった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1080,7 +1078,8 @@ void main()
 		   NULL, "The more I listened to my parents' commands, the more fun things got.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/sora", 400 );
+	DrawSceneWithMask("white", "c", 0, 0, 600 );
+	DrawSceneWithMask("background/mo3", "c", 0, 0, 600 );
 	PlayBGM( 2, "lsys12", 128, 0 );
 
 //「..............................ふ、＠
@@ -1335,7 +1334,8 @@ void main()
 		   NULL, " We let all our passions go wild during our games.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	DrawScene("background/mati_o1", 400 );
+	DrawScene("black", 1300 );
+	DrawScene("background/mati_o1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -1390,7 +1390,7 @@ void main()
 		   NULL, " and I vowed to become her Nii-nii.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/normal/sa1b_hau_b2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 4, "sprite/normal/sa1b_warai_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　沙都子は口やかましいヤツだったが、...世話見のいい妹だった＠
 //　でも、それは一見、リードしているように見えて、それもまた沙都子なりの甘え方だったのだ＠
@@ -1508,7 +1508,7 @@ void main()
 
 	PlaySE( 3, "wa_042", 128, 64 );
 	DisableWindow();
-	DrawScene("background/mo3", 400 );
+	DrawSceneWithMask("background/mo3", "c", 0, 0, 1300 );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 2, "lsys12", 128, 0 );
@@ -1836,31 +1836,31 @@ void main()
 	OutputLine(NULL, "も",
 		   NULL, "It", Line_ContinueAfterTyping);
 
-	DrawScene("background/hi1", 10 );
+	DrawScene("background/mo1", 50 );
 
 //う/
 	OutputLine(NULL, "う",
 		   NULL, " would", Line_ContinueAfterTyping);
 
-	DrawScene("background/hi1", 10 );
+	DrawScene("background/kawa4", 50 );
 
 //す/
 	OutputLine(NULL, "す",
 		   NULL, " all", Line_ContinueAfterTyping);
 
-	DrawScene("background/hi3", 10 );
+	DrawScene("background/mo_g1", 50 );
 
 //ぐ/
 	OutputLine(NULL, "ぐ",
 		   NULL, " be", Line_ContinueAfterTyping);
 
-	DrawScene("background/hi4", 10 );
+	DrawScene("background/hi1", 50 );
 
 //終/
 	OutputLine(NULL, "終",
 		   NULL, " over", Line_ContinueAfterTyping);
 
-	DrawScene("background/hi5", 10 );
+	DrawScene("background/hi4", 50 );
 
 //わ/
 	OutputLine(NULL, "わ",
@@ -1989,14 +1989,11 @@ void main()
 		   NULL, " cried.", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
+	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	SetValidityOfWindowDisablingWhenGraphicsControl( FALSE );
 	DrawScene("background/jt1_01", 5000 );

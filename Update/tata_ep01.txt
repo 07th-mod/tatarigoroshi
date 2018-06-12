@@ -7,11 +7,8 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 //	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 1, "msys28", 128, 0 );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	DisableWindow();
-	DrawScene("background/hi1", 1000 );
 
 //!s100
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
@@ -28,6 +25,9 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
+	
+	DisableWindow();
+	DrawScene("background/hi1", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 	SetStyleOfMessageSwinging( 0 );
@@ -41,7 +41,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	DrawScene("background/oni1", 400 );
+	DrawScene("flashback/oni1", 400 );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 
@@ -107,7 +107,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	DrawScene("background/sora5", 400 );
+	DrawScene("background/ji1", 400 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。
@@ -176,8 +176,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("background/simen3", 400 );
+	
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、/
@@ -248,7 +247,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/hi1", 400 );
+	DrawScene("background/jt1", 400 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。

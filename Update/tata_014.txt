@@ -10,8 +10,8 @@ void main()
 
 	DisableWindow();
 	// SetValidityOfInput( FALSE );
-	DrawScene("background/kawa1", 10000 );
-	DrawScene("black", 3000 );
+	DrawScene("white", 3000 );
+	DrawScene("black", 2000 );
 	// SetValidityOfInput( TRUE );
 	PlayBGM( 2, "lsys19", 128, 0 );
 
@@ -83,8 +83,6 @@ void main()
 	OutputLine(NULL, "　………あそこから落ちたことを思えば、……再び目を覚ませたのは奇跡だろう。",
 		   NULL, "......Considering I'd dropped from there... it was a miracle that I could open my eyes again.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("background/damu4", "left", 0, 0, 300 );
 
 //　自分のすぐ近くに...子供が遊びで持ってきたのだろうか、...車から取り外されたらしい壊れたシートがひっくり返っていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -203,8 +201,6 @@ void main()
 	OutputLine(NULL, "　警察は俺を、待ち受けているに違いない。",
 		   NULL, "The police were waiting for me without a doubt.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("background/damu4", "left", 0, 0, 300 );
 
 //　叔父殺しが今度こそバレて逮捕か、それとも今度こそ精神病院送りか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -239,6 +235,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
+	FadeOutBGM( 2, 1000, TRUE );
 	DrawSceneWithMask("background/mo1", "left", 0, 0, 300 );
 
 //　沢を下り、...獣道のような林道を抜け......＠...見知った道を求めてでたらめに歩く￥
@@ -250,8 +247,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask("background/hi_scroll", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/m_hi4", "left", 0, 0, 300 );
 
 //　...その内に...ようやく馴染んだ道に行き当たり...、俺は診療所を目指して歩き出す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -264,8 +260,6 @@ void main()
 	OutputLine(NULL, "　………家でなく、…俺を異常者扱いしてくれた診療所へ、だ。",
 		   NULL, "......Not to my house... but to the clinic, which had treated me like a lunatic.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("background/m_hi4", "left", 0, 0, 300 );
 
 //　.........蒸し暑い￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -420,7 +414,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "right", 0, 0, 300 );
-	DrawSceneWithMask("background/m_hi5", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/sora", "right", 0, 0, 300 );
 
 //　さっきから、こんなに明るいのに誰とも行き会わない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -701,7 +695,8 @@ void main()
 		   NULL, " Why was the army in the schoolyard...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/g1", 400 );
+	DrawScene("background/g1", 50 );
+	ShakeScreen( 1, 20, 20, 5, 0, );
 
 //「おい君＠　どこから入ってきた？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>隊員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
@@ -1473,7 +1468,7 @@ void main()
 	DisableWindow();
 
 	ModDisableNVLModeInADVMode();
-
+	DisableWindow();
 	DrawSceneWithMask("background/kuruma2", "up", 0, 0, 1300 );
 
 //「..................なんですか、!w800...............それ。＠
@@ -1569,7 +1564,7 @@ void main()
 		   NULL, "Where... where did everyone evacuate to...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/sinryou_soto3", 400 );
+	DrawScene("background/sinryou_soto1", 400 );
 
 //　やがて、前方に見えてきたのは...監督の診療所だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1686,6 +1681,9 @@ void main()
 		   NULL, "They brought the stretchers in front of a truck.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	PlaySE( 4, "wa_008", 128, 64 );
+	Wait( 250 );
+	PlaySE( 4, "wa_003", 128, 64 );
 
 //　...二人の隊員の人が、肩と足を持ち、...まるで荷物みたいに...ひょいっと、トラックの荷台に投げ上げて......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1715,7 +1713,6 @@ void main()
 		   NULL, "...They were just like baggage... and that told me they were already nothing but shells.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
 	DrawScene("background/gr1", 1000 );
 
 //　その瞬間、...色とりどりのズタ袋を荷台に満載して!s300.........!sd!w700学校の校庭に...魚河岸のように並べられていた...あの光景が......蘇る...￥
@@ -1821,7 +1818,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	FadeFilm( 1000, TRUE );
 	DrawSceneWithMask("background/sinryou_soto1", "right", 0, 0, 300 );
 
 //「馬鹿ッ！＠　犠牲者を粗末に扱うな＠　彼は村の住民だぞ！＠

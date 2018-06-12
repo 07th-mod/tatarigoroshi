@@ -354,6 +354,7 @@ void main()
 		   NULL, "That was the only place with a phone.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
 	DrawSceneWithMask("background/g3_01", "right", 0, 0, 300 );
 
 //　職員室で息を殺していると......、さっきの営林署のおじさんの足音が戻ってくるのが聞こえた＠......そして裏口の扉をがちゃがちゃと閉め......施錠￥
@@ -833,9 +834,7 @@ void main()
 //■殺人
 	DisableWindow();
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawSceneWithMask("background/hi4_01", "left", 0, 0, 200 );
-	DrawSceneWithMask("background/hi5_01", "left", 0, 0, 200 );
-	DrawSceneWithMask("background/hi_scroll_01", "left", 0, 0, 200 );
+	DrawSceneWithMask("background/sora2", "left", 0, 0, 500 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 //!sd
 
@@ -904,7 +903,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	PlayBGM( 0, "lsys19", 128, 0 );
 //dwaveplayloop 1
 	DrawSceneWithMask("background/mo1_01", "left", 0, 0, 300 );
 
@@ -1063,7 +1061,6 @@ void main()
 		   NULL, " ............I'd put my plan into action.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeOutBGM( 0, 10, TRUE );
 	DrawScene("black", 400 );
 
 //　バイクがその姿を現した＠
@@ -1280,6 +1277,7 @@ void main()
 		   NULL, "All the sounds in the world cut off.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	FadeFilm( 900, FALSE );
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
 	PlayBGM( 2, "lsys18", 128, 0 );
 
@@ -1381,7 +1379,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 //nega 0
-	FadeFilm( 1000, TRUE );
 	DrawScene("background/mo1_01", 1000 );
 
 //　........................体中の全ての毛細血管に至るまで、冷却物質が全てまわり切る＠
@@ -1437,6 +1434,8 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	Negative( 300, TRUE );
 
 //　脳内の全不要情報を廃棄＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1626,6 +1625,7 @@ void main()
 		   NULL, "...I retained my overwhelming advantage, but I hadn't done nearly enough to deliver a fatal wound.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	FadeFilm( 1200 , FALSE );
 	DrawScene("black", 400 );
 
 //「.........ひぃいいいぃぃぃぃぃ...ッ！！！＠
@@ -1747,6 +1747,7 @@ void main()
 		   NULL, " After catching up to him, I didn't need so much as a blink of an eye to strike him again.", Line_Normal);
 	ClearMessage();
 
+	PlayBGM( 2, "lsys18", 128, 0 );
 //　目の前の男を殺すためだけに、全神経と精神、肉体が研ぎ澄まされている......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　目の前の男を殺すためだけに、全神経と精神、肉体が研ぎ澄まされている……。",
@@ -1799,8 +1800,10 @@ void main()
 		   NULL, "Or perhaps the act of killing was so simple that anyone could do it.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	FadeOutBGM( 2, 400, TRUE );
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 200 );
+	Negative( 20, FALSE );
 	DrawScene("background/mo3_01", 50 );
 	PlaySE( 3, "wa_017", 128, 64 );
 	ShakeScreen( 1, 50, 20, 2, 0, );
@@ -2021,6 +2024,7 @@ void main()
 		   NULL, "...Ooohhhhhhhhhhhh...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	FadeFilm( 1200, FALSE );
 	DrawScene("background/aka1", 400 );
 
 //「をぉおおおおぉおおおおおおぉおおおおッッ！！＠
@@ -2277,9 +2281,9 @@ void main()
 	DisableWindow();
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 200 );
+	DrawScene("background/aka2", 10 );
 	PlaySE( 3, "wa_017", 128, 64 );
 	ShakeScreen( 1, 50, 20, 2, 0, );
-	DrawScene("background/aka2", 10 );
 
 //　貴様が現れなかったら間違いなくあった本当の世界＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2503,8 +2507,6 @@ void main()
 	Wait( 200 );
 	DrawScene("white", 10 );
 	DrawSceneWithMask("background/ryuuketu1", "aa", 0, 0, 1000 );
-	DrawScene("red", 1000 );
-	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
 
 	ShakeScreen( 1, 50, 20, 4, 0, );
 	PlaySE( 3, "wa_033", 128, 64 );
@@ -2675,6 +2677,7 @@ void main()
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 500 );
 	PlaySE( 3, "wa_017", 128, 64 );
+	ShakeScreen( 1, 20, 20, 5, 0, );
 
 //　ガヅン＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2691,6 +2694,7 @@ void main()
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 200 );
 	PlaySE( 3, "wa_017", 128, 64 );
+	ShakeScreen( 1, 20, 20, 5, 0, );
 
 //　もう一度...頭を狙って......振り下ろす！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2708,14 +2712,17 @@ void main()
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 400 );
 	PlaySE( 3, "wa_017", 128, 64 );
+	ShakeScreen( 1, 20, 20, 5, 0, );
 	Wait( 500 );
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 400 );
 	PlaySE( 3, "wa_017", 128, 64 );
+	ShakeScreen( 1, 20, 20, 5, 0, );
 	Wait( 500 );
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 400 );
 	PlaySE( 3, "wa_017", 128, 64 );
+	ShakeScreen( 1, 20, 20, 5, 0, );
 
 //　しばらく叔父の頭を餅つきにすると、......次第に手応えが代わり始め、赤黒い汚らしい飛沫を飛び散らすようになっていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3088,7 +3095,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	PlayBGM( 0, "lsys19", 128, 0 );
 //dwaveplayloop 1
 	DrawSceneWithMask("background/ymo1_01", "left", 0, 0, 300 );
 
@@ -3299,7 +3305,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	FadeOutBGM( 0, 1000, TRUE );
 	DrawSceneWithMask("background/m_y2_04", "left", 0, 0, 300 );
 
 //　雨に打たれながら...、危なげにバランスを取ってひたすらに沼を目指す＠
@@ -3336,6 +3341,8 @@ void main()
 		   NULL, "......More and more, though, I started to think of that idea as naive, brought on by my exhausted state.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawScene("black", 400 );
 
 //　きつい坂を上る＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3380,8 +3387,6 @@ void main()
 	OutputLine(NULL, "　……駄菓子屋で酢イカを買ってきて、釣り糸に縛って投げるだけで、面白いようにザリガニが食いつく…なんて言ってたっけ。",
 		   NULL, "...They'd talked before about... how they'd go to the candy shop and buy some pickled squid, then just tie it to a fishing line and throw it, and all the crayfish would come running.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("black", 400 );
 
 //　土手を上がりきると......近くに小さな祠と、しめ縄のされた樹木￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3398,8 +3403,6 @@ void main()
 	OutputLine(NULL, "　…そして、……黒々とした沼が、土砂降りを丸ごと飲み込みながら……ずっと俺を待っていてくれた。",
 		   NULL, "...And... as it swallowed the downpour whole... the blackened swamp had waited for me.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("background/y_oni1_01", 400 );
 
 //　この崖のようにせり出したところから、アクセルをふかせて、思いっきり走らせれば...沼の真ん中にドボンと飛び込むだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3499,7 +3502,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("background/y_oni1_01", 400 );
-	PlayBGM( 1, "msys24", 128, 0 );
+	PlayBGM( 1, "msys26", 128, 0 );
 
 //　......今日の出来事を悟史と分かち合う意味でも......どこかにひっそりとしまって置いてやりたい＠...そう思った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3675,8 +3678,6 @@ void main()
 	OutputLine(NULL, "　でも、……それが悟史の望みかもしれないと気付く。",
 		   NULL, "But... I realized that might have been what Satoshi had wanted.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("background/y_oni1_01", "right", 0, 0, 300 );
 
 //「............そうだよな＠......俺は、...まだ感傷に浸る余裕なんかないんだよな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
