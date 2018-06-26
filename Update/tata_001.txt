@@ -608,9 +608,12 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	ModPlayMovie("mv07");
 	Wait( 3000 );
+	DrawScene("black", 5000 );
+
 	SetValidityOfInput( TRUE );
+
+	ModPlayMovie("mv07");
 
 
 
