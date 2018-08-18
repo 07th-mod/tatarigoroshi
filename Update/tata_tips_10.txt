@@ -75,14 +75,10 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //三　児童の心身の正常な発育を妨げるような著しい減食又は長時間の放置その他の保護者としての監護を著しく怠ること。
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "三　児童の心身の正常な発育を妨げるような著しい減食又は長時間の放置その他の保護者としての監護を著しく怠ること。",
-			   NULL, "<size=-2>(III) Substantially reduce the amount of food for the child or abandon and neglect the child for a long time period in a manner that may interfere with normal development of the child mentally or physically, or otherwise materially fail to perform the duty of a custodian; or", Line_ContinueAfterTyping);
-	} else {
-		OutputLine(NULL, "三　児童の心身の正常な発育を妨げるような著しい減食又は長時間の放置その他の保護者としての監護を著しく怠ること。",
-			   NULL, "(III) Substantially reduce the amount of food for the child or abandon and neglect the child for a long time period in a manner that may interfere with normal development of the child mentally or physically, or otherwise materially fail to perform the duty of a custodian; or", Line_ContinueAfterTyping);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "三　児童の心身の正常な発育を妨げるような著しい減食又は長時間の放置その他の保護者としての監護を著しく怠ること。",
+		   NULL, "(III) Substantially reduce the amount of food for the child or abandon and neglect the child for a long time period in a manner that may interfere with normal development of the child mentally or physically, or otherwise materially fail to perform the duty of a custodian; or", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));

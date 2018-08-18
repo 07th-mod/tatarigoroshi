@@ -143,14 +143,10 @@ void main()
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
-			   NULL, "<size=-2>More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.", Line_ContinueAfterTyping);
-	} else {
-		OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
-			   NULL, "More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.", Line_ContinueAfterTyping);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。",
+		   NULL, "More extreme periodicals suggested this was an extension of the string of freak death incidents that had been happening in recent years in Hinamizawa Village, stirring interest in theories about this curse of Oyashiro-sama.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));

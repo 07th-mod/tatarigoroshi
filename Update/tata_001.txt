@@ -65,14 +65,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　ただでさえ細い道には、枯れ掛けたプランターや植木鉢、自転車やバイクが並べられ、余計狭く、鬱陶しく、そして暑苦しさを感じさせた￥
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　ただでさえ細い道には、枯れ掛けたプランターや植木鉢、自転車やバイクが並べられ、余計狭く、鬱陶しく、そして暑苦しさを感じさせた。",
-			   NULL, "<size=-2>In addition, there were planters and flowerpots whose contents were beginning to rot, as well as bicycles and cars on the sides of the road, making it even more cramped, more oppressive, and all the more sweltering.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　ただでさえ細い道には、枯れ掛けたプランターや植木鉢、自転車やバイクが並べられ、余計狭く、鬱陶しく、そして暑苦しさを感じさせた。",
-			   NULL, "In addition, there were planters and flowerpots whose contents were beginning to rot, as well as bicycles and cars on the sides of the road, making it even more cramped, more oppressive, and all the more sweltering.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　ただでさえ細い道には、枯れ掛けたプランターや植木鉢、自転車やバイクが並べられ、余計狭く、鬱陶しく、そして暑苦しさを感じさせた。",
+		   NULL, "In addition, there were planters and flowerpots whose contents were beginning to rot, as well as bicycles and cars on the sides of the road, making it even more cramped, more oppressive, and all the more sweltering.", Line_Normal);
 	ClearMessage();
 
 //　こんな場所をこんな時間に、好き好んで訪れる者はいるわけがない＠
