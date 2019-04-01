@@ -1,0 +1,101 @@
+﻿void main()
+{
+
+//*Sub_Tips_052
+//gosub *tip_s
+//■タイトル：大石席のメモ
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys12", 128, 0 );
+
+//　大石さんへ＠
+	OutputLine(NULL, "　大石さんへ。",
+		   NULL, "To Ooishi-san.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　捜査四課の重春課長からお電話がありました＠
+	OutputLine(NULL, "　捜査四課の重春課長からお電話がありました。",
+		   NULL, "There was a call for you from Section 4's Chief Shigeharu.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　例の王子川の惨殺死体の件は、やはりＳ号絡みだったらしいです￥
+	OutputLine(NULL, "　例の王子川の惨殺死体の件は、やはりＳ号絡みだったらしいです。",
+		   NULL, "Apparently the slaughtered corpse in the Oujikawa River is related to the S-group, as we thought.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　ウラはまだ確認中ですが、ホトケがＳ号のカネを自分が用意した数十の架空口座に上限額いっぱいまで送金して、１億くらいはイったらしいです＠
+	OutputLine(NULL, "　ウラはまだ確認中ですが、ホトケがＳ号のカネを自分が用意した数十の架空口座に上限額いっぱいまで送金して、１億くらいはイったらしいです。",
+		   NULL, "We're still verifying what happened behind the scenes, but apparently the deceased filled up dozens of self-created fictional bank accounts to their limits with money from the S-group, reaching around one hundred million yen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　背後には元Ｓ号の筋で３～４人の男が絡んでるようです＠
+	OutputLine(NULL, "　背後には元Ｓ号の筋で３〜４人の男が絡んでるようです。",
+		   NULL, "It appears there were three or four men with former S-group connections involved in this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　数千万くらいを引き出して、すでに蒸発しています￥
+	OutputLine(NULL, "　数千万くらいを引き出して、すでに蒸発しています。",
+		   NULL, "They've already disappeared along with millions of yen.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　ホトケはその辺りを聞き出すために拷問され、以後の見せしめのために惨殺されたのはほぼ間違いないとのことです＠
+	OutputLine(NULL, "　ホトケはその辺りを聞き出すために拷問され、以後の見せしめのために惨殺されたのはほぼ間違いないとのことです。",
+		   NULL, "The deceased was tortured on that point for information, and she was clearly slaughtered as an example to others.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　蒸発した連中は、スゴ腕何人かに追跡させているらしいです＠
+	OutputLine(NULL, "　蒸発した連中は、スゴ腕何人かに追跡させているらしいです。",
+		   NULL, "There are apparently some real wizards chasing down the people who disappeared.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　あと、親交のある周辺のマル暴に匿わないよう回状を回しています￥
+	OutputLine(NULL, "　あと、親交のある周辺のマル暴に匿わないよう回状を回しています。",
+		   NULL, "They're also spreading letters to related yakuza groups not to harbor them.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　北条鉄平がその一味のひとりであるというウラは未だ取れていません＠
+	OutputLine(NULL, "　北条鉄平がその一味のひとりであるというウラは未だ取れていません。",
+		   NULL, "There's still no evidence that Teppei Houjou is one of those people.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　重春課長の見たところでは、何も知らされていないみたいです＠
+	OutputLine(NULL, "　重春課長の見たところでは、何も知らされていないみたいです。",
+		   NULL, "From what Chief Shigeharu has seen, nothing's been announced.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　ヒモのくせに信用されてなかったってことですかね＠
+	OutputLine(NULL, "　ヒモのくせに信用されてなかったってことですかね。",
+		   NULL, "For such a dependent, the man wasn't trusted at all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　北条鉄平は興宮のアパートを出て、雛見沢の元の家に戻った様子です￥
+	OutputLine(NULL, "　北条鉄平は興宮のアパートを出て、雛見沢の元の家に戻った様子です。",
+		   NULL, "Teppei Houjou has left his apartment in Okinomiya and has returned to his former residence in Hinamizawa.", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

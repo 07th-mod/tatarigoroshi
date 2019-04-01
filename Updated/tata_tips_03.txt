@@ -1,0 +1,644 @@
+﻿void main()
+{
+
+//■タイトル：　沙都子のトラップ講座（上級）
+//*Sub_Tips_047
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "bg_108", 400 );
+
+//　のどかな昼休みだった￥
+	OutputLine(NULL, "　のどかな昼休みだった。",
+		   NULL, "It was a peaceful lunch break.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_008", 128, 64 );
+
+//!s0　ドン、/
+//!s0
+	SetSpeedOfMessage( TRUE, 127, );
+
+	OutputLine(NULL, "　ドン、",
+		   NULL, "Thud,", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_005", 128, 64 );
+
+//!w200ガラン、/
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "ガラン、",
+		   NULL, " clatter,", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_006", 128, 64 );
+
+//!w200バッシャーーーーーン！！！/
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "バッシャーーーーーン！！！",
+		   NULL, " splaaaaaash!!!", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_007", 128, 64 );
+	ShakeScreen( 1, 50, 20, 4, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0, );
+	PlayBGM( 1, "msys02", 128, 0 );
+
+//「わわ＠　な、何だぁ？！＠
+	OutputLine(NULL, "「わわ！",
+		   NULL, "\"Whaa?!", Line_WaitForInput);
+	OutputLine(NULL, "　な、何だぁ？！」",
+		   NULL, " What was that?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 2, "re_se_bi_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「今、廊下からすごいのが聞こえた＠　何だろ＠　何だろ！￥
+	OutputLine(NULL, "「今、廊下からすごいのが聞こえた！",
+		   NULL, "\"I just heard something really loud from the hallway!", Line_WaitForInput);
+	OutputLine(NULL, "　何だろ！",
+		   NULL, " What was it?", Line_WaitForInput);
+	OutputLine(NULL, "　何だろ！」",
+		   NULL, " What was it?!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene( "black", 400 );
+	PlaySE( 3, "wa_020", 128, 64 );
+	DrawSceneWithMask( "bg_019", "left", 0, 0, 200 );
+
+
+//　廊下に飛び出すと.........、何とそこには水入りバケツを逆さに頭に被った監督の姿が￥
+	OutputLine(NULL, "　廊下に飛び出すと………、何とそこには水入りバケツを逆さに頭に被った監督の姿が！",
+		   NULL, "We rushed into the hallway... and to our surprise, Coach was there with a water bucket overturned on his head!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_se_bi_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「か、監督、大丈夫ぅ？！＠
+	OutputLine(NULL, "「か、監督、大丈夫ぅ？！」",
+		   NULL, "\"C-Coach, are you okay?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "ir_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「たは、はははは...＠いやぁ、...やられましたねぇ...＠皆さん、こんにちは。＠
+	OutputLine(NULL, "「たは、はははは…。",
+		   NULL, "\"Taha, hahahaha...", Line_WaitForInput);
+	OutputLine(NULL, "いやぁ、…やられましたねぇ…。",
+		   NULL, " Man... you sure got me...", Line_WaitForInput);
+	OutputLine(NULL, "皆さん、こんにちは。」",
+		   NULL, " Hello, everyone.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　監督はとても涼しそうに、スチャっと挨拶をする￥
+	OutputLine(NULL, "　監督はとても涼しそうに、スチャっと挨拶をする。",
+		   NULL, "Coach greets us, cool and calm.", Line_Normal);
+	ClearMessage();
+
+//「どうしたんですか、監督＠学校に来るなんて珍しい。＠
+	OutputLine(NULL, "「どうしたんですか、監督。",
+		   NULL, "\"What's going on, Coach?", Line_WaitForInput);
+	OutputLine(NULL, "学校に来るなんて珍しい。」",
+		   NULL, " You don't come to school very much.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "ir_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「いやぁ、お仕事の絡みでして、私、毎週学校には来てるんですよ＠ここしばらくは何事もなかったので...すっかり油断してました...。￥
+	OutputLine(NULL, "「いやぁ、お仕事の絡みでして、私、毎週学校には来てるんですよ。",
+		   NULL, "\"Well, I do come here once a week as part of my job.", Line_WaitForInput);
+	OutputLine(NULL, "ここしばらくは何事もなかったので…すっかり油断してました…。」",
+		   NULL, " It had been quiet here for a while... but I totally let my guard down...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, TRUE );
+	DrawBustshotWithFiltering( 1, "re_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「あははは...＠沙都子ちゃんの罠は忘れた頃に来ますからね...＠大丈夫ですか、服。＠
+	OutputLine(NULL, "「あははは…。",
+		   NULL, "\"Ahahaha...", Line_WaitForInput);
+	OutputLine(NULL, "沙都子ちゃんの罠は忘れた頃に来ますからね…。",
+		   NULL, " Satoko-chan's little tricks always come when you least expect them...", Line_WaitForInput);
+	OutputLine(NULL, "大丈夫ですか、服。」",
+		   NULL, " Will you be okay in those clothes?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "ir_si_de_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「いえいえ、ちょうど行水がしたいと思ってたところですからね、実に涼しくていいですよ。＠
+	OutputLine(NULL, "「いえいえ、ちょうど行水がしたいと思ってたところですからね、実に涼しくていいですよ。」",
+		   NULL, "\"Oh, I'm fine—I was just thinking of taking a nice bath, so this is actually cooling me off.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_wi_b2", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「さぁすが監督＠ちょっとやそっとのことでは怒らない＠　その辺が大人～って感じだよね。￥
+	OutputLine(NULL, "「さぁすが監督。",
+		   NULL, "\"You sure are calm, Coach.", Line_WaitForInput);
+	OutputLine(NULL, "ちょっとやそっとのことでは怒らない！",
+		   NULL, " In fact, you never get mad!", Line_WaitForInput);
+	OutputLine(NULL, "　その辺が大人〜って感じだよね。」",
+		   NULL, " It really makes you come off as an adult.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+
+//　...確かに＠
+	OutputLine(NULL, "　…確かに。",
+		   NULL, "...She was right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　俺が監督だったら、被ったバケツもそのままにあいつを探して走り出してる＠
+	OutputLine(NULL, "　俺が監督だったら、被ったバケツもそのままにあいつを探して走り出してる。",
+		   NULL, "If I were Coach, I would have started running around with the bucket still on my head, looking for her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　いちいち子供のいたずらに腹を立てない大人っぷりには感服だ￥
+	OutputLine(NULL, "　いちいち子供のいたずらに腹を立てない大人っぷりには感服だ。",
+		   NULL, "His adult way of not getting mad at every little child's prank was admirable.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "ir_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「いいですか前原さん＠こういうのは考え方ひとつで腹立たしくも愉快にもなるんです＠要は受け止め方ひとつなんですよ。＠
+	OutputLine(NULL, "「いいですか前原さん。",
+		   NULL, "\"Listen, Maebara-san.", Line_WaitForInput);
+	OutputLine(NULL, "こういうのは考え方ひとつで腹立たしくも愉快にもなるんです。",
+		   NULL, " With things like this, changing your perspective just a little can make it either irritating or pleasant.", Line_WaitForInput);
+	OutputLine(NULL, "要は受け止め方ひとつなんですよ。」",
+		   NULL, " It's all about how you react to it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「......水バケツをまるごと食らって、それだけクールにいられる秘訣があるなら、ぜひご教授を願いたいです。￥
+	OutputLine(NULL, "「……水バケツをまるごと食らって、それだけクールにいられる秘訣があるなら、ぜひご教授を願いたいです。」",
+		   NULL, "\"...If there's some secret trick to staying so calm after getting hit in the head with a bucket filled with water, then I'm begging you, tell me.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	PlayBGM( 1, "msys12", 128, 0 );
+	DrawBustshot( 2, "ir_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「例えば、...明治から続く古式ゆかしい旧家があるとします。＠
+	OutputLine(NULL, "「例えば、…明治から続く古式ゆかしい旧家があるとします。」",
+		   NULL, "\"For example... Let's say there was this old and traditional family, dating back to the Meiji era.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「ふむふむ。＠
+	OutputLine(NULL, "「ふむふむ。」",
+		   NULL, "\"Okay.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「そこには大勢の使用人としてメイドさんが雇われているとします＠もちろん大きな家ですから、ベテランのお局様と化したメイド長から、新米のぴちぴちしたメイドさんまでがたくさんいるのです！＠　ほら、想像できますか＠　ほらぁ...♪￥
+	OutputLine(NULL, "「そこには大勢の使用人としてメイドさんが雇われているとします。",
+		   NULL, "\"And let's say they had many maids under their employ.", Line_WaitForInput);
+	OutputLine(NULL, "もちろん大きな家ですから、ベテランのお局様と化したメイド長から、新米のぴちぴちしたメイドさんまでがたくさんいるのです！！",
+		   NULL, " Being a large house, of course, they have all kinds of maids—from the veteran ones who turned mean and don't want to give up their jobs, to the new ones who are young and full of energy!!", Line_WaitForInput);
+	OutputLine(NULL, "　ほら、想像できますか？",
+		   NULL, " See, can you imagine that?", Line_WaitForInput);
+	OutputLine(NULL, "　ほらぁ…♪」",
+		   NULL, " Yes...♪\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 1000, TRUE );
+	PlaySE( 3, "wa_034", 128, 64 );
+	DisableWindow();
+	DrawBustshot( 2, "ir_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "white", 1000 );
+	PlayBGM( 1, "msysRi", 128, 0 );
+
+//　......ほらぁ...￥
+	OutputLine(NULL, "　……ほらぁ…♪",
+		   NULL, "...Yes...♪", Line_Normal);
+	ClearMessage();
+
+//　監督を中心にフリルとカチューシャで彩られた桃色の夢メイド空間が広がっていく...￥
+	OutputLine(NULL, "　監督を中心にフリルとカチューシャで彩られた桃色の夢メイド空間が広がっていく…。",
+		   NULL, "A space filled with dreamy maids in pink and peach adorned with frills and headbands, with Coach at their center, began to spread out before me...", Line_Normal);
+	ClearMessage();
+
+//「新米メイドたちはそのぴちぴちさと初々しさで、ご主人様の寵愛を一身に＠　でもそれが先輩メイドたちには許せないのです＠　ことあるごとに難癖を付け、いじめていじめていじめ抜いて！＠　ホラ、まだこんなに埃が残っていますよ＠　あぁ...すみません...＠もう一度やり直し＠　バッシャ！＠　バケツを逆さにぶっかけられるメイドさん＠　びしょ濡れのメイドさんが...泣きそうになりながら、それでも健気に...、はぁはぁ！＠　メ・イ・ド～～～～♪♪♪！！￥
+	OutputLine(NULL, "「新米メイドたちはそのぴちぴちさと初々しさで、ご主人様の寵愛を一身に！",
+		   NULL, "\"The newer maids, with all their youthful vitality, giving everything they have to please their master!", Line_WaitForInput);
+	OutputLine(NULL, "　でもそれが先輩メイドたちには許せないのです！",
+		   NULL, " But the older maids won't allow that to happen!", Line_WaitForInput);
+	OutputLine(NULL, "　ことあるごとに難癖を付け、いじめていじめていじめ抜いて！！",
+		   NULL, " They find fault with everything they do, bullying them and tormenting them all day long!!", Line_WaitForInput);
+	OutputLine(NULL, "　ホラ、まだこんなに埃が残っていますよ！",
+		   NULL, " Look, there's still so much dust here!", Line_WaitForInput);
+	OutputLine(NULL, "　あぁ…すみません…。",
+		   NULL, " Oh... I'm so sorry...", Line_WaitForInput);
+	OutputLine(NULL, "もう一度やり直し！",
+		   NULL, " Do it over!", Line_WaitForInput);
+	OutputLine(NULL, "　バッシャ！！",
+		   NULL, " Splash!!", Line_WaitForInput);
+	OutputLine(NULL, "　バケツを逆さにぶっかけられるメイドさん！",
+		   NULL, " A bucket falls upside-down on the maid!", Line_WaitForInput);
+	OutputLine(NULL, "　びしょ濡れのメイドさんが…泣きそうになりながら、それでも健気に…、はぁはぁ！！",
+		   NULL, " She's soaking wet... and she wants to cry, but still puts on a brave face... haa haa!!", Line_WaitForInput);
+	OutputLine(NULL, "　メ・イ・ド〜〜〜〜♪♪♪！！」",
+		   NULL, " Maaaiiidddsss~~~~♪♪♪!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 1, "re_se_ka_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 3, "ir_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene( "bg_019", 1000 );
+	PlayBGM( 2, "lsys12", 128, 0 );
+
+//「......はぅ～～～＠　何だか知んないけど楽しそう～＠　レナもメイドさん、いいなぁ...♪＠
+	OutputLine(NULL, "「……はぅ〜〜〜☆",
+		   NULL, "\"...Hau~~~☆", Line_WaitForInput);
+	OutputLine(NULL, "　何だか知んないけど楽しそう〜☆",
+		   NULL, " I don't get it but it sounds fun~☆", Line_WaitForInput);
+	OutputLine(NULL, "　レナもメイドさん、いいなぁ…♪」",
+		   NULL, " Maybe Rena should be a maid too...♪\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_th_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あーあー、もー＠　レナまで感化されてきたー＠ほぅら圭ちゃんも＠　いつまでも監督の世界に浸っていない！＠
+	OutputLine(NULL, "「あーあー、もー！",
+		   NULL, "\"Ah, geez, stop!", Line_WaitForInput);
+	OutputLine(NULL, "　レナまで感化されてきたー。",
+		   NULL, " You've even infected Rena!", Line_WaitForInput);
+	OutputLine(NULL, "ほぅら圭ちゃんも！",
+		   NULL, " And you, Kei-chan!", Line_WaitForInput);
+	OutputLine(NULL, "　いつまでも監督の世界に浸っていない！」",
+		   NULL, " Don't go getting lost forever in Coach's world!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sa_se_ak_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......これさえなければ監督も、決して悪い人じゃありませんのに。￥
+	OutputLine(NULL, "「……これさえなければ監督も、決して悪い人じゃありませんのに。」",
+		   NULL, "\"...If not for this character trait, Coach would be a good person, too.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ir_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	PlayBGM( 1, "msys03", 128, 0 );
+
+//「む＠　北条沙都子さん発見＠　...沙都子さん、これは何ザマス＠　まだ埃が残ってるザマスよ＠！　お、おお、お仕置き＠　お仕置きザマスー！！＠
+	OutputLine(NULL, "「む！",
+		   NULL, "\"Mgh!", Line_WaitForInput);
+	OutputLine(NULL, "　北条沙都子さん発見！",
+		   NULL, " One Satoko Houjou-san sighted!", Line_WaitForInput);
+	OutputLine(NULL, "　…沙都子さん、これは何ザマス！",
+		   NULL, " ...I say, Satoko-san, what is this!", Line_WaitForInput);
+	OutputLine(NULL, "　まだ埃が残ってるザマスよ！",
+		   NULL, " I say, look at all this dust!", Line_WaitForInput);
+	OutputLine(NULL, "！　お、おお、お仕置き！",
+		   NULL, " I-I-I say!!", Line_WaitForInput);
+	OutputLine(NULL, "　お仕置きザマスー！！」",
+		   NULL, " It's time for you to be punished!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 1, "sa_se_bi_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「んな！＠　にゃにゃ＠　にゃーー！！！＠
+	OutputLine(NULL, "「んな！！",
+		   NULL, "\"Whaa!!", Line_WaitForInput);
+	OutputLine(NULL, "　にゃにゃ！",
+		   NULL, " Nya-nya!", Line_WaitForInput);
+	OutputLine(NULL, "　にゃーー！！！」",
+		   NULL, " Nyaaa!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　監督が沙都子をヒョイと摘み上げると、沙都子のお尻をペチンペチンと叩き始める￥
+	OutputLine(NULL, "　監督が沙都子をヒョイと摘み上げると、沙都子のお尻をペチンペチンと叩き始める。",
+		   NULL, "Coach plucked Satoko up and started giving her a spanking.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	PlayBGM( 1, "msys01", 128, 0 );
+
+//「あははははははは＠　沙都子ちゃん、かぁいい＠　あっはははははは！＠
+	OutputLine(NULL, "「あははははははは！",
+		   NULL, "\"Ahahahahahahaha!", Line_WaitForInput);
+	OutputLine(NULL, "　沙都子ちゃん、かぁいい！",
+		   NULL, " Satoko-chan, you're so kyute!", Line_WaitForInput);
+	OutputLine(NULL, "　あっはははははは！」",
+		   NULL, " Ah-hahahahaha!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「......天才的な読みでトラップを操る沙都子が、どーしてこの顛末までは読めないのか実に不思議だぞ。￥
+	OutputLine(NULL, "「……天才的な読みでトラップを操る沙都子が、どーしてこの顛末までは読めないのか実に不思議だぞ。」",
+		   NULL, "\"...Satoko can put traps together with such brilliant predictions—it's so strange how she can't predict the very end, though.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "re_se_de_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「そうかな＠これは沙都子ちゃんの望んだ結末だと思うな。思うな！＠
+	OutputLine(NULL, "「そうかな。",
+		   NULL, "\"Is it?", Line_WaitForInput);
+	OutputLine(NULL, "これは沙都子ちゃんの望んだ結末だと思うな。思うな！」",
+		   NULL, " I think Satoko-chan wanted this to happen. She wanted it!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「この結末を沙都子が望んだー＠　そりゃどーゆう意味だよ。￥
+	OutputLine(NULL, "「この結末を沙都子が望んだー？",
+		   NULL, "\"Satoko wanted this outcome?", Line_WaitForInput);
+	OutputLine(NULL, "　そりゃどーゆう意味だよ。」",
+		   NULL, " What do you mean by that?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「人にこういうイタズラをしたら、絶対に相手は怒って追いかけてくるよね＠そういうのもコミュニケーションだと思わない？＠
+	OutputLine(NULL, "「人にこういうイタズラをしたら、絶対に相手は怒って追いかけてくるよね。",
+		   NULL, "\"When she plays pranks on people like this, they always get mad and chase her around.", Line_WaitForInput);
+	OutputLine(NULL, "そういうのもコミュニケーションだと思わない？」",
+		   NULL, " Don't you think it's like a form of communication?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...そんなコミュニケーション、すごく嫌だぞ＠普通に挨拶から入ってこんにちは～ってことにはならんのか。￥
+	OutputLine(NULL, "「…そんなコミュニケーション、すごく嫌だぞ。",
+		   NULL, "\"...Sounds like a terrible way to communicate.", Line_WaitForInput);
+	OutputLine(NULL, "普通に挨拶から入ってこんにちは〜ってことにはならんのか。」",
+		   NULL, " Don't people normally say 'hello' to each other?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "re_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「あれ、圭一くん、聞いたことない＠　イタズラばかりしてる人ってね、人にかまってもらいたくて仕方がない、寂しがり屋さんなんだって。＠
+	OutputLine(NULL, "「あれ、圭一くん、聞いたことない？",
+		   NULL, "\"Oh, Keiichi-kun, haven't you heard it of before?", Line_WaitForInput);
+	OutputLine(NULL, "　イタズラばかりしてる人ってね、人にかまってもらいたくて仕方がない、寂しがり屋さんなんだって。」",
+		   NULL, " People who play lots of pranks are actually lonely and want people to pay attention to them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　レナが涼感を感じさせる笑顔で、ふっと笑いながら教えてくれた￥
+	OutputLine(NULL, "　レナが涼感を感じさせる笑顔で、ふっと笑いながら教えてくれた。",
+		   NULL, "Rena gave a cool smile and, laughing abruptly, explained.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「だから＠...沙都子ちゃんのワナに掛かったら、ちゃんと怒ったり笑ったりして、沙都子ちゃんを追いかけて欲しいの＠そういう、猫の甘え噛みみたいなの...かわいいと思わないかなぁ...。￥
+	OutputLine(NULL, "「だから。",
+		   NULL, "\"That's what I mean.", Line_WaitForInput);
+	OutputLine(NULL, "…沙都子ちゃんのワナに掛かったら、ちゃんと怒ったり笑ったりして、沙都子ちゃんを追いかけて欲しいの。",
+		   NULL, " ...If Satoko-chan plays a trick on someone, she wants them to get mad or laugh and chase her.", Line_WaitForInput);
+	OutputLine(NULL, "そういう、猫の甘え噛みみたいなの…かわいいと思わないかなぁ…。」",
+		   NULL, " It's kind of like a kitty biting you softly... Don't you think it's cute...?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	DrawScene( "black", 400 );
+	FadeOutBGM( 1, 1000, TRUE );
+	PlaySE( 3, "wa_001", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "bg_046", "left", 0, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "bg_142", 400 );
+	PlayBGM( 1, "msys05", 128, 0 );
+	DrawBustshot( 2, "sa_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//!sd
+
+//「きっと、ここで驚いて飛びのきますわ＠だからここに仕掛ければ絶対に掛かりますの！！＠
+	OutputLine(NULL, "「きっと、ここで驚いて飛びのきますわ。",
+		   NULL, "\"They will definitely be surprised right here and jump backwards.", Line_WaitForInput);
+	OutputLine(NULL, "だからここに仕掛ければ絶対に掛かりますの！！」",
+		   NULL, " So if I put it in this spot, it will work for certain!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　沙都子はトラップ哲学を得意げに語りながら、さらに裏山を凶悪なトラップ地獄に改造していた￥
+	OutputLine(NULL, "　沙都子はトラップ哲学を得意げに語りながら、さらに裏山を凶悪なトラップ地獄に改造していた。",
+		   NULL, "Satoko, regaling us with her trap philosophy, was improving the already-brutal trap hell on the mountain.", Line_Normal);
+	ClearMessage();
+
+//　レナの言うとおり、もしも沙都子のトラップが、人に構ってもらいたいという思いの裏返しなら＠
+	OutputLine(NULL, "　レナの言うとおり、もしも沙都子のトラップが、人に構ってもらいたいという思いの裏返しなら。",
+		   NULL, "If Rena was right, and her traps are to get people to pay attention to her...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......この裏山中に無数に仕掛けられたものは全部、...そういう思いの結晶だということになる￥
+	OutputLine(NULL, "　……この裏山中に無数に仕掛けられたものは全部、…そういう思いの結晶だということになる。",
+		   NULL, "Then all of these traps on this mountain... were basically a crystallized form of those feelings.", Line_Normal);
+	ClearMessage();
+
+//　梨花ちゃんと二人きりで、...いくつもいくつもたくさんのトラップを山中に仕掛け＠.........誰かが引っ掛かってくれるのをずっと待っていたに違いない＠
+	OutputLine(NULL, "　梨花ちゃんと二人きりで、…いくつもいくつもたくさんのトラップを山中に仕掛け、",
+		   NULL, "Alone with Rika-chan... setting up trap after trap after trap in the mountains......", Line_WaitForInput);
+	OutputLine(NULL, "………誰かが引っ掛かってくれるのをずっと待っていたに違いない。",
+		   NULL, " always waiting for someone to fall into them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......だけれど、こんな裏山に誰も来るはずはなくて＠
+	OutputLine(NULL, "　……だけれど、こんな裏山に誰も来るはずはなくて。",
+		   NULL, "...But nobody needed to come to this mountain in the first place.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　......梨花ちゃんと二人で、引っ掛かった犠牲者がどう反応するかを想像し合って過したに違いない￥
+	OutputLine(NULL, "　……梨花ちゃんと二人で、引っ掛かった犠牲者がどう反応するかを想像し合って過したに違いない。",
+		   NULL, "...Without a doubt, she and Rika-chan had spent a lot of time imagining how victims caught in their traps would react.", Line_Normal);
+	ClearMessage();
+
+//　大好きなにーにーの悟史と生き別れた、沙都子＠
+	OutputLine(NULL, "　大好きなにーにーの悟史と生き別れた、沙都子。",
+		   NULL, "Satoko, separated for so long from her beloved Nii-nii, Satoshi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...帰ってきて欲しいなんて一言も言わない意地っ張り＠
+	OutputLine(NULL, "　…帰ってきて欲しいなんて一言も言わない意地っ張り。",
+		   NULL, "...With her stubbornness, she never once said that she wanted him to come home.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　でも、この山に眠る無数のトラップが、本当の沙都子の気持ちを教えてくれるのだ￥
+	OutputLine(NULL, "　でも、この山に眠る無数のトラップが、本当の沙都子の気持ちを教えてくれるのだ。",
+		   NULL, "But all the traps sleeping on the mountain told me how Satoko really felt.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_ya_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	PlayBGM( 2, "lsys11", 128, 0 );
+
+//「......聞いてますの＠　圭一さん！＠
+	OutputLine(NULL, "「……聞いてますの？",
+		   NULL, "\"...Keiichi-san!", Line_WaitForInput);
+	OutputLine(NULL, "　圭一さん！」",
+		   NULL, " Are you listening?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「あ、ごめんごめん＠何だって？￥
+	OutputLine(NULL, "「あ、ごめんごめん。",
+		   NULL, "\"Oh, sorry about that.", Line_WaitForInput);
+	OutputLine(NULL, "何だって？」",
+		   NULL, " What did you say?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「このように、木の幹に釘を一本、打ちつけただけでも立派なトラップになるんですのよ＠　ちょうどあそこで転げて、ここに額を打ち付ければ...痛いですわよ～！＠
+	OutputLine(NULL, "「このように、木の幹に釘を一本、打ちつけただけでも立派なトラップになるんですのよ？",
+		   NULL, "\"All you have to do is pound one nail into the tree trunk like this, and it's already a great trap.", Line_WaitForInput);
+	OutputLine(NULL, "　ちょうどあそこで転げて、ここに額を打ち付ければ…痛いですわよ〜！」",
+		   NULL, " If you trip up right there and smack your forehead into it... it would really hurt~!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「く、釘の頭に人間トンカチってわけか...＠そ、それは痛そうだな...。￥
+	OutputLine(NULL, "「く、釘の頭に人間トンカチってわけか…。",
+		   NULL, "\"A-A human hammer pushing a nail into your forehead...", Line_WaitForInput);
+	OutputLine(NULL, "そ、それは痛そうだな…。」",
+		   NULL, " Y-Yeah, that sounds painful...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「このトラップはきっと、悪～い悪人を誅する強力なトラップになりますわよ＠　どんな悪党がかかるか楽しみでございますわね！＠
+	OutputLine(NULL, "「このトラップはきっと、悪〜い悪人を誅する強力なトラップになりますわよ！",
+		   NULL, "\"If it was someone really, really evil, this trap could put them to death!", Line_WaitForInput);
+	OutputLine(NULL, "　どんな悪党がかかるか楽しみでございますわね！」",
+		   NULL, " I do so look forward to seeing what sort of villain gets caught by it!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...そこで何で俺をちらちら見るんだよ＠...俺にこれに引っ掛かって欲しいと思ってんのか＠　...さ、さすがにこれは大怪我するぞ＠このトラップはちょっとやめとけ。￥
+	OutputLine(NULL, "「…そこで何で俺をちらちら見るんだよ。",
+		   NULL, "\"...Why do you keep glancing at me like that?", Line_WaitForInput);
+	OutputLine(NULL, "…俺にこれに引っ掛かって欲しいと思ってんのか？",
+		   NULL, " ...Are you saying you want me to fall for it?", Line_WaitForInput);
+	OutputLine(NULL, "　…さ、さすがにこれは大怪我するぞ。",
+		   NULL, " ...I-I could get really badly hurt, you know.", Line_WaitForInput);
+	OutputLine(NULL, "このトラップはちょっとやめとけ。」",
+		   NULL, " Maybe you shouldn't be using this trap.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_ak_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「............そうですの＠　...まぁ確かに、愛がないトラップは駄目でございますからね＠/
+	OutputLine(NULL, "「…………そうですの？",
+		   NULL, "\"......Is that so?", Line_WaitForInput);
+	OutputLine(NULL, "　…まぁ確かに、愛がないトラップは駄目でございますからね。",
+		   NULL, " ...Well, it is true that I can't use traps without love behind them.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_ha_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//...ではその悪党もちゃんと改心したら掛からないように、少し釘の位置を...、＠
+	OutputLine(NULL, "……ではその悪党もちゃんと改心したら掛からないように、少し釘の位置を…、」",
+		   NULL, " ...Then I'll just move the nail here so that if the villain really reforms their behavior, they won't get caught by it...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　沙都子は釘を打つ場所の調整に没頭していた￥
+	OutputLine(NULL, "　沙都子は釘を打つ場所の調整に没頭していた。",
+		   NULL, "Satoko immersed herself in adjusting the nail's position.", Line_Normal);
+	ClearMessage();
+
+//　...トラップは愛、か＠
+	OutputLine(NULL, "　…トラップは愛、か。",
+		   NULL, "...Traps of love, huh?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　監督の言うとおりかもしれない＠...受け止め方ひとつで、...全然変わるのだ＠
+	OutputLine(NULL, "　監督の言うとおりかもしれない。",
+		   NULL, "Maybe Coach was right.", Line_WaitForInput);
+	OutputLine(NULL, "…受け止め方ひとつで、…全然変わるのだ。",
+		   NULL, " ...Just by reacting a little differently... everything changes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　そう思えば、......沙都子のトラップに引っ掛かるのにも、面白みや、温かみが感じられるかもしれない￥
+	OutputLine(NULL, "　そう思えば、……沙都子のトラップに引っ掛かるのにも、面白みや、温かみが感じられるかもしれない。",
+		   NULL, "Come to think of it... maybe you can feel humor and warmth even when Satoko's traps get you.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「できましてよ！＠　この絶妙な位置でしたら完璧ですわ＠　いかがです圭一さん？＠
+	OutputLine(NULL, "「できましてよ！！",
+		   NULL, "\"All finished!!", Line_WaitForInput);
+	OutputLine(NULL, "　この絶妙な位置でしたら完璧ですわ！",
+		   NULL, " Now it's absolutely perfect where it is!", Line_WaitForInput);
+	OutputLine(NULL, "　いかがです圭一さん？」",
+		   NULL, " What do you think, Keiichi-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「あ、...あぁ＠完璧だな＠このトラップに引っ掛かる悪党が現れるといいな。＠
+	OutputLine(NULL, "「あ、…あぁ。",
+		   NULL, "\"Uh... yeah.", Line_WaitForInput);
+	OutputLine(NULL, "完璧だな。",
+		   NULL, " It's perfect.", Line_WaitForInput);
+	OutputLine(NULL, "このトラップに引っ掛かる悪党が現れるといいな。」",
+		   NULL, " I hope a villain comes along and gets caught by this trap.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「ほっほっほっほ＠　現れない方がいいに決まってますわ。＠
+	OutputLine(NULL, "「ほっほっほっほ！",
+		   NULL, "\"Ho-ho-ho-ho!", Line_WaitForInput);
+	OutputLine(NULL, "　現れない方がいいに決まってますわ。」",
+		   NULL, " No, of course it would be better if that didn't happen.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......ちょっと痛そうだけど、今度ここへ来たら引っ掛かってやってもいいかなって思った￥
+	OutputLine(NULL, "　……ちょっと痛そうだけど、今度ここへ来たら引っ掛かってやってもいいかなって思った。",
+		   NULL, "...It looked a little painful, but I considered coming here sometime and getting caught in it.", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

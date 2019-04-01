@@ -1,0 +1,230 @@
+﻿void main()
+{
+
+//■タイトル：　東三局
+//■雀荘で麻雀をしながら先のドブ川惨殺体の情報交換をする刑事たち。
+//　メンバーは大石と熊谷、鑑識のじいさまとどっかの刑事。
+//*Sub_Tips_050
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys13", 128, 0 );
+
+//「んっふっふっふ＠　出ましたねぇ、ロン＠中ドラ３、満千五です。￥
+	OutputLine(NULL, "「んっふっふっふ！",
+		   NULL, "\"Nfu-fu-fu-fu!", Line_WaitForInput);
+	OutputLine(NULL, "　出ましたねぇ、ロン。",
+		   NULL, " There it is—ron.", Line_WaitForInput);
+	OutputLine(NULL, "中ドラ３、満千五です。」",
+		   NULL, " Three chun, three dora—mangan with 1500 extra.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_071", 400 );
+
+//「えー...＠　なんすかそれぇ...＠何でドラが３つも入んすかぁ！＠
+	OutputLine(NULL, "「えー…！",
+		   NULL, "\"What...!", Line_WaitForInput);
+	OutputLine(NULL, "　なんすかそれぇ…。",
+		   NULL, " What's up with that...", Line_WaitForInput);
+	OutputLine(NULL, "何でドラが３つも入んすかぁ！」",
+		   NULL, " How do you have three dora?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「バカモンが＠大石が聴牌しとんのわかっててカンドラ増やしおってからに＠　自業自得じゃぞ。￥
+	OutputLine(NULL, "「バカモンが。",
+		   NULL, "\"You idiot.", Line_WaitForInput);
+	OutputLine(NULL, "大石が聴牌しとんのわかっててカンドラ増やしおってからに！",
+		   NULL, " You're the one who flipped over another kan dora when you knew Ooishi was in tenpai!", Line_WaitForInput);
+	OutputLine(NULL, "　自業自得じゃぞ。」",
+		   NULL, " That's what you get.\"", Line_Normal);
+	ClearMessage();
+
+//「中さらしたら、ドラを上乗せする位しかやることないじゃないですか＠役牌さらしたらドラ側は切っちゃだめですよ＠んっふっふっふ！＠
+	OutputLine(NULL, "「中さらしたら、ドラを上乗せする位しかやることないじゃないですか。",
+		   NULL, "\"Getting more dora was the only thing I could do after revealing the chun!", Line_WaitForInput);
+	OutputLine(NULL, "役牌さらしたらドラ側は切っちゃだめですよ。",
+		   NULL, " You can't discard a dora tile after a yakuhai is out.", Line_WaitForInput);
+	OutputLine(NULL, "んっふっふっふ！」",
+		   NULL, " Nfu-fu-fu!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　得意げに笑う大石と悪態をつく仲間たちは、牌の山を崩してまた積み始める￥
+	OutputLine(NULL, "　得意げに笑う大石と悪態をつく仲間たちは、牌の山を崩してまた積み始める。",
+		   NULL, "Ooishi grinned meaningfully as his buddies, swearing, began breaking down the walls and reforming them.", Line_Normal);
+	ClearMessage();
+
+//「......時に大石さん、どうですか＠割れましたか。＠
+	OutputLine(NULL, "「……時に大石さん、どうですか。",
+		   NULL, "\"...By the way, Ooishi-san.", Line_WaitForInput);
+	OutputLine(NULL, "割れましたか。」",
+		   NULL, " Figure it out yet?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「なんじゃい＠...あぁ、例のドブ川惨殺死体の話かの＠何か手掛かりはあったのか。＠
+	OutputLine(NULL, "「なんじゃい。",
+		   NULL, "\"What?", Line_WaitForInput);
+	OutputLine(NULL, "…あぁ、例のドブ川惨殺死体の話かの。",
+		   NULL, " ...Oh, the murdered body in the drainage channel.", Line_WaitForInput);
+	OutputLine(NULL, "何か手掛かりはあったのか。」",
+		   NULL, " Any new clues come up?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「えぇ、まぁ＠裏はそっちで取って下さいよ。￥
+	OutputLine(NULL, "「えぇ、まぁ。",
+		   NULL, "\"Yes, well.", Line_WaitForInput);
+	OutputLine(NULL, "裏はそっちで取って下さいよ。」",
+		   NULL, " You are the one collecting the evidence, here.\"", Line_Normal);
+	ClearMessage();
+
+//「さぁすがぁ＠何者です、ホトケ？＠
+	OutputLine(NULL, "「さぁすがぁ。",
+		   NULL, "\"I should have expected that.", Line_WaitForInput);
+	OutputLine(NULL, "何者です、ホトケ？」",
+		   NULL, " Who was the deceased?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「間宮リナ＠本名は律子。＠
+	OutputLine(NULL, "「間宮リナ。",
+		   NULL, "\"Rina Mamiya.", Line_WaitForInput);
+	OutputLine(NULL, "本名は律子。」",
+		   NULL, " Actual name Noriko.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「鹿骨フラワーロードにある、ブルー・マーメイドってキャバクラに勤めてたみたいっす。￥
+	OutputLine(NULL, "「鹿骨フラワーロードにある、ブルー・マーメイドってキャバクラに勤めてたみたいっす。」",
+		   NULL, "\"Apparently she worked for the Blue Mermaid, a hostess bar on Shishibone Flower Road.\"", Line_Normal);
+	ClearMessage();
+
+//「やれやれ、そりゃヤバイ店じゃな＠確か園崎系の若頭の店じゃろ。＠
+	OutputLine(NULL, "「やれやれ、そりゃヤバイ店じゃな。",
+		   NULL, "\"Oh, wow, that place, huh?", Line_WaitForInput);
+	OutputLine(NULL, "確か園崎系の若頭の店じゃろ。」",
+		   NULL, " A young leader of the Sonozakis owns it, yeah?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...園崎...おっと＠　Ｓ号関連かぁ＠...難航しそうなヤマだなぁ。＠
+	OutputLine(NULL, "「…園崎…おっと！",
+		   NULL, "\"...Sonozaki—whoops!", Line_WaitForInput);
+	OutputLine(NULL, "　Ｓ号関連かぁ。",
+		   NULL, " So it's related to the S-group.", Line_WaitForInput);
+	OutputLine(NULL, "…難航しそうなヤマだなぁ。」",
+		   NULL, " ...That mountain'll be tough to scale.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「噂じゃホトケさん、上納金とヤクに手を付けちゃったらしいっす＠話じゃ、かなりシャレにならない規模らしいっす。￥
+	OutputLine(NULL, "「噂じゃホトケさん、上納金とヤクに手を付けちゃったらしいっす。",
+		   NULL, "\"Rumors say the deceased had her hands in both drug dealing and money to be paid to the government.", Line_WaitForInput);
+	OutputLine(NULL, "話じゃ、かなりシャレにならない規模らしいっす。」",
+		   NULL, " And on a pretty significant scale, too, from what I've heard.\"", Line_Normal);
+	ClearMessage();
+
+//「女が上納金に手を出した、か＠裏に男がいそうじゃのう＠女の単独犯なんてそうそうないぞ。＠
+	OutputLine(NULL, "「女が上納金に手を出した、か。",
+		   NULL, "\"A woman getting her hands on yakuza tax money...", Line_WaitForInput);
+	OutputLine(NULL, "裏に男がいそうじゃのう。",
+		   NULL, " Sounds like a man's behind it.", Line_WaitForInput);
+	OutputLine(NULL, "女の単独犯なんてそうそうないぞ。」",
+		   NULL, " Not a lot of women do that sort of thing themselves.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「んっふっふ＠　どうせもう死んでますよ＠死体がまだ出ないだけで。＠
+	OutputLine(NULL, "「んっふっふ！",
+		   NULL, "\"Nfu-fu!", Line_WaitForInput);
+	OutputLine(NULL, "　どうせもう死んでますよ。",
+		   NULL, " Well, she's dead now.", Line_WaitForInput);
+	OutputLine(NULL, "死体がまだ出ないだけで。」",
+		   NULL, " The dead can't have anything to do with it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「そうそう...、大石さん＠女のヒモ、生きてるみたいですよ。＠
+	OutputLine(NULL, "「そうそう…、大石さん。",
+		   NULL, "\"About that... Ooishi-san.", Line_WaitForInput);
+	OutputLine(NULL, "女のヒモ、生きてるみたいですよ。」",
+		   NULL, " Her man's apparently alive.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「生きてる＠　じゃあこれから死ぬんでしょうねぇ＠害虫が害虫を駆除してくれるんだから、ホントに素敵な自浄機能だと思いますよ。￥
+	OutputLine(NULL, "「生きてる？",
+		   NULL, "\"Alive?", Line_WaitForInput);
+	OutputLine(NULL, "　じゃあこれから死ぬんでしょうねぇ。",
+		   NULL, " Then maybe he'll die soon.", Line_WaitForInput);
+	OutputLine(NULL, "害虫が害虫を駆除してくれるんだから、ホントに素敵な自浄機能だと思いますよ。」",
+		   NULL, " Vermin usually exterminate other vermin—I think we have a very nice self-cleansing system going on.\"", Line_Normal);
+	ClearMessage();
+//「そのヒモなんですがね＠/
+	OutputLine(NULL, "「そのヒモなんですがね、",
+		   NULL, "\"Anyway, her man...", Line_WaitForInput);
+
+	PlaySE( 3, "wa_023", 128, 64 );
+
+//北条鉄平なんですよ...、あの。＠
+	OutputLine(NULL, "北条鉄平なんですよ…、あの。」",
+		   NULL, " It's, well... Teppei Houjou.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「......北条＠　誰だい？＠
+	OutputLine(NULL, "「……北条？",
+		   NULL, "\"...Houjou?", Line_WaitForInput);
+	OutputLine(NULL, "　誰だい？」",
+		   NULL, " Who's that?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...北条鉄平＠去年、雛見沢で起こった主婦撲殺事件のホトケのご主人ですよ＠......事件のあと姿を消したって聞いてましたけど＠...そうかぁ、愛人の所に転がり込んでたかぁ。￥
+	OutputLine(NULL, "「…北条鉄平。",
+		   NULL, "\"...Teppei Houjou.", Line_WaitForInput);
+	OutputLine(NULL, "去年、雛見沢で起こった主婦撲殺事件のホトケのご主人ですよ。",
+		   NULL, " The husband of the housewife who was beaten to death last year in Hinamizawa.", Line_WaitForInput);
+	OutputLine(NULL, "……事件のあと姿を消したって聞いてましたけど。",
+		   NULL, " ...I heard he disappeared after the incident, though.", Line_WaitForInput);
+	OutputLine(NULL, "…そうかぁ、愛人の所に転がり込んでたかぁ。」",
+		   NULL, " ...I get it—he was staying at his lover's place, huh?\"", Line_Normal);
+	ClearMessage();
+
+//「............ますますに園崎の臭いがプンプンだの。＠
+	OutputLine(NULL, "「…………ますますに園崎の臭いがプンプンだの。」",
+		   NULL, "\"......And so the Sonozakis grow ever more suspicious.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「彼氏は今どこに？＠
+	OutputLine(NULL, "「彼氏は今どこに？」",
+		   NULL, "\"Where is he now?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「女のアパートに同居してたんすがね＠女が自分を捨てたと思ったみたいで、店や溜りのあちこちを探し回ってるらしいっす。￥
+	OutputLine(NULL, "「女のアパートに同居してたんすがね。",
+		   NULL, "\"He was living in a woman's apartment.", Line_WaitForInput);
+	OutputLine(NULL, "女が自分を捨てたと思ったみたいで、店や溜りのあちこちを探し回ってるらしいっす。」",
+		   NULL, " He must have thought she abandoned him, so he's been searching around shops and other gathering places.\"", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	StopSE( 3 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

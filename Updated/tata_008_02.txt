@@ -1,0 +1,1229 @@
+﻿void main()
+{
+
+//■まだ８日目（木）夜
+//////*TatarigorosiHen_Day8_2
+
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys06", 128, 0 );
+
+//■圭一の考察...
+
+//　...家に帰り、...シャワーで今日一日の嫌な汗を流した￥
+	OutputLine(NULL, "　…家に帰り、…シャワーで今日一日の嫌な汗を流した。",
+		   NULL, "...I went home... and washed the day's sweat off in the shower.", Line_Normal);
+	ClearMessage();
+
+//　普段なら、シャワーを浴びれば今日あった嫌な出来事は全部リセットできる＠
+//　......でも今日は、そうはならなかった￥
+	OutputLine(NULL, "　普段なら、シャワーを浴びれば今日あった嫌な出来事は全部リセットできる。",
+		   NULL, "Normally, I could reset everything by taking a shower and forgetting all the bad things.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……でも今日は、そうはならなかった。",
+		   NULL, "...But that didn't happen today.", Line_Normal);
+	ClearMessage();
+
+//　シャワーから出ると、脱衣カゴに、新しい下着が丁寧に置かれていた＠
+//　......普段は全然気にも留めない、こんな母の心遣いに今日はうれしさを感じた￥
+	OutputLine(NULL, "　シャワーから出ると、脱衣カゴに、新しい下着が丁寧に置かれていた。",
+		   NULL, "I got out of the shower to find fresh underwear placed neatly in the laundry basket.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……普段は全然気にも留めない、こんな母の心遣いに今日はうれしさを感じた。",
+		   NULL, "...Normally I didn't stop to think about it, but today I felt happy at my mother's consideration.", Line_Normal);
+	ClearMessage();
+
+//　...でもそれは同時に、沙都子の受難を感じさせるものでもあるのだ＠
+	OutputLine(NULL, "　…でもそれは同時に、沙都子の受難を感じさせるものでもあるのだ。",
+		   NULL, "At the same time, however, it made me realize how much Satoko must be suffering.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　俺がこんなささやかな優しさを享受するのと同じ様に、今この瞬間、差と沙都子は叔父の心無い言葉に傷つけられているのかもしれないのだから￥
+	OutputLine(NULL, "　俺がこんなささやかな優しさを享受するのと同じ様に、今この瞬間、差と沙都子は叔父の心無い言葉に傷つけられているのかもしれないのだから。",
+		   NULL, "At the very moment I was appreciating this gentle kindness, Satoko might be being bruised by her uncle's cruel words.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_080", "up", 0, 0, 1300 );
+
+//　２階に上がり自室にこもる＠
+//　......そして机に向かい、...腕を組んでみた＠
+	OutputLine(NULL, "　２階に上がり自室にこもる。",
+		   NULL, "I went up to the second floor and shut myself in my bedroom.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そして机に向かい、…腕を組んでみた。",
+		   NULL, "...Then, facing my desk... I folded my arms.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　もちろん考える議題は、...沙都子についてだ￥
+	OutputLine(NULL, "　もちろん考える議題は、…沙都子についてだ。",
+		   NULL, "My topic of thought, of course... was Satoko.", Line_Normal);
+	ClearMessage();
+
+//　...俺たちはこれまで、うまく公的機関の介入を得られれば解決すると考えてきた＠
+	OutputLine(NULL, "　…俺たちはこれまで、うまく公的機関の介入を得られれば解決すると考えてきた。",
+		   NULL, "...We'd thought that if we could just get a public agency to intervene in the right way, the problem would be solved.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......でも、監督の話も加えると、......そう簡単には行かないようにも思う￥
+
+//　......意地っ張りな沙都子が、頑なに虐待を認めず、...耐え忍ぼうとしている＠
+	OutputLine(NULL, "　……でも、監督の話も加えると、……そう簡単には行かないようにも思う。",
+		   NULL, "...But with what Coach said... I didn't think it would be so easy.", Line_Normal);
+	ClearMessage();
+	OutputLine(NULL, "　……意地っ張りな沙都子が、頑なに虐待を認めず、…耐え忍ぼうとしている。",
+		   NULL, "...Satoko was obstinate, and she would stubbornly deny the abuse... and try to endure it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...その行為は、沙都子の中では......、これまでずっと自分をかばってくれ、そして逃げ出してしまった悟史への贖罪行為なのだ￥
+	OutputLine(NULL, "　…その行為は、沙都子の中では……、これまでずっと自分をかばってくれ、そして逃げ出してしまった悟史への贖罪行為なのだ。",
+		   NULL, "...And that was an act of atonement... towards Satoshi, who had protected her before and then run away.", Line_Normal);
+	ClearMessage();
+
+//　...沙都子本人がそう思っている以上、!w1000.........事態は簡単ではない＠
+//　でも、俺はさっき監督の前ではっきり宣言した＠
+	OutputLine(NULL, "　…沙都子本人がそう思っている以上、",
+		   NULL, "...As long as she thought that way...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "………事態は簡単ではない。",
+		   NULL, " the situation wouldn't be so simple.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、俺はさっき監督の前ではっきり宣言した。",
+		   NULL, "But earlier, before Coach, I made a clear declaration.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...沙都子が危ないと思ったら、...俺は俺の独自の判断で行動する、と￥
+	OutputLine(NULL, "　…沙都子が危ないと思ったら、…俺は俺の独自の判断で行動する、と。",
+		   NULL, "...If I thought Satoko was in danger... then I would do what I had to.", Line_Normal);
+	ClearMessage();
+
+//　結局は俺も様子見な訳だが...＠
+//　...それでも、仲間や監督よりも一線を画していると思った￥
+	OutputLine(NULL, "　結局は俺も様子見な訳だが…。",
+		   NULL, "In the end, that meant I was just going to 'wait and see' too...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それでも、仲間や監督よりも一線を画していると思った。",
+		   NULL, "Nevertheless, I thought I'd drawn a clearer line than Coach or my friends had.", Line_Normal);
+	ClearMessage();
+
+//　...いざという時は、...俺が通報しよう＠電話で＠
+//　.........俺が通報したことがわかれば、沙都子の性格からして、俺を非難するかもしれない＠
+	OutputLine(NULL, "　…いざという時は、…俺が通報しよう。",
+		   NULL, "...If the time came... I would report it.", Line_WaitForInput);
+	OutputLine(NULL, "電話で。",
+		   NULL, " Over the phone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………俺が通報したことがわかれば、沙都子の性格からして、俺を非難するかもしれない。",
+		   NULL, "...Given Satoko's personality, she might criticize me if she found out.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...でも、...最終的にはそれが良い判断になると信じる￥
+	OutputLine(NULL, "　…でも、…最終的にはそれが良い判断になると信じる。",
+		   NULL, "...But... I believed it was ultimately the best decision.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//　...............だが待て、前原圭一。!w1000@
+//　...通報するだけでもう問題は終わりか...＠
+	OutputLine(NULL, "　……………だが待て、前原圭一。",
+		   NULL, "......Wait, Keiichi Maebara.", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…通報するだけでもう問題は終わりか…？",
+		   NULL, "...Would that really be all it took for the problem to end...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	PlayBGM( 1, "msys13", 128, 0 );
+
+//　......仮に、公的機関、児童相談所に通報して、!w1000.........また去年のように様子見なんてことになったら...￥
+	OutputLine(NULL, "　……仮に、公的機関、児童相談所に通報して、",
+		   NULL, "...Say that I reported it to a public agency, like the child consultation center...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "………また去年のように様子見なんてことになったら…？",
+		   NULL, " What if they stuck to their 'wait and see' attitude like last year again...?", Line_Normal);
+	ClearMessage();
+
+//　...去年、様子見ということになり、一時的に状況は改善したが、...叔母は恥をかかされたと思いいじめを水面下へ移行＠......結局、もとより陰湿になって行った＠
+	OutputLine(NULL, "　…去年、様子見ということになり、一時的に状況は改善したが、…叔母は恥をかかされたと思いいじめを水面下へ移行。",
+		   NULL, "...Last year, they decided to do just that, and the situation improved temporarily... but then the aunt, thinking herself a laughingstock, increased her tormenting in secret.", Line_WaitForInput);
+	OutputLine(NULL, "……結局、もとより陰湿になって行った。",
+		   NULL, " ...In the end, things became more underhanded than ever before.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　今年は叔父だ＠
+//　............今日、初めてその顔を見たが、...陰湿という言葉よりはもっともっと直接的な、暴力的という表現が似合う男だった￥
+	OutputLine(NULL, "　今年は叔父だ。",
+		   NULL, "This year it was her uncle.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………今日、初めてその顔を見たが、…陰湿という言葉よりはもっともっと直接的な、暴力的という表現が似合う男だった。",
+		   NULL, "......I had just seen him for the first time today... but the man seemed much more direct, much more violent than the word 'underhanded' could imply.", Line_Normal);
+	ClearMessage();
+
+//　...叔母のように陰湿な、...なんて甘いものじゃなく、...もっと直接的に...＠殴る蹴るの暴行を加えるかもしれない＠
+//　...それは、沙都子の体にいくつか見られたアザ等から容易に推察できるものだ＠
+	OutputLine(NULL, "　…叔母のように陰湿な、…なんて甘いものじゃなく、…もっと直接的に…。",
+		   NULL, "...He wasn't like their aunt... no, not that subtle... He was more direct...", Line_WaitForInput);
+	OutputLine(NULL, "殴る蹴るの暴行を加えるかもしれない。",
+		   NULL, " He might also assault her with punches and kicks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それは、沙都子の体にいくつか見られたアザ等から容易に推察できるものだ。",
+		   NULL, "...That could easily be discerned from the bruises and such I saw on Satoko's body.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　.........くそ、......甘いじゃないか前原圭一！＠
+//　いくら悲壮な覚悟を持って通報したって、......沙都子を救ってくれなかったら何の意味もない！￥
+	OutputLine(NULL, "　………くそ、……甘いじゃないか前原圭一！！",
+		   NULL, "...Shit... You're too naive, Keiichi Maebara!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いくら悲壮な覚悟を持って通報したって、……沙都子を救ってくれなかったら何の意味もない！！",
+		   NULL, "However heroic it may seem to report what was happening... if it doesn't save her, then it doesn't mean anything!!", Line_Normal);
+	ClearMessage();
+
+//　公的機関への通報はあくまでも方法のひとつであって、その方法に全てを委ねるのは危険だ＠
+//　...さらに併せて...沙都子の安全を保護しなくては...￥
+	OutputLine(NULL, "　公的機関への通報はあくまでも方法のひとつであって、その方法に全てを委ねるのは危険だ。",
+		   NULL, "Reporting things to a public agency was only one option, and leaving everything to them would be dangerous.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…さらに併せて…沙都子の安全を保護しなくては…。",
+		   NULL, "...We would need something more... to guarantee Satoko's safety...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_082", "up", 0, 0, 300 );
+
+//　頭をガリガリガリっと掻き、ほんのわずかの冷静さが欲しくて、頭を後ろにそらす＠
+//　.....................今日の仲間たちとの、怒鳴りあいが思い出されくる￥
+	OutputLine(NULL, "　頭をガリガリガリっと掻き、ほんのわずかの冷静さが欲しくて、頭を後ろにそらす。",
+		   NULL, "I scratched madly at my head, thinking, then tilted it back, wanting at least a little bit of calm.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………………今日の仲間たちとの、怒鳴りあいが思い出されくる。",
+		   NULL, "......The memories of angry arguing with my friends today came to mind.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_118", 400 );
+	PlayBGM( 1, "msys21", 128, 0 );
+
+//　レナに言われるまで気付けなかったことを恥じる＠
+	OutputLine(NULL, "　レナに言われるまで気付けなかったことを恥じる。",
+		   NULL, "I was embarrassed that I hadn't realized it until Rena said something.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...そう＠
+//　......俺の家は大きい＠
+//　...雛見沢の、わらぶき屋根の家々に比べれば、...ずっと大きい＠
+//　実際、部屋だって余ってる＠
+	OutputLine(NULL, "　…そう。",
+		   NULL, "...She was right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……俺の家は大きい。",
+		   NULL, "...My house is big.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…雛見沢の、わらぶき屋根の家々に比べれば、…ずっと大きい。",
+		   NULL, "Compared to all the houses with the straw-thatched roofs in Hinamizawa... it was really big.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　実際、部屋だって余ってる。",
+		   NULL, "We did actually have empty rooms.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......裕福であると思ったことはないが、......決して貧乏だと思ったこともない￥
+	OutputLine(NULL, "　……裕福であると思ったことはないが、……決して貧乏だと思ったこともない。",
+		   NULL, "...I've never thought that we were affluent... but also never that we were poor.", Line_Normal);
+	ClearMessage();
+
+//　......驕っていると思われるから認めなかっただけで......＠
+//　............やはり家は......裕福なのかもしれないのだ￥
+	OutputLine(NULL, "　……驕っていると思われるから認めなかっただけで……。",
+		   NULL, "...I just didn't admit it because people would think I was arrogant...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………やはり家は……裕福なのかもしれないのだ。",
+		   NULL, "......But maybe my family... really is wealthy.", Line_Normal);
+	ClearMessage();
+
+//　...沙都子に貸してやれる部屋なんかいくつもある＠
+//　...客室なんか、たまに来る仕事関係の人を泊める以外はただの空き部屋じゃないか＠
+//　...親父が物置にしてる部屋のいくつかだって、ちゃんと片付ければ充分な部屋になる￥
+	OutputLine(NULL, "　…沙都子に貸してやれる部屋なんかいくつもある。",
+		   NULL, "...We had a few rooms we could lend to Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…客室なんか、たまに来る仕事関係の人を泊める以外はただの空き部屋じゃないか。",
+		   NULL, "...The guest rooms are only in use when people related to my dad's job come and stay every once in a while.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…親父が物置にしてる部屋のいくつかだって、ちゃんと片付ければ充分な部屋になる。",
+		   NULL, "...Plus, if we cleaned up a few of the rooms my dad uses for storage, they could work for her as well.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawFilm( 2, 136, 136, 136, 255, 0, 1000, TRUE );
+	DrawScene( "bg_108", 400 );
+
+//　.........食費の問題は、...子供の俺が考えるよりは、切実な厳しい問題かもしれない￥
+	OutputLine(NULL, "　………食費の問題は、…子供の俺が考えるよりは、切実な厳しい問題かもしれない。",
+		   NULL, "...As for food expenses... That might have been a more serious problem than a kid like me could imagine.", Line_Normal);
+	ClearMessage();
+
+//　昼の弁当は何とかなるだろ＠
+//　...仲間みんなで、これからはほんの少し多めに弁当を用意すればいい＠
+//　みんなで突付きあうんだから、何とかなる￥
+	OutputLine(NULL, "　昼の弁当は何とかなるだろ。",
+		   NULL, "Lunch every day would be manageable.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…仲間みんなで、これからはほんの少し多めに弁当を用意すればいい。",
+		   NULL, "...All of our friends would just have to bring a little bit more for lunch than they usually did.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　みんなで突付きあうんだから、何とかなる。",
+		   NULL, "With everyone pecking at everyone else's food anyway, it would be manageable.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_210", 400 );
+
+//　...だが、...朝、夜の食事は...お袋の世話にならざるを得ない＠
+//　......部屋を貸す以上の、お袋の説得が必要だ＠（もっとも、部屋を貸す説得だって容易とは思わないが...￥
+	OutputLine(NULL, "　…だが、…朝、夜の食事は…お袋の世話にならざるを得ない。",
+		   NULL, "...For breakfast and dinner, though... that would have to be up to Mom.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……部屋を貸す以上の、お袋の説得が必要だ。",
+		   NULL, "...I would need to convince her to lend Satoko more than just a room.", Line_WaitForInput);
+	OutputLine(NULL, "（もっとも、部屋を貸す説得だって容易とは思わないが…）",
+		   NULL, " (Of course, I don't even think convincing her of that would be easy...)", Line_Normal);
+	ClearMessage();
+
+//　人間ひとりが食う食費って...どのくらいかかるんだろう...＠
+//　月々...何万円か、かかるだろうか...＠　それを...俺が負担すれば文句は言われない＠
+	OutputLine(NULL, "　人間ひとりが食う食費って…どのくらいかかるんだろう…。",
+		   NULL, "About how much... did it cost for one person to eat...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　月々…何万円か、かかるだろうか…？",
+		   NULL, "How many tens of thousands of yen... per month...?", Line_WaitForInput);
+	OutputLine(NULL, "　それを…俺が負担すれば文句は言われない？",
+		   NULL, " They couldn't... complain about it if I shouldered that, could they?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　.........俺の貯金箱には、ほんの１～２万かだが、ある＠
+//　本当はもっとお年玉とかが溜まってるのだが、...それらは全部親に没収されて定期預金に入れられてしまっている＠......それを取り崩せば、結構まとまったお金になるはず￥
+	OutputLine(NULL, "　………俺の貯金箱には、ほんの１〜２万かだが、ある。",
+		   NULL, "...I only had ten or twenty thousand yen in savings, but it was something.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本当はもっとお年玉とかが溜まってるのだが、…それらは全部親に没収されて定期預金に入れられてしまっている。",
+		   NULL, "I actually had even more, thanks to New Year's gifts and such... but my parents had taken all that and put it into a fixed time deposit.", Line_WaitForInput);
+	OutputLine(NULL, "……それを取り崩せば、結構まとまったお金になるはず。",
+		   NULL, " ...If I could get access to that, it should add up to a lot of money.", Line_Normal);
+	ClearMessage();
+
+//　ここまで来たなら、...魅音やレナたちにも負担を頼むべきだ＠
+	OutputLine(NULL, "　ここまで来たなら、…魅音やレナたちにも負担を頼むべきだ。",
+		   NULL, "And if I got that far... Mion and Rena would need to share some of the burden.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　もちろん当てにはしない＠
+//　...レナに怒られたじゃないか＠人に押し付ける話ばかりするなって＠
+	OutputLine(NULL, "　もちろん当てにはしない。",
+		   NULL, "Of course, that didn't seem like it would work.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…レナに怒られたじゃないか。",
+		   NULL, "...Rena got mad at me, didn't she?", Line_WaitForInput);
+	OutputLine(NULL, "人に押し付ける話ばかりするなって。",
+		   NULL, " About how I shouldn't just shove responsibility onto others.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......助けは求める＠
+//　でも、...基本的に俺ひとりで助ける＠
+//　やり遂げるんだ...￥
+	OutputLine(NULL, "　……助けは求める。",
+		   NULL, "...I'd have to ask for help.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、…基本的に俺ひとりで助ける。",
+		   NULL, "Even so... I'd basically be saving her myself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　やり遂げるんだ…！",
+		   NULL, "I would follow through on it...!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_170", 400 );
+
+//　あ、でも...食費だけの話じゃない＠
+//　......風呂場とか洗濯場とか、生活ともなれば欠かせない要素ってたくさんある＠
+	OutputLine(NULL, "　あ、でも…食費だけの話じゃない。",
+		   NULL, "Oh, but... it wouldn't be only food expenses.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……風呂場とか洗濯場とか、生活ともなれば欠かせない要素ってたくさんある。",
+		   NULL, "...There were a lot of other things that you couldn't do without, like baths and laundry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......人の無駄にやたらと厳しい几帳面な母が、こういう時だけ煩わしい＠
+//　...沙都子が自分の衣服の洗濯に使う洗剤の代金とか...そういうものにまで言及があるかもしれない￥
+	OutputLine(NULL, "　……人の無駄にやたらと厳しい几帳面な母が、こういう時だけ煩わしい。",
+		   NULL, "...My mother was awfully methodical and strict about cutting out inefficiencies—and for once, that was troublesome.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…沙都子が自分の衣服の洗濯に使う洗剤の代金とか…そういうものにまで言及があるかもしれない。",
+		   NULL, "...She might even make reference... to the money it would cost for the detergent Satoko would use for her own clothes.", Line_Normal);
+	ClearMessage();
+
+//　...食費だけじゃ駄目なんだ＠
+//　もっと...お金がいる＠
+	OutputLine(NULL, "　…食費だけじゃ駄目なんだ。",
+		   NULL, "...I couldn't think only about food expenses.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もっと…お金がいる。",
+		   NULL, "I... needed more money.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//（おいおい前原圭一、いつの間にお金さえあれば何とかなるって論法になったんだ？＠　お金があったって...そもそも両親の許可がなけりゃ無理だろ＠　女の子を長期間預かる...なんて！￥
+	OutputLine(NULL, "（おいおい前原圭一、いつの間にお金さえあれば何とかなるって論法になったんだ？！",
+		   NULL, "(Hey, wait, Keiichi Maebara, since when was all this about money?!", Line_WaitForInput);
+	OutputLine(NULL, "　お金があったって…そもそも両親の許可がなけりゃ無理だろ！",
+		   NULL, " Even if you could afford it... you would need your parents' permission first!", Line_WaitForInput);
+	OutputLine(NULL, "　女の子を長期間預かる…なんて！）",
+		   NULL, " They'd be looking after a young girl for a really long time...!)", Line_Normal);
+	ClearMessage();
+
+//　何て言って説得するんだ...＠
+//　......ちょっとの冷静さがあるなら前原圭一、...そんなの無理だってすぐにわかるぞ＠
+	OutputLine(NULL, "　何て言って説得するんだ…？",
+		   NULL, "What would I say to persuade them...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ちょっとの冷静さがあるなら前原圭一、…そんなの無理だってすぐにわかるぞ？",
+		   NULL, "...Just calm down a little bit, Keiichi Maebara, and you'll realize right away that you can't.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　ちょっと真面目に聞いてもらえたとしても、警察へ連絡しなさいってなるに決まってる￥
+	OutputLine(NULL, "　ちょっと真面目に聞いてもらえたとしても、警察へ連絡しなさいってなるに決まってる。",
+		   NULL, "Even if you asked them seriously, they would tell you to call the police.", Line_Normal);
+	ClearMessage();
+
+//　仮に同情が得られたとしても、どうして前原家が負担を全面的に受けなければならないのか＠
+//　という話になるだろう＠
+	OutputLine(NULL, "　仮に同情が得られたとしても、どうして前原家が負担を全面的に受けなければならないのか？",
+		   NULL, "Even if you managed to gain their empathy, why should the Maebara family have to shoulder all of the burden by itself?", Line_WaitForInput);
+	OutputLine(NULL, "　という話になるだろう。",
+		   NULL, " That's what would happen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......そう＠
+//　......とても悲しくて悔しいけど、...俺ひとりがどんなに決意したって＠
+//　......俺ひとりの決意じゃ、......何も救えないんだ￥
+	OutputLine(NULL, "　……そう。",
+		   NULL, "...That was it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……とても悲しくて悔しいけど、…俺ひとりがどんなに決意したって。",
+		   NULL, "...It was very sad and frustrating... but no matter how much I wanted to help...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……俺ひとりの決意じゃ、……何も救えないんだ。",
+		   NULL, "My resolution alone... couldn't save anything.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	FadeFilm( 1000, TRUE );
+
+//「............そんなにも、.........子供って無力なのかよ......？＠
+//　......悔しかった＠
+//　......想いでは誰にも負けないと思っていた＠...それに関しては、監督にだって負けないと思っていた＠.........なのに...￥
+	OutputLine(NULL, "「…………そんなにも、………子供って無力なのかよ……？」",
+		   NULL, "\"......Are kids... are they really this powerless...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……悔しかった。",
+		   NULL, "...I felt frustrated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……想いでは誰にも負けないと思っていた。",
+		   NULL, "...I believed my feelings were stronger than anyone else's.", Line_WaitForInput);
+	OutputLine(NULL, "…それに関しては、監督にだって負けないと思っていた。",
+		   NULL, " ...I even thought they were stronger than Coach's.", Line_WaitForInput);
+	OutputLine(NULL, "………なのに…。",
+		   NULL, " ...And yet...", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//　その時、ドアが二度ノックされ、お袋が顔を覗かせた￥
+	OutputLine(NULL, "　その時、ドアが二度ノックされ、お袋が顔を覗かせた。",
+		   NULL, "At that point, there were two knocks at my door, and Mom poked her head inside.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_082", 400 );
+	PlayBGM( 1, "msys13", 128, 0 );
+
+//「起きてたの＠　さっきからご飯ってずっと呼んでるわよ？＠
+//「......あ、...ん、今行く...。￥
+	OutputLine(NULL, "「起きてたの？",
+		   NULL, "\"Were you awake?", Line_WaitForInput);
+	OutputLine(NULL, "　さっきからご飯ってずっと呼んでるわよ？」",
+		   NULL, " I've been calling you for dinner for a while.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「……あ、…ん、今行く…。」",
+		   NULL, "\"...Oh... Yeah, I'm coming...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawScene( "bg_210", 400 );
+
+//　親のすねをかじる身でこんなことは言ってはいけないが＠
+//　......俺はただこうしてあぐらをかいてるだけで、食事が現れる＠
+//　...それはすごく当り前で、俺を生んだ親の責任だと開き直ってきた＠
+	OutputLine(NULL, "　親のすねをかじる身でこんなことは言ってはいけないが。",
+		   NULL, "As someone financially dependent on his parents, I shouldn't say this, but...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……俺はただこうしてあぐらをかいてるだけで、食事が現れる。",
+		   NULL, "I just sat around doing nothing, and food suddenly appeared.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それはすごく当り前で、俺を生んだ親の責任だと開き直ってきた。",
+		   NULL, "...It felt so natural to me that I'd shamelessly thought of it as the responsibility of the parents who gave birth to me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......だが、その当り前なものが実は権利であることを知った時＠
+//　......その権利を他人に与えるのがいかに難しいものが思い知る.........￥
+	OutputLine(NULL, "　……だが、その当り前なものが実は権利であることを知った時。",
+		   NULL, "...But when I realized that natural thing was actually a privilege...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……その権利を他人に与えるのがいかに難しいものが思い知る………。",
+		   NULL, "I came to realize just how hard it was to grant that privilege to others...", Line_Normal);
+	ClearMessage();
+
+//　普段と代わり映えしない地味な食事も、今夜はそれ以上の意味を持っていた＠
+//　今ここには親父とお袋と俺の、三人分の食事が並べられている＠
+//　......そこに、もう一人分の食事を追加することが、どれだけ難しいことか...￥
+	OutputLine(NULL, "　普段と代わり映えしない地味な食事も、今夜はそれ以上の意味を持っていた。",
+		   NULL, "Even the boring meal in front of me, no better than it ever was, had more meaning than that tonight.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今ここには親父とお袋と俺の、三人分の食事が並べられている。",
+		   NULL, "There was food for three on the table right now—for Dad, for Mom, and for me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そこに、もう一人分の食事を追加することが、どれだけ難しいことか…。",
+		   NULL, "...I couldn't imagine how hard it would be to add another place at the table...", Line_Normal);
+	ClearMessage();
+
+//　.........考えろ前原圭一＠
+//　...食事を四人分にすることが難しいなら、...三人分の食事で四人が食うことを考えればいい￥
+	OutputLine(NULL, "　………考えろ前原圭一。",
+		   NULL, "......Think, Keiichi Maebara.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…食事を四人分にすることが難しいなら、…三人分の食事で四人が食うことを考えればいい。",
+		   NULL, "...If it was hard to make food for four... then just think about how four people could eat food made for three.", Line_Normal);
+	ClearMessage();
+
+//　..................お...＠
+//　.........発想の転換から、......思いもよらなかった大胆な策が浮かび始める...￥
+	OutputLine(NULL, "　………………お…。",
+		   NULL, ".........Oh...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………発想の転換から、……思いもよらなかった大胆な策が浮かび始める…。",
+		   NULL, "...I changed around the way I thought... and with that I began to consider an unthinkably bold plan...", Line_Normal);
+	ClearMessage();
+
+//　そうだ＠
+//　......両親に断る必要はないのだ＠...隠れ住まえばいいのだ￥
+	OutputLine(NULL, "　そうだ。",
+		   NULL, "That's right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……両親に断る必要はないのだ。",
+		   NULL, "...I didn't need to get my parents' permission.", Line_WaitForInput);
+	OutputLine(NULL, "…隠れ住まえばいいのだ。",
+		   NULL, " ...She should just live here in secret.", Line_Normal);
+	ClearMessage();
+
+//　前に見つかって怒られたけど...、俺の部屋って確か、窓からうまく一階の屋根とか雨どいを伝えば、外から直接出入りすることは可能だ＠
+//　俺よりも身体能力の高い沙都子なら、ますます容易にこなすだろう＠
+	OutputLine(NULL, "　前に見つかって怒られたけど…、俺の部屋って確か、窓からうまく一階の屋根とか雨どいを伝えば、外から直接出入りすることは可能だ。",
+		   NULL, "I got upset when I found out a while ago... but if I remembered right, if you climbed out the window then shimmied down the first floor roof or the gutter, you could go in and out of the house directly from my room.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺よりも身体能力の高い沙都子なら、ますます容易にこなすだろう。",
+		   NULL, "Satoko's physical ability far surpassed my own, so it would be even easier for her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...さっきから考えもしなかったが、この隠れ住まうというのは実は必須条件なのだ￥
+	OutputLine(NULL, "　…さっきから考えもしなかったが、この隠れ住まうというのは実は必須条件なのだ。",
+		   NULL, "...I hadn't even thought about it, but her living here secretly was actually a necessity.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	DrawScene( "bg_119", 1000 );
+
+//　俺の家に沙都子を来させるという策は、公的機関が様子見だと判断した時に実施される＠
+	OutputLine(NULL, "　俺の家に沙都子を来させるという策は、公的機関が様子見だと判断した時に実施される。",
+		   NULL, "I'd only have to bring Satoko to my house when the public agency said they would 'wait and see'.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...つまり、沙都子の叔父が相変わらず保護者であり続ける場合だ￥
+	OutputLine(NULL, "　…つまり、沙都子の叔父が相変わらず保護者であり続ける場合だ。",
+		   NULL, "...In other words, if Satoko's uncle continued to be her guardian.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_121", 400 );
+
+//　そんな状況下で公然とうちにいることが知られていたなら、叔父はすぐにもうちに押しかけてきて、沙都子を連れ戻すだろう＠
+	OutputLine(NULL, "　そんな状況下で公然とうちにいることが知られていたなら、叔父はすぐにもうちに押しかけてきて、沙都子を連れ戻すだろう。",
+		   NULL, "If, in such a situation, word got out that she was here, her uncle would barge in and drag Satoko back with him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　叔父は正当な保護者なのだから、うちの両親もあっさり引き渡すに違いない＠
+//　だから...うちに住んでいることは秘密でなければならない＠
+//（秘密...という点からもやはり両親の協力があった方が心強いが...、まず味方から騙す...なんて話もあるよな......。￥
+	OutputLine(NULL, "　叔父は正当な保護者なのだから、うちの両親もあっさり引き渡すに違いない。",
+		   NULL, "Her uncle was her rightful guardian, so my parents would hand her over without an argument, no doubt.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから…うちに住んでいることは秘密でなければならない！",
+		   NULL, "So... I needed to keep it a secret that she was living here!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "（秘密…という点からもやはり両親の協力があった方が心強いが…、まず味方から騙す…なんて話もあるよな……。）",
+		   NULL, "(If it needs to be a secret... then having my parents help would mean a lot, but... gotta deceive your allies first, like they always say...)", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_210", "left", 0, 0, 300 );
+
+//　......よし＠
+//　...非現実的な両親説得よりも、......隠れ住まう、隠居策で模索してみよう＠
+//　俺がいる時は、二階の俺の自室で息を殺していればいい＠
+	OutputLine(NULL, "　……よし。",
+		   NULL, "...Okay.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…非現実的な両親説得よりも、……隠れ住まう、隠居策で模索してみよう。",
+		   NULL, "...Persuading my parents was an unrealistic proposition... so I'll search for a way to have her live here in secret.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺がいる時は、二階の俺の自室で息を殺していればいい。",
+		   NULL, "When I was around, she would just have to be really quiet in my room on the second floor.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......問題なのは日中だ￥
+	OutputLine(NULL, "　……問題なのは日中だ。",
+		   NULL, "...The issue was the daytime.", Line_Normal);
+	ClearMessage();
+
+//　叔父から隠れている以上、沙都子の登校は控えるべきだ＠
+//　......寂しがるだろうが、学校には行かない方がいい＠（沙都子程度の学年の勉強なら、俺だって充分教えられるぞ＠...実際、学校でだって、自分の勉強よりも後輩の勉強の面倒を見てることの方が多いし！￥
+	OutputLine(NULL, "　叔父から隠れている以上、沙都子の登校は控えるべきだ。",
+		   NULL, "If she was hiding from her uncle, then she shouldn't go to school.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……寂しがるだろうが、学校には行かない方がいい。",
+		   NULL, "...It might be lonely, but not going would be the better option.", Line_WaitForInput);
+	OutputLine(NULL, "（沙都子程度の学年の勉強なら、俺だって充分教えられるぞ。",
+		   NULL, " (I could easily teach Satoko the stuff she learns in her grade.", Line_WaitForInput);
+	OutputLine(NULL, "…実際、学校でだって、自分の勉強よりも後輩の勉強の面倒を見てることの方が多いし！）",
+		   NULL, " ...Actually, during school, I mostly help all the younger kids out rather than study my own stuff!)", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_117", 400 );
+
+//　......日中は、俺が学校に行かなくてはならないので家にいない＠
+	OutputLine(NULL, "　……日中は、俺が学校に行かなくてはならないので家にいない。",
+		   NULL, "...During the day, I would need to go to school, so I wouldn't be at home.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......俺がいい年になってからは、親もプライバシーを認めてくれたので、俺の不在を突いて自室に勝手に入るようなことはしない＠（...と思う。＠......俺の部屋に篭っててくれれば、...大丈夫、だろうか...￥
+	OutputLine(NULL, "　……俺がいい年になってからは、親もプライバシーを認めてくれたので、俺の不在を突いて自室に勝手に入るようなことはしない。",
+		   NULL, "...My parents respected my privacy now that I was this age, so they wouldn't go snooping around in my room while I was gone.", Line_WaitForInput);
+	OutputLine(NULL, "（…と思う。）",
+		   NULL, " (...I think.)", Line_WaitForInput);
+	OutputLine(NULL, "……俺の部屋に篭っててくれれば、…大丈夫、だろうか…。",
+		   NULL, " ...If she holed herself up in my room... it would be okay, right...?", Line_Normal);
+	ClearMessage();
+
+//　もしも親が来れば、二階という立地のお陰で、事前に階段の音で接近を察知できる＠
+	OutputLine(NULL, "　もしも親が来れば、二階という立地のお陰で、事前に階段の音で接近を察知できる。",
+		   NULL, "If my parents did come, thanks to where the second floor was, she could hear their approach from the sound of them coming up the stairs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　そして階段を上がりきるのに（...推定何秒くらいだろう）どれくらいかのラグタイムがあり、その隙に、押入れに隠れるくらいはできるはず...￥
+	OutputLine(NULL, "　そして階段を上がりきるのに（…推定何秒くらいだろう）どれくらいかのラグタイムがあり、その隙に、押入れに隠れるくらいはできるはず…。",
+		   NULL, "And there would be a little bit of time before they got all the way up (...I estimated a few seconds) that she would be able to hide herself in the closet...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_210", "right", 0, 0, 300 );
+
+//　待て待て圭一＠　ちょっと矛盾が出てきたぞ...！＠
+//　そもそも沙都子が学校に行けないなら、お昼ご飯はどうするんだよ？＠
+	OutputLine(NULL, "　待て待て圭一！",
+		   NULL, "Wait, wait, Keiichi!", Line_WaitForInput);
+	OutputLine(NULL, "　ちょっと矛盾が出てきたぞ…！！",
+		   NULL, " Something doesn't make sense...!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そもそも沙都子が学校に行けないなら、お昼ご飯はどうするんだよ？！",
+		   NULL, "If she can't go to school, then what'll she do for lunch?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......落ち着けよ俺＠　そんなの俺の弁当を置いていけばいいだけのことじゃないか＠
+//　俺は弁当なしで登校し、みんなが多く作ってきた弁当をわけてもらえばいい＠
+	OutputLine(NULL, "　……落ち着けよ俺！",
+		   NULL, "...Calm down already!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなの俺の弁当を置いていけばいいだけのことじゃないか。",
+		   NULL, " I could just leave her my own lunch, couldn't I?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺は弁当なしで登校し、みんなが多く作ってきた弁当をわけてもらえばいい。",
+		   NULL, "I should just go to school without lunch and get everyone else to split theirs with me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......よし、...大丈夫＠......まだ矛盾や盲点はあるか￥
+	OutputLine(NULL, "　……よし、…大丈夫。",
+		   NULL, "...Okay... that's good.", Line_WaitForInput);
+	OutputLine(NULL, "……まだ矛盾や盲点はあるか？",
+		   NULL, " ...No more contradictions or oversights, right?", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "msys06", 128, 0 );
+
+//　...そうだ、朝と夜の食事＠
+//　.........朝は何とか我慢してもらうこともできる＠
+	OutputLine(NULL, "　…そうだ、朝と夜の食事。",
+		   NULL, "...Oh, breakfast and dinner.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………朝は何とか我慢してもらうこともできる。",
+		   NULL, "......I could somehow get her to go without breakfast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...午前中を寝過ごした日曜日なんて、一日二食で問題ないし￥
+	OutputLine(NULL, "　…午前中を寝過ごした日曜日なんて、一日二食で問題ないし。",
+		   NULL, "...I can go with two meals a day when I sleep in on Sundays, after all.", Line_Normal);
+	ClearMessage();
+
+//　夜は、......まず、俺が食欲が増進したことにし、日々の食事を大盛りにしてもらうようにする＠
+//　......そして、その食事の一部を、何とか沙都子に与えればいい...￥
+	OutputLine(NULL, "　夜は、……まず、俺が食欲が増進したことにし、日々の食事を大盛りにしてもらうようにする。",
+		   NULL, "Every night... I'd pretend as though I had a bigger appetite, then ask for a bigger helping.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そして、その食事の一部を、何とか沙都子に与えればいい…！",
+		   NULL, "...And then, I could just somehow give part of that to Satoko...!", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//　.........試しに＠
+	OutputLine(NULL, "　………試しに。",
+		   NULL, "...As a test...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......焼き魚の乗った皿を持ったまま席を立ってみた￥
+	OutputLine(NULL, "　……焼き魚の乗った皿を持ったまま席を立ってみた。",
+		   NULL, "I stood up from my seat, with my plate of fish in my hands.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 2, "lsys13", 128, 0 );
+
+//「どうしたの圭一＠　ご飯は座って食べなさい。＠
+//「ん、うん＠...ちょっと気分が変えたくなってさ＠...自分の部屋で食べてもいいかな。＠
+//「...ボロボロ落として汚すぞ＠食事は食卓で食べなさい。＠
+//「............ん、...ごめん...。￥
+	OutputLine(NULL, "「どうしたの圭一？",
+		   NULL, "\"What's wrong, Keiichi?", Line_WaitForInput);
+	OutputLine(NULL, "　ご飯は座って食べなさい。」",
+		   NULL, " Sit down and eat your food.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「ん、うん。",
+		   NULL, "\"Um, well.", Line_WaitForInput);
+	OutputLine(NULL, "…ちょっと気分が変えたくなってさ。",
+		   NULL, " ...I'm kind of not in a good mood.", Line_WaitForInput);
+	OutputLine(NULL, "…自分の部屋で食べてもいいかな。」",
+		   NULL, " ...Could I eat up in my room?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「…ボロボロ落として汚すぞ。",
+		   NULL, "\"...You'll make a mess.", Line_WaitForInput);
+	OutputLine(NULL, "食事は食卓で食べなさい。」",
+		   NULL, " Eat dinner at the dinner table.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「…………ん、…ごめん…。」",
+		   NULL, "\"......Mm... sorry...\"", Line_Normal);
+	ClearMessage();
+
+//　...おいおい...＠
+//　たかだか...焼き魚の皿をひとつ持ち出そうとして...二人掛りかよ？＠
+	OutputLine(NULL, "　…おいおい…。",
+		   NULL, "...Hey, wait...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　たかだか…焼き魚の皿をひとつ持ち出そうとして…二人掛りかよ？！",
+		   NULL, "I only... tried to take away one plate of fish... and they ganged up on me?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　親の目を盗んで食事を持ち出すなんて...実際には無理だ￥
+	OutputLine(NULL, "　親の目を盗んで食事を持ち出すなんて…実際には無理だ。",
+		   NULL, "In reality... it was impossible for me to smuggle food away without my parents knowing about it.", Line_Normal);
+	ClearMessage();
+
+//　...でもきっと...考える価値はあるぞ＠
+//　...手品みたいな、あるいは死角的な手法で、うまく目を誤魔化す方法がきっとある...＠
+	OutputLine(NULL, "　…でもきっと…考える価値はあるぞ。",
+		   NULL, "...But it... it must have been worth taking the time to think about.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…手品みたいな、あるいは死角的な手法で、うまく目を誤魔化す方法がきっとある…。",
+		   NULL, "...There must be some trick, some method to avoid them realizing...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//（例えそれが今日思いつかなくても、明日思いつくかもしれないわけだし...！￥
+	OutputLine(NULL, "（例えそれが今日思いつかなくても、明日思いつくかもしれないわけだし…！）",
+		   NULL, "(Even if I can't think of one today, I might think of one tomorrow...!)", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+
+//　食欲も徐々になくなり、早々とごちそうさまをして俺は自室へ戻った￥
+	OutputLine(NULL, "　食欲も徐々になくなり、早々とごちそうさまをして俺は自室へ戻った。",
+		   NULL, "My appetite was rapidly fading, so I finished early and went back to my room.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_081", "right", 0, 0, 300 );
+
+//　...戻り、...沙都子の身になって考えることにした＠
+//　......例えば、今、親が階段を登ってきたとする。さぁ隠れろ...￥
+	OutputLine(NULL, "　…戻り、…沙都子の身になって考えることにした。",
+		   NULL, "...I went back there... and tried to think about it from Satoko's point of view.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……例えば、今、親が階段を登ってきたとする。さぁ隠れろ…！",
+		   NULL, "...For example, let's say my parents were coming up the stairs right now. I've got to hide...!", Line_Normal);
+	ClearMessage();
+
+//　押入れをあける＠
+//　......ガタガタ＠...静かに開かない￥
+	OutputLine(NULL, "　押入れをあける。",
+		   NULL, "I opened the closet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ガタガタ。",
+		   NULL, "...Clatter clatter.", Line_WaitForInput);
+	OutputLine(NULL, "…静かに開かない。",
+		   NULL, " ...It didn't open quietly.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "msys21", 128, 0 );
+
+//　おいおい...、いつもは静かにすーっと開くじゃないか？＠
+//　何で今頃になって急に＠　欠陥住宅かよ？＠　もう家にガタが来たのか？＠　それともロウでも足りなくなんたのか？＠　ワックスでも塗ればいいのかッ？￥
+	OutputLine(NULL, "　おいおい…、いつもは静かにすーっと開くじゃないか？！",
+		   NULL, "Hey, wait... Didn't it always open real smooth and quiet?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何で今頃になって急に！",
+		   NULL, "Why was it suddenly doing this now?!", Line_WaitForInput);
+	OutputLine(NULL, "　欠陥住宅かよ？！",
+		   NULL, " What is this, a faulty house?!", Line_WaitForInput);
+	OutputLine(NULL, "　もう家にガタが来たのか？！",
+		   NULL, " Had it already gotten old or something?!", Line_WaitForInput);
+	OutputLine(NULL, "　それともロウでも足りなくなんたのか？！",
+		   NULL, " Or was I just not putting enough work into it?!", Line_WaitForInput);
+	OutputLine(NULL, "　ワックスでも塗ればいいのかッ？！",
+		   NULL, " Could I just plaster it with wax?!", Line_Normal);
+	ClearMessage();
+
+//　...音としてはわずかかもしれないが、...階段を上がってきた親に気配を察知させないという意味では不安が残る＠
+	OutputLine(NULL, "　…音としてはわずかかもしれないが、…階段を上がってきた親に気配を察知させないという意味では不安が残る。",
+		   NULL, "...The sound itself may have been soft... but it left me uneasy as to whether my parents would detect it happening when they climbed the stairs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......でもこのくらいは何とかなる問題だ＠
+//　音がしなくなるように、ちょっと俺が改造するなりの工夫をすればいいだけだ￥
+	OutputLine(NULL, "　……でもこのくらいは何とかなる問題だ。",
+		   NULL, "...But this was an easy problem—I could do something about it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　音がしなくなるように、ちょっと俺が改造するなりの工夫をすればいいだけだ。",
+		   NULL, "I just had to fix it up a little bit so it didn't make noise anymore.", Line_Normal);
+	ClearMessage();
+
+//　とりあえず...隠れるのに成功したとして押入れに篭ってみよう￥
+	OutputLine(NULL, "　とりあえず…隠れるのに成功したとして押入れに篭ってみよう。",
+		   NULL, "For now... I'll close myself in the closet as though I'd successfully hid.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeOutBGM( 2, 1000, TRUE );
+	PlaySE( 3, "wa_020", 128, 64 );
+	DrawSceneWithMask( "black", "right", 0, 0, 200 );
+
+//　.........基本的に布団はいつも出しっ放し＠
+//　押入れを親が開ける理由はあまり思いつかない＠
+//　...それでも、何かの理由で開けることがあるかもしれない￥
+	OutputLine(NULL, "　………基本的に布団はいつも出しっ放し。",
+		   NULL, "......I basically always left my futon out on the floor.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　押入れを親が開ける理由はあまり思いつかない。",
+		   NULL, "I couldn't think of any real reason my parents would want to go into my closet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それでも、何かの理由で開けることがあるかもしれない。",
+		   NULL, "...Even so, there still might be some reason they would.", Line_Normal);
+	ClearMessage();
+
+//　仮に開けられても、気付かれないようなカモフラージュや改造が必要かもしれない＠
+//　でも、そんなものに凝れば凝るほど、...沙都子が隠れるための時間は足りなくなり、音で気配を察知させてしまう可能性は高くなる...￥
+	OutputLine(NULL, "　仮に開けられても、気付かれないようなカモフラージュや改造が必要かもしれない。",
+		   NULL, "I might need to construct some sort of camouflage so that she wouldn't be noticed even if they did open it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、そんなものに凝れば凝るほど、…沙都子が隠れるための時間は足りなくなり、音で気配を察知させてしまう可能性は高くなる…。",
+		   NULL, "But the more she worried about that... the less time she'd have to actually hide, meaning it would be more likely they'd hear a noise...", Line_Normal);
+	ClearMessage();
+
+//　............その時、.........トイレに行きたくなった￥
+	OutputLine(NULL, "　…………その時、………トイレに行きたくなった。",
+		   NULL, "...And then... I suddenly had to go to the bathroom.", Line_Normal);
+	ClearMessage();
+
+//　...トイレ......？￥
+	OutputLine(NULL, "　…トイレ……？！",
+		   NULL, "...The bathroom...?!", Line_Normal);
+	ClearMessage();
+
+//　こんな当り前の排泄行為が......実は致命的だったのだ...￥
+	OutputLine(NULL, "　こんな当り前の排泄行為が……実は致命的だったのだ…。",
+		   NULL, "The need to use the toilet—so obvious, and yet such a fatal flaw...", Line_Normal);
+	ClearMessage();
+
+//　トイレは一階にしかない＠
+//　トイレを家人に気付かせずに使用するなんて絶対に無理だ＠
+	OutputLine(NULL, "　トイレは一階にしかない。",
+		   NULL, "The only bathroom was on the first floor.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　トイレを家人に気付かせずに使用するなんて絶対に無理だ。",
+		   NULL, "It would be absolutely impossible for her to use it without my family realizing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......俺の部屋で済ませられるように、携帯便所（まぬけに言うならおまるとかのことだ＠...沙都子は嫌がるだろうな）の準備がいるかもしれない￥
+	OutputLine(NULL, "　……俺の部屋で済ませられるように、携帯便所（まぬけに言うならおまるとかのことだ。",
+		   NULL, "...I might need to set up a portable toilet (like a chamber pot, I guess...", Line_WaitForInput);
+	OutputLine(NULL, "…沙都子は嫌がるだろうな）の準備がいるかもしれない。",
+		   NULL, " Satoko would hate it) so she could go in my room.", Line_Normal);
+	ClearMessage();
+
+//　...でも、...糞尿の臭いって、......結構きつい＠
+//　多分、敏感ならこの部屋に入らなくても異臭に気付く￥
+	OutputLine(NULL, "　…でも、…糞尿の臭いって、……結構きつい。",
+		   NULL, "...But... the stench... would be pretty terrible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　多分、敏感ならこの部屋に入らなくても異臭に気付く。",
+		   NULL, "Anyone sensitive would probably notice the smell without even coming into the room.", Line_Normal);
+	ClearMessage();
+
+//　......風呂はまだいいさ＠
+//　家族の不在の隙を突くこともできる＠
+//　でも、トイレだけはどうにもならない＠
+//　...おなかが痛くなったとき、両親が一階をうろちょろしていたら...どうにもならない...￥
+	OutputLine(NULL, "　……風呂はまだいいさ。",
+		   NULL, "...The bath was okay, though.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　家族の不在の隙を突くこともできる。",
+		   NULL, "She could just take a bath when my parents were out.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、トイレだけはどうにもならない。",
+		   NULL, "But I couldn't do anything about a toilet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…おなかが痛くなったとき、両親が一階をうろちょろしていたら…どうにもならない…！",
+		   NULL, "...When her stomach started to hurt... if my parents were lazing around downstairs... she'd be in trouble...!", Line_Normal);
+	ClearMessage();
+
+//　......この頃には...いつの間にか、両手が頭に爪を立てていた＠
+//　真っ暗な押入れの中で、膝を立てて座り＠......顔を膝に埋め、両手で頭を掻き毟る￥
+	OutputLine(NULL, "　……この頃には…いつの間にか、両手が頭に爪を立てていた。",
+		   NULL, "...It was then that I noticed... that I'd been clawing at my head with both hands.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　真っ暗な押入れの中で、膝を立てて座り。",
+		   NULL, "I sat down in the dark closet with my knees against my chest.", Line_WaitForInput);
+	OutputLine(NULL, "……顔を膝に埋め、両手で頭を掻き毟る。",
+		   NULL, " ...I buried my face in them and tore at my hair.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	ClearMessage();
+
+//　...考えれば考えるほどに、矛盾が出る＠
+//　...考えれば考えるほど破綻し＠
+//　...悩めば悩むほどに.........自分の無力さを思い出させられるのだ￥
+	OutputLine(NULL, "　…考えれば考えるほどに、矛盾が出る。",
+		   NULL, "...The more I thought, the more contradictions popped up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…考えれば考えるほど破綻し、",
+		   NULL, "...The more I thought, the more things failed...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…悩めば悩むほどに………自分の無力さを思い出させられるのだ。",
+		   NULL, "and the more I worried... the more I was reminded of how little power I actually had.", Line_Normal);
+	ClearMessage();
+
+//　窮屈なところにずっといたので、だんだん背骨が痛くなってきた＠
+//　でもその痛みは、俺が沙都子をかくまったなら、強いねばならない痛みなのだ￥
+	OutputLine(NULL, "　窮屈なところにずっといたので、だんだん背骨が痛くなってきた。",
+		   NULL, "My back started to hurt from staying in a cramped place for so long.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でもその痛みは、俺が沙都子をかくまったなら、強いねばならない痛みなのだ。",
+		   NULL, "But if I was to shelter Satoko, I would need to force her to feel this pain.", Line_Normal);
+	ClearMessage();
+
+//　...こんな暗くて狭くて、...息苦しい場所での生活を...ずっと＠
+//　それでも、叔父の下で虐められている生活よりはずっとマシだと、...思いたい￥
+	OutputLine(NULL, "　…こんな暗くて狭くて、…息苦しい場所での生活を…ずっと。",
+		   NULL, "...To live in such a dark, narrow... suffocating place... forever.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それでも、叔父の下で虐められている生活よりはずっとマシだと、…思いたい。",
+		   NULL, "But it would still be better than being abused by her uncle... or so I wanted to think.", Line_Normal);
+	ClearMessage();
+
+//　......息苦しくなり、...俺はとうとう根を上げ、押入れから這い出た￥
+	OutputLine(NULL, "　……息苦しくなり、…俺はとうとう根を上げ、押入れから這い出た。",
+		   NULL, "...It got hard to breathe... so I gave in and crawled out of the closet.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	PlaySE( 3, "wa_020", 128, 64 );
+	DrawSceneWithMask( "bg_082", "left", 0, 0, 200 );
+	PlayBGM( 1, "msys13", 128, 0 );
+
+//　時計を見ると......なんと、もう午前３時半＠
+//　......信じられないくらいに時間の経過が早かった＠
+	OutputLine(NULL, "　時計を見ると……なんと、もう午前３時半。",
+		   NULL, "I looked at the clock... and to my surprise, it was 3:30 in the morning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……信じられないくらいに時間の経過が早かった。",
+		   NULL, "...It had felt like so little time, but it was so unbelievably long.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　それを認めると、わざわざ時間に合わせるかのように、強烈な眠気が襲ってきた＠
+	OutputLine(NULL, "　それを認めると、わざわざ時間に合わせるかのように、強烈な眠気が襲ってきた。",
+		   NULL, "When I realized that, I was slammed with a terrible urge to sleep as if the time had only just caught up with me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	ChangeScene( "black", 7, 200, );
+	PlaySE( 3, "wa_004", 128, 64 );
+//　その抗いがたい力に負け、...布団の上にばったりと倒れこむ￥
+	OutputLine(NULL, "　その抗いがたい力に負け、…布団の上にばったりと倒れこむ。",
+		   NULL, "I didn't have enough strength to fight it... and I fell flat onto my futon.", Line_Normal);
+	ClearMessage();
+
+//　...くそ、このまま寝ちゃうわけには行かないぞ＠
+//　......俺が無駄に時間を過ごせば、それは結局、様子見を選んだ魅音たちや監督とまったく同じことになってしまうのだ￥
+	OutputLine(NULL, "　…くそ、このまま寝ちゃうわけには行かないぞ。",
+		   NULL, "...Shit, I can't just go to sleep like this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……俺が無駄に時間を過ごせば、それは結局、様子見を選んだ魅音たちや監督とまったく同じことになってしまうのだ。",
+		   NULL, "...If I waste any time, that'll mean I'm taking the same 'wait and see' attitude that Mion and Coach and everyone else did.", Line_Normal);
+	ClearMessage();
+
+//　俺は...他の誰よりも、一分一秒でも悩み、考え、...沙都子を救い出すための方法を考えなくてはならない...￥
+	OutputLine(NULL, "　俺は…他の誰よりも、一分一秒でも悩み、考え、…沙都子を救い出すための方法を考えなくてはならない…。",
+		   NULL, "I needed to... keep worrying about how to rescue Satoko for a minute, or even a second longer... than everyone else.", Line_Normal);
+	ClearMessage();
+
+//　.........何かいい方法はないか＠
+//　...何かいい方法はないか＠
+	OutputLine(NULL, "　………何かいい方法はないか。",
+		   NULL, "......Isn't there a better way?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…何かいい方法はないか。",
+		   NULL, "...Isn't there a better way?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...そんな独り言だけが、螺旋のようにぐるぐると渦を巻き、......次第に俺の意識を飲み込んでいった.........￥
+	OutputLine(NULL, "　…そんな独り言だけが、螺旋のようにぐるぐると渦を巻き、……次第に俺の意識を飲み込んでいった………。",
+		   NULL, "...That one phrase I spoke to myself swirled around and around in a spiral... and steadily took over my entire mind......", Line_Normal);
+	ClearMessage();
+
+//　意識を失う最後の一瞬、考える￥
+	OutputLine(NULL, "　意識を失う最後の一瞬、考える。",
+		   NULL, "For my last moment of consciousness, I thought.", Line_Normal);
+	ClearMessage();
+
+//　......俺が今夜考えたことは確かに盲点の多いものだったが、...発想は決して悪くなかった＠
+	OutputLine(NULL, "　……俺が今夜考えたことは確かに盲点の多いものだったが、…発想は決して悪くなかった。",
+		   NULL, "...There were a lot of blind spots in what I'd considered tonight... but I absolutely wasn't wrong for having those ideas.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......明日、この大胆な策をみんなに提案してみよう＠
+//　......魅音にも出来る協力があるかもしれないし、意外に鋭いレナがいい提案をしてくれるかもしれない￥
+	OutputLine(NULL, "　……明日、この大胆な策をみんなに提案してみよう。",
+		   NULL, "...Tomorrow, I would suggest this bold plan to the others.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……魅音にも出来る協力があるかもしれないし、意外に鋭いレナがいい提案をしてくれるかもしれない。",
+		   NULL, "...Mion might be able to help somehow, and Rena was really sharp, so she might have a good suggestion.", Line_Normal);
+	ClearMessage();
+
+//　.........そして何よりも＠
+//　...みんなで協力して、......沙都子を救うことを再確認しなくてはならないのだ......＠
+//　....................................眠りの誘いに負ける自分が情けない＠
+	OutputLine(NULL, "　………そして何よりも。",
+		   NULL, "...And above all...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…みんなで協力して、……沙都子を救うことを再確認しなくてはならないのだ……。",
+		   NULL, "We needed to rescue Satoko once again... with everyone helping out...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………………………………眠りの誘いに負ける自分が情けない。",
+		   NULL, "............I felt pathetic for letting myself fall asleep.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　.........すまん、...沙都子...￥
+	OutputLine(NULL, "　………すまん、…沙都子…。",
+		   NULL, "...I'm sorry, Satoko...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	DrawScene( "bg_118", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "black", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+}

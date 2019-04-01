@@ -1,0 +1,610 @@
+﻿void main()
+{
+
+//*Sub_Tips_045
+//gosub *tip_s
+
+//■タイトル：　沙都子のトラップ講座（初級）
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys12", 128, 0 );
+
+//「俺が保証する＠沙都子ならこの山で篭城して、一個師団相手くらいなら充分にあしらえるに違いない。＠
+	OutputLine(NULL, "「俺が保証する。",
+		   NULL, "\"I know one thing for sure.", Line_WaitForInput);
+	OutputLine(NULL, "沙都子ならこの山で篭城して、一個師団相手くらいなら充分にあしらえるに違いない。」",
+		   NULL, " Satoko could fend off an entire army division by holing up in this mountain.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「私は知ってるよ＠沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。＠
+	OutputLine(NULL, "「私は知ってるよ。",
+		   NULL, "\"I know all about it!", Line_WaitForInput);
+	OutputLine(NULL, "沙都子はソ連の軍事顧問団に混じって、某国でトラップの訓練教官をやってたんだ。」",
+		   NULL, " Satoko was one of the Soviet military advisors that gave training on traps to that one country.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「そんなヘンな話はいいから...誰か助けてぇえぇ～～！！￥
+	OutputLine(NULL, "「そんなヘンな話はいいから…誰か助けてぇえぇ〜〜！！」",
+		   NULL, "\"Stop saying weird things... Somebody help meee~~!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_205", 400 );
+	PlayBGM( 1, "msys02", 128, 0 );
+
+//　......一体、...どういう仕掛けにどういう風に引っ掛かれば俺たちはこうなるんだろう￥
+	OutputLine(NULL, "　……一体、…どういう仕掛けにどういう風に引っ掛かれば俺たちはこうなるんだろう。",
+		   NULL, "...How did it come to this? What traps did we fall for, and how did we fall for them?", Line_Normal);
+	ClearMessage();
+
+//　魅音は脱出不可能のやたらと細い落し穴にはまり、首だけを地上にのぞかせていた＠
+	OutputLine(NULL, "　魅音は脱出不可能のやたらと細い落し穴にはまり、首だけを地上にのぞかせていた。",
+		   NULL, "Mion was caught in a profusely thin pitfall she couldn't escape from, and only her head was poking above the ground.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　レナは頭からすっぽりブリキのバケツを被り、それが脱げなくてもがいている＠
+	OutputLine(NULL, "　レナは頭からすっぽりブリキのバケツを被り、それが脱げなくてもがいている。",
+		   NULL, "Rena's head was completely covered by a tin bucket; she was squirming around in a vain attempt to remove it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　...どちらも実に滑稽だが、それでもまだいいさ＠足が地に着いてるだけマシだ￥
+	OutputLine(NULL, "　…どちらも実に滑稽だが、それでもまだいいさ。",
+		   NULL, "...Either of these really were funny, but that's where it ended.", Line_WaitForInput);
+	OutputLine(NULL, "足が地に着いてるだけマシだ。",
+		   NULL, " At least they had their feet on the ground.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_142", "left", 0, 0, 300 );
+	PlayBGM( 2, "lsys12", 128, 0 );
+
+//「......圭ちゃんの方はどーおー＠　抜けられそうー＠　早く抜け出しておじさんを助けてよー。＠
+	OutputLine(NULL, "「……圭ちゃんの方はどーおー？",
+		   NULL, "\"...Kei-chan, what about youuu?", Line_WaitForInput);
+	OutputLine(NULL, "　抜けられそうー？",
+		   NULL, " Think you can get out of that?", Line_WaitForInput);
+	OutputLine(NULL, "　早く抜け出しておじさんを助けてよー。」",
+		   NULL, " Hurry up and get out so you can save this old man!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「ぬ、抜け出して助けるのは魅音の方だー＠　この簀巻き状態の俺に、何をしろと言うんだー！￥
+	OutputLine(NULL, "「ぬ、抜け出して助けるのは魅音の方だー！",
+		   NULL, "\"Y-You're the one who should be breaking out and saving me, Mion!", Line_WaitForInput);
+	OutputLine(NULL, "　この簀巻き状態の俺に、何をしろと言うんだー！」",
+		   NULL, " What do you expect me to do in this freaking bamboo mat?!\"", Line_Normal);
+	ClearMessage();
+
+//　...俺の体はぐるぐるの簀巻き状態で、地上から２ｍくらいに吊り上げられていた＠
+	OutputLine(NULL, "　…俺の体はぐるぐるの簀巻き状態で、地上から２ｍくらいに吊り上げられていた。",
+		   NULL, "...I was wrapped up in a bamboo mat and hanging two meters above the ground.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　あぁ、...どんなトラップを仕掛けたらこんな風になるんだよ＠　えぇ？＠　沙都子￥
+	OutputLine(NULL, "　あぁ、…どんなトラップを仕掛けたらこんな風になるんだよ？",
+		   NULL, "Agh... What was this trap and how did I fall into it?", Line_WaitForInput);
+	OutputLine(NULL, "　えぇ？！",
+		   NULL, " Huh?!", Line_WaitForInput);
+	OutputLine(NULL, "　沙都子！",
+		   NULL, " It was Satoko!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 1000 );
+
+//　そもそもの発端は、都会育ちの俺が自然に親しんでないとか何とかで、山へ散策に行こうなんて話からだった￥
+	OutputLine(NULL, "　そもそもの発端は、都会育ちの俺が自然に親しんでないとか何とかで、山へ散策に行こうなんて話からだった。",
+		   NULL, "This all started when they suggested that I was unfamiliar with nature, having grown up in the city, and proposed a little exploration on the mountain.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeOutBGM( 2, 1000, TRUE );
+	DrawSceneWithMask( "bg_108", "up", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "re_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「うーん、でもレナもよく裏山は知らないよ＠/
+	OutputLine(NULL, "「うーん、でもレナもよく裏山は知らないよ？",
+		   NULL, "\"Hmm, but Rena doesn't really know how it is back there either!", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_ha_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//　レナじゃ迷子になっちゃう＠はぅ。＠
+	OutputLine(NULL, "　レナじゃ迷子になっちゃう。",
+		   NULL, " Rena might get lost.", Line_WaitForInput);
+	OutputLine(NULL, "はぅ。」",
+		   NULL, " Hau.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_se_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「裏山ねぇ＠...小さい頃はよく遊んだけど、...ここ何年かはさっぱりだなぁ＠あそこ、道を誤るとかなりデンジャラスに迷うんだよなぁ。￥
+	OutputLine(NULL, "「裏山ねぇ。",
+		   NULL, "\"The mountain out back, huh?", Line_WaitForInput);
+	OutputLine(NULL, "…小さい頃はよく遊んだけど、…ここ何年かはさっぱりだなぁ。",
+		   NULL, " ...I played there a lot when I was little... but I haven't gone there for years.", Line_WaitForInput);
+	OutputLine(NULL, "あそこ、道を誤るとかなりデンジャラスに迷うんだよなぁ。」",
+		   NULL, " If you get lost out there, things can get pretty dangerous.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_109", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sa_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「裏山なら私たちにお任せですわよー＠　山が丸ごと、私と梨花の遊び場なんですもの＠ねぇ梨花ぁ？＠
+	OutputLine(NULL, "「裏山なら私たちにお任せですわよー！",
+		   NULL, "\"You can leave the mountain to us!", Line_WaitForInput);
+	OutputLine(NULL, "　山が丸ごと、私と梨花の遊び場なんですもの。",
+		   NULL, " The whole thing is our playground.", Line_WaitForInput);
+	OutputLine(NULL, "ねぇ梨花ぁ？」",
+		   NULL, " Isn't that right, Rika?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "ri_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......みー！￥
+	OutputLine(NULL, "「……みー！」",
+		   NULL, "\"...Mew!\"", Line_Normal);
+	ClearMessage();
+
+//「おー＠それは心強いな＠じゃあここは二人の顔を立てて、二人の道案内でハイキングと行こうじゃねーか！＠
+	OutputLine(NULL, "「おー。",
+		   NULL, "\"Oh, I see!", Line_WaitForInput);
+	OutputLine(NULL, "それは心強いな。",
+		   NULL, " How reassuring.", Line_WaitForInput);
+	OutputLine(NULL, "じゃあここは二人の顔を立てて、二人の道案内でハイキングと行こうじゃねーか！」",
+		   NULL, " We'll defer to you two this time and have you be our tour guides!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "re_se_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「でも圭一くん...＠裏山は迷うから遊びに行っちゃいけないって夏休みのしおりにも書いてあるよ。＠
+	OutputLine(NULL, "「でも圭一くん…。",
+		   NULL, "\"Wait, Keiichi-kun...", Line_WaitForInput);
+	OutputLine(NULL, "裏山は迷うから遊びに行っちゃいけないって夏休みのしおりにも書いてあるよ。」",
+		   NULL, " The summer vacation guidebook says not to play on the mountain because you'll get lost.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "ri_se_ni_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「......まだ夏休みではありませんですから、大丈夫なのですよ＠ボクたちが道を知ってますからご安心なのです。￥
+	OutputLine(NULL, "「……まだ夏休みではありませんですから、大丈夫なのですよ。",
+		   NULL, "\"...It isn't summer vacation yet, so it's all right.", Line_WaitForInput);
+	OutputLine(NULL, "ボクたちが道を知ってますからご安心なのです。」",
+		   NULL, " We know the path, so there's no need to worry.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「裏山は昔から私たちの遊び場でございますもの＠　庭も同然＠　抜け道、近道までばっちりでございましてよー！￥
+	OutputLine(NULL, "「裏山は昔から私たちの遊び場でございますもの！",
+		   NULL, "\"The mountain has always been our playground!", Line_WaitForInput);
+	OutputLine(NULL, "　庭も同然！",
+		   NULL, " Our backyard!", Line_WaitForInput);
+	OutputLine(NULL, "　抜け道、近道までばっちりでございましてよー！」",
+		   NULL, " We know all the secret paths and shortcuts!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 1000 );
+
+//　......確かに沙都子と梨花ちゃんはちゃんと道を知ってたさ＠
+	OutputLine(NULL, "　……確かに沙都子と梨花ちゃんはちゃんと道を知ってたさ。",
+		   NULL, "...Yes, both Satoko and Rika-chan knew the path like the back of their hands.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　お陰で、村の中じゃ絶対に味わえない大自然や眺望、新鮮な空気を満喫できたさ＠
+	OutputLine(NULL, "　お陰で、村の中じゃ絶対に味わえない大自然や眺望、新鮮な空気を満喫できたさ。",
+		   NULL, "Thanks to them, we had our fill of fresh air, gorgeous views, and Mother Nature, the likes of which you could never see in the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　だが、途中からおかしくなり始めたんだ！￥
+	OutputLine(NULL, "　だが、途中からおかしくなり始めたんだ！！",
+		   NULL, "But things got strange partway through!!", Line_Normal);
+	ClearMessage();
+
+//gosub *Ch_re_si
+//gosub *Ch_mi_si
+//gosub *ch_sa_si
+//gosub *Ch_Ri_Si
+
+	DisableWindow();
+	FadeOutBGM( 1, 1000, TRUE );
+	DrawBustshot( 3, "sa_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene( "bg_143", 400 );
+	PlayBGM( 1, "msys12", 128, 0 );
+
+//「そうそう＠皆さん＠ここからは私が歩いた足跡の通りに歩くんですわよ。＠
+	OutputLine(NULL, "「そうそう。",
+		   NULL, "\"Oh, yes.", Line_WaitForInput);
+	OutputLine(NULL, "皆さん。",
+		   NULL, " Everyone, I have something to say.", Line_WaitForInput);
+	OutputLine(NULL, "ここからは私が歩いた足跡の通りに歩くんですわよ。」",
+		   NULL, " From here on, you must follow exactly where I go.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「はぁ...＠　突然、何を言い出すんだ？＠
+	OutputLine(NULL, "「はぁ…？",
+		   NULL, "\"Huh...?", Line_WaitForInput);
+	OutputLine(NULL, "　突然、何を言い出すんだ？」",
+		   NULL, " What are you talking about all of a sudden?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_si_ni_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......大人しく沙都子の言うことを聞くほうが身のためなのです。￥
+	OutputLine(NULL, "「……大人しく沙都子の言うことを聞くほうが身のためなのです。」",
+		   NULL, "\"...It would be safer to do as Satoko says.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "re_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「あれれ＠ねー、魅ぃちゃん、ほらこれ＠なんだろね＠/
+	OutputLine(NULL, "「あれれ。",
+		   NULL, "\"Oh, my.", Line_WaitForInput);
+	OutputLine(NULL, "ねー、魅ぃちゃん、ほらこれ。",
+		   NULL, " Hey, Mii-chan, look at this.", Line_WaitForInput);
+	OutputLine(NULL, "なんだろね。",
+		   NULL, " What is it?", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 2, "re_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//引っ張るのかな＠　かな？￥
+	OutputLine(NULL, "引っ張るのかな？",
+		   NULL, " Should I pull it?", Line_WaitForInput);
+	OutputLine(NULL, "　かな？」",
+		   NULL, " Should I?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 50 );
+
+//　ピン＠/
+	OutputLine(NULL, "　ピン。",
+		   NULL, "Suddenly.", Line_WaitForInput);
+
+	PlaySE( 3, "wa_029", 128, 64 );
+
+//...びよよん＠...グワッ！！！￥
+	OutputLine(NULL, "……びよよん。",
+		   NULL, " ...Squeak.", Line_WaitForInput);
+	OutputLine(NULL, "…グワッ！！！！",
+		   NULL, " ...Crash!!!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 100 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 150 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 200 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 200 );
+	PlaySE( 3, "wa_002", 128, 64 );
+	Wait( 150 );
+	PlaySE( 3, "wa_004", 128, 64 );
+	Wait( 150 );
+	PlaySE( 3, "wa_003", 128, 64 );
+	Wait( 100 );
+	PlaySE( 3, "wa_002", 128, 64 );
+	Wait( 150 );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 200 );
+	PlaySE( 3, "wa_004", 128, 64 );
+	Wait( 150 );
+
+//　レナが凧糸のようなものを引っ張ると、レナのすぐ脇に頭上の木の枝に括り付けられていた竹槍の束がドカドカドカッ！！　と降り注ぐ！￥
+	OutputLine(NULL, "　レナが凧糸のようなものを引っ張ると、レナのすぐ脇に頭上の木の枝に括り付けられていた竹槍の束がドカドカドカッ！！　と降り注ぐ！！",
+		   NULL, "When Rena pulled the kite string, a bundle of bamboo spears fastened to a tree branch all came raining down with a clatter right next to where Rena was standing!!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_143", 400 );
+	DrawBustshot( 3, "me_si_bi_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlayBGM( 1, "msys03", 128, 0 );
+
+//「わーーー！＠　わーーー！＠　何これ？！!w500/
+	OutputLine(NULL, "「わーーー！！",
+		   NULL, "\"Wahhhh!!", Line_WaitForInput);
+	OutputLine(NULL, "　わーーー！！",
+		   NULL, " Wahhhh!!", Line_WaitForInput);
+	OutputLine(NULL, "　何これ？！",
+		   NULL, " What is this?!", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 3, "wa_015", 128, 64 );
+
+//　何？！!w400/
+	OutputLine(NULL, "　何？！",
+		   NULL, " What?!", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 3, "wa_015", 128, 64 );
+
+//　何？！!w400/
+	OutputLine(NULL, "　何？！",
+		   NULL, " What?!", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 3, "wa_015", 128, 64 );
+
+//　ぎゃーー！！」/
+	OutputLine(NULL, "　ぎゃーー！！」",
+		   NULL, " Gyaaa!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_004", 128, 64 );
+	Wait( 200 );
+	PlaySE( 3, "wa_003", 128, 64 );
+	Wait( 100 );
+	PlaySE( 3, "wa_002", 128, 64 );
+	Wait( 200 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......懐かしいのですよ＠これは確か、２年生の２学期に沙都子が作ったトラップなのです。￥
+	OutputLine(NULL, "「……懐かしいのですよ。",
+		   NULL, "\"...That brings back memories.", Line_WaitForInput);
+	OutputLine(NULL, "これは確か、２年生の２学期に沙都子が作ったトラップなのです。」",
+		   NULL, " Satoko made this trap in the second semester of second grade.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_si_ya_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「危なかったですわねぇ＠竹槍の先端には犬のフンが塗ってありますから、傷になるとあとで腐り出しますわよ。＠
+	OutputLine(NULL, "「危なかったですわねぇ。",
+		   NULL, "\"That was a close one.", Line_WaitForInput);
+	OutputLine(NULL, "竹槍の先端には犬のフンが塗ってありますから、傷になるとあとで腐り出しますわよ。」",
+		   NULL, " The tips of the spears are covered in dog poop, so if one of them hurts you, the wound will start to fester.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！￥
+	OutputLine(NULL, "「こ、ここはいつからベトナムになったんだぁあああぁあぁあッ！！」",
+		   NULL, "\"W-When did this turn into freaking Vietnam?!\"", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 400, TRUE );
+
+//　......沙都子と梨花ちゃんが言うには＠
+	OutputLine(NULL, "　……沙都子と梨花ちゃんが言うには、",
+		   NULL, "...According to Satoko and Rika-chan...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...小学校低学年の頃、トラップ作りが沙都子的に大ブレイクして、この山の至るところに仕掛けて回ったらしいのだ...￥
+	OutputLine(NULL, "　…小学校低学年の頃、トラップ作りが沙都子的に大ブレイクして、この山の至るところに仕掛けて回ったらしいのだ…。",
+		   NULL, "...Earlier in elementary school, Satoko had been on a trap-making craze, and set them up along every inch of this mountain...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "re_si_ko_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「...圭一くん、ひょっとして......裏山が立入禁止なのは迷うからじゃなくて、...危ないからじゃないのかな...。＠
+	OutputLine(NULL, "「…圭一くん、ひょっとして……裏山が立入禁止なのは迷うからじゃなくて、…危ないからじゃないのかな…。」",
+		   NULL, "\"...Keiichi-kun, maybe... they didn't tell us not to go on the mountain because we'd get lost... but because it was dangerous...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　俺も魅音もそのレナの仮説に全力で頷く￥
+	OutputLine(NULL, "　俺も魅音もそのレナの仮説に全力で頷く。",
+		   NULL, "Mion and I both nodded wholeheartedly at Rena's hypothesis.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「さ＠　先を急ぎますわよ＠早く戻らないと暗くなってしまいますわ＠暗くなったら、私だって危ないでございますからね。＠
+	OutputLine(NULL, "「さ！",
+		   NULL, "\"Come, now!", Line_WaitForInput);
+	OutputLine(NULL, "　先を急ぎますわよ。",
+		   NULL, " We are hurrying on ahead.", Line_WaitForInput);
+	OutputLine(NULL, "早く戻らないと暗くなってしまいますわ。",
+		   NULL, " If we do not return soon, it will get dark.", Line_WaitForInput);
+	OutputLine(NULL, "暗くなったら、私だって危ないでございますからね。」",
+		   NULL, " If it gets dark, it may even become dangerous for me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　そ、そんな危ない山に何で連れてきたぁあぁあああぁああ！＠
+	OutputLine(NULL, "　そ、そんな危ない山に何で連れてきたぁあぁあああぁああ！！",
+		   NULL, "B-But you're the one who brought us to this crazy mountain!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　何で健全で平均的な日本人男子の俺が、ブービートラップに命を脅かされなくちゃらならないんだぁッ！￥
+	OutputLine(NULL, "　何で健全で平均的な日本人男子の俺が、ブービートラップに命を脅かされなくちゃらならないんだぁッ！！",
+		   NULL, "Why was an average healthy Japanese boy like me being forced to deal with life-threatening booby traps?!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+
+//　......そして＠......沙都子たちの姿をちょっと見失った途端に、俺たちは３人まとめて仲良くトラップに絡め取られたというワケだ...￥
+	OutputLine(NULL, "　……そして、",
+		   NULL, "...And then...", Line_WaitForInput);
+	OutputLine(NULL, "……沙都子たちの姿をちょっと見失った途端に、俺たちは３人まとめて仲良くトラップに絡め取られたというワケだ…。",
+		   NULL, " The very moment Satoko and Rika-chan got just out of sight was when the three of us all got caught in nice little traps together...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_205", 1000 );
+	PlayBGM( 2, "lsys12", 128, 0 );
+
+//「......誰か出して～～＠　私、おトイレに行きたいの～～！！＠
+	OutputLine(NULL, "「……誰か出して〜〜！",
+		   NULL, "\"...Someone get me out~~!", Line_WaitForInput);
+	OutputLine(NULL, "　私、おトイレに行きたいの〜〜！！」",
+		   NULL, " I have to go to the bathroom~~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「そんなことより～＠　誰かこのバケツ取って～！＠　前が見えない～＠　はぅ～！！＠
+	OutputLine(NULL, "「そんなことより〜！",
+		   NULL, "\"Never mind that~!", Line_WaitForInput);
+	OutputLine(NULL, "　誰かこのバケツ取って〜！！",
+		   NULL, " Somebody get the bucket off me~!!", Line_WaitForInput);
+	OutputLine(NULL, "　前が見えない〜！",
+		   NULL, " I can't see in front of me~!", Line_WaitForInput);
+	OutputLine(NULL, "　はぅ〜！！」",
+		   NULL, " Hau~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...おいレナ、あんまり暴れるな＠ぱ、ぱんつが見えるぞ...。￥
+	OutputLine(NULL, "「…おいレナ、あんまり暴れるな。",
+		   NULL, "\"...Wait, Rena, don't struggle around so much.", Line_WaitForInput);
+	OutputLine(NULL, "ぱ、ぱんつが見えるぞ…。」",
+		   NULL, " I-I can see your panties...\"", Line_Normal);
+	ClearMessage();
+
+//「は、はぅーーー！！＠　見た？＠　見た？＠　圭一くんが見た！＠　はぅ～～～！！！￥
+	OutputLine(NULL, "「は、はぅーーー！！！",
+		   NULL, "\"H-Hauuuu!!!", Line_WaitForInput);
+	OutputLine(NULL, "　見た？！",
+		   NULL, " You saw?!", Line_WaitForInput);
+	OutputLine(NULL, "　見た？！",
+		   NULL, " You saw?!", Line_WaitForInput);
+	OutputLine(NULL, "　圭一くんが見た！！",
+		   NULL, " Keiichi-kun, you saw!!", Line_WaitForInput);
+	OutputLine(NULL, "　はぅ〜〜〜！！！」",
+		   NULL, " Hau~~~!!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	PlaySE( 3, "wa_015", 128, 64 );
+	DrawScene( "white", 10 );
+	PlaySE( 3, "wa_005", 128, 64 );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	ShakeScreen( 1, 50, 20, 1, 0, );
+	PlaySE( 3, "wa_005", 128, 64 );
+	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	ShakeScreen( 0, 50, 20, 2, 0, );
+	PlaySE( 3, "wa_006", 128, 64 );
+	DrawBustshot( 5, "Furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+	DrawScene( "black", 10 );
+//!sd
+
+//　スパパパパパ、スパパパパ、スパパパーンッ！！￥
+	OutputLine(NULL, "　スパパパパパ、スパパパパ、スパパパーンッ！！！",
+		   NULL, "Smash, crash, smash, smash smash crash bash!!!", Line_Normal);
+	ClearMessage();
+
+//「み、見えてるだろ絶対...！＠　バケツ被ってても、見えてるだろ絶、/
+	OutputLine(NULL, "「み、見えてるだろ絶対…！！",
+		   NULL, "\"O-Of course you can see them...!!", Line_WaitForInput);
+	OutputLine(NULL, "　バケツ被ってても、見えてるだろ絶、",
+		   NULL, " You may be in a bucket, but you can definitely—", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_005", 128, 64 );
+
+//げは、!w200/
+	OutputLine(NULL, "げは、",
+		   NULL, " gehah,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 3, "wa_005", 128, 64 );
+
+//ごほ！！!w400/
+	OutputLine(NULL, "ごほ！！",
+		   NULL, " gohoh!!", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 3, "wa_006", 128, 64 );
+
+//　ぐぼれッ！！￥
+	OutputLine(NULL, "　ぐぼれッ！！」",
+		   NULL, " Gbhbhreh!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_142", 400 );
+
+//　バケツレナにサンドバックにされる俺と、わんわんと泣く魅音￥
+	OutputLine(NULL, "　バケツレナにサンドバックにされる俺と、わんわんと泣く魅音。",
+		   NULL, "Bucket Rena was using me as a sandbag, and Mion was crying.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "ri_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......落し穴から抜けられなくて、かぁいそかぁいそなのです。＠
+	OutputLine(NULL, "「……落し穴から抜けられなくて、かぁいそかぁいそなのです。」",
+		   NULL, "\"...You can't get out of the pitfall? How sad, how sad.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_si_yah_b1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「もー、皆さん、だから言いましたでしょう＠　私から離れたらいけませんでしてよ、って！￥
+	OutputLine(NULL, "「もー、皆さん、だから言いましたでしょう？",
+		   NULL, "\"Geez, didn't I already tell you all?", Line_WaitForInput);
+	OutputLine(NULL, "　私から離れたらいけませんでしてよ、って！」",
+		   NULL, " You weren't supposed to leave my side!\"", Line_Normal);
+	ClearMessage();
+
+//　今になって悟る俺＠
+	OutputLine(NULL, "　今になって悟る俺。",
+		   NULL, "I finally had an epiphany.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　......妙に沙都子が裏山にみんなを連れて行きたがってたのは...、歴代の自慢のトラップを俺たちに見せたかったからに違いない＠
+	OutputLine(NULL, "　……妙に沙都子が裏山にみんなを連れて行きたがってたのは…、歴代の自慢のトラップを俺たちに見せたかったからに違いない。",
+		   NULL, "...Satoko had been so bent on taking everyone out to the mountain... because she wanted to brag about all the traps she'd set up here over the years.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　......それなら見るだけにしてくれよ＠...はまり心地まで味わいたくないー！￥
+	OutputLine(NULL, "　……それなら見るだけにしてくれよ。",
+		   NULL, "...You could have stopped just at showing them to us.", Line_WaitForInput);
+	OutputLine(NULL, "…はまり心地まで味わいたくないー！！",
+		   NULL, " ...I didn't need to experience how it felt first-hand!!", Line_Normal);
+	ClearMessage();
+
+//　梨花ちゃんは俺たち３人の頭を順々に撫で、これ以上ないくらいにご満悦な様子だった...￥
+	OutputLine(NULL, "　梨花ちゃんは俺たち３人の頭を順々に撫で、これ以上ないくらいにご満悦な様子だった…。",
+		   NULL, "Rika-chan pets our three heads in sequence, in an incredibly satisfied mood...", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}
