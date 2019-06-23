@@ -6,7 +6,7 @@ void dialog000()
 {
 //A 「高熱と瞳孔の拡大に重度の意識障害も見られました。
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医師</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/doca04009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/doca04009", 256, TRUE);
 	OutputLine(NULL, "「高熱と瞳孔の拡大に重度の意識障害も見られました。",
 		   NULL, "\"His high temperature and dilated pupils indicated a severe disturbance of consciousness.", Line_WaitForInput);
 }
@@ -15,7 +15,7 @@ void dialog001()
 {
 //A 普段から睡眠薬を常用していたとかは？
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/komi04016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/komi04016", 256, TRUE);
 	OutputLine(NULL, "「普段から睡眠薬を常用していたとかは？」",
 		   NULL, "\"Did he use sleeping medication regularly?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -25,7 +25,7 @@ void dialog002()
 {
 //A …いつまでもこのままでいたくありませんわ...
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400221", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400221", 256, TRUE);
 	OutputLine(NULL, "「…………………いつまでもこのままでいたくありませんわ。",
 		   NULL, "\".........I do not want to be like this forever.", Line_WaitForInput);
 }
@@ -34,7 +34,7 @@ void dialog003()
 {
 //A だから寝ぼけ気分でふらふらと、記憶になく祭りに出掛けた…なんてことはありえない
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100984", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100984", 256, TRUE);
 	OutputLine(NULL, "だから寝ぼけ気分でふらふらと、記憶になく祭りに出掛けた…なんてことはありえない。」",
 		   NULL, "So it's not possible... that I walked to the festival half asleep and forgot about it afterwards.\"", Line_Normal);
 	ClearMessage();
@@ -43,7 +43,7 @@ void dialog003()
 void dialog004()
 {
 //A 　男の人に、いつまでもこんな姿を晒していたくないんですのよ…！
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400264", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400264", 256, TRUE);
 	OutputLine(NULL, "　男の人に、いつまでもこんな姿を晒していたくないんですのよ…！",
 		   NULL, " I do not want to keep exposing myself to a man any more than this...!", Line_WaitForInput);
 }

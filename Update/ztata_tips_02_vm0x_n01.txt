@@ -11,18 +11,18 @@ void dialog001()
 	DisableWindow();
 	ModDrawCharacterWithFiltering(2, 4, "sprite/normal/sa1b_hannbeso_b1_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400071", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400071", 256, TRUE);
 	OutputLine(NULL, "「わぷっ？！",
 		   NULL, "\"Wha-?!", Line_ContinueAfterTyping);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400072", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400072", 256, TRUE);
 	OutputLine(NULL, "　い、いきなり何をなさいますのですか、お二人ともっ？！」",
 		   NULL, " W-What are you suddenly trying to do, you two?!\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100119", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100119", 256, TRUE);
 	OutputLine(NULL, "「…………どうやら、だれが罠をしかけたのかは問答無用、ってところだな」",
 		   NULL, "\"...Looks like there's no use talking to the person who set this trap.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

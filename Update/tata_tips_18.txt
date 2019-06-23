@@ -8,7 +8,7 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 
-	PlayBGM( 2, "lsys25", 128, 0 );
+	PlayBGM( 2, "lsys25", 56, 0 );
 //■タイトル：　恨み帳？
 
 //　くさいと言われた＠
@@ -53,7 +53,7 @@ void main()
 		   NULL, "He said I had to stay in the bath for a long time every time.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　きっとこいつも何かに乗り移られている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -88,7 +88,7 @@ void main()
 		   NULL, "The same thing that possessed that man is now possessing him.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　私の家の前に、突然の地震で大きな裂け目でもできないだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -117,8 +117,8 @@ void main()
 		   NULL, "I won't give in until I get that chance.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
-	PlayBGM( 1, "msys12", 128, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
+	PlayBGM( 1, "msys12", 56, 0 );
 //　負けるもんか泣くもんか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　負けるもんか泣くもんか。",

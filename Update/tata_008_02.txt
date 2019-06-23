@@ -7,7 +7,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 
-	PlayBGM( 1, "msys06", 128, 0 );
+	PlayBGM( 1, "msys06", 56, 0 );
 
 //■圭一の考察...
 
@@ -183,7 +183,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //　......仮に、公的機関、児童相談所に通報して、!w1000.........また去年のように様子見なんてことになったら...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -274,7 +274,7 @@ void main()
 		   NULL, "......The memories of angry arguing with my friends today came to mind.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlayBGM( 1, "msys17", 128, 0 );
+	PlayBGM( 1, "msys17", 56, 0 );
 	DrawScene("background/ma2", 400 );
 
 //　レナに言われるまで気付けなかったことを恥じる＠
@@ -359,7 +359,7 @@ void main()
 
 	DisableWindow();
 	DrawScene("flashback/gk1", 400 );
-	
+
 //　昼の弁当は何とかなるだろ＠
 //　...仲間みんなで、これからはほんの少し多めに弁当を用意すればいい＠
 //　みんなで突付きあうんだから、何とかなる￥
@@ -572,7 +572,7 @@ void main()
 //　......悔しかった＠
 //　......想いでは誰にも負けないと思っていた＠...それに関しては、監督にだって負けないと思っていた＠.........なのに...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100235", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100235", 256, TRUE);
 	OutputLine(NULL, "「…………そんなにも、………子供って無力なのかよ……？」",
 		   NULL, "\"......Are kids... are they really this powerless...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -602,22 +602,22 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/ma_j3", 400 );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //「起きてたの＠　さっきからご飯ってずっと呼んでるわよ？＠
 //「......あ、...ん、今行く...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700001", 256, TRUE);
 	OutputLine(NULL, "「起きてたの？",
 		   NULL, "\"Were you awake?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700002", 256, TRUE);
 	OutputLine(NULL, "　さっきからご飯ってずっと呼んでるわよ？」",
 		   NULL, " I've been calling you for dinner for a while.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100236", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100236", 256, TRUE);
 	OutputLine(NULL, "「……あ、…ん、今行く…。」",
 		   NULL, "\"...Oh... Yeah, I'm coming...\"", Line_Normal);
 	ClearMessage();
@@ -680,7 +680,7 @@ void main()
 
 	DisableWindow();
 	DrawScene("black", 400 );
-	
+
 //　.........考えろ前原圭一＠
 //　...食事を四人分にすることが難しいなら、...三人分の食事で四人が食うことを考えればいい￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -780,7 +780,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/ma_s1", "left", 0, 0, 300 );
-	PlayBGM( 1, "msys06", 128, 0 );
+	PlayBGM( 1, "msys06", 56, 0 );
 
 //　......よし＠
 //　...非現実的な両親説得よりも、......隠れ住まう、隠居策で模索してみよう＠
@@ -942,47 +942,47 @@ void main()
 		   NULL, "I stood up from my seat, with my plate of fish in my hands.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 2, "lsys13", 128, 0 );
+	PlayBGM( 2, "lsys13", 56, 0 );
 
 //「どうしたの圭一＠　ご飯は座って食べなさい。＠
 //「ん、うん＠...ちょっと気分が変えたくなってさ＠...自分の部屋で食べてもいいかな。＠
 //「...ボロボロ落として汚すぞ＠食事は食卓で食べなさい。＠
 //「............ん、...ごめん...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700003", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700003", 256, TRUE);
 	OutputLine(NULL, "「どうしたの圭一？",
 		   NULL, "\"What's wrong, Keiichi?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700004", 256, TRUE);
 	OutputLine(NULL, "　ご飯は座って食べなさい。」",
 		   NULL, " Sit down and eat your food.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100237", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100237", 256, TRUE);
 	OutputLine(NULL, "「ん、うん。",
 		   NULL, "\"Um, well.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100238", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100238", 256, TRUE);
 	OutputLine(NULL, "…ちょっと気分が変えたくなってさ。",
 		   NULL, " ...I'm kind of not in a good mood.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100239", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100239", 256, TRUE);
 	OutputLine(NULL, "…自分の部屋で食べてもいいかな。」",
 		   NULL, " ...Could I eat up in my room?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142600001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142600001", 256, TRUE);
 	OutputLine(NULL, "「…ボロボロ落として汚すぞ。",
 		   NULL, "\"...You'll make a mess.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142600002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142600002", 256, TRUE);
 	OutputLine(NULL, "食事は食卓で食べなさい。」",
 		   NULL, " Eat dinner at the dinner table.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100240", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100240", 256, TRUE);
 	OutputLine(NULL, "「…………ん、…ごめん…。」",
 		   NULL, "\"......Mm... sorry...\"", Line_Normal);
 	ClearMessage();
@@ -1063,7 +1063,7 @@ void main()
 		   NULL, " ...It didn't open quietly.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys17", 128, 0 );
+	PlayBGM( 1, "msys17", 56, 0 );
 
 //　おいおい...、いつもは静かにすーっと開くじゃないか？＠
 //　何で今頃になって急に＠　欠陥住宅かよ？＠　もう家にガタが来たのか？＠　それともロウでも足りなくなんたのか？＠　ワックスでも塗ればいいのかッ？￥
@@ -1112,7 +1112,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	PlaySE( 3, "wa_020", 128, 64 );
+	PlaySE( 3, "wa_020", 56, 64 );
 	DrawSceneWithMask("black", "right", 0, 0, 200 );
 
 //　.........基本的に布団はいつも出しっ放し＠
@@ -1297,9 +1297,9 @@ void main()
 		   NULL, "...It got hard to breathe... so I gave in and crawled out of the closet.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlaySE( 3, "wa_020", 128, 64 );
+	PlaySE( 3, "wa_020", 56, 64 );
 	DrawSceneWithMask("background/ma_j3_01", "left", 0, 0, 200 );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //　時計を見ると......なんと、もう午前３時半＠
 //　......信じられないくらいに時間の経過が早かった＠
@@ -1323,7 +1323,7 @@ void main()
 
 
 	ChangeScene("black", 7, 200, );
-	PlaySE( 3, "wa_004", 128, 64 );
+	PlaySE( 3, "wa_004", 56, 64 );
 //　その抗いがたい力に負け、...布団の上にばったりと倒れこむ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その抗いがたい力に負け、…布団の上にばったりと倒れこむ。",

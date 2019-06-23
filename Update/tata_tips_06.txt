@@ -11,18 +11,18 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //「んっふっふっふ＠　出ましたねぇ、ロン＠中ドラ３、満千五です。￥
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700207", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700207", 256, TRUE);
 	OutputLine(NULL, "「んっふっふっふ！",
 		   NULL, "\"Nfu-fu-fu-fu!", Line_Continue);
 	Wait(1500);
 	OutputLine(NULL, "　出ましたねぇ、ロン。",
 		   NULL, " There it is—ron.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700208_01", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700208_01", 256, TRUE);
 	OutputLine(NULL, "中ドラ３、満千五です。」",
 		   NULL, " Three chun, three dora—mangan with 1500 extra.\"", Line_Normal);
 	ClearMessage();
@@ -31,13 +31,13 @@ void main()
 
 //「えー...＠　なんすかそれぇ...＠何でドラが３つも入んすかぁ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100041", 128, TRUE);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100041", 256, TRUE);
 	OutputLine(NULL, "「えー…！",
 		   NULL, "\"What...!", Line_Continue);
 	Wait(1000);
 	OutputLine(NULL, "　なんすかそれぇ…。",
 		   NULL, " What's up with that...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100042", 128, TRUE);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100042", 256, TRUE);
 	OutputLine(NULL, "何でドラが３つも入んすかぁ！」",
 		   NULL, " How do you have three dora?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -46,26 +46,26 @@ void main()
 
 //「バカモンが＠大石が聴牌しとんのわかっててカンドラ増やしおってからに＠　自業自得じゃぞ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200045", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200045", 256, TRUE);
 	OutputLine(NULL, "「バカモンが。",
 		   NULL, "\"You idiot.", Line_Continue);
 	Wait(1200);
 	OutputLine(NULL, "大石が聴牌しとんのわかっててカンドラ増やしおってからに！",
 		   NULL, " You're the one who flipped over another kan dora when you knew Ooishi was in tenpai!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200046", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200046", 256, TRUE);
 	OutputLine(NULL, "　自業自得じゃぞ。」",
 		   NULL, " That's what you get.\"", Line_Normal);
 	ClearMessage();
 
 //「中さらしたら、ドラを上乗せする位しかやることないじゃないですか＠役牌さらしたらドラ側は切っちゃだめですよ＠んっふっふっふ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700209", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700209", 256, TRUE);
 	OutputLine(NULL, "「中さらしたら、ドラを上乗せする位しかやることないじゃないですか。",
 		   NULL, "\"Getting more dora was the only thing I could do after revealing the chun!", Line_Continue);
 	Wait(3300);
 	OutputLine(NULL, "役牌さらしたらドラ側は切っちゃだめですよ。",
 		   NULL, " You can't discard a dora tile after a yakuhai is out.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700210", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700210", 256, TRUE);
 	OutputLine(NULL, "んっふっふっふ！」",
 		   NULL, " Nfu-fu-fu!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -78,7 +78,7 @@ void main()
 
 //「......時に大石さん、どうですか＠割れましたか。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500014", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500014", 256, TRUE);
 	OutputLine(NULL, "「……時に大石さん、どうですか。",
 		   NULL, "\"...By the way, Ooishi-san.", Line_Continue);
 	Wait(1300);
@@ -89,13 +89,13 @@ void main()
 
 //「なんじゃい＠...あぁ、例のドブ川惨殺死体の話かの＠何か手掛かりはあったのか。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200047", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200047", 256, TRUE);
 	OutputLine(NULL, "「なんじゃい。",
 		   NULL, "\"What?", Line_Continue);
 	Wait(1300);
 	OutputLine(NULL, "…あぁ、例のドブ川惨殺死体の話かの。",
 		   NULL, " ...Oh, the murdered body in the drainage channel.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200048", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200048", 256, TRUE);
 	OutputLine(NULL, "何か手掛かりはあったのか。」",
 		   NULL, " Any new clues come up?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -103,7 +103,7 @@ void main()
 
 //「えぇ、まぁ＠裏はそっちで取って下さいよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700211", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700211", 256, TRUE);
 	OutputLine(NULL, "「えぇ、まぁ。",
 		   NULL, "\"Yes, well.", Line_Continue);
 	Wait(1200);
@@ -113,7 +113,7 @@ void main()
 
 //「さぁすがぁ＠何者です、ホトケ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500015", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500015", 256, TRUE);
 	OutputLine(NULL, "「さぁすがぁ。",
 		   NULL, "\"I should have expected that.", Line_Continue);
 	Wait(1000);
@@ -124,7 +124,7 @@ void main()
 
 //「間宮リナ＠本名は律子。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700212", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700212", 256, TRUE);
 	OutputLine(NULL, "「間宮リナ。",
 		   NULL, "\"Rina Mamiya.", Line_Continue);
 	Wait(1000);
@@ -135,14 +135,14 @@ void main()
 
 //「鹿骨フラワーロードにある、ブルー・マーメイドってキャバクラに勤めてたみたいっす。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100043", 128, TRUE);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100043", 256, TRUE);
 	OutputLine(NULL, "「鹿骨フラワーロードにある、ブルー・マーメイドってキャバクラに勤めてたみたいっす。」",
 		   NULL, "\"Apparently she worked for the Blue Mermaid, a hostess bar on Shishibone Flower Road.\"", Line_Normal);
 	ClearMessage();
 
 //「やれやれ、そりゃヤバイ店じゃな＠確か園崎系の若頭の店じゃろ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200049", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200049", 256, TRUE);
 	OutputLine(NULL, "「やれやれ、そりゃヤバイ店じゃな。",
 		   NULL, "\"Oh, wow, that place, huh?", Line_Continue);
 	Wait(2800);
@@ -153,13 +153,13 @@ void main()
 
 //「...園崎...おっと＠　Ｓ号関連かぁ＠...難航しそうなヤマだなぁ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500016", 256, TRUE);
 	OutputLine(NULL, "「…園崎…おっと！",
 		   NULL, "\"...Sonozaki—whoops!", Line_Continue);
 	Wait(2000);
 	OutputLine(NULL, "　Ｓ号関連かぁ。",
 		   NULL, " So it's related to the S-group.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500017", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500017", 256, TRUE);
 	OutputLine(NULL, "…難航しそうなヤマだなぁ。」",
 		   NULL, " ...That mountain'll be tough to scale.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -172,13 +172,13 @@ void main()
 
 //「女が上納金に手を出した、か＠裏に男がいそうじゃのう＠女の単独犯なんてそうそうないぞ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200050", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200050", 256, TRUE);
 	OutputLine(NULL, "「女が上納金に手を出した、か。",
 		   NULL, "\"A woman getting her hands on yakuza tax money...", Line_Continue);
 	Wait(2700);
 	OutputLine(NULL, "裏に男がいそうじゃのう。",
 		   NULL, " Sounds like a man's behind it.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200051", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200051", 256, TRUE);
 	OutputLine(NULL, "女の単独犯なんてそうそうないぞ。」",
 		   NULL, " Not a lot of women do that sort of thing themselves.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -186,13 +186,13 @@ void main()
 
 //「んっふっふ＠　どうせもう死んでますよ＠死体がまだ出ないだけで。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700213", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700213", 256, TRUE);
 	OutputLine(NULL, "「んっふっふ！",
 		   NULL, "\"Nfu-fu!", Line_Continue);
 	Wait(1400);
 	OutputLine(NULL, "　どうせもう死んでますよ。",
 		   NULL, " Well, she's dead now.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700214", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700214", 256, TRUE);
 	OutputLine(NULL, "死体がまだ出ないだけで。」",
 		   NULL, " The dead can't have anything to do with it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -206,27 +206,27 @@ void main()
 
 //「生きてる＠　じゃあこれから死ぬんでしょうねぇ＠害虫が害虫を駆除してくれるんだから、ホントに素敵な自浄機能だと思いますよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700215", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700215", 256, TRUE);
 	OutputLine(NULL, "「生きてる？",
 		   NULL, "\"Alive?", Line_Continue);
 	Wait(1000);
 	OutputLine(NULL, "　じゃあこれから死ぬんでしょうねぇ。",
 		   NULL, " Then maybe he'll die soon.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700216", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700216", 256, TRUE);
 	OutputLine(NULL, "害虫が害虫を駆除してくれるんだから、ホントに素敵な自浄機能だと思いますよ。」",
 		   NULL, " Vermin usually exterminate other vermin—I think we have a very nice self-cleansing system going on.\"", Line_Normal);
 	ClearMessage();
 
 //「そのヒモなんですがね＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100046", 128, TRUE);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100046", 256, TRUE);
 	OutputLine(NULL, "「そのヒモなんですがね、",
 		   NULL, "\"Anyway, her man...", Line_WaitForInput);
 
-	PlaySE( 3, "wa_023", 128, 64 );
+	PlaySE( 3, "wa_023", 56, 64 );
 
 //北条鉄平なんですよ...、あの。＠
-	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100047", 128, TRUE);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100047", 256, TRUE);
 	OutputLine(NULL, "北条鉄平なんですよ…、あの。」",
 		   NULL, " It's, well... Teppei Houjou.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -234,7 +234,7 @@ void main()
 
 //「......北条＠　誰だい？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500018", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500018", 256, TRUE);
 	OutputLine(NULL, "「……北条？",
 		   NULL, "\"...Houjou?", Line_Continue);
 	Wait(1000);
@@ -245,23 +245,23 @@ void main()
 
 //「...北条鉄平＠去年、雛見沢で起こった主婦撲殺事件のホトケのご主人ですよ＠......事件のあと姿を消したって聞いてましたけど＠...そうかぁ、愛人の所に転がり込んでたかぁ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700217", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700217", 256, TRUE);
 	OutputLine(NULL, "「…北条鉄平。",
 		   NULL, "\"...Teppei Houjou.", Line_Continue);
 	Wait(1000);
 	OutputLine(NULL, "去年、雛見沢で起こった主婦撲殺事件のホトケのご主人ですよ。",
 		   NULL, " The husband of the housewife who was beaten to death last year in Hinamizawa.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700218", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700218", 256, TRUE);
 	OutputLine(NULL, "……事件のあと姿を消したって聞いてましたけど。",
 		   NULL, " ...I heard he disappeared after the incident, though.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700219", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700219", 256, TRUE);
 	OutputLine(NULL, "…そうかぁ、その女の所に転がり込んでたかぁ。」",
 		   NULL, " ...I get it—he was staying at his lover's place, huh?\"", Line_Normal);
 	ClearMessage();
 
 //「............ますますに園崎の臭いがプンプンだの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200052", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200052", 256, TRUE);
 	OutputLine(NULL, "「…………ますますに園崎の臭いがプンプンだの。」",
 		   NULL, "\"......And so the Sonozakis grow ever more suspicious.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -269,7 +269,7 @@ void main()
 
 //「彼氏は今どこに？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700220", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700220", 256, TRUE);
 	OutputLine(NULL, "「彼氏は今どこに？」",
 		   NULL, "\"Where is he now?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -277,7 +277,7 @@ void main()
 
 //「女のアパートに同居してたんすがね＠女が自分を捨てたと思ったみたいで、店や溜りのあちこちを探し回ってるらしいっす。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100048", 128, TRUE);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100048", 256, TRUE);
 	OutputLine(NULL, "「女のアパートに同居してたんすがね。",
 		   NULL, "\"He was living in a woman's apartment.", Line_Continue);
 	Wait(1800);

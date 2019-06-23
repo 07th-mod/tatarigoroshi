@@ -10,7 +10,7 @@ void main()
 
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlayBGM( 1, "msys12", 128, 0 );
+	PlayBGM( 1, "msys12", 56, 0 );
 
 //　日曜日￥
 	ClearMessage();
@@ -25,7 +25,7 @@ void main()
 		   NULL, "...The fireworks I heard before noon were probably to announce the opening of the festival.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys24", 128, 0 );
+	PlayBGM( 1, "msys24", 56, 0 );
 
 //　その日は...祭り日和とはお世辞にも言えない、曇天だった＠
 //　テレビの天気予報は、夕方から夜半にかけて土砂降りになるかもしれないと警告していた＠......だが、今が降っていない以上、祭りは開催される＠
@@ -273,7 +273,7 @@ void main()
 		   NULL, "I tightened my laces one more time... and walked out the door.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlayBGM( 2, "lsys12", 128, 0 );
+	PlayBGM( 2, "lsys12", 56, 0 );
 	DrawScene("white", 1000 );
 	DrawScene("background/ma1", 400 );
 
@@ -343,7 +343,7 @@ void main()
 //「.........く、...............うお！！＠
 //　最後のひとひねりは一際固かったが、...俺の決意そのままの力強さの前に、ついに屈したのだった...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100631", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100631", 256, TRUE);
 	OutputLine(NULL, "「………く、……………うお！！」",
 		   NULL, "\"...Guh...... oohhh!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -517,20 +517,20 @@ void main()
 		   NULL, "As I thought that... I put strength into my heel like I was stepping on something unpleasant, and split!! came the sharp noise.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
 
 //「...............ふう...＠..................ん＠.....................ふぅ......。＠
 //　.........軟らかかったのは最初だけ＠
 //　...すぐに、根や石が邪魔をするようになり、...人間を充分に埋める穴を掘るのがいかに大変なことかを思い知ることになった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100632", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100632", 256, TRUE);
 	OutputLine(NULL, "「……………ふう…。",
 		   NULL, "\"......Hoo...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100633", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100633", 256, TRUE);
 	OutputLine(NULL, "………………ん。",
 		   NULL, " ............ngh.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100634", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100634", 256, TRUE);
 	OutputLine(NULL, "…………………ふぅ……。」",
 		   NULL, " ............Hoo...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -547,7 +547,7 @@ void main()
 		   NULL, "...Roots and stones quickly got in my way, informing me just how hard it was to dig a hole big enough for a person.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　そもそも、こんな場所に真っ当な人間が来ることはない...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -555,7 +555,7 @@ void main()
 		   NULL, "No decent person would ever come here anyway...", Line_WaitForInput);
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
@@ -564,11 +564,11 @@ void main()
 	OutputLine(NULL, "　ほどほどに土をかぶせて隠せば充分なのでは……。",
 		   NULL, " Maybe it would be enough to cover him up with some dirt...", GetGlobalFlag(GLinemodeSp));
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -593,15 +593,15 @@ void main()
 		   NULL, "Every time I thought that, I would go down into the hole, grow disappointed at how shallow it was, and return to digging.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　......額にじっとりと浮かんでいた汗は、とうとう玉になり、ぼろりと落ちた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -611,14 +611,14 @@ void main()
 
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　......背中はもっとひどい＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……背中はもっとひどい。",
 		   NULL, "...My back was in even worse shape.", Line_WaitForInput);
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //シャツはべったりと張り付き、...気持ち悪いことこの上ない＠
 	OutputLine(NULL, "シャツはべったりと張り付き、…気持ち悪いことこの上ない。",
@@ -626,7 +626,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　...もっとも耐え難いのは、藪蚊だった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -635,7 +635,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　......俺の汗の臭いをどこで嗅ぎつけてきたのか、...白と黒のまだらの汚らしい蚊が、気を許すたびにへばりついてくるのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -643,7 +643,7 @@ void main()
 		   NULL, "...Maybe they were attracted by the scent of my sweat... The white and black striped mosquitoes would cling to me whenever I let my guard down.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　暑い＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -653,7 +653,7 @@ void main()
 
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　気持ち悪い＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -663,7 +663,7 @@ void main()
 
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　べたべたする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -673,7 +673,7 @@ void main()
 
 
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　...痒い＠......そんな、不快感の波が代わる代わる俺に押し寄せてくるのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -683,22 +683,22 @@ void main()
 		   NULL, " ...All those uncomfortable feelings surged through me in waves.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //「.........くそったれ...＠だから何だってんだよ...、やめて帰れってのか？＠　ええ？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100635", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100635", 256, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「………くそったれ…。",
 		   NULL, "\"...Damn it all...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100636", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100636", 256, TRUE);
 	OutputLine(NULL, "だから何だってんだよ…、やめて帰れってのか？！",
 		   NULL, " So what... Are you telling me to pack up and go home?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100637", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100637", 256, TRUE);
 	OutputLine(NULL, "　ええ？！」",
 		   NULL, " Is that it?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -772,7 +772,7 @@ void main()
 
 	DisableWindow();
 	DrawScene("black", 3000 );
-	PlayBGM( 1, "msys27", 128, 0 );
+	PlayBGM( 1, "msys27", 56, 0 );
 	FadeOutBGM( 2, 1000, TRUE );
 
 //　昔から特に身体的に優れていたわけじゃない＠
@@ -814,13 +814,13 @@ void main()
 
 //「圭一＠あなた塾に入る気はない＠　学校の勉強がわかるようになって、楽しくなるわよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700049", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700049", 256, TRUE);
 	OutputLine(NULL, "「圭一。",
 		   NULL, "\"Keiichi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700050", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700050", 256, TRUE);
 	OutputLine(NULL, "あなた塾に入る気はない？",
 		   NULL, " Would you like to go to a cram school?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700051", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700051", 256, TRUE);
 	OutputLine(NULL, "　学校の勉強がわかるようになって、楽しくなるわよ。」",
 		   NULL, " You'll better grasp what you're learning in school, and it will be more fun.\"", Line_Normal);
 	ClearMessage();
@@ -872,24 +872,24 @@ void main()
 //「えっと、...６１って、平均点が６１点ですか？＠
 //「いいえ、違いますよお母さん＠全国展開する当塾での平均偏差値が６１です＠簡易式の知能検査でも非凡な数字が出ています＠...まず申し上げて、前原圭一くんは大変に頭がいい。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700052", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700052", 256, TRUE);
 	OutputLine(NULL, "「えっと、…６１って、平均点が６１点ですか？」",
 		   NULL, "\"Umm... By 61, do you mean his average score was 61 points?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04001", 256, TRUE);
 	OutputLine(NULL, "「いいえ、違いますよお母さん。",
 		   NULL, "\"No, not at all, Mrs. Maebara.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04002", 256, TRUE);
 	OutputLine(NULL, "全国展開する当塾での平均偏差値が６１です。",
 		   NULL, " The mean deviation of our cram schools all across the country is 61.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04003", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04003", 256, TRUE);
 	OutputLine(NULL, "簡易式の知能検査でも非凡な数字が出ています。",
 		   NULL, " He's showing rare numbers, even if this was just a simplified intelligence examination. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04004", 256, TRUE);
 	OutputLine(NULL, "…まず申し上げて、前原圭一くんは大変に頭がいい。」",
 		   NULL, "...First, I would like to say that Keiichi Maebara-kun is extremely bright.\"", Line_Normal);
 	ClearMessage();
@@ -897,16 +897,16 @@ void main()
 //「圭一が......＠でも、学校では大した成績じゃありませんし＠通信簿も２、３、４が適当に並ぶ平均的なもので......＠...何かの間違いではありませんか...？＠
 //「クレペリン検査とも重ねましたが、その結果、興味深いことがわかりました＠前原くんは意味を持たない問題に非常に弱いのです＠...無味簡素で自身の生活に結びつかない内容の問題に興味が持てないのです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700053", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700053", 256, TRUE);
 	OutputLine(NULL, "「圭一が……。",
 		   NULL, "\"Keiichi...?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700054", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700054", 256, TRUE);
 	OutputLine(NULL, "でも、学校では大した成績じゃありませんし。",
 		   NULL, " But he doesn't have very good grades at school.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700055", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700055", 256, TRUE);
 	OutputLine(NULL, "通信簿も２、３、４が適当に並ぶ平均的なもので……。",
 		   NULL, " He has average marks on his report card—Bs, Cs, Ds...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700056", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700056", 256, TRUE);
 	OutputLine(NULL, "…何かの間違いではありませんか…？」",
 		   NULL, " ...Is there some kind of mistake...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -916,11 +916,11 @@ void main()
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_011_vm0x_n01","dialog000");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_011_vm00_n01","dialog000");}
 	//VoiceMatchingEnd
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04006", 256, TRUE);
 	OutputLine(NULL, "前原くんは意味を持たない問題に非常に弱いのです。",
 		   NULL, " Maebara-kun is extremely weak when faced with questions that don't have any meaning. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04007", 256, TRUE);
 	OutputLine(NULL, "…無味簡素で自身の生活に結びつかない内容の問題に興味が持てないのです。」",
 		   NULL, "...He just has no interest in simple, dull questions that don't have to do with everyday life.\"", Line_Normal);
 	ClearMessage();
@@ -930,20 +930,20 @@ void main()
 //　そして塾の人が、俺の書いた答案の一枚を見せた＠
 //　......それは工作の問題の答案だった＠工作の問題なんて珍しいのでとても面白かったっけ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700057", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700057", 256, TRUE);
 	OutputLine(NULL, "「…２＋３はわからなくても、リンゴが２個あって、３個増やしたら何個に…という形なら理解できる、ということですか？」",
 		   NULL, "\"...So even if he doesn't know what 2+3 is, if you told him he had two apples, then got three more... He would understand that sort of question?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04008", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04008", 256, TRUE);
 	OutputLine(NULL, "「その通りです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04009", 256, TRUE);
 	OutputLine(NULL, "例えば正六面体の展開図を書け…と言われて混乱する圭一くんも、サイコロを切り開いたらどんな形になる？",
 		   NULL, " For example... Instead of telling him to draw a flattened, foldable cube, what if we asked him what a die would look like when cut open?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04010", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04010", 256, TRUE);
 	OutputLine(NULL, "　という風に聞けば、見事に答えられるのです。」",
 		   NULL, " If we did that, he can answer beautifully.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -965,34 +965,34 @@ void main()
 //「正二十面体の展開図を書けという問題です＠...この問題を、２０面体のサイコロを作るにはどんな風に厚紙を切ればいい＠　と聞き直したら、圭一くんはさも簡単そうにこれを書いて見せました＠......これは平凡なことではありません。＠
 //「圭一＠あなた、どこかの本の雑誌のフロクか何かで２０面体サイコロを作ったことがあったの？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04011", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04011", 256, TRUE);
 	OutputLine(NULL, "「正二十面体の展開図を書けという問題です。",
 		   NULL, "\"In this question, it asks to draw an unfolded regular icosahedron—a shape with twenty faces.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04012", 256, TRUE);
 	OutputLine(NULL, "…この問題を、２０面体のサイコロを作るにはどんな風に厚紙を切ればいい？",
 		   NULL, " ...When we rephrased it and asked him how he would cut out a piece of cardboard to create a twenty-sided die... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>塾</color>", NULL, "<color=#f5e6d3>Cram School Teacher</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04013", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04013", 256, TRUE);
 	OutputLine(NULL, "　と聞き直したら、圭一くんはさも簡単そうにこれを書いて見せました。",
 		   NULL, "Keiichi-kun drew the answer as though it were easy.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04014", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/jukua04014", 256, TRUE);
 	OutputLine(NULL, "……これは平凡なことではありません。」",
 		   NULL, " ...This is not something an average child can do.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700058", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700058", 256, TRUE);
 	OutputLine(NULL, "「圭一。",
 		   NULL, "\"Keiichi...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700059", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700059", 256, TRUE);
 	OutputLine(NULL, "あなた、どこかの本の雑誌のフロクか何かで２０面体サイコロを作ったことがあったの？」",
 		   NULL, " Have you ever made a die with twenty sides from a magazine extra or anything?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
 	DrawScene("black", 400 );
-	
+
 //　サイコロってのは１から６まであるもののことだ＠
 //　６よりも大きな目が出せるサイコロがあるなんて、このテストで知るまで考えたこともない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1080,12 +1080,12 @@ void main()
 	DisableWindow();
 	DrawSceneWithMask("white", "c", 0, 0, 600 );
 	DrawSceneWithMask("background/mo3", "c", 0, 0, 600 );
-	PlayBGM( 2, "lsys12", 128, 0 );
+	PlayBGM( 2, "lsys12", 56, 0 );
 
 //「..............................ふ、＠
 //　そんなこともあったっけ＠......自身を笑い捨てるように、苦笑いする￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100638", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100638", 256, TRUE);
 	OutputLine(NULL, "「…………………………ふ、」",
 		   NULL, "\"...............Heh.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1189,7 +1189,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("background/g2", 400 );
-	PlayBGM( 1, "msys26", 128, 0 );
+	PlayBGM( 1, "msys26", 56, 0 );
 
 //　転校しての第一日目＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1213,7 +1213,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("white", 400 );
-	PlaySE( 3, "wa_020", 128, 64 );
+	PlaySE( 3, "wa_020", 56, 64 );
 	DrawSceneWithMask("black", "right", 0, 0, 200 );
 
 //　ガラリ＠
@@ -1235,7 +1235,7 @@ void main()
 		   NULL, "...And then... within seconds, that determination took a hard counter to the face.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_029", 128, 64 );
+	PlaySE( 3, "wa_029", 56, 64 );
 
 //!s0　頭上から黒板消し。/
 //!s0
@@ -1506,13 +1506,13 @@ void main()
 		   NULL, "...Once I achieved my goal, I would go back to that bright road. And then... I'd spend those average, sunny days at my leisure...", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlaySE( 3, "wa_042", 56, 64 );
 	DisableWindow();
 	DrawSceneWithMask("background/mo3", "c", 0, 0, 1300 );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 2, "lsys12", 128, 0 );
-	PlaySE( 3, "wa_042", 128, 64 );
+	PlayBGM( 2, "lsys12", 56, 0 );
+	PlaySE( 3, "wa_042", 56, 64 );
 
 //　ザクリ.........＠
 //　...気付いた時、穴はもう...信じられないくらいに大きく、深くなっていた＠
@@ -1535,7 +1535,7 @@ void main()
 
 //「......これだけ掘れば......充分じゃないか...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100639", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100639", 256, TRUE);
 	OutputLine(NULL, "「……これだけ掘れば……充分じゃないか…。」",
 		   NULL, "\"...I think digging this much... is enough, right?\"", Line_Normal);
 	ClearMessage();
@@ -1736,10 +1736,10 @@ void main()
 
 //「......行くぞ...＠...前原圭一...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100640", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100640", 256, TRUE);
 	OutputLine(NULL, "「……行くぞ…。",
 		   NULL, "\"...Let's do this...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100641", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100641", 256, TRUE);
 	OutputLine(NULL, "…前原圭一…。」",
 		   NULL, " Keiichi Maebara...\"", Line_Normal);
 	ClearMessage();
@@ -1879,7 +1879,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //locate 4,9

@@ -6,14 +6,14 @@ void dialog000()
 {
 //　...わ、...それ絶対にバレるよ、お酒臭いー！＠
 //「そう言えば昨日は町会の人が集まっての打ち合わせ会だったんだろ？＠
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200120", 220, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200120", 256, TRUE);
 	OutputLine(NULL, "　…わ、…それ絶対にバレるよ、お酒臭いー！」",
 		   NULL, " ...Wow... You really stink of liquor! You'll get found out for sure!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100464", 240, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100464", 256, TRUE);
 	OutputLine(NULL, "「そう言えば昨日は町会の人が集まっての打ち合わせ会だったんだろ？」",
 		   NULL, "\"Oh, right, wasn't there a big business meeting with all the people on the town council yesterday?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -25,13 +25,13 @@ void dialog001()
 //「うん＠先生があの後、直接、県の児童相談所に電話してね＠児童福祉司が昨夜の内に訪問したらしいよ＠私の叔母さんにも、今後定期的にアプローチするようにと連絡があったって。＠
 //「......小難しい話はいいよ＠それより沙都子はどうなったんだよ＠保護されたのか？！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300255", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300255", 256, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yep.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040401", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040401", 256, TRUE);
 	OutputLine(NULL, "先生があの後、直接、県の児童相談所に電話してね。",
 		   NULL, " Chie-sensei called the child consultation center right after we talked to her.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040402", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040402", 256, TRUE);
 	OutputLine(NULL, "児童福祉司が昨夜の内に訪問したらしいよ。",
 		   NULL, " A child welfare officer apparently visited before the night was over. ", GetGlobalFlag(GLinemodeSp));
 }
@@ -41,10 +41,10 @@ void dialog002()
 {
 //「...保護司、来たんでしょ＠　......その、...どういう話になったわけ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040403", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040403", 256, TRUE);
 	OutputLine(NULL, "「…保護司、来たんでしょ？",
 		   NULL, "\"...A probation officer came, right?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040404", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040404", 256, TRUE);
 	OutputLine(NULL, "　……その、…どういう話になったわけ？」",
 		   NULL, " ...Umm... How did it go?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -54,7 +54,7 @@ void dialog003()
 {
 //「...それは......、児童相談所長がいろいろ検討した末に判断を......。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 22, "ps3/s03/22/chie040402", 128, TRUE);
+	ModPlayVoiceLS(4, 22, "ps3/s03/22/chie040402", 256, TRUE);
 	OutputLine(NULL, "「…それは……、児童相談所長がいろいろ検討した末に判断を……。」",
 		   NULL, "\"...Well... After the person in charge at the child consultation center looked into it from many angles, they determined...\"", Line_Normal);
 	ClearMessage();
@@ -62,17 +62,17 @@ void dialog003()
 
 void dialog004()
 {
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500026", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500026", 256, TRUE);
 	OutputLine(NULL, "……実は、沙都子の児童虐待の通報は、これが三回目なのです。",
 		   NULL, " ...This is actually the third time someone has reported Satoko's child abuse.", Line_WaitForInput);
 }
 
 void dialog005()
 {
-	ModPlayVoiceLS(4, 22, "ps3/s03/22/chie040405", 128, TRUE);
+	ModPlayVoiceLS(4, 22, "ps3/s03/22/chie040405", 256, TRUE);
 	OutputLine(NULL, "…特に義理のお父さんを陥れるのを目的に、自傷と作話で…嘘の虐待話を作って……、",
 		   NULL, " especially her stepfather, so she inflicted wounds on herself so she could... make up a false story about abuse...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 22, "ps3/s03/22/chie040406", 128, TRUE);
+	ModPlayVoiceLS(4, 22, "ps3/s03/22/chie040406", 256, TRUE);
 	OutputLine(NULL, "自分で虐待ＳＯＳに電話したって。」",
 		   NULL, " And that she sent out an SOS herself.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -80,7 +80,7 @@ void dialog005()
 
 void dialog006()
 {
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500035", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500035", 256, TRUE);
 	OutputLine(NULL, "……………児童相談所に、ちゃんと昔の記録が残ってましたですから、",
 		   NULL, " ......The child consultation center had all their past records...", Line_WaitForInput);
 }

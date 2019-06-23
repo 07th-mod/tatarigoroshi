@@ -6,7 +6,7 @@ void dialog000()
 {
 //「高熱と失禁に重度の意識障害も見られました＠睡眠薬中毒の典型的な重症例だと思いましたので、ただちに対応に入りました。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医師</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/doca04009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/doca04009", 256, TRUE);
 	OutputLine(NULL, "「高熱と失禁に重度の意識障害も見られました。",
 		   NULL, "\"His high temperature and incontinence indicated a severe disturbance of consciousness.", Line_WaitForInput);
 }
@@ -15,7 +15,7 @@ void dialog001()
 {
 //「普段から睡眠薬を愛用していたとかは？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s03/00/komi04016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/komi04016", 256, TRUE);
 	OutputLine(NULL, "「普段から睡眠薬を愛用していたとかは？」",
 		   NULL, "\"Did he use sleeping medication regularly?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -25,7 +25,7 @@ void dialog002()
 {
 //「.....................いつまでも裸でいたくありませんわ＠...服が、...欲しい。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400221", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400221", 256, TRUE);
 	OutputLine(NULL, "「…………………いつまでも裸でいたくありませんわ。",
 		   NULL, "\".........I do not want to be naked forever.", Line_WaitForInput);
 }
@@ -33,7 +33,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100984", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100984", 256, TRUE);
 	OutputLine(NULL, "だから夢遊病のようにふらふらと、記憶になく祭りに出掛けた…なんてことはありえない。」",
 		   NULL, "So it's not possible... that I walked to the festival in my sleep and forgot about it afterwards.\"", Line_Normal);
 	ClearMessage();
@@ -41,7 +41,7 @@ void dialog003()
 
 void dialog004()
 {
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400264", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400264", 256, TRUE);
 	OutputLine(NULL, "　男の人に、いつまでも裸を晒していたくないんですのよ…！",
 		   NULL, " I do not want to expose my naked self to a man any more than this...!", Line_WaitForInput);
 }

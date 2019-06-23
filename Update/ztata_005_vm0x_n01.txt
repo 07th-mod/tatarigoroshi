@@ -7,13 +7,13 @@ void dialog000()
 //「...何だよ一体＠ビニ本の墨塗りの消し方でも知りたいのか＠　ちなみにバターを塗ると消えるというのはまったくの迷信だぞ＠もちろん砂ケシも迷信だ。＠
 //!s0「...え、えぇ？！!sd/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei32720", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei32720", 256, TRUE);
 	OutputLine(NULL, "「…何だよ一体。",
 		   NULL, "\"...What could it be?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei32730", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei32730", 256, TRUE);
 	OutputLine(NULL, "テストの対策法は以前教えただろ？",
 		   NULL, " Remember how I taught you to ace tests?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei32740", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei32740", 256, TRUE);
 	OutputLine(NULL, "　ちなみに、知恵先生が授業中、「ふっ…」と含み笑いを教科書で隠した時が次のテスト範囲だ。",
 		   NULL, " You know, in class when Chie-sensei covers up a sly smile with her textbook, that part's going to be on the test.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -22,21 +22,21 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s19/11/500700065", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s19/11/500700065", 256, TRUE);
 	OutputLine(NULL, "年に２回ほど、東京の大展覧会に出展されてるそうじゃないですか。",
 		   NULL, "His works go on display twice a year in the Great Exhibition in Tokyo, don't they?", Line_WaitForInput);
 }
 
 void dialog002()
 {
-	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000194", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000194", 256, TRUE);
 	OutputLine(NULL, "……異常者に、バットか何かで殴り殺されて。",
 		   NULL, " ...She was beaten to death by a deviant with a baseball bat. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog003()
 {
-	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000199", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000199", 256, TRUE);
 	OutputLine(NULL, "……聞いた話では、興宮あたりのじっ懇な仲の女性宅に転がり込んでるとか。」",
 		   NULL, " ...From what I've heard, he's staying with an intimate lady friend somewhere in Okinomiya.\"", Line_Normal);
 }

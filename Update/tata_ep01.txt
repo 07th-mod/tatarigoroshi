@@ -13,7 +13,7 @@ void main()
 //!s100
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
 	SetStyleOfMessageSwinging( 1 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //locate 4,6
 //　昭和５８年６月２２日未明。
 	ClearMessage();
@@ -25,10 +25,10 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	
+
 	DisableWindow();
 	DrawScene("flashback/hi1", 1000 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 	SetStyleOfMessageSwinging( 0 );
 //　Ｘｘ県鹿骨市雛見沢村で、広域災害が発生。
@@ -43,7 +43,7 @@ void main()
 	DrawScene("black", 400 );
 	DrawScene("flashback/oni1", 400 );
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -54,7 +54,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　犠牲者１２００余名。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -65,7 +65,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　行方不明者２０余名。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -76,7 +76,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　周辺自治体から約６０万人が避難する空前の大災害となった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -86,7 +86,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　その後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -96,7 +96,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //そこより湧き出したガスが、災害の原因であると断定した。
 	OutputLine(NULL, "そこより湧き出したガスが、災害の原因であると断定した。",
@@ -108,7 +108,7 @@ void main()
 	DisableWindow();
 	DrawScene("black", 400 );
 	DrawScene("flashback/ji1", 400 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を「祟り」と騒ぐ者が続出し、初期の混乱を煽り立てた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -118,7 +118,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -128,7 +128,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。
 	OutputLine(NULL, "学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。",
@@ -140,7 +140,7 @@ void main()
 	DisableWindow();
 	DrawScene("black", 400 );
 	DrawScene("flashback/simen3", 400 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、「オヤシロさまの祟り説」を煽り立てた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -152,7 +152,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -162,7 +162,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -172,8 +172,8 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	
-	PlayBGM( 2, "lsys24", 128, 0 );
+
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -183,7 +183,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //...もう全国に波及する衝撃には歯止めがなくなっていた。
 	OutputLine(NULL, "…もう全国に波及する衝撃には歯止めがなくなっていた。",
@@ -192,7 +192,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -202,7 +202,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -213,7 +213,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　中には取り憑かれたと自称し、奇行を行なう者もいた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -224,7 +224,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　それらのほとんどは過激な報道による思い込みによるものだったが、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -233,7 +233,7 @@ void main()
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //...後にこれらの雛見沢大災害に起因する精神疾患を雛見沢症候群と呼ぶまでに至る...。
 	OutputLine(NULL, "…後にこれらの雛見沢大災害に起因する精神疾患を雛見沢症候群と呼ぶまでに至る…。",
@@ -244,7 +244,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("flashback/jt1", 400 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -254,7 +254,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　ガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -264,7 +264,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である...。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -275,7 +275,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 3000 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　最終的な生存者は、雛見沢村ＸＸＸ番地在住の男子、前原圭一（１Ｘ歳）のみ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -286,7 +286,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　救出時はガスによる呼吸困難で肺水腫を起こしかけていたが、必死の救命活動の結果、一命を取り留めた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -297,7 +297,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　現在は県内の総合病院に入院している。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -307,7 +307,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　連日取材陣が押しかけているが、一切の面会は謝絶されている。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -318,7 +318,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　......彼が、雛見沢で何を見たのか。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -329,7 +329,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　６月の２１日から２２日にかけて、雛見沢で何があったのか。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -340,7 +340,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　今日でも彼は、黙して語ろうとしない...。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -362,7 +362,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	DrawScene("black", 400 );
-	PlayBGM( 1, "msys22", 128, 0 );
+	PlayBGM( 1, "msys22", 56, 0 );
 
 
 
