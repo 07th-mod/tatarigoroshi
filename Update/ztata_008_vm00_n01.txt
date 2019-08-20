@@ -6,7 +6,7 @@ void dialog000()
 {
 //「ろくでなしの寄生虫だからね＠...自分ひとりじゃ炊事は愚か、掃除ひとつできないし。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/140300007", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/140300007", 540, TRUE);
 	OutputLine(NULL, "「ろくでなしの寄生虫だからね。",
 		NULL, "\"Because he's a good-for-nothing parasite.", Line_WaitForInput);
 }
@@ -79,7 +79,7 @@ void dialog008()
 
 void dialog009()
 {
-	ModPlayVoiceLS(4, 1, "ps2/01/140100078", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "ps2/01/140100078", 540, TRUE);
 	OutputLine(NULL, "　……保護者のいない子供って、……孤児院みたいなところに入れられちゃうんじゃないっけ…？」",
 		   NULL, " ...Don't kids with no guardians... have to go to orphanages and stuff...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -87,7 +87,7 @@ void dialog009()
 
 void dialog010()
 {
-	ModPlayVoiceLS(4, 3, "ps2/03/140300081", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/140300081", 540, TRUE);
 	OutputLine(NULL, "そのお陰で梨花ちゃんは孤児院送りを免れてるってわけ。",
 		   NULL, " That's how Rika-chan avoids being sent to an orphanage.", Line_WaitForInput);
 }

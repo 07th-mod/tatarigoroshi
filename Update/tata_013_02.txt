@@ -248,7 +248,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s03/00/doca04013", 256, TRUE);
 	OutputLine(NULL, "「呼吸が不正常だったので人工呼吸を施しました。",
 		   NULL, "\"His breathing was in disarray, so I put him on a respirator.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps2/00/doca04014", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "ps2/00/doca04014", 540, TRUE);
 	OutputLine(NULL, "合わせて呼吸刺激薬を投与。",
 		   NULL, " I also administered breathing stimulants.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s03/00/doca04015", 256, TRUE);
@@ -1225,7 +1225,7 @@ void main()
 
 //「...................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/140400231", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/140400231", 540, TRUE);
 	OutputLine(NULL, "……………………………………………。」",
 		   NULL, "........................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
