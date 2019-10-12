@@ -89,6 +89,7 @@ void main()
 		   NULL, "...But... with that police officer Ooishi here, I couldn't go inside so carelessly.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "portrait/normal/sa5_muhyou_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/sinryou_soto3", 500 );
 
@@ -680,6 +681,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "portrait/normal/sa5_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/sinryou_soto3", "left", 0, 0, 100 );
 	PlaySE( 4, "wa_027", 56, 64 );
@@ -1182,6 +1184,7 @@ void main()
 		   NULL, "...She must have been pretty embarrassed wearing only the towel.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa5_yareyare_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...............梨花の家に行きますわよ＠......私の服、あるはずですから＠.....................どうしたんですの＠　圭一さん...。＠
@@ -1458,6 +1461,7 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_013_02_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa5_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......それはおかしいですわね＠......なら、どうやってお祭りで遊んだんですの...？＠
@@ -1991,6 +1995,7 @@ void main()
 		   NULL, "She wobbled up the shrine steps, looking like she was about to fall.", Line_WaitForInput);
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "portrait/normal/sa5_hannbeso_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "…俺はすぐに駆け寄り、支えてやった。",
@@ -3299,6 +3304,7 @@ void main()
 
 //////gosub *Ch_Sa_Taoru_off
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa5_sakebu_a1_", "1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ち、...近寄らないでぇええぇええぇ...！＠　この、...人殺しぃいいぃいい！！＠

@@ -32,6 +32,7 @@ void dialog002()
 	ClearMessage();
 //＜詩音
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「あ～～、それはいいですねぇ...＠沙都子ちゃんを...木馬責め...♪＠
@@ -45,6 +46,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 6, "sprite/normal/si1b_wink_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「器具を使ったプレイは、ちゃんと知識を身に付けてからにして下さいね＠間違った知識を持ってると、本当に危険なんです。＠
@@ -87,6 +89,7 @@ void dialog004()
 		   NULL, " you should imagine that you're a domesticated maid.", Line_WaitForInput);
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 10, "sprite/normal/iri1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...ほら、嗜虐的なシチュエーションが、何だか楽しそうになってきませんか...＠　う～ん、いいじゃないですかぁ...♪＠

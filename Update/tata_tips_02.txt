@@ -51,6 +51,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「ほっほっほ＠　圭一さんにもその醍醐味がわかるなら素質がありましてよー？￥
@@ -197,6 +198,7 @@ void main()
 		   NULL, "...After a few moments, the two of them managed to crawl away from the window... both of them completely white.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa1b_warai_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/gr2", "right", 0, 0, 300 );
 
@@ -677,6 +679,7 @@ void main()
 		   NULL, " Would you happen to have any proof?", Line_WaitForInput);
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa1a_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　それに罠なんて品のない言い方はやめてほしいですわね＠/
@@ -729,6 +732,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa1b_hannbeso_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ひいいいいぃいいいいぃい！！＠　けけ、圭一さん、たす、助けてー！！￥

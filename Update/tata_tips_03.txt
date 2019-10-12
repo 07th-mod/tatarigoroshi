@@ -66,6 +66,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1b_bikkuri_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「今、廊下からすごいのが聞こえた＠　何だろ＠　何だろ！￥
@@ -98,6 +99,7 @@ void main()
 		   NULL, "We rushed into the hallway... and to our surprise, Coach was there with a water bucket overturned on his head!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1b_odoroki_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「か、監督、大丈夫ぅ？！＠
@@ -109,6 +111,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 10, "sprite/normal/iri1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「たは、はははは...＠いやぁ、...やられましたねぇ...＠皆さん、こんにちは。＠

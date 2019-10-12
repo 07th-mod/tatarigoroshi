@@ -33,6 +33,7 @@ void main()
 //■お疲れさま会３（祟殺し編）
 	DisableWindow();
 	PlayBGM( 1, "msys02", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/res5", 1000 );
 
@@ -51,6 +52,7 @@ void main()
 	ClearMessage();
 //＜レナ
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 9, "sprite/normal/ta1_warai_", "1", "right", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/res1", "left", 0, 0, 300 );
 
@@ -78,6 +80,7 @@ void main()
 
 //＜鷹野
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa1b_odoroki_b1_", "1", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そんなわけありませんでしてよーッ！＠　またしても＠　またしても！！＠
@@ -96,6 +99,7 @@ void main()
 
 //＜沙都子
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_akuwarai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「大々々バッドエーンド！＠　くっくっく＠/
@@ -118,6 +122,7 @@ void main()
 //＜魅音
 	DisableWindow();
 	DrawSceneWithMask("black", "right", 0, 0, 300 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1a_nande_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/res5", "right", 0, 0, 300 );
 
@@ -245,6 +250,7 @@ void main()
 		   NULL, " First is Coach—Irie Kyousuke-san~~!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 10, "sprite/normal/iri1_def2_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ご紹介に預かりまして光栄です＠どうもどうも＠脇役だったわけですが、トータルで見てみるとかなりおいしい役だったなぁなんて思ってます。＠
@@ -263,6 +269,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「本当ですわねぇ＠今回限りの脇役にしては出番もセリフも多過ぎでしてよ。＠
@@ -278,6 +285,7 @@ void main()
 
 //＜沙都子
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「はははは＠　次回のシナリオでも出番があるかはわかりませんが、その節は応援よろしくお願いしますね～。￥
@@ -292,6 +300,7 @@ void main()
 //＜監督
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「ありがとうございました＠　では次に、第１回から登場していたにも関わらず、ずっと立ち絵がなかった、知恵先生～！！￥
@@ -304,6 +313,7 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 22, "sprite/normal/tie_1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「皆さん、どうもこんにちは＠　第１回からずーっと学校シーンで登場させてもらってたんですけど、どういうわけか立ち絵がいただけなくて＠...どうしてなんでしょうねぇ。＠
@@ -319,6 +329,7 @@ void main()
 
 //＜知恵
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......あ、はは、はははははは＠　ど、どうしてなんでしょうね＠　あ、知恵先生に席を空けてあげてください～！￥
@@ -337,6 +348,7 @@ void main()
 //＜レナ
 	DisableWindow();
 	DrawScene("black", 400 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 3, "sprite/normal/me1b_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/res1", "up", 0, 0, 300 );
 
@@ -357,6 +369,7 @@ void main()
 	ClearMessage();
 //＜魅音
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 2, "sprite/normal/re1a_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 //「では皆さん～＠　各卓のコップをお持ちになって下さい～＠　お飲み物はいろいろありますよ～！￥
@@ -389,6 +402,7 @@ void main()
 
 //＜大石
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 22, "sprite/normal/tie_1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「私たちを加えて、多分１０人くらいはいると思います。＠
@@ -787,6 +801,7 @@ void main()
 //＜大石
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1b_wink_a1_", "2", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「圭ちゃんの顔を知る者があの店にいて、それを私に伝えた...と考えれば、比較的筋は通るでしょ＠そういうことよ。￥
@@ -801,6 +816,7 @@ void main()
 //＜魅音
 	DisableWindow();
 	DrawSceneWithMask("background/res1", "right", 0, 0, 300 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri1_def1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「『ひぐらし』の物語は、微細に異なる場所もありますけど＠大筋の設定においては、多分、３つのシナリオは共通していると思います＠例えば、キャラクター設定。＠
@@ -828,6 +844,7 @@ void main()
 //＜レナ
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 8, "sprite/normal/tomi1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「まったく変わらない設定、というのは同感＠/
@@ -849,6 +866,7 @@ void main()
 //＜富竹
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 5, "sprite/normal/ri1_def_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「......どんな物語になっても、必ず同じ日に死にますです。￥
@@ -859,6 +877,7 @@ void main()
 	ClearMessage();
 //＜梨花
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 22, "sprite/normal/tie_1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/res5", "right", 0, 0, 300 );
 
@@ -914,6 +933,7 @@ void main()
 //＜監督
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 6, "sprite/normal/si1b_tokui_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	//VoiceMatching
@@ -925,6 +945,7 @@ void main()
 //＜詩音
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1a_akuwarai_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......あんな序盤の選択肢一個でバッド確定とは...恐ろしい選択肢だねぇ！￥
@@ -935,6 +956,7 @@ void main()
 	ClearMessage();
 //＜魅音
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 4, "sprite/normal/sa1a_def_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/res5", "right", 0, 0, 300 );
 
@@ -946,6 +968,7 @@ void main()
 
 //＜沙都子
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 9, "sprite/normal/ta1_def_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「私はずっとそれ以前＠...愛人がトラブルで失踪して、叔父が雛見沢に帰ってくることになった辺りから、もう分岐しちゃってると思うわね。￥
@@ -960,6 +983,7 @@ void main()
 //＜鷹野
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 5, "sprite/normal/ri1_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......では一番最初の、鬼隠し編の分岐はどこなのですか。＠
@@ -972,6 +996,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 11, "sprite/normal/oisi1_2_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「やはり、...劇中の私が登場して、オヤシロさまの祟りに関する連続怪死事件のことを話す辺りからだと思いますね。￥
@@ -997,6 +1022,7 @@ void main()
 	//VoiceMatchingEnd
 //＜沙都子
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1b_wink_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...へぇ......＠沙都子にしちゃ本質ズバリじゃないのよ＠確かに＠　言えてる！＠
@@ -1019,6 +1045,7 @@ void main()
 //＜魅音
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 9, "sprite/normal/ta1_akuwarai_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 1, "msysRi", 56, 0 );
 
@@ -1073,6 +1100,7 @@ void main()
 //＜魅音
 	DisableWindow();
 	PlayBGM( 1, "msys02", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/res1", "right", 0, 0, 300 );
 
@@ -1088,6 +1116,7 @@ void main()
 //＜レナ
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri1_majime2_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「.........本当に、...それで幸せになれるんでしょうか＠大石さんと北条鉄平さんの不登場＠魅音さんのお人形の件＠...本当にそれさえ気を付ければいいんですかね。＠
@@ -1109,6 +1138,7 @@ void main()
 
 //＜監督
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 8, "sprite/normal/tomi1_komaru_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そうそう＠...みんなはひとつ大きな最後を忘れてるよ＠雛見沢大災害という天災を忘れたかい？￥
@@ -1217,6 +1247,7 @@ void main()
 //＜レナ
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1a_tokui_a1_", "2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そりゃー決まってるでしょ＠どんな分岐にも関係なく死亡が確定している人だよ＠/
@@ -1230,6 +1261,7 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me1a_wink_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　どうせ死ぬなら、雛見沢の為の人柱になってもらわなくちゃね！￥
@@ -1240,6 +1272,7 @@ void main()
 //＜魅音
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 8, "sprite/normal/tomi1_komaru_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	//VoiceMatching
@@ -1251,6 +1284,7 @@ void main()
 //＜富竹
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 9, "sprite/normal/ta1_akuwarai_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「やっぱりジロウさんは...この物語に欠かせない重要な役割の人だと信じてたわ＠お役目を立派に果たしてちょうだいね☆￥
@@ -1264,6 +1298,7 @@ void main()
 	ClearMessage();
 //＜鷹野
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri1_def2_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/res1", "left", 0, 0, 300 );
 
@@ -1293,6 +1328,7 @@ void main()
 		   NULL, "First... we stop Uncle Houjou, whose lover ran out on him, from returning to Hinamizawa!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 10, "sprite/normal/iri1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/mati2", "up", 0, 0, 300 );
 
@@ -1348,6 +1384,7 @@ void main()
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 	DisableWindow();
 	DrawScene("black", 1000 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 4, "sprite/normal/sa1b_warai_b1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/mati2", "left", 0, 0, 200 );
 //!sd
@@ -1370,6 +1407,7 @@ void main()
 
 //＜沙都子
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1a_komaru_a1_", "0", "left", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「さ、沙都子ちゃん、火薬の量、多過ぎじゃないかな...。＠（監督、大丈夫かな...（汗）￥
@@ -1509,6 +1547,7 @@ void main()
 	ClearMessage();
 //＜魅音
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 8, "sprite/normal/tomi1_komaru_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/oni1", "right", 0, 0, 200 );
 
@@ -1661,6 +1700,7 @@ void main()
 
 //＜レナ
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_warai_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......屍累々で大変なことになってますのです。￥
@@ -1677,6 +1717,7 @@ void main()
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/res1", 400 );
 
@@ -1728,6 +1769,7 @@ void main()
 	//VoiceMatchingEnd
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si1a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれ＠　今ここで発表しちゃうんですか＠　もう少し秘密にしたかったけど、まぁいいか。＠
@@ -1746,6 +1788,7 @@ void main()
 
 //＜詩音
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa1b_odoroki_b1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「詩音さんと圭一さんの二人っきりの秘密ですってぇ？！＠
@@ -1759,6 +1802,7 @@ void main()
 //＜沙都子
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me1b_odoroki_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「なななな、何よそれぇえぇええぇえ？＠　聞いてない聞いてない聞いてなぁああぁいッ！！￥
@@ -1772,6 +1816,7 @@ void main()
 	ClearMessage();
 //＜魅音
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 6, "sprite/normal/si1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/res5", "left", 0, 0, 300 );
 
@@ -1795,6 +1840,7 @@ void main()
 		   NULL, "\"\"\"W-Whaaaaaaat?!?!\"\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si1a_wink_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...まぁつまりはそういうことです＠初登場以来、断トツの人気ナンバーワン＠/
@@ -1832,6 +1878,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 6, "sprite/normal/si1b_wink_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	//VoiceMatching
@@ -1840,6 +1887,7 @@ void main()
 	//VoiceMatchingEnd
 //＜詩音
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa1a_akireru_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......でもいいんですの詩音さん＠　主人公は毎回、ろくでもない最期を迎えると決まってましてよ？＠
@@ -1855,6 +1903,7 @@ void main()
 
 //＜沙都子
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 6, "sprite/normal/si1a_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「くっくっく＠　まぁ、これまではね＠でもね、次回からは必ずしもそうはならないんですよねー。￥
@@ -1883,6 +1932,7 @@ void main()
 
 //＜レナ
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 6, "sprite/normal/si1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「つまり、私が名探偵になって、理不尽な謎をバスバス解決していく痛快ストーリーなわけです＠今のうちから決め台詞を考えておかないとねー＠　あなたを、犯人です＠みたいな～☆」/
@@ -1908,6 +1958,7 @@ void main()
 //＜詩音
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me1b_odoroki_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 	PlayBGM( 1, "msys03", 56, 0 );
 
@@ -1924,6 +1975,7 @@ void main()
 
 //＜魅音
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 6, "sprite/normal/si1a_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「お姉こそ、私に全ての謎と秘密を看破されて、謝罪の言葉を口にしながら自害なされる心の準備はＯＫですー？￥
@@ -1934,6 +1986,7 @@ void main()
 	ClearMessage();
 //＜詩音
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 5, "sprite/normal/ri1_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/res1", "left", 0, 0, 300 );
 
@@ -1947,6 +2000,7 @@ void main()
 
 //＜梨花
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 2, "sprite/normal/re1a_def_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「さて＠その後半部の新シナリオ、仮称「目明し編」は現在鋭意製作中です＠近い将来、皆さんに公開できると思いますので、どうか楽しみにしていただければ幸いです。￥

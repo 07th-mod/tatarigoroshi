@@ -217,6 +217,7 @@ void dialog018()
 
 //＜詩音
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1b_bikkuri_b1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //A 「…さ、捧げ物って、…何をオヤシロさまに捧げるっていうんですか？」
@@ -272,6 +273,7 @@ void dialog021()
 
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa1a_odoroki_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 // 沙都子rvS20/04/440400226.「……なんで監督さんが叔父さまの役を？」

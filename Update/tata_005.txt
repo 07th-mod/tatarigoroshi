@@ -326,6 +326,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("white", "left", 0, 0, 300 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ie1", "left", 0, 0, 300 );
 
@@ -420,6 +421,7 @@ void main()
 		   NULL, "However, looking over and seeing none of their things... so it looked like they really hadn't come to school.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...あれれ＠　あの二人が遅刻なんて珍しいね。＠
@@ -439,6 +441,7 @@ void main()
 		   NULL, "Rena seemed to be enjoying herself thinking about what their excuse for being late would be.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1a_akuwarai_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1915,6 +1918,7 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 25, "sprite/normal/oka1_odoroki_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 
@@ -1934,6 +1938,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 3, "wa_029", 56, 64 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 24, "sprite/normal/tomita1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(3, 25, "sprite/normal/oka1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 	ShakeScreen( 1, 20, 20, 5, 0, );
@@ -2024,6 +2029,7 @@ void main()
 		   NULL, " The next time you take a nap, we'll tell Sensei about it.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 3, "sprite/normal/me1b_warai_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/gk1", "left", 0, 0, 300 );
 
@@ -3256,6 +3262,7 @@ void main()
 		   NULL, " I heard she was a high academic achiever.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　どこぞの女子大を出られてるそうじゃないですか＠あの年の女性で女子大出なんて凄いですよ＠ひょっとしてお母さん、良家のお嬢さんなんじゃないですか＠　...なーんてウワサが立ってるせいか、冷たい人だ、なんてウワサが立てられてるなんてご存知で＠
@@ -3505,6 +3512,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/g1", "up", 0, 0, 300 );
 
@@ -3516,6 +3524,7 @@ void main()
 		   NULL, " ...To my disbelief... it was Coach.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 11, "sprite/normal/oisi1_5_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	StopSE( 3 );
@@ -4622,6 +4631,7 @@ void main()
 		   NULL, "...However, though it was resolved... no one knew whether the part about it being Oyashiro-sama's curse was true or not.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/sinryou_sinsatu1", 400 );
 
@@ -4651,6 +4661,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「叔母は死に、叔父は逃げ出し＠...誰も兄妹を苛める者はいなくなるはずだったんですが＠...............まるでその後を継ぐように、あの男が執拗に現れるようになったんです。￥
@@ -4762,6 +4773,7 @@ void main()
 	PlaySE( 3, "wa_020", 56, 64 );
 	PlayBGM( 1, "msys12", 56, 0 );
 	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me1b_odoroki_a1_", "2", "right", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/sinryou_sinsatu1", "right", 0, 0, 300 );
 
@@ -4855,6 +4867,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "right", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 5, "sprite/normal/ri1_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「...............みぃ。￥
