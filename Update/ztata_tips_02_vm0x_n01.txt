@@ -10,7 +10,7 @@ void dialog001()
 {
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacterWithFiltering(2, 4, "sprite/normal/sa1b_hannbeso_b1_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 4, "sprite/sa1b_hannbeso_b1_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400071", 256, TRUE);
 	OutputLine(NULL, "「わぷっ？！",
@@ -28,7 +28,7 @@ void dialog001()
 		   NULL, "\"...Looks like there's no use talking to the person who set this trap.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/normal/sa1a_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 4, "sprite/sa1a_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 }
 
 void dialog002()

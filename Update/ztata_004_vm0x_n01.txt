@@ -31,7 +31,7 @@ void dialog002()
 //＜詩音
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 10, "sprite/iri1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「あ～～、それはいいですねぇ...＠沙都子ちゃんを...木馬責め...♪＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -45,7 +45,7 @@ void dialog002()
 
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 6, "sprite/normal/si1b_wink_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 6, "sprite/si1b_wink_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600356", 256, TRUE);
@@ -86,7 +86,7 @@ void dialog004()
 
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 10, "sprite/normal/iri1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/iri1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000133", 256, TRUE);
 	OutputLine(NULL, "……ほら、絶望的なシチュエーションが、何だか楽しそうになってきませんか…☆",

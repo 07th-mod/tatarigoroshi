@@ -218,7 +218,7 @@ void dialog018()
 //＜詩音
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1b_bikkuri_b1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 2, "sprite/re1b_bikkuri_b1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //A 「…さ、捧げ物って、…何をオヤシロさまに捧げるっていうんですか？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -274,7 +274,7 @@ void dialog021()
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa1a_odoroki_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 4, "sprite/sa1a_odoroki_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 // 沙都子rvS20/04/440400226.「……なんで監督さんが叔父さまの役を？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -283,7 +283,7 @@ void dialog021()
 		   NULL, "\"...Why is Coach playing my Uncle?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me1a_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 3, "sprite/me1a_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 // 魅音rvS20/03/440300389.「だって、わざわざ呼びにいくのめんどくさいじゃない？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -295,7 +295,7 @@ void dialog021()
 	FadeBustshotWithFiltering( 1, "left", 1, TRUE, 0, 0, 300, TRUE );
 	FadeBustshotWithFiltering( 3, "right", 1, TRUE, 0, 0, 300, TRUE );
 
-	ModDrawCharacterWithFiltering(3, 10, "sprite/normal/iri1_warai_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 10, "sprite/iri1_warai_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 // 入江rvS20/10/441000095.「はいは～い、行き場を失くしてロンリーブル～♪k
 // S20/10/441000096.　早く雛見沢に帰って、沙都子ちゃんをお持ち帰りしてじっくり教育、未来はご奉仕メイドですよ～～♪
