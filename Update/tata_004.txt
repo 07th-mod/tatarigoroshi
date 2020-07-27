@@ -130,8 +130,8 @@ void main()
 	OutputLine(NULL, "朝食は一日の基本だもんな。",
 		   NULL, " Breakfast is an important part of the day.", Line_WaitForInput);
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_004_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_004_vm00_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_004_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_004_vm00_n01","dialog000");}
 	//VoiceMatchingEnd
 
 
@@ -2601,8 +2601,8 @@ void main()
 	FadeOutBGM( 1, 1000, TRUE );
 
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_004_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_004_vm00_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_004_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_004_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
 	PlaySE( 3, "wa_029", 56, 64 );
@@ -2670,8 +2670,8 @@ void main()
 	PlayBGM( 2, "lsys12", 56, 0 );
 
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("ztata_004_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("ztata_004_vm00_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_004_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_004_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
 
 
