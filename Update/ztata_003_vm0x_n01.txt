@@ -8,13 +8,13 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000001", 256, TRUE);
 	OutputLine(NULL, "「その前原くんって子は…本当に助っ人になれるんですか…？",
-		   NULL, "\"This Maebara-kun kid... Will he really save us...?", Line_WaitForInput);
+		   NULL, "\"This Maebara-kun kid... Will he really be able to save us...?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000002", 256, TRUE);
 	OutputLine(NULL, "　相手はあの強豪校のエース、左腕の亀田くんですよ？",
-		   NULL, " We're up against that ace among champions, Kameda-kun!", Line_WaitForInput);
+		   NULL, " We're up against that elite school's ace—left-arm Kameda-kun!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000003", 256, TRUE);
 	OutputLine(NULL, "　甲子園クラスの投手を打ち崩せるなんて…一体どんな助っ人なんです…？！」",
-		   NULL, " He can beat a Koshien-class pitcher... He must be a god...!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " To be able to beat a Koshien-class pitcher... He must be a god...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
