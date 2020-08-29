@@ -1606,13 +1606,13 @@ void main()
 //　...えっと......、......鷹野さんが、とんでもないことを言っていることだけはわかる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…えっと……、……鷹野さんが、とんでもないことを言っていることだけはわかる。",
-		   NULL, "...Umm...... I could tell, at least, that she was saying some crazy stuff.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Umm...... I could tell only that she was saying some crazy stuff.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......発言を食事に見立てたなら、大皿いっぱいの料理をアヒルの口に無理やり詰め込むかのように、俺の口に詰め込まれた...そんな感じ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……発言を食事に見立てたなら、大皿いっぱいの料理をアヒルの口に無理やり詰め込むかのように、俺の口に詰め込まれた…そんな感じ。",
-		   NULL, "...If I were to liken her statements to a meal, it would be sort of like... she'd just tried to stuff a whole plate of duck into my mouth, and now I couldn't say anything.", Line_Normal);
+		   NULL, "...To use a food analogy, like you'd force-feed a duck to be fattened, she forced her words down my throat, that's what it felt like.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
