@@ -121,7 +121,7 @@ void main()
 //標記事件の犯行をほのめかす供述があり、その中に、犯人しか知り得ない情報が含まれていることが明らかとなった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "標記事件の犯行をほのめかす供述があり、その中に、犯人しか知り得ない情報が含まれていることが明らかとなった。",
-		   NULL, "there was testimony related to the crime in question, and as part of it, we learned that the criminal had information only he could have known.", Line_ContinueAfterTyping);
+		   NULL, "there was testimony alluding to the crime in question, and it became clear that it contained information that only the perpetrator could have known.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -132,7 +132,7 @@ void main()
 //　よって、この供述調書（複写）を貴課に提供する用意がある。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　よって、この供述調書（複写）を貴課に提供する用意がある。",
-		   NULL, "Therefore, this record of testimony (duplicate attached) will be provided to you.", Line_ContinueAfterTyping);
+		   NULL, "Therefore, we are prepared to share this record of testimony with you (duplicate attached).", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -143,7 +143,7 @@ void main()
 //　この供述調書を信頼できるなら、ＸＸＸＸ容疑者は標記事件の実行犯である可能性が極めて高い。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この供述調書を信頼できるなら、ＸＸＸＸ容疑者は標記事件の実行犯である可能性が極めて高い。",
-		   NULL, "If this testimonial is to be believed, then there is an extremely high chance that suspect ___ ___ was the culprit behind the incident in question.", Line_ContinueAfterTyping);
+		   NULL, "If this testimonial is to be believed, then there is an extremely high chance that suspect ___ ___ was the perpetrator in the incident in question.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -153,7 +153,7 @@ void main()
 //　なお、担当取調官はこの供述を受け、興宮警察署に事件の問い合わせをしたが、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なお、担当取調官はこの供述を受け、興宮警察署に事件の問い合わせをしたが、",
-		   NULL, "In addition, the head investigator on the case received this report and inquired as to the incident with the Okinomiya Police Station,", Line_ContinueAfterTyping);
+		   NULL, "In addition, on receiving this testimony the head investigator on the case inquired as to the incident with the Okinomiya Police Station,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
@@ -164,7 +164,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "７月１日県警本部長発令の秘匿捜査指定（昭和５７年総総管イ１−１２）を対応した興宮署担当者が誤解し、",
-		   NULL, "but the responsible party at Okinomiya Station, who responded to the designated undercover investigation announced by the prefectural police's general director on July 1 (1982, Osamu Fusakane, B1-12), misunderstood,", Line_ContinueAfterTyping);
+		   NULL, "but the responsible party at Okinomiya Police Station misunderstood, and in compliance with the designation as an undercover investigation by executive order from prefectural police headquarters on July 1 (1982, general administration, B1-12)", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
@@ -174,7 +174,7 @@ void main()
 //担当取調官に対し、事件の存在を正しく説明しなかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "担当取調官に対し、事件の存在を正しく説明しなかった。",
-		   NULL, "and did not explain the incident's existence to the head investigator on the case properly.", Line_ContinueAfterTyping);
+		   NULL, "they did not explain the incident's existence to the head investigator as they should have.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -185,7 +185,7 @@ void main()
 //　その為、担当取調官は標記事件に関連する供述を重要なものと認識せず、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その為、担当取調官は標記事件に関連する供述を重要なものと認識せず、",
-		   NULL, "Because of this, the case's head investigator was not aware of the importance of the testimony as it related to the case in question,", Line_ContinueAfterTyping);
+		   NULL, "Because of this, the head investigator did not realize the importance of the testimony as it related to the case in question,", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
@@ -195,7 +195,7 @@ void main()
 //その結果、現場確認等を怠り、今日まで放置するに至ったことを謝罪する。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その結果、現場確認等を怠り、今日まで放置するに至ったことを謝罪する。",
-		   NULL, "and as a result, was negligent when combing the scene; we apologize for having left it in the dark until now.", Line_ContinueAfterTyping);
+		   NULL, "and as a result, was negligent when combing the scene; we apologize for having effectively ignored it until now.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);

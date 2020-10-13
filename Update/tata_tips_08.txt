@@ -85,21 +85,21 @@ void main()
 //　重春課長の見たところでは、何も知らされていないみたいです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　重春課長の見たところでは、何も知らされていないみたいです。",
-		   NULL, "From what Chief Shigeharu has seen, nothing's been announced.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "As far as Chief Shigeharu can tell, he hasn't been told anything.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　ヒモのくせに信用されてなかったってことですかね＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ヒモのくせに信用されてなかったってことですかね。",
-		   NULL, "For such a dependent, the man wasn't trusted at all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " He was her pimp, but she didn't trust him at all, did she?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　北条鉄平は興宮のアパートを出て、雛見沢の元の家に戻った様子です￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条鉄平は興宮のアパートを出て、雛見沢の元の家に戻った様子です。",
-		   NULL, "Teppei Houjou has left his apartment in Okinomiya and has returned to his former residence in Hinamizawa.", Line_Normal);
+		   NULL, "Teppei Houjou has left the apartment in Okinomiya and has returned to his former residence in Hinamizawa.", Line_Normal);
 	ClearMessage();
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

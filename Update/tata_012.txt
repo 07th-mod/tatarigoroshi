@@ -1792,10 +1792,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200193", 256, TRUE);
 	OutputLine(NULL, "「圭一くんって売り子さんの才能があるんだね！",
-		   NULL, "\"Keiichi-kun, you'd be a great salesman!", Line_WaitForInput);
+		   NULL, "\"Keiichi-kun, you'd make a great salesman!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200194", 256, TRUE);
 	OutputLine(NULL, "　きっとバナナの叩き売りとかやったら、上手だと思うよ〜。」",
-		   NULL, " If you did a bargain sale on bananas or something, I bet it would go great~\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I bet you'd do great auctioning off overripe bananas or something~\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4591,7 +4591,7 @@ void main()
 //　......薄氷の張る、...ぴしっという緊張した音が、全身の節々から聞こえる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……薄氷の張る、…ぴしっという緊張した音が、全身の節々から聞こえる。",
-		   NULL, "...I could hear it... a layer of thin ice... the sound of all my muscles tensing.", Line_Normal);
+		   NULL, "...I could hear it... a strained sound, like a layer of thin ice spreading... emanating from every joint in my body.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys12", 56, 0 );
@@ -10304,7 +10304,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s03/11/140700021", 256, TRUE);
 	OutputLine(NULL, "「……口より先に手を動かしてください。",
-		   NULL, "\"...Work, please, instead of talking.", Line_WaitForInput);
+		   NULL, "\"...Use your hands, please, not your mouth.", Line_WaitForInput);
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_012_vm0x_n01","dialog009");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_012_vm00_n01","dialog009");}

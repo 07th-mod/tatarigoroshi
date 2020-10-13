@@ -2826,7 +2826,7 @@ void main()
 		   NULL, "\"The uncle really studied up on this stuff.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps2/03/140300049", 540, TRUE);
 	OutputLine(NULL, "法律ではね、暴行か育児放棄が認められなきゃ虐待とは言わないんだってさー。",
-		   NULL, " By law, you can't call it abuse unless someone admits to assault or child neglect. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " By law, you can't call it abuse unless assault or child neglect has been established. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(1, 3, "sprite/me1b_majime_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -5097,7 +5097,7 @@ void main()
 		   NULL, "\"Shut up!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 21, "ps2/21/142000004", 540, TRUE);
 	OutputLine(NULL, "　せっかくの吟醸、台無しにしよってん！",
-		   NULL, " All that brewing I did for nothing!", Line_WaitForInput);
+		   NULL, " You've gone and ruined it! And it was the good stuff, too!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 21, "ps2/21/142000005", 540, TRUE);
 	OutputLine(NULL, "　どうしようてんじゃ！？」",
 		   NULL, " What'll you do about it!?\"", GetGlobalFlag(GLinemodeSp));
@@ -7159,7 +7159,7 @@ void main()
 //　.........もしもそうじゃなかったら、...俺があんたを許さない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………もしもそうじゃなかったら、…俺があんたを許さない。",
-		   NULL, "If that's not what happened... then I couldn't forgive him.", Line_Normal);
+		   NULL, "If that's not what happened... then I won't forgive you.", Line_Normal);
 	ClearMessage();
 
 //「...............悟史はいつ頃、逃げ出したんですか。＠
@@ -7822,7 +7822,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps2/10/141000101", 540, TRUE);
 	OutputLine(NULL, "「一応、…児童相談所には、裁判所の許可も当事者の許可も一切不要で緊急措置ができる強い権限があるんだそうです。",
-		   NULL, "\"And there are... strict limitations on this emergency measure—the child consultation center would need permission both from the court and from the concerned party. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"And the child consultation center has enormous authority in these matters, they can take emergency measures without needing any permission from a court or the concerned child. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps2/10/141000102", 540, TRUE);
 	OutputLine(NULL, "……虐待が公然の事実なら、沙都子ちゃんが否定しても身柄は強制的に保護されるでしょう。",
@@ -8145,7 +8145,7 @@ void main()
 //　キィ、と軽やかなブレーキが入り、全身がつんのめった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　キィ、と軽やかなブレーキが入り、全身がつんのめった。",
-		   NULL, "He lightly hit the brakes, making a skidding nose, and leaned forward.", Line_Normal);
+		   NULL, "He lightly hit the brakes, making a skidding noise, and my whole body suddenly fell forward.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
