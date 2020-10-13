@@ -309,8 +309,8 @@ void main()
 	OutputLine(NULL, "「ありがとうございました！",
 		   NULL, "\"Thank you very much!", Line_WaitForInput);
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog007");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "none");
@@ -322,8 +322,8 @@ void main()
 	OutputLine(NULL, "「皆さん、どうもこんにちは！",
 		   NULL, "\"Hello there, everyone!", Line_WaitForInput);
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog008");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_omake_03_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_omake_03_vm00_n01","dialog008");}
 	//VoiceMatchingEnd
 
 
