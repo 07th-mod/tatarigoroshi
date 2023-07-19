@@ -4,14 +4,6 @@ void main()
 
 void dialog000()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300269", 256, TRUE);
-	OutputLine(NULL, "　ぶつかったら決着つけなきゃ！",
-		   NULL, "Now that we've clashed, we must settle the score!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300270", 256, TRUE);
-	OutputLine(NULL, "　手打ちして引き分けなんて、遊びでやってんじゃないんだよぉぉっ！」",
-		   NULL, " Reconciling with a draw? Do you think we're just kidding around!?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog001()

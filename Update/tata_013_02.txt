@@ -1228,7 +1228,7 @@ void main()
 
 //「...................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/140400231", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/keiichi2101", 256, TRUE);
 	OutputLine(NULL, "……………………………………………。」",
 		   NULL, "........................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2479,7 +2479,7 @@ void main()
 
 //「ぅおえぇぇええぇええぇええぇえ...ッ！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101032", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2102", 256, TRUE);
 	OutputLine(NULL, "「ぅおえぇぇええぇええぇええぇえ…ッ！！！」",
 		   NULL, "\"Wooehhhhhhhhhhhh...!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4228,10 +4228,10 @@ void main()
 
 //　.........聞いたの私＠　オヤシロさまは...本当に祟りを成すときは...本人をすぐに殺さないんだ、って！＠　親しい人から順に殺して...みんな殺してから...最後に殺すんだ、ってッ！＠　だから...圭一さんも......祟りにやられて.........ぅうううぅううぅううッ！！＠　きっと......今度はレナさんや魅音さんが祟られてしまうんですわ！＠　そして...殺したり...殺されたり...！＠　もう...いやッ＠　嫌ぁあぁああああぁあぁあああぁッ！！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400338", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "org/s03/04/140400338a_org", 256, TRUE);
 	OutputLine(NULL, "……ぅうううぅううぅううぅッ！！",
-		   NULL, "...mmmmmmmgh!!", Line_Continue);
-	Wait(1000);
+		   NULL, "...mmmmmmmgh!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "org/s03/04/140400338b_org", 256, TRUE);
 	OutputLine(NULL, "　………聞いたの私！",
 		   NULL, " ......There's something I heard once!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400339", 256, TRUE);

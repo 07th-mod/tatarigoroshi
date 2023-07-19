@@ -4,93 +4,46 @@ void main()
 
 void dialog000()
 {
-//「ろくでなしの寄生虫だからね＠...自分ひとりじゃ炊事は愚か、掃除ひとつできないし。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/140300007", 540, TRUE);
-	OutputLine(NULL, "「ろくでなしの怠け者だからね。",
-		NULL, "\"Because he's a good-for-nothing slob.", Line_WaitForInput);
 }
 
 void dialog001()
 {
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040102", 256, TRUE);
-	OutputLine(NULL, "　…沙都子が重宝なわけだから、何もひどい扱いをしているってわけじゃないかもしれないだろ…？」",
-		NULL, " ...If Satoko's that important, then there wouldn't be any reason to torment her, would there...?\"", Line_Normal);
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200023", 256, TRUE);
-	OutputLine(NULL, "　雛見沢に帰ってきた理由だって、一緒に暮らしてた相手が失踪して生活できなくなったからでしょ？",
-		NULL, "He only even came back because the lady he was depending on vanished and he couldn't look after himself.", Line_WaitForInput);
 }
 
 void dialog003()
 {
-//「...............だいぶ、ひどいのか...？＠
-//　...魅音もレナも、...聞きたいことは同じだったのかもしれない＠
-//　...誰も口を挟まず、ただじっと梨花ちゃんの返事を待った￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040103", 256, TRUE);
-	OutputLine(NULL, "「……………どう、なんだ…？」",
-		   NULL, "\"......How's... the situation...?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog004()
 {
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040104", 256, TRUE);
-	OutputLine(NULL, "　いろいろと状況証拠は必要だろうけど、こういうのって問題だろ？",
-		   NULL, " We'd need a lot of circumstantial evidence, but it's a problem, right?", Line_WaitForInput);
 }
 
 void dialog005()
 {
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200037", 256, TRUE);
-	OutputLine(NULL, "…あるいはそういうのって、興宮の相談所の人とかに相談できないの？」",
-		   NULL, " ...And can't we talk to Okinomiya's welfare people about this?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
 {
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040103", 256, TRUE);
-	OutputLine(NULL, "興宮の相談所に。",
-		   NULL, " To Okinomiya's welfare center.", Line_WaitForInput);
 }
 
 void dialog007()
 {
-//「しばらくは毎週決まった日に民生委員さんが訪問してたみたい＠叔父夫婦も、自分たちが見張られてることを気にして、目立ついじめはしなくなったらしいけど＠.........それで済む訳ないでしょ...普通。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040106", 256, TRUE);
-	OutputLine(NULL, "「しばらくは毎週決まった日に担当の職員さんが訪問してたみたい。",
-		   NULL, "\"The welfare officer apparently went to visit on the same day each week for a while. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog008()
 {
-//alt ということはつまり……しばらくは黙って見てろ…ってことなんだよね…？
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200041_2", 256, TRUE);
-	OutputLine(NULL, "…ということはつまり……しばらくは黙って見てろ…ってことなんだよね…？」",
-		   NULL, " ...This means... we have to just sit quietly and wait, don't we?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog009()
 {
-	ModPlayVoiceLS(4, 1, "ps2/01/140100078", 540, TRUE);
-	OutputLine(NULL, "　……保護者のいない子供って、……施設みたいなところに入れられちゃうんじゃないっけ…？」",
-		   NULL, " ...Don't kids with no guardians... have to go to some sort of institution...?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog010()
 {
-	ModPlayVoiceLS(4, 3, "ps2/03/140300081", 540, TRUE);
-	OutputLine(NULL, "そのお陰で梨花ちゃんは保護者から離れての生活を認められているってわけ。",
-		   NULL, " That's why Rika-chan is allowed to live separately from her guardian.", Line_WaitForInput);
 }
 
 void dialog011()
@@ -104,78 +57,16 @@ void dialog011()
 
 void dialog012()
 {
-//　沙都子の手に、スーパーの袋を渡す＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　たまらなくなって沙都子の手を、そっと握る。",
-		   NULL, "Before I could help it, I'd gently clasped Satoko's hand.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-//　.........その時、沙都子の手の甲に、/
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………その時、沙都子の手のひらの熱が、異常なほど、",
-		   NULL, "...And then, I noticed how hot it was...", Line_ContinueAfterTyping);
-
-	FadeOutBGM( 2, 1000, TRUE );
-
-//アザのようなものがあることに気付く￥
-	OutputLine(NULL, "……そう、汗ばむほどに火照っているのに気づいた。",
-		   NULL, " well above normal temperature, Satoko's hand was flushed and sweaty.", Line_Normal);
-	ClearMessage();
-	DisableWindow();
-	DrawScene("black", 400 );
-
-//「......おい、沙都子...このアザ、...どうしたんだよ...？！＠
-//　...自分で、何て白々しいことを言ってるかよくわかる＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040112", 256, TRUE);
-	OutputLine(NULL, "「……おい、沙都子…お前、まだ熱が…？！」",
-		   NULL, "\"...Hey, Satoko... Do you still have a fever?!\"", GetGlobalFlag(GLinemodeSp));
-
-	ClearMessage();
-
-	DisableWindow();
-	ModSetLayerFilter(3, 256, "sunset");
-	ModDrawCharacter(3, 4, "sprite/sa1a_muhyou_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask("background/ho1_02", "up", 0, 0, 300 );
-
-	PlayBGM( 1, "msys18", 56, 0 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/sato04012", 256, TRUE);
-	OutputLine(NULL, "「…………今年の夏風邪は、なかなかしつこいようですわね。",
-		   NULL, "\"......I just can't seem to shake this year's summer cold.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/sato04013", 256, TRUE);
-	OutputLine(NULL, "気になさらないで下さいませ。」",
-		   NULL, " Please, pay it no mind.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog013()
 {
-//「......沙都子ちゃんは多分、...そういう虐めに耐えるのを試練だと考えているかもしれません。＠
-//「試練＠　......変な宗教じゃあるまいし...！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps3/s03/10/iri04005", 256, TRUE);
-	OutputLine(NULL, "「……沙都子ちゃんは多分、…そういう仕打ちに耐えるのを試練だと考えているかもしれません。」",
-		   NULL, "\"...Satoko-chan probably... thinks of this poor treatment as a trial.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog014()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps3/s03/10/iri04006", 256, TRUE);
-	OutputLine(NULL, "「あの家で悟史くんの帰りを待つのが、沙都子ちゃんの生きる理由でもあります。",
-		   NULL, "\"Because Satoko-chan's reason for living is to wait at that house for Satoshi-kun to return.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s03/10/iri04007", 256, TRUE);
-	OutputLine(NULL, "………兄に捨てられた少女が、…何に生きる理由を見出したか。",
-		   NULL, " ......The young girl abandoned by her brother... How did she find her reason to live? ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog015()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040116", 256, TRUE);
-	OutputLine(NULL, "「…俺は、………本当に沙都子が危ないと感じたら、…誰の意思も聞かずに行動します。",
-		   NULL, "\"...If... If I feel that Satoko is really in danger... I will take action without asking anyone's opinion. ", GetGlobalFlag(GLinemodeSp));
 }

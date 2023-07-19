@@ -601,7 +601,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 127, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400114", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2021", 256, TRUE);
 	OutputLine(NULL, "「ひいぃいいいいいぁあいああいあいあああぁあああぁああッ！！！！」",
 		   NULL, "\"Hyyyaaaaaaaaaaaaahhhhhhhhhhhhhhhhhh!!!!\"", Line_Continue);
 //!sd/
@@ -661,7 +661,7 @@ void main()
 //　そして...今食べたばかりのものを...吐き出す＠
 //　全て嘔吐して戻す＠ビタビタベチャベチャッ＠　と沙都子が床に叩きつける汚物の音が教室に響き渡る￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400115", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2022", 256, TRUE);
 	OutputLine(NULL, "「ぅ……ぅごおぉええええぇえぇえ…ぇぇ…ッ！！！」",
 		   NULL, "\"Ugh... ughooooehehhhhhh...egh...!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1282,10 +1282,10 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400130", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2023", 256, TRUE);
 	OutputLine(NULL, "「助けて…助けてぇええぇッ！！！",
 		   NULL, "\"Help... help meeeeeeeeeeee!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400131", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2024", 256, TRUE);
 	OutputLine(NULL, "　怖いのやだ…気持ち悪いの…やだ………やだ……、…わああぁああああぁあぁあぁああんッ！！！」",
 		   NULL, " I don't wanna be scared... it feels bad... no... I don't... waaaaaaaaaaaaaaaaaaahhhhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -2927,27 +2927,16 @@ void main()
 
 //「.........ッ！！」「.........ひ、...！」「..................。＠
 //　びくっとして、仲間たちが後退る￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200166", 256, TRUE);
-	OutputLine(NULL, "「………ッ！！」",
-		   NULL, "\"......!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color> & <color=#f0953d>レナ</color> & <color=#6972c1>梨花</color>", NULL, "<color=#5ec69a>Mion</color> & <color=#f0953d>Rena</color> & <color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion2065", 256, TRUE);
 	ModPlayVoiceLS(5, 2, "ps3/s03/02/140200167", 256, TRUE);
-	OutputLine(NULL, "「………ひ、…！」",
-		   NULL, "\"...Eep...!\"", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(6, 5, "org/rika2010", 256, TRUE);
+	OutputLine(NULL, "「………ッ！！」 「………ひ、…！」 「………………。」",
+		   NULL, "\"......!!\" \"...Eep...!\" \".........\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/re1a_nande_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(6, 2, "ps3/s03/02/140200168", 256, TRUE);
-	OutputLine(NULL, "「………………。」",
-		   NULL, "\".........\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　びくっとして、仲間たちが後退る。",

@@ -354,16 +354,20 @@ void main()
 //「なぁにを甘っちょろいこと言ってるんだか＠　シロクロつけない灰色勝負なんて絶対御免！＠　ぶつかったら決着つけなきゃ＠　手打ちして引き分けなんてヤクザの世界だけなんだからねー！＠
 //「い、言うと思ったぜ......＠勝負好きの魅音が、このまま終わらせるわけないよな...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300267", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion2000", 256, TRUE);
 	OutputLine(NULL, "「なぁにを甘っちょろいこと言ってるんだか！",
 		   NULL, "\"I wonder why you're all so optimistic!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300268", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion2001", 256, TRUE);
 	OutputLine(NULL, "　シロクロつけない灰色勝負なんて絶対御免！！",
 		   NULL, " Leaving one of our showdowns in such a grey area is out of the question!! ", GetGlobalFlag(GLinemodeSp));
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_002_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_002_vm00_n01","dialog000");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion2002", 256, TRUE);
+	OutputLine(NULL, "　ぶつかったら決着つけなきゃ！",
+		   NULL, "Now that we've clashed, we must settle the score!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion2003", 256, TRUE);
+	OutputLine(NULL, "　手打ちして引き分けなんてヤクザの世界だけなんだからねー！」",
+		   NULL, " Reconciling with a draw only happens in the yakuza world!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -6348,7 +6352,7 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei27480", 256, TRUE);
 	OutputLine(NULL, "「そんな事ないよ。",
 		   NULL, "\"No, that's not it.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei27490", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/s19/01/hr_kei27490_org", 256, TRUE);
 	OutputLine(NULL, "また明日から、また無味簡素な食卓かと思うと……何だか寂しいよ。」",
 		   NULL, " When I think about the dull, plain dinner table coming back tomorrow... it's a little lonely.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

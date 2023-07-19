@@ -4,66 +4,14 @@ void main()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s03/08/140800001", 256, TRUE);
-	OutputLine(NULL, "「こんにちは、圭一くん。",
-		   NULL, "\"Good evening, Keiichi-kun.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s03/08/140800001_1", 256, TRUE);
-	OutputLine(NULL, "こんなところで会うとわね」",
-		   NULL, " Didn't think we would meet here.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
-//「...............そうですけど。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100246", 256, TRUE);
-	OutputLine(NULL, "「……………富竹さん？」",
-		   NULL, "\"Tomitake-san?\"", Line_Normal);
-	ClearMessage();
-
-//　この人は......、顔を何度か見たことがある＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "富竹さんは気さくな仕草で手を上げると、にっこりと笑いかけた。",
-		   NULL, "Tomitake-san was good humored as usual, smiling all the way through.", Line_Normal);
 }
 
 void dialog003()
 {
-
-//「僕は富竹＠フリーカメラマンさ＠専門は野鳥と風景＠まだまだ無名だけどね。＠
-//　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s03/08/140800012", 256, TRUE);
-	OutputLine(NULL, "「いやぁ、今日もいい天気でよかったよ。",
-		   NULL, "\"Hm, I'm really glad the weather is looking so good today.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s03/08/140800013", 256, TRUE);
-	OutputLine(NULL, "天気予報だと寒冷前線が近づいてるって言ってたけど、まだ大丈夫みたいだね」",
-		   NULL, " The weather forecast said that a cold front is coming very soon, but it still looks fine here.\"", Line_Normal);
-	ClearMessage();
-
-//「前原です＠...まぁその、よろしく。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100251", 256, TRUE);
-	OutputLine(NULL, "「そうですね。",
-		   NULL, "\"Yeah.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100252", 256, TRUE);
-	OutputLine(NULL, "でもまだ、梅雨明けはしてないみたいですよ」",
-		   NULL, " But looks like the rainy season isn't over yet.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-
-//「前原くんかい＠　よろしくね！＠
-//　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s03/08/140800014", 256, TRUE);
-	OutputLine(NULL, "「うーん、明日は遠出するつもりだったんだけど……。",
-		   NULL, "\"Yep, I was planning to go out tomorrow but...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s03/08/140800015", 256, TRUE);
-	OutputLine(NULL, "ちょっと、計画を立て直した方がいいかもしれないなぁ」",
-		   NULL, " I guess it's not a bad idea to make some changes to my plan.\"", Line_Normal);
 }
 
 void dialog004()

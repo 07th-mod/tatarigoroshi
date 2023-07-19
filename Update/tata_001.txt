@@ -107,21 +107,24 @@ void main()
 
 //「あんれ、こんぬつわー＠　今日もお暑いこって！＠
 //「ちゃー、暑いねぇ＠　こんな暑いと茹だっちまってかなわねぇよ＠えっへっへ！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2000", 256, TRUE);
 	OutputLine(NULL, "「あんれ、こんぬつわー！",
 		   NULL, "\"Well, heeello there!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2001", 256, TRUE);
 	OutputLine(NULL, "　今日もお暑いこって！」",
 		   NULL, " It's quite hot today again, isn't it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2000", 256, TRUE);
 	OutputLine(NULL, "「ちゃー、暑いねぇ！",
 		   NULL, "\"Hoo, you've got that right!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2001", 256, TRUE);
 	OutputLine(NULL, "　こんな暑いと茹だっちまってかなわねぇよ。",
 		   NULL, " I feel like I'm gonna boil out here.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2002", 256, TRUE);
 	OutputLine(NULL, "えっへっへ！」",
 		   NULL, " Eh-heh-heh!\"", Line_Normal);
 	ClearMessage();
@@ -130,64 +133,74 @@ void main()
 //「あーー、悪ぃ悪ぃ～＠　蛍光灯だったっけ＠　わぁすれちったよ＠　えっへっへ！＠
 //「違んね、ほんら気にならん＠　いんやぁな臭いがしとんね＠今朝からずっとでかなーんわ。＠
 //「.........あれ、何よこれ＠くっさいねぇ＠　まぁた裏のどぶ川が詰まったんかね。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2002", 256, TRUE);
 	OutputLine(NULL, "「そうそう、大家さん、",
 		   NULL, "\"Oh, right, Landlord,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2003", 256, TRUE);
 	OutputLine(NULL, "すったらん言わんと思ってた。」",
 		   NULL, " I didn't think that would be the first thing you said.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2003", 256, TRUE);
 	OutputLine(NULL, "「あーー、悪ぃ悪ぃ〜！",
 		   NULL, "\"Ahhh, sorry, sorry~!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2004", 256, TRUE);
 	OutputLine(NULL, "　蛍光灯だったっけ？",
 		   NULL, " The fluorescent lights, right?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2005", 256, TRUE);
 	OutputLine(NULL, "　わぁすれちったよ！",
 		   NULL, " I completely forgot!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2006", 256, TRUE);
 	OutputLine(NULL, "　えっへっへ！」",
 		   NULL, " Ehehe!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2004", 256, TRUE);
 	OutputLine(NULL, "「違んね、ほんら気にならん？",
 		   NULL, "\"No, not that. Don't you smell it?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2005", 256, TRUE);
 	OutputLine(NULL, "　いんやぁな臭いがしとんね。",
 		   NULL, " There's a teeeerrible smell about.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2006", 256, TRUE);
 	OutputLine(NULL, "今朝からずっとでかなーんわ。」",
 		   NULL, " I've been smelling it since this morning!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2007", 256, TRUE);
 	OutputLine(NULL, "「………あれ、何よこれ。",
 		   NULL, "\"......Wait, what's this?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2008", 256, TRUE);
 	OutputLine(NULL, "くっさいねぇ！",
 		   NULL, " It reeks!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2009", 256, TRUE);
 	OutputLine(NULL, "　まぁた裏のどぶ川が詰まったんかね。」",
 		   NULL, " Did the sewers get backed up again?\"", Line_Normal);
 	ClearMessage();
 
 //「大家さん、何とかしてんよ＠朝からこれじゃ鼻がひん曲がってまうねー。＠
 //「えっへっへ＠　そしたら今の美人がもっと美人になっちゃうじゃないのよ、えっへっへ！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2007", 256, TRUE);
 	OutputLine(NULL, "「大家さん、何とかしてんよ。",
 		   NULL, "\"Do something about it, Landlord!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2008", 256, TRUE);
 	OutputLine(NULL, "朝からこれじゃ鼻がひん曲がってまうねー。」",
 		   NULL, " I've had to keep my nose plugged all day long!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2010", 256, TRUE);
 	OutputLine(NULL, "「えっへっへ！",
 		   NULL, "\"Eh-heh-heh!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2011", 256, TRUE);
 	OutputLine(NULL, "　そしたら今の美人がもっと美人になっちゃうじゃないのよ、えっへっへ！」",
 		   NULL, " You'd still look plenty lovely plugging your nose, my dear! Eh-heh-heh!\"", Line_Normal);
 	ClearMessage();
@@ -208,21 +221,24 @@ void main()
 
 //「こんれ、お役所に何とか言ってーな＠こんなどぶ川埋めてしまぃねホント！＠
 //「ちゃー＠すっかり詰まってるねぇ＠こんなん、棒でちょっとつつけば流れるでよ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2009", 256, TRUE);
 	OutputLine(NULL, "「こんれ、お役所に何とか言ってーな。",
 		   NULL, "\"Could you tell the municipal office about it?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2010", 256, TRUE);
 	OutputLine(NULL, "こんなどぶ川埋めてしまぃねホント！」",
 		   NULL, " The drain will end up buried at this rate!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2012", 256, TRUE);
 	OutputLine(NULL, "「ちゃー。",
 		   NULL, "\"Well, yikes!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2013", 256, TRUE);
 	OutputLine(NULL, "すっかり詰まってるねぇ。",
 		   NULL, " It's completely blocked.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2014", 256, TRUE);
 	OutputLine(NULL, "こんなん、棒でちょっとつつけば流れるでよ。」",
 		   NULL, " Eh, it'll start back up if you poke it with a stick.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -246,23 +262,27 @@ void main()
 //「えっへっへ、詰まれば臭い、かき混ぜれば臭いー＠どっちにすりゃーえーんよ＠へっへっへ！＠
 //　格子に詰まっている汚物に物干し竿を突きたてる＠
 //　......もちろん、堆積した汚物はそんなものではどうにもならない￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2011", 256, TRUE);
 	OutputLine(NULL, "「あーあー、大家さんやめてーなぁ！",
 		   NULL, "\"Ah, wait, Landlord, stop that!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2012", 256, TRUE);
 	OutputLine(NULL, "　ヘンにかき混ぜんと、すったらもー！",
 		   NULL, " If you mix it all strange, if you do that...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2013", 256, TRUE);
 	OutputLine(NULL, "　すんごい臭いになるんね！」",
 		   NULL, " It will smell terrible!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2015", 256, TRUE);
 	OutputLine(NULL, "「えっへっへ、詰まれば臭い、かき混ぜれば臭いー。",
 		   NULL, "\"Eh-heh-heh, it smells if it's clogged, and smells if it's mixed!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2016", 256, TRUE);
 	OutputLine(NULL, "どっちにすりゃーえーんよ。",
 		   NULL, " Which should I choose?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2017", 256, TRUE);
 	OutputLine(NULL, "へっへっへ！」",
 		   NULL, " Heh-heh-heh!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -281,34 +301,40 @@ void main()
 
 //「ぎゃー...＠猫の死骸やん＠こんなの保健所の仕事やねー。＠
 //「犬猫は死ぬと臭いがすんごいのよ＠...竹竿じゃどーにもならんなぁ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2014", 256, TRUE);
 	OutputLine(NULL, "「ぎゃー…。",
 		   NULL, "\"Gyah...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2015", 256, TRUE);
 	OutputLine(NULL, "猫の死骸やん。",
 		   NULL, " It's a dead cat.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2016", 256, TRUE);
 	OutputLine(NULL, "こんなの保健所の仕事やねー。」",
 		   NULL, " This is the health center's job!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2018", 256, TRUE);
 	OutputLine(NULL, "「犬猫は死ぬと臭いがすんごいのよ。",
 		   NULL, "\"Cats and dogs smell awful when they die.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2019", 256, TRUE);
 	OutputLine(NULL, "…竹竿じゃどーにもならんなぁ。」",
 		   NULL, " ...A bamboo pole's not going to do much good.\"", Line_Normal);
 	ClearMessage();
 
 //「ゴミ袋に古着に、まぁいろいろ捨ててあるんねぇ＠あんのアヒル、おまるでねぇの＠　...こりゃあ臭いわきゃあ＠しょんがないねぇまったく！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2020", 256, TRUE);
 	OutputLine(NULL, "「ゴミ袋に古着に、まぁいろいろ捨ててあるんねぇ。",
 		   NULL, "\"Garbage bags, old clothes—they throw all kinds of stuff in there.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2021", 256, TRUE);
 	OutputLine(NULL, "あんのアヒル、おまるでねぇの？",
 		   NULL, " And is that a duck I see?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2022", 256, TRUE);
 	OutputLine(NULL, "　…こりゃあ臭いわきゃあ。",
 		   NULL, " ...Well, of course it stinks.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2023", 256, TRUE);
 	OutputLine(NULL, "しょんがないねぇまったく！」",
 		   NULL, " The nerve of some people!\"", Line_Normal);
 	ClearMessage();
@@ -341,34 +367,36 @@ void main()
 
 //「かー...ウジが涌いとるんね＠生ゴミでも放り込んだんかいなぁ...。＠
 //「...わ、......大家さん＠...なんね、あれ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2024", 256, TRUE);
 	OutputLine(NULL, "「かー…ウジが涌いとるんね。",
 		   NULL, "\"Gah... We've got maggots, eh?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2025", 256, TRUE);
 	OutputLine(NULL, "生ゴミでも放り込んだんかいなぁ…。」",
 		   NULL, " Someone must've thrown kitchen waste in...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2017", 256, TRUE);
 	OutputLine(NULL, "「…わ、……大家さん。",
 		   NULL, "\"...Wha... Landlord.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3a2018", 256, TRUE);
 	OutputLine(NULL, "…なんね、あれ。」",
 		   NULL, " ...What's that?\"", Line_Normal);
 	ClearMessage();
 
 //「何よ、こないの捨てたんわ......。＠
 //「......お、......大家さん、それ、......それッ！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2026", 256, TRUE);
 	OutputLine(NULL, "「何よ、こないの捨てたんわ……。」",
 		   NULL, "\"What? Just more garbage...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2019", 256, TRUE);
 	OutputLine(NULL, "「……お、……大家さん、それ、……それッ！！」",
 		   NULL, "\"...La...Landlord, that's... that's!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -377,22 +405,14 @@ void main()
 	PlayBGM( 0, "lsys28", 56, 0 );
 
 //「へ。!w1000.........ひぇ。!w800......ひええぇええええぇえぇぇええぇぇえええッ！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Landlord</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2027", 256, TRUE);
 	OutputLine(NULL, "「へ。",
-		   NULL, "\"Heh?", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-
+		   NULL, "\"Heh?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2028", 256, TRUE);
 	OutputLine(NULL, "………ひぇ。",
-		   NULL, " ......Eh?", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
+		   NULL, " ......Eh?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3b2029", 256, TRUE);
 	OutputLine(NULL, "……ひええぇええええぇえぇぇええぇぇえええッ！！」",
 		   NULL, " ...Eeeeeeeeeeeeeekkkkk!!\"", Line_Normal);
 	ClearMessage();
@@ -443,81 +463,95 @@ void main()
 
 //「あ、どもー＠　お疲れ様です。＠
 //「かー、ひでー臭いだなぁ＠　おい＠　ブルーシ、上までちゃんと囲っとけよ＠　民家の二階から丸見えだぞ！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2000", 256, TRUE);
 	OutputLine(NULL, "「あ、どもー！",
 		   NULL, "\"Oh, hello!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2001", 256, TRUE);
 	OutputLine(NULL, "　お疲れ様です。」",
 		   NULL, " Good work today.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2000", 256, TRUE);
 	OutputLine(NULL, "「かー、ひでー臭いだなぁ！",
 		   NULL, "\"Ack, what a terrible stench!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2001", 256, TRUE);
 	OutputLine(NULL, "　おい！",
 		   NULL, " Hey!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2002", 256, TRUE);
 	OutputLine(NULL, "　ブルーシ、上までちゃんと囲っとけよ！",
 		   NULL, " Someone cover this thing with a tarp!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2003", 256, TRUE);
 	OutputLine(NULL, "　民家の二階から丸見えだぞ！」",
 		   NULL, " From the second floor of the houses it's in full view!\"", Line_Normal);
 	ClearMessage();
 
 //「ホトケの身元は不明＠性別、女＠年齢は推定２０代後半から３０代後半＠死後２～３日ってところです＠おそらく死後に遺棄したんでしょう。＠
 //「素っ裸かー＠身元割れるの難航しそうだなぁ＠生活課に行方不明者出てないか当たっとけ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2002", 256, TRUE);
 	OutputLine(NULL, "「ホトケの身元は不明。",
 		   NULL, "\"Identity of the deceased, unknown.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2003", 256, TRUE);
 	OutputLine(NULL, "性別、女。",
 		   NULL, " Sex, female.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2004", 256, TRUE);
 	OutputLine(NULL, "年齢は推定２０代後半から３０代後半。",
 		   NULL, " Age, estimated to be late 20s or early 30s.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2005", 256, TRUE);
 	OutputLine(NULL, "死後２〜３日ってところです。",
 		   NULL, " Time of death, about two or three days ago.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2006", 256, TRUE);
 	OutputLine(NULL, "おそらく死後に遺棄したんでしょう。」",
 		   NULL, " She was probably abandoned after death.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2004", 256, TRUE);
 	OutputLine(NULL, "「素っ裸かー。",
 		   NULL, "\"Naked, too?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2005", 256, TRUE);
 	OutputLine(NULL, "身元割れるの難航しそうだなぁ。",
 		   NULL, " Figuring out who she is will be rough.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2006", 256, TRUE);
 	OutputLine(NULL, "生活課に行方不明者出てないか当たっとけ。」",
 		   NULL, " Contact the community division and ask if anyone's gone missing.\"", Line_Normal);
 	ClearMessage();
 
 //「重りを付けて沈められてたんでしょうね＠それがほどけて浮かんできたんでしょう＠...しかし、何だってこんなドブ川に＠高速道路下とか山奥とか、もっとマシな場所があったでしょうに。＠
 //「そうすりゃウチの管轄でなくて済んだのに、ってか＠　死体隠す気なんかハナからねぇんだよ、この手のは。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2007", 256, TRUE);
 	OutputLine(NULL, "「重りを付けて沈められてたんでしょうね。",
 		   NULL, "\"They probably weighed her down, so she'd sink.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2008", 256, TRUE);
 	OutputLine(NULL, "それがほどけて浮かんできたんでしょう。",
 		   NULL, " Then the weights came off and she floated to the top.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2009", 256, TRUE);
 	OutputLine(NULL, "…しかし、何だってこんなドブ川に。",
 		   NULL, " ...But why in a drainage sewer, of all things? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2010", 256, TRUE);
 	OutputLine(NULL, "高速道路下とか山奥とか、もっとマシな場所があったでしょうに。」",
 		   NULL, "Would've been better under an overpass or in the mountains, you know?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2007", 256, TRUE);
 	OutputLine(NULL, "「そうすりゃウチの管轄でなくて済んだのに、ってか？",
 		   NULL, "\"And it would've been outside our jurisdiction, right?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2008", 256, TRUE);
 	OutputLine(NULL, "　死体隠す気なんかハナからねぇんだよ、この手のは。」",
 		   NULL, " But it looks like they never wanted to hide the corpse at all.\"", Line_Normal);
 	ClearMessage();
 
 //「見つかることを前提にした、何かへ見せしめってことですかね。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2011", 256, TRUE);
 	OutputLine(NULL, "「見つかることを前提にした、何かへ見せしめってことですかね。」",
 		   NULL, "\"Did they do it so she would be found? As a warning, or something?\"", Line_Normal);
 	ClearMessage();
@@ -526,35 +560,41 @@ void main()
 
 //「この腹が裂けてるの、魚に食い破られたってワケじゃねぇだろ＠腹ぁ裂いて、中身引きずり出してるよなぁ＠相当ハデに虐め殺してんぞ、コレ＠中国マフィアとかの伝統的な制裁にこーゆうのあるんじゃねぇの＠　四課のシゲさんにマル暴でトラブルないか当たっとけ。＠
 //「わかりました！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2009", 256, TRUE);
 	OutputLine(NULL, "「この腹が裂けてるの、魚に食い破られたってワケじゃねぇだろ。",
 		   NULL, "\"This slice in her stomach definitely wasn't from a fish eating her.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2010", 256, TRUE);
 	OutputLine(NULL, "腹ぁ裂いて、中身引きずり出してるよなぁ。",
 		   NULL, " She was cut open and her insides were dragged out.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2011", 256, TRUE);
 	OutputLine(NULL, "相当ハデに虐め殺してんぞ、コレ。",
 		   NULL, " They really made a show out of killing her. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2012", 256, TRUE);
 	OutputLine(NULL, "中国マフィアとかの伝統的な制裁にこーゆうのあるんじゃねぇの？",
 		   NULL, "Doesn't the Chinese mafia do these sort of traditional punishments?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2013", 256, TRUE);
 	OutputLine(NULL, "　四課のシゲさんにマル暴でトラブルないか当たっとけ。」",
 		   NULL, " Ask Shige-san in Section 4 if he's had any trouble with yakuza.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2012", 256, TRUE);
 	OutputLine(NULL, "「わかりました！」",
 		   NULL, "\"On it, sir!\"", Line_Normal);
 	ClearMessage();
 
 //「しかし...ひでぇホトケさんだね＠ほら、内臓のぞいてるここの感じ、京屋のサラダそばに似てねぇか＠　ほら、箸で突っついたら麺が出てきそうだぞ、ホレ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2014", 256, TRUE);
 	OutputLine(NULL, "「しかし…ひでぇホトケさんだね。",
 		   NULL, "\"Still... what a terrible way to go.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2015", 256, TRUE);
 	OutputLine(NULL, "ほら、内臓のぞいてるここの感じ、京屋のサラダそばに似てねぇか？",
 		   NULL, " Hey, don't her innards poking out like that look sort of like the salad soba you can get in Kyoto?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2016", 256, TRUE);
 	OutputLine(NULL, "　ほら、箸で突っついたら麺が出てきそうだぞ、ホレ。」",
 		   NULL, " Maybe if you stuck chopsticks in, noodles would pop out. See?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -563,28 +603,34 @@ void main()
 	DrawSceneWithMask("background/ryuuketu1", "aa", 0, 0, 300 );
 
 //「......か＠　か、勘弁して下さいよ...。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3c2013", 256, TRUE);
 	OutputLine(NULL, "「……か！",
 		   NULL, "\"...Urgh!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3c2014", 256, TRUE);
 	OutputLine(NULL, "　か、勘弁して下さいよ…。」",
 		   NULL, " P-Please, give me a break...\"", Line_Normal);
 	ClearMessage();
 
 //「かっはっはっは＠　腸引きずり出されて、耳鼻そぎ落とされてぇ＠こういう死に方はしたくねぇよなぁ＠指が惨いよな＠両手両指に五寸釘がびっしり打たれてる＠どうゆう拷問だよ、コレ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2017", 256, TRUE);
 	OutputLine(NULL, "「かっはっはっは！",
 		   NULL, "\"Kah-hah-hah-ha!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2018", 256, TRUE);
 	OutputLine(NULL, "　腸引きずり出されて、耳鼻そぎ落とされてぇ。",
 		   NULL, " Her intestines were pulled out, and her ears and nose cut off.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2019", 256, TRUE);
 	OutputLine(NULL, "こういう死に方はしたくねぇよなぁ。",
 		   NULL, " That's definitely not how I want to go. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>警察官</color>", NULL, "<color=#f5e6d3>Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2020", 256, TRUE);
 	OutputLine(NULL, "指が惨いよな。",
 		   NULL, "Her fingers are in a bad state, too.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3d2021", 256, TRUE);
 	OutputLine(NULL, "両手両指に五寸釘がびっしり打たれてる。",
 		   NULL, " There are long nails stuck in all of them, on both hands.", Line_WaitForInput);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3d2022", 256, TRUE);
 	OutputLine(NULL, "どうゆう拷問だよ、コレ。」",
 		   NULL, " What kind of torture was this, anyway?\"", Line_Normal);
 	ClearMessage();
@@ -5584,9 +5630,10 @@ void main()
 
 //　いるのですよ＠
 //　そう言って、梨花ちゃんは一際明るく、にぱ～っと笑った￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　いるのですよ。",
-		   NULL, "She does have one.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "org/rika2000", 256, TRUE);
+	OutputLine(NULL, "　「いるのですよ。」",
+		   NULL, "\"She does have one.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

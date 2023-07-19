@@ -101,10 +101,10 @@ void main()
 
 //「バイクだからいいです＠お心遣いだけでうれしいってことにしときます。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600014", 256, TRUE);
-	OutputLine(NULL, "「スクーターだからいいです。",
-		   NULL, "\"I did, but I'll be fine riding back.", Line_Continue);
-	Wait(700);
+	ModPlayVoiceLS(4, 6, "org/shion2900", 256, TRUE);
+	OutputLine(NULL, "「バイクだからいいです。",
+		   NULL, "\"I did, but I'll be fine riding back.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion2901", 256, TRUE);
 	OutputLine(NULL, "お心遣いだけでうれしいってことにしときます。」",
 		   NULL, " I appreciate your consideration.\"", Line_Normal);
 	ClearMessage();

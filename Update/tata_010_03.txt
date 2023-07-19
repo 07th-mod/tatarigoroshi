@@ -466,7 +466,8 @@ void main()
 	ClearMessage();
 
 //「物語にならない、って、どういう意味...？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi2089", 256, TRUE);
 	OutputLine(NULL, "物語にならない、って、どういう意味…？",
 		   NULL, "Don't even become stories? What does that mean...?", Line_Normal);
 	ClearMessage();

@@ -37,8 +37,7 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	// This line was mistakenly voiced by Rena. Had to use a Keiichi voice from different episode.
-	ModPlayVoiceLS(4, 1, "ps3/s17/01/110100269", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2073a", 256, TRUE);
 	OutputLine(NULL, "「おはよ。」",
 		   NULL, "\"Morning.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -308,25 +307,33 @@ void main()
 	DisableWindow();
 	ModDrawCharacter(1, 3, "sprite/me1b_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE);
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_010_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_010_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+//「うん＠先生があの後、直接、県の児童相談所に電話してね＠児童福祉司が昨夜の内に訪問したらしいよ＠私の叔母さんにも、今後定期的にアプローチするようにと連絡があったって。＠
+//「......小難しい話はいいよ＠それより沙都子はどうなったんだよ＠保護されたのか？！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300258", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion2057", 256, TRUE);
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Yep.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion2058", 256, TRUE);
+	OutputLine(NULL, "先生があの後、直接、県の児童相談所に電話してね。",
+		   NULL, " Chie-sensei called the child consultation center right after we talked to her.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion2059", 256, TRUE);
+	OutputLine(NULL, "児童福祉司が昨夜の内に訪問したらしいよ。",
+		   NULL, " A child welfare officer apparently visited before the night was over. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion2060", 256, TRUE);
 	OutputLine(NULL, "私の叔母さんにも、今後定期的にアプローチするようにと連絡があったって。」",
 		   NULL, "My aunt said that they were going to pay visits at regular intervals from now on.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100466", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2074", 256, TRUE);
 	OutputLine(NULL, "「……小難しい話はいいよ。",
 		   NULL, "\"...Enough with the dumb, little stuff.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100467", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2075", 256, TRUE);
 	OutputLine(NULL, "それより沙都子はどうなったんだよ。",
 		   NULL, " I want to know what happened to Satoko.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100468", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2076", 256, TRUE);
 	OutputLine(NULL, "保護されたのか？！」",
 		   NULL, " Did they get her safe?!\"", Line_Normal);
 	ClearMessage();
@@ -447,10 +454,10 @@ void main()
 //「来てるだけじゃわからないだろ＠沙都子の顔を見るまで...何もわかるものか！＠
 //　ばたばたと教室へ駆け込む￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200131", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/mion2061", 256, TRUE);
 	OutputLine(NULL, "圭ちゃん、沙都子ちゃんは来てるよ。",
 		   NULL, "Kei-chan, Satoko came.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200132", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/mion2062", 256, TRUE);
 	OutputLine(NULL, "よかった…！」",
 		   NULL, " Thank goodness...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -542,10 +549,15 @@ void main()
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/me1b_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE);
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_010_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_010_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+//「...保護司、来たんでしょ＠　......その、...どういう話になったわけ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion2063", 256, TRUE);
+	OutputLine(NULL, "「…保護司、来たんでしょ？",
+		   NULL, "\"...A probation officer came, right?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion2064", 256, TRUE);
+	OutputLine(NULL, "　……その、…どういう話になったわけ？」",
+		   NULL, " ...Umm... How did it go?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //＜魅音
@@ -768,10 +780,10 @@ void main()
 
 //「だ、だけど...、監督に聞いた話じゃ、保護司ってのは本人の意思に関係なく緊急保護をすることができるんだろ？＠　いくら沙都子が虐待を否定したって、虐待は事実...！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100483", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2077", 256, TRUE);
 	OutputLine(NULL, "「だ、だけど…、監督に聞いた話じゃ、保護司ってのは本人の意思に関係なく緊急保護をすることができるんだろ？！",
 		   NULL, "\"B-But... Coach said probation officers can bring her to safety in an emergency even if it's against her wishes!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100484", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2078", 256, TRUE);
 	OutputLine(NULL, "　いくら沙都子が虐待を否定したって、虐待は事実…！！」",
 		   NULL, " However much Satoko denies the abuse, it's a fact...!!\"", Line_Normal);
 	ClearMessage();
@@ -855,14 +867,13 @@ void main()
 
 //「.....................圭一＠......実は、沙都子の児童虐待の通報は、これが三回目なのです＠......過去にも、...二回あったのです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500025", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika2003", 256, TRUE);
 	OutputLine(NULL, "「…………………圭一。",
 		   NULL, "\".........Keiichi.", Line_WaitForInput);
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_010_vm0x_n01","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_010_vm00_n01","dialog004");}
-	//VoiceMatchingEnd
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500027", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika2004", 256, TRUE);
+	OutputLine(NULL, "……実は、沙都子の児童虐待の通報は、これが三回目なのです。",
+		   NULL, " ...This is actually the third time someone has reported Satoko's child abuse.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "org/rika2005", 256, TRUE);
 	OutputLine(NULL, "……過去にも、…二回あったのです。」",
 		   NULL, " ...It happened... twice in the past too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1324,14 +1335,13 @@ void main()
 //「......はい＠...............児童相談所に、ちゃんと昔の記録が残ってましたですから＠......沙都子の嘘の可能性もあるから慎重に、...ということになりましたのです。＠
 //「............何だよそ＠。......つまり、...何だよ＠...沙都子は、......嘘をつくかも知れないから慎重に＠...だから、.........様子を見ろ、ってことに、......なってるのかよ？！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500034", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika2006", 256, TRUE);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("ztata_010_vm0x_n01","dialog006");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("ztata_010_vm00_n01","dialog006");}
-	//VoiceMatchingEnd
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500036", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika2007", 256, TRUE);
+	OutputLine(NULL, "……………児童相談所に、ちゃんと昔の記録が残ってましたですから、",
+		   NULL, " ......The child consultation center had all their past records...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "org/rika2008", 256, TRUE);
 	OutputLine(NULL, "……沙都子の嘘の可能性もあるから慎重に、…ということになりましたのです。」",
 		   NULL, " so they needed to act carefully... in case Satoko was lying.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1372,20 +1382,20 @@ void main()
 //「ふ、ふざけんなよッ！＠　昔のことなんか全然無関係だろ？＠　今現在起こっている事実だけが重要なんだろうが！＠　沙都子は叔父に虐待されている！＠　どうしてその事実が...昔の出来事で歪められなきゃならねえんだよ！！＠
 //　.........先生も梨花ちゃんも、何も言い返せない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100502", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2084", 256, TRUE);
 	OutputLine(NULL, "「ふ、ふざけんなよッ！！",
 		   NULL, "\"T-That's bullshit!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100503", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2085", 256, TRUE);
 	OutputLine(NULL, "　昔のことなんか全然無関係だろ？！",
 		   NULL, " The past has nothing to do with this, does it?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100504", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2086", 256, TRUE);
 	OutputLine(NULL, "　今現在起こっている事実だけが重要なんだろうが！！",
 		   NULL, " Only what's really happening right now is important!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100505", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2087", 256, TRUE);
 	OutputLine(NULL, "　沙都子は叔父に虐待されている！！",
 		   NULL, " Satoko is being abused by her uncle!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100506", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2088", 256, TRUE);
 	OutputLine(NULL, "　どうしてその事実が…昔の出来事で歪められなきゃならねえんだよ！！」",
 		   NULL, "Why is... Why is something that happened in the past getting in the way of helping her now?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1398,7 +1408,7 @@ void main()
 
 //「......とにかく、それを慎重に判断するために保護司さんが昨日、訪れましたのです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps2/05/140500038", 540, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika2009", 256, TRUE);
 	OutputLine(NULL, "「……とにかく、それを慎重に判断するために保護司さんが昨日、訪れましたのです。」",
 		   NULL, "\"...Anyway, yesterday, a probation officer visited to carefully determine what was going on.\"", Line_Normal);
 	ClearMessage();

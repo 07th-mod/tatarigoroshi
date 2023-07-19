@@ -814,11 +814,14 @@ void main()
 
 
 //『本部了解＠生存者を至急保護されたし＠生存者の容態は。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>本部</color>", NULL, "<color=#f5e6d3>Headquarters</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3e2000", 256, TRUE);
 	OutputLine(NULL, "「本部了解。",
 		   NULL, "\"This is Base, we copy.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3e2001", 256, TRUE);
 	OutputLine(NULL, "生存者を至急保護されたし。",
 		   NULL, " Secure the survivor at once.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob3e2002", 256, TRUE);
 	OutputLine(NULL, "生存者の容態は。」",
 		   NULL, " What is his status?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

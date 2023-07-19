@@ -22,31 +22,10 @@ void dialog000()
 
 void dialog001()
 {
-//「うん＠先生があの後、直接、県の児童相談所に電話してね＠児童福祉司が昨夜の内に訪問したらしいよ＠私の叔母さんにも、今後定期的にアプローチするようにと連絡があったって。＠
-//「......小難しい話はいいよ＠それより沙都子はどうなったんだよ＠保護されたのか？！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300255", 256, TRUE);
-	OutputLine(NULL, "「うん。",
-		   NULL, "\"Yep.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040401", 256, TRUE);
-	OutputLine(NULL, "先生があの後、直接、興宮の生活相談所に電話してね。",
-		   NULL, " Chie-sensei called the Okinomiya child consultation center right after we talked to her.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040402", 256, TRUE);
-	OutputLine(NULL, "担当の職員さんが昨夜の内に訪問したらしいよ。",
-		   NULL, " A child welfare officer apparently visited before the night was over. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog002()
 {
-//「...保護司、来たんでしょ＠　......その、...どういう話になったわけ？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040403", 256, TRUE);
-	OutputLine(NULL, "「あのさ、沙都子。",
-		   NULL, "\"So, Satoko.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040404", 256, TRUE);
-	OutputLine(NULL, "　家で……その、…どういう話になったわけ？」",
-		   NULL, " ...Umm... How did it go at your house?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
@@ -61,9 +40,6 @@ void dialog003()
 
 void dialog004()
 {
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500026", 256, TRUE);
-	OutputLine(NULL, "……実は、これが三回目なのです。",
-		   NULL, " ...This is actually the third time.", Line_WaitForInput);
 }
 
 void dialog005()
@@ -79,7 +55,4 @@ void dialog005()
 
 void dialog006()
 {
-	ModPlayVoiceLS(4, 5, "ps3/s03/05/140500035", 256, TRUE);
-	OutputLine(NULL, "ちゃんと昔の記録が残ってましたですから、",
-		   NULL, " ......The center had all their past records...", Line_WaitForInput);
 }
