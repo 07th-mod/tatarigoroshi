@@ -3353,9 +3353,9 @@ void main()
 	ModPlayVoiceLS(4, 3, "org/mion2042", 256, TRUE);
 	OutputLine(NULL, "そのお陰で梨花ちゃんは孤児院送りを免れてるってわけ。",
 		   NULL, " That's how Rika-chan avoids being sent to an orphanage.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/140300082", 540, TRUE);
-	OutputLine(NULL, "…沙都子はそこに居候してるってことになるけどね。」",
-		   NULL, " ...However Satoko is actually living there as a freeloader.\"", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 3, "org/mion2043", 256, TRUE);
+	OutputLine(NULL, "…孤児院って言うか、児童擁護院のことだけど。」",
+		   NULL, " ...Actually, it would be child and family services, not an orphanage.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5538,11 +5538,11 @@ void main()
 
 //「......圭一さん、無理しないでいいんですのよ＠私も持ちますわ...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/sato04008", 256, TRUE);
-	OutputLine(NULL, "「……圭一さん、大丈夫ですのよ。",
+	ModPlayVoiceLS(4, 4, "org/satoko2010", 256, TRUE);
+	OutputLine(NULL, "「……圭一さん、無理しないでいいんですのよ。",
 		   NULL, "\"...Keiichi-san, there's no need to push yourself.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s03/04/sato04009", 256, TRUE);
-	OutputLine(NULL, "自分で持ちますわ…。」",
+	ModPlayVoiceLS(4, 4, "org/satoko2011", 256, TRUE);
+	OutputLine(NULL, "私も持ちますわ…。」",
 		   NULL, " I'll carry it...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -7621,8 +7621,11 @@ void main()
 	OutputLine(NULL, "「…………………沙都子ちゃんが、",
 		   NULL, "\".........Satoko-chan...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "org/irie2011", 256, TRUE);
-	OutputLine(NULL, "…それを望まないかもしれません。」",
-		   NULL, " might not want that.\"", Line_WaitForInput);
+	OutputLine(NULL, "…それを望まないかもしれません。",
+		   NULL, " might not want that.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "org/irie2012", 256, TRUE);
+	OutputLine(NULL, "虐待されている本人が避難を望まなければ、弱いでしょうから。」",
+		   NULL, " Unless the person being abused wants shelter, anyway—it doesn't go that far.\"", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
