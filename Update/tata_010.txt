@@ -453,11 +453,11 @@ void main()
 //「圭ちゃん、沙都子は来てるよ＠よかった...！＠
 //「来てるだけじゃわからないだろ＠沙都子の顔を見るまで...何もわかるものか！＠
 //　ばたばたと教室へ駆け込む￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "org/mion2061", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion2061", 256, TRUE);
 	OutputLine(NULL, "圭ちゃん、沙都子ちゃんは来てるよ。",
 		   NULL, "Kei-chan, Satoko came.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "org/mion2062", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion2062", 256, TRUE);
 	OutputLine(NULL, "よかった…！」",
 		   NULL, " Thank goodness...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
