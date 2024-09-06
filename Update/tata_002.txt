@@ -1832,6 +1832,7 @@ void main()
 	DrawScene("white", 300 );
 	PlaySE( 4, "wa_011", 56, 64 );
 	DrawScene("scene/108", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/gk3", 50 );}
 	ShakeScreen( 1, 20, 20, 5, 0, );
 
 //「心の定義はなんだ＠苦労か＠　努力か＠　汗か涙か＠　その結晶か？＠　...ならば、俺の手に残るこの火傷は何の評価になるんだッ？！？！＠
@@ -1857,6 +1858,9 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re1b_bikkuri_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );}
+
 //「わ、...圭一くん、それ......油が跳ねた火傷...？！＠
 //　昨日の火事騒ぎの時の火傷痕が、いかにも料理にすごく苦労した風に見えてグッドだ＠
 //　教室中も、俺の努力を認めないわけにはいかない様子がよくわかる￥
@@ -1878,6 +1882,9 @@ void main()
 		   NULL, "I could clearly tell that the classroom was forced to acknowledge the effort I put into it!", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 3, "sprite/me1b_tohoho_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 
 //「......ほぅ＠...自らの料理の下手さによる失敗を、さも努力の痕跡であるかのように見せるとは...＠やはりこの男、/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1928,6 +1935,9 @@ void main()
 		   NULL, " What do you think?!?!\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/gk1", 300 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 2, "sprite/re1b_def_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );}
 
 //「レナは認めてあげたいな...＠　挑戦する心が評価されなかったら...誰も前に進めない！＠
 //　クラスの女子がうんうんと頷き始める＠
@@ -2778,6 +2788,7 @@ void main()
 	DrawScene("white", 100 );
 	PlaySE( 4, "wa_011", 56, 64 );
 	DrawScene("scene/108", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/gk1", 50 );}
 	ShakeScreen( 1, 20, 20, 5, 0, );
 
 //「そうッ！＠　手作りの弁当とコンビニ弁当ではまったく比較にならないのです＠
@@ -2822,6 +2833,7 @@ void main()
 	DrawScene("white", 600 );
 	DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
 	DrawScene("scene/108", 100 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/gk1", 100 );}
 	PlaySE( 3, "wa_006", 56, 64 );
 	ShakeScreen( 1, 100, 20, 4, 0, );
 
@@ -2853,6 +2865,9 @@ void main()
 		   NULL, "Some of the boys were admitting it, too!", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 24, "sprite/tomita1_odoroki_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
+
 //「...うぐぐぐぐぐ！＠　み、認めます...。＠
 //「認めましたね？＠　認めましたね？＠　では次にコンビニ弁当にはなぜ心がないかについて移りましょう＠そもそも、弁当で伝える心とは何なのか？！＠
 //「い、異議あり＠　前原さんは抽象表現で法廷を煙に巻こうとしています！＠
@@ -2881,6 +2896,8 @@ void main()
 		   NULL, " What exactly <i>is</i> the spirit in a bento in the first place?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 25, "sprite/oka1_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 25, "ps3/s19/25/502500038", 256, TRUE);

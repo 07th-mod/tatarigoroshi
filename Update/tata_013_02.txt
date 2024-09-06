@@ -1227,7 +1227,7 @@ void main()
 
 
 //「...................................................。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "org/keiichi2101", 256, TRUE);
 	OutputLine(NULL, "……………………………………………。」",
 		   NULL, "........................\"", GetGlobalFlag(GLinemodeSp));
@@ -2252,6 +2252,7 @@ void main()
 	DisableWindow();
 	FadeFilm( 1400 , FALSE );
 	DrawScene("scene/113b", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ji2", 1000 );}
 
 //　俺が猛然と迫るのに気付き、カラスたちがバサバサと空へ逃れる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2267,6 +2268,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("scene/113a", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 50 );}
 
 //「ぅ、.........わああああぁああぁああぁあああぁあぁあぁあ......ぁぁ...ぁ...ぁ..................！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

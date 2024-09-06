@@ -2966,6 +2966,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
 	DrawScene("scene/111a", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 9, "sprite/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );}
 
 //「私とあなたは今夜、出会わなかった。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -3058,6 +3059,11 @@ void main()
 		   NULL, " ...I wish I'd never met this woman.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(3, 256, "none");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 9, "sprite/ta1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 400 );}
+
 //　この女から漂う...腐臭のような臭いの気配は、.........きっと今の俺から滲み出ている気配と、...何ら変わらない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この女から漂う…腐臭のような臭いの気配は、………きっと今の俺から滲み出ている気配と、…何ら変わらない。",
@@ -3135,7 +3141,11 @@ void main()
 		   NULL, " ...And that I couldn't outright refuse...", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
 	FadeOutBGM( 0, 1000, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(2, 256, "night");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/ma2_01", "up", 0, 0, 400 );}
 
 //「...それでいいなら、そういうことでもいいです＠......俺と鷹野さんは今夜、出会わなかった。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

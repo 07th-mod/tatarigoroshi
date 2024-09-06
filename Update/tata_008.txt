@@ -2638,15 +2638,16 @@ void main()
 	OutputLine(NULL, "あの時は、夫婦喧嘩のとばっちりみたいなのがほとんどだったからさ。",
 		   NULL, " At the time, they were mostly just being caught between their aunt and uncle fighting.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300034", 256, TRUE);
-	OutputLine(NULL, "……こうして部活で時間をつぶして家にいる時間を極力減らすのもひとつの手だったんだけど…。",
-		   NULL, " ...One of the ways we helped out was with the club, by reducing her time at home as much as we could, but... ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……こうして部活で時間をつぶして家にいる時間を極力減らすのもひとつの手だったんだけど…。」",
+		   NULL, " ...One of the ways we helped out was with the club, by reducing her time at home as much as we could, but...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「.........今は家事を強制されてるから、...学校に残ることもできないんだね。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "org/rena2009", 256, TRUE);
-	OutputLine(NULL, "………今は家事を強制されてるから、…学校に残ることもできないんだね。」",
-		   NULL, "......He's making her do the chores now... so she can't stay at school either.\"", Line_Normal);
+	OutputLine(NULL, "「………今は家事を強制されてるから、…学校に残ることもできないんだね。」",
+		   NULL, "\"......He's making her do the chores now... so she can't stay at school either.\"", Line_Normal);
 	ClearMessage();
 
 //　...くそ......＠
@@ -7625,7 +7626,7 @@ void main()
 		   NULL, " might not want that.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "org/irie2012", 256, TRUE);
 	OutputLine(NULL, "虐待されている本人が避難を望まなければ、弱いでしょうから。」",
-		   NULL, " Unless the person being abused wants shelter, anyway—it doesn't go that far.\"", Line_WaitForInput);
+		   NULL, " Unless the person being abused wants shelter, anyway—it doesn't go that far.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

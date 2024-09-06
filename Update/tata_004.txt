@@ -4243,6 +4243,9 @@ void main()
 	ClearMessage();
 //gosub *Kurokai1
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1b_majime_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/js1", 300 );}
 
 //「...その誰かって誰ですか＠誰かに聞いたから言ってるんですよね、転校って。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -4323,6 +4326,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("scene/110b", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1a_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/js1", 1000 );}
 	PlayBGM( 1, "msys12", 56, 0 );
 
 
@@ -4394,6 +4399,9 @@ void main()
 	OutputLine(NULL, "　しどろもどろと答えるのを見て、詩音は俺を威圧していたことに気付き、トーンを下げた。",
 		   NULL, "Upon seeing my flustered reply, Shion realized she was intimidating me, and lowered her voice.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1b_wink_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 
 //「あ、すみません...＠別に圭ちゃんを責めてるわけじゃないんです＠ちょっと言葉がきつ過ぎましたね＠謝ります。＠
 //「...............別に気にしてないよ。＠

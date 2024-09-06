@@ -1495,6 +1495,9 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("scene/115", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 8, "sprite/tomi1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ji1", 300 );}
 
 //「なぁに、知らないの＠　............パパよ＠みんなの家のパパ。＠
 //「......な、なんだ＠...そういう意味ですか＠そりゃそうですよ＠どんなものの正体だって、最終的には人間です＠だってここは人間しかいない世界なんですから＠全ての現象は人間で解明できるはずです。＠
@@ -1540,6 +1543,9 @@ void main()
 		   NULL, "I felt like I put that somewhat strangely, but Takano-san was not as dissatisfied with that reply as I might have guessed.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
+
 //「あら、...その年齢の内からそれに気付けるなんて、なかなかね。その通りよ＠人間の世で起こる現象は全て人間の都合で人間が起こす＠......では前原くん、もう一度尋ねるわよ＠今度はサンタクロースじゃなくて、!w1000/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s03/09/140900046", 256, TRUE);
@@ -1567,6 +1573,8 @@ void main()
 	OutputLine(NULL, "……オヤシロさま。",
 		   NULL, " ...but Oyashiro-sama.", Line_WaitForInput);
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 
 //...オヤシロさまの祟りの正体は...何かわかるかしら？＠
 //　鷹野さんが、...一歩近付き、俺の瞳を覗きこみながら...そう問い掛けた￥

@@ -2562,6 +2562,9 @@ void main()
 		   NULL, " It looked like it was being crushed by Rena's...", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/oki_g3", 300 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 4, "sprite/sa1a_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );}
 
 //「...何があったかは存じませんけど、...梨花が自業自得のようですわね。＠
 //「あぁ＠俺も最近、ようやく梨花ちゃんがただ可愛いだけじゃないと悟ったぞ...。￥
@@ -2581,6 +2584,8 @@ void main()
 		   NULL, " I recently found out that Rika-chan isn't only cute...\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/oki_g3", "right", 0, 0, 300 );}
 
 //「はぅ～～！＠　圭一くんに許可をもらったんだよ～！＠　お持ち帰り～～～～！！！＠
 //「......みーー！！/
@@ -7022,6 +7027,7 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("white", 10 );
 	DrawScene("scene/109b", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/sora", 50 );}
 	PlaySE( 3, "wa_007", 56, 64 );
 	ShakeScreen( 1, 100, 20, 4, 0, );
 
@@ -7049,6 +7055,10 @@ void main()
 		   NULL, " Look at it go...!!", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("white", 300 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 4, "sprite/sa1a_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/oki_g3", 300 );}
 
 //「走る必要もありませんわね＠...をーっほっほっほっほ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -7060,6 +7070,8 @@ void main()
 		   NULL, " ...Ohh-ho-ho-ho-ho!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/oki_g3", 300 );}
 
 //　沙都子の放った特大アーチが...校舎屋上へ消えていく...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
