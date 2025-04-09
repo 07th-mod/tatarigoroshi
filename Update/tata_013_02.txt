@@ -1221,16 +1221,16 @@ void main()
 	OutputLine(NULL, "　圭一さんと喧嘩したくらいで自殺するような人ではありませんわ。",
 		   NULL, " He would certainly not have killed himself after a petty fight with you, Keiichi-san.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s03/04/140400230", 256, TRUE);
-	OutputLine(NULL, "…自分を責めるのはおよしなさいませ。",
-		   NULL, " ...Please, stop blaming yourself.", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…自分を責めるのはおよしなさいませ。」",
+		   NULL, " ...Please, stop blaming yourself.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「...................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "org/keiichi2101", 256, TRUE);
-	OutputLine(NULL, "……………………………………………。」",
-		   NULL, "........................\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「……………………………………………。」",
+		   NULL, "\"........................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
