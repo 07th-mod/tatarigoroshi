@@ -8198,6 +8198,8 @@ void main()
 	ClearMessage();
 
 	ShakeScreen( 1, 20, 20, 5, 0, );
+	FadeOutBGM( 2, 300, FALSE );
+
 //　キィ、と軽やかなブレーキが入り、全身がつんのめった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　キィ、と軽やかなブレーキが入り、全身がつんのめった。",
